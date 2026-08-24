@@ -1,6 +1,6 @@
-# 📱 Data Scraping & Product Catalog System
+# 📱 ระบบดึงข้อมูลสินค้า (Phone Data Scraper)
 
-ระบบดึงข้อมูลและจัดเก็บสินค้าจาก **Instagram, Facebook Groups และ Advice** จัดเก็บอย่างเป็นระเบียบ พร้อมระบบค้นหาและเปิดดูข้อมูล
+ระบบดึงข้อมูลและจัดเก็บสินค้าอัตโนมัติจาก **Instagram, Facebook Groups, Advice และ CompAsia** พร้อมระบบส่งออกไฟล์ Excel/CSV และหน้าแดชบอร์ดเปิดดูรูปภาพในเครื่อง
 
 ---
 
