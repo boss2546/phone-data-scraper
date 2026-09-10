@@ -1,0 +1,47 @@
+{
+  "status": "success",
+  "title": "iPhone",
+  "slug": "iphone-16-pro",
+  "family": "iphone",
+  "url": "https://www.apple.com/th/iphone-16-pro",
+  "specs_url": "https://www.apple.com/th/iphone-16/specs/",
+  "buy_url": "https://www.apple.com/th/shop/goto/buy_accessories",
+  "starting_price_thb": 6900,
+  "starting_price_text": "฿6,900",
+  "currency": "THB",
+  "description": "ออกแบบมาเพื่อ Apple Intelligence มาทำความรู้จักกับ iPhone Duo, iPhone 18 Pro, iPhone Air, iPhone 17 และ iPhone 17e",
+  "images_count": 68,
+  "images": [
+    "https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png?202609090344",
+    "https://www.apple.com/v/iphone/home/ck/images/overview/chapternav/iphone_duo__hefmlegzwbmi_large.png",
+    "https://www.apple.com/th/iphone/home/images/overview/chapternav/iphone_18_pro__dj48ysc0yagm_large.png",
+    "https://www.apple.com/v/iphone/home/ck/images/overview/chapternav/iphone_air__b5qmgl05ojyq_large.png",
+    "https://www.apple.com/th/iphone/home/images/overview/chapternav/iphone_17__fb1277oq3eaa_large.png",
+    "https://www.apple.com/th/iphone/home/images/overview/chapternav/iphone_17e__cq5ygzct314y_large.png",
+    "https://www.apple.com/th/iphone/home/images/overview/chapternav/iphone_16__b6tkv86m2gc2_large.png",
+    "https://www.apple.com/v/iphone/home/ck/images/overview/chapternav/compare__e479gubocjau_large.png",
+    "https://www.apple.com/v/iphone/home/ck/images/overview/chapternav/accessories__ghgqo4vsxcqe_large.png",
+    "https://www.apple.com/v/iphone/home/ck/images/overview/chapternav/shop__dmmu8wcl1iie_large.png"
+  ],
+  "schema_ld": false,
+  "specs": {
+    "chip": "ชิป A18",
+    "display": "-",
+    "camera": "-",
+    "battery": "-",
+    "dimensions": "-",
+    "storage_options": "128GB"
+  },
+  "capacities": [
+    "128GB"
+  ],
+  "colors": [
+    "ดำ",
+    "ขาว",
+    "ทอง",
+    "เงิน",
+    "ฟ้า",
+    "ชมพู",
+    "เขียว"
+  ]
+}

@@ -1,167 +1,123 @@
+#!/usr/bin/env python3
 import sys
-import json
-import urllib.parse
+import subprocess
 from pathlib import Path
 
-# Add project root to sys.path
+# Base Directory
 BASE_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE_DIR))
+PROJECTS_DIR = BASE_DIR / "projects"
 
-from src.scrapers.advice_scraper import AdviceScraper
-from src.scrapers.instagram_scraper import InstagramScraper
-from src.scrapers.compasia_scraper import fetch_compasia_links
-from src.scrapers.facebook_scraper import FacebookScraper
-from src.scrapers.html_scraper import RawHtmlScraper
-from src.services.storage import StorageService
-from src.services.compasia_full_extractor import run_compasia_extractor
-from src.services.download_all_instagram_posts import process_all_posts as process_all_ig
-from config.settings import JSON_DIR, DATA_DIR
+PROJECTS = {
+    "1": ("facebook_scraper", "📘 Facebook Scraper (GraphQL Interceptor & Post Intelligence)", "projects/facebook_scraper/run.py"),
+    "2": ("bma_weather_radar", "🌧️ BMA Weather Radar (ดักจับภาพเรดาร์ & ข้อมูลฝน กทม. Real-time)", "projects/bma_weather_radar/run.py"),
+    "3": ("compasia_scraper", "🛍️ CompAsia Scraper (Shopify API & Multi-threaded Variants)", "projects/compasia_scraper/run.py"),
+    "4": ("instagram_scraper", "📸 Instagram Scraper (ดึงโปรไฟล์ & รูปภาพ Carousel)", "projects/instagram_scraper/run.py"),
+    "5": ("advice_scraper", "💻 Advice Scraper (ดึงสินค้าไอที JSON-LD & HD Gallery)", "projects/advice_scraper/run.py"),
+    "6": ("market_intelligence", "📊 Market Intelligence (วิเคราะห์ราคากลาง & Deal Hunter)", "projects/market_intelligence/run.py"),
+    "7": ("user_account_generator", "👥 User Account Generator (สร้างบัญชี GraphQL อัตโนมัติ)", "projects/user_account_generator/run.py"),
+    "8": ("apple_scraper", "🍎 Apple Scraper (ดึงข้อมูลสินค้าทางการ สเปก & ราคาจาก Apple Store)", "projects/apple_scraper/run.py"),
+}
+
+ALIASES = {
+    "fb": "1", "facebook": "1",
+    "radar": "2", "weather": "2", "bma": "2",
+    "compasia": "3", "shopify": "3",
+    "ig": "4", "instagram": "4",
+    "advice": "5",
+    "market": "6", "analyze": "6",
+    "users": "7", "mod": "7",
+    "apple": "8", "ap": "8"
+}
 
 def print_banner():
-    print("=" * 65)
-    print("🛒 Multi-Source Web Scraper & Product Data Pipeline")
-    print("   รองรับ: Advice | Instagram | CompAsia | Facebook | Raw HTML")
-    print("=" * 65)
+    print("=" * 72)
+    print("🌐 แซนบล็อกดึงข้อมูล — Master Data Scraping & Interception Suite")
+    print("   ศูนย์รวมเครื่องมือดึงข้อมูลและดักข้อมูลอัจฉริยะ (Modular Architecture)")
+    print("=" * 72)
 
-def run_advice(url: str):
-    print(f"\n🚀 กำลังดึงข้อมูลจาก Advice: {url}")
-    scraper = AdviceScraper()
-    result = scraper.fetch_product(url)
-
-    if result.get("status") != "success":
-        print(f"❌ เกิดข้อผิดพลาด: {result.get('message')}")
+def launch_subproject(proj_key: str, extra_args: list = None):
+    if proj_key not in PROJECTS:
+        print(f"❌ ไม่พบโปรเจกต์หมายเลข: {proj_key}")
         return
 
-    data = result["data"]
-    print("\n✅ ดึงข้อมูลสินค้าสำเร็จ!")
-    print(f"📦 ชื่อสินค้า: {data.get('name')}")
-    print(f"🏷️  รหัสสินค้า (SKU): {data.get('sku')}")
-    print(f"🏢 แบรนด์: {data.get('brand')}")
-    print(f"💰 ราคา: {data.get('price'):,} {data.get('currency')}" if data.get('price') else "💰 ราคา: -")
-    print(f"📊 สถานะ: {'มีสินค้า (In Stock)' if data.get('in_stock') else 'สินค้าหมด (Out of Stock)'}")
-    print(f"⚡ สเปกย่อ: {data.get('key_specs')}")
+    folder_name, title, script_rel_path = PROJECTS[proj_key]
+    proj_dir = PROJECTS_DIR / folder_name
+    script_path = BASE_DIR / script_rel_path
 
-    json_file = StorageService.save_product_json(data)
-    catalog_file = StorageService.update_catalog(data)
-    csv_file = StorageService.export_to_csv()
-    image_files = StorageService.download_product_images(data)
-
-    print("\n📁 บันทึกข้อมูลเรียบร้อยแล้ว:")
-    print(f"   📄 JSON: {json_file}")
-    print(f"   📊 CSV:  {csv_file}")
-    print(f"   🖼️  ดาวน์โหลดรูป: {len(image_files)} รูป ใน data/images/{data.get('sku')}/")
-
-def run_instagram(username_or_url: str):
-    print(f"\n📸 กำลังดึงข้อมูลจาก Instagram: {username_or_url}")
-    scraper = InstagramScraper()
-    result = scraper.fetch_profile_and_posts(username_or_url)
-
-    if result.get("status") != "success":
-        print(f"❌ เกิดข้อผิดพลาด: {result.get('message')}")
+    if not script_path.exists():
+        print(f"❌ ไม่พบไฟล์รันของโปรเจกต์: {script_path}")
         return
 
-    profile = result["profile"]
-    posts = result["posts"]
-    print(f"✅ ดึงข้อมูล Instagram สำเร็จ!")
-    print(f"👤 บัญชี: @{profile.get('username')} ({profile.get('full_name')})")
-    print(f"👥 ผู้ติดตาม: {profile.get('followers'):,} คน | โพสต์ทั้งหมด: {profile.get('total_posts'):,} โพสต์")
-    print(f"📥 ดึงโพสต์ล่าสุด: {len(posts)} โพสต์")
+    cmd = [sys.executable, str(script_path)]
+    if extra_args:
+        cmd.extend(extra_args)
 
-    file_path = JSON_DIR / f"instagram_{profile.get('username')}.json"
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+    print(f"\n🚀 กำลังเปิดใช้งาน: {title} ...")
+    print(f"📁 Working Directory: projects/{folder_name}/")
+    print("-" * 72)
+    try:
+        subprocess.run(cmd, cwd=str(proj_dir))
+    except KeyboardInterrupt:
+        print("\n👋 ยกเลิกการทำงาน")
 
-    print(f"\n📁 บันทึกข้อมูลเรียบร้อยแล้ว: {file_path}")
+def print_status_overview():
+    print("\n" + "=" * 72)
+    print("🗂️  ภาพรวมสถานะข้อมูลและไฟล์ในแต่ละระบบ (Systems Status Overview)")
+    print("=" * 72)
+    
+    for key, (folder, title, _) in PROJECTS.items():
+        p_dir = PROJECTS_DIR / folder
+        data_dir = p_dir / "data"
+        
+        file_count = 0
+        if data_dir.exists():
+            file_count = sum(1 for f in data_dir.rglob("*") if f.is_file() and not f.name.startswith("."))
 
-def run_compasia(fetch_full: bool = True):
-    print("\n🛍️ กำลังดึงข้อมูลสินค้าจาก CompAsia...")
-    fetch_compasia_links(pages=[1, 2])
-    if fetch_full:
-        print("\n⏳ กำลังสกัดรายละเอียดเชิงลึกและดาวน์โหลดรูปภาพทั้งหมด...")
-        run_compasia_extractor(max_workers=6)
+        dashboards = [f.name for f in p_dir.glob("*.html")]
+        dash_str = f" | 🌐 Web UI: {', '.join(dashboards)}" if dashboards else ""
 
-def run_html_download(url: str):
-    print(f"\n📄 กำลังดาวน์โหลด Raw HTML: {url}")
-    saved_file = RawHtmlScraper.save_raw_html(url)
-    if saved_file:
-        RawHtmlScraper.inspect_html(saved_file)
+        print(f"[{key}] {title}")
+        print(f"    ↳ โฟลเดอร์: projects/{folder}/ | 📦 ไฟล์ข้อมูล: {file_count} ไฟล์{dash_str}")
+        print()
 
 def interactive_menu():
-    print_banner()
-    print("กรุณาเลือกประเภทการดึงข้อมูล:")
-    print("  [1] ดึงข้อมูลสินค้าจาก Advice (ใส่ URL สินค้า)")
-    print("  [2] ดึงข้อมูลร้านค้า/โพสต์จาก Instagram (ใส่ URL หรือ @Username)")
-    print("  [3] ดึงสินค้าทั้งหมดจาก CompAsia (33 รายการ + ทุกตัวเลือก + รูปภาพ)")
-    print("  [4] ดึงโพสต์ทั้งหมดจาก Instagram Links ที่มีอยู่ (228 โพสต์ + รูปภาพ)")
-    print("  [5] ดาวน์โหลด Raw HTML ทั้งหน้าเว็บเก็บไว้ในเครื่อง")
-    print("  [6] จัดระเบียบและคลีนข้อมูลทั้งหมด (Organize Datasets)")
-    print("  [0] ออกจากโปรแกรม")
-    print("-" * 65)
-
-    choice = input("👉 เลือกเมนู (0-6): ").strip()
-
-    if choice == "1":
-        url = input("🔗 ใส่ URL สินค้า Advice: ").strip()
-        if url:
-            run_advice(url)
-    elif choice == "2":
-        target = input("📸 ใส่ Instagram URL หรือ Username: ").strip()
-        if target:
-            run_instagram(target)
-    elif choice == "3":
-        run_compasia(fetch_full=True)
-    elif choice == "4":
-        print("⏳ กำลังเริ่มดึงโพสต์ Instagram ทั้งหมด 228 โพสต์...")
-        process_all_ig(max_workers=8)
-    elif choice == "5":
-        url = input("🌐 ใส่ URL หน้าเว็บที่ต้องการเซฟ HTML: ").strip()
-        if url:
-            run_html_download(url)
-    elif choice == "6":
-        from src.services.organize_workspace import BASE_DIR
-        import subprocess
-        subprocess.run([sys.executable, str(BASE_DIR / "src" / "services" / "organize_workspace.py")])
-    elif choice == "0":
-        print("👋 ออกจากโปรแกรมเรียบร้อย")
-    else:
-        print("⚠️ ตัวเลือกไม่ถูกต้อง")
-
-def main():
-    if len(sys.argv) == 1:
-        interactive_menu()
-        return
-
-    arg = sys.argv[1]
-
-    # Command Router
-    if arg in ["--help", "-h"]:
+    while True:
         print_banner()
-        print("การใช้งาน:")
-        print("  python3 run.py                              # เปิดเมนูแบบ Interactive")
-        print("  python3 run.py <URL_Advice>                 # ดึงสินค้า Advice")
-        print("  python3 run.py <URL_Instagram>              # ดึงโพสต์ Instagram")
-        print("  python3 run.py compasia                     # ดึงสินค้า CompAsia")
-        print("  python3 run.py html <URL>                   # ดาวน์โหลด Raw HTML")
-        return
+        print("กรุณาเลือกโมดูลระบบที่ต้องการสั่งการ:")
+        for key, (_, title, _) in PROJECTS.items():
+            print(f"  [{key}] {title}")
+        print("  ----------------------------------------------------------------------")
+        print("  [9] 🗂️ ดูภาพรวมสถานะข้อมูลทุกระบบ (Inspect All Systems Status)")
+        print("  [0] ออกจากโปรแกรม")
+        print("-" * 72)
 
-    if arg.lower() == "compasia":
-        run_compasia(fetch_full=True)
-        return
-    elif arg.lower() == "html" and len(sys.argv) > 2:
-        run_html_download(sys.argv[2])
-        return
+        choice = input("👉 เลือกเมนู (0-9): ").strip()
 
-    # Auto detect URL type
-    if "instagram.com" in arg.lower():
-        run_instagram(arg)
-    elif "compasia.co.th" in arg.lower():
-        run_compasia(fetch_full=True)
-    elif "advice.co.th" in arg.lower():
-        run_advice(arg)
-    elif arg.startswith("http://") or arg.startswith("https://"):
-        run_html_download(arg)
-    else:
-        run_instagram(arg)
+        if choice == "0":
+            print("👋 ออกจากโปรแกรม ขอบคุณครับ!")
+            sys.exit(0)
+        elif choice == "9":
+            print_status_overview()
+            input("\nกด Enter เพื่อกลับสู่เมนูหลัก...")
+        elif choice in PROJECTS:
+            launch_subproject(choice)
+            input("\nกด Enter เพื่อกลับสู่เมนูหลัก...")
+        else:
+            print("❌ ตัวเลือกไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง\n")
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        arg = sys.argv[1].lower()
+        if arg in ["status", "overview", "info"]:
+            print_banner()
+            print_status_overview()
+        elif arg in ALIASES:
+            proj_key = ALIASES[arg]
+            launch_subproject(proj_key, extra_args=sys.argv[2:])
+        elif arg in PROJECTS:
+            launch_subproject(arg, extra_args=sys.argv[2:])
+        else:
+            print(f"❌ ไม่รู้จักคำสั่ง '{arg}'")
+            print("💡 คำสั่งที่รองรับ: fb, radar, compasia, ig, advice, market, users, apple, status")
+    else:
+        interactive_menu()
