@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Store Thailand — ฐานข้อมูลสินค้าทางการ (Official Catalog)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #0a0c10;
+      --bg-surface: #12151c;
+      --bg-card: rgba(24, 28, 38, 0.7);
+      --border-card: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(0, 113, 227, 0.4);
+      --accent: #2997ff;
+      --accent-gradient: linear-gradient(135deg, #2997ff 0%, #9047ff 100%);
+      --text-main: #f5f5f7;
+      --text-muted: #86868b;
+      --tag-bg: rgba(255, 255, 255, 0.06);
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: 'Outfit', 'Sarabun', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Background Ambient Glows */
+    .ambient-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(140px);
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .glow-1 { top: -100px; left: -100px; background: #2997ff; }
+    .glow-2 { top: 30%; right: -150px; background: #9047ff; }
+
+    header {
+      position: relative;
+      z-index: 10;
+      padding: 40px 24px 24px;
+      max-width: 1300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(41, 151, 255, 0.12);
+      border: 1px solid rgba(41, 151, 255, 0.3);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #30d158;
+      box-shadow: 0 0 10px #30d158;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      background: linear-gradient(180deg, #ffffff 40%, #a1a1a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 680px;
+      margin: 0 auto 30px;
+    }
+
+    /* Controls & Filters Bar */
+    .controls-container {
+      position: sticky;
+      top: 16px;
+      z-index: 50;
+      max-width: 1300px;
+      margin: 0 auto 36px;
+      padding: 0 24px;
+    }
+
+    .controls-card {
+      background: rgba(18, 21, 28, 0.85);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-card);
+      border-radius: 20px;
+      padding: 14px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+    }
+
+    .category-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .category-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--text-muted);
+      padding: 8px 18px;
+      border-radius: 12px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .category-btn:hover {
+      color: var(--text-main);
+      border-color: rgba(255,255,255,0.25);
+    }
+
+    .category-btn.active {
+      background: var(--text-main);
+      color: #000;
+      border-color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .search-sort-box {
+      display: flex;
+      gap: 12px;
+      flex: 1;
+      min-width: 280px;
+      max-width: 480px;
+    }
+
+    .search-input {
+      flex: 1;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 16px;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 0 12px rgba(41, 151, 255, 0.25);
+    }
+
+    .sort-select {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text-main);
+      padding: 10px 14px;
+      border-radius: 12px;
+      outline: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    /* Grid Layout */
+    .catalog-grid {
+      position: relative;
+      z-index: 10;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 24px;
+    }
+
+    .product-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-hover);
+      box-shadow: 0 18px 45px rgba(0, 113, 227, 0.2);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .family-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: rgba(41, 151, 255, 0.15);
+      color: #58a6ff;
+    }
+
+    .part-number {
+      font-size: 0.78rem;
+      font-family: monospace;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.04);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .image-container {
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 12px 0 20px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+      filter: drop-shadow(0 12px 20px rgba(0,0,0,0.4));
+    }
+
+    .product-card:hover .image-container img {
+      transform: scale(1.05);
+    }
+
+    .product-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+      min-height: 52px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .color-swatch-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .swatch-circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .color-name {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .specs-pill-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .spec-pill {
+      font-size: 0.8rem;
+      background: var(--tag-bg);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 4px 9px;
+      border-radius: 8px;
+      color: #d1d1d6;
+    }
+
+    .card-bottom {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .price-val {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .btn-buy {
+      background: #0071e3;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .btn-buy:hover {
+      background: #0077ed;
+      transform: scale(1.03);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-muted);
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 30px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .stats-item b {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <header>
+    <div class="badge-live">
+      <span class="badge-dot"></span>
+      Apple Store Thailand • Live Catalog Database
+    </div>
+    <h1>ฐานข้อมูลสินค้าทางการ Apple</h1>
+    <p class="subtitle">รวบรวมข้อมูลทุกรุ่น ทุกสี ทุกความจุ พร้อมราคาเงินบาททางการ (THB) สเปกชิป และรหัส Part Number สำหรับใช้งานบนเว็บไซต์</p>
+    
+    <div class="stats-bar" id="statsBar">
+      <div class="stats-item">รายการทั้งหมด: <b id="statTotal">-</b></div>
+      <div class="stats-item">ราคาเริ่มต้น: <b id="statMin">-</b></div>
+      <div class="stats-item">ราคาสูงสุด: <b id="statMax">-</b></div>
+    </div>
+  </header>
+
+  <div class="controls-container">
+    <div class="controls-card">
+      <div class="category-pills" id="categoryPills">
+        <button class="category-btn active" data-cat="all">ทั้งหมด (All)</button>
+        <button class="category-btn" data-cat="iphone">iPhone (ไอโฟน)</button>
+        <button class="category-btn" data-cat="ipad">iPad (ไอแพด)</button>
+        <button class="category-btn" data-cat="mac">Mac (คอมพิวเตอร์)</button>
+        <button class="category-btn" data-cat="watch">Apple Watch</button>
+      </div>
+
+      <div class="search-sort-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="🔍 ค้นหารุ่น, สี, ชิป, หรือ Part Number...">
+        <select id="sortSelect" class="sort-select">
+          <option value="featured">แนะนำ (Featured)</option>
+          <option value="price-asc">ราคา: ต่ำ ➔ สูง</option>
+          <option value="price-desc">ราคา: สูง ➔ ต่ำ</option>
+          <option value="name">ชื่อสินค้า (A-Z)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <main class="catalog-grid" id="catalogGrid">
+    <div class="empty-state">⏳ กำลังโหลดข้อมูลสินค้า...</div>
+  </main>
+
+  <script src="data/exports/apple_catalog.js"></script>
+  <script>
+    let allVariants = [];
+    let activeCategory = 'all';
+    let searchQuery = '';
+    let sortMode = 'featured';
+
+    async function loadDatabase() {
+      // 1. ตรวจสอบว่ามีข้อมูลจาก script bundle หรือไม่ (เพื่อรองรับการเปิดแบบดับเบิลคลิกไฟล์ file://)
+      if (window.APPLE_VARIANTS && Array.isArray(window.APPLE_VARIANTS) && window.APPLE_VARIANTS.length > 0) {
+        allVariants = window.APPLE_VARIANTS;
+        updateStats();
+        renderCatalog();
+        return;
+      }
+
+      try {
+        // 2. ลองโหลดจากไฟล์ JSON ใน exports ผ่าน fetch (สำหรับรันผ่าน HTTP Web Server)
+        const res = await fetch('data/exports/apple_full_catalog.json');
+        if (!res.ok) throw new Error("JSON file not found");
+        const json = await res.json();
+        
+        // Flatten variants list
+        allVariants = [];
+        for (const catKey in json.catalog) {
+          const cat = json.catalog[catKey];
+          for (const famKey in cat.families) {
+            const fam = cat.families[famKey];
+            allVariants.push(...fam.variants);
+          }
+        }
+      } catch (err) {
+        console.warn("Loading fallback preview data:", err);
+        // Fallback sample data if both are unavailable
+        allVariants = [
+          {
+            id: "MYE73ZP/A", category: "iphone", family: "iPhone 16", model_name: "iPhone 16 128GB Black",
+            color_th: "ดำ", color_en: "Black", color_hex: "#1F2022", storage: "128GB", screen_size: "6.1\"",
+            connectivity: "5G", price_thb: 30900, formatted_price: "฿30,900", specs_chip: "ชิป A18",
+            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-black?wid=5120&hei=2880&fmt=webp&qlt=70",
+            product_url: "https://www.apple.com/th/shop/buy-iphone/iphone-16"
+          },
+          {
+            id: "MYE93ZP/A", category: "iphone", family: "iPhone 16", model_name: "iPhone 16 128GB White",
+            color_th: "ขาว", color_en: "White", color_hex: "#F9F6EF", storage: "128GB", screen_size: "6.1\"",
+            connectivity: "5G", price_thb: 30900, formatted_price: "฿30,900", specs_chip: "ชิป A18",
+            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=5120&hei=2880&fmt=webp&qlt=70",
+            product_url: "https://www.apple.com/th/shop/buy-iphone/iphone-16"
+          },
+          {
+            id: "MYEA3ZP/A", category: "iphone", family: "iPhone 16", model_name: "iPhone 16 128GB Pink",
+            color_th: "ชมพู", color_en: "Pink", color_hex: "#E3A3B1", storage: "128GB", screen_size: "6.1\"",
+            connectivity: "5G", price_thb: 30900, formatted_price: "฿30,900", specs_chip: "ชิป A18",
+            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70",
+            product_url: "https://www.apple.com/th/shop/buy-iphone/iphone-16"
+          },
+          {
+            id: "MDWK4TH/A", category: "ipad", family: "iPad Pro (M4)", model_name: "11-inch iPad Pro Wi‑Fi 256GB Space Black",
+            color_th: "สเปซแบล็ค", color_en: "Space Black", color_hex: "#2E2C2F", storage: "256GB", screen_size: "11\"",
+            connectivity: "Wi-Fi", price_thb: 42900, formatted_price: "฿42,900", specs_chip: "ชิป M4",
+            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=5120&hei=2880&fmt=webp&qlt=70",
+            product_url: "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
+          },
+          {
+            id: "MDWM4TH/A", category: "ipad", family: "iPad Pro (M4)", model_name: "11-inch iPad Pro Wi‑Fi 512GB Space Black",
+            color_th: "สเปซแบล็ค", color_en: "Space Black", color_hex: "#2E2C2F", storage: "512GB", screen_size: "11\"",
+            connectivity: "Wi-Fi", price_thb: 49900, formatted_price: "฿49,900", specs_chip: "ชิป M4",
+            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=5120&hei=2880&fmt=webp&qlt=70",
+            product_url: "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
+          },
+          {
+            id: "MAC-MBA-13-STARLIGHT", category: "mac", family: "MacBook Air", model_name: "13-inch MacBook Air Starlight 256GB",
+            color_th: "สตาร์ไลท์", color_en: "Starlight", color_hex: "#F0ECE1", storage: "256GB", screen_size: "13\"",
+            connectivity: "Wi-Fi", price_thb: 44900, formatted_price: "฿44,900", specs_chip: "ชิป M3",
+            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+            product_url: "https://www.apple.com/th/shop/buy-mac/macbook-air"
+          }
+        ];
+      }
+
+      updateStats();
+      renderCatalog();
+    }
+
+    function updateStats() {
+      const prices = allVariants.map(v => v.price_thb).filter(p => p > 0);
+      document.getElementById('statTotal').innerText = `${allVariants.length} ตัวเลือก`;
+      if (prices.length > 0) {
+        document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
+        document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
+      }
+    }
+
+    function renderCatalog() {
+      const grid = document.getElementById('catalogGrid');
+      let filtered = allVariants.filter(v => {
+        const matchCat = activeCategory === 'all' || v.category === activeCategory;
+        const query = searchQuery.toLowerCase();
+        const matchSearch = !query || 
+          (v.model_name && v.model_name.toLowerCase().includes(query)) ||
+          (v.family && v.family.toLowerCase().includes(query)) ||
+          (v.color_th && v.color_th.toLowerCase().includes(query)) ||
+          (v.color_en && v.color_en.toLowerCase().includes(query)) ||
+          (v.specs_chip && v.specs_chip.toLowerCase().includes(query)) ||
+          (v.part_number && v.part_number.toLowerCase().includes(query));
+        return matchCat && matchSearch;
+      });
+
+      // Sorting
+      if (sortMode === 'price-asc') {
+        filtered.sort((a, b) => a.price_thb - b.price_thb);
+      } else if (sortMode === 'price-desc') {
+        filtered.sort((a, b) => b.price_thb - a.price_thb);
+      } else if (sortMode === 'name') {
+        filtered.sort((a, b) => a.model_name.localeCompare(b.model_name));
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="empty-state">❌ ไม่พบสินค้าที่ตรงกับคำค้นหา "${searchQuery}"</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(v => `
+        <article class="product-card">
+          <div class="card-top">
+            <span class="family-badge">${v.family || v.category}</span>
+            <span class="part-number">${v.part_number || v.id}</span>
+          </div>
+
+          <div class="image-container">
+            <img src="${v.image_url || 'https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'}" 
+                 alt="${v.model_name}" 
+                 onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
+          </div>
+
+          <h3 class="product-title">${v.model_name}</h3>
+
+          <div class="color-swatch-row">
+            <span class="swatch-circle" style="background: ${v.color_hex || '#888'}"></span>
+            <span class="color-name">สี: ${v.color_th} (${v.color_en})</span>
+          </div>
+
+          <div class="specs-pill-box">
+            ${v.specs_chip && v.specs_chip !== '-' ? `<span class="spec-pill">⚡ ${v.specs_chip}</span>` : ''}
+            ${v.storage && v.storage !== '-' ? `<span class="spec-pill">💾 ${v.storage}</span>` : ''}
+            ${v.screen_size && v.screen_size !== '-' ? `<span class="spec-pill">📐 ${v.screen_size}</span>` : ''}
+            ${v.connectivity && v.connectivity !== '-' ? `<span class="spec-pill">📶 ${v.connectivity}</span>` : ''}
+          </div>
+
+          <div class="card-bottom">
+            <div class="price-group">
+              <span class="price-label">ราคาทางการ</span>
+              <span class="price-val">${v.formatted_price}</span>
+            </div>
+            <a href="${v.product_url}" target="_blank" rel="noopener" class="btn-buy">
+              ซื้อบน Apple ↗
+            </a>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Events
+    document.getElementById('categoryPills').addEventListener('click', e => {
+      if (e.target.tagName === 'BUTTON') {
+        document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        activeCategory = e.target.dataset.cat;
+        renderCatalog();
+      }
+    });
+
+    document.getElementById('searchInput').addEventListener('input', e => {
+      searchQuery = e.target.value.trim();
+      renderCatalog();
+    });
+
+    document.getElementById('sortSelect').addEventListener('change', e => {
+      sortMode = e.target.value;
+      renderCatalog();
+    });
+
+    loadDatabase();
+  </script>
+</body>
+</html>

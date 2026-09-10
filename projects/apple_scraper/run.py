@@ -9,24 +9,28 @@ sys.path.insert(0, str(BASE_DIR))
 
 from src.scrapers.apple_scraper import AppleScraper
 from src.scrapers.tech_specs_scraper import TechSpecsScraper
+from src.scrapers.catalog_crawler import AppleCatalogCrawler
 from src.services.storage import AppleStorageService
+from src.services.database_builder import AppleDatabaseBuilder
+from src.services.media_downloader import AppleMediaDownloader
 from config.settings import DEFAULT_LOCALE, BASE_APPLE_URL
 
 POPULAR_MODELS = {
-    "1": ("iPhone 16 Pro", "iphone-16-pro"),
-    "2": ("iPhone 16", "iphone-16"),
+    "1": ("iPhone 16", "iphone-16"),
+    "2": ("iPhone 15", "iphone-15"),
     "3": ("iPad Pro (M4)", "ipad-pro"),
-    "4": ("MacBook Pro (M3/M4)", "macbook-pro"),
-    "5": ("Apple Watch Ultra 2", "apple-watch-ultra-2")
+    "4": ("iPad Air (M2)", "ipad-air"),
+    "5": ("MacBook Air", "macbook-air"),
+    "6": ("MacBook Pro", "macbook-pro")
 }
 
 def print_banner():
-    print("=" * 72)
-    print("🍎 Apple Scraper — เครื่องมือดึงข้อมูลสินค้าทางการ สเปก & ราคาจาก Apple")
+    print("=" * 74)
+    print("🍎 Apple Scraper & Database Builder — ระบบดึงข้อมูลทางการ Apple ครบวงจร")
     print(f"   ฐานข้อมูลเป้าหมาย: Apple Store Thailand ({BASE_APPLE_URL}/{DEFAULT_LOCALE})")
-    print("=" * 72)
+    print("=" * 74)
 
-def run_scrape(url_or_path: str, download_images: bool = True):
+def run_scrape_single(url_or_path: str, download_images: bool = True):
     print(f"\n🚀 กำลังดึงข้อมูลจาก Apple: {url_or_path}")
     scraper = AppleScraper(locale=DEFAULT_LOCALE)
     specs_scraper = TechSpecsScraper(locale=DEFAULT_LOCALE)
@@ -67,53 +71,95 @@ def run_scrape(url_or_path: str, download_images: bool = True):
         print(f"   ↳ ดาวน์โหลดภาพสำเร็จ: {len(downloaded)} รูป ใน data/images/{slug}/")
 
     # 5. สรุปผลลัพธ์
-    print("\n" + "-" * 72)
+    print("\n" + "-" * 74)
     print(f"🏷️  สินค้า:        {title}")
     print(f"💰 ราคาเริ่มต้น:   {overview.get('starting_price_thb'):,} บาท" if overview.get('starting_price_thb') else "💰 ราคา:         ตรวจสอบใน Store")
     print(f"⚡ ชิปประมวลผล:   {overview.get('specs', {}).get('chip', '-')}")
     print(f"💾 ความจุ:        {', '.join(overview.get('capacities', [])) if overview.get('capacities') else '-'}")
     print(f"🎨 ตัวเลือกสี:     {', '.join(overview.get('colors', [])) if overview.get('colors') else '-'}")
     print(f"🔗 ลิงก์ต้นทาง:    {overview.get('url')}")
-    print("-" * 72 + "\n")
+    print("-" * 74 + "\n")
+
+def run_build_full_database():
+    """ดึงข้อมูลสินค้าทั้งหมดทุกหมวดหมู่ ทุกรุ่น ทุกสี ทุกราคา และสร้างฐานข้อมูล 3 รูปแบบ"""
+    crawler = AppleCatalogCrawler()
+    db_builder = AppleDatabaseBuilder()
+    media_downloader = AppleMediaDownloader()
+
+    # 1. Crawl all products
+    variants = crawler.crawl_all()
+    if not variants:
+        print("❌ ไม่พบข้อมูลสินค้า กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ต")
+        return
+
+    # 2. Build Databases
+    print("\n📦 กำลังสร้างฐานข้อมูล 4 รูปแบบ (JSON, CSV, SQLite, JS Bundle)...")
+    json_path = db_builder.build_json_database(variants, "apple_full_catalog.json")
+    js_path = db_builder.build_js_bundle(variants, "apple_catalog.js")
+    csv_path = db_builder.build_csv_database(variants, "apple_all_variants.csv")
+    db_path = db_builder.build_sqlite_database(variants, "apple_catalog.db")
+
+    # 3. Download sample images
+    print("\n📸 กำลังดาวน์โหลดรูปภาพสินค้าตัวอย่างแยกตามสี...")
+    media_downloader.download_variant_images(variants, max_per_family=2)
+
+    # 4. Summary
+    print("\n" + "=" * 74)
+    print("🎉 สร้างฐานข้อมูลสินค้า Apple สำเร็จสมบูรณ์ 100%!")
+    print(f"📦 จำนวนตัวเลือกสินค้าทั้งหมด:     {len(variants)} รายการ")
+    print(f"📄 1. JSON Database (สำหรับเว็บ):   {json_path}")
+    print(f"⚡ 2. JS Bundle (สำหรับเว็บตรง):     {js_path}")
+    print(f"📊 3. Master CSV (สำหรับ Excel):    {csv_path}")
+    print(f"🗄️ 4. SQLite DB (ฐานข้อมูล SQL):   {db_path}")
+    print(f"🌐 5. Web Preview Catalog:          {BASE_DIR / 'catalog_preview.html'}")
+    print("=" * 74 + "\n")
 
 def interactive_menu():
     while True:
         print_banner()
-        print("เลือกเมนูการดึงข้อมูล:")
+        print("เลือกเมนูการทำงาน:")
+        print("  [7] 🗄️ ดึงข้อมูลทุกรุ่น ทุกสี ทุกราคา & สร้างฐานข้อมูลเต็มรูปแบบ (Build Database)")
+        print("  --------------------------------------------------------------------------")
         for k, (name, path) in POPULAR_MODELS.items():
-            print(f"  [{k}] ดึงข้อมูล {name}")
-        print("  [6] ระบุ URL ของ Apple เอง (Custom Apple URL)")
+            print(f"  [{k}] ดึงข้อมูลเฉพาะรุ่น {name}")
+        print("  [8] ระบุ URL ของ Apple เอง (Custom Apple URL)")
         print("  [0] ออกจากโปรแกรม")
-        print("-" * 72)
+        print("-" * 74)
 
-        choice = input("👉 เลือกเมนู (0-6): ").strip()
+        choice = input("👉 เลือกเมนู (0-8): ").strip()
         if choice == "0":
             print("👋 ออกจากโปรแกรม ขอบคุณครับ!")
             break
+        elif choice == "7":
+            run_build_full_database()
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice in POPULAR_MODELS:
             _, path = POPULAR_MODELS[choice]
-            run_scrape(path)
-            input("กด Enter เพื่อกลับสู่เมนู...")
-        elif choice == "6":
+            run_scrape_single(path)
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
+        elif choice == "8":
             custom_url = input("🔗 ใส่ URL หน้าเว็บ Apple: ").strip()
             if custom_url:
-                run_scrape(custom_url)
-            input("กด Enter เพื่อกลับสู่เมนู...")
+                run_scrape_single(custom_url)
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         else:
             print("⚠️ ตัวเลือกไม่ถูกต้อง กรุณาลองใหม่\n")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        arg = sys.argv[1]
+        arg = sys.argv[1].lower()
         if arg in ["--help", "-h"]:
             print_banner()
             print("วิธีใช้:")
             print("  python3 run.py                                # เปิด Interactive Menu")
-            print("  python3 run.py <URL หรือ Product Slug>         # ดึงข้อมูลสินค้าระบุ URL")
+            print("  python3 run.py build-db                       # สร้างฐานข้อมูลทุกรุ่น ทุกสี ทุกราคา")
+            print("  python3 run.py <URL หรือ Product Slug>         # ดึงข้อมูลเฉพาะรุ่น")
             print("ตัวอย่าง:")
-            print("  python3 run.py iphone-16-pro")
-            print("  python3 run.py https://www.apple.com/th/macbook-pro/")
+            print("  python3 run.py build-db")
+            print("  python3 run.py iphone-16")
+        elif arg in ["build-db", "build_db", "database", "all"]:
+            run_build_full_database()
         else:
-            run_scrape(arg)
+            run_scrape_single(sys.argv[1])
     else:
         interactive_menu()

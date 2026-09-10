@@ -1,0 +1,48 @@
+{
+  "status": "success",
+  "title": "MacBook Pro",
+  "slug": "macbook-pro",
+  "family": "mac",
+  "url": "https://www.apple.com/th/macbook-pro",
+  "specs_url": "https://www.apple.com/th/macbook-pro/specs/",
+  "buy_url": "https://www.apple.com/th/shop/goto/buy_accessories",
+  "starting_price_thb": 5100,
+  "starting_price_text": "฿5,100",
+  "currency": "THB",
+  "description": "หา MacBook Pro ที่ดีที่สุดสำหรับคุณ ไม่ว่าจะเป็นรุ่นที่มาพร้อมชิป M5, M5 Pro หรือ M5 Max ซึ่งสร้างมาเพื่อ AI และยังมาพร้อมแบตเตอรี่ที่ใช้งานได้นานสูงสุด 24 ชั่วโมง รวมถึงจอภาพ Liquid Retina XDR",
+  "images_count": 86,
+  "images": [
+    "https://www.apple.com/v/macbook-pro/ax/images/meta/macbook-pro__difvbgz1plsi_og.png?202607070058",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/welcome/hero_endframe__fwev9ebh42mq_xlarge.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/welcome/hero_startframe__ek0dqbh61vau_xlarge.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/highlights/highlights_chip_endframe__dp975gwqppw2_large.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/highlights/highlights_chip_startframe__gbs8om3jrhim_large.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/highlights/highlights_ai__c1tao33ompea_large.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/highlights/highlights_battery__d7riytopt742_large.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/highlights/highlights_liquid_glass__fup1pqvqx866_large.jpg",
+    "https://www.apple.com/th/macbook-pro/images/overview/highlights/highlights_mac_iphone__cxajkjnjbx26_large.jpg",
+    "https://www.apple.com/v/macbook-pro/ax/images/overview/product-viewer/pv_hero_endframe__gc89p7dw1syi_large.jpg"
+  ],
+  "schema_ld": true,
+  "specs": {
+    "chip": "ชิป M5",
+    "display": "-",
+    "camera": "-",
+    "battery": "-",
+    "dimensions": "-",
+    "storage_options": "1TB, 2TB, 64GB, 128GB"
+  },
+  "capacities": [
+    "1TB",
+    "2TB",
+    "64GB",
+    "128GB"
+  ],
+  "colors": [
+    "ดำ",
+    "ทอง",
+    "เงิน",
+    "ฟ้า",
+    "สเปซแบล็ค"
+  ]
+}
