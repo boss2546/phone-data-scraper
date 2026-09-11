@@ -17,6 +17,7 @@ from src.services.media_downloader import AppleMediaDownloader
 from src.services.bg_remover import AppleBackgroundRemover
 from src.services.deep_asset_crawler import AppleDeepAssetCrawler
 from src.services.unified_catalog_builder import AppleUnifiedCatalogBuilder
+from src.services.compare_crawler import AppleCompareCrawler
 from config.settings import DEFAULT_LOCALE, BASE_APPLE_URL
 
 POPULAR_MODELS = {
@@ -144,7 +145,10 @@ def run_deep_assets():
     crawler = AppleDeepAssetCrawler()
     crawler.crawl_all_deep_products()
     crawler.download_curated_local_images(max_per_product=5, max_workers=8)
-    run_unify_catalog()
+def run_compare_crawler():
+    """ดึงข้อมูลรูปภาพและสีทางการทั้งหมดจากระบบ Apple Compare (188 รุ่น 515 สี Retina 2x)"""
+    crawler = AppleCompareCrawler()
+    crawler.crawl_all_compare_sources()
 
 def interactive_menu():
     while True:
@@ -154,6 +158,7 @@ def interactive_menu():
         print("  [6] 🔍 เจาะลึกรูปภาพทุกสินค้า แยก 6 หมวดหมู่ (Deep Product Media Gallery)")
         print("  [9] 🎨 ลบพื้นหลังภาพสินค้าทั้งหมดเป็น Transparent PNG (No-BG)")
         print("  [5] 🌟 จัดระเบียบและรวมข้อมูล Master Unified Catalog (Unify Data)")
+        print("  [4] ⚖️ ดึงรูปทุกรุ่นทุกสีจากระบบ Apple Compare (188 รุ่น 515 สี Retina 2x)")
         print("  --------------------------------------------------------------------------")
         for k, (name, path) in POPULAR_MODELS.items():
             print(f"  [{k}] ดึงข้อมูลเฉพาะรุ่น {name}")
@@ -176,6 +181,9 @@ def interactive_menu():
             input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice == "5":
             run_unify_catalog()
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
+        elif choice == "4":
+            run_compare_crawler()
             input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice in POPULAR_MODELS:
             _, path = POPULAR_MODELS[choice]
@@ -200,12 +208,14 @@ if __name__ == "__main__":
             print("  python3 run.py deep-assets                    # เจาะลึกรูปภาพ 4K ครบทุกหมวดหมู่")
             print("  python3 run.py remove-bg                      # ลบพื้นหลังสินค้าทั้งหมดเป็น Transparent PNG")
             print("  python3 run.py unify                          # รวมและจัดระเบียบข้อมูลเป็น Master Unified Catalog")
+            print("  python3 run.py compare                        # ดึงรูปทุกรุ่นทุกสีจากระบบ Apple Compare")
             print("  python3 run.py <URL หรือ Product Slug>         # ดึงข้อมูลเฉพาะรุ่น")
             print("ตัวอย่าง:")
             print("  python3 run.py build-db")
             print("  python3 run.py deep-assets")
             print("  python3 run.py remove-bg")
             print("  python3 run.py unify")
+            print("  python3 run.py compare")
             print("  python3 run.py iphone-16")
         elif arg in ["build-db", "build_db", "database", "all"]:
             run_build_full_database()
@@ -215,6 +225,8 @@ if __name__ == "__main__":
             run_remove_background()
         elif arg in ["unify", "master", "unified"]:
             run_unify_catalog()
+        elif arg in ["compare", "compare-models", "compare_all"]:
+            run_compare_crawler()
         else:
             run_scrape_single(sys.argv[1])
     else:

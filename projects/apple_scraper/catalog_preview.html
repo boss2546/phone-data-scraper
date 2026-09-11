@@ -1688,74 +1688,23 @@
        ========================================================================== -->
   <section class="compare-section" id="compare">
     <div class="section-header-apple">
-      <div class="eyebrow">ค้นหารุ่นที่ใช่สำหรับคุณ</div>
-      <h2>เปรียบเทียบสเปกทางการ Apple</h2>
-      <p>เปรียบเทียบขนาดมิติ น้ำหนัก หน้าจอ ชิปประมวลผล และราคาเริ่มต้นแบบหมัดต่อหมัด</p>
+      <div class="eyebrow">ระบบเปรียบเทียบทางการระดับไอคอนิก (Apple Compare)</div>
+      <h2>เปรียบเทียบได้ทุกรุ่น ทุกเจเนอเรชั่น และทุกสีสัน</h2>
+      <p>ดึงภาพความละเอียดสูงระดับ Retina 2x โดยตรงจาก Apple CDN ครอบคลุม 188 รุ่น 515 สีสัน (รองรับ iPhone, iPad, Mac, Watch)</p>
+    </div>
+
+    <!-- Category selector for compare -->
+    <div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;">
+      <button class="cat-pill-btn active" id="cmpCatIphone" onclick="switchCompareCategory('iphone', this)">iPhone (47 รุ่น)</button>
+      <button class="cat-pill-btn" id="cmpCatIpad" onclick="switchCompareCategory('ipad', this)">iPad (40 รุ่น)</button>
+      <button class="cat-pill-btn" id="cmpCatMac" onclick="switchCompareCategory('mac', this)">Mac (72 รุ่น)</button>
+      <button class="cat-pill-btn" id="cmpCatWatch" onclick="switchCompareCategory('watch', this)">Watch (29 รุ่น)</button>
     </div>
 
     <div class="compare-table-box">
-      <table class="compare-table">
-        <thead>
-          <tr>
-            <th>คุณสมบัติ</th>
-            <th>iPhone 16 Pro</th>
-            <th>iPhone 16</th>
-            <th>iPad Pro (M4)</th>
-            <th>MacBook Pro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>ภาพตัวเครื่อง</td>
-            <td><img src="data/images_transparent/iphone/iphone-16-pro/desert-titanium.png" style="height: 110px; object-fit: contain;" alt="iPhone 16 Pro"></td>
-            <td><img src="data/images_transparent/iphone/iphone-16/ultramarine.png" style="height: 110px; object-fit: contain;" alt="iPhone 16"></td>
-            <td><img src="data/images_transparent/ipad/ipad-pro-m4/space-black.png" style="height: 110px; object-fit: contain;" alt="iPad Pro"></td>
-            <td><img src="data/images_transparent/mac/macbook-pro/space-black.png" style="height: 110px; object-fit: contain;" alt="MacBook Pro"></td>
-          </tr>
-          <tr>
-            <td>ราคาเริ่มต้น</td>
-            <td><strong style="color: var(--text-primary);">฿39,900</strong></td>
-            <td><strong style="color: var(--text-primary);">฿29,900</strong></td>
-            <td><strong style="color: var(--text-primary);">฿39,900</strong></td>
-            <td><strong style="color: var(--text-primary);">฿59,900</strong></td>
-          </tr>
-          <tr>
-            <td>ชิปประมวลผล</td>
-            <td>ชิป A18 Pro พร้อม GPU 6-core</td>
-            <td>ชิป A18 พร้อม GPU 5-core</td>
-            <td>ชิป Apple M4 สูงสุด CPU 10-core</td>
-            <td>ชิป M4, M4 Pro หรือ M4 Max</td>
-          </tr>
-          <tr>
-            <td>ขนาดหน้าจอ</td>
-            <td>6.3 นิ้ว หรือ 6.9 นิ้ว ProMotion 120Hz</td>
-            <td>6.1 นิ้ว หรือ 6.7 นิ้ว Super Retina XDR</td>
-            <td>11 นิ้ว หรือ 13 นิ้ว Ultra Retina XDR Tandem OLED</td>
-            <td>14.2 นิ้ว หรือ 16.2 นิ้ว Liquid Retina XDR</td>
-          </tr>
-          <tr>
-            <td>ระบบกล้อง</td>
-            <td>ระดับโปร: 48MP Fusion + 48MP Ultra Wide + 5x Telephoto</td>
-            <td>ระบบกล้องคู่: 48MP Fusion + 12MP Ultra Wide</td>
-            <td>กล้องไวด์ 12MP พร้อม LiDAR Scanner</td>
-            <td>กล้อง Center Stage 12MP บันทึก 1080p</td>
-          </tr>
-          <tr>
-            <td>น้ำหนักตัวเครื่อง</td>
-            <td>199 ก. (Pro) / 227 ก. (Pro Max)</td>
-            <td>170 ก. (16) / 199 ก. (Plus)</td>
-            <td>444 ก. (11") / 579 ก. (13")</td>
-            <td>1.55 กก. (14") / 2.14 กก. (16")</td>
-          </tr>
-          <tr>
-            <td>Apple Intelligence</td>
-            <td>✅ รองรับเต็มประสิทธิภาพ</td>
-            <td>✅ รองรับเต็มประสิทธิภาพ</td>
-            <td>✅ รองรับเต็มประสิทธิภาพ</td>
-            <td>✅ รองรับเต็มประสิทธิภาพ</td>
-          </tr>
-        </tbody>
-      </table>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 28px;" id="compareColumnsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
     </div>
   </section>
 
@@ -1860,6 +1809,7 @@
        JAVASCRIPT LOGIC & MASTER CATALOG INTEGRATION
        ========================================================================== -->
   <script src="data/exports/apple_unified_catalog.js"></script>
+  <script src="data/exports/apple_compare_catalog.js"></script>
   <script>
     // Global Application State
     const state = {
@@ -1874,6 +1824,13 @@
       galleryProductId: 'iphone-16-pro',
       searchQuery: '',
       catalog: null
+    };
+
+    // Apple Compare Studio State (Initialized to user's exact models: iphone-duo, iphone-18-pro-max, iphone-8-plus)
+    const compareState = {
+      category: 'iphone',
+      selectedModels: ['iphone-duo', 'iphone-18-pro-max', 'iphone-8-plus'],
+      selectedFinishes: [null, null, null]
     };
 
     // Initialize App on DOM Ready
@@ -1892,8 +1849,20 @@
           })
           .catch(err => {
             console.error('Could not load unified catalog directly, using mock fallback', err);
-            initAppWithFallback();
           });
+      }
+
+      // Check compare catalog
+      if (!window.APPLE_COMPARE_CATALOG) {
+        fetch('data/exports/apple_compare_all_models.json')
+          .then(res => res.json())
+          .then(data => {
+            window.APPLE_COMPARE_CATALOG = data;
+            renderCompareColumns();
+          })
+          .catch(err => console.error('Compare catalog fetch fallback', err));
+      } else {
+        renderCompareColumns();
       }
     });
 
@@ -1903,6 +1872,106 @@
       renderProductCards();
       renderGallery();
       populateGalleryModelSelect();
+      renderCompareColumns();
+    }
+
+    /* --------------------------------------------------------------------------
+       Apple Compare Studio Functions
+       -------------------------------------------------------------------------- */
+    function switchCompareCategory(cat, btn) {
+      compareState.category = cat;
+      document.querySelectorAll('#compare .cat-pill-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      
+      const compData = window.APPLE_COMPARE_CATALOG;
+      if (compData && compData.data && compData.data[cat]) {
+        const models = Object.keys(compData.data[cat].models);
+        compareState.selectedModels = [
+          models[0] || '',
+          models[1] || models[0] || '',
+          models[2] || models[0] || ''
+        ];
+        compareState.selectedFinishes = [null, null, null];
+        renderCompareColumns();
+      }
+    }
+
+    function renderCompareColumns() {
+      const container = document.getElementById('compareColumnsGrid');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const compData = window.APPLE_COMPARE_CATALOG;
+      const catData = compData && compData.data && compData.data[compareState.category];
+      if (!catData || !catData.models) {
+        container.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">กำลังเชื่อมโยงฐานข้อมูล Apple Compare...</div>';
+        return;
+      }
+
+      const allModelKeys = Object.keys(catData.models);
+
+      compareState.selectedModels.forEach((modelId, colIdx) => {
+        const model = catData.models[modelId] || catData.models[allModelKeys[0]];
+        if (!model) return;
+        const finishes = model.finishes || [];
+        
+        if (!compareState.selectedFinishes[colIdx] || !finishes.some(f => f.color_id === compareState.selectedFinishes[colIdx])) {
+          compareState.selectedFinishes[colIdx] = finishes.length > 0 ? finishes[0].color_id : null;
+        }
+        const currentFinish = finishes.find(f => f.color_id === compareState.selectedFinishes[colIdx]) || finishes[0];
+        const imgSrc = currentFinish ? currentFinish.image_url : '';
+
+        const col = document.createElement('div');
+        col.className = 'compare-col-card';
+        col.style.cssText = 'background: var(--bg-tertiary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; transition: var(--transition-smooth);';
+
+        const optionsHtml = allModelKeys.map(k => {
+          const m = catData.models[k];
+          return `<option value="${k}" ${k === model.model_id ? 'selected' : ''}>${m.name_th}</option>`;
+        }).join('');
+
+        const swatchesHtml = finishes.map(f => {
+          const isActive = f.color_id === (currentFinish ? currentFinish.color_id : '');
+          return `<button class="swatch-dot ${isActive ? 'active' : ''}" style="width: 22px; height: 22px; background: ${f.hex || '#888'}; margin: 3px;" title="${f.name_th}" onclick="changeCompareColumnFinish(${colIdx}, '${f.color_id}')"></button>`;
+        }).join('');
+
+        col.innerHTML = `
+          <select style="width: 100%; padding: 10px 12px; background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); font-family: inherit; font-size: 14px; font-weight: 600; margin-bottom: 16px; outline: none; cursor: pointer;" onchange="changeCompareColumnModel(${colIdx}, this.value)">
+            ${optionsHtml}
+          </select>
+
+          <div style="height: 220px; display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 14px;">
+            <img id="cmpImgCol${colIdx}" src="${imgSrc}" alt="${model.name_th}" style="max-width: 88%; max-height: 88%; object-fit: contain; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.35)); transition: transform 0.3s ease;">
+          </div>
+
+          <div style="font-size: 13px; font-weight: 500; color: var(--text-secondary); margin-bottom: 8px;">
+            สี: <strong style="color: var(--text-primary);">${currentFinish ? currentFinish.name_th : '-'}</strong>
+          </div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-bottom: 18px; min-height: 32px;">
+            ${swatchesHtml}
+          </div>
+
+          <div style="width: 100%; border-top: 1px solid var(--border-subtle); padding-top: 14px; font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-top: auto;">
+            <div>ตัวเลือกสีทางการ: <strong style="color: var(--text-primary);">${finishes.length} สี</strong></div>
+            <div>ความละเอียด: <strong style="color: var(--badge-new);">Apple Retina 2x</strong></div>
+            <a href="https://www.apple.com/th/iphone/compare/?modelList=${compareState.selectedModels.join(',')}" target="_blank" style="display: inline-block; margin-top: 8px; color: var(--accent-blue); font-weight: 500;">เปิดบน Apple Compare ↗</a>
+          </div>
+        `;
+
+        container.appendChild(col);
+      });
+    }
+
+    function changeCompareColumnModel(colIdx, modelId) {
+      compareState.selectedModels[colIdx] = modelId;
+      compareState.selectedFinishes[colIdx] = null;
+      renderCompareColumns();
+    }
+
+    function changeCompareColumnFinish(colIdx, finishId) {
+      compareState.selectedFinishes[colIdx] = finishId;
+      renderCompareColumns();
     }
 
     /* --------------------------------------------------------------------------

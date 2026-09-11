@@ -1,0 +1,5684 @@
+/**
+ * Apple Official Compare Catalog Web SDK
+ * Direct Apple CDN Retina Images for All Models & Finishes
+ */
+(function(root) {
+  var COMPARE_DATA = {
+  "metadata": {
+    "catalog_title": "Apple Official Compare Master Catalog",
+    "version": "1.0.0",
+    "source_url": "https://www.apple.com/th/iphone/compare/",
+    "generated_at": "2026-09-11 20:04:46",
+    "total_models": 188,
+    "total_finishes": 515,
+    "categories": [
+      "iphone",
+      "ipad",
+      "mac",
+      "watch"
+    ]
+  },
+  "data": {
+    "iphone": {
+      "models": {
+        "iphone-se": {
+          "model_id": "iphone-se",
+          "name_th": "iPhone SE",
+          "name_en": "iPhone SE",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_spacegray__ex217y3ezw2u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_silver__eu3xyadim5oy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_gold__gkylkrwxudyu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_rosegold__dkqugeko7xyu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-se-2nd-gen": {
+          "model_id": "iphone-se-2nd-gen",
+          "name_th": "iPhone SE 2nd Gen",
+          "name_en": "iPhone SE 2nd Gen",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_2nd_gen_black__d4pi98rfqt0m_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_2nd_gen_red__csxc5y9k18sy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_2nd_gen_white__ez0kw0j3osq6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-se-3rd-gen": {
+          "model_id": "iphone-se-3rd-gen",
+          "name_th": "iPhone SE 3rd Gen",
+          "name_en": "iPhone SE 3rd Gen",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_3rd_gen_midnight__c57d9v9oipyu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_3rd_gen_red__do7m5pqh39ci_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneSE_3rd_gen_starlight__f3ys7aooaiqi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-6": {
+          "model_id": "iphone-6",
+          "name_th": "iPhone 6",
+          "name_en": "iPhone 6",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6_spacegray__dvt92tqoayky_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6_silver__dcp219t617o2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6_gold__4x8fel5i4si2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-6-plus": {
+          "model_id": "iphone-6-plus",
+          "name_th": "iPhone 6 Plus",
+          "name_en": "iPhone 6 Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6plus_spacegray__sk2v2sul4eye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6plus_silver__css7ca6dqd8i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6plus_gold__eabfkxtc0xci_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-6s": {
+          "model_id": "iphone-6s",
+          "name_th": "iPhone 6s",
+          "name_en": "iPhone 6s",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6s_gold__emsvzspmbe0y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6s_rosegold__cc2f40org3py_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6s_silver__frovt6hw3kmu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6s_spacegray__drfferlgnewm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-6s-plus": {
+          "model_id": "iphone-6s-plus",
+          "name_th": "iPhone 6s Plus",
+          "name_en": "iPhone 6s Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6splus_gold__bcqejkjpr09u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6splus_rosegold__bxuwwydfy5xy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6splus_silver__f9y3ko7dnxim_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone6splus_spacegray__b5kb8neyuff6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-7": {
+          "model_id": "iphone-7",
+          "name_th": "iPhone 7",
+          "name_en": "iPhone 7",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7_black__gdwleruk1yqa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7_gold__gkqq1b090vqu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "jetblack",
+              "name_th": "ดำเจ็ทแบล็ค",
+              "name_en": "Jet Black",
+              "hex": "#0a0a0a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7_jetblack__eabjdnoxpbwy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7_rosegold__fjkhj93z3r2i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7_silver__c3h3j4sxy5iu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-7-plus": {
+          "model_id": "iphone-7-plus",
+          "name_th": "iPhone 7 Plus",
+          "name_en": "iPhone 7 Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7plus_black__d3i1w0xfd926_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7plus_gold__sy2naisxwcya_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "jetblack",
+              "name_th": "ดำเจ็ทแบล็ค",
+              "name_en": "Jet Black",
+              "hex": "#0a0a0a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7plus_jetblack__cd7pqf285fci_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7plus_rosegold__d1626v7rskmu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone7plus_silver__da6f8856pigm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-8": {
+          "model_id": "iphone-8",
+          "name_th": "iPhone 8",
+          "name_en": "iPhone 8",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8_gold__kna4kqz7yyiy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8_silver__dgain2f41866_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8_spacegray__eer4a549ezwy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8_red__dpkaozridguq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-8-plus": {
+          "model_id": "iphone-8-plus",
+          "name_th": "iPhone 8 Plus",
+          "name_en": "iPhone 8 Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8plus_gold__ggo0wbuwtomm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8plus_silver__fm5qjyu86zmi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8plus_spacegray__ex27235welkm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone8plus_red__bcfie54egsoy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-x": {
+          "model_id": "iphone-x",
+          "name_th": "iPhone X",
+          "name_en": "iPhone X",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneX_silver__c72upjrz5toy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneX_spacegray__65fr9mfeduaa_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-xr": {
+          "model_id": "iphone-xr",
+          "name_th": "iPhone Xr",
+          "name_en": "iPhone Xr",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXR_blue__9z6k0yct3wye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXR_white__gi0q02dhesey_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXR_black__5fvlyykx3bm6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXR_yellow__b4ux4f7n3xle_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "coral",
+              "name_th": "คอรัล",
+              "name_en": "Coral",
+              "hex": "#ee6d55",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXR_coral__ckmesqgoxryq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXR_red__bm4kf4exy4mu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-xs-max": {
+          "model_id": "iphone-xs-max",
+          "name_th": "iPhone Xs Max",
+          "name_en": "iPhone Xs Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXSmax_gold__bz8xhej5gauu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXSmax_silver__fifsjcb7h2my_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXSmax_spacegray__dm2cub991bau_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-xs": {
+          "model_id": "iphone-xs",
+          "name_th": "iPhone Xs",
+          "name_en": "iPhone Xs",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXS_gold__89oujwqn6iq2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXS_silver__euy0jibjjkia_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphoneXS_spacegray__dyx8m6aa9pw2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-11-pro-max": {
+          "model_id": "iphone-11-pro-max",
+          "name_th": "iPhone 11 Pro Max",
+          "name_en": "iPhone 11 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_max_gold__fw9uqr5wdqa2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_max_silver__gex9b2t8hx2e_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_max_spacegrey__dut95hfk3j42_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnightgreen",
+              "name_th": "มิดไนท์กรีน",
+              "name_en": "Midnight Green",
+              "hex": "#4e5851",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_max_midnightgreen__dhu7a2mzfpoy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-11-pro": {
+          "model_id": "iphone-11-pro",
+          "name_th": "iPhone 11 Pro",
+          "name_en": "iPhone 11 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_gold__c24q20hey2i6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_silver__ckxa8mvp0ej6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_spacegrey__5tufecsmnjmq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnightgreen",
+              "name_th": "มิดไนท์กรีน",
+              "name_en": "Midnight Green",
+              "hex": "#4e5851",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_pro_midnightgreen__ghme5a7mxnqm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-11": {
+          "model_id": "iphone-11",
+          "name_th": "iPhone 11",
+          "name_en": "iPhone 11",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_purple__dncianr6j2uu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_white__c1bigtkwcsq6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_black__luskajpcyaaa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_yellow__dnty92kzldg2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_green__c1vgig828paq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone11_red__b22porlgz2qa_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-12-pro-max": {
+          "model_id": "iphone-12-pro-max",
+          "name_th": "iPhone 12 Pro Max",
+          "name_en": "iPhone 12 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_max_gold__bknb963nzyqa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "graphite",
+              "name_th": "กราไฟต์",
+              "name_en": "Graphite",
+              "hex": "#5c5b57",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_max_graphite__b6j4sfia3yaa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pacificblue",
+              "name_th": "แปซิฟิกบลู",
+              "name_en": "Pacific Blue",
+              "hex": "#2d4e5c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_max_pacific_blue__i251ea884ei6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_max_silver__1mkvn3uvleqi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-12-pro": {
+          "model_id": "iphone-12-pro",
+          "name_th": "iPhone 12 Pro",
+          "name_en": "iPhone 12 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_gold__b8fkcnuqh8vm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "graphite",
+              "name_th": "กราไฟต์",
+              "name_en": "Graphite",
+              "hex": "#5c5b57",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_graphite__exopjoz6u2ye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pacificblue",
+              "name_th": "แปซิฟิกบลู",
+              "name_en": "Pacific Blue",
+              "hex": "#2d4e5c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_pacific_blue__gniw0xbrh7ue_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_pro_silver__fdy4rgvkd26a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-12-mini": {
+          "model_id": "iphone-12-mini",
+          "name_th": "iPhone 12 Mini",
+          "name_en": "iPhone 12 Mini",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_mini_black__f27jirmfeomu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_mini_blue__iyr1fvvjraai_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_mini_green__3ndpo9itp42u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_mini_purple__gm5blksev6ai_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_mini_red__er2imbeznvgy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_mini_white__fhgs1mo2zgmm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-12": {
+          "model_id": "iphone-12",
+          "name_th": "iPhone 12",
+          "name_en": "iPhone 12",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_black__gj93q2eeofma_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_blue__ffk87fz4nuqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_green__cua80qomesgi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_purple__dgt75n0isaeu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_red__3fpikxvolteu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone12_white__bkv9u0pios6a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-13-pro-max": {
+          "model_id": "iphone-13-pro-max",
+          "name_th": "iPhone 13 Pro Max",
+          "name_en": "iPhone 13 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_max_silver__dbfz7im067e6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "graphite",
+              "name_th": "กราไฟต์",
+              "name_en": "Graphite",
+              "hex": "#5c5b57",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_max_graphite__e0rjnrin6ncm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "sierrablue",
+              "name_th": "เซียร์ราบลู",
+              "name_en": "Sierra Blue",
+              "hex": "#9bb5ce",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_max_sierra_blue__ccdnnwrapdau_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_max_gold__dpkma79ndo8y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "alpinegreen",
+              "name_th": "อัลไพน์กรีน",
+              "name_en": "Alpine Green",
+              "hex": "#505e4c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_max_alpine_green__erdqy93lc18i_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-13-pro": {
+          "model_id": "iphone-13-pro",
+          "name_th": "iPhone 13 Pro",
+          "name_en": "iPhone 13 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_silver__dzq8ol0di7ee_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "graphite",
+              "name_th": "กราไฟต์",
+              "name_en": "Graphite",
+              "hex": "#5c5b57",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_graphite__1v1ipyvu1eae_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "sierrablue",
+              "name_th": "เซียร์ราบลู",
+              "name_en": "Sierra Blue",
+              "hex": "#9bb5ce",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_sierra_blue__q5g805k09uym_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_gold__ea2j8y7hska6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "alpinegreen",
+              "name_th": "อัลไพน์กรีน",
+              "name_en": "Alpine Green",
+              "hex": "#505e4c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pro_alpine_green__d3ggyu8riw66_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-13": {
+          "model_id": "iphone-13",
+          "name_th": "iPhone 13",
+          "name_en": "iPhone 13",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_starlight__135hisvufoim_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_midnight__dc2w8cyhc9iu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_blue__dn52e83eu5yu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_pink__e3vv1er86eqa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_product_red__gmrn6xy6l4ya_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_green__e9rhd84kj3yq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-13-mini": {
+          "model_id": "iphone-13-mini",
+          "name_th": "iPhone 13 Mini",
+          "name_en": "iPhone 13 Mini",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_mini_starlight__mg21bdoe6f62_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_mini_midnight__e8z05098gnma_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_mini_blue__e1ohuf2klquu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_mini_pink__blln0h9o7f0i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_mini_product_red__c0x8iraijcmu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone13_mini_green__eaa4pvqtsbiq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-14-pro-max": {
+          "model_id": "iphone-14-pro-max",
+          "name_th": "iPhone 14 Pro Max",
+          "name_en": "iPhone 14 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "deeppurple",
+              "name_th": "ม่วงเข้ม",
+              "name_en": "Deep Purple",
+              "hex": "#4e4554",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_max_deep_purple__r2k8f3zaymi6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_max_gold__ssb2j2q92mi6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_max_silver__esuba240yvqu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_max_space_black__dve23pjslceq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-14-pro": {
+          "model_id": "iphone-14-pro",
+          "name_th": "iPhone 14 Pro",
+          "name_en": "iPhone 14 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "deeppurple",
+              "name_th": "ม่วงเข้ม",
+              "name_en": "Deep Purple",
+              "hex": "#4e4554",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_deep_purple__p5fjz0npooiq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_gold__cqyq3tm1zuxe_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_silver__knexgp9cr5m6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_pro_space_black__dym2kqku7n6u_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-14": {
+          "model_id": "iphone-14",
+          "name_th": "iPhone 14",
+          "name_en": "iPhone 14",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_starlight__f6rbukewn0mu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_midnight__bvwj36frtody_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_blue__c9pjeddi2qye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_red__bu1vzrxdbf7m_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_purple__cjajxy1iclg2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_yellow__fvyq7k2nn4ya_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-14-plus": {
+          "model_id": "iphone-14-plus",
+          "name_th": "iPhone 14 Plus",
+          "name_en": "iPhone 14 Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_plus_starlight__f49kqx4mhlea_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_plus_midnight__c9kmil1aq0ae_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_plus_blue__ct1alvw58q82_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "red",
+              "name_th": "แดง (PRODUCT)RED",
+              "name_en": "(PRODUCT)RED",
+              "hex": "#ba0c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_plus_red__zu2trl902due_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_plus_purple__ebfjg5vvyu0y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone14_plus_yellow__cijyg33497rm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-15-pro-max": {
+          "model_id": "iphone-15-pro-max",
+          "name_th": "iPhone 15 Pro Max",
+          "name_en": "iPhone 15 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "naturaltitanium",
+              "name_th": "ไทเทเนียมธรรมชาติ",
+              "name_en": "Natural Titanium",
+              "hex": "#9c968f",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_max_natural_titanium__byvhspupwiuq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "bluetitanium",
+              "name_th": "ไทเทเนียมน้ำเงิน",
+              "name_en": "Blue Titanium",
+              "hex": "#3d4553",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_max_blue_titanium__c8xeminnbm82_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "whitetitanium",
+              "name_th": "ไทเทเนียมขาว",
+              "name_en": "White Titanium",
+              "hex": "#ecebe7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_max_white_titanium__citdiqo2e0gi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blacktitanium",
+              "name_th": "ไทเทเนียมดำ",
+              "name_en": "Black Titanium",
+              "hex": "#3c3b3a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_max_black_titanium__djidfm1dcmie_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-15-pro": {
+          "model_id": "iphone-15-pro",
+          "name_th": "iPhone 15 Pro",
+          "name_en": "iPhone 15 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "naturaltitanium",
+              "name_th": "ไทเทเนียมธรรมชาติ",
+              "name_en": "Natural Titanium",
+              "hex": "#9c968f",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_natural_titanium__scqfo7q20n2i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "bluetitanium",
+              "name_th": "ไทเทเนียมน้ำเงิน",
+              "name_en": "Blue Titanium",
+              "hex": "#3d4553",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_blue_titanium__bima7n6vpb0i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "whitetitanium",
+              "name_th": "ไทเทเนียมขาว",
+              "name_en": "White Titanium",
+              "hex": "#ecebe7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_white_titanium__gnb53137x2um_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blacktitanium",
+              "name_th": "ไทเทเนียมดำ",
+              "name_en": "Black Titanium",
+              "hex": "#3c3b3a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pro_black_titanium__etz96gq8ruoi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-15": {
+          "model_id": "iphone-15",
+          "name_th": "iPhone 15",
+          "name_en": "iPhone 15",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_pink__d2gop48s2aye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_yellow__bqka09cyvqia_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_green__f6r83449uoyi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_blue__cq4qefddyl8i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_black__eer8kwdkdjyq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-15-plus": {
+          "model_id": "iphone-15-plus",
+          "name_th": "iPhone 15 Plus",
+          "name_en": "iPhone 15 Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_plus_pink__fai0b9il6cq6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_plus_yellow__bqpclyoi3muu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_plus_green__c2dkb4wvkgae_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_plus_blue__9fcof0t4lk2i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone15_plus_black__chh9za6pd2vm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-16-pro-max": {
+          "model_id": "iphone-16-pro-max",
+          "name_th": "iPhone 16 Pro Max",
+          "name_en": "iPhone 16 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "deserttitanium",
+              "name_th": "ไทเทเนียมทะเลทราย",
+              "name_en": "Desert Titanium",
+              "hex": "#c2a891",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_max_desert_titanium__f8058hcu01ua_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "naturaltitanium",
+              "name_th": "ไทเทเนียมธรรมชาติ",
+              "name_en": "Natural Titanium",
+              "hex": "#9c968f",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_max_natural_titanium__finz5cbww0mm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "whitetitanium",
+              "name_th": "ไทเทเนียมขาว",
+              "name_en": "White Titanium",
+              "hex": "#ecebe7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_max_white_titanium__nrwzujp5v762_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blacktitanium",
+              "name_th": "ไทเทเนียมดำ",
+              "name_en": "Black Titanium",
+              "hex": "#3c3b3a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_max_black_titanium__evlilxt8g2mq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-16-pro": {
+          "model_id": "iphone-16-pro",
+          "name_th": "iPhone 16 Pro",
+          "name_en": "iPhone 16 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "deserttitanium",
+              "name_th": "ไทเทเนียมทะเลทราย",
+              "name_en": "Desert Titanium",
+              "hex": "#c2a891",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_desert_titanium__ftixjyyve6qi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "naturaltitanium",
+              "name_th": "ไทเทเนียมธรรมชาติ",
+              "name_en": "Natural Titanium",
+              "hex": "#9c968f",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_natural_titanium__b58sfb3hvv36_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "whitetitanium",
+              "name_th": "ไทเทเนียมขาว",
+              "name_en": "White Titanium",
+              "hex": "#ecebe7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_white_titanium__mjfjda73w72q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blacktitanium",
+              "name_th": "ไทเทเนียมดำ",
+              "name_en": "Black Titanium",
+              "hex": "#3c3b3a",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pro_black_titanium__c7t71uah5qky_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-16": {
+          "model_id": "iphone-16",
+          "name_th": "iPhone 16",
+          "name_en": "iPhone 16",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "ultramarine",
+              "name_th": "อัลตร้ามารีน",
+              "name_en": "Ultramarine",
+              "hex": "#768cb7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_ultramarine__sr260qois4am_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "teal",
+              "name_th": "เขียวอมฟ้า",
+              "name_en": "Teal",
+              "hex": "#a3ccd0",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_teal__fkzqehm57iai_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_pink__fzr1z22a7m2q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_white__dcn5vobxo7ki_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_black__bedc0hlw316q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-16-plus": {
+          "model_id": "iphone-16-plus",
+          "name_th": "iPhone 16 Plus",
+          "name_en": "iPhone 16 Plus",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "ultramarine",
+              "name_th": "อัลตร้ามารีน",
+              "name_en": "Ultramarine",
+              "hex": "#768cb7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_plus_ultramarine__fedlzqf2pmqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "teal",
+              "name_th": "เขียวอมฟ้า",
+              "name_en": "Teal",
+              "hex": "#a3ccd0",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_plus_teal__fd5m157o5h6y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_plus_pink__egpda1o8qu82_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_plus_white__rqden70u9uqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16_plus_black__fzb15ieuikey_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-16e": {
+          "model_id": "iphone-16e",
+          "name_th": "iPhone 16e",
+          "name_en": "iPhone 16e",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16e_white__qfwztyphaj2u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone16e_black__folwa2rvc3ma_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-17e": {
+          "model_id": "iphone-17e",
+          "name_th": "iPhone 17e",
+          "name_en": "iPhone 17e",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "softpink",
+              "name_th": "ซอฟต์พิงค์",
+              "name_en": "Soft Pink",
+              "hex": "#f8bbd0",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17e_pink__bj426l1s94gi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17e_white__dznzme1jxvki_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17e_black__f8ox5biet3au_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-17": {
+          "model_id": "iphone-17",
+          "name_th": "iPhone 17",
+          "name_en": "iPhone 17",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "lavender",
+              "name_th": "ลาเวนเดอร์",
+              "name_en": "Lavender",
+              "hex": "#d1c4e9",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_lavender__etuerbkei0ya_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "sage",
+              "name_th": "เซจ",
+              "name_en": "Sage",
+              "hex": "#9cad97",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_sage__edsxj53vsn0i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "mistblue",
+              "name_th": "มิสต์บลู",
+              "name_en": "Mist Blue",
+              "hex": "#b0c4de",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_mist_blue__fjf0c9euujee_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_white__cddjqf5mzlaq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_black__epmfmcpap0sy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-17-pro": {
+          "model_id": "iphone-17-pro",
+          "name_th": "iPhone 17 Pro",
+          "name_en": "iPhone 17 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "cosmicorange",
+              "name_th": "คอสมิกออเรนจ์",
+              "name_en": "Cosmic Orange",
+              "hex": "#e67e22",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_pro_cosmic_orange__dm1qripnvq82_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_pro_silver__c7bbt5uwieye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "deepblue",
+              "name_th": "ดีพบลู",
+              "name_en": "Deep Blue",
+              "hex": "#1a365d",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_pro_deep_blue__dz8sfcp4h742_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-17-pro-max": {
+          "model_id": "iphone-17-pro-max",
+          "name_th": "iPhone 17 Pro Max",
+          "name_en": "iPhone 17 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "cosmicorange",
+              "name_th": "คอสมิกออเรนจ์",
+              "name_en": "Cosmic Orange",
+              "hex": "#e67e22",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_pro_max_cosmic_orange__d7yolstz8cmu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_pro_max_silver__dtw5i9e8osmu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "deepblue",
+              "name_th": "ดีพบลู",
+              "name_en": "Deep Blue",
+              "hex": "#1a365d",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone17_pro_max_deep_blue__frgcd836v866_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-air": {
+          "model_id": "iphone-air",
+          "name_th": "iPhone Air",
+          "name_en": "iPhone Air",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "skyblue",
+              "name_th": "สกายบลู",
+              "name_en": "Sky Blue",
+              "hex": "#87ceeb",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_air_sky_blue__kvm15b10x6qa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "lightgold",
+              "name_th": "ไลท์โกลด์",
+              "name_en": "Light Gold",
+              "hex": "#faebd7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_air_light_gold__c1s3ly3yjuc2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "cloudwhite",
+              "name_th": "คลาวด์ไวท์",
+              "name_en": "Cloud White",
+              "hex": "#f7f9fa",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_air_cloud_white__fay39sc7sru6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_air_space_black__erjeo9fa6oa6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-duo": {
+          "model_id": "iphone-duo",
+          "name_th": "iPhone Duo",
+          "name_en": "iPhone Duo",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "star-white",
+              "name_th": "สตาร์ไวท์",
+              "name_en": "Star White",
+              "hex": "#f5f5f7",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_duo_star_white__f2s3n9ds95ay_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "night-sky",
+              "name_th": "ไนท์สกาย",
+              "name_en": "Night Sky",
+              "hex": "#191924",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_duo_night_sky__l4khpo7rqpeu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-18-pro": {
+          "model_id": "iphone-18-pro",
+          "name_th": "iPhone 18 Pro",
+          "name_en": "iPhone 18 Pro",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_black__f7t3q1k8wfiq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "burgundy",
+              "name_th": "เบอร์กันดี",
+              "name_en": "Burgundy",
+              "hex": "#6b1724",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_burgundy__mdv9ns7r6oa6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "glacier",
+              "name_th": "เกลเซียร์",
+              "name_en": "Glacier",
+              "hex": "#d4e6f1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_glacier__f830jkql73iy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_silver__w26x0ab2ln6a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "iphone-18-pro-max": {
+          "model_id": "iphone-18-pro-max",
+          "name_th": "iPhone 18 Pro Max",
+          "name_en": "iPhone 18 Pro Max",
+          "category": "iphone",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_max_black__s6eln189sr2u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "burgundy",
+              "name_th": "เบอร์กันดี",
+              "name_en": "Burgundy",
+              "hex": "#6b1724",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_max_burgundy__dcz67l4005oy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "glacier",
+              "name_th": "เกลเซียร์",
+              "name_en": "Glacier",
+              "hex": "#d4e6f1",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_max_glacier__f6f28qwmryuu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/iphone/compare/am/images/overview/compare_iphone_18_pro_max_silver__bkvexz4dqd36_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        }
+      },
+      "total_finishes": 198
+    },
+    "ipad": {
+      "models": {
+        "ipad-pro-13-m5": {
+          "model_id": "ipad-pro-13-m5",
+          "name_th": "iPad Pro 13 M5",
+          "name_en": "iPad Pro 13 M5",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_13_m5_silver__dyubev4o3s8y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_13_m5_spaceblack__eim4xjmegeuu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-13-m4": {
+          "model_id": "ipad-pro-13-m4",
+          "name_th": "iPad Pro 13 M4",
+          "name_en": "iPad Pro 13 M4",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_13_m4_silver__f6alcd7cbhe2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_13_m4_spaceblack__bq18ddlcrtaq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-12-9-6th-gen": {
+          "model_id": "ipad-pro-12-9-6th-gen",
+          "name_th": "iPad Pro 12 9 6th Gen",
+          "name_en": "iPad Pro 12 9 6th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_6th_gen_silver__b6tr6m3qil6q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_6th_gen_spacegray__er50uf4o1smu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-12-9-5th-gen": {
+          "model_id": "ipad-pro-12-9-5th-gen",
+          "name_th": "iPad Pro 12 9 5th Gen",
+          "name_en": "iPad Pro 12 9 5th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_5th_gen_silver__eandh1wqe30i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_5th_gen_spacegray__ds6wgu3af8ae_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-12-9-4th-gen": {
+          "model_id": "ipad-pro-12-9-4th-gen",
+          "name_th": "iPad Pro 12 9 4th Gen",
+          "name_en": "iPad Pro 12 9 4th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_4th_gen_silver__hecgwc5fs2mq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_4th_gen_spacegray__cxie1b3e1402_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-12-9-3rd-gen": {
+          "model_id": "ipad-pro-12-9-3rd-gen",
+          "name_th": "iPad Pro 12 9 3rd Gen",
+          "name_en": "iPad Pro 12 9 3rd Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_3rd_gen_silver__c174xd2w4j2a_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_3rd_gen_spacegray__dw83njae9tiu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-12-9-2nd-gen": {
+          "model_id": "ipad-pro-12-9-2nd-gen",
+          "name_th": "iPad Pro 12 9 2nd Gen",
+          "name_en": "iPad Pro 12 9 2nd Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_2ndgen_silver__bpnl4rdkf6oi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_2ndgen_spacegray__bml3uh6ttvxy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_2ndgen_gold__dfznskzsh4gi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-12-9-1st-gen": {
+          "model_id": "ipad-pro-12-9-1st-gen",
+          "name_th": "iPad Pro 12 9 1st Gen",
+          "name_en": "iPad Pro 12 9 1st Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_1st_gen_silver__gbxg6d5id5yu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_1st_gen_spacegray__ctcaxp4huk2u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_12_9_1st_gen_gold__d6rujz77jhoy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-11-m5": {
+          "model_id": "ipad-pro-11-m5",
+          "name_th": "iPad Pro 11 M5",
+          "name_en": "iPad Pro 11 M5",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_m4_silver__eowi3mx395qq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_m4_spaceblack__eoez1rzzqmye_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-11-m4": {
+          "model_id": "ipad-pro-11-m4",
+          "name_th": "iPad Pro 11 M4",
+          "name_en": "iPad Pro 11 M4",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_m4_silver__eowi3mx395qq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_m4_spaceblack__eoez1rzzqmye_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-11-4th-gen": {
+          "model_id": "ipad-pro-11-4th-gen",
+          "name_th": "iPad Pro 11 4th Gen",
+          "name_en": "iPad Pro 11 4th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_4th_gen_silver__bn1972i7xsdy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_4th_gen_spacegray__fhanffq09pim_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-11-3rd-gen": {
+          "model_id": "ipad-pro-11-3rd-gen",
+          "name_th": "iPad Pro 11 3rd Gen",
+          "name_en": "iPad Pro 11 3rd Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_3rd_gen_silver__bdqora8nyhw2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_3rd_gen_spacegray__difyfijzvt8i_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-11-2nd-gen": {
+          "model_id": "ipad-pro-11-2nd-gen",
+          "name_th": "iPad Pro 11 2nd Gen",
+          "name_en": "iPad Pro 11 2nd Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_2nd_gen_silver__dg39jc7bdpqq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_2nd_gen_spacegray__e2d8nf9hbt6q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-11-1st-gen": {
+          "model_id": "ipad-pro-11-1st-gen",
+          "name_th": "iPad Pro 11 1st Gen",
+          "name_en": "iPad Pro 11 1st Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_1st_gen_silver__dn2rbruy1jo2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_11_1st_gen_spacegray__cwgefa0lrw66_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-10-5": {
+          "model_id": "ipad-pro-10-5",
+          "name_th": "iPad Pro 10 5",
+          "name_en": "iPad Pro 10 5",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_10_5_silver__cw70968ky7o2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_10_5_spacegray__cdyopy02shn6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_10_5_gold__c1ewhbkmff6u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_10_5_rosegold__dvww3bwi5sqe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-pro-9-7": {
+          "model_id": "ipad-pro-9-7",
+          "name_th": "iPad Pro 9 7",
+          "name_en": "iPad Pro 9 7",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_9_7_silver__e0bnenucwc2u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_9_7_spacegray__foufsvppq6um_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_9_7_gold__gmrgjm5nczyq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_pro_9_7_rosegold__bjil43hv0a76_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-13-m4": {
+          "model_id": "ipad-air-13-m4",
+          "name_th": "iPad Air 13 M4",
+          "name_en": "iPad Air 13 M4",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m4_spacegray__cfa9j5sb9amq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m4_starlight__eqw67ji419w2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m4_purple__er7s81uf4s6e_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m4_blue__dvsjwapfvuc2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-11-m4": {
+          "model_id": "ipad-air-11-m4",
+          "name_th": "iPad Air 11 M4",
+          "name_en": "iPad Air 11 M4",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m4_spacegray__foa0ijnqpi2y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m4_starlight__ckjmo75jgej6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m4_purple__dc5imizwemwm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m4_blue__exgp5c6s4zgy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-13-m3": {
+          "model_id": "ipad-air-13-m3",
+          "name_th": "iPad Air 13 M3",
+          "name_en": "iPad Air 13 M3",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m3_spacegray__fu35tug8txua_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m3_starlight__bs14uq1fwa4i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m3_purple__d86auskkzl4y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m3_blue__gahhpn9r2pea_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-11-m3": {
+          "model_id": "ipad-air-11-m3",
+          "name_th": "iPad Air 11 M3",
+          "name_en": "iPad Air 11 M3",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m3_spacegray__btc86zw1glbm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m3_starlight__dn8rod7w6cia_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m3_purple__b6zq5qcxu9ci_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m3_blue__gbre4u4if6em_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-13-m2": {
+          "model_id": "ipad-air-13-m2",
+          "name_th": "iPad Air 13 M2",
+          "name_en": "iPad Air 13 M2",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m2_spacegray__gcc85aj02pme_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m2_starlight__e7goijeag3wy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m2_purple__o6um0g2o5eie_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_13_m2_blue__da7jlku5oe2q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-11-m2": {
+          "model_id": "ipad-air-11-m2",
+          "name_th": "iPad Air 11 M2",
+          "name_en": "iPad Air 11 M2",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m2_spacegray__fxfqpx3pa8uq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m2_starlight__ckwaepn8ukdy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m2_purple__c0oyj0a77r8m_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_11_m2_blue__ceyxgnf4v9yu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-5th-gen": {
+          "model_id": "ipad-air-5th-gen",
+          "name_th": "iPad Air 5th Gen",
+          "name_en": "iPad Air 5th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_5th_gen_spacegray__7p68ktzxkwyi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_5th_gen_starlight__cl6foy5801jm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_5th_gen_pink__d86xr05oa6mq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_5th_gen_purple__r3p809f7jgay_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_5th_gen_blue__bmwunk0isghe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-4th-gen": {
+          "model_id": "ipad-air-4th-gen",
+          "name_th": "iPad Air 4th Gen",
+          "name_en": "iPad Air 4th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_4th_gen_silver__bg42tando26a_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_4th_gen_spacegray__e2zjx3yfkfwy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rosegold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_4th_gen_gold__vwjpgqmkq2a2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_4th_gen_green__f0a6jiw158y2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "skyblue",
+              "name_th": "สกายบลู",
+              "name_en": "Sky Blue",
+              "hex": "#87ceeb",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_4th_gen_skyblue__cen7fnll68ly_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-3rd-gen": {
+          "model_id": "ipad-air-3rd-gen",
+          "name_th": "iPad Air 3rd Gen",
+          "name_en": "iPad Air 3rd Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_3rd_gen_silver__f31rsa4x8kuq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_3rd_gen_spacegray__bgqg6myvrlgy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_3rd_gen_gold__fb5zexajjaa2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-2": {
+          "model_id": "ipad-air-2",
+          "name_th": "iPad Air 2",
+          "name_en": "iPad Air 2",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_2_silver__dvst6j3uyai6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_2_spacegray__d7clzrtj0s6e_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_2_gold__dgfckzls29g2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-air-1st-gen": {
+          "model_id": "ipad-air-1st-gen",
+          "name_th": "iPad Air 1st Gen",
+          "name_en": "iPad Air 1st Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_1st_gen_silver__bfc89dqy6i9u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_air_1st_gen_spacegray__ehrmqqrs8kmu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-11th-a16": {
+          "model_id": "ipad-11th-a16",
+          "name_th": "iPad 11th A16",
+          "name_en": "iPad 11th A16",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_11th_a16_silver__cby9d710dnhy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_11th_a16_yellow__ef6aso27omye_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_11th_a16_blue__eyfta89o7eie_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_11th_a16_pink__fz6ag0ueptme_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-10th-gen": {
+          "model_id": "ipad-10th-gen",
+          "name_th": "iPad 10th Gen",
+          "name_en": "iPad 10th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_10th_gen_silver__bcltqap7fxw2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_10th_gen_yellow__cz7aie2nj1km_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_10th_gen_blue__c37qgd892qie_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_10th_gen_pink__dz5vb33pwf42_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-9th-gen": {
+          "model_id": "ipad-9th-gen",
+          "name_th": "iPad 9th Gen",
+          "name_en": "iPad 9th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_9th_gen_silver__eo5exz90loae_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_9th_gen_space_gray__e1ncy4snl6qa_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-8th-gen": {
+          "model_id": "ipad-8th-gen",
+          "name_th": "iPad 8th Gen",
+          "name_en": "iPad 8th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_8thgen_silver__esb1k0bjdc4m_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_8thgen_spacegray__fl8sgjg6l4q6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_8thgen_gold__fvtotx5fodqq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-7th-gen": {
+          "model_id": "ipad-7th-gen",
+          "name_th": "iPad 7th Gen",
+          "name_en": "iPad 7th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_7thgen_silver__8k0714z2d822_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_7thgen_spacegray__cqqn1scrrd6q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_7thgen_gold__frwaveva4262_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-6th-gen": {
+          "model_id": "ipad-6th-gen",
+          "name_th": "iPad 6th Gen",
+          "name_en": "iPad 6th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_6thgen_silver__cv0l2v8ljg02_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_6thgen_spacegray__cgas80qa9gqa_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_6thgen_gold__bo41f3pwkn5y_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-5th-gen": {
+          "model_id": "ipad-5th-gen",
+          "name_th": "iPad 5th Gen",
+          "name_en": "iPad 5th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_5thgen_silver__bx9nylbfoo02_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_5thgen_spacegray__d4mewbiphv2a_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_5thgen_gold__xvypw70bi8ii_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-mini-a17pro": {
+          "model_id": "ipad-mini-a17pro",
+          "name_th": "iPad Mini A17pro",
+          "name_en": "iPad Mini A17pro",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_a17pro_space_gray__fuoqzhobakmm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_a17pro_starlight__d4ys99orc88y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_a17pro_purple__fmynaicxwpiu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_a17pro_blue__dts9gmhjopqq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-mini-6th-gen": {
+          "model_id": "ipad-mini-6th-gen",
+          "name_th": "iPad Mini 6th Gen",
+          "name_en": "iPad Mini 6th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_6th_gen_pink__c5v2tacnu66a_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_6th_gen_purple__u4m429tz2iaq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_6th_gen_space_gray__drlr5sd842s2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_6th_gen_starlight__c6vtr8m12k8y_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-mini-5th-gen": {
+          "model_id": "ipad-mini-5th-gen",
+          "name_th": "iPad Mini 5th Gen",
+          "name_en": "iPad Mini 5th Gen",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_5th_gen_silver__cpar9udjiv0i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_5th_gen_spacegray__bh2d2z3oxm8y_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_5th_gen_gold__b60nzhkwvvxy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-mini-4": {
+          "model_id": "ipad-mini-4",
+          "name_th": "iPad Mini 4",
+          "name_en": "iPad Mini 4",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_4_silver__27weck8i2xui_small_2x.png",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_4_spacegray__d3vsg6eh6pg2_small_2x.png",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_4_gold__b1v7kvrov9w2_small_2x.png",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-mini-3": {
+          "model_id": "ipad-mini-3",
+          "name_th": "iPad Mini 3",
+          "name_en": "iPad Mini 3",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_3_silver__8cjk6fo7ztui_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_3_spacegray__cophuj235z0i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_3_gold__gcf6tag1f2qi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "ipad-mini-2": {
+          "model_id": "ipad-mini-2",
+          "name_th": "iPad Mini 2",
+          "name_en": "iPad Mini 2",
+          "category": "ipad",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_2_silver__bulswt0yo0ly_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/ipad/compare/am/images/overview/ipad_mini_2_spacegray__bt7nbf1klo4i_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        }
+      },
+      "total_finishes": 121
+    },
+    "mac": {
+      "models": {
+        "macbook-neo-a18-pro": {
+          "model_id": "macbook-neo-a18-pro",
+          "name_th": "Macbook Neo A18 Pro",
+          "name_en": "Macbook Neo A18 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "citrus",
+              "name_th": "Citrus",
+              "name_en": "Citrus",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_neo_a18_citrus__25g9b9zbiwiu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blush",
+              "name_th": "Blush",
+              "name_en": "Blush",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_neo_a18_blush__daz2o3t268qe_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_neo_a18_silver__d23cbmwh42eu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "indigo",
+              "name_th": "Indigo",
+              "name_en": "Indigo",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_neo_a18_indigo__q3w7yzdxc2im_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m5-15": {
+          "model_id": "macbook-air-m5-15",
+          "name_th": "Macbook Air M5 15",
+          "name_en": "Macbook Air M5 15",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "skyblue",
+              "name_th": "สกายบลู",
+              "name_en": "Sky Blue",
+              "hex": "#87ceeb",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_15_skyblue__bvkzzp9qmdjm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_15_silver__gdgd4la8qemq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_15_starlight__f89sxr5uo1qq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_15_midnight__fhljrimm88i2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m5": {
+          "model_id": "macbook-air-m5",
+          "name_th": "Macbook Air M5",
+          "name_en": "Macbook Air M5",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "skyblue",
+              "name_th": "สกายบลู",
+              "name_en": "Sky Blue",
+              "hex": "#87ceeb",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_skyblue__fty6fmk5v1me_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_silver__bbwooiazy7cy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_starlight__bwz8vshj17ki_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_m5_midnight__dsdy6ha5450m_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m4-15": {
+          "model_id": "macbook-air-m4-15",
+          "name_th": "Macbook Air M4 15",
+          "name_en": "Macbook Air M4 15",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "skyblue",
+              "name_th": "สกายบลู",
+              "name_en": "Sky Blue",
+              "hex": "#87ceeb",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_skyblue__ge4xgamh8te2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_silver__bthqnr9v8po2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_starlight__dvxwvxnk8282_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_midnight__c2xkdctmuwq6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m4": {
+          "model_id": "macbook-air-m4",
+          "name_th": "Macbook Air M4",
+          "name_en": "Macbook Air M4",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "skyblue",
+              "name_th": "สกายบลู",
+              "name_en": "Sky Blue",
+              "hex": "#87ceeb",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_skyblue__ewtkcxzt8hme_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_silver__6nbuljz40wym_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_starlight__f4zo7jj82de2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_midnight__ftl6nurjmvyy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m2-15": {
+          "model_id": "macbook-air-m2-15",
+          "name_th": "Macbook Air M2 15",
+          "name_en": "Macbook Air M2 15",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_starlight__dvxwvxnk8282_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_midnight__c2xkdctmuwq6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_spacegray__1u6jpyc431uy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_silver__bthqnr9v8po2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m3-15": {
+          "model_id": "macbook-air-m3-15",
+          "name_th": "Macbook Air M3 15",
+          "name_en": "Macbook Air M3 15",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_starlight__dvxwvxnk8282_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_midnight__c2xkdctmuwq6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_spacegray__1u6jpyc431uy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_15_silver__bthqnr9v8po2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m2": {
+          "model_id": "macbook-air-m2",
+          "name_th": "Macbook Air M2",
+          "name_en": "Macbook Air M2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_starlight__f4zo7jj82de2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_midnight__ftl6nurjmvyy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_spacegray__hki19guzdwuq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_silver__6nbuljz40wym_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m3": {
+          "model_id": "macbook-air-m3",
+          "name_th": "Macbook Air M3",
+          "name_en": "Macbook Air M3",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_starlight__f4zo7jj82de2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_midnight__ftl6nurjmvyy_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_spacegray__hki19guzdwuq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_mx_silver__6nbuljz40wym_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-m1": {
+          "model_id": "macbook-air-m1",
+          "name_th": "Macbook Air M1",
+          "name_en": "Macbook Air M1",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_retina_2025_silver__eh6xtys13jau_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_retina_2025_spacegray__cfx1lyoayuya_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_retina_2025_gold__bxpaqm0dz2xe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-retina": {
+          "model_id": "macbook-air-retina",
+          "name_th": "Macbook Air Retina",
+          "name_en": "Macbook Air Retina",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_retina_silver__ejt1n5ue6kk2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_retina_spacegray__dp7evk7j24q6_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_retina_gold__cu7o3aj41eoi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-air-2017": {
+          "model_id": "macbook-air-2017",
+          "name_th": "Macbook Air 2017",
+          "name_en": "Macbook Air 2017",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_air_2017_silver__gk4233q28qeu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m5": {
+          "model_id": "macbook-pro-14-m5",
+          "name_th": "Macbook Pro 14 M5",
+          "name_en": "Macbook Pro 14 M5",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_14_spaceblack__e8bg1b4hasii_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_14_silver__gjpnrwj6g4qe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m5-pro": {
+          "model_id": "macbook-pro-14-m5-pro",
+          "name_th": "Macbook Pro 14 M5 Pro",
+          "name_en": "Macbook Pro 14 M5 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_14_spaceblack__e8bg1b4hasii_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_14_silver__gjpnrwj6g4qe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m5-max": {
+          "model_id": "macbook-pro-14-m5-max",
+          "name_th": "Macbook Pro 14 M5 Max",
+          "name_en": "Macbook Pro 14 M5 Max",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_14_spaceblack__e8bg1b4hasii_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_14_silver__gjpnrwj6g4qe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m4": {
+          "model_id": "macbook-pro-14-m4",
+          "name_th": "Macbook Pro 14 M4",
+          "name_en": "Macbook Pro 14 M4",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spaceblack__bcacn5s80i9u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spacegray__bs4ph4qrvs76_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m4-pro": {
+          "model_id": "macbook-pro-14-m4-pro",
+          "name_th": "Macbook Pro 14 M4 Pro",
+          "name_en": "Macbook Pro 14 M4 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spaceblack__bcacn5s80i9u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spacegray__bs4ph4qrvs76_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m4-max": {
+          "model_id": "macbook-pro-14-m4-max",
+          "name_th": "Macbook Pro 14 M4 Max",
+          "name_en": "Macbook Pro 14 M4 Max",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spaceblack__bcacn5s80i9u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spacegray__bs4ph4qrvs76_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m3": {
+          "model_id": "macbook-pro-14-m3",
+          "name_th": "Macbook Pro 14 M3",
+          "name_en": "Macbook Pro 14 M3",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spaceblack__bcacn5s80i9u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spacegray__bs4ph4qrvs76_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-m5-pro": {
+          "model_id": "macbook-pro-16-m5-pro",
+          "name_th": "Macbook Pro 16 M5 Pro",
+          "name_en": "Macbook Pro 16 M5 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_16_spaceblack__81ui3u6gyuqu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_16_silver__egqckriiesia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-m5-max": {
+          "model_id": "macbook-pro-16-m5-max",
+          "name_th": "Macbook Pro 16 M5 Max",
+          "name_en": "Macbook Pro 16 M5 Max",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_16_spaceblack__81ui3u6gyuqu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_m5_16_silver__egqckriiesia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-m3": {
+          "model_id": "macbook-pro-16-m3",
+          "name_th": "Macbook Pro 16 M3",
+          "name_en": "Macbook Pro 16 M3",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_spaceblack__f89510vnuemq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_silver__d4gi8ytb772a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-m4-pro": {
+          "model_id": "macbook-pro-16-m4-pro",
+          "name_th": "Macbook Pro 16 M4 Pro",
+          "name_en": "Macbook Pro 16 M4 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_spaceblack__f89510vnuemq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_silver__d4gi8ytb772a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-m4-max": {
+          "model_id": "macbook-pro-16-m4-max",
+          "name_th": "Macbook Pro 16 M4 Max",
+          "name_en": "Macbook Pro 16 M4 Max",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_spaceblack__f89510vnuemq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_silver__d4gi8ytb772a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbookpro-13-m2": {
+          "model_id": "macbookpro-13-m2",
+          "name_th": "Macbookpro 13 M2",
+          "name_en": "Macbookpro 13 M2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_silver__h055725r76uu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_spacegray__dqz3lo8fxcia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbookpro-13-m1": {
+          "model_id": "macbookpro-13-m1",
+          "name_th": "Macbookpro 13 M1",
+          "name_en": "Macbookpro 13 M1",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_silver__h055725r76uu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_spacegray__dqz3lo8fxcia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbookpro-13-2": {
+          "model_id": "macbookpro-13-2",
+          "name_th": "Macbookpro 13 2",
+          "name_en": "Macbookpro 13 2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_two_ports_silver__gfq1hqevq7yq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_two_ports_spacegray__devn780jhr6u_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbookpro-13-4": {
+          "model_id": "macbookpro-13-4",
+          "name_th": "Macbookpro 13 4",
+          "name_en": "Macbookpro 13 4",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_silver__h055725r76uu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_13_spacegray__dqz3lo8fxcia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-m2": {
+          "model_id": "macbook-pro-16-m2",
+          "name_th": "Macbook Pro 16 M2",
+          "name_en": "Macbook Pro 16 M2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_silver__d4gi8ytb772a_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_spacegray__fx7v3msxbd6q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-16-2021": {
+          "model_id": "macbook-pro-16-2021",
+          "name_th": "Macbook Pro 16 2021",
+          "name_en": "Macbook Pro 16 2021",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_silver__d4gi8ytb772a_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_spacegray__fx7v3msxbd6q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbookpro-16-2019": {
+          "model_id": "macbookpro-16-2019",
+          "name_th": "Macbookpro 16 2019",
+          "name_en": "Macbookpro 16 2019",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_touch_silver__i79inz0f7ceq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_16_touch_spacegray__bg143lh7qvhu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m2": {
+          "model_id": "macbook-pro-14-m2",
+          "name_th": "Macbook Pro 14 M2",
+          "name_en": "Macbook Pro 14 M2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spacegray__bs4ph4qrvs76_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14": {
+          "model_id": "macbook-pro-14",
+          "name_th": "Macbook Pro 14",
+          "name_en": "Macbook Pro 14",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spacegray__bs4ph4qrvs76_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac": {
+          "model_id": "imac",
+          "name_th": "iMac",
+          "name_en": "iMac",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_21_5_retina_2017_silver__bf6h2nfzob8i_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-4k": {
+          "model_id": "imac-4k",
+          "name_th": "iMac 4k",
+          "name_en": "iMac 4k",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_21_5_retina_2019_silver__dxrouqtnyze6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m1-2": {
+          "model_id": "imac-24-m1-2",
+          "name_th": "iMac 24 M1 2",
+          "name_en": "iMac 24 M1 2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_green__e8vktrhfn926_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_yellow__eeyp9xgzeyky_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "orange",
+              "name_th": "Orange",
+              "name_en": "Orange",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_orange__cx743oz094om_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_pink__gh2rden0maqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_purple__8zgiyhotx0iu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_blue__ddj9y4wumh6q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_silver__wam6ord0t8ia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m3-2": {
+          "model_id": "imac-24-m3-2",
+          "name_th": "iMac 24 M3 2",
+          "name_en": "iMac 24 M3 2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_green__e8vktrhfn926_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_yellow__eeyp9xgzeyky_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "orange",
+              "name_th": "Orange",
+              "name_en": "Orange",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_orange__cx743oz094om_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_pink__gh2rden0maqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_purple__8zgiyhotx0iu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_blue__ddj9y4wumh6q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_silver__wam6ord0t8ia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m1-4": {
+          "model_id": "imac-24-m1-4",
+          "name_th": "iMac 24 M1 4",
+          "name_en": "iMac 24 M1 4",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_green__e8vktrhfn926_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_yellow__eeyp9xgzeyky_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "orange",
+              "name_th": "Orange",
+              "name_en": "Orange",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_orange__cx743oz094om_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_pink__gh2rden0maqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_purple__8zgiyhotx0iu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_blue__ddj9y4wumh6q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_silver__wam6ord0t8ia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m3-4": {
+          "model_id": "imac-24-m3-4",
+          "name_th": "iMac 24 M3 4",
+          "name_en": "iMac 24 M3 4",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_green__e8vktrhfn926_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "hex": "#ffe681",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_yellow__eeyp9xgzeyky_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "orange",
+              "name_th": "Orange",
+              "name_en": "Orange",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_orange__cx743oz094om_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "hex": "#fae0d8",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_pink__gh2rden0maqi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "hex": "#b8afe6",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_purple__8zgiyhotx0iu_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_blue__ddj9y4wumh6q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_silver__wam6ord0t8ia_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-green": {
+          "model_id": "imac-24-m4-2-green",
+          "name_th": "iMac 24 M4 2 Green",
+          "name_en": "iMac 24 M4 2 Green",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_green__fhwld12njsuy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-green": {
+          "model_id": "imac-24-m4-4-green",
+          "name_th": "iMac 24 M4 4 Green",
+          "name_en": "iMac 24 M4 4 Green",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_green__fhwld12njsuy_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-yellow": {
+          "model_id": "imac-24-m4-2-yellow",
+          "name_th": "iMac 24 M4 2 Yellow",
+          "name_en": "iMac 24 M4 2 Yellow",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_yellow__cel496oxyggi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-yellow": {
+          "model_id": "imac-24-m4-4-yellow",
+          "name_th": "iMac 24 M4 4 Yellow",
+          "name_en": "iMac 24 M4 4 Yellow",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_yellow__cel496oxyggi_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-orange": {
+          "model_id": "imac-24-m4-2-orange",
+          "name_th": "iMac 24 M4 2 Orange",
+          "name_en": "iMac 24 M4 2 Orange",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_orange__fw7k2rbuctay_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-orange": {
+          "model_id": "imac-24-m4-4-orange",
+          "name_th": "iMac 24 M4 4 Orange",
+          "name_en": "iMac 24 M4 4 Orange",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_orange__fw7k2rbuctay_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-pink": {
+          "model_id": "imac-24-m4-2-pink",
+          "name_th": "iMac 24 M4 2 Pink",
+          "name_en": "iMac 24 M4 2 Pink",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_pink__fwpbzjd83fee_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-pink": {
+          "model_id": "imac-24-m4-4-pink",
+          "name_th": "iMac 24 M4 4 Pink",
+          "name_en": "iMac 24 M4 4 Pink",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_pink__fwpbzjd83fee_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-purple": {
+          "model_id": "imac-24-m4-2-purple",
+          "name_th": "iMac 24 M4 2 Purple",
+          "name_en": "iMac 24 M4 2 Purple",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_purple__fpxz9lr6lxyu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-purple": {
+          "model_id": "imac-24-m4-4-purple",
+          "name_th": "iMac 24 M4 4 Purple",
+          "name_en": "iMac 24 M4 4 Purple",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_purple__fpxz9lr6lxyu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-blue": {
+          "model_id": "imac-24-m4-2-blue",
+          "name_th": "iMac 24 M4 2 Blue",
+          "name_en": "iMac 24 M4 2 Blue",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_blue__fcdp5icivh2e_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-blue": {
+          "model_id": "imac-24-m4-4-blue",
+          "name_th": "iMac 24 M4 4 Blue",
+          "name_en": "iMac 24 M4 4 Blue",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "m4",
+              "name_th": "M4",
+              "name_en": "M4",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_blue__fcdp5icivh2e_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-2-solid": {
+          "model_id": "imac-24-m4-2-solid",
+          "name_th": "iMac 24 M4 2 Solid",
+          "name_en": "iMac 24 M4 2 Solid",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_silver__edo689dmh8a6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-24-m4-4-solid": {
+          "model_id": "imac-24-m4-4-solid",
+          "name_th": "iMac 24 M4 4 Solid",
+          "name_en": "iMac 24 M4 4 Solid",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_24_m4_silver__edo689dmh8a6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imac-5k": {
+          "model_id": "imac-5k",
+          "name_th": "iMac 5k",
+          "name_en": "iMac 5k",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_27_silver__f3eshdo88ay6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "imacpro": {
+          "model_id": "imacpro",
+          "name_th": "Imacpro",
+          "name_en": "Imacpro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_imac_pro_spacegray__e9efe59wjaai_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-m6": {
+          "model_id": "mac-mini-m6",
+          "name_th": "Mac Mini M6",
+          "name_en": "Mac Mini M6",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_m4_silver__d0eyh8j772ye_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-m5-pro": {
+          "model_id": "mac-mini-m5-pro",
+          "name_th": "Mac Mini M5 Pro",
+          "name_en": "Mac Mini M5 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_m4_silver__d0eyh8j772ye_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-m4": {
+          "model_id": "mac-mini-m4",
+          "name_th": "Mac Mini M4",
+          "name_en": "Mac Mini M4",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_m4_silver__d0eyh8j772ye_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-m4-pro": {
+          "model_id": "mac-mini-m4-pro",
+          "name_th": "Mac Mini M4 Pro",
+          "name_en": "Mac Mini M4 Pro",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_m4_silver__d0eyh8j772ye_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-m2": {
+          "model_id": "mac-mini-m2",
+          "name_th": "Mac Mini M2",
+          "name_en": "Mac Mini M2",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_m2_silver__fhf41ykb62a2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-m1": {
+          "model_id": "mac-mini-m1",
+          "name_th": "Mac Mini M1",
+          "name_en": "Mac Mini M1",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_silver__no4krszk9z62_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-mini-2018": {
+          "model_id": "mac-mini-2018",
+          "name_th": "Mac Mini 2018",
+          "name_en": "Mac Mini 2018",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spacegray",
+              "name_th": "เทาสเปซเกรย์",
+              "name_en": "Space Gray",
+              "hex": "#535150",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_mini_spacegray__0wu8xkz5fxuu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-m5-max": {
+          "model_id": "mac-studio-m5-max",
+          "name_th": "Mac Studio M5 Max",
+          "name_en": "Mac Studio M5 Max",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver_m4__c1woyu7bp2ie_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-m5-ultra": {
+          "model_id": "mac-studio-m5-ultra",
+          "name_th": "Mac Studio M5 Ultra",
+          "name_en": "Mac Studio M5 Ultra",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver_m4__c1woyu7bp2ie_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-m4-max": {
+          "model_id": "mac-studio-m4-max",
+          "name_th": "Mac Studio M4 Max",
+          "name_en": "Mac Studio M4 Max",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver_m4__c1woyu7bp2ie_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-m3-ultra": {
+          "model_id": "mac-studio-m3-ultra",
+          "name_th": "Mac Studio M3 Ultra",
+          "name_en": "Mac Studio M3 Ultra",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver_m4__c1woyu7bp2ie_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-2025": {
+          "model_id": "mac-studio-2025",
+          "name_th": "Mac Studio 2025",
+          "name_en": "Mac Studio 2025",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver_m4__c1woyu7bp2ie_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-2022": {
+          "model_id": "mac-studio-2022",
+          "name_th": "Mac Studio 2022",
+          "name_en": "Mac Studio 2022",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver__cjho1zelpv6u_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "mac-studio-2023": {
+          "model_id": "mac-studio-2023",
+          "name_th": "Mac Studio 2023",
+          "name_en": "Mac Studio 2023",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_studio_silver__cjho1zelpv6u_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macpro-2019": {
+          "model_id": "macpro-2019",
+          "name_th": "Macpro 2019",
+          "name_en": "Macpro 2019",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_pro_silver__ezesotky808y_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macpro-m2-ultra": {
+          "model_id": "macpro-m2-ultra",
+          "name_th": "Macpro M2 Ultra",
+          "name_en": "Macpro M2 Ultra",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_mac_pro_silver__ezesotky808y_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "macbook-pro-14-m3x": {
+          "model_id": "macbook-pro-14-m3x",
+          "name_th": "Macbook Pro 14 M3x",
+          "name_en": "Macbook Pro 14 M3x",
+          "category": "mac",
+          "finishes": [
+            {
+              "color_id": "spaceblack",
+              "name_th": "ดำสเปซแบล็ค",
+              "name_en": "Space Black",
+              "hex": "#2e2c2e",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_spaceblack__bcacn5s80i9u_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/mac/compare/ah/images/overview/compare_macbook_pro_14_silver__i4mzeamc5aa2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        }
+      },
+      "total_finishes": 153
+    },
+    "watch": {
+      "models": {
+        "watch-series-1-aluminum": {
+          "model_id": "watch-series-1-aluminum",
+          "name_th": "Watch Series 1 Aluminum",
+          "name_en": "Watch Series 1 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "rose-gold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_1_aluminum_rose_gold__b18mbtef41rm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-2-aluminum": {
+          "model_id": "watch-series-2-aluminum",
+          "name_th": "Watch Series 2 Aluminum",
+          "name_en": "Watch Series 2 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_2_aluminum_silver__d72nr9umb1ea_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-3-aluminum-space": {
+          "model_id": "watch-series-3-aluminum-space",
+          "name_th": "Watch Series 3 Aluminum Space",
+          "name_en": "Watch Series 3 Aluminum Space",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gray",
+              "name_th": "Gray",
+              "name_en": "Gray",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_3_aluminum_space_gray__ghm9362e66aa_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-4-stainless": {
+          "model_id": "watch-series-4-stainless",
+          "name_th": "Watch Series 4 Stainless",
+          "name_en": "Watch Series 4 Stainless",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_4_stainless_gold__bjdnsnpzjuhe_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-5-aluminum-brush": {
+          "model_id": "watch-series-5-aluminum-brush",
+          "name_th": "Watch Series 5 Aluminum Brush",
+          "name_en": "Watch Series 5 Aluminum Brush",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_5_aluminum_brush_gold__gmu0sams9hei_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-6-aluminum": {
+          "model_id": "watch-series-6-aluminum",
+          "name_th": "Watch Series 6 Aluminum",
+          "name_en": "Watch Series 6 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_6_aluminum_blue__e67e2v4a2g66_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-7-aluminum": {
+          "model_id": "watch-series-7-aluminum",
+          "name_th": "Watch Series 7 Aluminum",
+          "name_en": "Watch Series 7 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "hex": "#394c38",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_7_aluminum_green__fe2itxftdqi6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-8-aluminum": {
+          "model_id": "watch-series-8-aluminum",
+          "name_th": "Watch Series 8 Aluminum",
+          "name_en": "Watch Series 8 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_8_aluminum_midnight__bhifsjzxv9g2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-9-aluminum": {
+          "model_id": "watch-series-9-aluminum",
+          "name_th": "Watch Series 9 Aluminum",
+          "name_en": "Watch Series 9 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_9_aluminum_midnight__e3y0323cydci_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-10-aluminum": {
+          "model_id": "watch-series-10-aluminum",
+          "name_th": "Watch Series 10 Aluminum",
+          "name_en": "Watch Series 10 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "jet-black",
+              "name_th": "ดำเจ็ทแบล็ค",
+              "name_en": "Jet Black",
+              "hex": "#0a0a0a",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_10_aluminum_jet_black__e3j9hbp2elkm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rose-gold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_10_aluminum_rose_gold__e3b1fh9c5i4i_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_10_aluminum_silver__e1wgggayppyu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-10-titanium": {
+          "model_id": "watch-series-10-titanium",
+          "name_th": "Watch Series 10 Titanium",
+          "name_en": "Watch Series 10 Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "slate",
+              "name_th": "Slate",
+              "name_en": "Slate",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_10_titanium_slate__daa0wvh4cuky_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_10_titanium_gold__eqxb5zc3w3cm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_10_titanium_natural__ehgpv03edrki_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-11-aluminum": {
+          "model_id": "watch-series-11-aluminum",
+          "name_th": "Watch Series 11 Aluminum",
+          "name_en": "Watch Series 11 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "jet-black",
+              "name_th": "ดำเจ็ทแบล็ค",
+              "name_en": "Jet Black",
+              "hex": "#0a0a0a",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_aluminum_jet_black__e6e4ueftosgi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "rose-gold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "hex": "#e8c2b5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_aluminum_rose_gold__teqtd20c3f2q_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_aluminum_silver__cg9kl6knvy2q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-11-aluminum-space": {
+          "model_id": "watch-series-11-aluminum-space",
+          "name_th": "Watch Series 11 Aluminum Space",
+          "name_en": "Watch Series 11 Aluminum Space",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gray",
+              "name_th": "Gray",
+              "name_en": "Gray",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_aluminum_space_gray__e9a6tq118vue_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-11-titanium": {
+          "model_id": "watch-series-11-titanium",
+          "name_th": "Watch Series 11 Titanium",
+          "name_en": "Watch Series 11 Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "slate",
+              "name_th": "Slate",
+              "name_en": "Slate",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_titanium_slate__f2836i54v8yi_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_titanium_gold__eytpefpwnfsm_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_11_titanium_natural__bz7e5yloh9qq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-aluminum-dark": {
+          "model_id": "watch-series-12-aluminum-dark",
+          "name_th": "Watch Series 12 Aluminum Dark",
+          "name_en": "Watch Series 12 Aluminum Dark",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "bronze",
+              "name_th": "Bronze",
+              "name_en": "Bronze",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_aluminum_dark_bronze__cqx7nbas5n9e_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-aluminum-light": {
+          "model_id": "watch-series-12-aluminum-light",
+          "name_th": "Watch Series 12 Aluminum Light",
+          "name_en": "Watch Series 12 Aluminum Light",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_aluminum_light_gold__dmowcelo88eq_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-aluminum-space": {
+          "model_id": "watch-series-12-aluminum-space",
+          "name_th": "Watch Series 12 Aluminum Space",
+          "name_en": "Watch Series 12 Aluminum Space",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gray",
+              "name_th": "Gray",
+              "name_en": "Gray",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_aluminum_space_gray__bjndutv91nv6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-aluminum": {
+          "model_id": "watch-series-12-aluminum",
+          "name_th": "Watch Series 12 Aluminum",
+          "name_en": "Watch Series 12 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_aluminum_black__cs7x4nfsym82_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-titanium": {
+          "model_id": "watch-series-12-titanium",
+          "name_th": "Watch Series 12 Titanium",
+          "name_en": "Watch Series 12 Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_titanium_natural__eci8n918x0mu_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-titanium-radiant": {
+          "model_id": "watch-series-12-titanium-radiant",
+          "name_th": "Watch Series 12 Titanium Radiant",
+          "name_en": "Watch Series 12 Titanium Radiant",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_titanium_radiant_gold__dgw923z4yuaa_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-ceramic-pearl": {
+          "model_id": "watch-series-12-ceramic-pearl",
+          "name_th": "Watch Series 12 Ceramic Pearl",
+          "name_en": "Watch Series 12 Ceramic Pearl",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "hex": "#f9f6ef",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_ceramic_pearl_white__ekzr97oigy6a_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-series-12-ceramic-night": {
+          "model_id": "watch-series-12-ceramic-night",
+          "name_th": "Watch Series 12 Ceramic Night",
+          "name_en": "Watch Series 12 Ceramic Night",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "blue",
+              "name_th": "น้ำเงิน",
+              "name_en": "Blue",
+              "hex": "#215e7c",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_series_12_ceramic_night_blue__hesnde1z82qa_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-se-gen1-aluminum-brush": {
+          "model_id": "watch-se-gen1-aluminum-brush",
+          "name_th": "Watch SE Gen1 Aluminum Brush",
+          "name_en": "Watch SE Gen1 Aluminum Brush",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "hex": "#fae7cf",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_se_gen1_aluminum_brush_gold__efof1ek2u62q_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-se-gen2-aluminum": {
+          "model_id": "watch-se-gen2-aluminum",
+          "name_th": "Watch SE Gen2 Aluminum",
+          "name_en": "Watch SE Gen2 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_se_gen2_aluminum_midnight__bl3wyc9yo17m_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_se_gen2_aluminum_starlight__mt6b6z7vuaie_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "hex": "#e3e4e5",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_se_gen2_aluminum_silver__cvybwwt1hr0i_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-se-3-aluminum": {
+          "model_id": "watch-se-3-aluminum",
+          "name_th": "Watch SE 3 Aluminum",
+          "name_en": "Watch SE 3 Aluminum",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "hex": "#1e222a",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_se_3_aluminum_midnight__cmsklrr1ariq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "hex": "#f0ece1",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_se_3_aluminum_starlight__berhf6s2b1bm_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-ultra-titanium": {
+          "model_id": "watch-ultra-titanium",
+          "name_th": "Watch Ultra Titanium",
+          "name_en": "Watch Ultra Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_titanium_natural__0jxdmqykxn66_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-ultra-2-titanium": {
+          "model_id": "watch-ultra-2-titanium",
+          "name_th": "Watch Ultra 2 Titanium",
+          "name_en": "Watch Ultra 2 Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_2_titanium_black__dsta75z7pp0m_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_2_titanium_natural__gi7chzvb6dua_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-ultra-3-titanium": {
+          "model_id": "watch-ultra-3-titanium",
+          "name_th": "Watch Ultra 3 Titanium",
+          "name_en": "Watch Ultra 3 Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_3_titanium_black__et3o71qjhxg2_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_3_titanium_natural__f4e1mwataoa6_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        },
+        "watch-ultra-4-titanium": {
+          "model_id": "watch-ultra-4-titanium",
+          "name_th": "Watch Ultra 4 Titanium",
+          "name_en": "Watch Ultra 4 Titanium",
+          "category": "watch",
+          "finishes": [
+            {
+              "color_id": "natural",
+              "name_th": "Natural",
+              "name_en": "Natural",
+              "hex": "#888888",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_4_titanium_natural__b82idzgac5aq_small_2x.jpg",
+              "is_retina_2x": true
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "hex": "#1f2020",
+              "image_url": "https://www.apple.com/v/watch/compare/ai/images/overview/compare_watch_ultra_4_titanium_black__emsqs9pgi5g2_small_2x.jpg",
+              "is_retina_2x": true
+            }
+          ]
+        }
+      },
+      "total_finishes": 43
+    }
+  }
+};
+
+  COMPARE_DATA.getModel = function(category, modelId) {
+    var cat = COMPARE_DATA.data[category];
+    return (cat && cat.models && cat.models[modelId]) || null;
+  };
+
+  COMPARE_DATA.getFinishes = function(category, modelId) {
+    var m = COMPARE_DATA.getModel(category, modelId);
+    return m ? m.finishes : [];
+  };
+
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = COMPARE_DATA;
+  } else {
+    root.APPLE_COMPARE_CATALOG = COMPARE_DATA;
+  }
+})(typeof window !== 'undefined' ? window : this);
