@@ -16,6 +16,7 @@ from src.services.database_builder import AppleDatabaseBuilder
 from src.services.media_downloader import AppleMediaDownloader
 from src.services.bg_remover import AppleBackgroundRemover
 from src.services.deep_asset_crawler import AppleDeepAssetCrawler
+from src.services.unified_catalog_builder import AppleUnifiedCatalogBuilder
 from config.settings import DEFAULT_LOCALE, BASE_APPLE_URL
 
 POPULAR_MODELS = {
@@ -128,15 +129,22 @@ def run_build_full_database():
     print(f"🌐 8. Web Preview Catalog:          {BASE_DIR / 'catalog_preview.html'}")
     print("=" * 74 + "\n")
 
+def run_unify_catalog():
+    """รวมและจัดระเบียบข้อมูลทั้งหมด (Master JSON, Web JS SDK, SQLite Views) ให้เป็น Single Source of Truth"""
+    builder = AppleUnifiedCatalogBuilder()
+    builder.build_unified_catalog()
+
 def run_remove_background():
     remover = AppleBackgroundRemover()
     remover.process_all_images(max_workers=8)
     remover.generate_transparent_catalog_exports()
+    run_unify_catalog()
 
 def run_deep_assets():
     crawler = AppleDeepAssetCrawler()
     crawler.crawl_all_deep_products()
     crawler.download_curated_local_images(max_per_product=5, max_workers=8)
+    run_unify_catalog()
 
 def interactive_menu():
     while True:
@@ -145,6 +153,7 @@ def interactive_menu():
         print("  [7] 🗄️ ดึงข้อมูลทุกรุ่น ทุกสี ทุกราคา & สร้างฐานข้อมูลเต็มรูปแบบ (Build Database)")
         print("  [6] 🔍 เจาะลึกรูปภาพทุกสินค้า แยก 6 หมวดหมู่ (Deep Product Media Gallery)")
         print("  [9] 🎨 ลบพื้นหลังภาพสินค้าทั้งหมดเป็น Transparent PNG (No-BG)")
+        print("  [5] 🌟 จัดระเบียบและรวมข้อมูล Master Unified Catalog (Unify Data)")
         print("  --------------------------------------------------------------------------")
         for k, (name, path) in POPULAR_MODELS.items():
             print(f"  [{k}] ดึงข้อมูลเฉพาะรุ่น {name}")
@@ -164,6 +173,9 @@ def interactive_menu():
             input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice == "9":
             run_remove_background()
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
+        elif choice == "5":
+            run_unify_catalog()
             input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice in POPULAR_MODELS:
             _, path = POPULAR_MODELS[choice]
@@ -187,11 +199,13 @@ if __name__ == "__main__":
             print("  python3 run.py build-db                       # สร้างฐานข้อมูลทุกรุ่น ทุกสี ทุกราคา")
             print("  python3 run.py deep-assets                    # เจาะลึกรูปภาพ 4K ครบทุกหมวดหมู่")
             print("  python3 run.py remove-bg                      # ลบพื้นหลังสินค้าทั้งหมดเป็น Transparent PNG")
+            print("  python3 run.py unify                          # รวมและจัดระเบียบข้อมูลเป็น Master Unified Catalog")
             print("  python3 run.py <URL หรือ Product Slug>         # ดึงข้อมูลเฉพาะรุ่น")
             print("ตัวอย่าง:")
             print("  python3 run.py build-db")
             print("  python3 run.py deep-assets")
             print("  python3 run.py remove-bg")
+            print("  python3 run.py unify")
             print("  python3 run.py iphone-16")
         elif arg in ["build-db", "build_db", "database", "all"]:
             run_build_full_database()
@@ -199,6 +213,8 @@ if __name__ == "__main__":
             run_deep_assets()
         elif arg in ["remove-bg", "remove_bg", "nobg", "transparent"]:
             run_remove_background()
+        elif arg in ["unify", "master", "unified"]:
+            run_unify_catalog()
         else:
             run_scrape_single(sys.argv[1])
     else:
