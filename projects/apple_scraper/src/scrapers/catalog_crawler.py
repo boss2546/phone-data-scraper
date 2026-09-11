@@ -103,11 +103,109 @@ FAMILY_SPECS_MAP = {
     "Apple Watch SE": {"chip": "ชิป S8 SiP", "default_screen": "40mm", "storage": "32GB"}
 }
 
+# พจนานุกรมรูปภาพสินค้าทางการแยกตามสีและรุ่นสินค้า (Apple CDN High-Resolution Official Images)
+OFFICIAL_COLOR_IMAGES = {
+    # MacBook Pro
+    ('macbook-pro', 'black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-pro', 'space-black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-pro', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # MacBook Air
+    ('macbook-air', 'midnight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-air', 'starlight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-air', 'space-gray'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-spacegray-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-air', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-silver-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-air', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # iMac
+    ('imac', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-blue-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('imac', 'pink'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-pink-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('imac', 'orange'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-orange-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('imac', 'purple'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-purple-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('imac', 'green'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-green-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('imac', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-silver-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('imac', 'yellow'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-yellow-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # Mac mini & Mac Studio
+    ('mac-mini', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('mac-studio', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # Apple Watch Series 10
+    ('apple-watch-series-10', 'black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-series-10', 'jet-black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-series-10', 'rose-gold'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-rosegold-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-series-10', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-silver-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-series-10', 'natural-titanium'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-natural-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-series-10', 'slate'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-slate-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-series-10', 'gold'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-gold-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # Apple Watch Ultra 2
+    ('apple-watch-ultra-2', 'natural-titanium'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-natural-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-ultra-2', 'black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-black-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-ultra-2', 'black-titanium'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-black-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # Apple Watch SE
+    ('apple-watch-se', 'midnight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-se', 'starlight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-starlight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('apple-watch-se', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-silver-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # iPad Pro (M4)
+    ('ipad-pro-m4', 'black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-pro-m4', 'space-black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-pro-m4', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # iPad Air (M2)
+    ('ipad-air-m2', 'space-gray'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-air-m2', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-air-m2', 'purple'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-air-m2', 'starlight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # iPad (10th Gen)
+    ('ipad-10th-gen', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-10th-gen', 'pink'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-10th-gen', 'yellow'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-10th-gen', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # iPad mini
+    ('ipad-mini', 'space-gray'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-mini', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-mini', 'purple'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('ipad-mini', 'starlight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
+
+    # iPhone 16
+    ('iphone-16', 'black'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-black?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('iphone-16', 'white'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('iphone-16', 'pink'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('iphone-16', 'teal'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-teal?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('iphone-16', 'ultramarine'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=904&hei=840&fmt=jpeg&qlt=90',
+}
+
 class AppleCatalogCrawler:
     """ตัวสำรวจและรวบรวมข้อมูลสินค้า Apple Store Thailand ทุกรุ่น ทุกสี และทุกความจุ"""
 
     def __init__(self, headers: Optional[Dict[str, str]] = None):
         self.headers = headers or DEFAULT_HEADERS
+
+    def get_color_image(self, product_slug: str, color_id: str, fallback_url: str = "", html: str = "") -> str:
+        """ค้นหารูปภาพตรงรุ่นและตรงสีจาก Apple Store CDN แบบแม่นยำ"""
+        # 1. ตรวจสอบจากตารางรูปภาพทางการของสีที่จับคู่ไว้
+        key = (product_slug, color_id)
+        if key in OFFICIAL_COLOR_IMAGES:
+            return OFFICIAL_COLOR_IMAGES[key]
+
+        # 2. ค้นหาแบบ dynamic regex ใน html ด้วย slug_color
+        if html:
+            slug_color = color_id.replace(" ", "-")
+            color_img_m = re.search(rf'https://store\.storeimages\.cdn-apple\.com/1/as-images\.apple\.com/is/[^\s"\'<>]+{slug_color}[^\s"\'<>]*\?wid=\d+&hei=\d+[^\s"\'<>]*', html, re.I)
+            if color_img_m:
+                return color_img_m.group(0)
+
+            color_img_m2 = re.search(rf'https://store\.storeimages\.cdn-apple\.com[^\s"\'<>]+{slug_color}[^\s"\'<>]+', html, re.I)
+            if color_img_m2:
+                return color_img_m2.group(0)
+
+        # 3. หากไม่มี ใช้ fallback
+        return fallback_url
 
     def fetch_html(self, url: str) -> Optional[str]:
         """ดึง HTML ของหน้าเว็บ"""
@@ -271,12 +369,8 @@ class AppleCatalogCrawler:
                         conn = self.detect_connectivity(name, category, family)
                         color_id = color_info["en"].lower().replace(" ", "-")
 
-                        # ค้นหาภาพเฉพาะสี
-                        img_url = hero_image
-                        slug_color = color_info["en"].lower().replace(" ", "-")
-                        color_img_m = re.search(rf'https://store\.storeimages\.cdn-apple\.com[^\s"\'<>]+{slug_color}[^\s"\'<>]+', html, re.I)
-                        if color_img_m:
-                            img_url = color_img_m.group(0)
+                        # ค้นหาภาพเฉพาะสีที่ถูกต้องแม่นยำ
+                        img_url = self.get_color_image(product_slug, color_id, hero_image, html)
 
                         variants.append({
                             "id": part_number,
@@ -326,6 +420,7 @@ class AppleCatalogCrawler:
 
                 name = f"{family} {screen_size} สี{color_info['th']} ({color_info['en']}) {storage}".strip()
                 part_no = f"MAC-{conf_key.upper()}"
+                mac_img = self.get_color_image(product_slug, color_id, hero_image, html)
 
                 variants.append({
                     "id": part_no,
@@ -345,7 +440,7 @@ class AppleCatalogCrawler:
                     "price_thb": int(price),
                     "formatted_price": f"฿{int(price):,}",
                     "specs_chip": mac_chip,
-                    "image_url": hero_image,
+                    "image_url": mac_img,
                     "product_url": url
                 })
 
@@ -435,7 +530,7 @@ class AppleCatalogCrawler:
                     "price_thb": price,
                     "formatted_price": f"฿{price:,}",
                     "specs_chip": watch_chip,
-                    "image_url": watch_img,
+                    "image_url": self.get_color_image(product_slug, color_id, watch_img, html),
                     "product_url": url
                 })
 

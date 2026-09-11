@@ -199,6 +199,123 @@
       font-size: 0.9rem;
     }
 
+    /* View Switcher */
+    .view-switch-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 0 auto 28px;
+      max-width: 680px;
+      padding: 0 16px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .view-switch-btn {
+      flex: 1;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text-muted);
+      padding: 12px 20px;
+      border-radius: 980px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+
+    .view-switch-btn:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }
+
+    .view-switch-btn.active {
+      background: linear-gradient(135deg, #0071e3, #2997ff);
+      color: #fff;
+      border-color: #2997ff;
+      box-shadow: 0 4px 20px rgba(0, 113, 227, 0.4);
+    }
+
+    /* Product View Interactive Selectors */
+    .product-color-selector {
+      margin: 10px 0 14px;
+    }
+
+    .swatch-picker {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .swatch-btn {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      padding: 2px;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+    }
+
+    .swatch-btn:hover, .swatch-btn.active {
+      transform: scale(1.25);
+      border-color: #fff;
+    }
+
+    .swatch-btn .swatch-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: inset 0 1px 2px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .active-color-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      min-height: 20px;
+    }
+
+    .active-color-label b {
+      color: #fff;
+    }
+
+    .storage-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .storage-chip {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #cbd5e1;
+      padding: 5px 11px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .storage-chip:hover {
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+    }
+
+    .storage-chip.active {
+      background: rgba(41, 151, 255, 0.25);
+      border-color: #2997ff;
+      color: #58a6ff;
+      font-weight: 600;
+    }
+
     /* Grid Layout */
     .catalog-grid {
       position: relative;
@@ -657,6 +774,16 @@ def search(q: str):
     </div>
   </div>
 
+  <!-- View Switcher -->
+  <div class="view-switch-row">
+    <button class="view-switch-btn active" id="btnViewProducts" onclick="setViewMode('products')">
+      🛍️ มุมมองสินค้าหลัก (18 รุ่น พร้อมสลับสี & ความจุสด)
+    </button>
+    <button class="view-switch-btn" id="btnViewVariants" onclick="setViewMode('variants')">
+      📋 มุมมอง SKU ย่อยทั้งหมด (330 รายการ)
+    </button>
+  </div>
+
   <div class="controls-container">
     <div class="controls-card">
       <div class="category-pills" id="categoryPills">
@@ -669,7 +796,7 @@ def search(q: str):
 
       <div class="search-sort-box">
         <input type="text" id="searchInput" class="search-input" placeholder="🔍 ค้นหารุ่น, สี, ชิป, หรือ Part Number...">
-        <select id="sortSelect" class="sort-select">
+        <select id="sortSelect" class="sort-select" onchange="changeSort(this.value)">
           <option value="featured">แนะนำ (Featured)</option>
           <option value="price-asc">ราคา: ต่ำ ➔ สูง</option>
           <option value="price-desc">ราคา: สูง ➔ ต่ำ</option>
@@ -687,26 +814,104 @@ def search(q: str):
   <script src="data/exports/apple_db_helper.js"></script>
   <script>
     let allVariants = [];
+    let allProducts = [];
+    let treeData = null;
     let activeCategory = 'all';
     let searchQuery = '';
     let sortMode = 'featured';
+    let viewMode = 'products'; // 'products' | 'variants'
+    let productCardStates = {}; // pid -> { colorIdx: 0, optionIdx: 0 }
+
+    function setViewMode(mode) {
+      viewMode = mode;
+      document.getElementById('btnViewProducts').classList.toggle('active', mode === 'products');
+      document.getElementById('btnViewVariants').classList.toggle('active', mode === 'variants');
+      updateStats();
+      renderCatalog();
+    }
+
+    function changeSort(val) {
+      sortMode = val;
+      renderCatalog();
+    }
+
+    function selectProductColor(pid, colorIdx) {
+      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
+      productCardStates[pid].colorIdx = colorIdx;
+      productCardStates[pid].optionIdx = 0;
+      renderCatalog();
+    }
+
+    function selectProductOption(pid, optionIdx) {
+      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
+      productCardStates[pid].optionIdx = optionIdx;
+      renderCatalog();
+    }
+
+    function computeTree(variants) {
+      const tree = {};
+      for (const v of variants) {
+        const cat = v.category || 'other';
+        const pid = v.product_id || (v.family || 'unknown').toLowerCase().replace(/\s+/g, '-');
+        if (!tree[cat]) tree[cat] = { products: {} };
+        if (!tree[cat].products[pid]) {
+          tree[cat].products[pid] = {
+            product_info: {
+              id: pid,
+              category_id: cat,
+              name: v.family || pid,
+              chip: v.specs_chip || '-',
+              screen_size: v.screen_size || '-',
+              min_price_thb: v.price_thb,
+              max_price_thb: v.price_thb,
+              hero_image_url: v.image_url,
+              product_url: v.product_url
+            },
+            colors: {}
+          };
+        }
+        const p = tree[cat].products[pid];
+        p.product_info.min_price_thb = Math.min(p.product_info.min_price_thb, v.price_thb);
+        p.product_info.max_price_thb = Math.max(p.product_info.max_price_thb, v.price_thb);
+
+        const cid = v.color_id || (v.color_en || 'silver').toLowerCase().replace(/\s+/g, '-');
+        if (!p.colors[cid]) {
+          p.colors[cid] = {
+            color_id: cid,
+            name_th: v.color_th,
+            name_en: v.color_en,
+            color_hex: v.color_hex,
+            image_url: v.image_url,
+            options: []
+          };
+        }
+        p.colors[cid].options.push({
+          id: v.id,
+          part_number: v.part_number || v.id,
+          storage: v.storage,
+          screen_size: v.screen_size,
+          connectivity: v.connectivity,
+          price_thb: v.price_thb,
+          formatted_price: v.formatted_price
+        });
+      }
+      return tree;
+    }
 
     async function loadDatabase() {
-      // 1. ตรวจสอบว่ามีข้อมูลจาก script bundle หรือไม่ (เพื่อรองรับการเปิดแบบดับเบิลคลิกไฟล์ file://)
-      if (window.APPLE_VARIANTS && Array.isArray(window.APPLE_VARIANTS) && window.APPLE_VARIANTS.length > 0) {
-        allVariants = window.APPLE_VARIANTS;
+      if (window.APPLE_DATABASE && window.APPLE_DATABASE.variants) {
+        allVariants = window.APPLE_DATABASE.variants;
+        allProducts = window.APPLE_DATABASE.products || [];
+        treeData = window.APPLE_DATABASE.tree || computeTree(allVariants);
         updateStats();
         renderCatalog();
         return;
       }
 
       try {
-        // 2. ลองโหลดจากไฟล์ JSON ใน exports ผ่าน fetch (สำหรับรันผ่าน HTTP Web Server)
         const res = await fetch('data/exports/apple_full_catalog.json');
         if (!res.ok) throw new Error("JSON file not found");
         const json = await res.json();
-        
-        // Flatten variants list
         allVariants = [];
         for (const catKey in json.catalog) {
           const cat = json.catalog[catKey];
@@ -715,53 +920,9 @@ def search(q: str):
             allVariants.push(...fam.variants);
           }
         }
+        treeData = computeTree(allVariants);
       } catch (err) {
-        console.warn("Loading fallback preview data:", err);
-        // Fallback sample data if both are unavailable
-        allVariants = [
-          {
-            id: "MYE73ZP/A", category: "iphone", family: "iPhone 16", model_name: "iPhone 16 128GB Black",
-            color_th: "ดำ", color_en: "Black", color_hex: "#1F2022", storage: "128GB", screen_size: "6.1\"",
-            connectivity: "5G", price_thb: 30900, formatted_price: "฿30,900", specs_chip: "ชิป A18",
-            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-black?wid=5120&hei=2880&fmt=webp&qlt=70",
-            product_url: "https://www.apple.com/th/shop/buy-iphone/iphone-16"
-          },
-          {
-            id: "MYE93ZP/A", category: "iphone", family: "iPhone 16", model_name: "iPhone 16 128GB White",
-            color_th: "ขาว", color_en: "White", color_hex: "#F9F6EF", storage: "128GB", screen_size: "6.1\"",
-            connectivity: "5G", price_thb: 30900, formatted_price: "฿30,900", specs_chip: "ชิป A18",
-            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=5120&hei=2880&fmt=webp&qlt=70",
-            product_url: "https://www.apple.com/th/shop/buy-iphone/iphone-16"
-          },
-          {
-            id: "MYEA3ZP/A", category: "iphone", family: "iPhone 16", model_name: "iPhone 16 128GB Pink",
-            color_th: "ชมพู", color_en: "Pink", color_hex: "#E3A3B1", storage: "128GB", screen_size: "6.1\"",
-            connectivity: "5G", price_thb: 30900, formatted_price: "฿30,900", specs_chip: "ชิป A18",
-            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=5120&hei=2880&fmt=webp&qlt=70",
-            product_url: "https://www.apple.com/th/shop/buy-iphone/iphone-16"
-          },
-          {
-            id: "MDWK4TH/A", category: "ipad", family: "iPad Pro (M4)", model_name: "11-inch iPad Pro Wi‑Fi 256GB Space Black",
-            color_th: "สเปซแบล็ค", color_en: "Space Black", color_hex: "#2E2C2F", storage: "256GB", screen_size: "11\"",
-            connectivity: "Wi-Fi", price_thb: 42900, formatted_price: "฿42,900", specs_chip: "ชิป M4",
-            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=5120&hei=2880&fmt=webp&qlt=70",
-            product_url: "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
-          },
-          {
-            id: "MDWM4TH/A", category: "ipad", family: "iPad Pro (M4)", model_name: "11-inch iPad Pro Wi‑Fi 512GB Space Black",
-            color_th: "สเปซแบล็ค", color_en: "Space Black", color_hex: "#2E2C2F", storage: "512GB", screen_size: "11\"",
-            connectivity: "Wi-Fi", price_thb: 49900, formatted_price: "฿49,900", specs_chip: "ชิป M4",
-            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=5120&hei=2880&fmt=webp&qlt=70",
-            product_url: "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
-          },
-          {
-            id: "MAC-MBA-13-STARLIGHT", category: "mac", family: "MacBook Air", model_name: "13-inch MacBook Air Starlight 256GB",
-            color_th: "สตาร์ไลท์", color_en: "Starlight", color_hex: "#F0ECE1", storage: "256GB", screen_size: "13\"",
-            connectivity: "Wi-Fi", price_thb: 44900, formatted_price: "฿44,900", specs_chip: "ชิป M3",
-            image_url: "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
-            product_url: "https://www.apple.com/th/shop/buy-mac/macbook-air"
-          }
-        ];
+        console.warn("Using default fallback data:", err);
       }
 
       updateStats();
@@ -769,19 +930,177 @@ def search(q: str):
     }
 
     function updateStats() {
-      const prices = allVariants.map(v => v.price_thb).filter(p => p > 0);
-      document.getElementById('statTotal').innerText = `${allVariants.length} ตัวเลือก`;
-      if (prices.length > 0) {
-        document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
-        document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
+      if (viewMode === 'products') {
+        let totalProds = 0;
+        let prices = [];
+        if (treeData) {
+          for (const cat in treeData) {
+            for (const pid in treeData[cat].products) {
+              totalProds++;
+              prices.push(treeData[cat].products[pid].product_info.min_price_thb);
+            }
+          }
+        }
+        document.getElementById('statTotal').innerText = `${totalProds || 18} รุ่นหลัก`;
+        if (prices.length > 0) {
+          document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
+          document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
+        }
+      } else {
+        const prices = allVariants.map(v => v.price_thb).filter(p => p > 0);
+        document.getElementById('statTotal').innerText = `${allVariants.length} SKU รายการย่อย`;
+        if (prices.length > 0) {
+          document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
+          document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
+        }
       }
     }
 
     function renderCatalog() {
       const grid = document.getElementById('catalogGrid');
+      const query = searchQuery.toLowerCase();
+
+      if (viewMode === 'products') {
+        renderProductCards(grid, query);
+      } else {
+        renderVariantCards(grid, query);
+      }
+    }
+
+    function renderProductCards(grid, query) {
+      if (!treeData) {
+        treeData = computeTree(allVariants);
+      }
+
+      let productList = [];
+      for (const catId in treeData) {
+        if (activeCategory !== 'all' && catId !== activeCategory) continue;
+        const prods = treeData[catId].products;
+        for (const pid in prods) {
+          const p = prods[pid];
+          const info = p.product_info;
+          const colors = Array.isArray(p.colors) ? p.colors : Object.values(p.colors);
+          
+          // Search filter
+          const matchSearch = !query ||
+            info.name.toLowerCase().includes(query) ||
+            info.chip.toLowerCase().includes(query) ||
+            colors.some(c => (c.name_th && c.name_th.toLowerCase().includes(query)) || (c.name_en && c.name_en.toLowerCase().includes(query)));
+
+          if (matchSearch) {
+            productList.push({ ...p, colors });
+          }
+        }
+      }
+
+      // Sort
+      if (sortMode === 'price-asc') {
+        productList.sort((a, b) => a.product_info.min_price_thb - b.product_info.min_price_thb);
+      } else if (sortMode === 'price-desc') {
+        productList.sort((a, b) => b.product_info.min_price_thb - a.product_info.min_price_thb);
+      } else if (sortMode === 'name') {
+        productList.sort((a, b) => a.product_info.name.localeCompare(b.product_info.name));
+      }
+
+      if (productList.length === 0) {
+        grid.innerHTML = `<div class="empty-state">❌ ไม่พบสินค้าที่ตรงกับ "${searchQuery}"</div>`;
+        return;
+      }
+
+      grid.innerHTML = productList.map(item => {
+        const info = item.product_info;
+        const pid = info.id;
+        const colors = item.colors;
+
+        if (!productCardStates[pid]) {
+          productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
+        }
+        const state = productCardStates[pid];
+        const activeColor = colors[state.colorIdx] || colors[0];
+        const options = activeColor ? activeColor.options : [];
+        
+        // กรองตัวเลือกสเปกให้กระชับและไม่ซ้ำซ้อน
+        const uniqueOptions = [];
+        const seenLabels = new Set();
+        for (let idx = 0; idx < options.length; idx++) {
+          const opt = options[idx];
+          const label = opt.storage || opt.screen_size || opt.connectivity || 'มาตรฐาน';
+          const key = label + '_' + opt.price_thb;
+          if (!seenLabels.has(key)) {
+            seenLabels.add(key);
+            uniqueOptions.push({ ...opt, origIdx: idx, displayLabel: label });
+          }
+        }
+
+        const activeOption = options[state.optionIdx] || options[0] || {};
+        const displayPrice = activeOption.formatted_price || `เริ่มต้น ฿${info.min_price_thb.toLocaleString()}`;
+        const activeImg = activeColor ? activeColor.image_url : info.hero_image_url;
+
+        return `
+          <article class="product-card">
+            <div class="card-top">
+              <span class="family-badge">${info.category_id.toUpperCase()}</span>
+              ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
+            </div>
+
+            <div class="image-container">
+              <img id="img-${pid}" 
+                   src="${activeImg}" 
+                   alt="${info.name}" 
+                   onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
+            </div>
+
+            <h3 class="product-title">${info.name}</h3>
+
+            <div class="product-color-selector">
+              <div class="swatch-picker">
+                ${colors.map((c, idx) => `
+                  <button class="swatch-btn ${idx === state.colorIdx ? 'active' : ''}" 
+                          onclick="selectProductColor('${pid}', ${idx})" 
+                          title="${c.name_th} (${c.name_en})">
+                    <span class="swatch-inner" style="background: ${c.color_hex || '#888'}"></span>
+                  </button>
+                `).join('')}
+              </div>
+              <div class="active-color-label">
+                สี: <b>${activeColor ? `${activeColor.name_th} (${activeColor.name_en})` : '-'}</b>
+              </div>
+            </div>
+
+            ${uniqueOptions.length > 1 ? `
+              <div class="storage-selector">
+                ${uniqueOptions.slice(0, 6).map((opt) => `
+                  <button class="storage-chip ${opt.origIdx === state.optionIdx ? 'active' : ''}" 
+                          onclick="selectProductOption('${pid}', ${opt.origIdx})">
+                    ${opt.displayLabel}
+                  </button>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            <div class="specs-pill-box">
+              ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill">📐 ${info.screen_size}</span>` : ''}
+              ${activeOption.connectivity && activeOption.connectivity !== '-' ? `<span class="spec-pill">📶 ${activeOption.connectivity}</span>` : ''}
+              ${activeOption.part_number ? `<span class="spec-pill">🏷️ ${activeOption.part_number}</span>` : ''}
+            </div>
+
+            <div class="card-bottom">
+              <div class="price-group">
+                <span class="price-label">${options.length > 1 ? 'ราคาตัวเลือกที่เลือก' : 'ราคาเริ่มต้นทางการ'}</span>
+                <span class="price-val" id="price-${pid}">${displayPrice}</span>
+              </div>
+              <a href="${info.product_url}" target="_blank" rel="noopener" class="btn-buy">
+                ซื้อบน Apple ↗
+              </a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderVariantCards(grid, query) {
       let filtered = allVariants.filter(v => {
         const matchCat = activeCategory === 'all' || v.category === activeCategory;
-        const query = searchQuery.toLowerCase();
         const matchSearch = !query || 
           (v.model_name && v.model_name.toLowerCase().includes(query)) ||
           (v.family && v.family.toLowerCase().includes(query)) ||
@@ -802,7 +1121,7 @@ def search(q: str):
       }
 
       if (filtered.length === 0) {
-        grid.innerHTML = `<div class="empty-state">❌ ไม่พบสินค้าที่ตรงกับคำค้นหา "${searchQuery}"</div>`;
+        grid.innerHTML = `<div class="empty-state">❌ ไม่พบ SKU ที่ตรงกับคำค้นหา "${searchQuery}"</div>`;
         return;
       }
 

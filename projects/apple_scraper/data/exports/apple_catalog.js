@@ -39,7 +39,7 @@ window.APPLE_DATABASE = {
       "screen_size": "6.1\"",
       "min_price_thb": 30900,
       "max_price_thb": 30900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-white-select-202409_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=MkE3NkkvUnNnYkI2clJibUlEOUdsNDM1V0R6OFo3WGM4c3lzSTVieDZpNEcrWCswM1N5SnZBdDYrTlArY3NCYUJ3b1EyanZvd0crOUVVd3ZSZWl3MmNjOWEybjhuUHNzZ2JMS0ljTlpHNVpaWDhEMFFmU2JnYUhUVExpcTQwVFU",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
     },
     {
@@ -105,7 +105,7 @@ window.APPLE_DATABASE = {
       "screen_size": "11\"",
       "min_price_thb": 42900,
       "max_price_thb": 106900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -116,7 +116,7 @@ window.APPLE_DATABASE = {
       "screen_size": "11\"",
       "min_price_thb": 27900,
       "max_price_thb": 62900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -127,7 +127,7 @@ window.APPLE_DATABASE = {
       "screen_size": "10.9\"",
       "min_price_thb": 16900,
       "max_price_thb": 33900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -138,7 +138,7 @@ window.APPLE_DATABASE = {
       "screen_size": "8.3\"",
       "min_price_thb": 21900,
       "max_price_thb": 38900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -149,7 +149,7 @@ window.APPLE_DATABASE = {
       "screen_size": "13.6\"",
       "min_price_thb": 44900,
       "max_price_thb": 54900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -160,7 +160,7 @@ window.APPLE_DATABASE = {
       "screen_size": "14.2\"",
       "min_price_thb": 69900,
       "max_price_thb": 180150,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -171,7 +171,7 @@ window.APPLE_DATABASE = {
       "screen_size": "24\"",
       "min_price_thb": 52900,
       "max_price_thb": 59900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-silver-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -182,7 +182,7 @@ window.APPLE_DATABASE = {
       "screen_size": "Desktop",
       "min_price_thb": 32900,
       "max_price_thb": 68900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1785998455498",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-mini"
     },
     {
@@ -193,7 +193,7 @@ window.APPLE_DATABASE = {
       "screen_size": "Desktop",
       "min_price_thb": 89900,
       "max_price_thb": 245400,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1786042910172",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
     },
     {
@@ -204,7 +204,7 @@ window.APPLE_DATABASE = {
       "screen_size": "42mm",
       "min_price_thb": 14900,
       "max_price_thb": 27900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -215,7 +215,7 @@ window.APPLE_DATABASE = {
       "screen_size": "49mm",
       "min_price_thb": 29900,
       "max_price_thb": 29900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ultra-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-natural-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-ultra"
     },
     {
@@ -226,7 +226,7 @@ window.APPLE_DATABASE = {
       "screen_size": "40mm",
       "min_price_thb": 7900,
       "max_price_thb": 10900,
-      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     }
   ],
@@ -389,7 +389,7 @@ window.APPLE_DATABASE = {
       "price_thb": 30900,
       "formatted_price": "฿30,900",
       "specs_chip": "ชิป A18",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-white-select-202409_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=MkE3NkkvUnNnYkI2clJibUlEOUdsNDM1V0R6OFo3WGM4c3lzSTVieDZpNEcrWCswM1N5SnZBdDYrTlArY3NCYUJ3b1EyanZvd0crOUVVd3ZSZWl3MmNjOWEybjhuUHNzZ2JMS0ljTlpHNVpaWDhEMFFmU2JnYUhUVExpcTQwVFU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
     },
     {
@@ -410,7 +410,7 @@ window.APPLE_DATABASE = {
       "price_thb": 30900,
       "formatted_price": "฿30,900",
       "specs_chip": "ชิป A18",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-black-select-202409_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=Y1l1MmFiWkNUWmJ0WXkrVTNiMnhxWTM1V0R6OFo3WGM4c3lzSTVieDZpNEcrWCswM1N5SnZBdDYrTlArY3NCYUJ3b1EyanZvd0crOUVVd3ZSZWl3MlZBTnB4bmE5ZElvWXRicmdzWWNHOFVjOTJmQXRpKzduNkhpcGpXOURSNkg",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-black?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
     },
     {
@@ -431,7 +431,7 @@ window.APPLE_DATABASE = {
       "price_thb": 30900,
       "formatted_price": "฿30,900",
       "specs_chip": "ชิป A18",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-pink-select-202409_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=UVNpeHhuaEtmVmFjT28wSWtUWE40cEgwZTRaemxBbktKckRwNzVUYjAxZGRSUmkrR2JFODhaM2JuczlVS3lGdGJGcXNRQnFCV0w3WVRjTExvdm1ic1FrR3JSM1A3VmovL1ZlSkthZlQxZWlKTExiOEFsRmxtQ2Nua0tRSC83MkI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
     },
     {
@@ -452,7 +452,7 @@ window.APPLE_DATABASE = {
       "price_thb": 30900,
       "formatted_price": "฿30,900",
       "specs_chip": "ชิป A18",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-teal-select-202409_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=ZWQwWE02eFY3dENRdXRQQkhqUUNjcEgwZTRaemxBbktKckRwNzVUYjAxZGRSUmkrR2JFODhaM2JuczlVS3lGdGJGcXNRQnFCV0w3WVRjTExvdm1ic2Ridk5LM2czd3JHZVpQMXpnVkt6cWxBU25Ob2N5dVQyQmxkN0IyWWVHdW0",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-teal?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
     },
     {
@@ -473,7 +473,7 @@ window.APPLE_DATABASE = {
       "price_thb": 30900,
       "formatted_price": "฿30,900",
       "specs_chip": "ชิป A18",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-ultramarine-select-202409_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=aWI5aGdudlZCalMrV3A2QU5NeUlaUS9CQ2hhaHB3cVp0QldQUmg0R3F6NllxU28wRmJ4M1hpa3FkUmRTa2QzR3JjdDZMRlVXdmhWTll0OTAwWGNkeVFXTjFyWXN6MmFjVTVuYkt2UFozY1c1dlhmNHBVNHcrZU96OHBHOXk0MC8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
     },
     {
@@ -1922,7 +1922,7 @@ window.APPLE_DATABASE = {
       "price_thb": 83900,
       "formatted_price": "฿83,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -1943,7 +1943,7 @@ window.APPLE_DATABASE = {
       "price_thb": 42900,
       "formatted_price": "฿42,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -1964,7 +1964,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -1985,7 +1985,7 @@ window.APPLE_DATABASE = {
       "price_thb": 64900,
       "formatted_price": "฿64,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2006,7 +2006,7 @@ window.APPLE_DATABASE = {
       "price_thb": 83900,
       "formatted_price": "฿83,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2027,7 +2027,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2048,7 +2048,7 @@ window.APPLE_DATABASE = {
       "price_thb": 42900,
       "formatted_price": "฿42,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2069,7 +2069,7 @@ window.APPLE_DATABASE = {
       "price_thb": 64900,
       "formatted_price": "฿64,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2090,7 +2090,7 @@ window.APPLE_DATABASE = {
       "price_thb": 87900,
       "formatted_price": "฿87,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2111,7 +2111,7 @@ window.APPLE_DATABASE = {
       "price_thb": 68900,
       "formatted_price": "฿68,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2132,7 +2132,7 @@ window.APPLE_DATABASE = {
       "price_thb": 87900,
       "formatted_price": "฿87,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2153,7 +2153,7 @@ window.APPLE_DATABASE = {
       "price_thb": 68900,
       "formatted_price": "฿68,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2174,7 +2174,7 @@ window.APPLE_DATABASE = {
       "price_thb": 75900,
       "formatted_price": "฿75,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2195,7 +2195,7 @@ window.APPLE_DATABASE = {
       "price_thb": 94900,
       "formatted_price": "฿94,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2216,7 +2216,7 @@ window.APPLE_DATABASE = {
       "price_thb": 75900,
       "formatted_price": "฿75,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2237,7 +2237,7 @@ window.APPLE_DATABASE = {
       "price_thb": 94900,
       "formatted_price": "฿94,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2258,7 +2258,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2279,7 +2279,7 @@ window.APPLE_DATABASE = {
       "price_thb": 56900,
       "formatted_price": "฿56,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2300,7 +2300,7 @@ window.APPLE_DATABASE = {
       "price_thb": 71900,
       "formatted_price": "฿71,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2321,7 +2321,7 @@ window.APPLE_DATABASE = {
       "price_thb": 90900,
       "formatted_price": "฿90,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2342,7 +2342,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2363,7 +2363,7 @@ window.APPLE_DATABASE = {
       "price_thb": 56900,
       "formatted_price": "฿56,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2384,7 +2384,7 @@ window.APPLE_DATABASE = {
       "price_thb": 71900,
       "formatted_price": "฿71,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2405,7 +2405,7 @@ window.APPLE_DATABASE = {
       "price_thb": 90900,
       "formatted_price": "฿90,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2426,7 +2426,7 @@ window.APPLE_DATABASE = {
       "price_thb": 80900,
       "formatted_price": "฿80,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2447,7 +2447,7 @@ window.APPLE_DATABASE = {
       "price_thb": 99900,
       "formatted_price": "฿99,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2468,7 +2468,7 @@ window.APPLE_DATABASE = {
       "price_thb": 80900,
       "formatted_price": "฿80,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2489,7 +2489,7 @@ window.APPLE_DATABASE = {
       "price_thb": 99900,
       "formatted_price": "฿99,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2510,7 +2510,7 @@ window.APPLE_DATABASE = {
       "price_thb": 54900,
       "formatted_price": "฿54,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2531,7 +2531,7 @@ window.APPLE_DATABASE = {
       "price_thb": 61900,
       "formatted_price": "฿61,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2552,7 +2552,7 @@ window.APPLE_DATABASE = {
       "price_thb": 76900,
       "formatted_price": "฿76,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2573,7 +2573,7 @@ window.APPLE_DATABASE = {
       "price_thb": 95900,
       "formatted_price": "฿95,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2594,7 +2594,7 @@ window.APPLE_DATABASE = {
       "price_thb": 54900,
       "formatted_price": "฿54,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2615,7 +2615,7 @@ window.APPLE_DATABASE = {
       "price_thb": 76900,
       "formatted_price": "฿76,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2636,7 +2636,7 @@ window.APPLE_DATABASE = {
       "price_thb": 61900,
       "formatted_price": "฿61,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2657,7 +2657,7 @@ window.APPLE_DATABASE = {
       "price_thb": 95900,
       "formatted_price": "฿95,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2678,7 +2678,7 @@ window.APPLE_DATABASE = {
       "price_thb": 87900,
       "formatted_price": "฿87,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2699,7 +2699,7 @@ window.APPLE_DATABASE = {
       "price_thb": 106900,
       "formatted_price": "฿106,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2720,7 +2720,7 @@ window.APPLE_DATABASE = {
       "price_thb": 87900,
       "formatted_price": "฿87,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2741,7 +2741,7 @@ window.APPLE_DATABASE = {
       "price_thb": 106900,
       "formatted_price": "฿106,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2762,7 +2762,7 @@ window.APPLE_DATABASE = {
       "price_thb": 68900,
       "formatted_price": "฿68,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2783,7 +2783,7 @@ window.APPLE_DATABASE = {
       "price_thb": 61900,
       "formatted_price": "฿61,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2804,7 +2804,7 @@ window.APPLE_DATABASE = {
       "price_thb": 83900,
       "formatted_price": "฿83,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2825,7 +2825,7 @@ window.APPLE_DATABASE = {
       "price_thb": 102900,
       "formatted_price": "฿102,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-spaceblack-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXbnFBVlM3UFFkSEk5dkUvZGszL1g1V09BanpWQ1hUdk5OTFV3cnh4NHJTdXRJeTRHZTNjc1JRYlNTTXoyVUZhUE1wdUt3S25hMjhaakhLSUtSV3lSd2NpTEkzMmQ1Si9SWk82R3NpSEw2dDU",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2846,7 +2846,7 @@ window.APPLE_DATABASE = {
       "price_thb": 61900,
       "formatted_price": "฿61,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2867,7 +2867,7 @@ window.APPLE_DATABASE = {
       "price_thb": 68900,
       "formatted_price": "฿68,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2888,7 +2888,7 @@ window.APPLE_DATABASE = {
       "price_thb": 83900,
       "formatted_price": "฿83,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2909,7 +2909,7 @@ window.APPLE_DATABASE = {
       "price_thb": 102900,
       "formatted_price": "฿102,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-11-witb-silver-wifi-202405?wid=580&hei=680&fmt=jpeg&qlt=90&.v=VmZyMGJaRGRneGVrVWdYK1BVR3BXaVk0c0hkN3lReVJLSEkvRXJBKzVzckdwREFPMWxlOFZXNFh3a1p6b3Q3eFMwWnZwL3FIMTFsdjJkaGdCV1RvWXZIWi9hVnZnV1JzWWp4b1VEcVo3WXZyUFFmcmlSNjk2c1VNbWU1bU9lTnM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
     },
     {
@@ -2930,7 +2930,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -2951,7 +2951,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -2972,7 +2972,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -2993,7 +2993,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3014,7 +3014,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3035,7 +3035,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3056,7 +3056,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3077,7 +3077,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3098,7 +3098,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3119,7 +3119,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3140,7 +3140,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3161,7 +3161,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3182,7 +3182,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3203,7 +3203,7 @@ window.APPLE_DATABASE = {
       "price_thb": 49900,
       "formatted_price": "฿49,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3224,7 +3224,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3245,7 +3245,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3266,7 +3266,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3287,7 +3287,7 @@ window.APPLE_DATABASE = {
       "price_thb": 55900,
       "formatted_price": "฿55,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3308,7 +3308,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3329,7 +3329,7 @@ window.APPLE_DATABASE = {
       "price_thb": 37900,
       "formatted_price": "฿37,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3350,7 +3350,7 @@ window.APPLE_DATABASE = {
       "price_thb": 55900,
       "formatted_price": "฿55,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3371,7 +3371,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3392,7 +3392,7 @@ window.APPLE_DATABASE = {
       "price_thb": 37900,
       "formatted_price": "฿37,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3413,7 +3413,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3434,7 +3434,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3455,7 +3455,7 @@ window.APPLE_DATABASE = {
       "price_thb": 55900,
       "formatted_price": "฿55,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3476,7 +3476,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3497,7 +3497,7 @@ window.APPLE_DATABASE = {
       "price_thb": 37900,
       "formatted_price": "฿37,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3518,7 +3518,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3539,7 +3539,7 @@ window.APPLE_DATABASE = {
       "price_thb": 55900,
       "formatted_price": "฿55,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3560,7 +3560,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3581,7 +3581,7 @@ window.APPLE_DATABASE = {
       "price_thb": 37900,
       "formatted_price": "฿37,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3602,7 +3602,7 @@ window.APPLE_DATABASE = {
       "price_thb": 45900,
       "formatted_price": "฿45,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3623,7 +3623,7 @@ window.APPLE_DATABASE = {
       "price_thb": 34900,
       "formatted_price": "฿34,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3644,7 +3644,7 @@ window.APPLE_DATABASE = {
       "price_thb": 56900,
       "formatted_price": "฿56,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3665,7 +3665,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3686,7 +3686,7 @@ window.APPLE_DATABASE = {
       "price_thb": 34900,
       "formatted_price": "฿34,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3707,7 +3707,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3728,7 +3728,7 @@ window.APPLE_DATABASE = {
       "price_thb": 56900,
       "formatted_price": "฿56,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3749,7 +3749,7 @@ window.APPLE_DATABASE = {
       "price_thb": 45900,
       "formatted_price": "฿45,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3770,7 +3770,7 @@ window.APPLE_DATABASE = {
       "price_thb": 56900,
       "formatted_price": "฿56,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3791,7 +3791,7 @@ window.APPLE_DATABASE = {
       "price_thb": 45900,
       "formatted_price": "฿45,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3812,7 +3812,7 @@ window.APPLE_DATABASE = {
       "price_thb": 34900,
       "formatted_price": "฿34,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3833,7 +3833,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3854,7 +3854,7 @@ window.APPLE_DATABASE = {
       "price_thb": 34900,
       "formatted_price": "฿34,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3875,7 +3875,7 @@ window.APPLE_DATABASE = {
       "price_thb": 45900,
       "formatted_price": "฿45,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3896,7 +3896,7 @@ window.APPLE_DATABASE = {
       "price_thb": 56900,
       "formatted_price": "฿56,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3917,7 +3917,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3938,7 +3938,7 @@ window.APPLE_DATABASE = {
       "price_thb": 51900,
       "formatted_price": "฿51,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3959,7 +3959,7 @@ window.APPLE_DATABASE = {
       "price_thb": 62900,
       "formatted_price": "฿62,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -3980,7 +3980,7 @@ window.APPLE_DATABASE = {
       "price_thb": 40900,
       "formatted_price": "฿40,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4001,7 +4001,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-blue-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=Y1FabHpVdzRFSmNnZ1FXdGZOMldGVWJINXFId1UwQmFHVEFOS0h1Ryt0RFgxZnovblIzMkIyRkI3RHEzR2RkYVMwWnZwL3FIMTFsdjJkaGdCV1RvWWc4YkJIelhaQXI0V2J3SzRVSTltem5CUHlXTDIvL3dTZFJBeCtvNGwwaWE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4022,7 +4022,7 @@ window.APPLE_DATABASE = {
       "price_thb": 51900,
       "formatted_price": "฿51,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4043,7 +4043,7 @@ window.APPLE_DATABASE = {
       "price_thb": 62900,
       "formatted_price": "฿62,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4064,7 +4064,7 @@ window.APPLE_DATABASE = {
       "price_thb": 40900,
       "formatted_price": "฿40,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4085,7 +4085,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-purple-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dzJtY0gyTUNmY0dCc1NRTUtvblJvTHZTclJ3OHdXallQVjRIYXMwVzZ0OHJoMlAvYlErMC91VWE4WXF3M2ZkS0ZhcFd6czV0TmRENDc1UlFkM2ZEdlJLVXk4N0laVjhXWHRqL2ZqeDBCRUxZSlFJWXpOQ1NlbjVJUm1JMk5walM",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4106,7 +4106,7 @@ window.APPLE_DATABASE = {
       "price_thb": 51900,
       "formatted_price": "฿51,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4127,7 +4127,7 @@ window.APPLE_DATABASE = {
       "price_thb": 62900,
       "formatted_price": "฿62,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4148,7 +4148,7 @@ window.APPLE_DATABASE = {
       "price_thb": 40900,
       "formatted_price": "฿40,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4169,7 +4169,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-witb-starlight-11in-wifi-202405?wid=640&hei=680&fmt=jpeg&qlt=90&.v=dmNrZkxwa2xndk5ZMTNvbXZvWkh2QzNVc05aZS9ZUlF5eWprb3lRRktPZVZReGtaZjN4OGlZUUsvdmNaTU0vSlowTDU0d3IzRnpocWpFSldlVmNsY3JzOGtubUhBcXRjZnpwMFlFdTZWTzh6bDJDWkMwUVNWdmgvcU9KeXpYLzE",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4190,7 +4190,7 @@ window.APPLE_DATABASE = {
       "price_thb": 51900,
       "formatted_price": "฿51,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4211,7 +4211,7 @@ window.APPLE_DATABASE = {
       "price_thb": 62900,
       "formatted_price": "฿62,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4232,7 +4232,7 @@ window.APPLE_DATABASE = {
       "price_thb": 40900,
       "formatted_price": "฿40,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4253,7 +4253,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M2",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=208&amp;hei=208&amp;fmt=png-alpha&amp;.v=SzlUeW5ITUpKK1FKdDdNS0xNUVhmM0wza2p0WU43T3RXMHpWelJ0Z1ljWjhGb3BKNDVIeWJsQVdTWDFMQ0FXbm15d1FhSDJ0bkR0ZGZtUjZJNmFveFNQYlZ5WTdMK0prTmVPK2lqSWFURGc\\",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
     },
     {
@@ -4274,7 +4274,7 @@ window.APPLE_DATABASE = {
       "price_thb": 16900,
       "formatted_price": "฿16,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4295,7 +4295,7 @@ window.APPLE_DATABASE = {
       "price_thb": 20900,
       "formatted_price": "฿20,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4316,7 +4316,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4337,7 +4337,7 @@ window.APPLE_DATABASE = {
       "price_thb": 16900,
       "formatted_price": "฿16,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-silver-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=a1JWemcxdTJkZjVBdmdJRWxhRTkrSnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGYyNzdNU2pFMy9Nb0RoTzRqb21Halk",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4358,7 +4358,7 @@ window.APPLE_DATABASE = {
       "price_thb": 20900,
       "formatted_price": "฿20,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-silver-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=a1JWemcxdTJkZjVBdmdJRWxhRTkrSnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGYyNzdNU2pFMy9Nb0RoTzRqb21Halk",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4379,7 +4379,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-silver-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=a1JWemcxdTJkZjVBdmdJRWxhRTkrSnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGYyNzdNU2pFMy9Nb0RoTzRqb21Halk",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4400,7 +4400,7 @@ window.APPLE_DATABASE = {
       "price_thb": 16900,
       "formatted_price": "฿16,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pink-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=SjZwMzRKZHdWTFRGdHp4YXMzalZId0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQnM1Y0xEMitCMmdZN3VzNGVJZFRyRGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4421,7 +4421,7 @@ window.APPLE_DATABASE = {
       "price_thb": 20900,
       "formatted_price": "฿20,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pink-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=SjZwMzRKZHdWTFRGdHp4YXMzalZId0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQnM1Y0xEMitCMmdZN3VzNGVJZFRyRGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4442,7 +4442,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pink-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=SjZwMzRKZHdWTFRGdHp4YXMzalZId0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQnM1Y0xEMitCMmdZN3VzNGVJZFRyRGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4463,7 +4463,7 @@ window.APPLE_DATABASE = {
       "price_thb": 16900,
       "formatted_price": "฿16,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-yellow-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=R2ZHVDExMVIyNnBkVnQyRi91cU9JWnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGNmWCt6UEx4MkdYR3VTSXdqelBhMGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4484,7 +4484,7 @@ window.APPLE_DATABASE = {
       "price_thb": 20900,
       "formatted_price": "฿20,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-yellow-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=R2ZHVDExMVIyNnBkVnQyRi91cU9JWnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGNmWCt6UEx4MkdYR3VTSXdqelBhMGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4505,7 +4505,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-yellow-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=R2ZHVDExMVIyNnBkVnQyRi91cU9JWnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGNmWCt6UEx4MkdYR3VTSXdqelBhMGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4526,7 +4526,7 @@ window.APPLE_DATABASE = {
       "price_thb": 22900,
       "formatted_price": "฿22,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-yellow-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=R2ZHVDExMVIyNnBkVnQyRi91cU9JWnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGNmWCt6UEx4MkdYR3VTSXdqelBhMGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4547,7 +4547,7 @@ window.APPLE_DATABASE = {
       "price_thb": 26900,
       "formatted_price": "฿26,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-yellow-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=R2ZHVDExMVIyNnBkVnQyRi91cU9JWnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGNmWCt6UEx4MkdYR3VTSXdqelBhMGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4568,7 +4568,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-yellow-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=R2ZHVDExMVIyNnBkVnQyRi91cU9JWnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGNmWCt6UEx4MkdYR3VTSXdqelBhMGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4589,7 +4589,7 @@ window.APPLE_DATABASE = {
       "price_thb": 22900,
       "formatted_price": "฿22,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4610,7 +4610,7 @@ window.APPLE_DATABASE = {
       "price_thb": 26900,
       "formatted_price": "฿26,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4631,7 +4631,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-blue-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=T2NtQmwyMnZFLzdKSjVjaHJYS2p3Z0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQmhUSXNxZEdGTG5KWm9hRzdTZVRwNW8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4652,7 +4652,7 @@ window.APPLE_DATABASE = {
       "price_thb": 22900,
       "formatted_price": "฿22,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pink-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=SjZwMzRKZHdWTFRGdHp4YXMzalZId0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQnM1Y0xEMitCMmdZN3VzNGVJZFRyRGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4673,7 +4673,7 @@ window.APPLE_DATABASE = {
       "price_thb": 26900,
       "formatted_price": "฿26,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pink-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=SjZwMzRKZHdWTFRGdHp4YXMzalZId0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQnM1Y0xEMitCMmdZN3VzNGVJZFRyRGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4694,7 +4694,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pink-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=SjZwMzRKZHdWTFRGdHp4YXMzalZId0dvWXBNZGttZTNlbGRXYVhZczlaalFJbk9iZWpWSkNsSEE5QVpEb2xuQ1Y3MytCdHNES2RBd21ncWtSNUtxQnM1Y0xEMitCMmdZN3VzNGVJZFRyRGc",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4715,7 +4715,7 @@ window.APPLE_DATABASE = {
       "price_thb": 22900,
       "formatted_price": "฿22,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-silver-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=a1JWemcxdTJkZjVBdmdJRWxhRTkrSnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGYyNzdNU2pFMy9Nb0RoTzRqb21Halk",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4736,7 +4736,7 @@ window.APPLE_DATABASE = {
       "price_thb": 26900,
       "formatted_price": "฿26,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-silver-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=a1JWemcxdTJkZjVBdmdJRWxhRTkrSnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGYyNzdNU2pFMy9Nb0RoTzRqb21Halk",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4757,7 +4757,7 @@ window.APPLE_DATABASE = {
       "price_thb": 33900,
       "formatted_price": "฿33,900",
       "specs_chip": "ชิป A14 Bionic",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-silver-wifi-witb-202210?wid=618&hei=678&fmt=jpeg&qlt=90&.v=a1JWemcxdTJkZjVBdmdJRWxhRTkrSnpodHNnNkRRb3Vod01FQkFEVFhOcDVTc0NEYi9JVWhzcCtGRVdvb081NU14MXJScFRZN3Y5OWZsRXVrN1k4cGYyNzdNU2pFMy9Nb0RoTzRqb21Halk",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
     },
     {
@@ -4778,7 +4778,7 @@ window.APPLE_DATABASE = {
       "price_thb": 21900,
       "formatted_price": "฿21,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4799,7 +4799,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4820,7 +4820,7 @@ window.APPLE_DATABASE = {
       "price_thb": 32900,
       "formatted_price": "฿32,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4841,7 +4841,7 @@ window.APPLE_DATABASE = {
       "price_thb": 21900,
       "formatted_price": "฿21,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-starlight-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlT1Roc0JjSllHd1JwYnBOdkdVbjJFUDFDTXV1Z20wZHM4ZjV1cTVqcmEydXJYczEvOHg2NUpZb0ZNTTI5aERmSk1TUWl3NzFtZnJxaC85L0UzN3MzOVRkd0QrdUhmRzA1TEQrck1qTFZ5VWI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4862,7 +4862,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-starlight-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlT1Roc0JjSllHd1JwYnBOdkdVbjJFUDFDTXV1Z20wZHM4ZjV1cTVqcmEydXJYczEvOHg2NUpZb0ZNTTI5aERmSk1TUWl3NzFtZnJxaC85L0UzN3MzOVRkd0QrdUhmRzA1TEQrck1qTFZ5VWI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4883,7 +4883,7 @@ window.APPLE_DATABASE = {
       "price_thb": 32900,
       "formatted_price": "฿32,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-starlight-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlT1Roc0JjSllHd1JwYnBOdkdVbjJFUDFDTXV1Z20wZHM4ZjV1cTVqcmEydXJYczEvOHg2NUpZb0ZNTTI5aERmSk1TUWl3NzFtZnJxaC85L0UzN3MzOVRkd0QrdUhmRzA1TEQrck1qTFZ5VWI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4904,7 +4904,7 @@ window.APPLE_DATABASE = {
       "price_thb": 32900,
       "formatted_price": "฿32,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1727219500737",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4925,7 +4925,7 @@ window.APPLE_DATABASE = {
       "price_thb": 21900,
       "formatted_price": "฿21,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1727219500737",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4946,7 +4946,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1727219500737",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4967,7 +4967,7 @@ window.APPLE_DATABASE = {
       "price_thb": 21900,
       "formatted_price": "฿21,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-blue-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSlJiRUJoREI5K1hvekVxeGJoN0M1QklnckdzK1k3L0I0SlQvekkzaktDNDE1UUxLT2t0cW42N3FvQzVqaGhrVVpKcGNOeVdFZktrZXpPcVQveDVoUHArYWpGdS9XeFgvbS9ITnNYOEhYaG4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -4988,7 +4988,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-blue-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSlJiRUJoREI5K1hvekVxeGJoN0M1QklnckdzK1k3L0I0SlQvekkzaktDNDE1UUxLT2t0cW42N3FvQzVqaGhrVVpKcGNOeVdFZktrZXpPcVQveDVoUHArYWpGdS9XeFgvbS9ITnNYOEhYaG4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5009,7 +5009,7 @@ window.APPLE_DATABASE = {
       "price_thb": 32900,
       "formatted_price": "฿32,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-blue-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSlJiRUJoREI5K1hvekVxeGJoN0M1QklnckdzK1k3L0I0SlQvekkzaktDNDE1UUxLT2t0cW42N3FvQzVqaGhrVVpKcGNOeVdFZktrZXpPcVQveDVoUHArYWpGdS9XeFgvbS9ITnNYOEhYaG4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5030,7 +5030,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5051,7 +5051,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5072,7 +5072,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-purple-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSFpaZGtYZG15R1BTQkNUZ01TNUt2L0ZoSXlvSERaOFBjQURPSm04a1BqWS85S3R4M0M3WGhIQVNOK3lBdUI5K1RjQndpdFNQQi9BV1UzcVdiVG1MRUNINUhveGhFc1lXWld4RkQ2dkFBMi8",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5093,7 +5093,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1727219500737",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5114,7 +5114,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1727219500737",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5135,7 +5135,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202410?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1727219500737",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5156,7 +5156,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-starlight-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlT1Roc0JjSllHd1JwYnBOdkdVbjJFUDFDTXV1Z20wZHM4ZjV1cTVqcmEydXJYczEvOHg2NUpZb0ZNTTI5aERmSk1TUWl3NzFtZnJxaC85L0UzN3MzOVRkd0QrdUhmRzA1TEQrck1qTFZ5VWI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5177,7 +5177,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-starlight-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlT1Roc0JjSllHd1JwYnBOdkdVbjJFUDFDTXV1Z20wZHM4ZjV1cTVqcmEydXJYczEvOHg2NUpZb0ZNTTI5aERmSk1TUWl3NzFtZnJxaC85L0UzN3MzOVRkd0QrdUhmRzA1TEQrck1qTFZ5VWI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5198,7 +5198,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-starlight-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlT1Roc0JjSllHd1JwYnBOdkdVbjJFUDFDTXV1Z20wZHM4ZjV1cTVqcmEydXJYczEvOHg2NUpZb0ZNTTI5aERmSk1TUWl3NzFtZnJxaC85L0UzN3MzOVRkd0QrdUhmRzA1TEQrck1qTFZ5VWI",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5219,7 +5219,7 @@ window.APPLE_DATABASE = {
       "price_thb": 38900,
       "formatted_price": "฿38,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-blue-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSlJiRUJoREI5K1hvekVxeGJoN0M1QklnckdzK1k3L0I0SlQvekkzaktDNDE1UUxLT2t0cW42N3FvQzVqaGhrVVpKcGNOeVdFZktrZXpPcVQveDVoUHArYWpGdS9XeFgvbS9ITnNYOEhYaG4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5240,7 +5240,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-blue-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSlJiRUJoREI5K1hvekVxeGJoN0M1QklnckdzK1k3L0I0SlQvekkzaktDNDE1UUxLT2t0cW42N3FvQzVqaGhrVVpKcGNOeVdFZktrZXpPcVQveDVoUHArYWpGdS9XeFgvbS9ITnNYOEhYaG4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5261,7 +5261,7 @@ window.APPLE_DATABASE = {
       "price_thb": 31900,
       "formatted_price": "฿31,900",
       "specs_chip": "ชิป A17 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-wifi-blue-202410?wid=628&hei=680&fmt=jpeg&qlt=90&.v=bGVCbTVHUWhSajJRZ2RQTGxmTzNlSlJiRUJoREI5K1hvekVxeGJoN0M1QklnckdzK1k3L0I0SlQvekkzaktDNDE1UUxLT2t0cW42N3FvQzVqaGhrVVpKcGNOeVdFZktrZXpPcVQveDVoUHArYWpGdS9XeFgvbS9ITnNYOEhYaG4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
     },
     {
@@ -5282,7 +5282,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5303,28 +5303,7 @@ window.APPLE_DATABASE = {
       "price_thb": 54900,
       "formatted_price": "฿54,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
-      "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
-    },
-    {
-      "id": "MAC-13INCH-SKYBLUE-10-10",
-      "product_id": "macbook-air",
-      "category": "mac",
-      "family": "MacBook Air",
-      "model_name": "MacBook Air 13.6\" สีฟ้า (Blue) 512GB SSD",
-      "part_number": "MAC-13INCH-SKYBLUE-10-10",
-      "sku": "MAC-13INCH-SKYBLUE-10-10",
-      "color_id": "blue",
-      "color_th": "ฟ้า",
-      "color_en": "Blue",
-      "color_hex": "#3E536B",
-      "storage": "512GB SSD",
-      "screen_size": "13.6\"",
-      "connectivity": "Wi-Fi 6E",
-      "price_thb": 48400,
-      "formatted_price": "฿48,400",
-      "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5345,7 +5324,28 @@ window.APPLE_DATABASE = {
       "price_thb": 54900,
       "formatted_price": "฿54,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+      "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
+    },
+    {
+      "id": "MAC-13INCH-SKYBLUE-10-10",
+      "product_id": "macbook-air",
+      "category": "mac",
+      "family": "MacBook Air",
+      "model_name": "MacBook Air 13.6\" สีฟ้า (Blue) 512GB SSD",
+      "part_number": "MAC-13INCH-SKYBLUE-10-10",
+      "sku": "MAC-13INCH-SKYBLUE-10-10",
+      "color_id": "blue",
+      "color_th": "ฟ้า",
+      "color_en": "Blue",
+      "color_hex": "#3E536B",
+      "storage": "512GB SSD",
+      "screen_size": "13.6\"",
+      "connectivity": "Wi-Fi 6E",
+      "price_thb": 48400,
+      "formatted_price": "฿48,400",
+      "specs_chip": "ชิป M3",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5366,7 +5366,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-silver-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5387,7 +5387,7 @@ window.APPLE_DATABASE = {
       "price_thb": 48400,
       "formatted_price": "฿48,400",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5408,7 +5408,7 @@ window.APPLE_DATABASE = {
       "price_thb": 54900,
       "formatted_price": "฿54,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5429,7 +5429,7 @@ window.APPLE_DATABASE = {
       "price_thb": 54900,
       "formatted_price": "฿54,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-silver-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5450,28 +5450,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
-      "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
-    },
-    {
-      "id": "MAC-13INCH-SILVER-10-10",
-      "product_id": "macbook-air",
-      "category": "mac",
-      "family": "MacBook Air",
-      "model_name": "MacBook Air 13.6\" สีเงิน (Silver) 512GB SSD",
-      "part_number": "MAC-13INCH-SILVER-10-10",
-      "sku": "MAC-13INCH-SILVER-10-10",
-      "color_id": "silver",
-      "color_th": "เงิน",
-      "color_en": "Silver",
-      "color_hex": "#E3E4E5",
-      "storage": "512GB SSD",
-      "screen_size": "13.6\"",
-      "connectivity": "Wi-Fi 6E",
-      "price_thb": 48400,
-      "formatted_price": "฿48,400",
-      "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5492,7 +5471,28 @@ window.APPLE_DATABASE = {
       "price_thb": 48400,
       "formatted_price": "฿48,400",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+      "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
+    },
+    {
+      "id": "MAC-13INCH-SILVER-10-10",
+      "product_id": "macbook-air",
+      "category": "mac",
+      "family": "MacBook Air",
+      "model_name": "MacBook Air 13.6\" สีเงิน (Silver) 512GB SSD",
+      "part_number": "MAC-13INCH-SILVER-10-10",
+      "sku": "MAC-13INCH-SILVER-10-10",
+      "color_id": "silver",
+      "color_th": "เงิน",
+      "color_en": "Silver",
+      "color_hex": "#E3E4E5",
+      "storage": "512GB SSD",
+      "screen_size": "13.6\"",
+      "connectivity": "Wi-Fi 6E",
+      "price_thb": 48400,
+      "formatted_price": "฿48,400",
+      "specs_chip": "ชิป M3",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-silver-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5513,7 +5513,7 @@ window.APPLE_DATABASE = {
       "price_thb": 44900,
       "formatted_price": "฿44,900",
       "specs_chip": "ชิป M3",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767638925491",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
     },
     {
@@ -5534,7 +5534,7 @@ window.APPLE_DATABASE = {
       "price_thb": 165900,
       "formatted_price": "฿165,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5555,7 +5555,7 @@ window.APPLE_DATABASE = {
       "price_thb": 150150,
       "formatted_price": "฿150,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5576,7 +5576,7 @@ window.APPLE_DATABASE = {
       "price_thb": 93150,
       "formatted_price": "฿93,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5597,7 +5597,7 @@ window.APPLE_DATABASE = {
       "price_thb": 154900,
       "formatted_price": "฿154,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5618,7 +5618,7 @@ window.APPLE_DATABASE = {
       "price_thb": 110150,
       "formatted_price": "฿110,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5639,7 +5639,7 @@ window.APPLE_DATABASE = {
       "price_thb": 87900,
       "formatted_price": "฿87,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5660,7 +5660,7 @@ window.APPLE_DATABASE = {
       "price_thb": 180150,
       "formatted_price": "฿180,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5681,7 +5681,7 @@ window.APPLE_DATABASE = {
       "price_thb": 171150,
       "formatted_price": "฿171,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5702,7 +5702,7 @@ window.APPLE_DATABASE = {
       "price_thb": 104900,
       "formatted_price": "฿104,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5723,7 +5723,7 @@ window.APPLE_DATABASE = {
       "price_thb": 180150,
       "formatted_price": "฿180,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5744,7 +5744,7 @@ window.APPLE_DATABASE = {
       "price_thb": 144900,
       "formatted_price": "฿144,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5765,7 +5765,7 @@ window.APPLE_DATABASE = {
       "price_thb": 97400,
       "formatted_price": "฿97,400",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5786,7 +5786,7 @@ window.APPLE_DATABASE = {
       "price_thb": 154900,
       "formatted_price": "฿154,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5807,28 +5807,7 @@ window.APPLE_DATABASE = {
       "price_thb": 93150,
       "formatted_price": "฿93,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
-      "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
-    },
-    {
-      "id": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
-      "product_id": "macbook-pro",
-      "category": "mac",
-      "family": "MacBook Pro",
-      "model_name": "MacBook Pro 16.2\" สีดำ (Black) 1TB SSD",
-      "part_number": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
-      "sku": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
-      "color_id": "black",
-      "color_th": "ดำ",
-      "color_en": "Black",
-      "color_hex": "#1F2022",
-      "storage": "1TB SSD",
-      "screen_size": "16.2\"",
-      "connectivity": "Wi-Fi 6E",
-      "price_thb": 110150,
-      "formatted_price": "฿110,150",
-      "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5849,7 +5828,28 @@ window.APPLE_DATABASE = {
       "price_thb": 75150,
       "formatted_price": "฿75,150",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+      "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
+    },
+    {
+      "id": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
+      "product_id": "macbook-pro",
+      "category": "mac",
+      "family": "MacBook Pro",
+      "model_name": "MacBook Pro 16.2\" สีดำ (Black) 1TB SSD",
+      "part_number": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
+      "sku": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
+      "color_id": "black",
+      "color_th": "ดำ",
+      "color_en": "Black",
+      "color_hex": "#1F2022",
+      "storage": "1TB SSD",
+      "screen_size": "16.2\"",
+      "connectivity": "Wi-Fi 6E",
+      "price_thb": 110150,
+      "formatted_price": "฿110,150",
+      "specs_chip": "ชิป M4 Pro",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5870,7 +5870,7 @@ window.APPLE_DATABASE = {
       "price_thb": 174900,
       "formatted_price": "฿174,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5891,7 +5891,7 @@ window.APPLE_DATABASE = {
       "price_thb": 171150,
       "formatted_price": "฿171,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5912,7 +5912,7 @@ window.APPLE_DATABASE = {
       "price_thb": 69900,
       "formatted_price": "฿69,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5933,7 +5933,7 @@ window.APPLE_DATABASE = {
       "price_thb": 104900,
       "formatted_price": "฿104,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5954,7 +5954,7 @@ window.APPLE_DATABASE = {
       "price_thb": 144900,
       "formatted_price": "฿144,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5975,7 +5975,7 @@ window.APPLE_DATABASE = {
       "price_thb": 102650,
       "formatted_price": "฿102,650",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -5996,7 +5996,7 @@ window.APPLE_DATABASE = {
       "price_thb": 97400,
       "formatted_price": "฿97,400",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6017,7 +6017,7 @@ window.APPLE_DATABASE = {
       "price_thb": 174900,
       "formatted_price": "฿174,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6038,7 +6038,7 @@ window.APPLE_DATABASE = {
       "price_thb": 160150,
       "formatted_price": "฿160,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6059,7 +6059,7 @@ window.APPLE_DATABASE = {
       "price_thb": 87900,
       "formatted_price": "฿87,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6080,7 +6080,7 @@ window.APPLE_DATABASE = {
       "price_thb": 69900,
       "formatted_price": "฿69,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6101,7 +6101,7 @@ window.APPLE_DATABASE = {
       "price_thb": 150150,
       "formatted_price": "฿150,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6122,7 +6122,7 @@ window.APPLE_DATABASE = {
       "price_thb": 102650,
       "formatted_price": "฿102,650",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6143,7 +6143,7 @@ window.APPLE_DATABASE = {
       "price_thb": 160150,
       "formatted_price": "฿160,150",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6164,7 +6164,7 @@ window.APPLE_DATABASE = {
       "price_thb": 75150,
       "formatted_price": "฿75,150",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6185,7 +6185,7 @@ window.APPLE_DATABASE = {
       "price_thb": 165900,
       "formatted_price": "฿165,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-macbook-pro-size-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767812220981",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
     },
     {
@@ -6206,7 +6206,7 @@ window.APPLE_DATABASE = {
       "price_thb": 52900,
       "formatted_price": "฿52,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-silver-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6227,7 +6227,7 @@ window.APPLE_DATABASE = {
       "price_thb": 52900,
       "formatted_price": "฿52,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-yellow-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6248,28 +6248,7 @@ window.APPLE_DATABASE = {
       "price_thb": 52900,
       "formatted_price": "฿52,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
-      "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
-    },
-    {
-      "id": "MAC-PINK-8-8",
-      "product_id": "imac",
-      "category": "mac",
-      "family": "iMac",
-      "model_name": "iMac 24\" สีชมพู (Pink) 256GB SSD",
-      "part_number": "MAC-PINK-8-8",
-      "sku": "MAC-PINK-8-8",
-      "color_id": "pink",
-      "color_th": "ชมพู",
-      "color_en": "Pink",
-      "color_hex": "#E3A3B1",
-      "storage": "256GB SSD",
-      "screen_size": "24\"",
-      "connectivity": "Wi-Fi 6E",
-      "price_thb": 52900,
-      "formatted_price": "฿52,900",
-      "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-purple-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6290,7 +6269,28 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-green-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+      "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
+    },
+    {
+      "id": "MAC-PINK-8-8",
+      "product_id": "imac",
+      "category": "mac",
+      "family": "iMac",
+      "model_name": "iMac 24\" สีชมพู (Pink) 256GB SSD",
+      "part_number": "MAC-PINK-8-8",
+      "sku": "MAC-PINK-8-8",
+      "color_id": "pink",
+      "color_th": "ชมพู",
+      "color_en": "Pink",
+      "color_hex": "#E3A3B1",
+      "storage": "256GB SSD",
+      "screen_size": "24\"",
+      "connectivity": "Wi-Fi 6E",
+      "price_thb": 52900,
+      "formatted_price": "฿52,900",
+      "specs_chip": "ชิป M4",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-pink-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6311,7 +6311,7 @@ window.APPLE_DATABASE = {
       "price_thb": 52900,
       "formatted_price": "฿52,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-blue-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6332,7 +6332,7 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-yellow-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6353,7 +6353,7 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-blue-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6374,7 +6374,7 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-pink-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6395,7 +6395,7 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-orange-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6416,7 +6416,7 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-purple-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6437,7 +6437,7 @@ window.APPLE_DATABASE = {
       "price_thb": 52900,
       "formatted_price": "฿52,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-green-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6458,7 +6458,7 @@ window.APPLE_DATABASE = {
       "price_thb": 59900,
       "formatted_price": "฿59,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-silver-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6479,7 +6479,7 @@ window.APPLE_DATABASE = {
       "price_thb": 52900,
       "formatted_price": "฿52,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-color-unselect-202601-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1767917121718",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-orange-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
     },
     {
@@ -6500,7 +6500,7 @@ window.APPLE_DATABASE = {
       "price_thb": 61900,
       "formatted_price": "฿61,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1785998455498",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-mini"
     },
     {
@@ -6521,7 +6521,7 @@ window.APPLE_DATABASE = {
       "price_thb": 68900,
       "formatted_price": "฿68,900",
       "specs_chip": "ชิป M4 Pro",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1785998455498",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-mini"
     },
     {
@@ -6542,7 +6542,7 @@ window.APPLE_DATABASE = {
       "price_thb": 32900,
       "formatted_price": "฿32,900",
       "specs_chip": "ชิป M4",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1785998455498",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-mini"
     },
     {
@@ -6563,7 +6563,7 @@ window.APPLE_DATABASE = {
       "price_thb": 245400,
       "formatted_price": "฿245,400",
       "specs_chip": "ชิป M2 Ultra",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1786042910172",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
     },
     {
@@ -6584,7 +6584,7 @@ window.APPLE_DATABASE = {
       "price_thb": 199900,
       "formatted_price": "฿199,900",
       "specs_chip": "ชิป M2 Ultra",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1786042910172",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
     },
     {
@@ -6605,7 +6605,7 @@ window.APPLE_DATABASE = {
       "price_thb": 89900,
       "formatted_price": "฿89,900",
       "specs_chip": "ชิป M2 Max",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1786042910172",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
     },
     {
@@ -6626,7 +6626,7 @@ window.APPLE_DATABASE = {
       "price_thb": 110900,
       "formatted_price": "฿110,900",
       "specs_chip": "ชิป M2 Max",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-chip-unselect-202608-gallery-1?wid=1200&amp;hei=630&amp;fmt=jpeg&amp;qlt=95&amp;.v=1786042910172",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
     },
     {
@@ -6647,7 +6647,7 @@ window.APPLE_DATABASE = {
       "price_thb": 14900,
       "formatted_price": "฿14,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6668,7 +6668,7 @@ window.APPLE_DATABASE = {
       "price_thb": 18900,
       "formatted_price": "฿18,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6689,7 +6689,7 @@ window.APPLE_DATABASE = {
       "price_thb": 14900,
       "formatted_price": "฿14,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-rosegold-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6710,7 +6710,7 @@ window.APPLE_DATABASE = {
       "price_thb": 18900,
       "formatted_price": "฿18,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-rosegold-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6731,7 +6731,7 @@ window.APPLE_DATABASE = {
       "price_thb": 14900,
       "formatted_price": "฿14,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-silver-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6752,7 +6752,7 @@ window.APPLE_DATABASE = {
       "price_thb": 18900,
       "formatted_price": "฿18,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-silver-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6773,7 +6773,7 @@ window.APPLE_DATABASE = {
       "price_thb": 15900,
       "formatted_price": "฿15,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6794,7 +6794,7 @@ window.APPLE_DATABASE = {
       "price_thb": 19900,
       "formatted_price": "฿19,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6815,7 +6815,7 @@ window.APPLE_DATABASE = {
       "price_thb": 15900,
       "formatted_price": "฿15,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-rosegold-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6836,7 +6836,7 @@ window.APPLE_DATABASE = {
       "price_thb": 19900,
       "formatted_price": "฿19,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-rosegold-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6857,7 +6857,7 @@ window.APPLE_DATABASE = {
       "price_thb": 15900,
       "formatted_price": "฿15,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-silver-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6878,7 +6878,7 @@ window.APPLE_DATABASE = {
       "price_thb": 19900,
       "formatted_price": "฿19,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-silver-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6899,7 +6899,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-natural-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6920,7 +6920,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-gold-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6941,7 +6941,7 @@ window.APPLE_DATABASE = {
       "price_thb": 25900,
       "formatted_price": "฿25,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-slate-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6962,7 +6962,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-natural-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -6983,7 +6983,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-gold-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -7004,7 +7004,7 @@ window.APPLE_DATABASE = {
       "price_thb": 27900,
       "formatted_price": "฿27,900",
       "specs_chip": "ชิป S10 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s10-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-slate-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
     },
     {
@@ -7025,7 +7025,7 @@ window.APPLE_DATABASE = {
       "price_thb": 29900,
       "formatted_price": "฿29,900",
       "specs_chip": "ชิป S9 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ultra-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-natural-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-ultra"
     },
     {
@@ -7046,7 +7046,7 @@ window.APPLE_DATABASE = {
       "price_thb": 29900,
       "formatted_price": "฿29,900",
       "specs_chip": "ชิป S9 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ultra-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-black-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-ultra"
     },
     {
@@ -7067,7 +7067,7 @@ window.APPLE_DATABASE = {
       "price_thb": 7900,
       "formatted_price": "฿7,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7088,7 +7088,7 @@ window.APPLE_DATABASE = {
       "price_thb": 9900,
       "formatted_price": "฿9,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7109,7 +7109,7 @@ window.APPLE_DATABASE = {
       "price_thb": 7900,
       "formatted_price": "฿7,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-starlight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7130,7 +7130,7 @@ window.APPLE_DATABASE = {
       "price_thb": 9900,
       "formatted_price": "฿9,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-starlight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7151,7 +7151,7 @@ window.APPLE_DATABASE = {
       "price_thb": 7900,
       "formatted_price": "฿7,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-silver-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7172,7 +7172,7 @@ window.APPLE_DATABASE = {
       "price_thb": 9900,
       "formatted_price": "฿9,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-silver-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7193,7 +7193,7 @@ window.APPLE_DATABASE = {
       "price_thb": 8900,
       "formatted_price": "฿8,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7214,7 +7214,7 @@ window.APPLE_DATABASE = {
       "price_thb": 10900,
       "formatted_price": "฿10,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7235,7 +7235,7 @@ window.APPLE_DATABASE = {
       "price_thb": 8900,
       "formatted_price": "฿8,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-starlight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7256,7 +7256,7 @@ window.APPLE_DATABASE = {
       "price_thb": 10900,
       "formatted_price": "฿10,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-starlight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7277,7 +7277,7 @@ window.APPLE_DATABASE = {
       "price_thb": 8900,
       "formatted_price": "฿8,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-silver-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     },
     {
@@ -7298,11 +7298,3535 @@ window.APPLE_DATABASE = {
       "price_thb": 10900,
       "formatted_price": "฿10,900",
       "specs_chip": "ชิป S8 SiP",
-      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/se-case-unselect-gallery-1-202409?wid=5120&hei=3280&fmt=p-jpg&qlt=80",
+      "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-silver-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
       "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
     }
-  ]
+  ],
+  "tree": {
+    "iphone": {
+      "category_info": {
+        "id": "iphone",
+        "name_th": "iPhone",
+        "name_en": "iPhone",
+        "icon": "📱",
+        "sort_order": 1
+      },
+      "products": {
+        "iphone-16": {
+          "product_info": {
+            "id": "iphone-16",
+            "category_id": "iphone",
+            "name": "iPhone 16",
+            "chip": "ชิป A18",
+            "screen_size": "6.1\"",
+            "min_price_thb": 30900,
+            "max_price_thb": 30900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-16"
+          },
+          "colors": [
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "color_hex": "#F9F6EF",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-white?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MYE93ZP/A",
+                  "storage": "128GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 30900,
+                  "formatted_price": "฿30,900"
+                }
+              ]
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-black?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MYE73ZP/A",
+                  "storage": "128GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 30900,
+                  "formatted_price": "฿30,900"
+                }
+              ]
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "color_hex": "#E3A3B1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MYEA3ZP/A",
+                  "storage": "128GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 30900,
+                  "formatted_price": "฿30,900"
+                }
+              ]
+            },
+            {
+              "color_id": "teal",
+              "name_th": "ทีล",
+              "name_en": "Teal",
+              "color_hex": "#84A8A3",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-teal?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MYED3ZP/A",
+                  "storage": "128GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 30900,
+                  "formatted_price": "฿30,900"
+                }
+              ]
+            },
+            {
+              "color_id": "ultramarine",
+              "name_th": "อัลตร้ามารีน",
+              "name_en": "Ultramarine",
+              "color_hex": "#4D5E8C",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MYEC3ZP/A",
+                  "storage": "128GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 30900,
+                  "formatted_price": "฿30,900"
+                }
+              ]
+            }
+          ]
+        },
+        "iphone-18-pro": {
+          "product_info": {
+            "id": "iphone-18-pro",
+            "category_id": "iphone",
+            "name": "iPhone 18 Pro",
+            "chip": "ชิป A20 Pro",
+            "screen_size": "6.9\"",
+            "min_price_thb": 48900,
+            "max_price_thb": 100900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-burgundy-202609_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVmtqbnQyNWMvcld5Yy9DTnQyVUlQYnd0N0MvN002Q2xTTTlsNDE2S0J6M2h2Q29kcWs4WTl5cjdvUC9sdGZWcmRlVUN5anBMYXArdTZxQXVZNFlaRkdjcy95dXRDa1NDUVdPVmlYeklhNXBmbW94YnYxc1YvNXZ4emJGL0IxNFp3",
+            "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-18-pro"
+          },
+          "colors": [
+            {
+              "color_id": "burgundy",
+              "name_th": "เบอร์กันดี",
+              "name_en": "Burgundy",
+              "color_hex": "#6B1D2F",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-burgundy-202609_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVmtqbnQyNWMvcld5Yy9DTnQyVUlQYnd0N0MvN002Q2xTTTlsNDE2S0J6M2h2Q29kcWs4WTl5cjdvUC9sdGZWcmRlVUN5anBMYXArdTZxQXVZNFlaRkdjcy95dXRDa1NDUVdPVmlYeklhNXBmbW94YnYxc1YvNXZ4emJGL0IxNFp3",
+              "options": [
+                {
+                  "id": "MJY04ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 76900,
+                  "formatted_price": "฿76,900"
+                },
+                {
+                  "id": "MJY44ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 100900,
+                  "formatted_price": "฿100,900"
+                },
+                {
+                  "id": "MJXQ4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MJXV4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 60900,
+                  "formatted_price": "฿60,900"
+                },
+                {
+                  "id": "MJT14ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 72900,
+                  "formatted_price": "฿72,900"
+                },
+                {
+                  "id": "MJRR4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 48900,
+                  "formatted_price": "฿48,900"
+                },
+                {
+                  "id": "MJT54ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 96900,
+                  "formatted_price": "฿96,900"
+                },
+                {
+                  "id": "MJRW4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                }
+              ]
+            },
+            {
+              "color_id": "glacier",
+              "name_th": "กลาเซียร์",
+              "name_en": "Glacier",
+              "color_hex": "#D3E0EA",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-glacier-202609_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCZFJQQXM4NUJneHhVVGhBeWh4RFRuM2tyb3FXRlg0b3ZVam5YYjd6eTV5aTVIZlkyUVhTaG1vWWJFN2NXNUI3d0w2TGhYaGhMVkJpQ2RGWWVURTZNbXlrbHJzaDlGbDZVSEVtV0JJbkdqcW8",
+              "options": [
+                {
+                  "id": "MJY14ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 76900,
+                  "formatted_price": "฿76,900"
+                },
+                {
+                  "id": "MJY54ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 100900,
+                  "formatted_price": "฿100,900"
+                },
+                {
+                  "id": "MJXR4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MJXW4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 60900,
+                  "formatted_price": "฿60,900"
+                },
+                {
+                  "id": "MJT24ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 72900,
+                  "formatted_price": "฿72,900"
+                },
+                {
+                  "id": "MJT64ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 96900,
+                  "formatted_price": "฿96,900"
+                },
+                {
+                  "id": "MJRT4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 48900,
+                  "formatted_price": "฿48,900"
+                },
+                {
+                  "id": "MJRX4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-silver-202609_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCVGJOdEdsYjE3KzExOGFjT0NXdW5CRzFVVXZ0WDBlS281eURIb2h1bGRDYUVrYzZ4aGx2Q085bnhRaVROeFdKVDdrNkxqcEdrM2x6OUZ3Z2JnTllhUU5pTnR1WjBmd3ZFSVQ3ZE5MLzZ4d1Y",
+              "options": [
+                {
+                  "id": "MJXP4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MJY34ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 100900,
+                  "formatted_price": "฿100,900"
+                },
+                {
+                  "id": "MJXU4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 60900,
+                  "formatted_price": "฿60,900"
+                },
+                {
+                  "id": "MJXY4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 76900,
+                  "formatted_price": "฿76,900"
+                },
+                {
+                  "id": "MJT04ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 72900,
+                  "formatted_price": "฿72,900"
+                },
+                {
+                  "id": "MJRQ4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 48900,
+                  "formatted_price": "฿48,900"
+                },
+                {
+                  "id": "MJT44ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 96900,
+                  "formatted_price": "฿96,900"
+                },
+                {
+                  "id": "MJRV4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                }
+              ]
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-18-pro-finish-select-black-202609_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=ODB3TEdtbk8ybkd3clM3dWVML3VCWEQvUEQ2K0RlZDNJelh6T1hiakdBeUIwVmlobDZUcnBCZWVLZlJ2MWU4Q1orUE1iays0OUh2ZlI4aHRLS0JxTnpNZGEwYVUyTzcvZlg1UkxwTzJQS1c3S256NUR2czJlci9sdjJiZUJXRnk",
+              "options": [
+                {
+                  "id": "MJXN4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MJXT4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 60900,
+                  "formatted_price": "฿60,900"
+                },
+                {
+                  "id": "MJY24ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 100900,
+                  "formatted_price": "฿100,900"
+                },
+                {
+                  "id": "MJXX4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.9\"",
+                  "connectivity": "5G",
+                  "price_thb": 76900,
+                  "formatted_price": "฿76,900"
+                },
+                {
+                  "id": "MJRY4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 72900,
+                  "formatted_price": "฿72,900"
+                },
+                {
+                  "id": "MJRP4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 48900,
+                  "formatted_price": "฿48,900"
+                },
+                {
+                  "id": "MJT34ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 96900,
+                  "formatted_price": "฿96,900"
+                },
+                {
+                  "id": "MJRU4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                }
+              ]
+            }
+          ]
+        },
+        "iphone-17": {
+          "product_info": {
+            "id": "iphone-17",
+            "category_id": "iphone",
+            "name": "iPhone 17",
+            "chip": "ชิป A19",
+            "screen_size": "6.3\"",
+            "min_price_thb": 34900,
+            "max_price_thb": 42900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-mistblue-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=WGdCRlQ0YVlqbTdXTEkxRnVQb0oxaFUrdlByZTJvbHVPZlZpd2VmTDUrWThoSGozaDhHYjRWeWk3WVBoTXNuNnppRFFUQWNsM2txTVJoMG04WVAwREFYUldRZVYxMHFkRFZrQVZuaWMwSkJGZzRIRERpNldDbHhJWmg3dWt4Z3M",
+            "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-17"
+          },
+          "colors": [
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-mistblue-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=WGdCRlQ0YVlqbTdXTEkxRnVQb0oxaFUrdlByZTJvbHVPZlZpd2VmTDUrWThoSGozaDhHYjRWeWk3WVBoTXNuNnppRFFUQWNsM2txTVJoMG04WVAwREFYUldRZVYxMHFkRFZrQVZuaWMwSkJGZzRIRERpNldDbHhJWmg3dWt4Z3M",
+              "options": [
+                {
+                  "id": "MG6L4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MG6T4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                }
+              ]
+            },
+            {
+              "color_id": "lavender",
+              "name_th": "ลาเวนเดอร์",
+              "name_en": "Lavender",
+              "color_hex": "#C3B1E1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-lavender-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=WGdCRlQ0YVlqbTdXTEkxRnVQb0oxcUlHcmZkMUl0cGRrS2JXMzRCZWNFazhoSGozaDhHYjRWeWk3WVBoTXNuNnppRFFUQWNsM2txTVJoMG04WVAwREFYUldRZVYxMHFkRFZrQVZuaWMwSkR4MllpU2FhU1VMNEZndkhvL0N1bFc",
+              "options": [
+                {
+                  "id": "MG6M4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MG6U4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                }
+              ]
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-black-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=WGdCRlQ0YVlqbTdXTEkxRnVQb0oxb2VRRjNicDE2eUYxNWtxdDZEUE9tUjZxZmJIdzBBQWpZVTVJdFRoUUcxVloyU1hvUEtRbDVNbTllSjBLTk1lc0Q2K3c3eDN1QlVKV09nQzhyNmV5TTFHQlJWZzByU21DbUFERkJnRlpYeEw",
+              "options": [
+                {
+                  "id": "MG6J4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MG6P4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                }
+              ]
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "color_hex": "#F9F6EF",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-white-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=WGdCRlQ0YVlqbTdXTEkxRnVQb0oxcXFXRXVNZU9PTnQ3OTN2dlJVVVVMMTZxZmJIdzBBQWpZVTVJdFRoUUcxVloyU1hvUEtRbDVNbTllSjBLTk1lc0Q2K3c3eDN1QlVKV09nQzhyNmV5TTN5QnNHY0VEcFBvUUJFS2phUkVjTmU",
+              "options": [
+                {
+                  "id": "MG6K4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MG6Q4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                }
+              ]
+            },
+            {
+              "color_id": "sage",
+              "name_th": "เสจ",
+              "name_en": "Sage",
+              "color_hex": "#9CAF88",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-sage-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=WGdCRlQ0YVlqbTdXTEkxRnVQb0oxcldEenhQbG0wTEZiekdTaVhUYlUxM3p5Mk5RT1VHclJLR0RGN3hzTHlqYnRxZ2J2OHpGVFFJZTlERDByMng1Q0QyTkNERHVqSk12b05selRrakVBT3VsOWp5VTdJeEtTdUM5MWR3V1UxOVY",
+              "options": [
+                {
+                  "id": "MG6N4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MG6V4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.3\"",
+                  "connectivity": "5G",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                }
+              ]
+            }
+          ]
+        },
+        "iphone-17e": {
+          "product_info": {
+            "id": "iphone-17e",
+            "category_id": "iphone",
+            "name": "iPhone 17e",
+            "chip": "ชิป A19",
+            "screen_size": "6.1\"",
+            "min_price_thb": 26900,
+            "max_price_thb": 34900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17e-finish-select-black-202603_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=WEw4Mm90aWNESFd6NGRURjZZeWczZE5sc2lRMHRoVncyYVNaOGVLMmg1VWFENlJPSWRRa3lRb1VyZ1hqaVpPYUJBZ3FkQ01RcVFpUWhSOVlYY2VMVnJobHZ1MVZrbkN0OWkzZ0JoOGJHcmxPNkQ1MW9pbkVSNVlWUFpqUmFMUjE",
+            "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-17e"
+          },
+          "colors": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17e-finish-select-black-202603_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=WEw4Mm90aWNESFd6NGRURjZZeWczZE5sc2lRMHRoVncyYVNaOGVLMmg1VWFENlJPSWRRa3lRb1VyZ1hqaVpPYUJBZ3FkQ01RcVFpUWhSOVlYY2VMVnJobHZ1MVZrbkN0OWkzZ0JoOGJHcmxPNkQ1MW9pbkVSNVlWUFpqUmFMUjE",
+              "options": [
+                {
+                  "id": "MHRY4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MHRV4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                }
+              ]
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "color_hex": "#F9F6EF",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17e-finish-select-white-202603_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=WEw4Mm90aWNESFd6NGRURjZZeWczV2JFb21La2tETXNDUUZERmJQcFZtY2FENlJPSWRRa3lRb1VyZ1hqaVpPYUJBZ3FkQ01RcVFpUWhSOVlYY2VMVnJobHZ1MVZrbkN0OWkzZ0JoOGJHcmx1TUNsWFNGbHFscThZWHhBYk1vQWs",
+              "options": [
+                {
+                  "id": "MHRW4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                },
+                {
+                  "id": "MHU04ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                }
+              ]
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "color_hex": "#E3A3B1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17e-finish-select-softpink-202603_AV2?wid=750&hei=506&fmt=jpeg&qlt=90&.v=WEw4Mm90aWNESFd6NGRURjZZeWczVk9TZFRrcStTaFFFUEl5NVBQdnhTYXB2VS94WEwzR0lCeDN0eFFxY1VnTzJ3bUhQUncwS094UktHcFQramoyWkRNZGEwYVUyTzcvZlg1UkxwTzJQS1VPZ1RnMkY5YktVYXU2MVZJNzd2RW0",
+              "options": [
+                {
+                  "id": "MHRX4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                },
+                {
+                  "id": "MHU34ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.1\"",
+                  "connectivity": "5G",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                }
+              ]
+            }
+          ]
+        },
+        "iphone-air": {
+          "product_info": {
+            "id": "iphone-air",
+            "category_id": "iphone",
+            "name": "iPhone Air",
+            "chip": "ชิป A19 Pro",
+            "screen_size": "6.6\"",
+            "min_price_thb": 43900,
+            "max_price_thb": 67900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-lightgold-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsQ0FRNjA2a0FndFVGandMdTMzMTI3T00vOTFDcVZMZ1NWbHJ1L2Y3cUxNTUVrYzZ4aGx2Q085bnhRaVROeFdKVDdrNkxqcEdrM2x6OUZ3Z2JnTllhUU1lWW1OTzN4ODVSM1FiYzRkQkdlaEE",
+            "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-air"
+          },
+          "colors": [
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "color_hex": "#E2D2B4",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-lightgold-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsQ0FRNjA2a0FndFVGandMdTMzMTI3T00vOTFDcVZMZ1NWbHJ1L2Y3cUxNTUVrYzZ4aGx2Q085bnhRaVROeFdKVDdrNkxqcEdrM2x6OUZ3Z2JnTllhUU1lWW1OTzN4ODVSM1FiYzRkQkdlaEE",
+              "options": [
+                {
+                  "id": "MG2U4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MG2Y4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 67900,
+                  "formatted_price": "฿67,900"
+                },
+                {
+                  "id": "MG2N4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 43900,
+                  "formatted_price": "฿43,900"
+                }
+              ]
+            },
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-skyblue-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsSTc3enVEMmlQcEEzL2lLSlkvSU10YzhoSGozaDhHYjRWeWk3WVBoTXNuNnppRFFUQWNsM2txTVJoMG04WVAwREFYUldRZVYxMHFkRFZrQVZuaWMwSkRkY0pyZ2lGQlBlT3hkYktnSXNpQkE",
+              "options": [
+                {
+                  "id": "MG2V4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MG304ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 67900,
+                  "formatted_price": "฿67,900"
+                },
+                {
+                  "id": "MG2P4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 43900,
+                  "formatted_price": "฿43,900"
+                }
+              ]
+            },
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "color_hex": "#F9F6EF",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-cloudwhite-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsTS8xdU11cWJCczZ1VVpEY09DWGZFdS9vQm9BbU9iTXhwOWJWSlZnMHdabzVIZlkyUVhTaG1vWWJFN2NXNUI3d0w2TGhYaGhMVkJpQ2RGWWVURTZNbXduOTZFQklBa1M3UUxXZjlYeTJScDI",
+              "options": [
+                {
+                  "id": "MG2T4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MG2X4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 67900,
+                  "formatted_price": "฿67,900"
+                },
+                {
+                  "id": "MG2M4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 43900,
+                  "formatted_price": "฿43,900"
+                }
+              ]
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-spaceblack-202509_AV2?wid=724&hei=540&fmt=jpeg&qlt=90&.v=NUpaQVl1bitSNmJWZUdKdi9QZHhsT1EwWVYrK0M3QzlJTEFOMng5bDMreWlDbXZOdXh1UVB5aVFtK3Y4Z0xSUzVIZlkyUVhTaG1vWWJFN2NXNUI3d0w2TGhYaGhMVkJpQ2RGWWVURTZNbXhPZDMzbWtyL01CSW5zS3RxOGVXRUo",
+              "options": [
+                {
+                  "id": "MG2W4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 67900,
+                  "formatted_price": "฿67,900"
+                },
+                {
+                  "id": "MG2L4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 43900,
+                  "formatted_price": "฿43,900"
+                },
+                {
+                  "id": "MG2Q4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.6\"",
+                  "connectivity": "5G",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                }
+              ]
+            }
+          ]
+        },
+        "iphone-duo": {
+          "product_info": {
+            "id": "iphone-duo",
+            "category_id": "iphone",
+            "name": "iPhone Duo",
+            "chip": "ชิป A20 Pro",
+            "screen_size": "6.7\" Dual",
+            "min_price_thb": 79900,
+            "max_price_thb": 127900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609_AV2?wid=1448&hei=1080&fmt=jpeg&qlt=90&.v=L2FnUkNTRm43ZDRCREFsdzlaeThka1hsOUZkQmZFRkQ2eEh0dEM0bVFwWDQyMkp3ajFERU1EdEpnTkVrNzFmMHFJdkJPZTFIVklMRHF5Qjlvcy9ObW14YXJFQWFnVmkrMkUzQ3k2TDVtN0dZeVdXc0RpQ01aMHg0Q2tCOVExRGh1YmZQMXFXa2w0U3RUanhYSTV4Z29R",
+            "product_url": "https://www.apple.com/th/shop/buy-iphone/iphone-duo"
+          },
+          "colors": [
+            {
+              "color_id": "white",
+              "name_th": "ขาว",
+              "name_en": "White",
+              "color_hex": "#F9F6EF",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-star-white-202609_AV2?wid=1448&hei=1080&fmt=jpeg&qlt=90&.v=L2FnUkNTRm43ZDRCREFsdzlaeThka1hsOUZkQmZFRkQ2eEh0dEM0bVFwWDQyMkp3ajFERU1EdEpnTkVrNzFmMHFJdkJPZTFIVklMRHF5Qjlvcy9ObW14YXJFQWFnVmkrMkUzQ3k2TDVtN0dZeVdXc0RpQ01aMHg0Q2tCOVExRGh1YmZQMXFXa2w0U3RUanhYSTV4Z29R",
+              "options": [
+                {
+                  "id": "MK2H4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 103900,
+                  "formatted_price": "฿103,900"
+                },
+                {
+                  "id": "MK2F4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "MK2D4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 79900,
+                  "formatted_price": "฿79,900"
+                },
+                {
+                  "id": "MK2K4ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 127900,
+                  "formatted_price": "฿127,900"
+                }
+              ]
+            },
+            {
+              "color_id": "night-sky",
+              "name_th": "ไนท์สกาย",
+              "name_en": "Night Sky",
+              "color_hex": "#1B263B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-duo-finish-select-night-sky-202609_AV2?wid=1448&hei=1080&fmt=jpeg&qlt=90&.v=L2FnUkNTRm43ZDRCREFsdzlaeThkZ3h0LzRVb3pVcDdFRFlBZW9LdlZnTzRPY0l5QVNzbnFIeGZoVWFkV1ZNY2JoOGtwUWZDU1NHU2ZTc1UzcnZnaE5lVUN5anBMYXArdTZxQXVZNFlaRkZwWVRGQ1dzcnRpTzJCdEZVUm1lQ05mbW94YnYxc1YvNXZ4emJGL0IxNFp3",
+              "options": [
+                {
+                  "id": "MK2J4ZP/A",
+                  "storage": "1TB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 103900,
+                  "formatted_price": "฿103,900"
+                },
+                {
+                  "id": "MK2G4ZP/A",
+                  "storage": "512GB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "MK2E4ZP/A",
+                  "storage": "256GB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 79900,
+                  "formatted_price": "฿79,900"
+                },
+                {
+                  "id": "MK2L4ZP/A",
+                  "storage": "2TB",
+                  "screen_size": "6.7\" Dual",
+                  "connectivity": "5G",
+                  "price_thb": 127900,
+                  "formatted_price": "฿127,900"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "ipad": {
+      "category_info": {
+        "id": "ipad",
+        "name_th": "iPad",
+        "name_en": "iPad",
+        "icon": "📱",
+        "sort_order": 2
+      },
+      "products": {
+        "ipad-pro-m4": {
+          "product_info": {
+            "id": "ipad-pro-m4",
+            "category_id": "ipad",
+            "name": "iPad Pro (M4)",
+            "chip": "ชิป M4",
+            "screen_size": "11\"",
+            "min_price_thb": 42900,
+            "max_price_thb": 106900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-pro"
+          },
+          "colors": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-spaceblack?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MDWU4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 83900,
+                  "formatted_price": "฿83,900"
+                },
+                {
+                  "id": "MDWK4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                },
+                {
+                  "id": "MDWM4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "MDWP4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 64900,
+                  "formatted_price": "฿64,900"
+                },
+                {
+                  "id": "MDWW4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "MDWR4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 68900,
+                  "formatted_price": "฿68,900"
+                },
+                {
+                  "id": "ME2W4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 75900,
+                  "formatted_price": "฿75,900"
+                },
+                {
+                  "id": "ME6C4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 94900,
+                  "formatted_price": "฿94,900"
+                },
+                {
+                  "id": "ME2N4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "ME2Q4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                },
+                {
+                  "id": "ME2U4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 71900,
+                  "formatted_price": "฿71,900"
+                },
+                {
+                  "id": "ME2Y4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 90900,
+                  "formatted_price": "฿90,900"
+                },
+                {
+                  "id": "MDYQ4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 80900,
+                  "formatted_price": "฿80,900"
+                },
+                {
+                  "id": "MDYV4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 99900,
+                  "formatted_price": "฿99,900"
+                },
+                {
+                  "id": "MDYJ4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 54900,
+                  "formatted_price": "฿54,900"
+                },
+                {
+                  "id": "MDYN4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 76900,
+                  "formatted_price": "฿76,900"
+                },
+                {
+                  "id": "MDYL4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 61900,
+                  "formatted_price": "฿61,900"
+                },
+                {
+                  "id": "MDYT4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 95900,
+                  "formatted_price": "฿95,900"
+                },
+                {
+                  "id": "ME8G4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "ME8M4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 106900,
+                  "formatted_price": "฿106,900"
+                },
+                {
+                  "id": "ME7Y4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 68900,
+                  "formatted_price": "฿68,900"
+                },
+                {
+                  "id": "ME7W4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 61900,
+                  "formatted_price": "฿61,900"
+                },
+                {
+                  "id": "ME8D4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 83900,
+                  "formatted_price": "฿83,900"
+                },
+                {
+                  "id": "ME8J4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 102900,
+                  "formatted_price": "฿102,900"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-pro-finish-select-202405-11inch-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MDWV4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 83900,
+                  "formatted_price": "฿83,900"
+                },
+                {
+                  "id": "MDWN4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "MDWL4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 42900,
+                  "formatted_price": "฿42,900"
+                },
+                {
+                  "id": "MDWQ4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 64900,
+                  "formatted_price": "฿64,900"
+                },
+                {
+                  "id": "MDWX4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "MDWT4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 68900,
+                  "formatted_price": "฿68,900"
+                },
+                {
+                  "id": "ME2X4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 75900,
+                  "formatted_price": "฿75,900"
+                },
+                {
+                  "id": "ME6D4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 94900,
+                  "formatted_price": "฿94,900"
+                },
+                {
+                  "id": "ME2P4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "ME2T4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                },
+                {
+                  "id": "ME2V4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 71900,
+                  "formatted_price": "฿71,900"
+                },
+                {
+                  "id": "ME6A4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 90900,
+                  "formatted_price": "฿90,900"
+                },
+                {
+                  "id": "MDYR4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 80900,
+                  "formatted_price": "฿80,900"
+                },
+                {
+                  "id": "MDYW4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 99900,
+                  "formatted_price": "฿99,900"
+                },
+                {
+                  "id": "MDYK4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 54900,
+                  "formatted_price": "฿54,900"
+                },
+                {
+                  "id": "MDYM4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 61900,
+                  "formatted_price": "฿61,900"
+                },
+                {
+                  "id": "MDYP4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 76900,
+                  "formatted_price": "฿76,900"
+                },
+                {
+                  "id": "MDYU4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 95900,
+                  "formatted_price": "฿95,900"
+                },
+                {
+                  "id": "ME8H4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "ME8N4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 106900,
+                  "formatted_price": "฿106,900"
+                },
+                {
+                  "id": "ME7X4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 61900,
+                  "formatted_price": "฿61,900"
+                },
+                {
+                  "id": "ME8C4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 68900,
+                  "formatted_price": "฿68,900"
+                },
+                {
+                  "id": "ME8F4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 83900,
+                  "formatted_price": "฿83,900"
+                },
+                {
+                  "id": "ME8K4TH/A",
+                  "storage": "2TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 102900,
+                  "formatted_price": "฿102,900"
+                }
+              ]
+            }
+          ]
+        },
+        "ipad-air-m2": {
+          "product_info": {
+            "id": "ipad-air-m2",
+            "category_id": "ipad",
+            "name": "iPad Air (M2)",
+            "chip": "ชิป M2",
+            "screen_size": "11\"",
+            "min_price_thb": 27900,
+            "max_price_thb": 62900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air"
+          },
+          "colors": [
+            {
+              "color_id": "space-gray",
+              "name_th": "สเปซเกรย์",
+              "name_en": "Space Gray",
+              "color_hex": "#68696E",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-space-gray-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MH3A4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH3G4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "MH304TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MH354TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                },
+                {
+                  "id": "MH7M4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 55900,
+                  "formatted_price": "฿55,900"
+                },
+                {
+                  "id": "MH784TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                },
+                {
+                  "id": "MH7D4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 37900,
+                  "formatted_price": "฿37,900"
+                },
+                {
+                  "id": "MH7H4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                },
+                {
+                  "id": "MH5N4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MH5U4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH634TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                },
+                {
+                  "id": "MH5Y4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 45900,
+                  "formatted_price": "฿45,900"
+                },
+                {
+                  "id": "MH9M4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MH9R4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 62900,
+                  "formatted_price": "฿62,900"
+                },
+                {
+                  "id": "MH9D4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 40900,
+                  "formatted_price": "฿40,900"
+                },
+                {
+                  "id": "MH9H4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                }
+              ]
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "color_hex": "#F0ECE1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-starlight-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MH3D4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH3J4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "MH334TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MH374TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                },
+                {
+                  "id": "MH7K4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                },
+                {
+                  "id": "MH7P4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 55900,
+                  "formatted_price": "฿55,900"
+                },
+                {
+                  "id": "MH7A4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                },
+                {
+                  "id": "MH7F4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 37900,
+                  "formatted_price": "฿37,900"
+                },
+                {
+                  "id": "MH614TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 45900,
+                  "formatted_price": "฿45,900"
+                },
+                {
+                  "id": "MH5Q4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MH654TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                },
+                {
+                  "id": "MH5W4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH9P4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MH9U4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 62900,
+                  "formatted_price": "฿62,900"
+                },
+                {
+                  "id": "MH9F4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 40900,
+                  "formatted_price": "฿40,900"
+                },
+                {
+                  "id": "MH9K4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                }
+              ]
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "color_hex": "#D1CDDA",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-purple-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MH3E4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH3K4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "MH344TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MH394TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                },
+                {
+                  "id": "MH7L4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                },
+                {
+                  "id": "MH7Q4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 55900,
+                  "formatted_price": "฿55,900"
+                },
+                {
+                  "id": "MH7C4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                },
+                {
+                  "id": "MH7G4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 37900,
+                  "formatted_price": "฿37,900"
+                },
+                {
+                  "id": "MHDK4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                },
+                {
+                  "id": "MH624TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 45900,
+                  "formatted_price": "฿45,900"
+                },
+                {
+                  "id": "MH5T4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MH5X4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH9Q4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MH9V4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 62900,
+                  "formatted_price": "฿62,900"
+                },
+                {
+                  "id": "MH9G4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 40900,
+                  "formatted_price": "฿40,900"
+                },
+                {
+                  "id": "MH9L4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                }
+              ]
+            },
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-finish-blue-2024?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MH3C4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH3H4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 49900,
+                  "formatted_price": "฿49,900"
+                },
+                {
+                  "id": "MH314TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MH364TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                },
+                {
+                  "id": "MH7J4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                },
+                {
+                  "id": "MH7N4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 55900,
+                  "formatted_price": "฿55,900"
+                },
+                {
+                  "id": "MH794TH/A",
+                  "storage": "128GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                },
+                {
+                  "id": "MH7E4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "11\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 37900,
+                  "formatted_price": "฿37,900"
+                },
+                {
+                  "id": "MH5P4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 34900,
+                  "formatted_price": "฿34,900"
+                },
+                {
+                  "id": "MH604TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 45900,
+                  "formatted_price": "฿45,900"
+                },
+                {
+                  "id": "MH644TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 56900,
+                  "formatted_price": "฿56,900"
+                },
+                {
+                  "id": "MH5V4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MH9N4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 51900,
+                  "formatted_price": "฿51,900"
+                },
+                {
+                  "id": "MH9T4TH/A",
+                  "storage": "1TB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 62900,
+                  "formatted_price": "฿62,900"
+                },
+                {
+                  "id": "MH9E4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 40900,
+                  "formatted_price": "฿40,900"
+                },
+                {
+                  "id": "MH9J4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "13\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                }
+              ]
+            }
+          ]
+        },
+        "ipad-10th-gen": {
+          "product_info": {
+            "id": "ipad-10th-gen",
+            "category_id": "ipad",
+            "name": "iPad (10th Gen)",
+            "chip": "ชิป A14 Bionic",
+            "screen_size": "10.9\"",
+            "min_price_thb": 16900,
+            "max_price_thb": 33900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad"
+          },
+          "colors": [
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MD4A4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 16900,
+                  "formatted_price": "฿16,900"
+                },
+                {
+                  "id": "MD4H4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 20900,
+                  "formatted_price": "฿20,900"
+                },
+                {
+                  "id": "MD4Y4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MD7G4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 22900,
+                  "formatted_price": "฿22,900"
+                },
+                {
+                  "id": "MD7L4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                },
+                {
+                  "id": "MD7Q4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MD3Y4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 16900,
+                  "formatted_price": "฿16,900"
+                },
+                {
+                  "id": "MD4G4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 20900,
+                  "formatted_price": "฿20,900"
+                },
+                {
+                  "id": "MD4Q4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MD7F4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 22900,
+                  "formatted_price": "฿22,900"
+                },
+                {
+                  "id": "MD7K4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                },
+                {
+                  "id": "MD7P4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                }
+              ]
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "color_hex": "#E3A3B1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MD4E4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 16900,
+                  "formatted_price": "฿16,900"
+                },
+                {
+                  "id": "MD4P4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 20900,
+                  "formatted_price": "฿20,900"
+                },
+                {
+                  "id": "MD5C4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MD7J4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 22900,
+                  "formatted_price": "฿22,900"
+                },
+                {
+                  "id": "MD7N4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                },
+                {
+                  "id": "MD7T4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                }
+              ]
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "color_hex": "#FBE27D",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MD4D4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 16900,
+                  "formatted_price": "฿16,900"
+                },
+                {
+                  "id": "MD4J4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 20900,
+                  "formatted_price": "฿20,900"
+                },
+                {
+                  "id": "MD5A4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MD7H4TH/A",
+                  "storage": "128GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 22900,
+                  "formatted_price": "฿22,900"
+                },
+                {
+                  "id": "MD7M4TH/A",
+                  "storage": "256GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 26900,
+                  "formatted_price": "฿26,900"
+                },
+                {
+                  "id": "MD7R4TH/A",
+                  "storage": "512GB",
+                  "screen_size": "10.9\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 33900,
+                  "formatted_price": "฿33,900"
+                }
+              ]
+            }
+          ]
+        },
+        "ipad-mini": {
+          "product_info": {
+            "id": "ipad-mini",
+            "category_id": "ipad",
+            "name": "iPad mini",
+            "chip": "ชิป A17 Pro",
+            "screen_size": "8.3\"",
+            "min_price_thb": 21900,
+            "max_price_thb": 38900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini"
+          },
+          "colors": [
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "color_hex": "#D1CDDA",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-purple-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MXN93TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 21900,
+                  "formatted_price": "฿21,900"
+                },
+                {
+                  "id": "MXNE3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "MYH33TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 32900,
+                  "formatted_price": "฿32,900"
+                },
+                {
+                  "id": "MYHF3TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MXPR3TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MXPY3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                }
+              ]
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "color_hex": "#F0ECE1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-starlight-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MXN83TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 21900,
+                  "formatted_price": "฿21,900"
+                },
+                {
+                  "id": "MXND3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "MYH23TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 32900,
+                  "formatted_price": "฿32,900"
+                },
+                {
+                  "id": "MYHE3TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MXPQ3TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MXPX3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                }
+              ]
+            },
+            {
+              "color_id": "space-gray",
+              "name_th": "สเปซเกรย์",
+              "name_en": "Space Gray",
+              "color_hex": "#68696E",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-spacegray-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MYGY3TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 32900,
+                  "formatted_price": "฿32,900"
+                },
+                {
+                  "id": "MXN63TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 21900,
+                  "formatted_price": "฿21,900"
+                },
+                {
+                  "id": "MXNA3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "MYHC3TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MXPN3TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MXPT3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                }
+              ]
+            },
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-blue-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MXN73TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 21900,
+                  "formatted_price": "฿21,900"
+                },
+                {
+                  "id": "MXNC3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "MYH13TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi",
+                  "price_thb": 32900,
+                  "formatted_price": "฿32,900"
+                },
+                {
+                  "id": "MYHD3TH/A",
+                  "storage": "512GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 38900,
+                  "formatted_price": "฿38,900"
+                },
+                {
+                  "id": "MXPP3TH/A",
+                  "storage": "128GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                },
+                {
+                  "id": "MXPW3TH/A",
+                  "storage": "256GB",
+                  "screen_size": "8.3\"",
+                  "connectivity": "Wi-Fi + Cellular",
+                  "price_thb": 31900,
+                  "formatted_price": "฿31,900"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "mac": {
+      "category_info": {
+        "id": "mac",
+        "name_th": "Mac",
+        "name_en": "Mac",
+        "icon": "💻",
+        "sort_order": 3
+      },
+      "products": {
+        "macbook-air": {
+          "product_info": {
+            "id": "macbook-air",
+            "category_id": "mac",
+            "name": "MacBook Air",
+            "chip": "ชิป M3",
+            "screen_size": "13.6\"",
+            "min_price_thb": 44900,
+            "max_price_thb": 54900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-air"
+          },
+          "colors": [
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "color_hex": "#F0ECE1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-13INCH-STARLIGHT-10-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                },
+                {
+                  "id": "MAC-15INCH-STARLIGHT-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "15.3\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 54900,
+                  "formatted_price": "฿54,900"
+                },
+                {
+                  "id": "MAC-13INCH-STARLIGHT-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 48400,
+                  "formatted_price": "฿48,400"
+                }
+              ]
+            },
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-15INCH-SKYBLUE-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "15.3\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 54900,
+                  "formatted_price": "฿54,900"
+                },
+                {
+                  "id": "MAC-13INCH-SKYBLUE-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 48400,
+                  "formatted_price": "฿48,400"
+                },
+                {
+                  "id": "MAC-13INCH-SKYBLUE-10-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                }
+              ]
+            },
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "color_hex": "#1E222A",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-15INCH-MIDNIGHT-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "15.3\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 54900,
+                  "formatted_price": "฿54,900"
+                },
+                {
+                  "id": "MAC-13INCH-MIDNIGHT-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 48400,
+                  "formatted_price": "฿48,400"
+                },
+                {
+                  "id": "MAC-13INCH-MIDNIGHT-10-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-silver-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-13INCH-SILVER-10-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 44900,
+                  "formatted_price": "฿44,900"
+                },
+                {
+                  "id": "MAC-15INCH-SILVER-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "15.3\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 54900,
+                  "formatted_price": "฿54,900"
+                },
+                {
+                  "id": "MAC-13INCH-SILVER-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "13.6\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 48400,
+                  "formatted_price": "฿48,400"
+                }
+              ]
+            }
+          ]
+        },
+        "macbook-pro": {
+          "product_info": {
+            "id": "macbook-pro",
+            "category_id": "mac",
+            "name": "MacBook Pro",
+            "chip": "ชิป M4 Pro",
+            "screen_size": "14.2\"",
+            "min_price_thb": 69900,
+            "max_price_thb": 180150,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-mac/macbook-pro"
+          },
+          "colors": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-STANDARD-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 165900,
+                  "formatted_price": "฿165,900"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-STANDARD-M5PRO-15-16",
+                  "storage": "512GB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-NANO_TEXTURE-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 171150,
+                  "formatted_price": "฿171,150"
+                },
+                {
+                  "id": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 180150,
+                  "formatted_price": "฿180,150"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-STANDARD-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 97400,
+                  "formatted_price": "฿97,400"
+                },
+                {
+                  "id": "MAC-16INCH-SPACEBLACK-STANDARD-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 154900,
+                  "formatted_price": "฿154,900"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-15-16",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 93150,
+                  "formatted_price": "฿93,150"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-NANO_TEXTURE-M5-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 75150,
+                  "formatted_price": "฿75,150"
+                },
+                {
+                  "id": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 110150,
+                  "formatted_price": "฿110,150"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-STANDARD-M5-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 69900,
+                  "formatted_price": "฿69,900"
+                },
+                {
+                  "id": "MAC-16INCH-SPACEBLACK-STANDARD-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 104900,
+                  "formatted_price": "฿104,900"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-STANDARD-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 144900,
+                  "formatted_price": "฿144,900"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-NANO_TEXTURE-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 102650,
+                  "formatted_price": "฿102,650"
+                },
+                {
+                  "id": "MAC-16INCH-SPACEBLACK-STANDARD-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 174900,
+                  "formatted_price": "฿174,900"
+                },
+                {
+                  "id": "MAC-14INCH-SPACEBLACK-NANO_TEXTURE-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 150150,
+                  "formatted_price": "฿150,150"
+                },
+                {
+                  "id": "MAC-16INCH-SPACEBLACK-NANO_TEXTURE-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 160150,
+                  "formatted_price": "฿160,150"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mbp14-silver-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-14INCH-SILVER-NANO_TEXTURE-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 150150,
+                  "formatted_price": "฿150,150"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-NANO_TEXTURE-M5PRO-15-16",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 93150,
+                  "formatted_price": "฿93,150"
+                },
+                {
+                  "id": "MAC-16INCH-SILVER-STANDARD-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 154900,
+                  "formatted_price": "฿154,900"
+                },
+                {
+                  "id": "MAC-16INCH-SILVER-NANO_TEXTURE-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 110150,
+                  "formatted_price": "฿110,150"
+                },
+                {
+                  "id": "MAC-16INCH-SILVER-NANO_TEXTURE-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 180150,
+                  "formatted_price": "฿180,150"
+                },
+                {
+                  "id": "MAC-16INCH-SILVER-STANDARD-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 104900,
+                  "formatted_price": "฿104,900"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-STANDARD-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 144900,
+                  "formatted_price": "฿144,900"
+                },
+                {
+                  "id": "MAC-16INCH-SILVER-STANDARD-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 174900,
+                  "formatted_price": "฿174,900"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-NANO_TEXTURE-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 171150,
+                  "formatted_price": "฿171,150"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-STANDARD-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 97400,
+                  "formatted_price": "฿97,400"
+                },
+                {
+                  "id": "MAC-16INCH-SILVER-NANO_TEXTURE-M5MAX-18-32",
+                  "storage": "1TB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 160150,
+                  "formatted_price": "฿160,150"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-STANDARD-M5PRO-15-16",
+                  "storage": "512GB SSD",
+                  "screen_size": "16.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 87900,
+                  "formatted_price": "฿87,900"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-STANDARD-M5-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 69900,
+                  "formatted_price": "฿69,900"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-NANO_TEXTURE-M5PRO-18-20",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 102650,
+                  "formatted_price": "฿102,650"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-NANO_TEXTURE-M5-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 75150,
+                  "formatted_price": "฿75,150"
+                },
+                {
+                  "id": "MAC-14INCH-SILVER-STANDARD-M5MAX-18-40",
+                  "storage": "1TB SSD",
+                  "screen_size": "14.2\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 165900,
+                  "formatted_price": "฿165,900"
+                }
+              ]
+            }
+          ]
+        },
+        "imac": {
+          "product_info": {
+            "id": "imac",
+            "category_id": "mac",
+            "name": "iMac",
+            "chip": "ชิป M4",
+            "screen_size": "24\"",
+            "min_price_thb": 52900,
+            "max_price_thb": 59900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-silver-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-mac/imac"
+          },
+          "colors": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-silver-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-SILVER-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MAC-SILVER-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                }
+              ]
+            },
+            {
+              "color_id": "yellow",
+              "name_th": "เหลือง",
+              "name_en": "Yellow",
+              "color_hex": "#FBE27D",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-yellow-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-YELLOW-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MAC-YELLOW-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                }
+              ]
+            },
+            {
+              "color_id": "purple",
+              "name_th": "ม่วง",
+              "name_en": "Purple",
+              "color_hex": "#D1CDDA",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-purple-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-PURPLE-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MAC-PURPLE-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                }
+              ]
+            },
+            {
+              "color_id": "green",
+              "name_th": "เขียว",
+              "name_en": "Green",
+              "color_hex": "#43594B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-vesa-green-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-GREEN-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                },
+                {
+                  "id": "MAC-GREEN-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                }
+              ]
+            },
+            {
+              "color_id": "pink",
+              "name_th": "ชมพู",
+              "name_en": "Pink",
+              "color_hex": "#E3A3B1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-pink-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-PINK-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MAC-PINK-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                }
+              ]
+            },
+            {
+              "color_id": "blue",
+              "name_th": "ฟ้า",
+              "name_en": "Blue",
+              "color_hex": "#3E536B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-blue-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-BLUE-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                },
+                {
+                  "id": "MAC-BLUE-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                }
+              ]
+            },
+            {
+              "color_id": "orange",
+              "name_th": "ส้ม",
+              "name_en": "Orange",
+              "color_hex": "#E7643E",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-orange-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-ORANGE-10-10",
+                  "storage": "512GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 59900,
+                  "formatted_price": "฿59,900"
+                },
+                {
+                  "id": "MAC-ORANGE-8-8",
+                  "storage": "256GB SSD",
+                  "screen_size": "24\"",
+                  "connectivity": "Wi-Fi 6E",
+                  "price_thb": 52900,
+                  "formatted_price": "฿52,900"
+                }
+              ]
+            }
+          ]
+        },
+        "mac-mini": {
+          "product_info": {
+            "id": "mac-mini",
+            "category_id": "mac",
+            "name": "Mac mini",
+            "chip": "ชิป M4 Pro",
+            "screen_size": "Desktop",
+            "min_price_thb": 32900,
+            "max_price_thb": 68900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-mac/mac-mini"
+          },
+          "colors": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-M5PRO-15-16",
+                  "storage": "512GB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 61900,
+                  "formatted_price": "฿61,900"
+                },
+                {
+                  "id": "MAC-M5PRO-18-20",
+                  "storage": "512GB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 68900,
+                  "formatted_price": "฿68,900"
+                },
+                {
+                  "id": "MAC-M6-12-12",
+                  "storage": "256GB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 32900,
+                  "formatted_price": "฿32,900"
+                }
+              ]
+            }
+          ]
+        },
+        "mac-studio": {
+          "product_info": {
+            "id": "mac-studio",
+            "category_id": "mac",
+            "name": "Mac Studio",
+            "chip": "ชิป M2 Ultra",
+            "screen_size": "Desktop",
+            "min_price_thb": 89900,
+            "max_price_thb": 245400,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-mac/mac-studio"
+          },
+          "colors": [
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "MAC-M5ULTRA-36-80",
+                  "storage": "1TB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 245400,
+                  "formatted_price": "฿245,400"
+                },
+                {
+                  "id": "MAC-M5ULTRA-30-64",
+                  "storage": "1TB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 199900,
+                  "formatted_price": "฿199,900"
+                },
+                {
+                  "id": "MAC-M5MAX-18-32",
+                  "storage": "512GB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 89900,
+                  "formatted_price": "฿89,900"
+                },
+                {
+                  "id": "MAC-M5MAX-18-40",
+                  "storage": "512GB SSD",
+                  "screen_size": "Desktop",
+                  "connectivity": "Wi-Fi 6E + Ethernet",
+                  "price_thb": 110900,
+                  "formatted_price": "฿110,900"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "watch": {
+      "category_info": {
+        "id": "watch",
+        "name_th": "Apple Watch",
+        "name_en": "Apple Watch",
+        "icon": "⌚",
+        "sort_order": 4
+      },
+      "products": {
+        "apple-watch-series-10": {
+          "product_info": {
+            "id": "apple-watch-series-10",
+            "category_id": "watch",
+            "name": "Apple Watch Series 10",
+            "chip": "ชิป S10 SiP",
+            "screen_size": "42mm",
+            "min_price_thb": 14900,
+            "max_price_thb": 27900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch"
+          },
+          "colors": [
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-jetblack-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-BLACK-GPS-1",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS",
+                  "price_thb": 14900,
+                  "formatted_price": "฿14,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-BLACK-GPSCellular-2",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 18900,
+                  "formatted_price": "฿18,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-BLACK-GPS-7",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS",
+                  "price_thb": 15900,
+                  "formatted_price": "฿15,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-BLACK-GPSCellular-8",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 19900,
+                  "formatted_price": "฿19,900"
+                }
+              ]
+            },
+            {
+              "color_id": "rose-gold",
+              "name_th": "โรสโกลด์",
+              "name_en": "Rose Gold",
+              "color_hex": "#E0A39A",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-rosegold-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-ROSE-GOLD-GPS-3",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS",
+                  "price_thb": 14900,
+                  "formatted_price": "฿14,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-ROSE-GOLD-GPSCellular-4",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 18900,
+                  "formatted_price": "฿18,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-ROSE-GOLD-GPS-9",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS",
+                  "price_thb": 15900,
+                  "formatted_price": "฿15,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-ROSE-GOLD-GPSCellular-10",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 19900,
+                  "formatted_price": "฿19,900"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-aluminum-silver-nc-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-SILVER-GPS-5",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS",
+                  "price_thb": 14900,
+                  "formatted_price": "฿14,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-SILVER-GPSCellular-6",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 18900,
+                  "formatted_price": "฿18,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-SILVER-GPS-11",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS",
+                  "price_thb": 15900,
+                  "formatted_price": "฿15,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-SILVER-GPSCellular-12",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 19900,
+                  "formatted_price": "฿19,900"
+                }
+              ]
+            },
+            {
+              "color_id": "natural-titanium",
+              "name_th": "ไทเทเนียมธรรมชาติ",
+              "name_en": "Natural Titanium",
+              "color_hex": "#9A958E",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-natural-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-NATURAL-TITANIUM-GPSCellular-13",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-NATURAL-TITANIUM-GPSCellular-16",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                }
+              ]
+            },
+            {
+              "color_id": "gold",
+              "name_th": "ทอง",
+              "name_en": "Gold",
+              "color_hex": "#E2D2B4",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-gold-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-GOLD-GPSCellular-14",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-GOLD-GPSCellular-17",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                }
+              ]
+            },
+            {
+              "color_id": "slate",
+              "name_th": "เทาสเลท",
+              "name_en": "Slate",
+              "color_hex": "#43464B",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-42-titanium-slate-cell-s10?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-42mm-SLATE-GPSCellular-15",
+                  "storage": "64GB",
+                  "screen_size": "42mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 25900,
+                  "formatted_price": "฿25,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SERIES-10-46mm-SLATE-GPSCellular-18",
+                  "storage": "64GB",
+                  "screen_size": "46mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 27900,
+                  "formatted_price": "฿27,900"
+                }
+              ]
+            }
+          ]
+        },
+        "apple-watch-ultra-2": {
+          "product_info": {
+            "id": "apple-watch-ultra-2",
+            "category_id": "watch",
+            "name": "Apple Watch Ultra 2",
+            "chip": "ชิป S9 SiP",
+            "screen_size": "49mm",
+            "min_price_thb": 29900,
+            "max_price_thb": 29900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-natural-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-ultra"
+          },
+          "colors": [
+            {
+              "color_id": "natural-titanium",
+              "name_th": "ไทเทเนียมธรรมชาติ",
+              "name_en": "Natural Titanium",
+              "color_hex": "#9A958E",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-natural-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-ULTRA-2-49mm-NATURAL-TITANIUM-GPSCellular-1",
+                  "storage": "64GB",
+                  "screen_size": "49mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 29900,
+                  "formatted_price": "฿29,900"
+                }
+              ]
+            },
+            {
+              "color_id": "black",
+              "name_th": "ดำ",
+              "name_en": "Black",
+              "color_hex": "#1F2022",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-49-titanium-black-ultra2?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-ULTRA-2-49mm-BLACK-GPSCellular-2",
+                  "storage": "64GB",
+                  "screen_size": "49mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 29900,
+                  "formatted_price": "฿29,900"
+                }
+              ]
+            }
+          ]
+        },
+        "apple-watch-se": {
+          "product_info": {
+            "id": "apple-watch-se",
+            "category_id": "watch",
+            "name": "Apple Watch SE",
+            "chip": "ชิป S8 SiP",
+            "screen_size": "40mm",
+            "min_price_thb": 7900,
+            "max_price_thb": 10900,
+            "hero_image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
+            "product_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se"
+          },
+          "colors": [
+            {
+              "color_id": "midnight",
+              "name_th": "มิดไนท์",
+              "name_en": "Midnight",
+              "color_hex": "#1E222A",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-midnight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-40mm-MIDNIGHT-GPS-1",
+                  "storage": "32GB",
+                  "screen_size": "40mm",
+                  "connectivity": "GPS",
+                  "price_thb": 7900,
+                  "formatted_price": "฿7,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-40mm-MIDNIGHT-GPSCellular-2",
+                  "storage": "32GB",
+                  "screen_size": "40mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 9900,
+                  "formatted_price": "฿9,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-44mm-MIDNIGHT-GPS-7",
+                  "storage": "32GB",
+                  "screen_size": "44mm",
+                  "connectivity": "GPS",
+                  "price_thb": 8900,
+                  "formatted_price": "฿8,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-44mm-MIDNIGHT-GPSCellular-8",
+                  "storage": "32GB",
+                  "screen_size": "44mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 10900,
+                  "formatted_price": "฿10,900"
+                }
+              ]
+            },
+            {
+              "color_id": "starlight",
+              "name_th": "สตาร์ไลท์",
+              "name_en": "Starlight",
+              "color_hex": "#F0ECE1",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-starlight-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-40mm-STARLIGHT-GPS-3",
+                  "storage": "32GB",
+                  "screen_size": "40mm",
+                  "connectivity": "GPS",
+                  "price_thb": 7900,
+                  "formatted_price": "฿7,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-40mm-STARLIGHT-GPSCellular-4",
+                  "storage": "32GB",
+                  "screen_size": "40mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 9900,
+                  "formatted_price": "฿9,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-44mm-STARLIGHT-GPS-9",
+                  "storage": "32GB",
+                  "screen_size": "44mm",
+                  "connectivity": "GPS",
+                  "price_thb": 8900,
+                  "formatted_price": "฿8,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-44mm-STARLIGHT-GPSCellular-10",
+                  "storage": "32GB",
+                  "screen_size": "44mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 10900,
+                  "formatted_price": "฿10,900"
+                }
+              ]
+            },
+            {
+              "color_id": "silver",
+              "name_th": "เงิน",
+              "name_en": "Silver",
+              "color_hex": "#E3E4E5",
+              "image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/watch-case-40-aluminum-silver-nc-se?wid=904&hei=840&fmt=jpeg&qlt=90",
+              "options": [
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-40mm-SILVER-GPS-5",
+                  "storage": "32GB",
+                  "screen_size": "40mm",
+                  "connectivity": "GPS",
+                  "price_thb": 7900,
+                  "formatted_price": "฿7,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-40mm-SILVER-GPSCellular-6",
+                  "storage": "32GB",
+                  "screen_size": "40mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 9900,
+                  "formatted_price": "฿9,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-44mm-SILVER-GPS-11",
+                  "storage": "32GB",
+                  "screen_size": "44mm",
+                  "connectivity": "GPS",
+                  "price_thb": 8900,
+                  "formatted_price": "฿8,900"
+                },
+                {
+                  "id": "WATCH-APPLE-WATCH-SE-44mm-SILVER-GPSCellular-12",
+                  "storage": "32GB",
+                  "screen_size": "44mm",
+                  "connectivity": "GPS + Cellular",
+                  "price_thb": 10900,
+                  "formatted_price": "฿10,900"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
 };
 window.APPLE_VARIANTS = window.APPLE_DATABASE.variants;
 window.APPLE_PRODUCTS = window.APPLE_DATABASE.products;
 window.APPLE_CATEGORIES = window.APPLE_DATABASE.categories;
+window.APPLE_TREE = window.APPLE_DATABASE.tree;

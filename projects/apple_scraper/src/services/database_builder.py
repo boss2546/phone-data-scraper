@@ -458,11 +458,49 @@ class AppleDatabaseBuilder:
         file_path = self.exports_dir / filename
         colors, products = self.extract_normalized_entities(variants)
 
+        tree = {}
+        for cat in CATEGORY_METADATA:
+            tree[cat["id"]] = {
+                "category_info": cat,
+                "products": {}
+            }
+
+        for p in products:
+            cat_id = p["category_id"]
+            if cat_id in tree:
+                p_variants = [v for v in variants if (v.get("product_id") == p["id"] or v.get("family") == p["name"])]
+                color_groups = {}
+                for v in p_variants:
+                    c_id = v.get("color_id") or v.get("color_en", "").lower().replace(" ", "-")
+                    if c_id not in color_groups:
+                        color_groups[c_id] = {
+                            "color_id": c_id,
+                            "name_th": v.get("color_th"),
+                            "name_en": v.get("color_en"),
+                            "color_hex": v.get("color_hex"),
+                            "image_url": v.get("image_url"),
+                            "options": []
+                        }
+                    color_groups[c_id]["options"].append({
+                        "id": v.get("id"),
+                        "storage": v.get("storage"),
+                        "screen_size": v.get("screen_size"),
+                        "connectivity": v.get("connectivity"),
+                        "price_thb": v.get("price_thb"),
+                        "formatted_price": v.get("formatted_price")
+                    })
+
+                tree[cat_id]["products"][p["id"]] = {
+                    "product_info": p,
+                    "colors": list(color_groups.values())
+                }
+
         payload = {
             "categories": CATEGORY_METADATA,
             "products": products,
             "colors": colors,
-            "variants": variants
+            "variants": variants,
+            "tree": tree
         }
 
         js_content = (
@@ -471,6 +509,7 @@ class AppleDatabaseBuilder:
             "window.APPLE_VARIANTS = window.APPLE_DATABASE.variants;\n"
             "window.APPLE_PRODUCTS = window.APPLE_DATABASE.products;\n"
             "window.APPLE_CATEGORIES = window.APPLE_DATABASE.categories;\n"
+            "window.APPLE_TREE = window.APPLE_DATABASE.tree;\n"
         )
 
         with open(file_path, "w", encoding="utf-8") as f:
