@@ -42,6 +42,10 @@ class AppleDatabaseBuilder:
             fam = v.get("family", "Unknown")
             price = v.get("price_thb", 0)
 
+            cid = v.get("color_id") or v.get("color_en", "").lower().replace(" ", "-")
+            local_img = v.get("local_image_path") or f"data/images/{cat}/{pid}/{cid}.jpg"
+            v["local_image_path"] = local_img
+
             if pid not in products_map:
                 products_map[pid] = {
                     "id": pid,
@@ -52,6 +56,7 @@ class AppleDatabaseBuilder:
                     "min_price_thb": price,
                     "max_price_thb": price,
                     "hero_image_url": v.get("image_url", ""),
+                    "local_hero_image": local_img,
                     "product_url": v.get("product_url", "")
                 }
             else:
@@ -93,6 +98,7 @@ class AppleDatabaseBuilder:
             min_price_thb INTEGER,
             max_price_thb INTEGER,
             hero_image_url TEXT,
+            local_hero_image TEXT,
             product_url TEXT
         );
         """)
@@ -126,6 +132,7 @@ class AppleDatabaseBuilder:
             price_thb INTEGER NOT NULL,
             formatted_price TEXT NOT NULL,
             image_url TEXT,
+            local_image_path TEXT,
             product_url TEXT
         );
         """)
@@ -158,6 +165,7 @@ class AppleDatabaseBuilder:
             v.price_thb,
             v.formatted_price,
             v.image_url,
+            v.local_image_path,
             v.product_url
         FROM variants v
         LEFT JOIN products p ON v.product_id = p.id
@@ -177,7 +185,8 @@ class AppleDatabaseBuilder:
             COUNT(v.id) AS total_variants,
             GROUP_CONCAT(DISTINCT v.color_th) AS colors_available,
             GROUP_CONCAT(DISTINCT v.storage) AS storages_available,
-            p.hero_image_url
+            p.hero_image_url,
+            p.local_hero_image
         FROM products p
         JOIN categories c ON p.category_id = c.id
         LEFT JOIN variants v ON v.product_id = p.id
@@ -198,9 +207,9 @@ class AppleDatabaseBuilder:
         )
 
         cursor.executemany(
-            """INSERT INTO products (id, category_id, name, chip, screen_size, min_price_thb, max_price_thb, hero_image_url, product_url)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            [(p["id"], p["category_id"], p["name"], p["chip"], p["screen_size"], p["min_price_thb"], p["max_price_thb"], p["hero_image_url"], p["product_url"]) for p in products]
+            """INSERT INTO products (id, category_id, name, chip, screen_size, min_price_thb, max_price_thb, hero_image_url, local_hero_image, product_url)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            [(p["id"], p["category_id"], p["name"], p["chip"], p["screen_size"], p["min_price_thb"], p["max_price_thb"], p["hero_image_url"], p.get("local_hero_image", ""), p["product_url"]) for p in products]
         )
 
         var_rows = [
@@ -221,6 +230,7 @@ class AppleDatabaseBuilder:
                 int(v.get("price_thb", 0)),
                 v.get("formatted_price", "฿0"),
                 v.get("image_url", ""),
+                v.get("local_image_path", ""),
                 v.get("product_url", "")
             )
             for v in variants
@@ -231,8 +241,8 @@ class AppleDatabaseBuilder:
                 id, part_number, product_id, category_id, model_name,
                 color_id, color_th, color_en, color_hex, storage,
                 screen_size, connectivity, specs_chip, price_thb,
-                formatted_price, image_url, product_url
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                formatted_price, image_url, local_image_path, product_url
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             var_rows
         )
 
@@ -277,6 +287,7 @@ class AppleDatabaseBuilder:
             "    min_price_thb INT,",
             "    max_price_thb INT,",
             "    hero_image_url TEXT,",
+            "    local_hero_image TEXT,",
             "    product_url TEXT",
             ");",
             "",
@@ -306,6 +317,7 @@ class AppleDatabaseBuilder:
             "    price_thb INT NOT NULL,",
             "    formatted_price VARCHAR(32) NOT NULL,",
             "    image_url TEXT,",
+            "    local_image_path TEXT,",
             "    product_url TEXT",
             ");",
             "",
@@ -321,7 +333,7 @@ class AppleDatabaseBuilder:
 
         lines.append("\n-- Insert Products")
         for p in products:
-            lines.append(f"INSERT INTO products VALUES ({esc(p['id'])}, {esc(p['category_id'])}, {esc(p['name'])}, {esc(p['chip'])}, {esc(p['screen_size'])}, {p['min_price_thb']}, {p['max_price_thb']}, {esc(p['hero_image_url'])}, {esc(p['product_url'])});")
+            lines.append(f"INSERT INTO products VALUES ({esc(p['id'])}, {esc(p['category_id'])}, {esc(p['name'])}, {esc(p['chip'])}, {esc(p['screen_size'])}, {p['min_price_thb']}, {p['max_price_thb']}, {esc(p['hero_image_url'])}, {esc(p.get('local_hero_image', ''))}, {esc(p['product_url'])});")
 
         lines.append("\n-- Insert Variants")
         for v in variants:
@@ -331,7 +343,7 @@ class AppleDatabaseBuilder:
                 f"INSERT INTO variants VALUES ({esc(v['id'])}, {esc(v.get('part_number', v['id']))}, {esc(pid)}, {esc(v.get('category'))}, "
                 f"{esc(v['model_name'])}, {esc(cid)}, {esc(v['color_th'])}, {esc(v['color_en'])}, {esc(v['color_hex'])}, {esc(v.get('storage', '-'))}, "
                 f"{esc(v.get('screen_size', '-'))}, {esc(v.get('connectivity', 'Standard'))}, {esc(v.get('specs_chip', '-'))}, {int(v['price_thb'])}, "
-                f"{esc(v['formatted_price'])}, {esc(v.get('image_url'))}, {esc(v.get('product_url'))});"
+                f"{esc(v['formatted_price'])}, {esc(v.get('image_url'))}, {esc(v.get('local_image_path'))}, {esc(v.get('product_url'))});"
             )
 
         with open(file_path, "w", encoding="utf-8") as f:
@@ -431,6 +443,7 @@ class AppleDatabaseBuilder:
                             "name_en": v.get("color_en"),
                             "color_hex": v.get("color_hex"),
                             "image_url": v.get("image_url"),
+                            "local_image_path": v.get("local_image_path", f"data/images/{cat_id}/{p['id']}/{c_id}.jpg"),
                             "options": []
                         }
                     color_groups[c_id]["options"].append({
@@ -479,6 +492,7 @@ class AppleDatabaseBuilder:
                             "name_en": v.get("color_en"),
                             "color_hex": v.get("color_hex"),
                             "image_url": v.get("image_url"),
+                            "local_image_path": v.get("local_image_path", f"data/images/{cat_id}/{p['id']}/{c_id}.jpg"),
                             "options": []
                         }
                     color_groups[c_id]["options"].append({
@@ -526,7 +540,7 @@ class AppleDatabaseBuilder:
             "id", "part_number", "product_id", "category", "family", "model_name",
             "color_id", "color_th", "color_en", "color_hex", "storage", "screen_size",
             "connectivity", "price_thb", "formatted_price", "specs_chip",
-            "image_url", "product_url"
+            "image_url", "local_image_path", "product_url"
         ]
 
         with open(file_path, "w", encoding="utf-8-sig", newline="") as f:

@@ -203,22 +203,24 @@
     .view-switch-row {
       display: flex;
       justify-content: center;
-      gap: 12px;
-      margin: 0 auto 28px;
-      max-width: 680px;
+      gap: 10px;
+      margin: 0 auto 16px;
+      max-width: 900px;
       padding: 0 16px;
       position: relative;
       z-index: 10;
+      flex-wrap: wrap;
     }
 
     .view-switch-btn {
       flex: 1;
+      min-width: 220px;
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.12);
       color: var(--text-muted);
-      padding: 12px 20px;
+      padding: 12px 18px;
       border-radius: 980px;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.25s ease;
@@ -235,6 +237,40 @@
       color: #fff;
       border-color: #2997ff;
       box-shadow: 0 4px 20px rgba(0, 113, 227, 0.4);
+    }
+
+    /* Image Source Toggle */
+    .image-mode-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto 28px;
+      padding: 0 16px;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+    }
+
+    .img-mode-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(41, 151, 255, 0.3);
+      color: #58a6ff;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .img-mode-btn:hover {
+      background: rgba(41, 151, 255, 0.2);
+      border-color: #2997ff;
+      transform: translateY(-1px);
     }
 
     /* Product View Interactive Selectors */
@@ -683,43 +719,80 @@
       </div>
 
       <div class="tab-row">
-        <button class="tab-btn active" onclick="switchTab('tab-js', this)">1. JavaScript (Frontend)</button>
-        <button class="tab-btn" onclick="switchTab('tab-sql', this)">2. SQL / SQLite</button>
-        <button class="tab-btn" onclick="switchTab('tab-py', this)">3. Python (FastAPI/Flask)</button>
-        <button class="tab-btn" onclick="switchTab('tab-tree', this)">4. E-Commerce Tree JSON</button>
+        <button class="tab-btn active" onclick="switchTab('tab-react', this)">⚛️ React / Next.js</button>
+        <button class="tab-btn" onclick="switchTab('tab-vue', this)">💚 Vue 3</button>
+        <button class="tab-btn" onclick="switchTab('tab-embed', this)">🌐 HTML / PHP Embed</button>
+        <button class="tab-btn" onclick="switchTab('tab-sql', this)">🗄️ SQL / SQLite</button>
+        <button class="tab-btn" onclick="switchTab('tab-py', this)">🐍 Python Backend</button>
+        <button class="tab-btn" onclick="switchTab('tab-tree', this)">🌳 Tree JSON</button>
       </div>
 
-      <div id="tab-js" class="tab-pane">
-        <div class="code-box">&lt;!-- 1. นำเข้าไฟล์ Bundle และ Helper SDK ในหน้าเว็บของคุณ --&gt;
-&lt;script src="data/exports/apple_catalog.js"&gt;&lt;/script&gt;
-&lt;script src="data/exports/apple_db_helper.js"&gt;&lt;/script&gt;
+      <div id="tab-react" class="tab-pane">
+        <div class="code-box">// นำเข้า AppleCatalog Component (src/components/AppleCatalog.jsx) ไปใช้ใน Next.js หรือ React:
+import AppleCatalog from './components/AppleCatalog';
 
-&lt;script&gt;
-  // 1. ดึงสินค้าทั้งหมด
-  console.log("จำนวนสินค้าทั้งหมด:", AppleCatalog.getAll().length);
+export default function CatalogPage() {
+  const handleSelect = (variant) => {
+    console.log('ผู้ใช้เลือกสินค้า:', variant);
+    // เพิ่มลงในตะกร้าสินค้า (Cart State)
+  };
 
-  // 2. ดึงเฉพาะ iPhone
-  const iphones = AppleCatalog.getProductsByCategory('iphone');
+  return (
+    &lt;main&gt;
+      {/* ใช้รูปจาก Apple Official CDN หรือเปลี่ยน useLocalImages={true} เพื่อใช้รูปในเครื่อง */}
+      &lt;AppleCatalog 
+        treeApiUrl="/data/exports/apple_catalog_tree.json"
+        useLocalImages={false} 
+        onSelectVariant={handleSelect} 
+      /&gt;
+    &lt;/main&gt;
+  );
+}</div>
+      </div>
 
-  // 3. กรองสินค้าตามเงื่อนไข: iPhone สีชมพู งบไม่เกิน 35,000 บาท
-  const budgetPinks = AppleCatalog.filter({
-    category: 'iphone',
-    color: 'Pink',
-    maxPrice: 35000
-  });
-  console.table(budgetPinks);
+      <div id="tab-vue" class="tab-pane" style="display: none;">
+        <div class="code-box">&lt;!-- นำเข้า AppleCatalog Component (src/components/AppleCatalog.vue) ใน Vue 3 --&gt;
+&lt;template&gt;
+  &lt;AppleCatalog 
+    apiUrl="/data/exports/apple_catalog_tree.json"
+    :useLocalImages="false"
+    @select-variant="handleSelectVariant"
+  /&gt;
+&lt;/template&gt;
 
-  // 4. ค้นหาสินค้าตามคำค้นหา
-  const results = AppleCatalog.filter({ query: 'iPhone 16 128GB' });
+&lt;script setup&gt;
+import AppleCatalog from './components/AppleCatalog.vue';
+
+function handleSelectVariant(variant) {
+  console.log('เลือกสินค้า:', variant.model_name, variant.formatted_price);
+}
 &lt;/script&gt;</div>
+      </div>
+
+      <div id="tab-embed" class="tab-pane" style="display: none;">
+        <div class="code-box">&lt;!-- 1. ฝังในหน้าเว็บ HTML / PHP ทันที (WordPress, Laravel, Shopify, Pure HTML) --&gt;
+&lt;!-- ดูไฟล์ตัวอย่างเต็มใน: src/components/apple-embed.html --&gt;
+&lt;script src="data/exports/apple_catalog.js"&gt;&lt;/script&gt;
+
+&lt;!-- หรือใช้ PHP Service (src/components/AppleCatalog.php): --&gt;
+&lt;?php
+require_once 'src/components/AppleCatalog.php';
+$catalog = new AppleCatalogService();
+
+// ดึง 63 รายการแยกตามสี รูปไม่ซ้ำ 100%
+$colorItems = $catalog-&gt;getColorShowcase();
+
+// เรนเดอร์การ์ดสินค้า HTML สำเร็จรูปทันที
+echo $catalog-&gt;renderCatalogHtml(false);
+?&gt;</div>
       </div>
 
       <div id="tab-sql" class="tab-pane" style="display: none;">
         <div class="code-box">-- นำเข้า apple_catalog.sql เข้าสู่ MySQL, PostgreSQL หรือ Supabase:
 -- หรือคิวรีบน SQLite Database (apple_catalog.db) ได้ทันที:
 
--- ค้นหาสินค้าพร้อมชื่อรุ่น สี ความจุ และราคา (ใช้ View v_catalog ไม่ต้องเขียน JOIN เอง)
-SELECT product_name, model_name, color_th, storage, formatted_price 
+-- ค้นหาสินค้าพร้อมชื่อรุ่น สี ความจุ รูปภาพ และราคา (ใช้ View v_catalog ไม่ต้องเขียน JOIN เอง)
+SELECT product_name, model_name, color_th, storage, formatted_price, image_url, local_image_path 
 FROM v_catalog 
 WHERE category_id = 'iphone' AND price_thb &lt;= 40000 
 ORDER BY price_thb ASC;
@@ -760,7 +833,9 @@ def search(q: str):
         "product_info": { "name": "iPhone 16", "chip": "ชิป A18", "screen_size": "6.1\"" },
         "colors": [
           {
-            "name_th": "ชมพู", "color_hex": "#E3A3B1", "image_url": "...",
+            "name_th": "ชมพู", "color_hex": "#E3A3B1", 
+            "image_url": "https://store.storeimages.cdn-apple.com/...",
+            "local_image_path": "data/images/iphone/iphone-16/pink.jpg",
             "options": [
               { "storage": "128GB", "price_thb": 30900, "formatted_price": "฿30,900" }
             ]
@@ -776,12 +851,24 @@ def search(q: str):
 
   <!-- View Switcher -->
   <div class="view-switch-row">
-    <button class="view-switch-btn active" id="btnViewProducts" onclick="setViewMode('products')">
-      🛍️ มุมมองสินค้าหลัก (18 รุ่น พร้อมสลับสี & ความจุสด)
+    <button class="view-switch-btn active" id="btnViewColors" onclick="setViewMode('color')">
+      🎨 สีสินค้า (Showcase 63 รุ่น - รูปไม่ซ้ำ 100%)
+    </button>
+    <button class="view-switch-btn" id="btnViewProducts" onclick="setViewMode('products')">
+      🛍️ รวมรุ่นสินค้า (18 รุ่น พร้อมสลับสีสด)
     </button>
     <button class="view-switch-btn" id="btnViewVariants" onclick="setViewMode('variants')">
-      📋 มุมมอง SKU ย่อยทั้งหมด (330 รายการ)
+      📋 SKU ย่อยทั้งหมด (330 รายการ)
     </button>
+  </div>
+
+  <!-- Image Mode Toggle -->
+  <div class="image-mode-row">
+    <span>🖼️ แหล่งรูปภาพ:</span>
+    <button id="btnImgMode" class="img-mode-btn" onclick="toggleImageSource()">
+      <span id="imgModeIcon">🌐</span> <span id="imgModeText">Apple Official CDN (ออนไลน์ คมชัดสูง)</span>
+    </button>
+    <span style="font-size:0.8rem; color:#94a3b8;">(สามารถคลิกเพื่อสลับดูภาพ Offline จาก data/images/ ได้)</span>
   </div>
 
   <div class="controls-container">
@@ -819,19 +906,48 @@ def search(q: str):
     let activeCategory = 'all';
     let searchQuery = '';
     let sortMode = 'featured';
-    let viewMode = 'products'; // 'products' | 'variants'
+    let viewMode = 'color'; // 'color' (Showcase 63) | 'products' (18 Families) | 'variants' (330 SKUs)
+    let useLocalAssets = false;
     let productCardStates = {}; // pid -> { colorIdx: 0, optionIdx: 0 }
+    let colorCardStates = {};   // cardKey -> { optionIdx: 0 }
 
     function setViewMode(mode) {
       viewMode = mode;
+      document.getElementById('btnViewColors').classList.toggle('active', mode === 'color');
       document.getElementById('btnViewProducts').classList.toggle('active', mode === 'products');
       document.getElementById('btnViewVariants').classList.toggle('active', mode === 'variants');
       updateStats();
       renderCatalog();
     }
 
+    function toggleImageSource() {
+      useLocalAssets = !useLocalAssets;
+      const btn = document.getElementById('btnImgMode');
+      const icon = document.getElementById('imgModeIcon');
+      const text = document.getElementById('imgModeText');
+
+      if (useLocalAssets) {
+        icon.innerText = '💾';
+        text.innerText = 'Local Storage (data/images/ ออฟไลน์)';
+        btn.style.borderColor = '#34d399';
+        btn.style.color = '#34d399';
+      } else {
+        icon.innerText = '🌐';
+        text.innerText = 'Apple Official CDN (ออนไลน์ คมชัดสูง)';
+        btn.style.borderColor = 'rgba(41, 151, 255, 0.3)';
+        btn.style.color = '#58a6ff';
+      }
+      renderCatalog();
+    }
+
     function changeSort(val) {
       sortMode = val;
+      renderCatalog();
+    }
+
+    function selectColorOption(cardKey, optionIdx) {
+      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0 };
+      colorCardStates[cardKey].optionIdx = optionIdx;
       renderCatalog();
     }
 
@@ -865,6 +981,7 @@ def search(q: str):
               min_price_thb: v.price_thb,
               max_price_thb: v.price_thb,
               hero_image_url: v.image_url,
+              local_hero_image: v.local_image_path,
               product_url: v.product_url
             },
             colors: {}
@@ -882,6 +999,7 @@ def search(q: str):
             name_en: v.color_en,
             color_hex: v.color_hex,
             image_url: v.image_url,
+            local_image_path: v.local_image_path || `data/images/${cat}/${pid}/${cid}.jpg`,
             options: []
           };
         }
@@ -912,17 +1030,10 @@ def search(q: str):
         const res = await fetch('data/exports/apple_full_catalog.json');
         if (!res.ok) throw new Error("JSON file not found");
         const json = await res.json();
-        allVariants = [];
-        for (const catKey in json.catalog) {
-          const cat = json.catalog[catKey];
-          for (const famKey in cat.families) {
-            const fam = cat.families[famKey];
-            allVariants.push(...fam.variants);
-          }
-        }
-        treeData = computeTree(allVariants);
+        allVariants = json.variants || [];
+        treeData = json.catalog_tree || computeTree(allVariants);
       } catch (err) {
-        console.warn("Using default fallback data:", err);
+        console.warn("Using fallback computeTree:", err);
       }
 
       updateStats();
@@ -930,14 +1041,37 @@ def search(q: str):
     }
 
     function updateStats() {
-      if (viewMode === 'products') {
+      if (viewMode === 'color') {
+        let totalColors = 0;
+        let prices = [];
+        if (treeData) {
+          for (const cat in treeData) {
+            const prods = treeData[cat].products || {};
+            for (const pid in prods) {
+              const cols = Array.isArray(prods[pid].colors) ? prods[pid].colors : Object.values(prods[pid].colors || {});
+              totalColors += cols.length;
+              cols.forEach(c => {
+                if (c.options && c.options.length > 0) {
+                  prices.push(c.options[0].price_thb);
+                }
+              });
+            }
+          }
+        }
+        document.getElementById('statTotal').innerText = `${totalColors || 63} สีสินค้า (รูปไม่ซ้ำ 100%)`;
+        if (prices.length > 0) {
+          document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
+          document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
+        }
+      } else if (viewMode === 'products') {
         let totalProds = 0;
         let prices = [];
         if (treeData) {
           for (const cat in treeData) {
-            for (const pid in treeData[cat].products) {
+            const prods = treeData[cat].products || {};
+            for (const pid in prods) {
               totalProds++;
-              prices.push(treeData[cat].products[pid].product_info.min_price_thb);
+              prices.push(prods[pid].product_info.min_price_thb);
             }
           }
         }
@@ -960,13 +1094,130 @@ def search(q: str):
       const grid = document.getElementById('catalogGrid');
       const query = searchQuery.toLowerCase();
 
-      if (viewMode === 'products') {
+      if (viewMode === 'color') {
+        renderColorCards(grid, query);
+      } else if (viewMode === 'products') {
         renderProductCards(grid, query);
       } else {
         renderVariantCards(grid, query);
       }
     }
 
+    // 🎨 Mode 1: Color Showcase (63 items, 100% unique image per card)
+    function renderColorCards(grid, query) {
+      if (!treeData) {
+        treeData = computeTree(allVariants);
+      }
+
+      let colorList = [];
+      for (const catId in treeData) {
+        if (activeCategory !== 'all' && catId !== activeCategory) continue;
+        const prods = treeData[catId].products || {};
+        for (const pid in prods) {
+          const p = prods[pid];
+          const info = p.product_info || {};
+          const colors = Array.isArray(p.colors) ? p.colors : Object.values(p.colors || {});
+
+          colors.forEach(c => {
+            const matchSearch = !query ||
+              info.name.toLowerCase().includes(query) ||
+              (info.chip && info.chip.toLowerCase().includes(query)) ||
+              (c.name_th && c.name_th.toLowerCase().includes(query)) ||
+              (c.name_en && c.name_en.toLowerCase().includes(query));
+
+            if (matchSearch) {
+              colorList.push({
+                pid: pid,
+                catId: catId,
+                product_info: info,
+                color: c,
+                options: c.options || []
+              });
+            }
+          });
+        }
+      }
+
+      // Sort
+      if (sortMode === 'price-asc') {
+        colorList.sort((a, b) => ((a.options[0] || {}).price_thb || 0) - ((b.options[0] || {}).price_thb || 0));
+      } else if (sortMode === 'price-desc') {
+        colorList.sort((a, b) => ((b.options[0] || {}).price_thb || 0) - ((a.options[0] || {}).price_thb || 0));
+      } else if (sortMode === 'name') {
+        colorList.sort((a, b) => a.product_info.name.localeCompare(b.product_info.name));
+      }
+
+      if (colorList.length === 0) {
+        grid.innerHTML = `<div class="empty-state">❌ ไม่พบสินค้าที่ตรงกับ "${searchQuery}"</div>`;
+        return;
+      }
+
+      grid.innerHTML = colorList.map(item => {
+        const info = item.product_info;
+        const c = item.color;
+        const cardKey = `${item.pid}_${c.color_id}`;
+        if (!colorCardStates[cardKey]) {
+          colorCardStates[cardKey] = { optionIdx: 0 };
+        }
+        const state = colorCardStates[cardKey];
+        const options = item.options;
+        const activeOpt = options[state.optionIdx] || options[0] || {};
+        const displayPrice = activeOpt.formatted_price || '฿0';
+        const imgSrc = useLocalAssets ? (c.local_image_path || c.image_url) : c.image_url;
+
+        return `
+          <article class="product-card">
+            <div class="card-top">
+              <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
+              ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
+            </div>
+
+            <div class="image-container">
+              <img src="${imgSrc}" 
+                   alt="${info.name} สี${c.name_th}" 
+                   loading="lazy"
+                   onerror="this.src='${c.image_url}'" />
+            </div>
+
+            <h3 class="product-title">${info.name}</h3>
+
+            <div class="color-swatch-row" style="margin: 8px 0 14px;">
+              <span class="swatch-circle" style="background: ${c.color_hex || '#888'}; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 0 0 2px rgba(0,0,0,0.2);"></span>
+              <span class="color-name" style="font-size: 0.88rem;">สี: <b>${c.name_th} (${c.name_en})</b></span>
+            </div>
+
+            ${options.length > 1 ? `
+              <div class="storage-selector">
+                ${options.slice(0, 6).map((opt, idx) => `
+                  <button class="storage-chip ${idx === state.optionIdx ? 'active' : ''}" 
+                          onclick="selectColorOption('${cardKey}', ${idx})">
+                    ${opt.storage || opt.screen_size || opt.connectivity}
+                  </button>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            <div class="specs-pill-box">
+              ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill">📐 ${info.screen_size}</span>` : ''}
+              ${activeOpt.connectivity && activeOpt.connectivity !== '-' ? `<span class="spec-pill">📶 ${activeOpt.connectivity}</span>` : ''}
+              ${activeOpt.part_number ? `<span class="spec-pill">🏷️ ${activeOpt.part_number}</span>` : ''}
+            </div>
+
+            <div class="card-bottom">
+              <div class="price-group">
+                <span class="price-label">ราคาทางการ</span>
+                <span class="price-val">${displayPrice}</span>
+              </div>
+              <a href="${info.product_url}" target="_blank" rel="noopener" class="btn-buy">
+                ซื้อบน Apple ↗
+              </a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // 🛍️ Mode 2: Product Family (18 families, with interactive color swatches)
     function renderProductCards(grid, query) {
       if (!treeData) {
         treeData = computeTree(allVariants);
@@ -975,11 +1226,11 @@ def search(q: str):
       let productList = [];
       for (const catId in treeData) {
         if (activeCategory !== 'all' && catId !== activeCategory) continue;
-        const prods = treeData[catId].products;
+        const prods = treeData[catId].products || {};
         for (const pid in prods) {
           const p = prods[pid];
-          const info = p.product_info;
-          const colors = Array.isArray(p.colors) ? p.colors : Object.values(p.colors);
+          const info = p.product_info || {};
+          const colors = Array.isArray(p.colors) ? p.colors : Object.values(p.colors || {});
           
           // Search filter
           const matchSearch = !query ||
@@ -1016,30 +1267,19 @@ def search(q: str):
           productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
         }
         const state = productCardStates[pid];
-        const activeColor = colors[state.colorIdx] || colors[0];
-        const options = activeColor ? activeColor.options : [];
+        const activeColor = colors[state.colorIdx] || colors[0] || {};
+        const options = activeColor.options || [];
         
-        // กรองตัวเลือกสเปกให้กระชับและไม่ซ้ำซ้อน
-        const uniqueOptions = [];
-        const seenLabels = new Set();
-        for (let idx = 0; idx < options.length; idx++) {
-          const opt = options[idx];
-          const label = opt.storage || opt.screen_size || opt.connectivity || 'มาตรฐาน';
-          const key = label + '_' + opt.price_thb;
-          if (!seenLabels.has(key)) {
-            seenLabels.add(key);
-            uniqueOptions.push({ ...opt, origIdx: idx, displayLabel: label });
-          }
-        }
-
         const activeOption = options[state.optionIdx] || options[0] || {};
         const displayPrice = activeOption.formatted_price || `เริ่มต้น ฿${info.min_price_thb.toLocaleString()}`;
-        const activeImg = activeColor ? activeColor.image_url : info.hero_image_url;
+        const activeImg = useLocalAssets 
+          ? (activeColor.local_image_path || activeColor.image_url || info.local_hero_image || info.hero_image_url) 
+          : (activeColor.image_url || info.hero_image_url);
 
         return `
           <article class="product-card">
             <div class="card-top">
-              <span class="family-badge">${info.category_id.toUpperCase()}</span>
+              <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
               ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
             </div>
 
@@ -1047,6 +1287,7 @@ def search(q: str):
               <img id="img-${pid}" 
                    src="${activeImg}" 
                    alt="${info.name}" 
+                   loading="lazy"
                    onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
             </div>
 
@@ -1067,12 +1308,12 @@ def search(q: str):
               </div>
             </div>
 
-            ${uniqueOptions.length > 1 ? `
+            ${options.length > 1 ? `
               <div class="storage-selector">
-                ${uniqueOptions.slice(0, 6).map((opt) => `
-                  <button class="storage-chip ${opt.origIdx === state.optionIdx ? 'active' : ''}" 
-                          onclick="selectProductOption('${pid}', ${opt.origIdx})">
-                    ${opt.displayLabel}
+                ${options.slice(0, 6).map((opt, idx) => `
+                  <button class="storage-chip ${idx === state.optionIdx ? 'active' : ''}" 
+                          onclick="selectProductOption('${pid}', ${idx})">
+                    ${opt.storage || opt.screen_size || opt.connectivity}
                   </button>
                 `).join('')}
               </div>
@@ -1098,6 +1339,7 @@ def search(q: str):
       }).join('');
     }
 
+    // 📋 Mode 3: SKU View (330 SKUs)
     function renderVariantCards(grid, query) {
       let filtered = allVariants.filter(v => {
         const matchCat = activeCategory === 'all' || v.category === activeCategory;
@@ -1125,45 +1367,50 @@ def search(q: str):
         return;
       }
 
-      grid.innerHTML = filtered.map(v => `
-        <article class="product-card">
-          <div class="card-top">
-            <span class="family-badge">${v.family || v.category}</span>
-            <span class="part-number">${v.part_number || v.id}</span>
-          </div>
-
-          <div class="image-container">
-            <img src="${v.image_url || 'https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'}" 
-                 alt="${v.model_name}" 
-                 onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
-          </div>
-
-          <h3 class="product-title">${v.model_name}</h3>
-
-          <div class="color-swatch-row">
-            <span class="swatch-circle" style="background: ${v.color_hex || '#888'}"></span>
-            <span class="color-name">สี: ${v.color_th} (${v.color_en})</span>
-          </div>
-
-          <div class="specs-pill-box">
-            ${v.specs_chip && v.specs_chip !== '-' ? `<span class="spec-pill">⚡ ${v.specs_chip}</span>` : ''}
-            ${v.storage && v.storage !== '-' ? `<span class="spec-pill">💾 ${v.storage}</span>` : ''}
-            ${v.screen_size && v.screen_size !== '-' ? `<span class="spec-pill">📐 ${v.screen_size}</span>` : ''}
-            ${v.connectivity && v.connectivity !== '-' ? `<span class="spec-pill">📶 ${v.connectivity}</span>` : ''}
-          </div>
-
-          <div class="card-bottom">
-            <div class="price-group">
-              <span class="price-label">ราคาทางการ</span>
-              <span class="price-val">${v.formatted_price}</span>
+      grid.innerHTML = filtered.map(v => {
+        const imgSrc = useLocalAssets ? (v.local_image_path || v.image_url) : v.image_url;
+        return `
+          <article class="product-card">
+            <div class="card-top">
+              <span class="family-badge">${v.family || v.category}</span>
+              <span class="part-number">${v.part_number || v.id}</span>
             </div>
-            <a href="${v.product_url}" target="_blank" rel="noopener" class="btn-buy">
-              ซื้อบน Apple ↗
-            </a>
-          </div>
-        </article>
-      `).join('');
+
+            <div class="image-container">
+              <img src="${imgSrc || 'https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'}" 
+                   alt="${v.model_name}" 
+                   loading="lazy"
+                   onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
+            </div>
+
+            <h3 class="product-title">${v.model_name}</h3>
+
+            <div class="color-swatch-row">
+              <span class="swatch-circle" style="background: ${v.color_hex || '#888'}"></span>
+              <span class="color-name">สี: ${v.color_th} (${v.color_en})</span>
+            </div>
+
+            <div class="specs-pill-box">
+              ${v.specs_chip && v.specs_chip !== '-' ? `<span class="spec-pill">⚡ ${v.specs_chip}</span>` : ''}
+              ${v.storage && v.storage !== '-' ? `<span class="spec-pill">💾 ${v.storage}</span>` : ''}
+              ${v.screen_size && v.screen_size !== '-' ? `<span class="spec-pill">📐 ${v.screen_size}</span>` : ''}
+              ${v.connectivity && v.connectivity !== '-' ? `<span class="spec-pill">📶 ${v.connectivity}</span>` : ''}
+            </div>
+
+            <div class="card-bottom">
+              <div class="price-group">
+                <span class="price-label">ราคาทางการ</span>
+                <span class="price-val">${v.formatted_price}</span>
+              </div>
+              <a href="${v.product_url}" target="_blank" rel="noopener" class="btn-buy">
+                ซื้อบน Apple ↗
+              </a>
+            </div>
+          </article>
+        `;
+      }).join('');
     }
+
 
     // Events
     document.getElementById('categoryPills').addEventListener('click', e => {

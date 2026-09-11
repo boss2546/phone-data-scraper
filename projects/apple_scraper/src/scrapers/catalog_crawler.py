@@ -115,7 +115,8 @@ OFFICIAL_COLOR_IMAGES = {
     ('macbook-air', 'starlight'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-starlight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
     ('macbook-air', 'space-gray'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-spacegray-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
     ('macbook-air', 'silver'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-silver-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
-    ('macbook-air', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-air', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-skyblue-select-202503?wid=904&hei=840&fmt=jpeg&qlt=90',
+    ('macbook-air', 'sky-blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mba13-skyblue-select-202503?wid=904&hei=840&fmt=jpeg&qlt=90',
 
     # iMac
     ('imac', 'blue'): 'https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-touch-id-blue-selection-hero-202410?wid=904&hei=840&fmt=jpeg&qlt=90',
@@ -391,6 +392,7 @@ class AppleCatalogCrawler:
                             "formatted_price": f"฿{int(price):,}",
                             "specs_chip": chip,
                             "image_url": img_url,
+                            "local_image_path": f"data/images/{category}/{product_slug}/{color_id}.jpg",
                             "product_url": url
                         })
             except Exception:
@@ -441,6 +443,7 @@ class AppleCatalogCrawler:
                     "formatted_price": f"฿{int(price):,}",
                     "specs_chip": mac_chip,
                     "image_url": mac_img,
+                    "local_image_path": f"data/images/{category}/{product_slug}/{color_id}.jpg",
                     "product_url": url
                 })
 
@@ -531,6 +534,7 @@ class AppleCatalogCrawler:
                     "formatted_price": f"฿{price:,}",
                     "specs_chip": watch_chip,
                     "image_url": self.get_color_image(product_slug, color_id, watch_img, html),
+                    "local_image_path": f"data/images/{category}/{product_slug}/{color_id}.jpg",
                     "product_url": url
                 })
 
