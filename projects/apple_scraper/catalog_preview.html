@@ -1,2260 +1,2442 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apple Store Thailand — ฐานข้อมูลสินค้าทางการ (Official Catalog)</title>
+  <title>Apple (ประเทศไทย) — ฐานข้อมูลและแคตตาล็อกสินค้าทางการ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800&family=SF+Pro+Text:wght@400;500;600&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
+    /* ==========================================================================
+       APPLE.COM DESIGN SYSTEM (2026 EDITION)
+       ========================================================================== */
     :root {
-      --bg-base: #0a0c10;
-      --bg-surface: #12151c;
-      --bg-card: rgba(24, 28, 38, 0.7);
-      --border-card: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(0, 113, 227, 0.4);
-      --accent: #2997ff;
-      --accent-gradient: linear-gradient(135deg, #2997ff 0%, #9047ff 100%);
-      --text-main: #f5f5f7;
-      --text-muted: #86868b;
-      --tag-bg: rgba(255, 255, 255, 0.06);
-      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.5);
+      /* Dark Theme (Default Apple Pro / OLED Theme) */
+      --bg-primary: #000000;
+      --bg-secondary: #161617;
+      --bg-tertiary: #1d1d1f;
+      --bg-card: rgba(22, 22, 23, 0.82);
+      --bg-card-hover: rgba(29, 29, 31, 0.95);
+      --bg-glass: rgba(22, 22, 23, 0.75);
+      --nav-bg: rgba(0, 0, 0, 0.8);
+      --border-subtle: rgba(255, 255, 255, 0.12);
+      --border-highlight: rgba(255, 255, 255, 0.28);
+      --text-primary: #f5f5f7;
+      --text-secondary: #86868b;
+      --text-tertiary: #6e6e73;
+      --accent-blue: #0071e3;
+      --accent-blue-hover: #0077ed;
+      --accent-pill-bg: rgba(0, 113, 227, 0.18);
+      --accent-pill-text: #2997ff;
+      --badge-new: #f56300;
+      --halo-glow: rgba(41, 151, 255, 0.25);
+      --shadow-elevation: 0 16px 36px rgba(0, 0, 0, 0.5);
+      --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+      --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Sarabun", sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Sarabun", sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+      --transition-smooth: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
     }
 
-    * {
+    [data-theme="light"] {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f7;
+      --bg-tertiary: #e8e8ed;
+      --bg-card: rgba(255, 255, 255, 0.88);
+      --bg-card-hover: #ffffff;
+      --bg-glass: rgba(255, 255, 255, 0.8);
+      --nav-bg: rgba(255, 255, 255, 0.8);
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --border-highlight: rgba(0, 0, 0, 0.18);
+      --text-primary: #1d1d1f;
+      --text-secondary: #86868b;
+      --text-tertiary: #a1a1a6;
+      --accent-blue: #0071e3;
+      --accent-blue-hover: #0077ed;
+      --accent-pill-bg: rgba(0, 113, 227, 0.1);
+      --accent-pill-text: #0071e3;
+      --badge-new: #f56300;
+      --halo-glow: rgba(0, 113, 227, 0.15);
+      --shadow-elevation: 0 16px 36px rgba(0, 0, 0, 0.08);
+      --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
     body {
-      background-color: var(--bg-base);
-      color: var(--text-main);
-      font-family: 'Outfit', 'Sarabun', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.47059;
+      font-weight: 400;
+      letter-spacing: -0.022em;
       min-height: 100vh;
       overflow-x: hidden;
-      line-height: 1.5;
+      transition: background-color 0.4s ease, color 0.4s ease;
     }
 
-    /* Background Ambient Glows */
-    .ambient-glow {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    /* ==========================================================================
+       1. APPLE GLOBAL NAVIGATION
+       ========================================================================== */
+    .apple-global-nav {
       position: fixed;
-      width: 500px;
-      height: 500px;
-      border-radius: 50%;
-      filter: blur(140px);
-      opacity: 0.15;
-      pointer-events: none;
-      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 48px;
+      background: var(--nav-bg);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1000;
+      transition: var(--transition-smooth);
     }
-    .glow-1 { top: -100px; left: -100px; background: #2997ff; }
-    .glow-2 { top: 30%; right: -150px; background: #9047ff; }
 
-    header {
-      position: relative;
-      z-index: 10;
-      padding: 40px 24px 24px;
-      max-width: 1300px;
+    .apple-nav-inner {
+      max-width: 1024px;
       margin: 0 auto;
-      text-align: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.01em;
     }
 
-    .badge-live {
+    .apple-logo-link {
+      display: flex;
+      align-items: center;
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+      color: var(--text-primary);
+    }
+    .apple-logo-link:hover { opacity: 1; }
+    .apple-logo-svg { width: 16px; height: 44px; fill: currentColor; }
+
+    .apple-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .apple-nav-item a {
+      color: var(--text-primary);
+      opacity: 0.8;
+      transition: opacity 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+    .apple-nav-item a:hover { opacity: 1; color: var(--accent-blue); }
+
+    .apple-nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .apple-nav-btn {
+      color: var(--text-primary);
+      opacity: 0.8;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .apple-nav-btn:hover { opacity: 1; transform: scale(1.08); }
+    .apple-nav-btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+    .theme-toggle-btn {
+      background: var(--border-subtle);
+      border-radius: var(--radius-full);
+      padding: 4px 8px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      color: var(--text-secondary);
+      transition: var(--transition-smooth);
+    }
+    .theme-toggle-btn:hover {
+      background: var(--border-highlight);
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       2. PROMOTIONAL RIBBON
+       ========================================================================== */
+    .apple-ribbon {
+      margin-top: 48px;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .apple-ribbon-content {
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .apple-ribbon strong { color: var(--text-primary); font-weight: 500; }
+    .apple-ribbon a {
+      color: var(--accent-blue);
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .apple-ribbon a:hover { text-decoration: underline; }
+
+    /* ==========================================================================
+       3. CHAPTER NAVIGATION (PRODUCT SHELF STRIP)
+       ========================================================================== */
+    .chapter-nav-wrapper {
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 48px;
+      z-index: 900;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: var(--transition-smooth);
+    }
+
+    .chapter-nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 12px 20px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .chapter-nav::-webkit-scrollbar { display: none; }
+
+    .chapter-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      color: var(--text-secondary);
+      font-size: 11px;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .chapter-item:hover {
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+    }
+    .chapter-item.active {
+      color: var(--accent-blue);
+      background: var(--accent-pill-bg);
+      font-weight: 600;
+    }
+    .chapter-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    .chapter-item:hover .chapter-icon { transform: scale(1.12); }
+    .chapter-icon svg { width: 28px; height: 28px; fill: currentColor; }
+
+    /* ==========================================================================
+       4. CINEMATIC APPLE HERO SECTION
+       ========================================================================== */
+    .apple-hero-section {
+      position: relative;
+      padding: 60px 24px 80px;
+      text-align: center;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 10%, rgba(41, 151, 255, 0.08) 0%, transparent 70%);
+    }
+
+    .hero-eyebrow {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--badge-new);
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 7vw, 76px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 12px;
+      background: linear-gradient(180deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 3.2vw, 30px);
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      margin-bottom: 16px;
+      background: linear-gradient(90deg, #ff416c 0%, #8a2387 50%, #e94057 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      position: relative;
+    }
+    .hero-tagline::after {
+      content: '✦';
+      position: absolute;
+      right: -24px;
+      top: -6px;
+      font-size: 16px;
+      color: #ff416c;
+      animation: pulseGlow 2s infinite ease-in-out;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    .hero-pricing {
+      font-size: 17px;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+    .hero-pricing strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .apple-btn-primary {
+      background: var(--accent-blue);
+      color: #ffffff;
+      padding: 12px 26px;
+      border-radius: var(--radius-full);
+      font-size: 15px;
+      font-weight: 500;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 6px 14px;
-      background: rgba(41, 151, 255, 0.12);
-      border: 1px solid rgba(41, 151, 255, 0.3);
-      border-radius: 100px;
-      font-size: 0.85rem;
-      color: var(--accent);
-      margin-bottom: 16px;
-      backdrop-filter: blur(10px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 14px rgba(0, 113, 227, 0.4);
+    }
+    .apple-btn-primary:hover {
+      background: var(--accent-blue-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0, 113, 227, 0.6);
     }
 
-    .badge-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #30d158;
-      box-shadow: 0 0 10px #30d158;
-      animation: pulse 2s infinite;
+    .apple-btn-ghost {
+      background: transparent;
+      color: var(--accent-blue);
+      border: 1px solid var(--border-highlight);
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-smooth);
+    }
+    .apple-btn-ghost:hover {
+      background: var(--border-subtle);
+      border-color: var(--accent-blue);
     }
 
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+    /* Hero Stage & Interactive Finishes */
+    .hero-stage-container {
+      max-width: 980px;
+      margin: 0 auto;
+      position: relative;
     }
 
-    h1 {
-      font-size: clamp(2.2rem, 4vw, 3.2rem);
-      font-weight: 700;
-      background: linear-gradient(180deg, #ffffff 40%, #a1a1a6 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: -0.02em;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-      max-width: 680px;
+    .hero-image-stage {
+      position: relative;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0 auto 30px;
     }
 
-    /* Controls & Filters Bar */
-    .controls-container {
-      position: sticky;
-      top: 16px;
-      z-index: 50;
-      max-width: 1300px;
-      margin: 0 auto 36px;
+    .hero-device-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.45));
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.3s ease;
+      cursor: pointer;
+    }
+    .hero-device-img:hover {
+      transform: scale(1.025);
+    }
+
+    /* Finish Swatch Pills */
+    .finish-selector-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      margin-bottom: 20px;
+    }
+
+    .swatch-dot {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      outline: 2px solid transparent;
+      cursor: pointer;
+      position: relative;
+      transition: var(--transition-smooth);
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .swatch-dot:hover {
+      transform: scale(1.18);
+    }
+    .swatch-dot.active {
+      outline-color: var(--accent-blue);
+      outline-offset: 3px;
+      transform: scale(1.1);
+    }
+
+    .finish-name-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      min-width: 120px;
+    }
+
+    /* Dual Mode Switcher (Studio JPG vs Transparent PNG) */
+    .image-mode-toggle {
+      display: inline-flex;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-subtle);
+      padding: 3px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .image-mode-btn {
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      color: var(--text-secondary);
+      transition: var(--transition-smooth);
+    }
+    .image-mode-btn.active {
+      background: var(--bg-card-hover);
+      color: var(--text-primary);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+
+    /* ==========================================================================
+       5. APPLE INTERACTIVE STUDIO (CUSTOMIZE & BUY EXPERIENCE)
+       ========================================================================== */
+    .apple-studio-section {
+      max-width: 1120px;
+      margin: 40px auto 90px;
       padding: 0 24px;
     }
 
-    .controls-card {
-      background: rgba(18, 21, 28, 0.85);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid var(--border-card);
-      border-radius: 20px;
-      padding: 14px 20px;
+    .section-header-apple {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-header-apple .eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .section-header-apple h2 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+    }
+    .section-header-apple p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .studio-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 44px;
+      box-shadow: var(--shadow-elevation);
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .studio-grid { grid-template-columns: 1fr; padding: 28px; }
+    }
+
+    .studio-visual-col {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .studio-device-box {
+      width: 100%;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .studio-device-box img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.4));
+      transition: all 0.4s ease;
+    }
+
+    .studio-specs-badge {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
       flex-wrap: wrap;
-      gap: 16px;
+      justify-content: center;
+    }
+    .spec-pill {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .spec-pill strong { color: var(--text-primary); font-weight: 500; }
+
+    /* Studio Controls */
+    .studio-config-col {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .config-group-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .config-group-title span { color: var(--text-primary); }
+
+    .submodel-picker-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .submodel-card {
+      border: 1.5px solid var(--border-subtle);
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      text-align: left;
+    }
+    .submodel-card:hover {
+      border-color: var(--border-highlight);
+      background: var(--bg-card-hover);
+    }
+    .submodel-card.active {
+      border-color: var(--accent-blue);
+      background: var(--accent-pill-bg);
+    }
+    .submodel-card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .submodel-card-desc {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .storage-picker-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    @media (max-width: 600px) {
+      .storage-picker-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .storage-tile {
+      border: 1.5px solid var(--border-subtle);
+      background: var(--bg-tertiary);
+      border-radius: var(--radius-md);
+      padding: 14px 10px;
+      cursor: pointer;
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+    .storage-tile:hover {
+      border-color: var(--border-highlight);
+    }
+    .storage-tile.active {
+      border-color: var(--accent-blue);
+      background: var(--accent-pill-bg);
+    }
+    .storage-tile-cap {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .storage-tile-price {
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    .studio-summary-box {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 24px;
+      display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .studio-total-price {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+    .studio-installment-note {
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       6. APPLE BENTO BOX GRID
+       ========================================================================== */
+    .bento-section {
+      max-width: 1120px;
+      margin: 0 auto 90px;
+      padding: 0 24px;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+
+    .bento-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .bento-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-elevation);
+      border-color: var(--border-highlight);
+    }
+
+    .bento-card-span-8 { grid-column: span 8; min-height: 380px; }
+    .bento-card-span-4 { grid-column: span 4; min-height: 380px; }
+    .bento-card-span-6 { grid-column: span 6; min-height: 340px; }
+    @media (max-width: 900px) {
+      .bento-card-span-8, .bento-card-span-4, .bento-card-span-6 { grid-column: span 12; }
+    }
+
+    .bento-eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .bento-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .bento-desc {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      max-width: 480px;
+    }
+
+    .bento-media-wrap {
+      margin-top: 24px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bento-media-wrap img {
+      max-width: 100%;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease;
+    }
+    .bento-card:hover .bento-media-wrap img { transform: scale(1.03); }
+
+    /* ==========================================================================
+       7. APPLE PRODUCT EXPLORER (ALL 17 PRODUCTS)
+       ========================================================================== */
+    .catalog-explorer-section {
+      max-width: 1160px;
+      margin: 0 auto 100px;
+      padding: 0 24px;
+    }
+
+    /* Filter & Search Bar */
+    .explorer-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
     }
 
     .category-pills {
       display: flex;
+      align-items: center;
       gap: 8px;
-      overflow-x: auto;
-      padding-bottom: 2px;
-    }
-
-    .category-btn {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.08);
-      color: var(--text-muted);
-      padding: 8px 18px;
-      border-radius: 12px;
-      font-size: 0.92rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      white-space: nowrap;
-    }
-
-    .category-btn:hover {
-      color: var(--text-main);
-      border-color: rgba(255,255,255,0.25);
-    }
-
-    .category-btn.active {
-      background: var(--text-main);
-      color: #000;
-      border-color: var(--text-main);
-      font-weight: 600;
-    }
-
-    .search-sort-box {
-      display: flex;
-      gap: 12px;
-      flex: 1;
-      min-width: 280px;
-      max-width: 480px;
-    }
-
-    .search-input {
-      flex: 1;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 10px 16px;
-      border-radius: 12px;
-      color: #fff;
-      font-size: 0.95rem;
-      outline: none;
-      transition: all 0.2s;
-    }
-
-    .search-input:focus {
-      border-color: var(--accent);
-      background: rgba(255,255,255,0.08);
-      box-shadow: 0 0 12px rgba(41, 151, 255, 0.25);
-    }
-
-    .sort-select {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: var(--text-main);
-      padding: 10px 14px;
-      border-radius: 12px;
-      outline: none;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    /* View Switcher */
-    .view-switch-row {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin: 0 auto 16px;
-      max-width: 900px;
-      padding: 0 16px;
-      position: relative;
-      z-index: 10;
-      flex-wrap: wrap;
-    }
-
-    .view-switch-btn {
-      flex: 1;
-      min-width: 220px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: var(--text-muted);
-      padding: 12px 18px;
-      border-radius: 980px;
-      font-size: 0.92rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      text-align: center;
-    }
-
-    .view-switch-btn:hover {
-      background: rgba(255,255,255,0.12);
-      color: #fff;
-    }
-
-    .view-switch-btn.active {
-      background: linear-gradient(135deg, #0071e3, #2997ff);
-      color: #fff;
-      border-color: #2997ff;
-      box-shadow: 0 4px 20px rgba(0, 113, 227, 0.4);
-    }
-
-    /* Image Source Toggle */
-    .image-mode-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-      margin: 0 auto 28px;
-      padding: 0 16px;
-      font-size: 0.86rem;
-      color: var(--text-muted);
-      flex-wrap: wrap;
-    }
-
-    .img-mode-btn {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(41, 151, 255, 0.3);
-      color: #58a6ff;
-      padding: 6px 16px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .img-mode-btn:hover {
-      background: rgba(41, 151, 255, 0.2);
-      border-color: #2997ff;
-      transform: translateY(-1px);
-    }
-
-    /* 4K Ultra HD Retina Badge & Multi-Angle Gallery */
-    .res-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 6px;
-      background: rgba(48, 209, 88, 0.15);
-      border: 1px solid rgba(48, 209, 88, 0.35);
-      color: #30d158;
-      letter-spacing: 0.02em;
-    }
-
-    .gallery-angles-bar {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 5px;
-      margin: -6px 0 12px;
-      padding: 4px 6px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 12px;
       overflow-x: auto;
       scrollbar-width: none;
+      padding: 4px;
     }
-    .gallery-angles-bar::-webkit-scrollbar {
-      display: none;
-    }
+    .category-pills::-webkit-scrollbar { display: none; }
 
-    .gallery-angle-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 4px 8px;
-      border-radius: 8px;
-      border: 1px solid transparent;
-      background: transparent;
-      color: var(--text-muted);
-      font-size: 0.74rem;
+    .cat-pill-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
       font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s ease;
+      color: var(--text-secondary);
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition-smooth);
       white-space: nowrap;
     }
-
-    .gallery-angle-btn:hover {
-      background: rgba(255, 255, 255, 0.08);
-      color: #fff;
+    .cat-pill-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--border-highlight);
     }
-
-    .gallery-angle-btn.active {
-      background: rgba(41, 151, 255, 0.22);
-      border-color: rgba(41, 151, 255, 0.5);
-      color: #58a6ff;
-      font-weight: 600;
-      box-shadow: 0 2px 8px rgba(41, 151, 255, 0.25);
-    }
-
-    .png-badge-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 3px;
-      font-size: 0.72rem;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 7px;
-      background: rgba(144, 71, 255, 0.15);
-      border: 1px solid rgba(144, 71, 255, 0.35);
-      color: #b388ff;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      margin-left: auto;
-      white-space: nowrap;
-    }
-    .png-badge-btn:hover, .png-badge-btn.active {
-      background: rgba(144, 71, 255, 0.35);
-      border-color: #9047ff;
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(144, 71, 255, 0.35);
-    }
-
-    /* Product View Interactive Selectors */
-    .product-color-selector {
-      margin: 10px 0 14px;
-    }
-
-    .swatch-picker {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 8px;
-    }
-
-    .swatch-btn {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 2px solid transparent;
-      padding: 2px;
-      cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: none;
-    }
-
-    .swatch-btn:hover, .swatch-btn.active {
-      transform: scale(1.25);
-      border-color: #fff;
-    }
-
-    .swatch-btn .swatch-inner {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      box-shadow: inset 0 1px 2px rgba(255,255,255,0.3), 0 2px 5px rgba(0,0,0,0.5);
-    }
-
-    .active-color-label {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      min-height: 20px;
-    }
-
-    .active-color-label b {
-      color: #fff;
-    }
-
-    .storage-selector {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 18px;
-    }
-
-    .storage-chip {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: #cbd5e1;
-      padding: 5px 11px;
-      border-radius: 8px;
-      font-size: 0.78rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .storage-chip:hover {
-      background: rgba(255,255,255,0.14);
-      color: #fff;
-    }
-
-    .storage-chip.active {
-      background: rgba(41, 151, 255, 0.25);
-      border-color: #2997ff;
-      color: #58a6ff;
+    .cat-pill-btn.active {
+      background: var(--text-primary);
+      color: var(--bg-primary);
+      border-color: var(--text-primary);
       font-weight: 600;
     }
 
-    /* Grid Layout */
-    .catalog-grid {
+    .search-input-box {
       position: relative;
-      z-index: 10;
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
+      min-width: 260px;
+    }
+    .search-input-box input {
+      width: 100%;
+      padding: 10px 16px 10px 38px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--text-primary);
+      transition: var(--transition-smooth);
+    }
+    .search-input-box input:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px var(--accent-pill-bg);
+    }
+    .search-icon-svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      fill: var(--text-secondary);
+      pointer-events: none;
+    }
+
+    /* Product Grid */
+    .products-apple-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 24px;
     }
 
-    .product-card {
+    .apple-product-card {
       background: var(--bg-card);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--border-card);
-      border-radius: 24px;
-      padding: 24px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
       display: flex;
       flex-direction: column;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: var(--shadow-card);
+      align-items: center;
+      text-align: center;
+      transition: var(--transition-smooth);
       position: relative;
       overflow: hidden;
     }
-
-    .product-card:hover {
+    .apple-product-card:hover {
       transform: translateY(-6px);
-      border-color: var(--border-hover);
-      box-shadow: 0 18px 45px rgba(0, 113, 227, 0.2);
+      box-shadow: var(--shadow-elevation);
+      border-color: var(--border-highlight);
     }
 
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 12px;
-    }
-
-    .family-badge {
-      font-size: 0.75rem;
+    .card-badge {
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      font-size: 11px;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 4px 10px;
-      border-radius: 8px;
-      background: rgba(41, 151, 255, 0.15);
-      color: #58a6ff;
+      color: var(--badge-new);
+      letter-spacing: 0.02em;
     }
 
-    .part-number {
-      font-size: 0.78rem;
-      font-family: monospace;
-      color: var(--text-muted);
-      background: rgba(255,255,255,0.04);
-      padding: 3px 8px;
-      border-radius: 6px;
-    }
-
-    .image-container {
+    .card-img-holder {
       width: 100%;
-      height: 220px;
-      min-height: 220px;
+      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 12px 0 20px;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%);
-      border-radius: 16px;
-      overflow: hidden;
-      padding: 10px;
-      box-sizing: border-box;
+      margin: 10px 0 16px;
+      position: relative;
     }
-
-    .image-container img {
-      max-width: 95%;
-      max-height: 95%;
-      width: auto;
-      height: auto;
+    .card-img-holder img {
+      max-width: 90%;
+      max-height: 90%;
       object-fit: contain;
+      filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.25));
       transition: transform 0.4s ease;
-      filter: drop-shadow(0 12px 20px rgba(0,0,0,0.4));
+    }
+    .apple-product-card:hover .card-img-holder img {
+      transform: scale(1.06);
     }
 
-    .product-card:hover .image-container img {
-      transform: scale(1.05);
+    .card-color-swatches {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 14px;
     }
+    .card-color-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .card-color-dot:hover { transform: scale(1.4); }
 
-    .product-title {
-      font-size: 1.15rem;
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 19px;
       font-weight: 600;
-      color: #fff;
-      margin-bottom: 8px;
-      min-height: 52px;
+      letter-spacing: -0.015em;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+
+    .card-chip-tag {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      line-height: 1.3;
+      height: 32px;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
 
-    .color-swatch-row {
+    .card-price {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+      margin-top: auto;
+    }
+    .card-price strong {
+      color: var(--text-primary);
+      font-size: 16px;
+    }
+
+    .card-cta-row {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 16px;
+      width: 100%;
     }
-
-    .swatch-circle {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.3);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    }
-
-    .color-name {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .specs-pill-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 20px;
-    }
-
-    .spec-pill {
-      font-size: 0.8rem;
-      background: var(--tag-bg);
-      border: 1px solid rgba(255,255,255,0.06);
-      padding: 4px 9px;
-      border-radius: 8px;
-      color: #d1d1d6;
-    }
-
-    .card-bottom {
-      margin-top: auto;
-      padding-top: 16px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .price-group {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .price-label {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-    }
-
-    .price-val {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .btn-buy {
-      background: #0071e3;
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 12px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      transition: all 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .btn-buy:hover {
-      background: #0077ed;
-      transform: scale(1.03);
-    }
-
-    .btn-specs {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #e2e8f0;
-      text-decoration: none;
+    .card-cta-buy {
+      flex: 1;
+      background: var(--accent-blue);
+      color: #ffffff;
       padding: 8px 12px;
-      border-radius: 12px;
-      font-size: 0.82rem;
+      border-radius: var(--radius-full);
+      font-size: 13px;
       font-weight: 500;
-      transition: all 0.2s;
-      display: inline-flex;
+      transition: var(--transition-smooth);
+    }
+    .card-cta-buy:hover {
+      background: var(--accent-blue-hover);
+    }
+    .card-cta-specs {
+      flex: 1;
+      background: var(--bg-tertiary);
+      color: var(--accent-blue);
+      border: 1px solid var(--border-subtle);
+      padding: 8px 12px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+    }
+    .card-cta-specs:hover {
+      border-color: var(--accent-blue);
+    }
+
+    /* ==========================================================================
+       8. APPLE DEEP 4K GALLERY SECTION (6,242 ASSETS)
+       ========================================================================== */
+    .deep-gallery-section {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 80px 24px;
+      margin-bottom: 80px;
+    }
+
+    .gallery-container {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .gallery-filter-bar {
+      display: flex;
       align-items: center;
-      gap: 4px;
-    }
-    .btn-specs:hover {
-      background: rgba(255, 255, 255, 0.18);
-      color: #fff;
-      border-color: rgba(255, 255, 255, 0.3);
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
     }
 
-    .submodel-pill {
-      display: inline-block;
-      font-size: 0.76rem;
-      font-weight: 600;
-      color: #60a5fa;
-      background: rgba(59, 130, 246, 0.12);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      padding: 3px 8px;
-      border-radius: 6px;
-      margin-bottom: 6px;
+    .gallery-cat-pills {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding: 4px 0;
+    }
+    .gallery-cat-pills::-webkit-scrollbar { display: none; }
+
+    .gallery-pill {
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition-smooth);
+      white-space: nowrap;
+    }
+    .gallery-pill:hover {
+      color: var(--text-primary);
+      border-color: var(--border-highlight);
+    }
+    .gallery-pill.active {
+      background: var(--accent-blue);
+      color: #ffffff;
+      border-color: var(--accent-blue);
     }
 
-    .specs-grid {
+    .gallery-model-select {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-body);
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .gallery-masonry-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6px;
-      margin: 10px 0 14px;
-      padding: 10px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 10px;
-      font-size: 0.74rem;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
     }
-    .specs-grid-item {
-      color: #94a3b8;
+
+    .gallery-card {
+      position: relative;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      aspect-ratio: 4/3;
+    }
+    .gallery-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: var(--shadow-elevation);
+      border-color: var(--border-highlight);
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .gallery-card:hover img { transform: scale(1.06); }
+
+    .gallery-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 60%);
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
-    .specs-grid-item b {
-      color: #f1f5f9;
+    .gallery-card:hover .gallery-card-overlay { opacity: 1; }
+
+    .gallery-overlay-badge {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--accent-pill-text);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+    .gallery-overlay-title {
+      font-size: 13px;
       font-weight: 500;
-      font-size: 0.76rem;
+      color: #ffffff;
       line-height: 1.3;
     }
 
-    .empty-state {
-      grid-column: 1 / -1;
+    /* ==========================================================================
+       9. APPLE COMPARE SECTION
+       ========================================================================== */
+    .compare-section {
+      max-width: 1120px;
+      margin: 0 auto 100px;
+      padding: 0 24px;
+    }
+
+    .compare-table-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow-x: auto;
+      box-shadow: var(--shadow-elevation);
+    }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
       text-align: center;
-      padding: 80px 20px;
-      color: var(--text-muted);
+      font-size: 14px;
     }
-
-    /* Stats Bar */
-    .stats-bar {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      margin-bottom: 30px;
-      color: var(--text-muted);
-      font-size: 0.95rem;
+    .compare-table th, .compare-table td {
+      padding: 20px;
+      border-bottom: 1px solid var(--border-subtle);
     }
-    .stats-item b {
-      color: #fff;
-      font-size: 1.2rem;
-    }
-
-    .btn-guide {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 10px 22px;
-      background: linear-gradient(135deg, #0071e3 0%, #6366f1 100%);
-      color: #fff;
-      border: none;
-      border-radius: 999px;
-      font-size: 0.95rem;
+    .compare-table th {
+      background: var(--bg-tertiary);
       font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 4px 20px rgba(0, 113, 227, 0.4);
-      transition: all 0.2s ease;
+      font-size: 16px;
+      vertical-align: bottom;
     }
-    .btn-guide:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 25px rgba(0, 113, 227, 0.6);
+    .compare-table td:first-child, .compare-table th:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: var(--bg-tertiary);
+      width: 220px;
     }
 
-    /* Modal Backdrop */
-    .modal-backdrop {
-      display: none;
+    /* ==========================================================================
+       10. LIGHTBOX MODAL (4K RETINA VIEW)
+       ========================================================================== */
+    .apple-modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(14px);
-      z-index: 1000;
-      justify-content: center;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      z-index: 2000;
+      display: flex;
       align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
       padding: 24px;
     }
-    .modal-backdrop.open {
-      display: flex;
-    }
-    .modal-content {
-      background: #141722;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 20px;
-      width: 100%;
-      max-width: 900px;
-      max-height: 88vh;
-      overflow-y: auto;
-      padding: 32px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.9);
-      position: relative;
-    }
-    .modal-close {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      background: rgba(255,255,255,0.08);
-      border: none;
-      color: #fff;
-      font-size: 1.4rem;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-    .modal-close:hover {
-      background: rgba(255,255,255,0.18);
-    }
-    .modal-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .modal-desc {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-    }
-    .tab-row {
-      display: flex;
-      gap: 12px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      margin-bottom: 20px;
-    }
-    .tab-btn {
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      padding: 10px 18px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      border-bottom: 2px solid transparent;
-      transition: color 0.2s;
-    }
-    .tab-btn.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-    .code-box {
-      background: #090a0f;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 12px;
-      padding: 18px;
-      font-family: 'SF Mono', Monaco, monospace;
-      font-size: 0.85rem;
-      color: #e2e8f0;
-      overflow-x: auto;
-      line-height: 1.6;
-      white-space: pre-wrap;
-    }
-    .file-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .file-badge {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 8px;
-      padding: 6px 14px;
-      font-size: 0.85rem;
-      color: #93c5fd;
+    .apple-modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
     }
 
-    /* Deep Asset Gallery Modal & Cards */
-    .btn-deep {
-      background: rgba(139, 92, 246, 0.15);
-      border: 1px solid rgba(139, 92, 246, 0.4);
-      color: #c084fc;
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      transition: all 0.2s;
-    }
-    .btn-deep:hover {
-      background: rgba(139, 92, 246, 0.3);
-      border-color: #a855f7;
-      color: #fff;
-      transform: translateY(-1px);
-    }
-    .deep-asset-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      overflow: hidden;
+    .apple-modal-window {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      max-width: 960px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+      padding: 36px;
       display: flex;
       flex-direction: column;
-      transition: all 0.25s ease;
+      gap: 20px;
     }
-    .deep-asset-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(139, 92, 246, 0.5);
-      box-shadow: 0 12px 30px rgba(139, 92, 246, 0.2);
-    }
-    .deep-asset-img-box {
-      height: 200px;
-      background: #090c14;
+
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      background: var(--bg-tertiary);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 12px;
-      position: relative;
-      cursor: pointer;
+      color: var(--text-secondary);
+      transition: var(--transition-smooth);
     }
-    .deep-asset-img-box img {
-      max-width: 95%;
-      max-height: 95%;
-      object-fit: contain;
-      transition: transform 0.3s ease;
+    .modal-close-btn:hover {
+      background: var(--border-highlight);
+      color: var(--text-primary);
+      transform: scale(1.1);
     }
-    .deep-asset-card:hover .deep-asset-img-box img {
-      transform: scale(1.05);
-    }
-    .deep-asset-body {
-      padding: 14px 16px;
+    .modal-close-btn svg { width: 14px; height: 14px; fill: currentColor; }
+
+    .modal-img-stage {
+      width: 100%;
+      max-height: 520px;
       display: flex;
-      flex-direction: column;
-      flex: 1;
-      gap: 6px;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-primary);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      overflow: hidden;
     }
-    .deep-asset-title {
-      font-size: 0.95rem;
+    .modal-img-stage img {
+      max-width: 100%;
+      max-height: 480px;
+      object-fit: contain;
+    }
+
+    /* ==========================================================================
+       11. APPLE GLOBAL FOOTER
+       ========================================================================== */
+    .apple-footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-subtle);
+      padding: 40px 24px 60px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .footer-inner {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+
+    .footer-disclaimer {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .footer-disclaimer p { margin-bottom: 10px; }
+
+    .footer-directory {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+      .footer-directory { grid-template-columns: 1fr 1fr; }
+    }
+
+    .footer-col-title {
       font-weight: 600;
-      color: #f8fafc;
-      line-height: 1.35;
+      color: var(--text-primary);
+      margin-bottom: 10px;
     }
-    .deep-asset-desc {
-      font-size: 0.82rem;
-      color: #94a3b8;
-      line-height: 1.4;
-      flex: 1;
-    }
-    .deep-asset-footer {
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a:hover { color: var(--text-primary); text-decoration: underline; }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 10px;
-      padding-top: 8px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      flex-wrap: wrap;
+      gap: 12px;
     }
-    .deep-cat-pill {
-      background: rgba(139, 92, 246, 0.12);
-      border: 1px solid rgba(139, 92, 246, 0.3);
-      color: #c084fc;
-      border-radius: 9999px;
-      padding: 3px 10px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      display: inline-flex;
+    .footer-bottom-links {
+      display: flex;
+      gap: 16px;
+    }
+    .footer-bottom-links a:hover { text-decoration: underline; }
+
+    /* Toast Notification */
+    .apple-toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--bg-card);
+      border: 1px solid var(--border-highlight);
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-elevation);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-primary);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 10px;
+      z-index: 3000;
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .apple-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
     }
   </style>
 </head>
 <body>
 
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
+  <!-- ==========================================================================
+       1. APPLE GLOBAL NAVIGATION
+       ========================================================================== -->
+  <nav class="apple-global-nav" aria-label="Global Navigation">
+    <div class="apple-nav-inner">
+      <a href="#" class="apple-logo-link" aria-label="Apple">
+        <svg class="apple-logo-svg" viewBox="0 0 170 170">
+          <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.7-7.85-12-14.44-6-9.18-10.84-19.65-14.52-31.42-3.68-11.76-5.52-22.99-5.52-33.68 0-14.36 3.65-26.4 10.96-36.14 7.31-9.74 16.63-14.73 27.96-14.97 4.9.11 10.36 1.34 16.39 3.69 6.02 2.36 9.87 3.59 11.54 3.69 1.45 0 5.48-1.34 12.09-4.02 6.6-2.68 12.44-3.83 17.51-3.46 13.62.89 24.36 5.8 32.22 14.73-11.84 7.15-17.65 16.97-17.43 29.47.22 9.82 4.13 18.08 11.73 24.78 7.6 6.7 16.74 10.49 27.42 11.39-2.68 8.04-5.91 16.29-9.7 24.77zM119.22 31.84c0-7.37 2.68-14.28 8.04-20.73 5.36-6.45 11.94-10.49 19.75-12.11.22 1.56.33 3.12.33 4.69 0 7.37-2.8 14.39-8.39 21.07-5.58 6.68-12.28 10.6-20.1 11.76-.11-1.56-.17-3.12-.17-4.68z"/>
+        </svg>
+      </a>
 
-  <header>
-    <div class="badge-live">
-      <span class="badge-dot"></span>
-      Apple Store Thailand • Live Catalog Database
-    </div>
-    <h1>ฐานข้อมูลสินค้าทางการ Apple</h1>
-    <p class="subtitle">รวบรวมข้อมูลทุกรุ่น ทุกสี ทุกความจุ พร้อมราคาเงินบาททางการ (THB) สเปกชิป และรหัส Part Number สำหรับใช้งานบนเว็บไซต์</p>
-    
-    <div class="stats-bar" id="statsBar">
-      <div class="stats-item">รายการทั้งหมด: <b id="statTotal">-</b></div>
-      <div class="stats-item">ราคาเริ่มต้น: <b id="statMin">-</b></div>
-      <div class="stats-item">ราคาสูงสุด: <b id="statMax">-</b></div>
-      <div class="stats-item">ความละเอียดภาพ: <b style="color: #30d158;">⚡ 4K Ultra HD (2560px)</b></div>
-      <div class="stats-item">ภาพมุมมอง (Gallery): <b style="color: #2997ff;" id="statGallery">149 มุมมอง</b></div>
-    </div>
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item"><a href="#store">ร้าน</a></li>
+        <li class="apple-nav-item"><a href="#mac" onclick="switchCategory('mac')">Mac</a></li>
+        <li class="apple-nav-item"><a href="#ipad" onclick="switchCategory('ipad')">iPad</a></li>
+        <li class="apple-nav-item"><a href="#iphone" onclick="switchCategory('iphone')">iPhone</a></li>
+        <li class="apple-nav-item"><a href="#watch" onclick="switchCategory('watch')">Watch</a></li>
+        <li class="apple-nav-item"><a href="#gallery">แกลเลอรี 4K</a></li>
+        <li class="apple-nav-item"><a href="#compare">เปรียบเทียบ</a></li>
+      </ul>
 
-    <div>
-      <button class="btn-guide" onclick="openDevModal()">
-        🛠️ ดูวิธีนำฐานข้อมูลนี้ไปใส่ในเว็บของคุณ (Developer Guide & Code Snippets)
+      <div class="apple-nav-actions">
+        <!-- Theme Switcher -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" title="สลับธีม สว่าง / มืด">
+          <span id="themeIcon">☀️</span>
+          <span id="themeText">สว่าง</span>
+        </button>
+
+        <!-- Search Icon -->
+        <button class="apple-nav-btn" onclick="focusSearch()" title="ค้นหา">
+          <svg viewBox="0 0 16 16">
+            <path d="M15.7 14.3l-3.8-3.8c.9-1.2 1.4-2.6 1.4-4.1 0-3.6-2.9-6.4-6.4-6.4S.5 2.8.5 6.4s2.9 6.4 6.4 6.4c1.5 0 2.9-.5 4.1-1.4l3.8 3.8c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM6.9 11.3c-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9 4.9 2.2 4.9 4.9-2.2 4.9-4.9 4.9z"/>
+          </svg>
+        </button>
+
+        <!-- Bag Icon -->
+        <button class="apple-nav-btn" onclick="openBagModal()" title="ถุงช้อปปิ้ง">
+          <svg viewBox="0 0 16 16">
+            <path d="M13.4 4.5h-1.9c-.3-2-2-3.5-4-3.5s-3.7 1.5-4 3.5H1.6c-.6 0-1.1.5-1.1 1.1l1.5 8.9c.1.6.6 1 1.2 1h9.6c.6 0 1.1-.4 1.2-1l1.5-8.9c0-.6-.5-1.1-1.1-1.1zM7.5 2.5c1.1 0 2 .9 2.2 2H5.3c.2-1.1 1.1-2 2.2-2zm5.2 10.5H2.3L1.1 5.5h12.8l-1.2 7.5z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       2. PROMOTIONAL RIBBON
+       ========================================================================== */
+  -->
+  <aside class="apple-ribbon">
+    <div class="apple-ribbon-content">
+      <span>รับเครดิตเงินคืนและผ่อน 0% นานสูงสุด 10 เดือน พร้อมจัดส่งฟรีทุกคำสั่งซื้อ</span>
+      <a href="#store">ดูข้อเสนอทางการเงิน <svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor"><path d="M1.5 1l4 4-4 4"/></svg></a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       3. CHAPTER NAVIGATION (PRODUCT SHELF STRIP)
+       ========================================================================== -->
+  <div class="chapter-nav-wrapper">
+    <nav class="chapter-nav" id="chapterNav">
+      <button class="chapter-item active" onclick="selectHeroProduct('iphone-16-pro')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="9" y="3" width="14" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="6" r="1"/></svg>
+        </div>
+        <span>iPhone 16 Pro</span>
       </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('iphone-16')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="9" y="4" width="14" height="24" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <span>iPhone 16</span>
+      </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('ipad-pro')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="6" y="4" width="20" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="6" r="0.8"/></svg>
+        </div>
+        <span>iPad Pro (M4)</span>
+      </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('ipad-air')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="7" y="5" width="18" height="22" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <span>iPad Air (M2)</span>
+      </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('macbook-pro')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="6" y="6" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 23h26v2H3z"/></svg>
+        </div>
+        <span>MacBook Pro</span>
+      </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('macbook-air')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="7" y="7" width="18" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 22h24v1.5H4z"/></svg>
+        </div>
+        <span>MacBook Air</span>
+      </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('imac')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="5" y="4" width="22" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 20h4v6h-4zM10 26h12v2H10z"/></svg>
+        </div>
+        <span>iMac</span>
+      </button>
+
+      <button class="chapter-item" onclick="selectHeroProduct('apple-watch-series-10')">
+        <div class="chapter-icon">
+          <svg viewBox="0 0 32 32"><rect x="9" y="8" width="14" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4h8v4h-8zM12 24h8v4h-8z"/></svg>
+        </div>
+        <span>Watch S10</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- ==========================================================================
+       4. CINEMATIC APPLE HERO SECTION
+       ========================================================================== -->
+  <header class="apple-hero-section" id="heroSection">
+    <div class="hero-eyebrow" id="heroEyebrow">ใหม่ล่าสุด</div>
+    <h1 class="hero-title" id="heroTitle">iPhone 16 Pro</h1>
+    <div class="hero-tagline" id="heroTagline">สร้างมาเพื่อ Apple Intelligence</div>
+    <div class="hero-pricing" id="heroPricing">เริ่มต้นที่ <strong>฿39,900</strong> หรือ ฿3,990/เดือน ผ่อน 0% นาน 10 เดือน</div>
+
+    <div class="hero-actions">
+      <a href="#studio" class="apple-btn-primary">
+        <span>ปรับแต่งและซื้อ</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M3 2l4 4-4 4"/></svg>
+      </a>
+      <button class="apple-btn-ghost" onclick="openSpecsModal()">
+        <span>ดูสเปกทางเทคนิค</span>
+      </button>
+    </div>
+
+    <!-- Hero Device Showcase Stage -->
+    <div class="hero-stage-container">
+      <div class="hero-image-stage">
+        <img id="heroDeviceImg" class="hero-device-img" src="data/images/iphone/iphone-16-pro/desert-titanium.jpg" alt="Apple Product Finish" onclick="toggleImageMode()">
+      </div>
+
+      <!-- Live Finish Swatches -->
+      <div class="finish-selector-bar" id="heroFinishBar">
+        <!-- Dynamically injected -->
+      </div>
+
+      <!-- Dual Image Mode Switcher (Studio vs Transparent PNG) -->
+      <div>
+        <div class="image-mode-toggle">
+          <button class="image-mode-btn active" id="btnModeJpg" onclick="setImageMode('jpg')">สตูดิโอทางการ (JPG)</button>
+          <button class="image-mode-btn" id="btnModePng" onclick="setImageMode('png')">ไดคัตโปร่งใส (No-BG PNG)</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Developer Guide Modal -->
-  <div class="modal-backdrop" id="devModal" onclick="if(event.target===this)closeDevModal()">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeDevModal()">✕</button>
-      <h2 class="modal-title">📦 คู่มือการนำฐานข้อมูลไปใช้งานบนเว็บไซต์</h2>
-      <p class="modal-desc">ฐานข้อมูลถูกจัดเตรียมไว้ 4 รูปแบบ (SQLite, JSON, SQL Dump, CSV) พร้อม Helper SDK ที่นำไปใส่ในเว็บของคุณได้ทันที:</p>
-      
-      <div class="file-badges">
-        <span class="file-badge">🗄️ apple_catalog.db (SQLite)</span>
-        <span class="file-badge">📜 apple_catalog.sql (SQL Dump)</span>
-        <span class="file-badge">🌳 apple_catalog_tree.json (Selector Tree)</span>
-        <span class="file-badge">⚡ apple_catalog.js (Browser Bundle)</span>
-        <span class="file-badge">📊 apple_all_variants.csv (Excel)</span>
-      </div>
-
-      <div class="tab-row">
-        <button class="tab-btn active" onclick="switchTab('tab-react', this)">⚛️ React / Next.js</button>
-        <button class="tab-btn" onclick="switchTab('tab-vue', this)">💚 Vue 3</button>
-        <button class="tab-btn" onclick="switchTab('tab-embed', this)">🌐 HTML / PHP Embed</button>
-        <button class="tab-btn" onclick="switchTab('tab-sql', this)">🗄️ SQL / SQLite</button>
-        <button class="tab-btn" onclick="switchTab('tab-py', this)">🐍 Python Backend</button>
-        <button class="tab-btn" onclick="switchTab('tab-tree', this)">🌳 Tree JSON</button>
-      </div>
-
-      <div id="tab-react" class="tab-pane">
-        <div class="code-box">// นำเข้า AppleCatalog Component (src/components/AppleCatalog.jsx) ไปใช้ใน Next.js หรือ React:
-import AppleCatalog from './components/AppleCatalog';
-
-export default function CatalogPage() {
-  const handleSelect = (variant) => {
-    console.log('ผู้ใช้เลือกสินค้า:', variant);
-    // เพิ่มลงในตะกร้าสินค้า (Cart State)
-  };
-
-  return (
-    &lt;main&gt;
-      {/* ใช้รูปจาก Apple Official CDN หรือเปลี่ยน useLocalImages={true} เพื่อใช้รูปในเครื่อง */}
-      &lt;AppleCatalog 
-        treeApiUrl="/data/exports/apple_catalog_tree.json"
-        useLocalImages={false} 
-        onSelectVariant={handleSelect} 
-      /&gt;
-    &lt;/main&gt;
-  );
-}</div>
-      </div>
-
-      <div id="tab-vue" class="tab-pane" style="display: none;">
-        <div class="code-box">&lt;!-- นำเข้า AppleCatalog Component (src/components/AppleCatalog.vue) ใน Vue 3 --&gt;
-&lt;template&gt;
-  &lt;AppleCatalog 
-    apiUrl="/data/exports/apple_catalog_tree.json"
-    :useLocalImages="false"
-    @select-variant="handleSelectVariant"
-  /&gt;
-&lt;/template&gt;
-
-&lt;script setup&gt;
-import AppleCatalog from './components/AppleCatalog.vue';
-
-function handleSelectVariant(variant) {
-  console.log('เลือกสินค้า:', variant.model_name, variant.formatted_price);
-}
-&lt;/script&gt;</div>
-      </div>
-
-      <div id="tab-embed" class="tab-pane" style="display: none;">
-        <div class="code-box">&lt;!-- 1. ฝังในหน้าเว็บ HTML / PHP ทันที (WordPress, Laravel, Shopify, Pure HTML) --&gt;
-&lt;!-- ดูไฟล์ตัวอย่างเต็มใน: src/components/apple-embed.html --&gt;
-&lt;script src="data/exports/apple_catalog.js"&gt;&lt;/script&gt;
-
-&lt;!-- หรือใช้ PHP Service (src/components/AppleCatalog.php): --&gt;
-&lt;?php
-require_once 'src/components/AppleCatalog.php';
-$catalog = new AppleCatalogService();
-
-// ดึง 63 รายการแยกตามสี รูปไม่ซ้ำ 100%
-$colorItems = $catalog-&gt;getColorShowcase();
-
-// เรนเดอร์การ์ดสินค้า HTML สำเร็จรูปทันที
-echo $catalog-&gt;renderCatalogHtml(false);
-?&gt;</div>
-      </div>
-
-      <div id="tab-sql" class="tab-pane" style="display: none;">
-        <div class="code-box">-- นำเข้า apple_catalog.sql เข้าสู่ MySQL, PostgreSQL หรือ Supabase:
--- หรือคิวรีบน SQLite Database (apple_catalog.db) ได้ทันที (ข้อมูลครบ 100% ไม่มี '-' หรือ null):
-
--- 1. ดึงข้อมูลสินค้าแบบสมบูรณ์พร้อมมิติขนาด น้ำหนัก จอภาพ กล้อง แบตเตอรี่ (View v_catalog_complete)
-SELECT 
-    sub_model_name,
-    model_name,
-    color_th,
-    storage,
-    dimensions_mm,
-    weight_grams,
-    display_specs,
-    camera_specs,
-    battery_specs,
-    formatted_price,
-    specs_url,
-    buy_url
-FROM v_catalog_complete
-WHERE category_id = 'iphone'
-ORDER BY price_thb ASC;
-
--- 2. ดูรายชื่อ 40 รุ่นย่อยทางการ (Sub-models) พร้อมขนาดมิติและน้ำหนัก
-SELECT sub_model_id, name_th, screen_size, dimensions_mm, weight_grams, chip_specs, starting_price_thb
-FROM sub_models
-ORDER BY category_id, starting_price_thb ASC;
-
--- 3. สรุปรายชื่อครอบครัวสินค้า พร้อมช่วงราคาและจำนวนสี
-SELECT category, product_name, chip, screen_size, min_price_thb, colors_available 
-FROM v_product_summary;</div>
-      </div>
-
-      <div id="tab-py" class="tab-pane" style="display: none;">
-        <div class="code-box"># ตัวอย่างการนำไปทำ REST API ใน Backend (FastAPI / Flask)
-from fastapi import FastAPI
-from apple_db_helper import AppleDatabase
-
-app = FastAPI()
-db = AppleDatabase()
-
-@app.get("/api/products")
-def get_products(category: str = None):
-    return db.get_products(category_id=category)
-
-@app.get("/api/variants")
-def get_variants(product_id: str = None, max_price: int = None):
-    return db.get_variants(product_id=product_id, max_price=max_price)
-
-@app.get("/api/search")
-def search(q: str):
-    return db.search(q)</div>
-      </div>
-
-      <div id="tab-tree" class="tab-pane" style="display: none;">
-        <div class="code-box">// โครงสร้างไฟล์ apple_catalog_tree.json ออกแบบมาสำหรับทำ UI Configurator:
-// เลือกหมวดหมู่ ➔ เลือกรุ่น ➔ เลือกสี (เห็นรูปสีนั้น) ➔ เลือกความจุ/หน้าจอ (เห็นราคา)
-{
-  "iphone": {
-    "products": {
-      "iphone-16": {
-        "product_info": { "name": "iPhone 16", "chip": "ชิป A18", "screen_size": "6.1\"" },
-        "colors": [
-          {
-            "name_th": "ชมพู", "color_hex": "#E3A3B1", 
-            "image_url": "https://store.storeimages.cdn-apple.com/...",
-            "local_image_path": "data/images/iphone/iphone-16/pink.jpg",
-            "options": [
-              { "storage": "128GB", "price_thb": 30900, "formatted_price": "฿30,900" }
-            ]
-          }
-        ]
-      }
-    }
-  }
-}</div>
-      </div>
+  <!-- ==========================================================================
+       5. APPLE INTERACTIVE STUDIO (CUSTOMIZE & BUY EXPERIENCE)
+       ========================================================================== -->
+  <section class="apple-studio-section" id="studio">
+    <div class="section-header-apple">
+      <div class="eyebrow">Studio ปรับแต่งสินค้า</div>
+      <h2>เลือกและปรับแต่งเครื่องในแบบคุณ</h2>
+      <p>เลือกรุ่นย่อย สีตัวเครื่อง และขนาดความจุที่ต้องการ พร้อมคำนวณราคาและตรวจสอบสเปกจริงแบบเรียลไทม์</p>
     </div>
-  </div>
 
-  <!-- Deep Product Media Gallery Modal -->
-  <div class="modal-backdrop" id="deepGalleryModal" onclick="if(event.target===this)closeDeepGalleryModal()">
-    <div class="modal-content" style="max-width: 1240px; width: 95%; max-height: 92vh; padding: 28px;">
-      <button class="modal-close" onclick="closeDeepGalleryModal()">✕</button>
-      
-      <!-- Header -->
-      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom: 20px;">
+    <div class="studio-grid">
+      <!-- Left Column: Big Interactive Visual -->
+      <div class="studio-visual-col">
+        <div class="studio-device-box">
+          <img id="studioDeviceImg" src="data/images/iphone/iphone-16-pro/desert-titanium.jpg" alt="Selected Device">
+        </div>
+        <div class="studio-specs-badge" id="studioSpecsBadge">
+          <div class="spec-pill">จอภาพ: <strong id="specScreen">6.3 นิ้ว</strong></div>
+          <div class="spec-pill">ชิป: <strong id="specChip">A18 Pro</strong></div>
+          <div class="spec-pill">น้ำหนัก: <strong id="specWeight">199 กรัม</strong></div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Configuration -->
+      <div class="studio-config-col">
+        <!-- Step 1: Sub-Model Selection -->
         <div>
-          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-            <span class="family-badge" id="modalProductCategory" style="background:#8b5cf6; color:#fff;">IPHONE</span>
-            <span class="res-badge" id="modalProductChip">A18 Pro (3nm)</span>
-            <span class="res-badge" id="modalTotalCount" style="background:rgba(56,189,248,0.15); color:#38bdf8; border-color:rgba(56,189,248,0.3);">📸 48 ภาพ</span>
+          <div class="config-group-title">
+            <span>1. เลือกรุ่นย่อยทางการ</span>
+            <span id="selectedSubModelName">iPhone 16 Pro</span>
           </div>
-          <h2 class="modal-title" id="modalProductTitle" style="margin:0; font-size:1.8rem;">iPhone 16 Pro & iPhone 16 Pro Max</h2>
-          <p class="modal-desc" id="modalProductSubtitle" style="margin:4px 0 0; color:#94a3b8;">แกลเลอรีรูปภาพทางการความละเอียดสูง 4K Retina เจาะลึกรายสินค้า แยก 6 หมวดหมู่อย่างสมบูรณ์</p>
+          <div class="submodel-picker-grid" id="studioSubmodelGrid">
+            <!-- Dynamically injected -->
+          </div>
         </div>
 
-        <!-- Product Selector Dropdown inside modal -->
-        <div style="display:flex; align-items:center; gap:10px;">
-          <span style="font-size:0.88rem; color:#94a3b8;">เลือกรุ่นสินค้า:</span>
-          <select id="modalProductSelect" class="sort-select" onchange="changeDeepModalProduct(this.value)" style="min-width:240px; font-weight:600;">
-          </select>
+        <!-- Step 2: Finish Selection -->
+        <div>
+          <div class="config-group-title">
+            <span>2. เลือกสีสันตัวเครื่อง</span>
+            <span id="selectedColorName">ไทเทเนียมทะเลทราย</span>
+          </div>
+          <div class="finish-selector-bar" style="width: 100%; justify-content: flex-start;" id="studioColorBar">
+            <!-- Dynamically injected -->
+          </div>
+        </div>
+
+        <!-- Step 3: Storage Selection -->
+        <div>
+          <div class="config-group-title">
+            <span>3. เลือกความจุที่ต้องการ</span>
+            <span id="selectedStorageName">128GB</span>
+          </div>
+          <div class="storage-picker-grid" id="studioStorageGrid">
+            <!-- Dynamically injected -->
+          </div>
+        </div>
+
+        <!-- Price & Action Summary -->
+        <div class="studio-summary-box">
+          <div>
+            <div class="studio-total-price" id="studioTotalPrice">฿39,900</div>
+            <div class="studio-installment-note">หรือ ฿3,990/เดือน ผ่อน 0% นาน 10 เดือน พร้อมส่งฟรี</div>
+          </div>
+          <button class="apple-btn-primary" onclick="proceedToAppleStore()">
+            <span>สั่งซื้อผ่าน Apple Store</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M3 2l4 4-4 4"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. APPLE BENTO BOX GRID
+       ========================================================================== -->
+  <section class="bento-section">
+    <div class="section-header-apple">
+      <div class="eyebrow">นวัตกรรมระดับแนวหน้า</div>
+      <h2>เหตุผลที่คุณจะหลงรักทุกรายละเอียด</h2>
+      <p>สถาปัตยกรรมระดับปฏิวัติวงการ และวิศวกรรมความแม่นยำสูงในทุกการสัมผัส</p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Card 1: Apple Silicon (Span 8) -->
+      <div class="bento-card bento-card-span-8">
+        <div>
+          <div class="bento-eyebrow">ขุมพลัง Apple Silicon</div>
+          <h3 class="bento-title">ชิปประมวลผลเร็วที่สุดในสมาร์ทโฟนและคอมพิวเตอร์</h3>
+          <p class="bento-desc">สร้างขึ้นด้วยสถาปัตยกรรม 3 นาโนเมตรเจเนอเรชั่นที่ 2 พร้อม 16-core Neural Engine รองรับโมเดล Generative AI ขนาดใหญ่ได้อย่างลื่นไหลและประหยัดพลังงานเป็นเลิศ</p>
+        </div>
+        <div class="bento-media-wrap">
+          <img src="data/images_deep/iphone-16-pro/03_chip_internal.jpg" alt="Apple Silicon Chip" style="max-height: 180px; width: auto;" onerror="this.src='data/images/iphone/iphone-16-pro/desert-titanium.jpg'">
         </div>
       </div>
 
-      <!-- Category Filter Tabs -->
-      <div class="category-pills" id="modalCategoryPills" style="margin-bottom: 22px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); flex-wrap:wrap; gap:8px;">
+      <!-- Card 2: Apple Intelligence (Span 4) -->
+      <div class="bento-card bento-card-span-4" style="background: radial-gradient(circle at 80% 20%, rgba(255, 65, 108, 0.15), var(--bg-card));">
+        <div>
+          <div class="bento-eyebrow">Apple Intelligence</div>
+          <h3 class="bento-title">ระบบอัจฉริยะส่วนบุคคลที่เข้าใจคุณ</h3>
+          <p class="bento-desc">เขียนข้อความ ปรับแต่งสไตล์ สรุปการแจ้งเตือน และสร้างภาพได้ทันทีบนอุปกรณ์ของคุณ พร้อมระบบความปลอดภัย Private Cloud Compute</p>
+        </div>
+        <div class="bento-media-wrap">
+          <div style="font-size: 48px; filter: drop-shadow(0 0 20px rgba(255,65,108,0.8));">✨</div>
+        </div>
       </div>
 
-      <!-- Assets Grid -->
-      <div id="modalAssetsGrid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-height: 60vh; overflow-y: auto; padding-right: 4px;">
-        <div class="empty-state">⏳ กำลังโหลดรูปภาพเจาะลึก...</div>
+      <!-- Card 3: Camera Control (Span 6) -->
+      <div class="bento-card bento-card-span-6">
+        <div>
+          <div class="bento-eyebrow">ระบบกล้องระดับโปร</div>
+          <h3 class="bento-title">กล้อง Fusion 48MP พร้อมปุ่มควบคุมกล้อง</h3>
+          <p class="bento-desc">ถ่ายภาพความละเอียดสูง 48 ล้านพิกเซล เลนส์เทเลโฟโต้ 5x ซูมออปติคอลที่ไกลที่สุด และบันทึกวิดีโอ 4K Dolby Vision 120 fps ระดับภาพยนตร์</p>
+        </div>
+        <div class="bento-media-wrap">
+          <img src="data/images_deep/iphone-16-pro/05_camera_samples.jpg" alt="Camera Sample" style="max-height: 160px; border-radius: var(--radius-md);" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <!-- Card 4: In The Box & Environment (Span 6) -->
+      <div class="bento-card bento-card-span-6">
+        <div>
+          <div class="bento-eyebrow">ความใส่ใจต่อสิ่งแวดล้อม</div>
+          <h3 class="bento-title">บรรจุภัณฑ์ไฟเบอร์ 100% และสายชาร์จถัก</h3>
+          <p class="bento-desc">ภายในกล่องมาพร้อมตัวเครื่องและสายชาร์จแบบถัก USB-C คุณภาพพรีเมียม ไม่ใช้พลาสติกในบรรจุภัณฑ์ สอดคล้องกับเป้าหมาย Apple 2030</p>
+        </div>
+        <div class="bento-media-wrap">
+          <img src="data/images_deep/iphone-16-pro/02_in_the_box.jpg" alt="In the Box Packaging" style="max-height: 160px; border-radius: var(--radius-md);" onerror="this.style.display='none'">
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Lightbox Modal for 4K Zoom -->
-  <div class="modal-backdrop" id="lightboxModal" style="z-index: 1200; background: rgba(0,0,0,0.92);" onclick="if(event.target===this)closeLightbox()">
-    <div style="position:relative; max-width: 95vw; max-height: 95vh; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <button class="modal-close" onclick="closeLightbox()" style="position:fixed; top:24px; right:24px; z-index:1300;">✕</button>
-      <img id="lightboxImg" src="" alt="" style="max-width: 90vw; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 15px 50px rgba(0,0,0,0.9);" />
-      <div id="lightboxCaption" style="margin-top: 16px; text-align: center; color: #f1f5f9; font-size: 1.05rem; max-width: 800px; line-height: 1.4;"></div>
+  <!-- ==========================================================================
+       7. APPLE PRODUCT EXPLORER (ALL 17 PRODUCTS)
+       ========================================================================== -->
+  <section class="catalog-explorer-section" id="store">
+    <div class="section-header-apple">
+      <div class="eyebrow">ฐานข้อมูลสินค้าทางการทั้งหมด</div>
+      <h2>สำรวจผลิตภัณฑ์ Apple Store Thailand</h2>
+      <p>ครบถ้วนทั้ง 17 ตระกูลสินค้า 40 รุ่นย่อยทางการ 343 ตัวเลือก SKU พร้อมรูปถ่ายความละเอียดสูง</p>
     </div>
-  </div>
 
-  <!-- View Switcher -->
-  <div class="view-switch-row">
-    <button class="view-switch-btn active" id="btnViewColors" onclick="setViewMode('color')">
-      🎨 สีสินค้าเด่น (Showcase ภาพ 4K เต็มตัวเครื่อง)
-    </button>
-    <button class="view-switch-btn" id="btnViewProducts" onclick="setViewMode('products')">
-      🛍️ รวมตามรุ่นหลักและรุ่นย่อย (สลับสีและสเปก)
-    </button>
-    <button class="view-switch-btn" id="btnViewVariants" onclick="setViewMode('variants')">
-      📋 SKU ย่อยทั้งหมด (ครบทุกสเปก ละเอียด 100%)
-    </button>
-    <button class="view-switch-btn" id="btnViewDeepAssets" onclick="openDeepGalleryModal('iphone-16-pro')" style="border-color: rgba(168, 85, 247, 0.45); color: #c084fc; background: rgba(168, 85, 247, 0.08);">
-      🔍 เจาะลึกแกลเลอรีภาพทุกมุม 2,788 ภาพ (Deep Media Gallery)
-    </button>
-  </div>
-
-  <!-- Image Mode & Background Toggle -->
-  <div class="image-mode-row" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
-    <span>🖼️ แหล่งรูปภาพ:</span>
-    <button id="btnImgMode" class="img-mode-btn" onclick="toggleImageSource()">
-      <span id="imgModeIcon">🌐</span> <span id="imgModeText">Apple Official CDN (ออนไลน์ คมชัดสูง)</span>
-    </button>
-    <button id="btnBgMode" class="img-mode-btn" onclick="toggleBackgroundMode()" style="background: linear-gradient(135deg, #1e3a8a, #4338ca); color: #fff; border-color: #6366f1; font-weight: 600;">
-      <span id="bgModeIcon">✨</span> <span id="bgModeText">พื้นหลัง: ต้นฉบับ (Original JPG)</span>
-    </button>
-    <button id="btnCanvasPattern" class="img-mode-btn" onclick="toggleCanvasPattern()" style="display: none; background: #1e293b; color: #38bdf8; border-color: #38bdf8; font-size: 0.85rem;">
-      🏁 ลายตารางหมากรุก (Checkerboard)
-    </button>
-    <span style="font-size:0.8rem; color:#a78bfa;">(คลิกเพื่อดูภาพไดคัตโปร่งใส 100% ที่ลบพื้นหลังออก โดยคงต้นฉบับไว้)</span>
-  </div>
-
-  <div class="controls-container">
-    <div class="controls-card">
-      <div class="category-pills" id="categoryPills">
-        <button class="category-btn active" data-cat="all">ทั้งหมด (All)</button>
-        <button class="category-btn" data-cat="iphone">iPhone (ไอโฟน)</button>
-        <button class="category-btn" data-cat="ipad">iPad (ไอแพด)</button>
-        <button class="category-btn" data-cat="mac">Mac (คอมพิวเตอร์)</button>
-        <button class="category-btn" data-cat="watch">Apple Watch</button>
+    <!-- Explorer Toolbar: Categories & Search -->
+    <div class="explorer-toolbar">
+      <div class="category-pills">
+        <button class="cat-pill-btn active" onclick="filterCatalog('all', this)">ทั้งหมด (17)</button>
+        <button class="cat-pill-btn" onclick="filterCatalog('iphone', this)">iPhone (5)</button>
+        <button class="cat-pill-btn" onclick="filterCatalog('ipad', this)">iPad (4)</button>
+        <button class="cat-pill-btn" onclick="filterCatalog('mac', this)">Mac (5)</button>
+        <button class="cat-pill-btn" onclick="filterCatalog('watch', this)">Apple Watch (3)</button>
       </div>
 
-      <div class="search-sort-box">
-        <input type="text" id="searchInput" class="search-input" placeholder="🔍 ค้นหารุ่น, สี, ชิป, หรือ Part Number...">
-        <select id="sortSelect" class="sort-select" onchange="changeSort(this.value)">
-          <option value="featured">แนะนำ (Featured)</option>
-          <option value="price-asc">ราคา: ต่ำ ➔ สูง</option>
-          <option value="price-desc">ราคา: สูง ➔ ต่ำ</option>
-          <option value="name">ชื่อสินค้า (A-Z)</option>
+      <div class="search-input-box">
+        <svg class="search-icon-svg" viewBox="0 0 16 16">
+          <path d="M15.7 14.3l-3.8-3.8c.9-1.2 1.4-2.6 1.4-4.1 0-3.6-2.9-6.4-6.4-6.4S.5 2.8.5 6.4s2.9 6.4 6.4 6.4c1.5 0 2.9-.5 4.1-1.4l3.8 3.8c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4zM6.9 11.3c-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9 4.9 2.2 4.9 4.9-2.2 4.9-4.9 4.9z"/>
+        </svg>
+        <input type="text" id="catalogSearchInput" placeholder="ค้นหารุ่น ชิป สี หรือสเปก..." oninput="handleSearch(this.value)">
+      </div>
+    </div>
+
+    <!-- Product Cards Grid -->
+    <div class="products-apple-grid" id="productsGrid">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. APPLE DEEP 4K GALLERY SECTION (6,242 ASSETS)
+       ========================================================================== -->
+  <section class="deep-gallery-section" id="gallery">
+    <div class="gallery-container">
+      <div class="section-header-apple">
+        <div class="eyebrow">คลังภาพทางการระดับ 4K RETINA</div>
+        <h2>เจาะลึกภาพถ่าย Apple Store กว่า 6,242 ภาพ</h2>
+        <p>แยก 6 หมวดหมู่อย่างเด็ดขาด: ตัวเครื่องทุกองศา, ชิปภายใน, ของในกล่อง, ตัวอย่างกล้องจริง, Apple Intelligence และการทำงานโปร</p>
+      </div>
+
+      <!-- Gallery Toolbar -->
+      <div class="gallery-filter-bar">
+        <div class="gallery-cat-pills">
+          <button class="gallery-pill active" onclick="filterGalleryCategory('all', this)">ทั้งหมด</button>
+          <button class="gallery-pill" onclick="filterGalleryCategory('hardware_angles', this)">🎨 ตัวเครื่องทุกมุม</button>
+          <button class="gallery-pill" onclick="filterGalleryCategory('apple_intelligence', this)">🤖 Apple Intelligence</button>
+          <button class="gallery-pill" onclick="filterGalleryCategory('chip_internal', this)">⚡ ชิปและวิศวกรรม</button>
+          <button class="gallery-pill" onclick="filterGalleryCategory('in_the_box', this)">📦 ของในกล่อง</button>
+          <button class="gallery-pill" onclick="filterGalleryCategory('camera_samples', this)">📸 ตัวอย่างภาพกล้อง</button>
+          <button class="gallery-pill" onclick="filterGalleryCategory('workflow_accessories', this)">💼 เวิร์กโฟลว์โปร</button>
+        </div>
+
+        <select class="gallery-model-select" id="galleryModelSelect" onchange="switchGalleryProduct(this.value)">
+          <!-- Injected via JavaScript -->
         </select>
       </div>
+
+      <!-- Gallery Masonry Grid -->
+      <div class="gallery-masonry-grid" id="galleryGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. APPLE COMPARE SECTION
+       ========================================================================== -->
+  <section class="compare-section" id="compare">
+    <div class="section-header-apple">
+      <div class="eyebrow">ค้นหารุ่นที่ใช่สำหรับคุณ</div>
+      <h2>เปรียบเทียบสเปกทางการ Apple</h2>
+      <p>เปรียบเทียบขนาดมิติ น้ำหนัก หน้าจอ ชิปประมวลผล และราคาเริ่มต้นแบบหมัดต่อหมัด</p>
+    </div>
+
+    <div class="compare-table-box">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>คุณสมบัติ</th>
+            <th>iPhone 16 Pro</th>
+            <th>iPhone 16</th>
+            <th>iPad Pro (M4)</th>
+            <th>MacBook Pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ภาพตัวเครื่อง</td>
+            <td><img src="data/images_transparent/iphone/iphone-16-pro/desert-titanium.png" style="height: 110px; object-fit: contain;" alt="iPhone 16 Pro"></td>
+            <td><img src="data/images_transparent/iphone/iphone-16/ultramarine.png" style="height: 110px; object-fit: contain;" alt="iPhone 16"></td>
+            <td><img src="data/images_transparent/ipad/ipad-pro-m4/space-black.png" style="height: 110px; object-fit: contain;" alt="iPad Pro"></td>
+            <td><img src="data/images_transparent/mac/macbook-pro/space-black.png" style="height: 110px; object-fit: contain;" alt="MacBook Pro"></td>
+          </tr>
+          <tr>
+            <td>ราคาเริ่มต้น</td>
+            <td><strong style="color: var(--text-primary);">฿39,900</strong></td>
+            <td><strong style="color: var(--text-primary);">฿29,900</strong></td>
+            <td><strong style="color: var(--text-primary);">฿39,900</strong></td>
+            <td><strong style="color: var(--text-primary);">฿59,900</strong></td>
+          </tr>
+          <tr>
+            <td>ชิปประมวลผล</td>
+            <td>ชิป A18 Pro พร้อม GPU 6-core</td>
+            <td>ชิป A18 พร้อม GPU 5-core</td>
+            <td>ชิป Apple M4 สูงสุด CPU 10-core</td>
+            <td>ชิป M4, M4 Pro หรือ M4 Max</td>
+          </tr>
+          <tr>
+            <td>ขนาดหน้าจอ</td>
+            <td>6.3 นิ้ว หรือ 6.9 นิ้ว ProMotion 120Hz</td>
+            <td>6.1 นิ้ว หรือ 6.7 นิ้ว Super Retina XDR</td>
+            <td>11 นิ้ว หรือ 13 นิ้ว Ultra Retina XDR Tandem OLED</td>
+            <td>14.2 นิ้ว หรือ 16.2 นิ้ว Liquid Retina XDR</td>
+          </tr>
+          <tr>
+            <td>ระบบกล้อง</td>
+            <td>ระดับโปร: 48MP Fusion + 48MP Ultra Wide + 5x Telephoto</td>
+            <td>ระบบกล้องคู่: 48MP Fusion + 12MP Ultra Wide</td>
+            <td>กล้องไวด์ 12MP พร้อม LiDAR Scanner</td>
+            <td>กล้อง Center Stage 12MP บันทึก 1080p</td>
+          </tr>
+          <tr>
+            <td>น้ำหนักตัวเครื่อง</td>
+            <td>199 ก. (Pro) / 227 ก. (Pro Max)</td>
+            <td>170 ก. (16) / 199 ก. (Plus)</td>
+            <td>444 ก. (11") / 579 ก. (13")</td>
+            <td>1.55 กก. (14") / 2.14 กก. (16")</td>
+          </tr>
+          <tr>
+            <td>Apple Intelligence</td>
+            <td>✅ รองรับเต็มประสิทธิภาพ</td>
+            <td>✅ รองรับเต็มประสิทธิภาพ</td>
+            <td>✅ รองรับเต็มประสิทธิภาพ</td>
+            <td>✅ รองรับเต็มประสิทธิภาพ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. LIGHTBOX / SPECS MODAL
+       ========================================================================== -->
+  <div class="apple-modal-backdrop" id="appleModal" onclick="closeModal(event)">
+    <div class="apple-modal-window" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeModalDirect()" title="ปิดหน้าต่าง">
+        <svg viewBox="0 0 14 14"><path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"/></svg>
+      </button>
+
+      <div id="modalContent">
+        <!-- Injected via JavaScript -->
+      </div>
     </div>
   </div>
 
-  <main class="catalog-grid" id="catalogGrid">
-    <div class="empty-state">⏳ กำลังโหลดข้อมูลสินค้า...</div>
-  </main>
+  <!-- Toast Notification -->
+  <div class="apple-toast" id="appleToast">
+    <span id="toastMsg">เพิ่มลงในถุงเรียบร้อยแล้ว</span>
+  </div>
 
-  <script src="data/exports/apple_catalog.js"></script>
-  <script src="data/exports/apple_db_helper.js"></script>
-  <script src="data/exports/apple_deep_assets.js"></script>
-  <script>
-    let allVariants = [];
-    let allProducts = [];
-    let treeData = null;
-    let activeCategory = 'all';
-    let searchQuery = '';
-    let sortMode = 'featured';
-    let viewMode = 'color'; // 'color' (Showcase 63) | 'products' (18 Families) | 'variants' (330 SKUs)
-    let useLocalAssets = false;
-    let productCardStates = {}; // pid -> { colorIdx: 0, optionIdx: 0 }
-    let colorCardStates = {};   // cardKey -> { optionIdx: 0 }
-    let useTransparentBg = false;
-    let canvasPattern = 'checkerboard'; // 'checkerboard' | 'dark' | 'light' | 'gradient'
+  <!-- ==========================================================================
+       11. APPLE GLOBAL FOOTER
+       ========================================================================== -->
+  <footer class="apple-footer">
+    <div class="footer-inner">
+      <div class="footer-disclaimer">
+        <p>1. ข้อมูลทั้งหมดอ้างอิงจาก Apple Store Thailand ทางการ (Official Catalog & CDN Assets) เวอร์ชัน 3.0.0 Unified Edition รวม 17 ตระกูลสินค้า 40 รุ่นย่อย 343 SKUs และคลังภาพ 4K Retina 6,242 ภาพ</p>
+        <p>2. Apple Intelligence พร้อมใช้งานในรุ่นที่รองรับ โดยเปิดให้ใช้งานเวอร์ชันเบต้าสำหรับภาษาอังกฤษ (สหรัฐอเมริกา) พร้อม iOS 18.1, iPadOS 18.1 และ macOS Sequoia 15.1 เป็นต้นไป</p>
+        <p>3. ราคาที่ระบุเป็นราคารวมภาษีมูลค่าเพิ่มแล้ว การคำนวณเงินผ่อน 0% อ้างอิงเงื่อนไขสถาบันการเงินที่ร่วมรายการในประเทศไทย</p>
+      </div>
 
-    // === Deep Product Gallery Modal Logic ===
-    let activeDeepProductId = 'iphone-16-pro';
-    let activeDeepCategory = 'all';
-
-    function normalizeDeepProductId(rawId) {
-      if (!rawId) return 'iphone-16-pro';
-      const id = String(rawId).toLowerCase().trim();
-      if (window.APPLE_DEEP_ASSETS && window.APPLE_DEEP_ASSETS.products && window.APPLE_DEEP_ASSETS.products[id]) {
-        return id;
-      }
-      if (id.includes('16-pro')) return 'iphone-16-pro';
-      if (id.includes('16')) return 'iphone-16';
-      if (id.includes('15')) return 'iphone-15';
-      if (id.includes('14')) return 'iphone-14';
-      if (id.includes('iphone-se') || id.includes('se')) return 'iphone-se';
-      if (id.includes('ipad-pro')) return 'ipad-pro';
-      if (id.includes('ipad-air')) return 'ipad-air';
-      if (id.includes('ipad-mini')) return 'ipad-mini';
-      if (id.includes('ipad-10') || id.includes('ipad')) return 'ipad-10th-gen';
-      if (id.includes('macbook-pro')) return 'macbook-pro';
-      if (id.includes('macbook-air')) return 'macbook-air';
-      if (id.includes('imac')) return 'imac';
-      if (id.includes('mac-mini')) return 'mac-mini';
-      if (id.includes('mac-studio')) return 'mac-studio';
-      if (id.includes('ultra')) return 'apple-watch-ultra-2';
-      if (id.includes('watch-se')) return 'apple-watch-se';
-      if (id.includes('watch')) return 'apple-watch-series-10';
-      return 'iphone-16-pro';
-    }
-
-    function openDeepGalleryModal(productId) {
-      activeDeepProductId = normalizeDeepProductId(productId);
-      activeDeepCategory = 'all';
-
-      // Populate Product Select Dropdown
-      const select = document.getElementById('modalProductSelect');
-      if (select && window.APPLE_DEEP_ASSETS && window.APPLE_DEEP_ASSETS.products) {
-        const pList = Object.values(window.APPLE_DEEP_ASSETS.products);
-        select.innerHTML = pList.map(p => `
-          <option value="${p.product_id}" ${p.product_id === activeDeepProductId ? 'selected' : ''}>
-            ${p.product_name_th} (${p.total_assets_count} ภาพ)
-          </option>
-        `).join('');
-      }
-
-      renderDeepModalAssets();
-      document.getElementById('deepGalleryModal').classList.add('open');
-    }
-
-    function closeDeepGalleryModal() {
-      document.getElementById('deepGalleryModal').classList.remove('open');
-    }
-
-    function changeDeepModalProduct(productId) {
-      activeDeepProductId = productId;
-      activeDeepCategory = 'all';
-      renderDeepModalAssets();
-    }
-
-    function selectDeepCategory(catKey) {
-      activeDeepCategory = catKey;
-      renderDeepModalAssets();
-    }
-
-    function renderDeepModalAssets() {
-      if (!window.APPLE_DEEP_ASSETS || !window.APPLE_DEEP_ASSETS.products) {
-        document.getElementById('modalAssetsGrid').innerHTML = '<div class="empty-state">❌ ไม่พบข้อมูล Deep Assets Catalog</div>';
-        return;
-      }
-
-      const pData = window.APPLE_DEEP_ASSETS.products[activeDeepProductId];
-      if (!pData) {
-        document.getElementById('modalAssetsGrid').innerHTML = '<div class="empty-state">❌ ไม่พบสินค้านี้ในระบบ</div>';
-        return;
-      }
-
-      // Update Header Info
-      document.getElementById('modalProductTitle').innerText = pData.product_name_th;
-      document.getElementById('modalProductCategory').innerText = pData.category.toUpperCase();
-      document.getElementById('modalProductChip').innerText = pData.chip || '-';
-      document.getElementById('modalTotalCount').innerText = `📸 รวม ${pData.total_assets_count} ภาพ`;
-
-      // Render Category Pills with counts
-      const pillsContainer = document.getElementById('modalCategoryPills');
-      const catMeta = window.APPLE_DEEP_ASSETS.metadata.categories || {};
-      
-      let pillsHtml = `
-        <button class="category-btn ${activeDeepCategory === 'all' ? 'active' : ''}" onclick="selectDeepCategory('all')">
-          🌟 ทั้งหมด (${pData.total_assets_count})
-        </button>
-      `;
-
-      for (const [cKey, cInfo] of Object.entries(catMeta)) {
-        const count = (pData.categories_summary && pData.categories_summary[cKey]) || 0;
-        if (count > 0) {
-          pillsHtml += `
-            <button class="category-btn ${activeDeepCategory === cKey ? 'active' : ''}" onclick="selectDeepCategory('${cKey}')">
-              ${cInfo.title_th} (${count})
-            </button>
-          `;
-        }
-      }
-      pillsContainer.innerHTML = pillsHtml;
-
-      // Filter Assets
-      let assets = pData.assets || [];
-      if (activeDeepCategory !== 'all') {
-        assets = assets.filter(a => a.category === activeDeepCategory);
-      }
-
-      const grid = document.getElementById('modalAssetsGrid');
-      if (assets.length === 0) {
-        grid.innerHTML = '<div class="empty-state">ไม่พบรูปภาพในหมวดหมู่นี้</div>';
-        return;
-      }
-
-      grid.innerHTML = assets.map(a => `
-        <div class="deep-asset-card">
-          <div class="deep-asset-img-box" onclick="openLightbox('${a.image_url}', '${a.title_th.replace(/'/g, "\\'")}', '${(a.description_th || '').replace(/'/g, "\\'")}')">
-            <img src="${a.image_url}" alt="${a.title_th}" loading="lazy" />
-            <span class="deep-cat-pill" style="position:absolute; top:10px; left:10px; z-index:2;">${a.badge || a.category_th}</span>
-            <span class="res-badge" style="position:absolute; bottom:10px; right:10px; z-index:2;">${a.resolution || '2560px 4K'}</span>
-          </div>
-          <div class="deep-asset-body">
-            <div class="deep-asset-title">${a.title_th}</div>
-            <div class="deep-asset-desc">${a.description_th || a.title_en}</div>
-            <div class="deep-asset-footer">
-              <span style="font-size:0.75rem; color:#64748b;">สัดส่วน: ${a.aspect_ratio || '1:1'}</span>
-              <div style="display:flex; gap:6px;">
-                <button class="btn-specs" onclick="openLightbox('${a.image_url}', '${a.title_th.replace(/'/g, "\\'")}', '${(a.description_th || '').replace(/'/g, "\\'")}')" style="padding:4px 8px; font-size:0.75rem;">
-                  🔍 ซูม 4K
-                </button>
-                <a href="${a.image_url}" target="_blank" rel="noopener" class="btn-specs" style="padding:4px 8px; font-size:0.75rem;">
-                  เปิดรูป ↗
-                </a>
-              </div>
-            </div>
-          </div>
+      <div class="footer-directory">
+        <div class="footer-col">
+          <div class="footer-col-title">เลือกซื้อและเรียนรู้</div>
+          <ul>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#mac" onclick="switchCategory('mac')">Mac</a></li>
+            <li><a href="#ipad" onclick="switchCategory('ipad')">iPad</a></li>
+            <li><a href="#iphone" onclick="switchCategory('iphone')">iPhone</a></li>
+            <li><a href="#watch" onclick="switchCategory('watch')">Watch</a></li>
+            <li><a href="#gallery">AirPods</a></li>
+          </ul>
         </div>
-      `).join('');
-    }
 
-    function openLightbox(url, title, desc) {
-      document.getElementById('lightboxImg').src = url;
-      document.getElementById('lightboxCaption').innerHTML = `<b>${title}</b><br><span style="color:#94a3b8; font-size:0.9rem;">${desc}</span>`;
-      document.getElementById('lightboxModal').classList.add('open');
-    }
+        <div class="footer-col">
+          <div class="footer-col-title">บัญชี</div>
+          <ul>
+            <li><a href="#">จัดการ Apple Account</a></li>
+            <li><a href="#">บัญชี Apple Store</a></li>
+            <li><a href="#">iCloud.com</a></li>
+          </ul>
+        </div>
 
-    function closeLightbox() {
-      document.getElementById('lightboxModal').classList.remove('open');
-    }
+        <div class="footer-col">
+          <div class="footer-col-title">ความบันเทิง</div>
+          <ul>
+            <li><a href="#">Apple One</a></li>
+            <li><a href="#">Apple TV+</a></li>
+            <li><a href="#">Apple Music</a></li>
+            <li><a href="#">Apple Arcade</a></li>
+          </ul>
+        </div>
 
-    function toggleBackgroundMode() {
-      useTransparentBg = !useTransparentBg;
-      const btn = document.getElementById('btnBgMode');
-      const icon = document.getElementById('bgModeIcon');
-      const text = document.getElementById('bgModeText');
-      const patternBtn = document.getElementById('btnCanvasPattern');
+        <div class="footer-col">
+          <div class="footer-col-title">ค่านิยมของ Apple</div>
+          <ul>
+            <li><a href="#">การเข้าถึง</a></li>
+            <li><a href="#">สิ่งแวดล้อม Apple 2030</a></li>
+            <li><a href="#">ความเป็นส่วนตัว</a></li>
+            <li><a href="#">ความรับผิดชอบของซัพพลายเออร์</a></li>
+          </ul>
+        </div>
 
-      if (useTransparentBg) {
-        icon.innerText = '💎';
-        text.innerText = 'พื้นหลัง: ไดคัตโปร่งใส 100% (Transparent PNG)';
-        btn.style.background = 'linear-gradient(135deg, #065f46, #059669)';
-        btn.style.borderColor = '#10b981';
-        patternBtn.style.display = 'inline-flex';
+        <div class="footer-col">
+          <div class="footer-col-title">เกี่ยวกับ Apple</div>
+          <ul>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">ผู้บริหารของ Apple</a></li>
+            <li><a href="#">โอกาสในการทำงาน</a></li>
+            <li><a href="#">ติดต่อ Apple</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Copyright © 2026 Apple Inc. สงวนสิทธิ์ทุกประการ</div>
+        <div class="footer-bottom-links">
+          <a href="#">นโยบายความเป็นส่วนตัว</a>
+          <a href="#">ข้อกำหนดการใช้งาน</a>
+          <a href="#">การขายและการคืนเงิน</a>
+          <a href="#">แผนผังเว็บไซต์</a>
+        </div>
+        <div>ไทย (ภาษาไทย)</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT LOGIC & MASTER CATALOG INTEGRATION
+       ========================================================================== -->
+  <script src="data/exports/apple_unified_catalog.js"></script>
+  <script>
+    // Global Application State
+    const state = {
+      theme: 'dark',
+      imageMode: 'jpg', // 'jpg' or 'png'
+      currentHeroId: 'iphone-16-pro',
+      selectedSubModelId: null,
+      selectedFinishId: null,
+      selectedStorage: null,
+      activeCategory: 'all',
+      galleryCategory: 'all',
+      galleryProductId: 'iphone-16-pro',
+      searchQuery: '',
+      catalog: null
+    };
+
+    // Initialize App on DOM Ready
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Check if unified catalog loaded
+      if (window.APPLE_CATALOG && window.APPLE_CATALOG.products) {
+        state.catalog = window.APPLE_CATALOG;
+        initApp();
       } else {
-        icon.innerText = '✨';
-        text.innerText = 'พื้นหลัง: ต้นฉบับ (Original JPG)';
-        btn.style.background = 'linear-gradient(135deg, #1e3a8a, #4338ca)';
-        btn.style.borderColor = '#6366f1';
-        patternBtn.style.display = 'none';
-      }
-      renderCatalog();
-    }
-
-    function toggleCanvasPattern() {
-      const patterns = ['checkerboard', 'dark', 'light', 'gradient'];
-      let idx = patterns.indexOf(canvasPattern);
-      canvasPattern = patterns[(idx + 1) % patterns.length];
-      const btn = document.getElementById('btnCanvasPattern');
-      if (canvasPattern === 'checkerboard') btn.innerText = '🏁 ลายตารางหมากรุก (Checkerboard)';
-      else if (canvasPattern === 'dark') btn.innerText = '⬛ พื้นหลังดำสนิท (Dark OLED)';
-      else if (canvasPattern === 'light') btn.innerText = '⬜ พื้นหลังสีสว่าง (Light Gray)';
-      else if (canvasPattern === 'gradient') btn.innerText = '🌈 พื้นหลังเกรเดียนต์ (Gradient)';
-      renderCatalog();
-    }
-
-    function getCanvasBgStyle() {
-      if (!useTransparentBg) return '';
-      if (canvasPattern === 'checkerboard') {
-        return 'background-color: #1a1d24; background-image: linear-gradient(45deg, rgba(255,255,255,0.08) 25%, transparent 25%), linear-gradient(-45deg, rgba(255,255,255,0.08) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.08) 75%), linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.08) 75%); background-size: 16px 16px; background-position: 0 0, 0 8px, 8px -8px, -8px 0px; border-radius: 14px;';
-      } else if (canvasPattern === 'dark') {
-        return 'background: #000000; border: 1px solid rgba(255,255,255,0.15); border-radius: 14px;';
-      } else if (canvasPattern === 'light') {
-        return 'background: #f5f5f7; border-radius: 14px;';
-      } else if (canvasPattern === 'gradient') {
-        return 'background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%); border-radius: 14px;';
-      }
-      return '';
-    }
-
-    // ป้องกันและตัด _AV2 / _AV3 (มุมซูมเจาะเฉพาะกล้องหรือขอบข้าง) เพื่อแสดงรูปตัวเครื่องเต็ม 100%
-    function cleanAppleImgUrl(url) {
-      if (!url) return '';
-      return url.replace(/_AV\d+/g, '');
-    }
-
-    function setViewMode(mode) {
-      viewMode = mode;
-      document.getElementById('btnViewColors').classList.toggle('active', mode === 'color');
-      document.getElementById('btnViewProducts').classList.toggle('active', mode === 'products');
-      document.getElementById('btnViewVariants').classList.toggle('active', mode === 'variants');
-      updateStats();
-      renderCatalog();
-    }
-
-    function toggleImageSource() {
-      useLocalAssets = !useLocalAssets;
-      const btn = document.getElementById('btnImgMode');
-      const icon = document.getElementById('imgModeIcon');
-      const text = document.getElementById('imgModeText');
-
-      if (useLocalAssets) {
-        icon.innerText = '💾';
-        text.innerText = 'Local Storage (data/images/ ออฟไลน์)';
-        btn.style.borderColor = '#34d399';
-        btn.style.color = '#34d399';
-      } else {
-        icon.innerText = '🌐';
-        text.innerText = 'Apple Official CDN (ออนไลน์ คมชัดสูง)';
-        btn.style.borderColor = 'rgba(41, 151, 255, 0.3)';
-        btn.style.color = '#58a6ff';
-      }
-      renderCatalog();
-    }
-
-    function changeSort(val) {
-      sortMode = val;
-      renderCatalog();
-    }
-
-    function selectColorOption(cardKey, optionIdx) {
-      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
-      colorCardStates[cardKey].optionIdx = optionIdx;
-      renderCatalog();
-    }
-
-    function selectColorAngle(cardKey, angleIdx) {
-      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
-      colorCardStates[cardKey].angleIdx = angleIdx;
-      colorCardStates[cardKey].isPng = false;
-      renderCatalog();
-    }
-
-    function toggleColorPng(cardKey) {
-      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
-      colorCardStates[cardKey].isPng = !colorCardStates[cardKey].isPng;
-      renderCatalog();
-    }
-
-    function selectProductColor(pid, colorIdx) {
-      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
-      productCardStates[pid].colorIdx = colorIdx;
-      productCardStates[pid].optionIdx = 0;
-      productCardStates[pid].angleIdx = 0;
-      productCardStates[pid].isPng = false;
-      renderCatalog();
-    }
-
-    function selectProductOption(pid, optionIdx) {
-      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
-      productCardStates[pid].optionIdx = optionIdx;
-      renderCatalog();
-    }
-
-    function selectProductAngle(pid, angleIdx) {
-      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
-      productCardStates[pid].angleIdx = angleIdx;
-      productCardStates[pid].isPng = false;
-      renderCatalog();
-    }
-
-    function toggleProductPng(pid) {
-      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
-      productCardStates[pid].isPng = !productCardStates[pid].isPng;
-      renderCatalog();
-    }
-
-    function getAngleIcon(angleType) {
-      const icons = {
-        hero: '📱',
-        back: '📸',
-        side: '📏',
-        box: '📦',
-        accessory: '🔌',
-        display: '🖥️',
-        keyboard: '⌨️',
-        ports: '⚡',
-        closed_lid: '💻',
-        gallery: '✨',
-        case_size: '⌚'
-      };
-      return icons[angleType] || '🖼️';
-    }
-
-    function getAngleShortLabel(angleType, labelTh) {
-      const labels = {
-        hero: 'เฉียง',
-        back: 'หลัง',
-        side: 'ข้าง',
-        box: 'ในกล่อง',
-        accessory: 'สายชาร์จ',
-        display: 'หน้าจอ',
-        keyboard: 'แป้นพิมพ์',
-        ports: 'พอร์ต',
-        closed_lid: 'ฝาปิด',
-        gallery: 'มุมมอง',
-        case_size: 'ตัวเรือน'
-      };
-      if (labels[angleType]) return labels[angleType];
-      if (labelTh && labelTh.length <= 8) return labelTh;
-      return angleType;
-    }
-
-    function computeTree(variants) {
-      const tree = {};
-      for (const v of variants) {
-        const cat = v.category || 'other';
-        const pid = v.product_id || (v.family || 'unknown').toLowerCase().replace(/\s+/g, '-');
-        if (!tree[cat]) tree[cat] = { products: {} };
-        if (!tree[cat].products[pid]) {
-          tree[cat].products[pid] = {
-            product_info: {
-              id: pid,
-              category_id: cat,
-              name: v.family || pid,
-              chip: v.specs_chip || '-',
-              screen_size: v.screen_size || '-',
-              min_price_thb: v.price_thb,
-              max_price_thb: v.price_thb,
-              hero_image_url: v.image_url_highres || v.image_url,
-              hero_image_png: v.image_url_png || '',
-              local_hero_image: v.local_image_path,
-              local_hero_image_png: v.local_image_png || '',
-              product_url: v.product_url
-            },
-            colors: {}
-          };
-        }
-        const p = tree[cat].products[pid];
-        p.product_info.min_price_thb = Math.min(p.product_info.min_price_thb, v.price_thb);
-        p.product_info.max_price_thb = Math.max(p.product_info.max_price_thb, v.price_thb);
-
-        const cid = v.color_id || (v.color_en || 'silver').toLowerCase().replace(/\s+/g, '-');
-        if (!p.colors[cid]) {
-          p.colors[cid] = {
-            color_id: cid,
-            name_th: v.color_th,
-            name_en: v.color_en,
-            color_hex: v.color_hex,
-            image_url: v.image_url_highres || v.image_url,
-            image_url_png: v.image_url_png || '',
-            local_image_path: v.local_image_path || `data/images/${cat}/${pid}/${cid}.jpg`,
-            local_image_png: v.local_image_png || `data/images/${cat}/${pid}/${cid}/hero.png`,
-            gallery: v.gallery || [],
-            options: []
-          };
-        }
-        p.colors[cid].options.push({
-          id: v.id,
-          part_number: v.part_number || v.id,
-          storage: v.storage,
-          screen_size: v.screen_size,
-          connectivity: v.connectivity,
-          price_thb: v.price_thb,
-          formatted_price: v.formatted_price
-        });
-      }
-      return tree;
-    }
-
-    async function loadDatabase() {
-      if (window.APPLE_DATABASE && window.APPLE_DATABASE.variants) {
-        allVariants = window.APPLE_DATABASE.variants;
-        allProducts = window.APPLE_DATABASE.products || [];
-        treeData = window.APPLE_DATABASE.tree || computeTree(allVariants);
-        updateStats();
-        renderCatalog();
-        return;
-      }
-
-      try {
-        const res = await fetch('data/exports/apple_full_catalog.json');
-        if (!res.ok) throw new Error("JSON file not found");
-        const json = await res.json();
-        allVariants = json.variants || [];
-        treeData = json.catalog_tree || computeTree(allVariants);
-      } catch (err) {
-        console.warn("Using fallback computeTree:", err);
-      }
-
-      updateStats();
-      renderCatalog();
-    }
-
-    function updateStats() {
-      if (viewMode === 'color') {
-        let totalColors = 0;
-        let prices = [];
-        if (treeData) {
-          for (const cat in treeData) {
-            const prods = treeData[cat].products || {};
-            for (const pid in prods) {
-              const cols = Array.isArray(prods[pid].colors) ? prods[pid].colors : Object.values(prods[pid].colors || {});
-              totalColors += cols.length;
-              cols.forEach(c => {
-                if (c.options && c.options.length > 0) {
-                  prices.push(c.options[0].price_thb);
-                }
-              });
-            }
-          }
-        }
-        document.getElementById('statTotal').innerText = `${totalColors || 63} สีสินค้า (รูปไม่ซ้ำ 100%)`;
-        if (prices.length > 0) {
-          document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
-          document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
-        }
-      } else if (viewMode === 'products') {
-        let totalProds = 0;
-        let prices = [];
-        if (treeData) {
-          for (const cat in treeData) {
-            const prods = treeData[cat].products || {};
-            for (const pid in prods) {
-              totalProds++;
-              prices.push(prods[pid].product_info.min_price_thb);
-            }
-          }
-        }
-        document.getElementById('statTotal').innerText = `${totalProds || 18} รุ่นหลัก`;
-        if (prices.length > 0) {
-          document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
-          document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
-        }
-      } else {
-        const prices = allVariants.map(v => v.price_thb).filter(p => p > 0);
-        document.getElementById('statTotal').innerText = `${allVariants.length} SKU รายการย่อย`;
-        if (prices.length > 0) {
-          document.getElementById('statMin').innerText = `฿${Math.min(...prices).toLocaleString()}`;
-          document.getElementById('statMax').innerText = `฿${Math.max(...prices).toLocaleString()}`;
-        }
-      }
-    }
-
-    function renderCatalog() {
-      const grid = document.getElementById('catalogGrid');
-      const query = searchQuery.toLowerCase();
-
-      if (viewMode === 'color') {
-        renderColorCards(grid, query);
-      } else if (viewMode === 'products') {
-        renderProductCards(grid, query);
-      } else {
-        renderVariantCards(grid, query);
-      }
-    }
-
-    // 🎨 Mode 1: Color Showcase (63 items, 100% unique image per card)
-    function renderColorCards(grid, query) {
-      if (!treeData) {
-        treeData = computeTree(allVariants);
-      }
-
-      let colorList = [];
-      for (const catId in treeData) {
-        if (activeCategory !== 'all' && catId !== activeCategory) continue;
-        const prods = treeData[catId].products || {};
-        for (const pid in prods) {
-          const p = prods[pid];
-          const info = p.product_info || {};
-          const colors = Array.isArray(p.colors) ? p.colors : Object.values(p.colors || {});
-
-          colors.forEach(c => {
-            const matchSearch = !query ||
-              info.name.toLowerCase().includes(query) ||
-              (info.chip && info.chip.toLowerCase().includes(query)) ||
-              (c.name_th && c.name_th.toLowerCase().includes(query)) ||
-              (c.name_en && c.name_en.toLowerCase().includes(query));
-
-            if (matchSearch) {
-              colorList.push({
-                pid: pid,
-                catId: catId,
-                product_info: info,
-                color: c,
-                options: c.options || []
-              });
-            }
+        // Fallback fetch if running under local server or file path
+        fetch('data/exports/apple_unified_catalog.json')
+          .then(res => res.json())
+          .then(data => {
+            state.catalog = data;
+            initApp();
+          })
+          .catch(err => {
+            console.error('Could not load unified catalog directly, using mock fallback', err);
+            initAppWithFallback();
           });
-        }
       }
+    });
 
-      // Sort
-      if (sortMode === 'price-asc') {
-        colorList.sort((a, b) => ((a.options[0] || {}).price_thb || 0) - ((b.options[0] || {}).price_thb || 0));
-      } else if (sortMode === 'price-desc') {
-        colorList.sort((a, b) => ((b.options[0] || {}).price_thb || 0) - ((a.options[0] || {}).price_thb || 0));
-      } else if (sortMode === 'name') {
-        colorList.sort((a, b) => a.product_info.name.localeCompare(b.product_info.name));
-      }
-
-      if (colorList.length === 0) {
-        grid.innerHTML = `<div class="empty-state">❌ ไม่พบสินค้าที่ตรงกับ "${searchQuery}"</div>`;
-        return;
-      }
-
-      grid.innerHTML = colorList.map(item => {
-        const info = item.product_info;
-        const c = item.color;
-        const cardKey = `${item.pid}_${c.color_id}`;
-        if (!colorCardStates[cardKey]) {
-          colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
-        }
-        const state = colorCardStates[cardKey];
-        const options = item.options;
-        const activeOpt = options[state.optionIdx] || options[0] || {};
-        const displayPrice = activeOpt.formatted_price || '฿0';
-
-        // Gallery
-        const gallery = (c.gallery && c.gallery.length > 0) ? c.gallery : [{
-          angle_type: 'hero',
-          label_th: 'มุมมองหลัก',
-          image_url: c.image_url,
-          image_url_png: c.image_url_png,
-          local_image_path: c.local_image_path,
-          local_image_png: c.local_image_png,
-          resolution: '2560x2560'
-        }];
-        const activeG = gallery[state.angleIdx] || gallery[0];
-
-        let activeImg = '';
-        if (useTransparentBg) {
-          const transPath = (c.local_image_nobg || c.local_image_path || '').replace('.jpg', '.png').replace('data/images/', 'data/images_transparent/');
-          activeImg = transPath || (activeG.local_image_png || c.local_image_png || c.image_url);
-        } else if (state.isPng && (activeG.image_url_png || c.image_url_png)) {
-          const pngUrl = activeG.image_url_png || c.image_url_png;
-          const localPng = activeG.local_image_png || c.local_image_png;
-          activeImg = useLocalAssets ? (localPng || pngUrl) : pngUrl;
-        } else {
-          activeImg = useLocalAssets ? (activeG.local_image_path || activeG.image_url || c.local_image_path || c.image_url) : (activeG.image_url || c.image_url);
-        }
-        activeImg = cleanAppleImgUrl(activeImg);
-
-        return `
-          <article class="product-card">
-            <div class="card-top">
-              <div style="display: flex; align-items: center; gap: 6px;">
-                <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
-                <span class="res-badge" title="ภาพความละเอียดสูงระดับ 2560x2560 Ultra HD">⚡ 2560px 4K</span>
-              </div>
-              ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
-            </div>
-
-            <div class="image-container" style="${getCanvasBgStyle() || (state.isPng ? 'background: radial-gradient(circle at center, rgba(144,71,255,0.08) 0%, transparent 70%);' : '')}">
-              <img src="${activeImg}" 
-                   alt="${info.name} สี${c.name_th}" 
-                   loading="lazy"
-                   onerror="this.src='${cleanAppleImgUrl(c.image_url)}'" />
-            </div>
-
-            ${gallery.length > 1 || c.image_url_png ? `
-              <div class="gallery-angles-bar">
-                ${gallery.map((g, aIdx) => `
-                  <button class="gallery-angle-btn ${(!state.isPng && aIdx === (state.angleIdx || 0)) ? 'active' : ''}" 
-                          onclick="selectColorAngle('${cardKey}', ${aIdx})"
-                          title="${g.label_th || g.angle_type}">
-                    <span>${getAngleIcon(g.angle_type)}</span>
-                    <span>${getAngleShortLabel(g.angle_type, g.label_th)}</span>
-                  </button>
-                `).join('')}
-                ${c.image_url_png ? `
-                  <button class="png-badge-btn ${state.isPng ? 'active' : ''}" 
-                          onclick="toggleColorPng('${cardKey}')" 
-                          title="สลับเป็นรูปภาพไดคัตพื้นหลังใส (Transparent PNG)">
-                    <span>💎</span> ไดคัต PNG
-                  </button>
-                ` : ''}
-              </div>
-            ` : ''}
-
-            ${activeOpt.sub_model_name ? `<div class="submodel-pill">📱 ${activeOpt.sub_model_name}</div>` : ''}
-            <h3 class="product-title">${info.name}</h3>
-
-            <div class="color-swatch-row" style="margin: 8px 0 14px;">
-              <span class="swatch-circle" style="background: ${c.color_hex || '#888'}; border: 2px solid rgba(255,255,255,0.8); box-shadow: 0 0 0 2px rgba(0,0,0,0.2);"></span>
-              <span class="color-name" style="font-size: 0.88rem;">สี: <b>${c.name_th} (${c.name_en})</b></span>
-            </div>
-
-            ${options.length > 1 ? `
-              <div class="storage-selector">
-                ${options.slice(0, 6).map((opt, idx) => `
-                  <button class="storage-chip ${idx === state.optionIdx ? 'active' : ''}" 
-                          onclick="selectColorOption('${cardKey}', ${idx})">
-                    ${opt.storage || opt.screen_size || opt.connectivity}
-                  </button>
-                `).join('')}
-              </div>
-            ` : ''}
-
-            <div class="specs-pill-box">
-              ${activeOpt.dimensions_mm && activeOpt.dimensions_mm !== '-' ? `<span class="spec-pill" title="มิติขนาดตัวเครื่อง">📏 ${activeOpt.dimensions_mm}</span>` : ''}
-              ${activeOpt.weight_grams && activeOpt.weight_grams !== '-' ? `<span class="spec-pill" title="น้ำหนัก">⚖️ ${activeOpt.weight_grams}</span>` : ''}
-              ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill" title="ขนาดหน้าจอ">📐 ${info.screen_size}</span>` : ''}
-              ${activeOpt.connectivity && activeOpt.connectivity !== '-' ? `<span class="spec-pill" title="การเชื่อมต่อ">📶 ${activeOpt.connectivity}</span>` : ''}
-              ${activeOpt.part_number ? `<span class="spec-pill" title="Part Number">🏷️ ${activeOpt.part_number}</span>` : ''}
-            </div>
-
-            <div class="specs-grid">
-              ${activeOpt.display_specs && activeOpt.display_specs !== '-' ? `
-                <div class="specs-grid-item" style="grid-column: 1 / -1;">
-                  <span>🖥️ จอภาพ:</span>
-                  <b>${activeOpt.display_specs}</b>
-                </div>
-              ` : ''}
-              ${activeOpt.camera_specs && activeOpt.camera_specs !== '-' ? `
-                <div class="specs-grid-item" style="grid-column: 1 / -1;">
-                  <span>📸 กล้อง:</span>
-                  <b>${activeOpt.camera_specs}</b>
-                </div>
-              ` : ''}
-              ${activeOpt.battery_specs && activeOpt.battery_specs !== '-' ? `
-                <div class="specs-grid-item">
-                  <span>🔋 แบตเตอรี่:</span>
-                  <b>${activeOpt.battery_specs}</b>
-                </div>
-              ` : ''}
-              ${activeOpt.box_contents && activeOpt.box_contents !== '-' ? `
-                <div class="specs-grid-item">
-                  <span>📦 ในกล่อง:</span>
-                  <b>${activeOpt.box_contents}</b>
-                </div>
-              ` : ''}
-            </div>
-
-            <div class="card-bottom">
-              <div class="price-group">
-                <span class="price-label">ราคาทางการ</span>
-                <span class="price-val">${displayPrice}</span>
-              </div>
-              <div style="display: flex; gap: 6px; align-items: center;">
-                <button class="btn-deep" onclick="openDeepGalleryModal('${info.id}')" title="เจาะลึกภาพสินค้าทุกมุม ชิป กล้อง และของในกล่อง">
-                  🔍 รูปเจาะลึก 4K
-                </button>
-                ${(activeOpt.specs_url || info.specs_url) ? `
-                  <a href="${activeOpt.specs_url || info.specs_url}" target="_blank" rel="noopener" class="btn-specs" title="ดูหน้าข้อมูลทางเทคนิคทางการบน Apple">
-                    สเปก ↗
-                  </a>
-                ` : ''}
-                <a href="${activeOpt.buy_url || info.buy_url || info.product_url}" target="_blank" rel="noopener" class="btn-buy">
-                  ซื้อบน Apple ↗
-                </a>
-              </div>
-            </div>
-          </article>
-        `;
-      }).join('');
+    function initApp() {
+      renderHero(state.currentHeroId);
+      renderStudio(state.currentHeroId);
+      renderProductCards();
+      renderGallery();
+      populateGalleryModelSelect();
     }
 
-    // 🛍️ Mode 2: Product Family (18 families, with interactive color swatches)
-    function renderProductCards(grid, query) {
-      if (!treeData) {
-        treeData = computeTree(allVariants);
+    /* --------------------------------------------------------------------------
+       Theme Toggle
+       -------------------------------------------------------------------------- */
+    function toggleTheme() {
+      const html = document.documentElement;
+      state.theme = state.theme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', state.theme);
+      
+      const icon = document.getElementById('themeIcon');
+      const text = document.getElementById('themeText');
+      if (state.theme === 'light') {
+        icon.textContent = '🌙';
+        text.textContent = 'มืด';
+      } else {
+        icon.textContent = '☀️';
+        text.textContent = 'สว่าง';
       }
-
-      let productList = [];
-      for (const catId in treeData) {
-        if (activeCategory !== 'all' && catId !== activeCategory) continue;
-        const prods = treeData[catId].products || {};
-        for (const pid in prods) {
-          const p = prods[pid];
-          const info = p.product_info || {};
-          const colors = Array.isArray(p.colors) ? p.colors : Object.values(p.colors || {});
-          
-          // Search filter
-          const matchSearch = !query ||
-            info.name.toLowerCase().includes(query) ||
-            info.chip.toLowerCase().includes(query) ||
-            colors.some(c => (c.name_th && c.name_th.toLowerCase().includes(query)) || (c.name_en && c.name_en.toLowerCase().includes(query)));
-
-          if (matchSearch) {
-            productList.push({ ...p, colors });
-          }
-        }
-      }
-
-      // Sort
-      if (sortMode === 'price-asc') {
-        productList.sort((a, b) => a.product_info.min_price_thb - b.product_info.min_price_thb);
-      } else if (sortMode === 'price-desc') {
-        productList.sort((a, b) => b.product_info.min_price_thb - a.product_info.min_price_thb);
-      } else if (sortMode === 'name') {
-        productList.sort((a, b) => a.product_info.name.localeCompare(b.product_info.name));
-      }
-
-      if (productList.length === 0) {
-        grid.innerHTML = `<div class="empty-state">❌ ไม่พบสินค้าที่ตรงกับ "${searchQuery}"</div>`;
-        return;
-      }
-
-      grid.innerHTML = productList.map(item => {
-        const info = item.product_info;
-        const pid = info.id;
-        const colors = item.colors;
-
-        if (!productCardStates[pid]) {
-          productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
-        }
-        const state = productCardStates[pid];
-        const activeColor = colors[state.colorIdx] || colors[0] || {};
-        const options = activeColor.options || [];
-        
-        const activeOption = options[state.optionIdx] || options[0] || {};
-        const displayPrice = activeOption.formatted_price || `เริ่มต้น ฿${info.min_price_thb.toLocaleString()}`;
-
-        // Gallery
-        const gallery = (activeColor.gallery && activeColor.gallery.length > 0) ? activeColor.gallery : [{
-          angle_type: 'hero',
-          label_th: 'มุมมองหลัก',
-          image_url: activeColor.image_url || info.hero_image_url,
-          image_url_png: activeColor.image_url_png || info.hero_image_png,
-          local_image_path: activeColor.local_image_path || info.local_hero_image,
-          local_image_png: activeColor.local_image_png || info.local_hero_image_png,
-          resolution: '2560x2560'
-        }];
-        const activeG = gallery[state.angleIdx] || gallery[0];
-
-        let activeImg = '';
-        if (useTransparentBg) {
-          const transPath = (activeColor.local_image_nobg || activeColor.local_image_path || '').replace('.jpg', '.png').replace('data/images/', 'data/images_transparent/');
-          activeImg = transPath || (activeG.local_image_png || activeColor.local_image_png || info.hero_image_url);
-        } else if (state.isPng && (activeG.image_url_png || activeColor.image_url_png || info.hero_image_png)) {
-          const pngUrl = activeG.image_url_png || activeColor.image_url_png || info.hero_image_png;
-          const localPng = activeG.local_image_png || activeColor.local_image_png || info.local_hero_image_png;
-          activeImg = useLocalAssets ? (localPng || pngUrl) : pngUrl;
-        } else {
-          activeImg = useLocalAssets 
-            ? (activeG.local_image_path || activeG.image_url || activeColor.local_image_path || activeColor.image_url || info.local_hero_image || info.hero_image_url) 
-            : (activeG.image_url || activeColor.image_url || info.hero_image_url);
-        }
-        activeImg = cleanAppleImgUrl(activeImg);
-
-        return `
-          <article class="product-card">
-            <div class="card-top">
-              <div style="display: flex; align-items: center; gap: 6px;">
-                <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
-                <span class="res-badge" title="ภาพความละเอียดสูงระดับ 2560x2560 Ultra HD">⚡ 2560px 4K</span>
-              </div>
-              ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
-            </div>
-
-            <div class="image-container" style="${getCanvasBgStyle() || (state.isPng ? 'background: radial-gradient(circle at center, rgba(144,71,255,0.08) 0%, transparent 70%);' : '')}">
-              <img id="img-${pid}" 
-                   src="${activeImg}" 
-                   alt="${info.name}" 
-                   loading="lazy"
-                   onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
-            </div>
-
-            ${gallery.length > 1 || activeColor.image_url_png ? `
-              <div class="gallery-angles-bar">
-                ${gallery.map((g, aIdx) => `
-                  <button class="gallery-angle-btn ${(!state.isPng && aIdx === (state.angleIdx || 0)) ? 'active' : ''}" 
-                          onclick="selectProductAngle('${pid}', ${aIdx})"
-                          title="${g.label_th || g.angle_type}">
-                    <span>${getAngleIcon(g.angle_type)}</span>
-                    <span>${getAngleShortLabel(g.angle_type, g.label_th)}</span>
-                  </button>
-                `).join('')}
-                ${activeColor.image_url_png ? `
-                  <button class="png-badge-btn ${state.isPng ? 'active' : ''}" 
-                          onclick="toggleProductPng('${pid}')" 
-                          title="สลับเป็นรูปภาพไดคัตพื้นหลังใส (Transparent PNG)">
-                    <span>💎</span> ไดคัต PNG
-                  </button>
-                ` : ''}
-              </div>
-            ` : ''}
-
-            ${activeOption.sub_model_name ? `<div class="submodel-pill">📱 ${activeOption.sub_model_name}</div>` : ''}
-            <h3 class="product-title">${info.name}</h3>
-
-            <div class="product-color-selector">
-              <div class="swatch-picker">
-                ${colors.map((c, idx) => `
-                  <button class="swatch-btn ${idx === state.colorIdx ? 'active' : ''}" 
-                          onclick="selectProductColor('${pid}', ${idx})" 
-                          title="${c.name_th} (${c.name_en})">
-                    <span class="swatch-inner" style="background: ${c.color_hex || '#888'}"></span>
-                  </button>
-                `).join('')}
-              </div>
-              <div class="active-color-label">
-                สี: <b>${activeColor ? `${activeColor.name_th} (${activeColor.name_en})` : '-'}</b>
-              </div>
-            </div>
-
-            ${options.length > 1 ? `
-              <div class="storage-selector">
-                ${options.slice(0, 6).map((opt, idx) => `
-                  <button class="storage-chip ${idx === state.optionIdx ? 'active' : ''}" 
-                          onclick="selectProductOption('${pid}', ${idx})">
-                    ${opt.storage || opt.screen_size || opt.connectivity}
-                  </button>
-                `).join('')}
-              </div>
-            ` : ''}
-
-            <div class="specs-pill-box">
-              ${activeOption.dimensions_mm && activeOption.dimensions_mm !== '-' ? `<span class="spec-pill" title="มิติขนาด">📏 ${activeOption.dimensions_mm}</span>` : ''}
-              ${activeOption.weight_grams && activeOption.weight_grams !== '-' ? `<span class="spec-pill" title="น้ำหนัก">⚖️ ${activeOption.weight_grams}</span>` : ''}
-              ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill">📐 ${info.screen_size}</span>` : ''}
-              ${activeOption.connectivity && activeOption.connectivity !== '-' ? `<span class="spec-pill">📶 ${activeOption.connectivity}</span>` : ''}
-              ${activeOption.part_number ? `<span class="spec-pill">🏷️ ${activeOption.part_number}</span>` : ''}
-            </div>
-
-            <div class="specs-grid">
-              ${activeOption.display_specs && activeOption.display_specs !== '-' ? `
-                <div class="specs-grid-item" style="grid-column: 1 / -1;">
-                  <span>🖥️ จอภาพ:</span>
-                  <b>${activeOption.display_specs}</b>
-                </div>
-              ` : ''}
-              ${activeOption.camera_specs && activeOption.camera_specs !== '-' ? `
-                <div class="specs-grid-item" style="grid-column: 1 / -1;">
-                  <span>📸 กล้อง:</span>
-                  <b>${activeOption.camera_specs}</b>
-                </div>
-              ` : ''}
-              ${activeOption.battery_specs && activeOption.battery_specs !== '-' ? `
-                <div class="specs-grid-item">
-                  <span>🔋 แบตเตอรี่:</span>
-                  <b>${activeOption.battery_specs}</b>
-                </div>
-              ` : ''}
-              ${activeOption.box_contents && activeOption.box_contents !== '-' ? `
-                <div class="specs-grid-item">
-                  <span>📦 ในกล่อง:</span>
-                  <b>${activeOption.box_contents}</b>
-                </div>
-              ` : ''}
-            </div>
-
-            <div class="card-bottom">
-              <div class="price-group">
-                <span class="price-label">${options.length > 1 ? 'ราคาตัวเลือกที่เลือก' : 'ราคาเริ่มต้นทางการ'}</span>
-                <span class="price-val" id="price-${pid}">${displayPrice}</span>
-              </div>
-              <div style="display: flex; gap: 6px; align-items: center;">
-                <button class="btn-deep" onclick="openDeepGalleryModal('${pid}')" title="เจาะลึกภาพสินค้าทุกมุม ชิป กล้อง และของในกล่อง">
-                  🔍 รูปเจาะลึก 4K
-                </button>
-                ${(activeOption.specs_url || info.specs_url) ? `
-                  <a href="${activeOption.specs_url || info.specs_url}" target="_blank" rel="noopener" class="btn-specs" title="ดูข้อมูลทางเทคนิคทางการบน Apple">
-                    สเปก ↗
-                  </a>
-                ` : ''}
-                <a href="${activeOption.buy_url || info.buy_url || info.product_url}" target="_blank" rel="noopener" class="btn-buy">
-                  ซื้อบน Apple ↗
-                </a>
-              </div>
-            </div>
-          </article>
-        `;
-      }).join('');
     }
 
-    // 📋 Mode 3: SKU View (484 SKUs)
-    function renderVariantCards(grid, query) {
-      let filtered = allVariants.filter(v => {
-        const matchCat = activeCategory === 'all' || v.category === activeCategory;
-        const matchSearch = !query || 
-          (v.model_name && v.model_name.toLowerCase().includes(query)) ||
-          (v.sub_model_name && v.sub_model_name.toLowerCase().includes(query)) ||
-          (v.family && v.family.toLowerCase().includes(query)) ||
-          (v.color_th && v.color_th.toLowerCase().includes(query)) ||
-          (v.color_en && v.color_en.toLowerCase().includes(query)) ||
-          (v.specs_chip && v.specs_chip.toLowerCase().includes(query)) ||
-          (v.part_number && v.part_number.toLowerCase().includes(query));
-        return matchCat && matchSearch;
+    /* --------------------------------------------------------------------------
+       Dual Image Mode Toggle (Studio JPG vs Transparent PNG)
+       -------------------------------------------------------------------------- */
+    function setImageMode(mode) {
+      state.imageMode = mode;
+      document.getElementById('btnModeJpg').classList.toggle('active', mode === 'jpg');
+      document.getElementById('btnModePng').classList.toggle('active', mode === 'png');
+      
+      // Refresh hero and studio visual
+      updateHeroVisual();
+      updateStudioVisual();
+      renderProductCards();
+      showToast(mode === 'jpg' ? 'แสดงรูปถ่ายสตูดิโอทางการ (Original JPG)' : 'แสดงรูปไดคัตโปร่งใส ไร้พื้นหลัง (No-BG PNG)');
+    }
+
+    function toggleImageMode() {
+      setImageMode(state.imageMode === 'jpg' ? 'png' : 'jpg');
+    }
+
+    /* --------------------------------------------------------------------------
+       Hero Section Logic
+       -------------------------------------------------------------------------- */
+    function selectHeroProduct(productId) {
+      state.currentHeroId = productId;
+      
+      // Update chapter nav active state
+      const buttons = document.querySelectorAll('.chapter-item');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('onclick').includes(productId)) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
       });
 
-      // Sorting
-      if (sortMode === 'price-asc') {
-        filtered.sort((a, b) => a.price_thb - b.price_thb);
-      } else if (sortMode === 'price-desc') {
-        filtered.sort((a, b) => b.price_thb - a.price_thb);
-      } else if (sortMode === 'name') {
-        filtered.sort((a, b) => a.model_name.localeCompare(b.model_name));
+      renderHero(productId);
+      renderStudio(productId);
+      
+      // Smooth scroll to hero
+      document.getElementById('heroSection').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function renderHero(productId) {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === productId);
+      if (!p) return;
+
+      document.getElementById('heroTitle').textContent = p.name_th;
+      document.getElementById('heroPricing').innerHTML = `เริ่มต้นที่ <strong>${p.pricing.formatted_min}</strong> หรือ ${p.pricing.formatted_min.replace('฿', '฿').slice(0, -3)}0/เดือน ผ่อน 0% นาน 10 เดือน`;
+      
+      // Set initial finish
+      state.selectedFinishId = p.finishes && p.finishes.length > 0 ? p.finishes[0].color_id : null;
+
+      // Render Finish Swatches Bar
+      const finishBar = document.getElementById('heroFinishBar');
+      finishBar.innerHTML = '';
+      
+      if (p.finishes && p.finishes.length > 0) {
+        p.finishes.forEach(finish => {
+          const dot = document.createElement('button');
+          dot.className = `swatch-dot ${finish.color_id === state.selectedFinishId ? 'active' : ''}`;
+          dot.style.backgroundColor = finish.hex || '#888';
+          dot.title = finish.name_th;
+          dot.onclick = () => {
+            state.selectedFinishId = finish.color_id;
+            document.querySelectorAll('#heroFinishBar .swatch-dot').forEach(d => d.classList.remove('active'));
+            dot.classList.add('active');
+            updateHeroVisual();
+          };
+          finishBar.appendChild(dot);
+        });
+
+        const label = document.createElement('span');
+        label.className = 'finish-name-label';
+        label.id = 'heroFinishLabel';
+        label.textContent = p.finishes[0].name_th;
+        finishBar.appendChild(label);
       }
 
+      updateHeroVisual();
+    }
+
+    function updateHeroVisual() {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === state.currentHeroId);
+      if (!p) return;
+
+      const finish = p.finishes.find(f => f.color_id === state.selectedFinishId) || p.finishes[0];
+      if (!finish) return;
+
+      const imgEl = document.getElementById('heroDeviceImg');
+      const labelEl = document.getElementById('heroFinishLabel');
+      if (labelEl) labelEl.textContent = finish.name_th;
+
+      const targetSrc = state.imageMode === 'png' && finish.images.transparent_png
+        ? finish.images.transparent_png
+        : finish.images.original_jpg || finish.images.cdn_highres;
+
+      imgEl.style.opacity = '0.4';
+      imgEl.style.transform = 'scale(0.97)';
+      setTimeout(() => {
+        imgEl.src = targetSrc;
+        imgEl.style.opacity = '1';
+        imgEl.style.transform = 'scale(1)';
+      }, 150);
+    }
+
+    /* --------------------------------------------------------------------------
+       Apple Interactive Studio Logic
+       -------------------------------------------------------------------------- */
+    function renderStudio(productId) {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === productId);
+      if (!p) return;
+
+      // 1. Sub-models
+      const submodelGrid = document.getElementById('studioSubmodelGrid');
+      submodelGrid.innerHTML = '';
+      if (p.sub_models && p.sub_models.length > 0) {
+        state.selectedSubModelId = p.sub_models[0].id;
+        p.sub_models.forEach((sm, index) => {
+          const card = document.createElement('div');
+          card.className = `submodel-card ${index === 0 ? 'active' : ''}`;
+          card.innerHTML = `
+            <div class="submodel-card-title">${sm.name_th}</div>
+            <div class="submodel-card-desc">จอภาพ ${sm.screen_size} • น้ำหนัก ${sm.weight_grams}</div>
+          `;
+          card.onclick = () => {
+            state.selectedSubModelId = sm.id;
+            document.querySelectorAll('#studioSubmodelGrid .submodel-card').forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+            document.getElementById('selectedSubModelName').textContent = sm.name_th;
+            document.getElementById('specScreen').textContent = sm.screen_size;
+            document.getElementById('specWeight').textContent = sm.weight_grams;
+            recalculateStudioPrice();
+          };
+          submodelGrid.appendChild(card);
+        });
+        document.getElementById('selectedSubModelName').textContent = p.sub_models[0].name_th;
+        document.getElementById('specScreen').textContent = p.sub_models[0].screen_size;
+        document.getElementById('specWeight').textContent = p.sub_models[0].weight_grams;
+      }
+
+      // 2. Chip badge
+      document.getElementById('specChip').textContent = p.chip ? p.chip.split(' ')[1] || p.chip : 'Apple Silicon';
+
+      // 3. Color Bar in Studio
+      const colorBar = document.getElementById('studioColorBar');
+      colorBar.innerHTML = '';
+      if (p.finishes && p.finishes.length > 0) {
+        p.finishes.forEach((finish, index) => {
+          const dot = document.createElement('button');
+          dot.className = `swatch-dot ${finish.color_id === state.selectedFinishId ? 'active' : ''}`;
+          dot.style.backgroundColor = finish.hex || '#888';
+          dot.title = finish.name_th;
+          dot.onclick = () => {
+            state.selectedFinishId = finish.color_id;
+            document.querySelectorAll('#studioColorBar .swatch-dot').forEach(d => d.classList.remove('active'));
+            dot.classList.add('active');
+            document.getElementById('selectedColorName').textContent = finish.name_th;
+            updateStudioVisual();
+          };
+          colorBar.appendChild(dot);
+        });
+        document.getElementById('selectedColorName').textContent = p.finishes[0].name_th;
+      }
+
+      // 4. Storage Tiles in Studio
+      const storageGrid = document.getElementById('studioStorageGrid');
+      storageGrid.innerHTML = '';
+      const storages = getUniqueStoragesForProduct(p);
+      state.selectedStorage = storages[0] || '128GB';
+
+      storages.forEach((st, index) => {
+        const tile = document.createElement('div');
+        tile.className = `storage-tile ${index === 0 ? 'active' : ''}`;
+        tile.innerHTML = `
+          <div class="storage-tile-cap">${st}</div>
+          <div class="storage-tile-price">${p.pricing.formatted_min}</div>
+        `;
+        tile.onclick = () => {
+          state.selectedStorage = st;
+          document.querySelectorAll('#studioStorageGrid .storage-tile').forEach(t => t.classList.remove('active'));
+          tile.classList.add('active');
+          document.getElementById('selectedStorageName').textContent = st;
+          recalculateStudioPrice();
+        };
+        storageGrid.appendChild(tile);
+      });
+      document.getElementById('selectedStorageName').textContent = state.selectedStorage;
+
+      updateStudioVisual();
+      recalculateStudioPrice();
+    }
+
+    function getUniqueStoragesForProduct(product) {
+      if (!product.variants || product.variants.length === 0) return ['128GB', '256GB', '512GB', '1TB'];
+      const set = new Set();
+      product.variants.forEach(v => {
+        if (v.storage) set.add(v.storage);
+      });
+      return set.size > 0 ? Array.from(set) : ['128GB', '256GB', '512GB', '1TB'];
+    }
+
+    function updateStudioVisual() {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === state.currentHeroId);
+      if (!p) return;
+
+      const finish = p.finishes.find(f => f.color_id === state.selectedFinishId) || p.finishes[0];
+      if (!finish) return;
+
+      const imgEl = document.getElementById('studioDeviceImg');
+      const targetSrc = state.imageMode === 'png' && finish.images.transparent_png
+        ? finish.images.transparent_png
+        : finish.images.original_jpg || finish.images.cdn_highres;
+
+      imgEl.style.opacity = '0.3';
+      setTimeout(() => {
+        imgEl.src = targetSrc;
+        imgEl.style.opacity = '1';
+      }, 150);
+    }
+
+    function recalculateStudioPrice() {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === state.currentHeroId);
+      if (!p) return;
+
+      // Find matching variant
+      let match = null;
+      if (p.variants && p.variants.length > 0) {
+        match = p.variants.find(v => 
+          (!state.selectedSubModelId || v.sub_model_id === state.selectedSubModelId) &&
+          (!state.selectedFinishId || v.color_id === state.selectedFinishId) &&
+          (!state.selectedStorage || v.storage === state.selectedStorage)
+        );
+      }
+
+      const price = match && match.price_thb ? match.price_thb : p.pricing.min_price_thb;
+      const formatted = `฿${price.toLocaleString()}`;
+      document.getElementById('studioTotalPrice').textContent = formatted;
+    }
+
+    function proceedToAppleStore() {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === state.currentHeroId);
+      const buyUrl = p && p.urls && p.urls.buy ? p.urls.buy : 'https://www.apple.com/th/store';
+      showToast('กำลังนำคุณไปยังหน้าคำสั่งซื้อทางการของ Apple Store...');
+      setTimeout(() => {
+        window.open(buyUrl, '_blank');
+      }, 800);
+    }
+
+    /* --------------------------------------------------------------------------
+       Product Cards Explorer Logic
+       -------------------------------------------------------------------------- */
+    function renderProductCards() {
+      if (!state.catalog) return;
+      const grid = document.getElementById('productsGrid');
+      grid.innerHTML = '';
+
+      const filtered = state.catalog.products.filter(p => {
+        const matchesCategory = state.activeCategory === 'all' || p.category_id === state.activeCategory;
+        const q = state.searchQuery.toLowerCase();
+        const matchesSearch = !q || 
+          p.name_th.toLowerCase().includes(q) || 
+          p.chip.toLowerCase().includes(q) ||
+          (p.finishes && p.finishes.some(f => f.name_th.toLowerCase().includes(q)));
+        return matchesCategory && matchesSearch;
+      });
+
       if (filtered.length === 0) {
-        grid.innerHTML = `<div class="empty-state">❌ ไม่พบ SKU ที่ตรงกับคำค้นหา "${searchQuery}"</div>`;
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 60px; color: var(--text-secondary);">ไม่พบสินค้าที่ตรงกับการค้นหา "${state.searchQuery}"</div>`;
         return;
       }
 
-      grid.innerHTML = filtered.map(v => {
-        let rawSrc = '';
-        if (useTransparentBg) {
-          rawSrc = v.local_image_nobg || (v.local_image_path ? v.local_image_path.replace('.jpg', '.png').replace('data/images/', 'data/images_transparent/') : '') || v.image_url;
-        } else {
-          rawSrc = useLocalAssets ? (v.local_image_path || v.image_url) : v.image_url;
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'apple-product-card';
+
+        const defaultFinish = p.finishes && p.finishes.length > 0 ? p.finishes[0] : null;
+        const initialImg = defaultFinish 
+          ? (state.imageMode === 'png' && defaultFinish.images.transparent_png ? defaultFinish.images.transparent_png : defaultFinish.images.original_jpg)
+          : (p.hero_images.original_jpg || '');
+
+        let colorDotsHtml = '';
+        if (p.finishes && p.finishes.length > 0) {
+          colorDotsHtml = `<div class="card-color-swatches">` + 
+            p.finishes.map(f => {
+              const imgSrc = state.imageMode === 'png' && f.images.transparent_png ? f.images.transparent_png : f.images.original_jpg;
+              return `<span class="card-color-dot" style="background-color: ${f.hex || '#999'};" title="${f.name_th}" onclick="event.stopPropagation(); changeCardImage('${p.id}', '${imgSrc}')"></span>`;
+            }).join('') +
+          `</div>`;
         }
-        const imgSrc = cleanAppleImgUrl(rawSrc);
-        return `
-          <article class="product-card">
-            <div class="card-top">
-              <span class="family-badge">${v.family || v.category}</span>
-              <span class="part-number">${v.part_number || v.id}</span>
-            </div>
 
-            <div class="image-container" style="${getCanvasBgStyle()}">
-              <img src="${imgSrc || 'https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'}" 
-                   alt="${v.model_name}" 
-                   loading="lazy"
-                   onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
-            </div>
-
-            ${v.sub_model_name ? `<div class="submodel-pill">📱 ${v.sub_model_name}</div>` : ''}
-            <h3 class="product-title">${v.model_name}</h3>
-
-            <div class="color-swatch-row">
-              <span class="swatch-circle" style="background: ${v.color_hex || '#888'}"></span>
-              <span class="color-name">สี: ${v.color_th} (${v.color_en})</span>
-            </div>
-
-            <div class="specs-pill-box">
-              ${v.dimensions_mm && v.dimensions_mm !== '-' ? `<span class="spec-pill" title="มิติขนาด">📏 ${v.dimensions_mm}</span>` : ''}
-              ${v.weight_grams && v.weight_grams !== '-' ? `<span class="spec-pill" title="น้ำหนัก">⚖️ ${v.weight_grams}</span>` : ''}
-              ${v.specs_chip && v.specs_chip !== '-' ? `<span class="spec-pill">⚡ ${v.specs_chip}</span>` : ''}
-              ${v.storage && v.storage !== '-' ? `<span class="spec-pill">💾 ${v.storage}</span>` : ''}
-              ${v.screen_size && v.screen_size !== '-' ? `<span class="spec-pill">📐 ${v.screen_size}</span>` : ''}
-              ${v.connectivity && v.connectivity !== '-' ? `<span class="spec-pill">📶 ${v.connectivity}</span>` : ''}
-            </div>
-
-            <div class="specs-grid">
-              ${v.display_specs && v.display_specs !== '-' ? `
-                <div class="specs-grid-item" style="grid-column: 1 / -1;">
-                  <span>🖥️ จอภาพ:</span>
-                  <b>${v.display_specs}</b>
-                </div>
-              ` : ''}
-              ${v.camera_specs && v.camera_specs !== '-' ? `
-                <div class="specs-grid-item" style="grid-column: 1 / -1;">
-                  <span>📸 กล้อง:</span>
-                  <b>${v.camera_specs}</b>
-                </div>
-              ` : ''}
-              ${v.battery_specs && v.battery_specs !== '-' ? `
-                <div class="specs-grid-item">
-                  <span>🔋 แบตเตอรี่:</span>
-                  <b>${v.battery_specs}</b>
-                </div>
-              ` : ''}
-              ${v.box_contents && v.box_contents !== '-' ? `
-                <div class="specs-grid-item">
-                  <span>📦 ในกล่อง:</span>
-                  <b>${v.box_contents}</b>
-                </div>
-              ` : ''}
-            </div>
-
-            <div class="card-bottom">
-              <div class="price-group">
-                <span class="price-label">ราคาทางการ</span>
-                <span class="price-val">${v.formatted_price}</span>
-              </div>
-              <div style="display: flex; gap: 6px; align-items: center;">
-                <button class="btn-deep" onclick="openDeepGalleryModal('${v.product_id || v.family}')" title="เจาะลึกภาพสินค้าทุกมุม ชิป กล้อง และของในกล่อง">
-                  🔍 รูปเจาะลึก 4K
-                </button>
-                ${v.specs_url ? `
-                  <a href="${v.specs_url}" target="_blank" rel="noopener" class="btn-specs" title="ดูข้อมูลทางเทคนิคบน Apple">
-                    สเปก ↗
-                  </a>
-                ` : ''}
-                <a href="${v.buy_url || v.product_url}" target="_blank" rel="noopener" class="btn-buy">
-                  ซื้อบน Apple ↗
-                </a>
-              </div>
-            </div>
-          </article>
+        card.innerHTML = `
+          <div class="card-badge">ใหม่</div>
+          <div class="card-img-holder">
+            <img id="cardImg-${p.id}" src="${initialImg}" alt="${p.name_th}">
+          </div>
+          ${colorDotsHtml}
+          <h3 class="card-title">${p.name_th}</h3>
+          <div class="card-chip-tag">${p.chip || 'Apple Silicon'}</div>
+          <div class="card-price">เริ่มต้นที่ <strong>${p.pricing.formatted_min}</strong></div>
+          <div class="card-cta-row">
+            <button class="card-cta-buy" onclick="selectHeroProduct('${p.id}')">ดูและปรับแต่ง</button>
+            <button class="card-cta-specs" onclick="openProductDetailModal('${p.id}')">สเปก</button>
+          </div>
         `;
-      }).join('');
+
+        grid.appendChild(card);
+      });
     }
 
-
-    // Events
-    document.getElementById('categoryPills').addEventListener('click', e => {
-      if (e.target.tagName === 'BUTTON') {
-        document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        activeCategory = e.target.dataset.cat;
-        renderCatalog();
+    function changeCardImage(productId, newSrc) {
+      const img = document.getElementById(`cardImg-${productId}`);
+      if (img) {
+        img.style.opacity = '0.3';
+        setTimeout(() => {
+          img.src = newSrc;
+          img.style.opacity = '1';
+        }, 120);
       }
-    });
-
-    document.getElementById('searchInput').addEventListener('input', e => {
-      searchQuery = e.target.value.trim();
-      renderCatalog();
-    });
-
-    // Modal Controls
-    function openDevModal() {
-      document.getElementById('devModal').classList.add('open');
     }
 
-    function closeDevModal() {
-      document.getElementById('devModal').classList.remove('open');
+    function filterCatalog(category, buttonEl) {
+      state.activeCategory = category;
+      document.querySelectorAll('.cat-pill-btn').forEach(b => b.classList.remove('active'));
+      if (buttonEl) buttonEl.classList.add('active');
+      renderProductCards();
     }
 
-    function switchTab(tabId, btn) {
-      document.querySelectorAll('.tab-pane').forEach(p => p.style.display = 'none');
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(tabId).style.display = 'block';
-      btn.classList.add('active');
+    function switchCategory(cat) {
+      state.activeCategory = cat;
+      const targetBtn = Array.from(document.querySelectorAll('.cat-pill-btn')).find(b => b.getAttribute('onclick').includes(cat));
+      if (targetBtn) {
+        document.querySelectorAll('.cat-pill-btn').forEach(b => b.classList.remove('active'));
+        targetBtn.classList.add('active');
+      }
+      renderProductCards();
+      document.getElementById('store').scrollIntoView({ behavior: 'smooth' });
     }
 
-    loadDatabase();
+    function handleSearch(val) {
+      state.searchQuery = val.trim();
+      renderProductCards();
+    }
+
+    function focusSearch() {
+      const input = document.getElementById('catalogSearchInput');
+      if (input) {
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        input.focus();
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       Apple Deep 4K Gallery Logic
+       -------------------------------------------------------------------------- */
+    function populateGalleryModelSelect() {
+      if (!state.catalog) return;
+      const select = document.getElementById('galleryModelSelect');
+      select.innerHTML = '';
+      state.catalog.products.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p.id;
+        opt.textContent = p.name_th;
+        if (p.id === state.galleryProductId) opt.selected = true;
+        select.appendChild(opt);
+      });
+    }
+
+    function switchGalleryProduct(prodId) {
+      state.galleryProductId = prodId;
+      renderGallery();
+    }
+
+    function filterGalleryCategory(cat, btnEl) {
+      state.galleryCategory = cat;
+      document.querySelectorAll('.gallery-pill').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderGallery();
+    }
+
+    function renderGallery() {
+      if (!state.catalog) return;
+      const grid = document.getElementById('galleryGrid');
+      grid.innerHTML = '';
+
+      const p = state.catalog.products.find(item => item.id === state.galleryProductId);
+      if (!p || !p.deep_media || !p.deep_media.gallery) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">ไม่มีรูปภาพเพิ่มเติมในรุ่นนี้</div>`;
+        return;
+      }
+
+      const list = p.deep_media.gallery.filter(item => {
+        return state.galleryCategory === 'all' || item.category === state.galleryCategory;
+      });
+
+      const displayList = list.slice(0, 18); // Show first 18 for high performance
+
+      if (displayList.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">ไม่พบรูปในหมวดหมู่นี้</div>`;
+        return;
+      }
+
+      displayList.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'gallery-card';
+        card.innerHTML = `
+          <img src="${item.image_url}" alt="${item.title_th}" loading="lazy">
+          <div class="gallery-card-overlay">
+            <div class="gallery-overlay-badge">${item.category_th || item.category}</div>
+            <div class="gallery-overlay-title">${item.title_th}</div>
+          </div>
+        `;
+        card.onclick = () => openLightboxModal(item);
+        grid.appendChild(card);
+      });
+    }
+
+    /* --------------------------------------------------------------------------
+       Modals (Specs & Lightbox)
+       -------------------------------------------------------------------------- */
+    function openLightboxModal(item) {
+      const modal = document.getElementById('appleModal');
+      const content = document.getElementById('modalContent');
+      content.innerHTML = `
+        <div style="text-align: center;">
+          <div style="font-size: 13px; font-weight: 600; color: var(--accent-pill-text); text-transform: uppercase; margin-bottom: 6px;">${item.category_th || item.category}</div>
+          <h2 style="font-family: var(--font-display); font-size: 26px; font-weight: 700; margin-bottom: 16px;">${item.title_th}</h2>
+        </div>
+        <div class="modal-img-stage">
+          <img src="${item.image_url}" alt="${item.title_th}">
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; color: var(--text-secondary); font-size: 13px; border-top: 1px solid var(--border-subtle); padding-top: 16px;">
+          <div>ความละเอียด: 4K Ultra Retina (${item.resolution || '2560 x 2560'})</div>
+          <a href="${item.image_url}" target="_blank" class="apple-btn-primary" style="font-size: 13px; padding: 8px 18px;">
+            <span>เปิดภาพเต็มต้นฉบับ</span>
+          </a>
+        </div>
+      `;
+      modal.classList.add('active');
+    }
+
+    function openProductDetailModal(productId) {
+      if (!state.catalog) return;
+      const p = state.catalog.products.find(item => item.id === productId);
+      if (!p) return;
+
+      const modal = document.getElementById('appleModal');
+      const content = document.getElementById('modalContent');
+
+      let subModelsHtml = '';
+      if (p.sub_models && p.sub_models.length > 0) {
+        subModelsHtml = `<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 16px;">` +
+          p.sub_models.map(sm => `
+            <div style="background: var(--bg-tertiary); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <strong style="color: var(--text-primary); font-size: 15px;">${sm.name_th}</strong>
+              <div style="font-size: 12px; color: var(--text-secondary); margin-top: 6px;">ขนาด: ${sm.dimensions_mm}</div>
+              <div style="font-size: 12px; color: var(--text-secondary);">น้ำหนัก: ${sm.weight_grams}</div>
+              <div style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">แบตเตอรี่: ${sm.battery_specs || '-'}</div>
+            </div>
+          `).join('') +
+        `</div>`;
+      }
+
+      content.innerHTML = `
+        <div>
+          <div style="font-size: 13px; font-weight: 600; color: var(--badge-new); text-transform: uppercase;">สเปกทางเทคนิคทางการ</div>
+          <h2 style="font-family: var(--font-display); font-size: 30px; font-weight: 700; margin: 4px 0 16px;">${p.name_th}</h2>
+          <div style="font-size: 15px; color: var(--text-secondary); margin-bottom: 20px;">${p.chip} • ราคาเริ่มต้น ${p.pricing.formatted_min}</div>
+          
+          <h4 style="font-size: 14px; font-weight: 600; color: var(--text-primary); margin-top: 16px;">รุ่นย่อยและมิติขนาด:</h4>
+          ${subModelsHtml}
+
+          <div style="margin-top: 24px; text-align: right;">
+            <a href="${p.urls.overview || '#'}" target="_blank" class="apple-btn-primary" style="padding: 8px 20px;">
+              <span>ดูข้อมูลเต็มบน Apple.com</span>
+            </a>
+          </div>
+        </div>
+      `;
+      modal.classList.add('active');
+    }
+
+    function openSpecsModal() {
+      openProductDetailModal(state.currentHeroId);
+    }
+
+    function openBagModal() {
+      showToast('ถุงของคุณว่างเปล่า — เลือกและปรับแต่งสินค้าได้จากหน้า Studio');
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'appleModal') {
+        document.getElementById('appleModal').classList.remove('active');
+      }
+    }
+
+    function closeModalDirect() {
+      document.getElementById('appleModal').classList.remove('active');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('appleToast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
   </script>
 </body>
 </html>
