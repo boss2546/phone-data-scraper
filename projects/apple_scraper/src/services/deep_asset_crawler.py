@@ -64,6 +64,7 @@ ASSET_CATEGORIES = {
 
 # รายการสินค้าหลักที่ทำการเจาะลึก
 PRODUCTS_REGISTRY = [
+    # iPhone Family
     {
         "id": "iphone-16-pro",
         "name_th": "iPhone 16 Pro & iPhone 16 Pro Max",
@@ -85,6 +86,38 @@ PRODUCTS_REGISTRY = [
         "specs_url": "https://www.apple.com/th/iphone-16/specs/"
     },
     {
+        "id": "iphone-15",
+        "name_th": "iPhone 15 & iPhone 15 Plus",
+        "name_en": "iPhone 15",
+        "category": "iphone",
+        "chip": "A16 Bionic",
+        "overview_url": "https://www.apple.com/th/iphone-15/",
+        "buy_url": "https://www.apple.com/th/shop/buy-iphone/iphone-15",
+        "specs_url": "https://www.apple.com/th/iphone-15/specs/"
+    },
+    {
+        "id": "iphone-14",
+        "name_th": "iPhone 14 & iPhone 14 Plus",
+        "name_en": "iPhone 14",
+        "category": "iphone",
+        "chip": "A15 Bionic",
+        "overview_url": "https://www.apple.com/th/iphone-14/",
+        "buy_url": "https://www.apple.com/th/shop/buy-iphone/iphone-14",
+        "specs_url": "https://www.apple.com/th/iphone-14/specs/"
+    },
+    {
+        "id": "iphone-se",
+        "name_th": "iPhone SE (รุ่นที่ 3 Touch ID)",
+        "name_en": "iPhone SE",
+        "category": "iphone",
+        "chip": "A15 Bionic",
+        "overview_url": "https://www.apple.com/th/iphone-se/",
+        "buy_url": "https://www.apple.com/th/shop/buy-iphone/iphone-se",
+        "specs_url": "https://www.apple.com/th/iphone-se/specs/"
+    },
+
+    # iPad Family
+    {
         "id": "ipad-pro",
         "name_th": "iPad Pro (ชิป M4 จอ Ultra Retina XDR)",
         "name_en": "iPad Pro (M4)",
@@ -104,6 +137,28 @@ PRODUCTS_REGISTRY = [
         "buy_url": "https://www.apple.com/th/shop/buy-ipad/ipad-air",
         "specs_url": "https://www.apple.com/th/ipad-air/specs/"
     },
+    {
+        "id": "ipad-10th-gen",
+        "name_th": "iPad (รุ่นที่ 10 ดีไซน์หน้าจอทั้งหมด)",
+        "name_en": "iPad (10th Generation)",
+        "category": "ipad",
+        "chip": "A14 Bionic",
+        "overview_url": "https://www.apple.com/th/ipad-10.9/",
+        "buy_url": "https://www.apple.com/th/shop/buy-ipad/ipad",
+        "specs_url": "https://www.apple.com/th/ipad-10.9/specs/"
+    },
+    {
+        "id": "ipad-mini",
+        "name_th": "iPad mini (ชิป A17 Pro รองรับ Apple Intelligence)",
+        "name_en": "iPad mini (A17 Pro)",
+        "category": "ipad",
+        "chip": "A17 Pro",
+        "overview_url": "https://www.apple.com/th/ipad-mini/",
+        "buy_url": "https://www.apple.com/th/shop/buy-ipad/ipad-mini",
+        "specs_url": "https://www.apple.com/th/ipad-mini/specs/"
+    },
+
+    # Mac Family
     {
         "id": "macbook-pro",
         "name_th": "MacBook Pro 14\" และ 16\" (ชิปตระกูล M4)",
@@ -125,6 +180,38 @@ PRODUCTS_REGISTRY = [
         "specs_url": "https://www.apple.com/th/macbook-air/specs/"
     },
     {
+        "id": "imac",
+        "name_th": "iMac 24\" (ชิป M4 จอภาพ 4.5K Retina)",
+        "name_en": "iMac (M4)",
+        "category": "mac",
+        "chip": "Apple M4",
+        "overview_url": "https://www.apple.com/th/imac/",
+        "buy_url": "https://www.apple.com/th/shop/buy-mac/imac",
+        "specs_url": "https://www.apple.com/th/imac/specs/"
+    },
+    {
+        "id": "mac-mini",
+        "name_th": "Mac mini (ชิป M4 และ M4 Pro ไซส์กะทัดรัด 5x5 นิ้ว)",
+        "name_en": "Mac mini (M4 / M4 Pro)",
+        "category": "mac",
+        "chip": "Apple M4 / M4 Pro",
+        "overview_url": "https://www.apple.com/th/mac-mini/",
+        "buy_url": "https://www.apple.com/th/shop/buy-mac/mac-mini",
+        "specs_url": "https://www.apple.com/th/mac-mini/specs/"
+    },
+    {
+        "id": "mac-studio",
+        "name_th": "Mac Studio (ชิป M2 Max และ M2 Ultra ระดับซูเปอร์คอมพิวเตอร์)",
+        "name_en": "Mac Studio (M2 Max / M2 Ultra)",
+        "category": "mac",
+        "chip": "M2 Max / M2 Ultra",
+        "overview_url": "https://www.apple.com/th/mac-studio/",
+        "buy_url": "https://www.apple.com/th/shop/buy-mac/mac-studio",
+        "specs_url": "https://www.apple.com/th/mac-studio/specs/"
+    },
+
+    # Watch Family
+    {
         "id": "apple-watch-series-10",
         "name_th": "Apple Watch Series 10 (จอใหญ่ที่สุดและบางที่สุด)",
         "name_en": "Apple Watch Series 10",
@@ -143,6 +230,16 @@ PRODUCTS_REGISTRY = [
         "overview_url": "https://www.apple.com/th/apple-watch-ultra-2/",
         "buy_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-ultra",
         "specs_url": "https://www.apple.com/th/apple-watch-ultra-2/specs/"
+    },
+    {
+        "id": "apple-watch-se",
+        "name_th": "Apple Watch SE (คุ้มค่าครบครัน ฟีเจอร์สุขภาพและความปลอดภัย)",
+        "name_en": "Apple Watch SE",
+        "category": "watch",
+        "chip": "S8 SiP",
+        "overview_url": "https://www.apple.com/th/apple-watch-se/",
+        "buy_url": "https://www.apple.com/th/shop/buy-watch/apple-watch-se",
+        "specs_url": "https://www.apple.com/th/apple-watch-se/specs/"
     }
 ]
 
@@ -509,11 +606,96 @@ class AppleDeepAssetCrawler:
                 {"image_url": "https://www.apple.com/th/macbook-pro/images/overview/apps/apps_design__dsxdvaoxgtme_large_2x.jpg"},
                 {"image_url": "https://www.apple.com/th/macbook-pro/images/overview/apps/apps_business__c2y64cyjtlqq_large_2x.jpg"}
             ]
+        elif pid == "iphone-15":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-yellow"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-green"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-blue"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-black"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-black-witb-202309"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-cables-witb-202309"}
+            ]
+        elif pid == "iphone-14":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-purple"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-yellow"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-midnight"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-starlight"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-product-red"}
+            ]
+        elif pid == "iphone-se":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-se-finish-select-202207-midnight"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-se-finish-select-202207-starlight"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-se-finish-select-202207-product-red"}
+            ]
+        elif pid == "ipad-10th-gen":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-blue"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-pink"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-yellow"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-witb-silver-202212"}
+            ]
+        elif pid == "ipad-mini":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-select-202410-spacegray"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-select-202410-blue"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-select-202410-purple"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-finish-select-202410-starlight"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-mini-witb-spacegray-202410"}
+            ]
+        elif pid == "macbook-air":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-13-15-unselect-202402-gallery-1"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-13-15-unselect-202402-gallery-2"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-13-15-unselect-202402-gallery-3"}
+            ]
+        elif pid == "imac":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-blue"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-purple"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-pink"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-orange"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-yellow"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-green"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-finish-select-202410-24inch-silver"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/imac-witb-blue-202410"}
+            ]
+        elif pid == "mac-mini":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-select-202410"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-mini-witb-202410"}
+            ]
+        elif pid == "mac-studio":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-select-202306"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/mac-studio-witb-202306"}
+            ]
+        elif pid == "apple-watch-series-10":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-aluminum-jet-black-select-202409"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-aluminum-rose-gold-select-202409"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-aluminum-silver-select-202409"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-titanium-slate-select-202409"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-titanium-natural-select-202409"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-titanium-gold-select-202409"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-series-10-witb-202409"}
+            ]
         elif pid == "apple-watch-ultra-2":
             curated = [
                 {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-ultra-2-black-titanium-select-202409"},
                 {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-ultra-2-natural-titanium-select-202409"},
                 {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-ultra-2-witb-202409"}
+            ]
+        elif pid == "apple-watch-se":
+            curated = [
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-se-midnight-select-202209"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-se-starlight-select-202209"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-se-silver-select-202209"},
+                {"image_url": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-watch-se-witb-202209"}
             ]
 
         return curated
@@ -615,12 +797,13 @@ class AppleDeepAssetCrawler:
                     total_inserted += 1
 
             # สร้าง View สำหรับ Query แกลเลอรีตามหมวดหมู่ได้ง่าย
+            cursor.execute("DROP VIEW IF EXISTS v_product_deep_assets")
             cursor.execute("""
-                CREATE VIEW IF NOT EXISTS v_product_deep_assets AS
+                CREATE VIEW v_product_deep_assets AS
                 SELECT 
                     a.id AS asset_id,
                     a.product_id,
-                    p.name_th AS product_name_th,
+                    p.name AS product_name,
                     a.category,
                     a.category_th,
                     a.badge,
@@ -638,6 +821,59 @@ class AppleDeepAssetCrawler:
             print(f"🗄️ บันทึกลง SQLite ตาราง product_deep_assets สำเร็จ: {total_inserted} รายการ")
         except Exception as e:
             print(f"⚠️ SQLite deep assets error: {e}")
+
+    def download_curated_local_images(self, max_per_product: int = 5, max_workers: int = 8) -> int:
+        """ดาวน์โหลดรูปภาพเด่นความละเอียดสูงของแต่ละรุ่นลงเครื่องใน data/images_deep/{product_id}/"""
+        deep_images_dir = DATA_DIR / "images_deep"
+        deep_images_dir.mkdir(parents=True, exist_ok=True)
+        print(f"\n📥 กำลังดาวน์โหลดภาพเด่นความละเอียดสูง 4K ลงเครื่องใน {deep_images_dir}...")
+
+        tasks = []
+        master_json_path = EXPORTS_DIR / "apple_deep_assets_catalog.json"
+        if not master_json_path.exists():
+            return 0
+            
+        with open(master_json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            
+        for pid, pdata in data.get("products", {}).items():
+            p_dir = deep_images_dir / pid
+            p_dir.mkdir(parents=True, exist_ok=True)
+            assets = pdata.get("assets", [])
+            for idx, a in enumerate(assets[:max_per_product]):
+                u = a["image_url"]
+                ext = ".png" if ".png" in u.lower() else ".jpg"
+                filename = f"{idx+1:02d}_{a['category']}{ext}"
+                dest = p_dir / filename
+                tasks.append((u, dest))
+
+        downloaded_count = 0
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures = []
+            for url, path in tasks:
+                if path.exists() and path.stat().st_size > 10000:
+                    continue
+                futures.append(pool.submit(self._download_file, url, path))
+            for fut in as_completed(futures):
+                if fut.result():
+                    downloaded_count += 1
+                    
+        print(f"✅ ดาวน์โหลดภาพเด่นลงเครื่องสำเร็จ: {downloaded_count} ไฟล์ใหม่ (พร้อมใช้งานออฟไลน์)")
+        return downloaded_count
+
+    def _download_file(self, url: str, dest_path: Path) -> bool:
+        try:
+            req = urllib.request.Request(url, headers=self.headers)
+            with urllib.request.urlopen(req, timeout=15) as res:
+                data = res.read()
+                if len(data) > 1000:
+                    with open(dest_path, "wb") as f:
+                        f.write(data)
+                    return True
+        except Exception:
+            pass
+        return False
 
 if __name__ == "__main__":
     crawler = AppleDeepAssetCrawler()

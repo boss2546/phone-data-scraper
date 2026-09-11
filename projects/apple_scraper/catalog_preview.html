@@ -1231,14 +1231,26 @@ def search(q: str):
 
     function normalizeDeepProductId(rawId) {
       if (!rawId) return 'iphone-16-pro';
-      const id = String(rawId).toLowerCase();
-      if (id.includes('16-pro') || id.includes('18-pro') || id.includes('17-pro')) return 'iphone-16-pro';
-      if (id.includes('iphone-16') || id.includes('iphone-15') || id.includes('iphone-14') || id.includes('iphone-se') || id.includes('iphone-17') || id.includes('air') || id.includes('duo')) return 'iphone-16';
+      const id = String(rawId).toLowerCase().trim();
+      if (window.APPLE_DEEP_ASSETS && window.APPLE_DEEP_ASSETS.products && window.APPLE_DEEP_ASSETS.products[id]) {
+        return id;
+      }
+      if (id.includes('16-pro')) return 'iphone-16-pro';
+      if (id.includes('16')) return 'iphone-16';
+      if (id.includes('15')) return 'iphone-15';
+      if (id.includes('14')) return 'iphone-14';
+      if (id.includes('iphone-se') || id.includes('se')) return 'iphone-se';
       if (id.includes('ipad-pro')) return 'ipad-pro';
-      if (id.includes('ipad-air') || id.includes('ipad-mini') || id.includes('ipad')) return 'ipad-air';
-      if (id.includes('macbook-pro') || id.includes('mac-studio') || id.includes('mac-pro')) return 'macbook-pro';
-      if (id.includes('macbook-air') || id.includes('imac') || id.includes('mac-mini')) return 'macbook-air';
+      if (id.includes('ipad-air')) return 'ipad-air';
+      if (id.includes('ipad-mini')) return 'ipad-mini';
+      if (id.includes('ipad-10') || id.includes('ipad')) return 'ipad-10th-gen';
+      if (id.includes('macbook-pro')) return 'macbook-pro';
+      if (id.includes('macbook-air')) return 'macbook-air';
+      if (id.includes('imac')) return 'imac';
+      if (id.includes('mac-mini')) return 'mac-mini';
+      if (id.includes('mac-studio')) return 'mac-studio';
       if (id.includes('ultra')) return 'apple-watch-ultra-2';
+      if (id.includes('watch-se')) return 'apple-watch-se';
       if (id.includes('watch')) return 'apple-watch-series-10';
       return 'iphone-16-pro';
     }
