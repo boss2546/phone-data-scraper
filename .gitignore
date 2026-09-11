@@ -34,3 +34,6 @@ npm-debug.log
 projects/apple_scraper/data/raw_html/
 projects/apple_scraper/data/videos/
 
+# Legacy Archives
+_archive_legacy/
+

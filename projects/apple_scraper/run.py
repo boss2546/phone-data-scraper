@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import sys
 import os
 from pathlib import Path
@@ -13,6 +14,7 @@ from src.scrapers.catalog_crawler import AppleCatalogCrawler
 from src.services.storage import AppleStorageService
 from src.services.database_builder import AppleDatabaseBuilder
 from src.services.media_downloader import AppleMediaDownloader
+from src.services.bg_remover import AppleBackgroundRemover
 from config.settings import DEFAULT_LOCALE, BASE_APPLE_URL
 
 POPULAR_MODELS = {
@@ -92,9 +94,12 @@ def run_build_full_database():
         print("❌ ไม่พบข้อมูลสินค้า กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ต")
         return
 
-    # 2. Build Databases
+    # 2. Attach local paths
+    media_downloader.attach_local_paths(variants)
+
+    # 3. Build Databases
     print("\n📦 กำลังสร้างฐานข้อมูลมาตรฐานระดับโปรดักชัน (SQLite, JSON Tree, SQL Dump, CSV, JS SDK)...")
-    json_path = db_builder.build_json_database(variants, "apple_full_catalog.json")
+    json_path = db_builder.build_full_json_export(variants, "apple_full_catalog.json")
     tree_path = db_builder.build_catalog_tree_json(variants, "apple_catalog_tree.json")
     js_path = db_builder.build_js_bundle(variants, "apple_catalog.js")
     csv_path = db_builder.build_csv_database(variants, "apple_all_variants.csv")
@@ -102,11 +107,11 @@ def run_build_full_database():
     sql_path = db_builder.build_sql_dump(variants, "apple_catalog.sql")
     db_builder.build_client_helpers()
 
-    # 3. Download sample images
-    print("\n📸 กำลังดาวน์โหลดรูปภาพสินค้าตัวอย่างแยกตามสี...")
-    media_downloader.download_variant_images(variants, max_per_family=2)
+    # 4. Download 4K Retina & Multi-angle images
+    print("\n📸 กำลังดาวน์โหลดรูปภาพสินค้า 4K Retina ทุกสีและทุกมุมมอง...")
+    media_downloader.download_all_images(variants, download_galleries=True, download_png=False)
 
-    # 4. Summary
+    # 5. Summary
     print("\n" + "=" * 74)
     print("🎉 สร้างฐานข้อมูลสินค้า Apple สำเร็จสมบูรณ์ 100%!")
     print(f"📦 จำนวนตัวเลือกสินค้าทั้งหมด:     {len(variants)} รายการ (ตรวจสอบความถูกต้องเรียบร้อย)")
@@ -122,11 +127,22 @@ def run_build_full_database():
     print(f"🌐 8. Web Preview Catalog:          {BASE_DIR / 'catalog_preview.html'}")
     print("=" * 74 + "\n")
 
+def run_remove_background():
+    remover = AppleBackgroundRemover()
+    remover.process_all_images(max_workers=8)
+    remover.generate_transparent_catalog_exports()
+
+def run_deep_assets():
+    crawler = AppleDeepAssetCrawler()
+    crawler.crawl_all_deep_products()
+
 def interactive_menu():
     while True:
         print_banner()
         print("เลือกเมนูการทำงาน:")
         print("  [7] 🗄️ ดึงข้อมูลทุกรุ่น ทุกสี ทุกราคา & สร้างฐานข้อมูลเต็มรูปแบบ (Build Database)")
+        print("  [6] 🔍 เจาะลึกรูปภาพทุกสินค้า แยก 6 หมวดหมู่ (Deep Product Media Gallery)")
+        print("  [9] 🎨 ลบพื้นหลังภาพสินค้าทั้งหมดเป็น Transparent PNG (No-BG)")
         print("  --------------------------------------------------------------------------")
         for k, (name, path) in POPULAR_MODELS.items():
             print(f"  [{k}] ดึงข้อมูลเฉพาะรุ่น {name}")
@@ -134,12 +150,18 @@ def interactive_menu():
         print("  [0] ออกจากโปรแกรม")
         print("-" * 74)
 
-        choice = input("👉 เลือกเมนู (0-8): ").strip()
+        choice = input("👉 เลือกเมนู (0-9): ").strip()
         if choice == "0":
             print("👋 ออกจากโปรแกรม ขอบคุณครับ!")
             break
         elif choice == "7":
             run_build_full_database()
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
+        elif choice == "6":
+            run_deep_assets()
+            input("กด Enter เพื่อกลับสู่เมนูหลัก...")
+        elif choice == "9":
+            run_remove_background()
             input("กด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice in POPULAR_MODELS:
             _, path = POPULAR_MODELS[choice]
@@ -161,12 +183,16 @@ if __name__ == "__main__":
             print("วิธีใช้:")
             print("  python3 run.py                                # เปิด Interactive Menu")
             print("  python3 run.py build-db                       # สร้างฐานข้อมูลทุกรุ่น ทุกสี ทุกราคา")
+            print("  python3 run.py remove-bg                      # ลบพื้นหลังสินค้าทั้งหมดเป็น Transparent PNG")
             print("  python3 run.py <URL หรือ Product Slug>         # ดึงข้อมูลเฉพาะรุ่น")
             print("ตัวอย่าง:")
             print("  python3 run.py build-db")
+            print("  python3 run.py remove-bg")
             print("  python3 run.py iphone-16")
         elif arg in ["build-db", "build_db", "database", "all"]:
             run_build_full_database()
+        elif arg in ["remove-bg", "remove_bg", "nobg", "transparent"]:
+            run_remove_background()
         else:
             run_scrape_single(sys.argv[1])
     else:

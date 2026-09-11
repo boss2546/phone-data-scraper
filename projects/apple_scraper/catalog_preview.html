@@ -273,6 +273,90 @@
       transform: translateY(-1px);
     }
 
+    /* 4K Ultra HD Retina Badge & Multi-Angle Gallery */
+    .res-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(48, 209, 88, 0.15);
+      border: 1px solid rgba(48, 209, 88, 0.35);
+      color: #30d158;
+      letter-spacing: 0.02em;
+    }
+
+    .gallery-angles-bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+      margin: -6px 0 12px;
+      padding: 4px 6px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .gallery-angles-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-angle-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.74rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .gallery-angle-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    .gallery-angle-btn.active {
+      background: rgba(41, 151, 255, 0.22);
+      border-color: rgba(41, 151, 255, 0.5);
+      color: #58a6ff;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(41, 151, 255, 0.25);
+    }
+
+    .png-badge-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 7px;
+      background: rgba(144, 71, 255, 0.15);
+      border: 1px solid rgba(144, 71, 255, 0.35);
+      color: #b388ff;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .png-badge-btn:hover, .png-badge-btn.active {
+      background: rgba(144, 71, 255, 0.35);
+      border-color: #9047ff;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(144, 71, 255, 0.35);
+    }
+
     /* Product View Interactive Selectors */
     .product-color-selector {
       margin: 10px 0 14px;
@@ -414,7 +498,8 @@
 
     .image-container {
       width: 100%;
-      height: 180px;
+      height: 220px;
+      min-height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -422,11 +507,15 @@
       background: radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%);
       border-radius: 16px;
       overflow: hidden;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
     .image-container img {
-      max-width: 90%;
-      max-height: 90%;
+      max-width: 95%;
+      max-height: 95%;
+      width: auto;
+      height: auto;
       object-fit: contain;
       transition: transform 0.4s ease;
       filter: drop-shadow(0 12px 20px rgba(0,0,0,0.4));
@@ -527,6 +616,61 @@
     .btn-buy:hover {
       background: #0077ed;
       transform: scale(1.03);
+    }
+
+    .btn-specs {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 12px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-specs:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .submodel-pill {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin: 10px 0 14px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      font-size: 0.74rem;
+    }
+    .specs-grid-item {
+      color: #94a3b8;
+      display: flex;
+      flex-direction: column;
+    }
+    .specs-grid-item b {
+      color: #f1f5f9;
+      font-weight: 500;
+      font-size: 0.76rem;
+      line-height: 1.3;
     }
 
     .empty-state {
@@ -675,6 +819,100 @@
       font-size: 0.85rem;
       color: #93c5fd;
     }
+
+    /* Deep Asset Gallery Modal & Cards */
+    .btn-deep {
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.4);
+      color: #c084fc;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .btn-deep:hover {
+      background: rgba(139, 92, 246, 0.3);
+      border-color: #a855f7;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+    .deep-asset-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+    }
+    .deep-asset-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(139, 92, 246, 0.5);
+      box-shadow: 0 12px 30px rgba(139, 92, 246, 0.2);
+    }
+    .deep-asset-img-box {
+      height: 200px;
+      background: #090c14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      position: relative;
+      cursor: pointer;
+    }
+    .deep-asset-img-box img {
+      max-width: 95%;
+      max-height: 95%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .deep-asset-card:hover .deep-asset-img-box img {
+      transform: scale(1.05);
+    }
+    .deep-asset-body {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 6px;
+    }
+    .deep-asset-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #f8fafc;
+      line-height: 1.35;
+    }
+    .deep-asset-desc {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.4;
+      flex: 1;
+    }
+    .deep-asset-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .deep-cat-pill {
+      background: rgba(139, 92, 246, 0.12);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: #c084fc;
+      border-radius: 9999px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
   </style>
 </head>
 <body>
@@ -694,6 +932,8 @@
       <div class="stats-item">รายการทั้งหมด: <b id="statTotal">-</b></div>
       <div class="stats-item">ราคาเริ่มต้น: <b id="statMin">-</b></div>
       <div class="stats-item">ราคาสูงสุด: <b id="statMax">-</b></div>
+      <div class="stats-item">ความละเอียดภาพ: <b style="color: #30d158;">⚡ 4K Ultra HD (2560px)</b></div>
+      <div class="stats-item">ภาพมุมมอง (Gallery): <b style="color: #2997ff;" id="statGallery">149 มุมมอง</b></div>
     </div>
 
     <div>
@@ -789,15 +1029,32 @@ echo $catalog-&gt;renderCatalogHtml(false);
 
       <div id="tab-sql" class="tab-pane" style="display: none;">
         <div class="code-box">-- นำเข้า apple_catalog.sql เข้าสู่ MySQL, PostgreSQL หรือ Supabase:
--- หรือคิวรีบน SQLite Database (apple_catalog.db) ได้ทันที:
+-- หรือคิวรีบน SQLite Database (apple_catalog.db) ได้ทันที (ข้อมูลครบ 100% ไม่มี '-' หรือ null):
 
--- ค้นหาสินค้าพร้อมชื่อรุ่น สี ความจุ รูปภาพ และราคา (ใช้ View v_catalog ไม่ต้องเขียน JOIN เอง)
-SELECT product_name, model_name, color_th, storage, formatted_price, image_url, local_image_path 
-FROM v_catalog 
-WHERE category_id = 'iphone' AND price_thb &lt;= 40000 
+-- 1. ดึงข้อมูลสินค้าแบบสมบูรณ์พร้อมมิติขนาด น้ำหนัก จอภาพ กล้อง แบตเตอรี่ (View v_catalog_complete)
+SELECT 
+    sub_model_name,
+    model_name,
+    color_th,
+    storage,
+    dimensions_mm,
+    weight_grams,
+    display_specs,
+    camera_specs,
+    battery_specs,
+    formatted_price,
+    specs_url,
+    buy_url
+FROM v_catalog_complete
+WHERE category_id = 'iphone'
 ORDER BY price_thb ASC;
 
--- สรุปรายชื่อตระกูลสินค้า พร้อมช่วงราคาและตัวเลือกสีทั้งหมด
+-- 2. ดูรายชื่อ 40 รุ่นย่อยทางการ (Sub-models) พร้อมขนาดมิติและน้ำหนัก
+SELECT sub_model_id, name_th, screen_size, dimensions_mm, weight_grams, chip_specs, starting_price_thb
+FROM sub_models
+ORDER BY category_id, starting_price_thb ASC;
+
+-- 3. สรุปรายชื่อครอบครัวสินค้า พร้อมช่วงราคาและจำนวนสี
 SELECT category, product_name, chip, screen_size, min_price_thb, colors_available 
 FROM v_product_summary;</div>
       </div>
@@ -849,26 +1106,80 @@ def search(q: str):
     </div>
   </div>
 
+  <!-- Deep Product Media Gallery Modal -->
+  <div class="modal-backdrop" id="deepGalleryModal" onclick="if(event.target===this)closeDeepGalleryModal()">
+    <div class="modal-content" style="max-width: 1240px; width: 95%; max-height: 92vh; padding: 28px;">
+      <button class="modal-close" onclick="closeDeepGalleryModal()">✕</button>
+      
+      <!-- Header -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom: 20px;">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+            <span class="family-badge" id="modalProductCategory" style="background:#8b5cf6; color:#fff;">IPHONE</span>
+            <span class="res-badge" id="modalProductChip">A18 Pro (3nm)</span>
+            <span class="res-badge" id="modalTotalCount" style="background:rgba(56,189,248,0.15); color:#38bdf8; border-color:rgba(56,189,248,0.3);">📸 48 ภาพ</span>
+          </div>
+          <h2 class="modal-title" id="modalProductTitle" style="margin:0; font-size:1.8rem;">iPhone 16 Pro & iPhone 16 Pro Max</h2>
+          <p class="modal-desc" id="modalProductSubtitle" style="margin:4px 0 0; color:#94a3b8;">แกลเลอรีรูปภาพทางการความละเอียดสูง 4K Retina เจาะลึกรายสินค้า แยก 6 หมวดหมู่อย่างสมบูรณ์</p>
+        </div>
+
+        <!-- Product Selector Dropdown inside modal -->
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="font-size:0.88rem; color:#94a3b8;">เลือกรุ่นสินค้า:</span>
+          <select id="modalProductSelect" class="sort-select" onchange="changeDeepModalProduct(this.value)" style="min-width:240px; font-weight:600;">
+          </select>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="category-pills" id="modalCategoryPills" style="margin-bottom: 22px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); flex-wrap:wrap; gap:8px;">
+      </div>
+
+      <!-- Assets Grid -->
+      <div id="modalAssetsGrid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-height: 60vh; overflow-y: auto; padding-right: 4px;">
+        <div class="empty-state">⏳ กำลังโหลดรูปภาพเจาะลึก...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal for 4K Zoom -->
+  <div class="modal-backdrop" id="lightboxModal" style="z-index: 1200; background: rgba(0,0,0,0.92);" onclick="if(event.target===this)closeLightbox()">
+    <div style="position:relative; max-width: 95vw; max-height: 95vh; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+      <button class="modal-close" onclick="closeLightbox()" style="position:fixed; top:24px; right:24px; z-index:1300;">✕</button>
+      <img id="lightboxImg" src="" alt="" style="max-width: 90vw; max-height: 80vh; object-fit: contain; border-radius: 12px; box-shadow: 0 15px 50px rgba(0,0,0,0.9);" />
+      <div id="lightboxCaption" style="margin-top: 16px; text-align: center; color: #f1f5f9; font-size: 1.05rem; max-width: 800px; line-height: 1.4;"></div>
+    </div>
+  </div>
+
   <!-- View Switcher -->
   <div class="view-switch-row">
     <button class="view-switch-btn active" id="btnViewColors" onclick="setViewMode('color')">
-      🎨 สีสินค้า (Showcase 63 รุ่น - รูปไม่ซ้ำ 100%)
+      🎨 สีสินค้าเด่น (Showcase ภาพ 4K เต็มตัวเครื่อง)
     </button>
     <button class="view-switch-btn" id="btnViewProducts" onclick="setViewMode('products')">
-      🛍️ รวมรุ่นสินค้า (18 รุ่น พร้อมสลับสีสด)
+      🛍️ รวมตามรุ่นหลักและรุ่นย่อย (สลับสีและสเปก)
     </button>
     <button class="view-switch-btn" id="btnViewVariants" onclick="setViewMode('variants')">
-      📋 SKU ย่อยทั้งหมด (330 รายการ)
+      📋 SKU ย่อยทั้งหมด (ครบทุกสเปก ละเอียด 100%)
+    </button>
+    <button class="view-switch-btn" id="btnViewDeepAssets" onclick="openDeepGalleryModal('iphone-16-pro')" style="border-color: rgba(168, 85, 247, 0.45); color: #c084fc; background: rgba(168, 85, 247, 0.08);">
+      🔍 เจาะลึกแกลเลอรีภาพทุกมุม 2,788 ภาพ (Deep Media Gallery)
     </button>
   </div>
 
-  <!-- Image Mode Toggle -->
-  <div class="image-mode-row">
+  <!-- Image Mode & Background Toggle -->
+  <div class="image-mode-row" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center;">
     <span>🖼️ แหล่งรูปภาพ:</span>
     <button id="btnImgMode" class="img-mode-btn" onclick="toggleImageSource()">
       <span id="imgModeIcon">🌐</span> <span id="imgModeText">Apple Official CDN (ออนไลน์ คมชัดสูง)</span>
     </button>
-    <span style="font-size:0.8rem; color:#94a3b8;">(สามารถคลิกเพื่อสลับดูภาพ Offline จาก data/images/ ได้)</span>
+    <button id="btnBgMode" class="img-mode-btn" onclick="toggleBackgroundMode()" style="background: linear-gradient(135deg, #1e3a8a, #4338ca); color: #fff; border-color: #6366f1; font-weight: 600;">
+      <span id="bgModeIcon">✨</span> <span id="bgModeText">พื้นหลัง: ต้นฉบับ (Original JPG)</span>
+    </button>
+    <button id="btnCanvasPattern" class="img-mode-btn" onclick="toggleCanvasPattern()" style="display: none; background: #1e293b; color: #38bdf8; border-color: #38bdf8; font-size: 0.85rem;">
+      🏁 ลายตารางหมากรุก (Checkerboard)
+    </button>
+    <span style="font-size:0.8rem; color:#a78bfa;">(คลิกเพื่อดูภาพไดคัตโปร่งใส 100% ที่ลบพื้นหลังออก โดยคงต้นฉบับไว้)</span>
   </div>
 
   <div class="controls-container">
@@ -899,6 +1210,7 @@ def search(q: str):
 
   <script src="data/exports/apple_catalog.js"></script>
   <script src="data/exports/apple_db_helper.js"></script>
+  <script src="data/exports/apple_deep_assets.js"></script>
   <script>
     let allVariants = [];
     let allProducts = [];
@@ -910,6 +1222,203 @@ def search(q: str):
     let useLocalAssets = false;
     let productCardStates = {}; // pid -> { colorIdx: 0, optionIdx: 0 }
     let colorCardStates = {};   // cardKey -> { optionIdx: 0 }
+    let useTransparentBg = false;
+    let canvasPattern = 'checkerboard'; // 'checkerboard' | 'dark' | 'light' | 'gradient'
+
+    // === Deep Product Gallery Modal Logic ===
+    let activeDeepProductId = 'iphone-16-pro';
+    let activeDeepCategory = 'all';
+
+    function normalizeDeepProductId(rawId) {
+      if (!rawId) return 'iphone-16-pro';
+      const id = String(rawId).toLowerCase();
+      if (id.includes('16-pro') || id.includes('18-pro') || id.includes('17-pro')) return 'iphone-16-pro';
+      if (id.includes('iphone-16') || id.includes('iphone-15') || id.includes('iphone-14') || id.includes('iphone-se') || id.includes('iphone-17') || id.includes('air') || id.includes('duo')) return 'iphone-16';
+      if (id.includes('ipad-pro')) return 'ipad-pro';
+      if (id.includes('ipad-air') || id.includes('ipad-mini') || id.includes('ipad')) return 'ipad-air';
+      if (id.includes('macbook-pro') || id.includes('mac-studio') || id.includes('mac-pro')) return 'macbook-pro';
+      if (id.includes('macbook-air') || id.includes('imac') || id.includes('mac-mini')) return 'macbook-air';
+      if (id.includes('ultra')) return 'apple-watch-ultra-2';
+      if (id.includes('watch')) return 'apple-watch-series-10';
+      return 'iphone-16-pro';
+    }
+
+    function openDeepGalleryModal(productId) {
+      activeDeepProductId = normalizeDeepProductId(productId);
+      activeDeepCategory = 'all';
+
+      // Populate Product Select Dropdown
+      const select = document.getElementById('modalProductSelect');
+      if (select && window.APPLE_DEEP_ASSETS && window.APPLE_DEEP_ASSETS.products) {
+        const pList = Object.values(window.APPLE_DEEP_ASSETS.products);
+        select.innerHTML = pList.map(p => `
+          <option value="${p.product_id}" ${p.product_id === activeDeepProductId ? 'selected' : ''}>
+            ${p.product_name_th} (${p.total_assets_count} ภาพ)
+          </option>
+        `).join('');
+      }
+
+      renderDeepModalAssets();
+      document.getElementById('deepGalleryModal').classList.add('open');
+    }
+
+    function closeDeepGalleryModal() {
+      document.getElementById('deepGalleryModal').classList.remove('open');
+    }
+
+    function changeDeepModalProduct(productId) {
+      activeDeepProductId = productId;
+      activeDeepCategory = 'all';
+      renderDeepModalAssets();
+    }
+
+    function selectDeepCategory(catKey) {
+      activeDeepCategory = catKey;
+      renderDeepModalAssets();
+    }
+
+    function renderDeepModalAssets() {
+      if (!window.APPLE_DEEP_ASSETS || !window.APPLE_DEEP_ASSETS.products) {
+        document.getElementById('modalAssetsGrid').innerHTML = '<div class="empty-state">❌ ไม่พบข้อมูล Deep Assets Catalog</div>';
+        return;
+      }
+
+      const pData = window.APPLE_DEEP_ASSETS.products[activeDeepProductId];
+      if (!pData) {
+        document.getElementById('modalAssetsGrid').innerHTML = '<div class="empty-state">❌ ไม่พบสินค้านี้ในระบบ</div>';
+        return;
+      }
+
+      // Update Header Info
+      document.getElementById('modalProductTitle').innerText = pData.product_name_th;
+      document.getElementById('modalProductCategory').innerText = pData.category.toUpperCase();
+      document.getElementById('modalProductChip').innerText = pData.chip || '-';
+      document.getElementById('modalTotalCount').innerText = `📸 รวม ${pData.total_assets_count} ภาพ`;
+
+      // Render Category Pills with counts
+      const pillsContainer = document.getElementById('modalCategoryPills');
+      const catMeta = window.APPLE_DEEP_ASSETS.metadata.categories || {};
+      
+      let pillsHtml = `
+        <button class="category-btn ${activeDeepCategory === 'all' ? 'active' : ''}" onclick="selectDeepCategory('all')">
+          🌟 ทั้งหมด (${pData.total_assets_count})
+        </button>
+      `;
+
+      for (const [cKey, cInfo] of Object.entries(catMeta)) {
+        const count = (pData.categories_summary && pData.categories_summary[cKey]) || 0;
+        if (count > 0) {
+          pillsHtml += `
+            <button class="category-btn ${activeDeepCategory === cKey ? 'active' : ''}" onclick="selectDeepCategory('${cKey}')">
+              ${cInfo.title_th} (${count})
+            </button>
+          `;
+        }
+      }
+      pillsContainer.innerHTML = pillsHtml;
+
+      // Filter Assets
+      let assets = pData.assets || [];
+      if (activeDeepCategory !== 'all') {
+        assets = assets.filter(a => a.category === activeDeepCategory);
+      }
+
+      const grid = document.getElementById('modalAssetsGrid');
+      if (assets.length === 0) {
+        grid.innerHTML = '<div class="empty-state">ไม่พบรูปภาพในหมวดหมู่นี้</div>';
+        return;
+      }
+
+      grid.innerHTML = assets.map(a => `
+        <div class="deep-asset-card">
+          <div class="deep-asset-img-box" onclick="openLightbox('${a.image_url}', '${a.title_th.replace(/'/g, "\\'")}', '${(a.description_th || '').replace(/'/g, "\\'")}')">
+            <img src="${a.image_url}" alt="${a.title_th}" loading="lazy" />
+            <span class="deep-cat-pill" style="position:absolute; top:10px; left:10px; z-index:2;">${a.badge || a.category_th}</span>
+            <span class="res-badge" style="position:absolute; bottom:10px; right:10px; z-index:2;">${a.resolution || '2560px 4K'}</span>
+          </div>
+          <div class="deep-asset-body">
+            <div class="deep-asset-title">${a.title_th}</div>
+            <div class="deep-asset-desc">${a.description_th || a.title_en}</div>
+            <div class="deep-asset-footer">
+              <span style="font-size:0.75rem; color:#64748b;">สัดส่วน: ${a.aspect_ratio || '1:1'}</span>
+              <div style="display:flex; gap:6px;">
+                <button class="btn-specs" onclick="openLightbox('${a.image_url}', '${a.title_th.replace(/'/g, "\\'")}', '${(a.description_th || '').replace(/'/g, "\\'")}')" style="padding:4px 8px; font-size:0.75rem;">
+                  🔍 ซูม 4K
+                </button>
+                <a href="${a.image_url}" target="_blank" rel="noopener" class="btn-specs" style="padding:4px 8px; font-size:0.75rem;">
+                  เปิดรูป ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openLightbox(url, title, desc) {
+      document.getElementById('lightboxImg').src = url;
+      document.getElementById('lightboxCaption').innerHTML = `<b>${title}</b><br><span style="color:#94a3b8; font-size:0.9rem;">${desc}</span>`;
+      document.getElementById('lightboxModal').classList.add('open');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('open');
+    }
+
+    function toggleBackgroundMode() {
+      useTransparentBg = !useTransparentBg;
+      const btn = document.getElementById('btnBgMode');
+      const icon = document.getElementById('bgModeIcon');
+      const text = document.getElementById('bgModeText');
+      const patternBtn = document.getElementById('btnCanvasPattern');
+
+      if (useTransparentBg) {
+        icon.innerText = '💎';
+        text.innerText = 'พื้นหลัง: ไดคัตโปร่งใส 100% (Transparent PNG)';
+        btn.style.background = 'linear-gradient(135deg, #065f46, #059669)';
+        btn.style.borderColor = '#10b981';
+        patternBtn.style.display = 'inline-flex';
+      } else {
+        icon.innerText = '✨';
+        text.innerText = 'พื้นหลัง: ต้นฉบับ (Original JPG)';
+        btn.style.background = 'linear-gradient(135deg, #1e3a8a, #4338ca)';
+        btn.style.borderColor = '#6366f1';
+        patternBtn.style.display = 'none';
+      }
+      renderCatalog();
+    }
+
+    function toggleCanvasPattern() {
+      const patterns = ['checkerboard', 'dark', 'light', 'gradient'];
+      let idx = patterns.indexOf(canvasPattern);
+      canvasPattern = patterns[(idx + 1) % patterns.length];
+      const btn = document.getElementById('btnCanvasPattern');
+      if (canvasPattern === 'checkerboard') btn.innerText = '🏁 ลายตารางหมากรุก (Checkerboard)';
+      else if (canvasPattern === 'dark') btn.innerText = '⬛ พื้นหลังดำสนิท (Dark OLED)';
+      else if (canvasPattern === 'light') btn.innerText = '⬜ พื้นหลังสีสว่าง (Light Gray)';
+      else if (canvasPattern === 'gradient') btn.innerText = '🌈 พื้นหลังเกรเดียนต์ (Gradient)';
+      renderCatalog();
+    }
+
+    function getCanvasBgStyle() {
+      if (!useTransparentBg) return '';
+      if (canvasPattern === 'checkerboard') {
+        return 'background-color: #1a1d24; background-image: linear-gradient(45deg, rgba(255,255,255,0.08) 25%, transparent 25%), linear-gradient(-45deg, rgba(255,255,255,0.08) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.08) 75%), linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.08) 75%); background-size: 16px 16px; background-position: 0 0, 0 8px, 8px -8px, -8px 0px; border-radius: 14px;';
+      } else if (canvasPattern === 'dark') {
+        return 'background: #000000; border: 1px solid rgba(255,255,255,0.15); border-radius: 14px;';
+      } else if (canvasPattern === 'light') {
+        return 'background: #f5f5f7; border-radius: 14px;';
+      } else if (canvasPattern === 'gradient') {
+        return 'background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%); border-radius: 14px;';
+      }
+      return '';
+    }
+
+    // ป้องกันและตัด _AV2 / _AV3 (มุมซูมเจาะเฉพาะกล้องหรือขอบข้าง) เพื่อแสดงรูปตัวเครื่องเต็ม 100%
+    function cleanAppleImgUrl(url) {
+      if (!url) return '';
+      return url.replace(/_AV\d+/g, '');
+    }
 
     function setViewMode(mode) {
       viewMode = mode;
@@ -946,22 +1455,86 @@ def search(q: str):
     }
 
     function selectColorOption(cardKey, optionIdx) {
-      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0 };
+      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
       colorCardStates[cardKey].optionIdx = optionIdx;
       renderCatalog();
     }
 
+    function selectColorAngle(cardKey, angleIdx) {
+      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
+      colorCardStates[cardKey].angleIdx = angleIdx;
+      colorCardStates[cardKey].isPng = false;
+      renderCatalog();
+    }
+
+    function toggleColorPng(cardKey) {
+      if (!colorCardStates[cardKey]) colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
+      colorCardStates[cardKey].isPng = !colorCardStates[cardKey].isPng;
+      renderCatalog();
+    }
+
     function selectProductColor(pid, colorIdx) {
-      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
+      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
       productCardStates[pid].colorIdx = colorIdx;
       productCardStates[pid].optionIdx = 0;
+      productCardStates[pid].angleIdx = 0;
+      productCardStates[pid].isPng = false;
       renderCatalog();
     }
 
     function selectProductOption(pid, optionIdx) {
-      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
+      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
       productCardStates[pid].optionIdx = optionIdx;
       renderCatalog();
+    }
+
+    function selectProductAngle(pid, angleIdx) {
+      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
+      productCardStates[pid].angleIdx = angleIdx;
+      productCardStates[pid].isPng = false;
+      renderCatalog();
+    }
+
+    function toggleProductPng(pid) {
+      if (!productCardStates[pid]) productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
+      productCardStates[pid].isPng = !productCardStates[pid].isPng;
+      renderCatalog();
+    }
+
+    function getAngleIcon(angleType) {
+      const icons = {
+        hero: '📱',
+        back: '📸',
+        side: '📏',
+        box: '📦',
+        accessory: '🔌',
+        display: '🖥️',
+        keyboard: '⌨️',
+        ports: '⚡',
+        closed_lid: '💻',
+        gallery: '✨',
+        case_size: '⌚'
+      };
+      return icons[angleType] || '🖼️';
+    }
+
+    function getAngleShortLabel(angleType, labelTh) {
+      const labels = {
+        hero: 'เฉียง',
+        back: 'หลัง',
+        side: 'ข้าง',
+        box: 'ในกล่อง',
+        accessory: 'สายชาร์จ',
+        display: 'หน้าจอ',
+        keyboard: 'แป้นพิมพ์',
+        ports: 'พอร์ต',
+        closed_lid: 'ฝาปิด',
+        gallery: 'มุมมอง',
+        case_size: 'ตัวเรือน'
+      };
+      if (labels[angleType]) return labels[angleType];
+      if (labelTh && labelTh.length <= 8) return labelTh;
+      return angleType;
     }
 
     function computeTree(variants) {
@@ -980,8 +1553,10 @@ def search(q: str):
               screen_size: v.screen_size || '-',
               min_price_thb: v.price_thb,
               max_price_thb: v.price_thb,
-              hero_image_url: v.image_url,
+              hero_image_url: v.image_url_highres || v.image_url,
+              hero_image_png: v.image_url_png || '',
               local_hero_image: v.local_image_path,
+              local_hero_image_png: v.local_image_png || '',
               product_url: v.product_url
             },
             colors: {}
@@ -998,8 +1573,11 @@ def search(q: str):
             name_th: v.color_th,
             name_en: v.color_en,
             color_hex: v.color_hex,
-            image_url: v.image_url,
+            image_url: v.image_url_highres || v.image_url,
+            image_url_png: v.image_url_png || '',
             local_image_path: v.local_image_path || `data/images/${cat}/${pid}/${cid}.jpg`,
+            local_image_png: v.local_image_png || `data/images/${cat}/${pid}/${cid}/hero.png`,
+            gallery: v.gallery || [],
             options: []
           };
         }
@@ -1157,28 +1735,76 @@ def search(q: str):
         const c = item.color;
         const cardKey = `${item.pid}_${c.color_id}`;
         if (!colorCardStates[cardKey]) {
-          colorCardStates[cardKey] = { optionIdx: 0 };
+          colorCardStates[cardKey] = { optionIdx: 0, angleIdx: 0, isPng: false };
         }
         const state = colorCardStates[cardKey];
         const options = item.options;
         const activeOpt = options[state.optionIdx] || options[0] || {};
         const displayPrice = activeOpt.formatted_price || '฿0';
-        const imgSrc = useLocalAssets ? (c.local_image_path || c.image_url) : c.image_url;
+
+        // Gallery
+        const gallery = (c.gallery && c.gallery.length > 0) ? c.gallery : [{
+          angle_type: 'hero',
+          label_th: 'มุมมองหลัก',
+          image_url: c.image_url,
+          image_url_png: c.image_url_png,
+          local_image_path: c.local_image_path,
+          local_image_png: c.local_image_png,
+          resolution: '2560x2560'
+        }];
+        const activeG = gallery[state.angleIdx] || gallery[0];
+
+        let activeImg = '';
+        if (useTransparentBg) {
+          const transPath = (c.local_image_nobg || c.local_image_path || '').replace('.jpg', '.png').replace('data/images/', 'data/images_transparent/');
+          activeImg = transPath || (activeG.local_image_png || c.local_image_png || c.image_url);
+        } else if (state.isPng && (activeG.image_url_png || c.image_url_png)) {
+          const pngUrl = activeG.image_url_png || c.image_url_png;
+          const localPng = activeG.local_image_png || c.local_image_png;
+          activeImg = useLocalAssets ? (localPng || pngUrl) : pngUrl;
+        } else {
+          activeImg = useLocalAssets ? (activeG.local_image_path || activeG.image_url || c.local_image_path || c.image_url) : (activeG.image_url || c.image_url);
+        }
+        activeImg = cleanAppleImgUrl(activeImg);
 
         return `
           <article class="product-card">
             <div class="card-top">
-              <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
+                <span class="res-badge" title="ภาพความละเอียดสูงระดับ 2560x2560 Ultra HD">⚡ 2560px 4K</span>
+              </div>
               ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
             </div>
 
-            <div class="image-container">
-              <img src="${imgSrc}" 
+            <div class="image-container" style="${getCanvasBgStyle() || (state.isPng ? 'background: radial-gradient(circle at center, rgba(144,71,255,0.08) 0%, transparent 70%);' : '')}">
+              <img src="${activeImg}" 
                    alt="${info.name} สี${c.name_th}" 
                    loading="lazy"
-                   onerror="this.src='${c.image_url}'" />
+                   onerror="this.src='${cleanAppleImgUrl(c.image_url)}'" />
             </div>
 
+            ${gallery.length > 1 || c.image_url_png ? `
+              <div class="gallery-angles-bar">
+                ${gallery.map((g, aIdx) => `
+                  <button class="gallery-angle-btn ${(!state.isPng && aIdx === (state.angleIdx || 0)) ? 'active' : ''}" 
+                          onclick="selectColorAngle('${cardKey}', ${aIdx})"
+                          title="${g.label_th || g.angle_type}">
+                    <span>${getAngleIcon(g.angle_type)}</span>
+                    <span>${getAngleShortLabel(g.angle_type, g.label_th)}</span>
+                  </button>
+                `).join('')}
+                ${c.image_url_png ? `
+                  <button class="png-badge-btn ${state.isPng ? 'active' : ''}" 
+                          onclick="toggleColorPng('${cardKey}')" 
+                          title="สลับเป็นรูปภาพไดคัตพื้นหลังใส (Transparent PNG)">
+                    <span>💎</span> ไดคัต PNG
+                  </button>
+                ` : ''}
+              </div>
+            ` : ''}
+
+            ${activeOpt.sub_model_name ? `<div class="submodel-pill">📱 ${activeOpt.sub_model_name}</div>` : ''}
             <h3 class="product-title">${info.name}</h3>
 
             <div class="color-swatch-row" style="margin: 8px 0 14px;">
@@ -1198,9 +1824,38 @@ def search(q: str):
             ` : ''}
 
             <div class="specs-pill-box">
-              ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill">📐 ${info.screen_size}</span>` : ''}
-              ${activeOpt.connectivity && activeOpt.connectivity !== '-' ? `<span class="spec-pill">📶 ${activeOpt.connectivity}</span>` : ''}
-              ${activeOpt.part_number ? `<span class="spec-pill">🏷️ ${activeOpt.part_number}</span>` : ''}
+              ${activeOpt.dimensions_mm && activeOpt.dimensions_mm !== '-' ? `<span class="spec-pill" title="มิติขนาดตัวเครื่อง">📏 ${activeOpt.dimensions_mm}</span>` : ''}
+              ${activeOpt.weight_grams && activeOpt.weight_grams !== '-' ? `<span class="spec-pill" title="น้ำหนัก">⚖️ ${activeOpt.weight_grams}</span>` : ''}
+              ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill" title="ขนาดหน้าจอ">📐 ${info.screen_size}</span>` : ''}
+              ${activeOpt.connectivity && activeOpt.connectivity !== '-' ? `<span class="spec-pill" title="การเชื่อมต่อ">📶 ${activeOpt.connectivity}</span>` : ''}
+              ${activeOpt.part_number ? `<span class="spec-pill" title="Part Number">🏷️ ${activeOpt.part_number}</span>` : ''}
+            </div>
+
+            <div class="specs-grid">
+              ${activeOpt.display_specs && activeOpt.display_specs !== '-' ? `
+                <div class="specs-grid-item" style="grid-column: 1 / -1;">
+                  <span>🖥️ จอภาพ:</span>
+                  <b>${activeOpt.display_specs}</b>
+                </div>
+              ` : ''}
+              ${activeOpt.camera_specs && activeOpt.camera_specs !== '-' ? `
+                <div class="specs-grid-item" style="grid-column: 1 / -1;">
+                  <span>📸 กล้อง:</span>
+                  <b>${activeOpt.camera_specs}</b>
+                </div>
+              ` : ''}
+              ${activeOpt.battery_specs && activeOpt.battery_specs !== '-' ? `
+                <div class="specs-grid-item">
+                  <span>🔋 แบตเตอรี่:</span>
+                  <b>${activeOpt.battery_specs}</b>
+                </div>
+              ` : ''}
+              ${activeOpt.box_contents && activeOpt.box_contents !== '-' ? `
+                <div class="specs-grid-item">
+                  <span>📦 ในกล่อง:</span>
+                  <b>${activeOpt.box_contents}</b>
+                </div>
+              ` : ''}
             </div>
 
             <div class="card-bottom">
@@ -1208,9 +1863,19 @@ def search(q: str):
                 <span class="price-label">ราคาทางการ</span>
                 <span class="price-val">${displayPrice}</span>
               </div>
-              <a href="${info.product_url}" target="_blank" rel="noopener" class="btn-buy">
-                ซื้อบน Apple ↗
-              </a>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <button class="btn-deep" onclick="openDeepGalleryModal('${info.id}')" title="เจาะลึกภาพสินค้าทุกมุม ชิป กล้อง และของในกล่อง">
+                  🔍 รูปเจาะลึก 4K
+                </button>
+                ${(activeOpt.specs_url || info.specs_url) ? `
+                  <a href="${activeOpt.specs_url || info.specs_url}" target="_blank" rel="noopener" class="btn-specs" title="ดูหน้าข้อมูลทางเทคนิคทางการบน Apple">
+                    สเปก ↗
+                  </a>
+                ` : ''}
+                <a href="${activeOpt.buy_url || info.buy_url || info.product_url}" target="_blank" rel="noopener" class="btn-buy">
+                  ซื้อบน Apple ↗
+                </a>
+              </div>
             </div>
           </article>
         `;
@@ -1264,7 +1929,7 @@ def search(q: str):
         const colors = item.colors;
 
         if (!productCardStates[pid]) {
-          productCardStates[pid] = { colorIdx: 0, optionIdx: 0 };
+          productCardStates[pid] = { colorIdx: 0, optionIdx: 0, angleIdx: 0, isPng: false };
         }
         const state = productCardStates[pid];
         const activeColor = colors[state.colorIdx] || colors[0] || {};
@@ -1272,18 +1937,45 @@ def search(q: str):
         
         const activeOption = options[state.optionIdx] || options[0] || {};
         const displayPrice = activeOption.formatted_price || `เริ่มต้น ฿${info.min_price_thb.toLocaleString()}`;
-        const activeImg = useLocalAssets 
-          ? (activeColor.local_image_path || activeColor.image_url || info.local_hero_image || info.hero_image_url) 
-          : (activeColor.image_url || info.hero_image_url);
+
+        // Gallery
+        const gallery = (activeColor.gallery && activeColor.gallery.length > 0) ? activeColor.gallery : [{
+          angle_type: 'hero',
+          label_th: 'มุมมองหลัก',
+          image_url: activeColor.image_url || info.hero_image_url,
+          image_url_png: activeColor.image_url_png || info.hero_image_png,
+          local_image_path: activeColor.local_image_path || info.local_hero_image,
+          local_image_png: activeColor.local_image_png || info.local_hero_image_png,
+          resolution: '2560x2560'
+        }];
+        const activeG = gallery[state.angleIdx] || gallery[0];
+
+        let activeImg = '';
+        if (useTransparentBg) {
+          const transPath = (activeColor.local_image_nobg || activeColor.local_image_path || '').replace('.jpg', '.png').replace('data/images/', 'data/images_transparent/');
+          activeImg = transPath || (activeG.local_image_png || activeColor.local_image_png || info.hero_image_url);
+        } else if (state.isPng && (activeG.image_url_png || activeColor.image_url_png || info.hero_image_png)) {
+          const pngUrl = activeG.image_url_png || activeColor.image_url_png || info.hero_image_png;
+          const localPng = activeG.local_image_png || activeColor.local_image_png || info.local_hero_image_png;
+          activeImg = useLocalAssets ? (localPng || pngUrl) : pngUrl;
+        } else {
+          activeImg = useLocalAssets 
+            ? (activeG.local_image_path || activeG.image_url || activeColor.local_image_path || activeColor.image_url || info.local_hero_image || info.hero_image_url) 
+            : (activeG.image_url || activeColor.image_url || info.hero_image_url);
+        }
+        activeImg = cleanAppleImgUrl(activeImg);
 
         return `
           <article class="product-card">
             <div class="card-top">
-              <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="family-badge">${info.category_id ? info.category_id.toUpperCase() : 'APPLE'}</span>
+                <span class="res-badge" title="ภาพความละเอียดสูงระดับ 2560x2560 Ultra HD">⚡ 2560px 4K</span>
+              </div>
               ${info.chip && info.chip !== '-' ? `<span class="part-number">⚡ ${info.chip}</span>` : ''}
             </div>
 
-            <div class="image-container">
+            <div class="image-container" style="${getCanvasBgStyle() || (state.isPng ? 'background: radial-gradient(circle at center, rgba(144,71,255,0.08) 0%, transparent 70%);' : '')}">
               <img id="img-${pid}" 
                    src="${activeImg}" 
                    alt="${info.name}" 
@@ -1291,6 +1983,27 @@ def search(q: str):
                    onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
             </div>
 
+            ${gallery.length > 1 || activeColor.image_url_png ? `
+              <div class="gallery-angles-bar">
+                ${gallery.map((g, aIdx) => `
+                  <button class="gallery-angle-btn ${(!state.isPng && aIdx === (state.angleIdx || 0)) ? 'active' : ''}" 
+                          onclick="selectProductAngle('${pid}', ${aIdx})"
+                          title="${g.label_th || g.angle_type}">
+                    <span>${getAngleIcon(g.angle_type)}</span>
+                    <span>${getAngleShortLabel(g.angle_type, g.label_th)}</span>
+                  </button>
+                `).join('')}
+                ${activeColor.image_url_png ? `
+                  <button class="png-badge-btn ${state.isPng ? 'active' : ''}" 
+                          onclick="toggleProductPng('${pid}')" 
+                          title="สลับเป็นรูปภาพไดคัตพื้นหลังใส (Transparent PNG)">
+                    <span>💎</span> ไดคัต PNG
+                  </button>
+                ` : ''}
+              </div>
+            ` : ''}
+
+            ${activeOption.sub_model_name ? `<div class="submodel-pill">📱 ${activeOption.sub_model_name}</div>` : ''}
             <h3 class="product-title">${info.name}</h3>
 
             <div class="product-color-selector">
@@ -1320,9 +2033,38 @@ def search(q: str):
             ` : ''}
 
             <div class="specs-pill-box">
+              ${activeOption.dimensions_mm && activeOption.dimensions_mm !== '-' ? `<span class="spec-pill" title="มิติขนาด">📏 ${activeOption.dimensions_mm}</span>` : ''}
+              ${activeOption.weight_grams && activeOption.weight_grams !== '-' ? `<span class="spec-pill" title="น้ำหนัก">⚖️ ${activeOption.weight_grams}</span>` : ''}
               ${info.screen_size && info.screen_size !== '-' ? `<span class="spec-pill">📐 ${info.screen_size}</span>` : ''}
               ${activeOption.connectivity && activeOption.connectivity !== '-' ? `<span class="spec-pill">📶 ${activeOption.connectivity}</span>` : ''}
               ${activeOption.part_number ? `<span class="spec-pill">🏷️ ${activeOption.part_number}</span>` : ''}
+            </div>
+
+            <div class="specs-grid">
+              ${activeOption.display_specs && activeOption.display_specs !== '-' ? `
+                <div class="specs-grid-item" style="grid-column: 1 / -1;">
+                  <span>🖥️ จอภาพ:</span>
+                  <b>${activeOption.display_specs}</b>
+                </div>
+              ` : ''}
+              ${activeOption.camera_specs && activeOption.camera_specs !== '-' ? `
+                <div class="specs-grid-item" style="grid-column: 1 / -1;">
+                  <span>📸 กล้อง:</span>
+                  <b>${activeOption.camera_specs}</b>
+                </div>
+              ` : ''}
+              ${activeOption.battery_specs && activeOption.battery_specs !== '-' ? `
+                <div class="specs-grid-item">
+                  <span>🔋 แบตเตอรี่:</span>
+                  <b>${activeOption.battery_specs}</b>
+                </div>
+              ` : ''}
+              ${activeOption.box_contents && activeOption.box_contents !== '-' ? `
+                <div class="specs-grid-item">
+                  <span>📦 ในกล่อง:</span>
+                  <b>${activeOption.box_contents}</b>
+                </div>
+              ` : ''}
             </div>
 
             <div class="card-bottom">
@@ -1330,21 +2072,32 @@ def search(q: str):
                 <span class="price-label">${options.length > 1 ? 'ราคาตัวเลือกที่เลือก' : 'ราคาเริ่มต้นทางการ'}</span>
                 <span class="price-val" id="price-${pid}">${displayPrice}</span>
               </div>
-              <a href="${info.product_url}" target="_blank" rel="noopener" class="btn-buy">
-                ซื้อบน Apple ↗
-              </a>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <button class="btn-deep" onclick="openDeepGalleryModal('${pid}')" title="เจาะลึกภาพสินค้าทุกมุม ชิป กล้อง และของในกล่อง">
+                  🔍 รูปเจาะลึก 4K
+                </button>
+                ${(activeOption.specs_url || info.specs_url) ? `
+                  <a href="${activeOption.specs_url || info.specs_url}" target="_blank" rel="noopener" class="btn-specs" title="ดูข้อมูลทางเทคนิคทางการบน Apple">
+                    สเปก ↗
+                  </a>
+                ` : ''}
+                <a href="${activeOption.buy_url || info.buy_url || info.product_url}" target="_blank" rel="noopener" class="btn-buy">
+                  ซื้อบน Apple ↗
+                </a>
+              </div>
             </div>
           </article>
         `;
       }).join('');
     }
 
-    // 📋 Mode 3: SKU View (330 SKUs)
+    // 📋 Mode 3: SKU View (484 SKUs)
     function renderVariantCards(grid, query) {
       let filtered = allVariants.filter(v => {
         const matchCat = activeCategory === 'all' || v.category === activeCategory;
         const matchSearch = !query || 
           (v.model_name && v.model_name.toLowerCase().includes(query)) ||
+          (v.sub_model_name && v.sub_model_name.toLowerCase().includes(query)) ||
           (v.family && v.family.toLowerCase().includes(query)) ||
           (v.color_th && v.color_th.toLowerCase().includes(query)) ||
           (v.color_en && v.color_en.toLowerCase().includes(query)) ||
@@ -1368,7 +2121,13 @@ def search(q: str):
       }
 
       grid.innerHTML = filtered.map(v => {
-        const imgSrc = useLocalAssets ? (v.local_image_path || v.image_url) : v.image_url;
+        let rawSrc = '';
+        if (useTransparentBg) {
+          rawSrc = v.local_image_nobg || (v.local_image_path ? v.local_image_path.replace('.jpg', '.png').replace('data/images/', 'data/images_transparent/') : '') || v.image_url;
+        } else {
+          rawSrc = useLocalAssets ? (v.local_image_path || v.image_url) : v.image_url;
+        }
+        const imgSrc = cleanAppleImgUrl(rawSrc);
         return `
           <article class="product-card">
             <div class="card-top">
@@ -1376,13 +2135,14 @@ def search(q: str):
               <span class="part-number">${v.part_number || v.id}</span>
             </div>
 
-            <div class="image-container">
+            <div class="image-container" style="${getCanvasBgStyle()}">
               <img src="${imgSrc || 'https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'}" 
                    alt="${v.model_name}" 
                    loading="lazy"
                    onerror="this.src='https://www.apple.com/v/iphone/home/ck/images/meta/iphone__bh930eyjnj0i_og.png'" />
             </div>
 
+            ${v.sub_model_name ? `<div class="submodel-pill">📱 ${v.sub_model_name}</div>` : ''}
             <h3 class="product-title">${v.model_name}</h3>
 
             <div class="color-swatch-row">
@@ -1391,10 +2151,39 @@ def search(q: str):
             </div>
 
             <div class="specs-pill-box">
+              ${v.dimensions_mm && v.dimensions_mm !== '-' ? `<span class="spec-pill" title="มิติขนาด">📏 ${v.dimensions_mm}</span>` : ''}
+              ${v.weight_grams && v.weight_grams !== '-' ? `<span class="spec-pill" title="น้ำหนัก">⚖️ ${v.weight_grams}</span>` : ''}
               ${v.specs_chip && v.specs_chip !== '-' ? `<span class="spec-pill">⚡ ${v.specs_chip}</span>` : ''}
               ${v.storage && v.storage !== '-' ? `<span class="spec-pill">💾 ${v.storage}</span>` : ''}
               ${v.screen_size && v.screen_size !== '-' ? `<span class="spec-pill">📐 ${v.screen_size}</span>` : ''}
               ${v.connectivity && v.connectivity !== '-' ? `<span class="spec-pill">📶 ${v.connectivity}</span>` : ''}
+            </div>
+
+            <div class="specs-grid">
+              ${v.display_specs && v.display_specs !== '-' ? `
+                <div class="specs-grid-item" style="grid-column: 1 / -1;">
+                  <span>🖥️ จอภาพ:</span>
+                  <b>${v.display_specs}</b>
+                </div>
+              ` : ''}
+              ${v.camera_specs && v.camera_specs !== '-' ? `
+                <div class="specs-grid-item" style="grid-column: 1 / -1;">
+                  <span>📸 กล้อง:</span>
+                  <b>${v.camera_specs}</b>
+                </div>
+              ` : ''}
+              ${v.battery_specs && v.battery_specs !== '-' ? `
+                <div class="specs-grid-item">
+                  <span>🔋 แบตเตอรี่:</span>
+                  <b>${v.battery_specs}</b>
+                </div>
+              ` : ''}
+              ${v.box_contents && v.box_contents !== '-' ? `
+                <div class="specs-grid-item">
+                  <span>📦 ในกล่อง:</span>
+                  <b>${v.box_contents}</b>
+                </div>
+              ` : ''}
             </div>
 
             <div class="card-bottom">
@@ -1402,9 +2191,19 @@ def search(q: str):
                 <span class="price-label">ราคาทางการ</span>
                 <span class="price-val">${v.formatted_price}</span>
               </div>
-              <a href="${v.product_url}" target="_blank" rel="noopener" class="btn-buy">
-                ซื้อบน Apple ↗
-              </a>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <button class="btn-deep" onclick="openDeepGalleryModal('${v.product_id || v.family}')" title="เจาะลึกภาพสินค้าทุกมุม ชิป กล้อง และของในกล่อง">
+                  🔍 รูปเจาะลึก 4K
+                </button>
+                ${v.specs_url ? `
+                  <a href="${v.specs_url}" target="_blank" rel="noopener" class="btn-specs" title="ดูข้อมูลทางเทคนิคบน Apple">
+                    สเปก ↗
+                  </a>
+                ` : ''}
+                <a href="${v.buy_url || v.product_url}" target="_blank" rel="noopener" class="btn-buy">
+                  ซื้อบน Apple ↗
+                </a>
+              </div>
             </div>
           </article>
         `;

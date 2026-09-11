@@ -217,6 +217,36 @@
   background: #f5f5f7;
   font-weight: 600;
 }
+.ac-res-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e6f9ed;
+  color: #1a7f37;
+  font-weight: 700;
+}
+.ac-gallery-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 6px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.ac-gallery-bar::-webkit-scrollbar { display: none; }
+.ac-gallery-btn {
+  border: 1px solid #d2d2d7;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 2px 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #555;
+  transition: all 0.15s;
+}
+.ac-gallery-btn:hover { background: #f5f5f7; color: #000; }
+.ac-gallery-btn.active { background: #0071e3; color: #fff; border-color: #0071e3; font-weight: 600; }
 .ac-name {
   font-size: 18px;
   font-weight: 700;
@@ -328,6 +358,7 @@ const AppleWidget = {
   searchQuery: '',
   selectedColors: {},   // { [pId]: colorIndex }
   selectedOptions: {},  // { [key]: optionIndex }
+  selectedAngles: {},   // { [key]: angleIndex }
 
   init() {
     if (window.APPLE_TREE) {
@@ -361,6 +392,26 @@ const AppleWidget = {
   onSearch(q) {
     this.searchQuery = q.trim().toLowerCase();
     this.render();
+  },
+
+  selectOption(cardKey, idx) {
+    this.selectedOptions[cardKey] = idx;
+    this.render();
+  },
+
+  selectFamilyColor(pId, idx) {
+    this.selectedColors[pId] = idx;
+    this.selectedAngles[pId] = 0;
+    this.render();
+  },
+
+  selectAngle(cardKey, idx) {
+    this.selectedAngles[cardKey] = idx;
+    this.render();
+  },
+
+  onSelect(variantId) {
+    alert(`คุณเลือกสินค้า: ${variantId}\n(ระบบสามารถเชื่อมต่อกับตะกร้าสินค้า Cart API ของคุณได้ทันที)`);
   },
 
   renderPills() {
@@ -419,6 +470,10 @@ const AppleWidget = {
             const curOpt = c.options[activeOptIdx] || c.options[0] || {};
             const displayPrice = curOpt.formatted_price || '฿0';
 
+            const gallery = (c.gallery && c.gallery.length > 0) ? c.gallery : [{ angle_type: 'hero', image_url: c.image_url }];
+            const aIdx = this.selectedAngles[cardKey] || 0;
+            const curImg = (gallery[aIdx] && gallery[aIdx].image_url) || c.image_url;
+
             // Storage chips
             let chipsHtml = '';
             if (c.options && c.options.length > 1) {
@@ -440,14 +495,25 @@ const AppleWidget = {
             cardsHtml += `
               <div class="ac-card">
                 <div class="ac-media">
-                  <img src="${c.image_url}" alt="${info.name} สี${c.name_th}" loading="lazy">
+                  <img src="${curImg}" alt="${info.name} สี${c.name_th}" loading="lazy">
                   <div class="ac-color-tag">
                     <span class="ac-dot" style="background:${c.color_hex}"></span>
                     <span>${c.name_th}</span>
                   </div>
                 </div>
+                ${gallery.length > 1 ? `
+                  <div class="ac-gallery-bar">
+                    ${gallery.map((g, gIdx) => `
+                      <button class="ac-gallery-btn ${gIdx === aIdx ? 'active' : ''}" 
+                              onclick="AppleWidget.selectAngle('${cardKey}', ${gIdx})">
+                        ${g.angle_type === 'hero' ? '📱 หน้า' : (g.angle_type === 'back' ? '📸 หลัง' : (g.angle_type === 'side' ? '📏 ข้าง' : (g.angle_type === 'box' ? '📦 กล่อง' : g.angle_type)))}
+                      </button>
+                    `).join('')}
+                  </div>
+                ` : ''}
                 <div class="ac-body">
                   <div class="ac-badges">
+                    <span class="ac-res-badge">⚡ 2560px 4K</span>
                     <span class="ac-badge">⚡ ${info.chip}</span>
                     ${info.screen_size && info.screen_size !== '-' ? `<span class="ac-badge">📐 ${info.screen_size}</span>` : ''}
                   </div>
@@ -482,6 +548,10 @@ const AppleWidget = {
           const activeColor = colors[activeCIdx] || colors[0] || {};
           const firstOpt = (activeColor.options || [])[0] || {};
 
+          const gallery = (activeColor.gallery && activeColor.gallery.length > 0) ? activeColor.gallery : [{ angle_type: 'hero', image_url: activeColor.image_url }];
+          const aIdx = this.selectedAngles[pId] || 0;
+          const activeImg = (gallery[aIdx] && gallery[aIdx].image_url) || activeColor.image_url;
+
           const swatchesHtml = colors.map((c, idx) => `
             <button 
               class="ac-swatch ${idx === activeCIdx ? 'active' : ''}" 
@@ -494,10 +564,21 @@ const AppleWidget = {
           cardsHtml += `
             <div class="ac-card">
               <div class="ac-media">
-                <img src="${activeColor.image_url}" alt="${info.name}" loading="lazy">
+                <img src="${activeImg}" alt="${info.name}" loading="lazy">
               </div>
+              ${gallery.length > 1 ? `
+                <div class="ac-gallery-bar">
+                  ${gallery.map((g, gIdx) => `
+                    <button class="ac-gallery-btn ${gIdx === aIdx ? 'active' : ''}" 
+                            onclick="AppleWidget.selectAngle('${pId}', ${gIdx})">
+                      ${g.angle_type === 'hero' ? '📱 หน้า' : (g.angle_type === 'back' ? '📸 หลัง' : (g.angle_type === 'side' ? '📏 ข้าง' : (g.angle_type === 'box' ? '📦 กล่อง' : g.angle_type)))}
+                    </button>
+                  `).join('')}
+                </div>
+              ` : ''}
               <div class="ac-body">
                 <div class="ac-badges">
+                  <span class="ac-res-badge">⚡ 2560px 4K</span>
                   <span class="ac-badge">⚡ ${info.chip}</span>
                   ${info.screen_size && info.screen_size !== '-' ? `<span class="ac-badge">📐 ${info.screen_size}</span>` : ''}
                 </div>

@@ -31,6 +31,7 @@ export default function AppleCatalog({
   const [viewMode, setViewMode] = useState('color'); // 'color' (Color Showcase) or 'product' (Family)
   const [selectedColors, setSelectedColors] = useState({}); // { [productId]: colorIndex }
   const [selectedStorages, setSelectedStorages] = useState({}); // { [productId]: optionIndex }
+  const [selectedAngles, setSelectedAngles] = useState({}); // { [key]: angleIndex }
 
   // โหลดข้อมูลหากไม่ได้ส่ง initialTreeData เข้ามา
   useEffect(() => {
@@ -88,6 +89,11 @@ export default function AppleCatalog({
         if (viewMode === 'color') {
           // โหมด Color Showcase: 1 การ์ด = 1 สี (รูปไม่ซ้ำ 100%)
           colors.forEach((c) => {
+            const gall = (c.gallery || []).map(g => ({
+              ...g,
+              imageUrl: useLocalImages ? `${imageBaseUrl}${g.local_image_path}` : g.image_url
+            }));
+
             list.push({
               key: `${pId}-${c.color_id}`,
               productId: pId,
@@ -99,7 +105,8 @@ export default function AppleCatalog({
               colorTh: c.name_th,
               colorEn: c.name_en,
               colorHex: c.color_hex,
-              imageUrl: useLocalImages ? `${imageBaseUrl}${c.local_image_path}` : c.image_url,
+              imageUrl: useLocalImages ? `${imageBaseUrl}${c.local_image_path}` : (c.image_url_highres || c.image_url),
+              gallery: gall,
               options: c.options || [],
               minPrice: Math.min(...(c.options || []).map((o) => o.price_thb || 0)),
               maxPrice: Math.max(...(c.options || []).map((o) => o.price_thb || 0)),
@@ -108,6 +115,14 @@ export default function AppleCatalog({
           });
         } else {
           // โหมด Product Family: 1 การ์ด = 1 รุ่นสินค้า (สลับสีในตัว)
+          const mappedColors = colors.map(c => ({
+            ...c,
+            gallery: (c.gallery || []).map(g => ({
+              ...g,
+              imageUrl: useLocalImages ? `${imageBaseUrl}${g.local_image_path}` : g.image_url
+            }))
+          }));
+
           list.push({
             key: pId,
             productId: pId,
@@ -115,7 +130,7 @@ export default function AppleCatalog({
             productName: info.name,
             chip: info.chip,
             screenSize: info.screen_size,
-            colors: colors,
+            colors: mappedColors,
             productUrl: info.product_url,
           });
         }
@@ -283,6 +298,10 @@ export default function AppleCatalog({
             const activeOptIdx = selectedStorages[item.key] || 0;
             const currentOption = item.options[activeOptIdx] || item.options[0] || {};
             const displayPrice = currentOption.formatted_price || `฿${item.minPrice.toLocaleString()}`;
+            const gallery = item.gallery || [];
+            const activeAngleIdx = selectedAngles[item.key] || 0;
+            const activeG = gallery[activeAngleIdx] || gallery[0];
+            const currentImg = activeG?.imageUrl || item.imageUrl;
 
             return (
               <div
@@ -309,8 +328,24 @@ export default function AppleCatalog({
                     position: 'relative',
                   }}
                 >
+                  <span
+                    style={{
+                      position: 'absolute',
+                      top: '12px',
+                      left: '14px',
+                      fontSize: '10px',
+                      fontWeight: 700,
+                      padding: '3px 7px',
+                      borderRadius: '6px',
+                      backgroundColor: '#e6f9ed',
+                      color: '#1a7f37',
+                      border: '1px solid rgba(26,127,55,0.2)',
+                    }}
+                  >
+                    ⚡ 2560px 4K
+                  </span>
                   <img
-                    src={item.imageUrl}
+                    src={currentImg}
                     alt={`${item.productName} ${item.colorTh}`}
                     loading="lazy"
                     style={{
@@ -343,12 +378,47 @@ export default function AppleCatalog({
                         height: '12px',
                         borderRadius: '50%',
                         backgroundColor: item.colorHex,
-                        border: '1px solid rgba(0,0,0,0.2)',
+                        border: '1px solid rgba(0,0,0,0.1)',
                       }}
                     />
                     <span>{item.colorTh}</span>
                   </div>
                 </div>
+
+                {/* Multi-angle Gallery Row */}
+                {gallery.length > 1 && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      gap: '4px',
+                      padding: '6px 12px',
+                      overflowX: 'auto',
+                      backgroundColor: '#f5f5f7',
+                      borderTop: '1px solid #eee',
+                    }}
+                  >
+                    {gallery.map((g, gIdx) => (
+                      <button
+                        key={g.angle_type || gIdx}
+                        onClick={() => setSelectedAngles((prev) => ({ ...prev, [item.key]: gIdx }))}
+                        style={{
+                          border: '1px solid',
+                          borderColor: gIdx === activeAngleIdx ? '#0071e3' : '#d2d2d7',
+                          backgroundColor: gIdx === activeAngleIdx ? '#0071e3' : '#fff',
+                          color: gIdx === activeAngleIdx ? '#fff' : '#555',
+                          fontSize: '10px',
+                          fontWeight: gIdx === activeAngleIdx ? 600 : 400,
+                          padding: '3px 7px',
+                          borderRadius: '5px',
+                          cursor: 'pointer',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {g.angle_type === 'hero' ? '📱 หน้า' : (g.angle_type === 'back' ? '📸 หลัง' : (g.angle_type === 'side' ? '📏 ข้าง' : (g.angle_type === 'box' ? '📦 กล่อง' : (g.label_th || g.angle_type))))}
+                      </button>
+                    ))}
+                  </div>
+                )}
 
                 {/* Content Section */}
                 <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
@@ -434,6 +504,11 @@ export default function AppleCatalog({
             const currentOption = (currentColor.options || [])[activeOptIdx] || (currentColor.options || [])[0] || {};
             const imgUrl = useLocalImages ? `${imageBaseUrl}${currentColor.local_image_path}` : currentColor.image_url;
 
+            const gallery = currentColor.gallery || [];
+            const activeAngleIdx = selectedAngles[item.key] || 0;
+            const activeG = gallery[activeAngleIdx] || gallery[0];
+            const displayImg = activeG?.imageUrl || imgUrl;
+
             return (
               <div
                 key={item.key}
@@ -456,10 +531,27 @@ export default function AppleCatalog({
                     alignItems: 'center',
                     justifyContent: 'center',
                     height: '240px',
+                    position: 'relative',
                   }}
                 >
+                  <span
+                    style={{
+                      position: 'absolute',
+                      top: '12px',
+                      left: '14px',
+                      fontSize: '10px',
+                      fontWeight: 700,
+                      padding: '3px 7px',
+                      borderRadius: '6px',
+                      backgroundColor: '#e6f9ed',
+                      color: '#1a7f37',
+                      border: '1px solid rgba(26,127,55,0.2)',
+                    }}
+                  >
+                    ⚡ 2560px 4K
+                  </span>
                   <img
-                    src={imgUrl}
+                    src={displayImg}
                     alt={`${item.productName} ${currentColor.name_th}`}
                     loading="lazy"
                     style={{
@@ -469,6 +561,41 @@ export default function AppleCatalog({
                     }}
                   />
                 </div>
+
+                {/* Multi-angle Gallery Row */}
+                {gallery.length > 1 && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      gap: '4px',
+                      padding: '6px 12px',
+                      overflowX: 'auto',
+                      backgroundColor: '#f5f5f7',
+                      borderTop: '1px solid #eee',
+                    }}
+                  >
+                    {gallery.map((g, gIdx) => (
+                      <button
+                        key={g.angle_type || gIdx}
+                        onClick={() => setSelectedAngles((prev) => ({ ...prev, [item.key]: gIdx }))}
+                        style={{
+                          border: '1px solid',
+                          borderColor: gIdx === activeAngleIdx ? '#0071e3' : '#d2d2d7',
+                          backgroundColor: gIdx === activeAngleIdx ? '#0071e3' : '#fff',
+                          color: gIdx === activeAngleIdx ? '#fff' : '#555',
+                          fontSize: '10px',
+                          fontWeight: gIdx === activeAngleIdx ? 600 : 400,
+                          padding: '3px 7px',
+                          borderRadius: '5px',
+                          cursor: 'pointer',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {g.angle_type === 'hero' ? '📱 หน้า' : (g.angle_type === 'back' ? '📸 หลัง' : (g.angle_type === 'side' ? '📏 ข้าง' : (g.angle_type === 'box' ? '📦 กล่อง' : (g.label_th || g.angle_type))))}
+                      </button>
+                    ))}
+                  </div>
+                )}
 
                 {/* Content */}
                 <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
@@ -497,7 +624,10 @@ export default function AppleCatalog({
                           <button
                             key={c.color_id}
                             title={c.name_th}
-                            onClick={() => setSelectedColors({ ...selectedColors, [item.key]: cIdx })}
+                            onClick={() => {
+                              setSelectedColors({ ...selectedColors, [item.key]: cIdx });
+                              setSelectedAngles((prev) => ({ ...prev, [item.key]: 0 }));
+                            }}
                             style={{
                               width: '26px',
                               height: '26px',

@@ -76,6 +76,7 @@
         >
           <!-- Image -->
           <div class="card-media">
+            <span class="res-badge">⚡ 2560px 4K</span>
             <img
               :src="getImageUrl(item)"
               :alt="`${item.productName} สี${item.colorTh}`"
@@ -89,6 +90,18 @@
               ></span>
               <span>{{ item.colorTh }}</span>
             </div>
+          </div>
+
+          <!-- Multi-angle Gallery Row -->
+          <div v-if="item.gallery && item.gallery.length > 1" class="gallery-angles-bar">
+            <button
+              v-for="(g, gIdx) in item.gallery"
+              :key="g.angle_type || gIdx"
+              :class="['gallery-angle-btn', { active: (selectedAngles[item.key] || 0) === gIdx }]"
+              @click="selectAngle(item.key, gIdx)"
+            >
+              {{ g.angle_type === 'hero' ? '📱 หน้า' : (g.angle_type === 'back' ? '📸 หลัง' : (g.angle_type === 'side' ? '📏 ข้าง' : (g.angle_type === 'box' ? '📦 กล่อง' : (g.label_th || g.angle_type)))) }}
+            </button>
           </div>
 
           <!-- Info -->
@@ -145,12 +158,25 @@
           class="catalog-card"
         >
           <div class="card-media">
+            <span class="res-badge">⚡ 2560px 4K</span>
             <img
               :src="getFamilyImageUrl(item)"
               :alt="item.productName"
               loading="lazy"
               class="product-image"
             />
+          </div>
+
+          <!-- Multi-angle Gallery Row -->
+          <div v-if="getActiveFamilyColor(item).gallery && getActiveFamilyColor(item).gallery.length > 1" class="gallery-angles-bar">
+            <button
+              v-for="(g, gIdx) in getActiveFamilyColor(item).gallery"
+              :key="g.angle_type || gIdx"
+              :class="['gallery-angle-btn', { active: (selectedAngles[item.key] || 0) === gIdx }]"
+              @click="selectAngle(item.key, gIdx)"
+            >
+              {{ g.angle_type === 'hero' ? '📱 หน้า' : (g.angle_type === 'back' ? '📸 หลัง' : (g.angle_type === 'side' ? '📏 ข้าง' : (g.angle_type === 'box' ? '📦 กล่อง' : (g.label_th || g.angle_type)))) }}
+            </button>
           </div>
 
           <div class="card-content">
@@ -220,6 +246,7 @@ const selectedCategory = ref('all');
 const searchQuery = ref('');
 const selectedOptions = ref({});
 const selectedColors = ref({});
+const selectedAngles = ref({});
 
 onMounted(async () => {
   if (props.initialTree) return;
@@ -276,6 +303,7 @@ const colorItems = computed(() => {
           colorHex: c.color_hex,
           imageUrl: c.image_url,
           localImagePath: c.local_image_path,
+          gallery: c.gallery || [],
           options: c.options || [],
         });
       });
@@ -329,16 +357,21 @@ const filteredProductItems = computed(() => {
     if (!q) return matchesCat;
     return (
       matchesCat &&
-      (item.productName.toLowerCase().includes(q) || item.chip.toLowerCase().includes(q))
+      (item.productName.toLowerCase().includes(q) ||
+        item.chip.toLowerCase().includes(q))
     );
   });
 });
 
 function getImageUrl(item) {
-  if (props.useLocalImages && item.localImagePath) {
-    return `${props.imageBaseUrl}${item.localImagePath}`;
+  const gall = item.gallery || [];
+  const aIdx = selectedAngles.value[item.key] || 0;
+  const activeG = gall[aIdx] || gall[0];
+  if (props.useLocalImages) {
+    const p = activeG?.local_image_path || item.localImagePath;
+    if (p) return `${props.imageBaseUrl}${p}`;
   }
-  return item.imageUrl;
+  return activeG?.image_url || item.imageUrl;
 }
 
 function selectOption(key, idx) {
@@ -347,6 +380,11 @@ function selectOption(key, idx) {
 
 function selectColor(key, idx) {
   selectedColors.value[key] = idx;
+  selectedAngles.value[key] = 0;
+}
+
+function selectAngle(key, idx) {
+  selectedAngles.value[key] = idx;
 }
 
 function getActiveOption(item) {
@@ -371,10 +409,14 @@ function getActiveFamilyOption(item) {
 
 function getFamilyImageUrl(item) {
   const col = getActiveFamilyColor(item);
-  if (props.useLocalImages && col.local_image_path) {
-    return `${props.imageBaseUrl}${col.local_image_path}`;
+  const gall = col.gallery || [];
+  const aIdx = selectedAngles.value[item.key] || 0;
+  const activeG = gall[aIdx] || gall[0];
+  if (props.useLocalImages) {
+    const p = activeG?.local_image_path || col.local_image_path;
+    if (p) return `${props.imageBaseUrl}${p}`;
   }
-  return col.image_url;
+  return activeG?.image_url || col.image_url;
 }
 
 function getFamilyStartingPrice(item) {
