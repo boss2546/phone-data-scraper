@@ -396,6 +396,132 @@
       color: #fff;
       font-size: 1.2rem;
     }
+
+    .btn-guide {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, #0071e3 0%, #6366f1 100%);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0, 113, 227, 0.4);
+      transition: all 0.2s ease;
+    }
+    .btn-guide:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 113, 227, 0.6);
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(14px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+    .modal-backdrop.open {
+      display: flex;
+    }
+    .modal-content {
+      background: #141722;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 900px;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.9);
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: rgba(255,255,255,0.08);
+      border: none;
+      color: #fff;
+      font-size: 1.4rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .modal-close:hover {
+      background: rgba(255,255,255,0.18);
+    }
+    .modal-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .modal-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .tab-row {
+      display: flex;
+      gap: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 10px 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s;
+    }
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .code-box {
+      background: #090a0f;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 18px;
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .file-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .file-badge {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      color: #93c5fd;
+    }
   </style>
 </head>
 <body>
@@ -416,7 +542,120 @@
       <div class="stats-item">ราคาเริ่มต้น: <b id="statMin">-</b></div>
       <div class="stats-item">ราคาสูงสุด: <b id="statMax">-</b></div>
     </div>
+
+    <div>
+      <button class="btn-guide" onclick="openDevModal()">
+        🛠️ ดูวิธีนำฐานข้อมูลนี้ไปใส่ในเว็บของคุณ (Developer Guide & Code Snippets)
+      </button>
+    </div>
   </header>
+
+  <!-- Developer Guide Modal -->
+  <div class="modal-backdrop" id="devModal" onclick="if(event.target===this)closeDevModal()">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeDevModal()">✕</button>
+      <h2 class="modal-title">📦 คู่มือการนำฐานข้อมูลไปใช้งานบนเว็บไซต์</h2>
+      <p class="modal-desc">ฐานข้อมูลถูกจัดเตรียมไว้ 4 รูปแบบ (SQLite, JSON, SQL Dump, CSV) พร้อม Helper SDK ที่นำไปใส่ในเว็บของคุณได้ทันที:</p>
+      
+      <div class="file-badges">
+        <span class="file-badge">🗄️ apple_catalog.db (SQLite)</span>
+        <span class="file-badge">📜 apple_catalog.sql (SQL Dump)</span>
+        <span class="file-badge">🌳 apple_catalog_tree.json (Selector Tree)</span>
+        <span class="file-badge">⚡ apple_catalog.js (Browser Bundle)</span>
+        <span class="file-badge">📊 apple_all_variants.csv (Excel)</span>
+      </div>
+
+      <div class="tab-row">
+        <button class="tab-btn active" onclick="switchTab('tab-js', this)">1. JavaScript (Frontend)</button>
+        <button class="tab-btn" onclick="switchTab('tab-sql', this)">2. SQL / SQLite</button>
+        <button class="tab-btn" onclick="switchTab('tab-py', this)">3. Python (FastAPI/Flask)</button>
+        <button class="tab-btn" onclick="switchTab('tab-tree', this)">4. E-Commerce Tree JSON</button>
+      </div>
+
+      <div id="tab-js" class="tab-pane">
+        <div class="code-box">&lt;!-- 1. นำเข้าไฟล์ Bundle และ Helper SDK ในหน้าเว็บของคุณ --&gt;
+&lt;script src="data/exports/apple_catalog.js"&gt;&lt;/script&gt;
+&lt;script src="data/exports/apple_db_helper.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  // 1. ดึงสินค้าทั้งหมด
+  console.log("จำนวนสินค้าทั้งหมด:", AppleCatalog.getAll().length);
+
+  // 2. ดึงเฉพาะ iPhone
+  const iphones = AppleCatalog.getProductsByCategory('iphone');
+
+  // 3. กรองสินค้าตามเงื่อนไข: iPhone สีชมพู งบไม่เกิน 35,000 บาท
+  const budgetPinks = AppleCatalog.filter({
+    category: 'iphone',
+    color: 'Pink',
+    maxPrice: 35000
+  });
+  console.table(budgetPinks);
+
+  // 4. ค้นหาสินค้าตามคำค้นหา
+  const results = AppleCatalog.filter({ query: 'iPhone 16 128GB' });
+&lt;/script&gt;</div>
+      </div>
+
+      <div id="tab-sql" class="tab-pane" style="display: none;">
+        <div class="code-box">-- นำเข้า apple_catalog.sql เข้าสู่ MySQL, PostgreSQL หรือ Supabase:
+-- หรือคิวรีบน SQLite Database (apple_catalog.db) ได้ทันที:
+
+-- ค้นหาสินค้าพร้อมชื่อรุ่น สี ความจุ และราคา (ใช้ View v_catalog ไม่ต้องเขียน JOIN เอง)
+SELECT product_name, model_name, color_th, storage, formatted_price 
+FROM v_catalog 
+WHERE category_id = 'iphone' AND price_thb &lt;= 40000 
+ORDER BY price_thb ASC;
+
+-- สรุปรายชื่อตระกูลสินค้า พร้อมช่วงราคาและตัวเลือกสีทั้งหมด
+SELECT category, product_name, chip, screen_size, min_price_thb, colors_available 
+FROM v_product_summary;</div>
+      </div>
+
+      <div id="tab-py" class="tab-pane" style="display: none;">
+        <div class="code-box"># ตัวอย่างการนำไปทำ REST API ใน Backend (FastAPI / Flask)
+from fastapi import FastAPI
+from apple_db_helper import AppleDatabase
+
+app = FastAPI()
+db = AppleDatabase()
+
+@app.get("/api/products")
+def get_products(category: str = None):
+    return db.get_products(category_id=category)
+
+@app.get("/api/variants")
+def get_variants(product_id: str = None, max_price: int = None):
+    return db.get_variants(product_id=product_id, max_price=max_price)
+
+@app.get("/api/search")
+def search(q: str):
+    return db.search(q)</div>
+      </div>
+
+      <div id="tab-tree" class="tab-pane" style="display: none;">
+        <div class="code-box">// โครงสร้างไฟล์ apple_catalog_tree.json ออกแบบมาสำหรับทำ UI Configurator:
+// เลือกหมวดหมู่ ➔ เลือกรุ่น ➔ เลือกสี (เห็นรูปสีนั้น) ➔ เลือกความจุ/หน้าจอ (เห็นราคา)
+{
+  "iphone": {
+    "products": {
+      "iphone-16": {
+        "product_info": { "name": "iPhone 16", "chip": "ชิป A18", "screen_size": "6.1\"" },
+        "colors": [
+          {
+            "name_th": "ชมพู", "color_hex": "#E3A3B1", "image_url": "...",
+            "options": [
+              { "storage": "128GB", "price_thb": 30900, "formatted_price": "฿30,900" }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}</div>
+      </div>
+    </div>
+  </div>
 
   <div class="controls-container">
     <div class="controls-card">
@@ -445,6 +684,7 @@
   </main>
 
   <script src="data/exports/apple_catalog.js"></script>
+  <script src="data/exports/apple_db_helper.js"></script>
   <script>
     let allVariants = [];
     let activeCategory = 'all';
@@ -621,10 +861,21 @@
       renderCatalog();
     });
 
-    document.getElementById('sortSelect').addEventListener('change', e => {
-      sortMode = e.target.value;
-      renderCatalog();
-    });
+    // Modal Controls
+    function openDevModal() {
+      document.getElementById('devModal').classList.add('open');
+    }
+
+    function closeDevModal() {
+      document.getElementById('devModal').classList.remove('open');
+    }
+
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-pane').forEach(p => p.style.display = 'none');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).style.display = 'block';
+      btn.classList.add('active');
+    }
 
     loadDatabase();
   </script>

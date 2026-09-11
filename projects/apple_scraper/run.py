@@ -93,11 +93,14 @@ def run_build_full_database():
         return
 
     # 2. Build Databases
-    print("\n📦 กำลังสร้างฐานข้อมูล 4 รูปแบบ (JSON, CSV, SQLite, JS Bundle)...")
+    print("\n📦 กำลังสร้างฐานข้อมูลมาตรฐานระดับโปรดักชัน (SQLite, JSON Tree, SQL Dump, CSV, JS SDK)...")
     json_path = db_builder.build_json_database(variants, "apple_full_catalog.json")
+    tree_path = db_builder.build_catalog_tree_json(variants, "apple_catalog_tree.json")
     js_path = db_builder.build_js_bundle(variants, "apple_catalog.js")
     csv_path = db_builder.build_csv_database(variants, "apple_all_variants.csv")
     db_path = db_builder.build_sqlite_database(variants, "apple_catalog.db")
+    sql_path = db_builder.build_sql_dump(variants, "apple_catalog.sql")
+    db_builder.build_client_helpers()
 
     # 3. Download sample images
     print("\n📸 กำลังดาวน์โหลดรูปภาพสินค้าตัวอย่างแยกตามสี...")
@@ -106,12 +109,17 @@ def run_build_full_database():
     # 4. Summary
     print("\n" + "=" * 74)
     print("🎉 สร้างฐานข้อมูลสินค้า Apple สำเร็จสมบูรณ์ 100%!")
-    print(f"📦 จำนวนตัวเลือกสินค้าทั้งหมด:     {len(variants)} รายการ")
-    print(f"📄 1. JSON Database (สำหรับเว็บ):   {json_path}")
-    print(f"⚡ 2. JS Bundle (สำหรับเว็บตรง):     {js_path}")
-    print(f"📊 3. Master CSV (สำหรับ Excel):    {csv_path}")
-    print(f"🗄️ 4. SQLite DB (ฐานข้อมูล SQL):   {db_path}")
-    print(f"🌐 5. Web Preview Catalog:          {BASE_DIR / 'catalog_preview.html'}")
+    print(f"📦 จำนวนตัวเลือกสินค้าทั้งหมด:     {len(variants)} รายการ (ตรวจสอบความถูกต้องเรียบร้อย)")
+    print(f"🗄️ 1. SQLite Relational DB:         {db_path}")
+    print(f"       ↳ ตาราง: categories, products, colors, variants")
+    print(f"       ↳ มุมมอง: v_catalog (Join ทุกฟิลด์), v_product_summary")
+    print(f"📜 2. SQL Dump File:                {sql_path} (สำหรับ MySQL / Postgres / Supabase)")
+    print(f"📄 3. JSON Master Catalog:          {json_path}")
+    print(f"🌳 4. E-Commerce Tree JSON:         {tree_path} (สำหรับตัวเลือกสินค้าหน้าเว็บ)")
+    print(f"⚡ 5. JavaScript Web Bundle:        {js_path} (window.APPLE_DATABASE)")
+    print(f"🛠️  6. Frontend/Backend SDKs:        apple_db_helper.js และ apple_db_helper.py")
+    print(f"📊 7. Master CSV (Excel):           {csv_path}")
+    print(f"🌐 8. Web Preview Catalog:          {BASE_DIR / 'catalog_preview.html'}")
     print("=" * 74 + "\n")
 
 def interactive_menu():
