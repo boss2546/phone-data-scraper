@@ -17,6 +17,7 @@ ENV/
 # Playwright & Browser sessions
 data/facebook/session/
 fb_session/
+projects/*/data/session/
 *.session
 *.log
 
@@ -31,6 +32,8 @@ node_modules/
 npm-debug.log
 
 # Scraper Caches
+projects/*/data/raw_html/
+projects/*/data/videos/
 projects/apple_scraper/data/raw_html/
 projects/apple_scraper/data/videos/
 

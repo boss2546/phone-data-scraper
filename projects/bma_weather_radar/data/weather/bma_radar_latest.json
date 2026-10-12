@@ -1,0 +1,19 @@
+{
+  "timestamp": 1791813010,
+  "last_updated_iso": "2026-10-12T20:50:10.813191",
+  "bulletin_raw": "ไม่พบรายงานสด",
+  "status": "rain_detected",
+  "images": {
+    "nongkam": {
+      "station_name": "สถานีเรดาร์หนองแขม (NK)",
+      "coverage": "ฝั่งธนบุรี / ภาคตะวันตก / ภาคใต้ตอนบน",
+      "file": null
+    },
+    "nongchok": {
+      "station_name": "สถานีเรดาร์หนองจอก (NC)",
+      "coverage": "ฝั่งพระนคร / ภาคตะวันออก / ภาคกลางตอนบน",
+      "file": null
+    }
+  },
+  "source_url": "https://weather.bangkok.go.th/Radar/RadarAnimationNk.aspx"
+}

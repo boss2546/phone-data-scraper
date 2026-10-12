@@ -1,0 +1,2 @@
+# Market Intelligence Dependencies
+# ใช้ standard libraries (json, csv, pathlib)

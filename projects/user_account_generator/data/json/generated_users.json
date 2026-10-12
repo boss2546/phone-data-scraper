@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "first_name": "ชลธิชา",
+    "last_name": "รัตนเดชา",
+    "full_name": "ชลธิชา รัตนเดชา",
+    "username": "user_6508_1",
+    "email": "user_6508_1@hotmail.com",
+    "password": "ewG1uH0v$j2G",
+    "phone": "0869333611",
+    "role": "customer",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "first_name": "วรัญญา",
+    "last_name": "สุขสมบูรณ์",
+    "full_name": "วรัญญา สุขสมบูรณ์",
+    "username": "user_8942_2",
+    "email": "user_8942_2@hotmail.com",
+    "password": "Bt@wZn5qdZDv",
+    "phone": "0860829734",
+    "role": "customer",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "first_name": "ชลธิชา",
+    "last_name": "เจริญกิจ",
+    "full_name": "ชลธิชา เจริญกิจ",
+    "username": "user_7845_3",
+    "email": "user_7845_3@yahoo.com",
+    "password": "qA0H1PlDs5BH",
+    "phone": "0860813947",
+    "role": "customer",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "first_name": "วรัญญา",
+    "last_name": "รุ่งเรือง",
+    "full_name": "วรัญญา รุ่งเรือง",
+    "username": "user_8661_4",
+    "email": "user_8661_4@yahoo.com",
+    "password": "!rfP6@sGy5co",
+    "phone": "0834817367",
+    "role": "customer",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "first_name": "กมลวรรณ",
+    "last_name": "รัตนเดชา",
+    "full_name": "กมลวรรณ รัตนเดชา",
+    "username": "user_9649_5",
+    "email": "user_9649_5@gmail.com",
+    "password": "JqITUfeucLmn",
+    "phone": "0841614770",
+    "role": "customer",
+    "status": "active"
+  }
+]

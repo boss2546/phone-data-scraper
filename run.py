@@ -108,7 +108,23 @@ def interactive_menu():
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         arg = sys.argv[1].lower()
-        if arg in ["status", "overview", "info"]:
+        if arg in ["--help", "-h", "help"]:
+            print_banner()
+            print("การใช้งานคำสั่ง (CLI Usage):")
+            print("  python3 run.py                        # เปิดเมนูแบบ Interactive")
+            print("  python3 run.py status                 # ดูภาพรวมสถานะทุกโมดูลและจำนวนไฟล์")
+            print("  python3 run.py <alias> [args...]      # สั่งรันโมดูลย่อยพร้อมส่งพารามิเตอร์")
+            print("\nคำสั่งย่อของแต่ละโมดูล (Available Aliases):")
+            print("  fb, facebook        -> Facebook Scraper")
+            print("  radar, weather, bma -> BMA Weather Radar")
+            print("  compasia, shopify   -> CompAsia Scraper")
+            print("  ig, instagram       -> Instagram Scraper")
+            print("  advice              -> Advice Scraper")
+            print("  market, analyze     -> Market Intelligence")
+            print("  users, mod          -> User Account Generator")
+            print("  apple, ap           -> Apple Scraper")
+            print("  status, overview    -> ตรวจสอบสถานะข้อมูลทั้งหมด")
+        elif arg in ["status", "overview", "info"]:
             print_banner()
             print_status_overview()
         elif arg in ALIASES:
@@ -118,6 +134,6 @@ if __name__ == "__main__":
             launch_subproject(arg, extra_args=sys.argv[2:])
         else:
             print(f"❌ ไม่รู้จักคำสั่ง '{arg}'")
-            print("💡 คำสั่งที่รองรับ: fb, radar, compasia, ig, advice, market, users, apple, status")
+            print("💡 คำสั่งที่รองรับ: fb, radar, compasia, ig, advice, market, users, apple, status (ดูวิธีใช้: python3 run.py -h)")
     else:
         interactive_menu()

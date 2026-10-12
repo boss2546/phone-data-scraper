@@ -1,0 +1,2 @@
+# User Account Generator Dependencies
+# ใช้ standard libraries (json, csv, random, string)

@@ -1,0 +1,11 @@
+# Master Requirements for แซนบล็อกดึงข้อมูล (Phone Data Scraper Suite)
+# ---------------------------------------------------------------
+# Core Scraping & Parsing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Browser Automation & Dynamic Content
+playwright>=1.40.0
+
+# Image Processing (Apple Transparent PNG & Media Pipeline)
+Pillow>=10.0.0
