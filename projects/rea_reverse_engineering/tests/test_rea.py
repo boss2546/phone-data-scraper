@@ -43,6 +43,23 @@ class TestReaRunner(unittest.TestCase):
         norm = res.get("data", {}).get("normalized_result", {})
         self.assertGreaterEqual(norm.get("total_records", 0), 1)
 
+    def test_ecommerce_har_and_toolkit(self):
+        from scraper_re_toolkit import ScraperReverseToolkit
+        har_path = str(BASE_DIR / "data" / "samples" / "ecommerce_market_traffic.har")
+        res = self.runner.inspect_har(har_path)
+        self.assertTrue(res["success"], f"Failed inspect_har: {res.get('raw_stderr')}")
+        recipe_data = ScraperReverseToolkit.har_to_scraper_recipe(res["data"])
+        self.assertEqual(recipe_data["total_endpoints"], 1)
+        code = recipe_data["recipes"][0]["generated_code"]
+        self.assertIn("requests.post", code)
+        self.assertIn("iPhone 15 Pro", code)
+
+    def test_inspect_plist_real(self):
+        res = self.runner.inspect_plist("/System/Applications/TextEdit.app")
+        self.assertTrue(res["success"], f"Failed inspect_plist: {res.get('raw_stderr')}")
+        norm = res.get("data", {}).get("normalized_result", {})
+        self.assertEqual(norm.get("bundle", {}).get("identifier"), "com.apple.TextEdit")
+
     def test_mcp_doctor(self):
         res = self.runner.mcp_doctor()
         self.assertTrue(res["success"], f"Failed mcp_doctor: {res.get('raw_stderr')}")

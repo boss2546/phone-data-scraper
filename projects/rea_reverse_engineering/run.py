@@ -29,8 +29,24 @@ def format_json_output(data):
     return str(data)
 
 
+def resolve_target_path(target: str) -> str:
+    if not target:
+        return target
+    p = Path(target)
+    if p.exists():
+        return str(p.resolve())
+    ws_cand = BASE_DIR.parent.parent / target
+    if ws_cand.exists():
+        return str(ws_cand.resolve())
+    mod_cand = BASE_DIR / target
+    if mod_cand.exists():
+        return str(mod_cand.resolve())
+    return target
+
+
 def handle_signature(runner: ReaRunner, target: str = None):
     target = target or input("📁 ระบุพาธไฟล์ Binary (ค่าเริ่มต้น: /bin/ls): ").strip() or "/bin/ls"
+    target = resolve_target_path(target)
     print(f"\n🔍 กำลังตรวจสอบ Digital Signature: {target} ...")
     res = runner.inspect_signature(target)
     if res["success"]:
@@ -48,6 +64,7 @@ def handle_signature(runner: ReaRunner, target: str = None):
 
 def handle_architectures(runner: ReaRunner, target: str = None):
     target = target or input("📁 ระบุพาธไฟล์ Binary (ค่าเริ่มต้น: /bin/ls): ").strip() or "/bin/ls"
+    target = resolve_target_path(target)
     print(f"\n🏗️ กำลังวิเคราะห์สถาปัตยกรรม CPU: {target} ...")
     res = runner.list_architectures(target)
     if res["success"]:
@@ -64,6 +81,7 @@ def handle_architectures(runner: ReaRunner, target: str = None):
 
 def handle_plist(runner: ReaRunner, target: str = None):
     target = target or input("📱 ระบุพาธ App Bundle หรือ Plist (ค่าเริ่มต้น: /System/Applications/Calculator.app): ").strip() or "/System/Applications/Calculator.app"
+    target = resolve_target_path(target)
     print(f"\n📱 กำลังถอดรหัส Property List: {target} ...")
     res = runner.inspect_plist(target)
     if res["success"]:
@@ -83,6 +101,7 @@ def handle_plist(runner: ReaRunner, target: str = None):
 
 def handle_dylib(runner: ReaRunner, target: str = None):
     target = target or input("🔗 ระบุพาธไฟล์ Binary เพื่อตรวจ dependencies (ค่าเริ่มต้น: /bin/ls): ").strip() or "/bin/ls"
+    target = resolve_target_path(target)
     print(f"\n🔗 กำลังวิเคราะห์ Dynamic Library Dependencies: {target} ...")
     res = runner.trace_dylib(target)
     if res["success"]:
@@ -104,6 +123,7 @@ def handle_dylib(runner: ReaRunner, target: str = None):
 def handle_har(runner: ReaRunner, target: str = None):
     default_sample = str(BASE_DIR / "data" / "samples" / "sample_api.har")
     target = target or input(f"🌐 ระบุพาธไฟล์ HAR (ค่าเริ่มต้น: {default_sample}): ").strip() or default_sample
+    target = resolve_target_path(target)
     print(f"\n🌐 กำลังวิเคราะห์ HAR Network Capture: {target} ...")
     res = runner.inspect_har(target)
     if res["success"]:

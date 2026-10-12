@@ -122,35 +122,40 @@ class ReaRunner:
 
     def inspect_signature(self, binary_path: str) -> Dict[str, Any]:
         """Inspect digital signatures and certificates (Codesign / Mach-O / ELF)."""
-        res = self.execute_rea("inspect-signature", [binary_path])
+        abs_path = str(Path(binary_path).resolve())
+        res = self.execute_rea("inspect-signature", [abs_path])
         if res["success"]:
             self.save_result("inspect_signature", res)
         return res
 
     def list_architectures(self, binary_path: str) -> Dict[str, Any]:
         """List CPU architectures and Mach-O / ELF slices."""
-        res = self.execute_rea("list-architectures", [binary_path])
+        abs_path = str(Path(binary_path).resolve())
+        res = self.execute_rea("list-architectures", [abs_path])
         if res["success"]:
             self.save_result("list_architectures", res)
         return res
 
     def inspect_plist(self, app_or_plist_path: str) -> Dict[str, Any]:
         """Inspect Apple Info.plist without launching external UI tools."""
-        res = self.execute_rea("inspect-plist", [app_or_plist_path])
+        abs_path = str(Path(app_or_plist_path).resolve())
+        res = self.execute_rea("inspect-plist", [abs_path])
         if res["success"]:
             self.save_result("inspect_plist", res)
         return res
 
     def trace_dylib(self, binary_path: str) -> Dict[str, Any]:
         """Trace dyld resolution and dynamic library linkages."""
-        res = self.execute_rea("trace-dylib-resolution", [binary_path])
+        abs_path = str(Path(binary_path).resolve())
+        res = self.execute_rea("trace-dylib-resolution", [abs_path])
         if res["success"]:
             self.save_result("trace_dylib_resolution", res)
         return res
 
     def inspect_har(self, har_path: str) -> Dict[str, Any]:
         """Inspect HTTP/API network transactions in a HAR file."""
-        res = self.execute_rea("inspect-web-network-capture", [har_path, "har"])
+        abs_path = str(Path(har_path).resolve())
+        res = self.execute_rea("inspect-web-network-capture", [abs_path, "har"])
         if res["success"]:
             self.save_result("inspect_web_network_capture", res)
         return res

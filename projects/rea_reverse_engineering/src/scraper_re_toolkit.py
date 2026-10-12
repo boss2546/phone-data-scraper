@@ -33,15 +33,29 @@ class ScraperReverseToolkit:
             headers = {h.get("name"): h.get("value") for h in req.get("headers", []) if h.get("name")}
             params = {q.get("name"): q.get("value") for q in req.get("queryString", []) if q.get("name")}
             
+            post_data = req.get("postData", {})
+            json_body = None
+            if post_data and post_data.get("text"):
+                try:
+                    json_body = json.loads(post_data.get("text"))
+                except Exception:
+                    json_body = post_data.get("text")
+
+            body_code = ""
+            call_body = ""
+            if json_body is not None:
+                body_code = f"\npayload = {json.dumps(json_body, indent=2)}" if isinstance(json_body, (dict, list)) else f"\npayload = {repr(json_body)}"
+                call_body = ", json=payload" if isinstance(json_body, (dict, list)) else ", data=payload"
+
             # Generate python code snippet
             code_snippet = f"""# 🤖 Auto-generated Scraper from REA Network Capture
 import requests
 
 url = "{url.split('?')[0]}"
-params = {json.dumps(params, indent=2)}
-headers = {json.dumps({k: v for k, v in headers.items() if k.lower() in ['user-agent', 'accept', 'authorization', 'x-client-signature']}, indent=2)}
+params = {json.dumps(params, indent=2)}{body_code}
+headers = {json.dumps({k: v for k, v in headers.items() if k.lower() in ['user-agent', 'accept', 'authorization', 'x-client-signature', 'content-type']}, indent=2)}
 
-response = requests.{method.lower()}(url, params=params, headers=headers)
+response = requests.{method.lower()}(url, params=params{call_body}, headers=headers)
 print("Status Code:", response.status_code)
 data = response.json()
 print("Scraped Payload:", data)

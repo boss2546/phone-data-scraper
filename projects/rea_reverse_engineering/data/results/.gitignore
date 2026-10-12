@@ -1,0 +1,3 @@
+# Ignore transient run results
+*.json
+!.gitkeep
