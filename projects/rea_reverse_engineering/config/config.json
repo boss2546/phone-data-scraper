@@ -1,0 +1,24 @@
+{
+  "project_name": "rea_reverse_engineering",
+  "version": "1.0.0",
+  "description": "REA (Reverse Engineer Anything) Integration & Analysis Suite",
+  "rea_package": "rea-agents",
+  "rea_cli_runner": "npx -y rea-agents",
+  "default_format": "json",
+  "sample_targets": {
+    "binaries": [
+      "/bin/ls",
+      "/bin/zsh",
+      "/usr/bin/curl"
+    ],
+    "macos_apps": [
+      "/System/Applications/Calculator.app",
+      "/System/Applications/TextEdit.app",
+      "/System/Applications/Notes.app"
+    ],
+    "har_samples": [
+      "data/samples/sample_api.har"
+    ]
+  },
+  "results_dir": "data/results"
+}

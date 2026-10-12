@@ -16,6 +16,7 @@ PROJECTS = {
     "6": ("market_intelligence", "📊 Market Intelligence (วิเคราะห์ราคากลาง & Deal Hunter)", "projects/market_intelligence/run.py"),
     "7": ("user_account_generator", "👥 User Account Generator (สร้างบัญชี GraphQL อัตโนมัติ)", "projects/user_account_generator/run.py"),
     "8": ("apple_scraper", "🍎 Apple Scraper (ดึงข้อมูลสินค้าทางการ สเปก & ราคาจาก Apple Store)", "projects/apple_scraper/run.py"),
+    "9": ("rea_reverse_engineering", "🔬 REA Reverse Engineering (วิเคราะห์ Binary, App & Runtime ด้วย MCP/CLI)", "projects/rea_reverse_engineering/run.py"),
 }
 
 ALIASES = {
@@ -26,7 +27,8 @@ ALIASES = {
     "advice": "5",
     "market": "6", "analyze": "6",
     "users": "7", "mod": "7",
-    "apple": "8", "ap": "8"
+    "apple": "8", "ap": "8",
+    "rea": "9", "reverse": "9"
 }
 
 def print_banner():
@@ -87,16 +89,16 @@ def interactive_menu():
         for key, (_, title, _) in PROJECTS.items():
             print(f"  [{key}] {title}")
         print("  ----------------------------------------------------------------------")
-        print("  [9] 🗂️ ดูภาพรวมสถานะข้อมูลทุกระบบ (Inspect All Systems Status)")
+        print("  [s] 🗂️ ดูภาพรวมสถานะข้อมูลทุกระบบ (Inspect All Systems Status)")
         print("  [0] ออกจากโปรแกรม")
         print("-" * 72)
 
-        choice = input("👉 เลือกเมนู (0-9): ").strip()
+        choice = input("👉 เลือกเมนู (0-9 หรือ s): ").strip().lower()
 
         if choice == "0":
             print("👋 ออกจากโปรแกรม ขอบคุณครับ!")
             sys.exit(0)
-        elif choice == "9":
+        elif choice in ["s", "status"]:
             print_status_overview()
             input("\nกด Enter เพื่อกลับสู่เมนูหลัก...")
         elif choice in PROJECTS:
@@ -123,6 +125,7 @@ if __name__ == "__main__":
             print("  market, analyze     -> Market Intelligence")
             print("  users, mod          -> User Account Generator")
             print("  apple, ap           -> Apple Scraper")
+            print("  rea, reverse        -> REA Reverse Engineering")
             print("  status, overview    -> ตรวจสอบสถานะข้อมูลทั้งหมด")
         elif arg in ["status", "overview", "info"]:
             print_banner()
@@ -134,6 +137,6 @@ if __name__ == "__main__":
             launch_subproject(arg, extra_args=sys.argv[2:])
         else:
             print(f"❌ ไม่รู้จักคำสั่ง '{arg}'")
-            print("💡 คำสั่งที่รองรับ: fb, radar, compasia, ig, advice, market, users, apple, status (ดูวิธีใช้: python3 run.py -h)")
+            print("💡 คำสั่งที่รองรับ: fb, radar, compasia, ig, advice, market, users, apple, rea, status (ดูวิธีใช้: python3 run.py -h)")
     else:
         interactive_menu()

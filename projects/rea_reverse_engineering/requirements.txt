@@ -1,0 +1,4 @@
+# REA Reverse Engineering Module Dependencies
+# Note: REA core is powered by Node.js (npx rea-agents).
+# Python standard libraries are sufficient for the wrapper.
+pyyaml>=6.0

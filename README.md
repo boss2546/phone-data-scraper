@@ -15,7 +15,7 @@
 ├── .gitignore                      # 🛡️ ละเว้นไฟล์ Caches, Sessions, Virtualenvs
 ├── README.md                       # 📖 คู่มือและสถาปัตยกรรมแม่บท
 │
-└── projects/                       # 📂 ศูนย์รวมโมดูลโปรเจกต์ย่อย (8 Subprojects)
+└── projects/                       # 📂 ศูนย์รวมโมดูลโปรเจกต์ย่อย (9 Subprojects)
     ├── apple_scraper/              # 🍎 Apple Official Store Crawler (188 รุ่น 515 สี + 4K Retina)
     ├── facebook_scraper/           # 📘 Facebook Groups & Post Intelligence
     ├── compasia_scraper/           # 🛍️ CompAsia Secondhand Phone Scraper
@@ -23,7 +23,8 @@
     ├── instagram_scraper/          # 📸 Instagram Profile & Carousel Media Scraper
     ├── bma_weather_radar/          # 🌧️ BMA Real-time Weather Radar & Rain Tracker
     ├── market_intelligence/        # 📊 Cross-Platform Price Comparison & Deal Hunter
-    └── user_account_generator/     # 👥 Synthetic User Accounts & GraphQL Persona Generator
+    ├── user_account_generator/     # 👥 Synthetic User Accounts & GraphQL Persona Generator
+    └── rea_reverse_engineering/    # 🔬 Reverse Engineer Anything (MCP Server & Binary/HAR Inspector)
 ```
 
 ---
@@ -40,6 +41,7 @@
 | **6** | **Market Intelligence** | `projects/market_intelligence/` | `market`, `analyze` | 🟢 พร้อมใช้งาน | วิเคราะห์เปรียบเทียบราคากลางทางการ vs มือสอง และตรวจหาดีลคุ้มค่า |
 | **7** | **User Account Generator** | `projects/user_account_generator/` | `users`, `mod` | 🟢 พร้อมใช้งาน | สร้างบัญชีผู้ใช้จำลองสำหรับทดสอบ E-Commerce / GraphQL |
 | **8** | **Apple Scraper** | `projects/apple_scraper/` | `apple`, `ap` | 🟢 สมบูรณ์ 100% | ดึงข้อมูลทางการ Apple Store Thailand ครบ 188 รุ่น 515 สี, SQLite, Web Studio |
+| **9** | **REA Reverse Engineering** | `projects/rea_reverse_engineering/` | `rea`, `reverse` | 🟢 สมบูรณ์ 100% | วิเคราะห์ Binary (Mach-O/ELF), Codesign, Plist, Dynamic Libs & Network HAR |
 
 ---
 
@@ -73,17 +75,21 @@ python3 run.py
   [6] 📊 Market Intelligence (วิเคราะห์ราคากลาง & Deal Hunter)
   [7] 👥 User Account Generator (สร้างบัญชี GraphQL อัตโนมัติ)
   [8] 🍎 Apple Scraper (ดึงข้อมูลสินค้าทางการ สเปก & ราคาจาก Apple Store)
+  [9] 🔬 REA Reverse Engineering (วิเคราะห์ Binary, App & Runtime ด้วย MCP/CLI)
   ----------------------------------------------------------------------
-  [9] 🗂️ ดูภาพรวมสถานะข้อมูลทุกระบบ (Inspect All Systems Status)
+  [s] 🗂️ ดูภาพรวมสถานะข้อมูลทุกระบบ (Inspect All Systems Status)
   [0] ออกจากโปรแกรม
 ------------------------------------------------------------------------
-👉 เลือกเมนู (0-9): 
+👉 เลือกเมนู (0-9 หรือ s): 
 ```
 
 ### 3. รันคำสั่งตรงผ่าน Shortcuts (CLI Aliases)
 ```bash
 # ตรวจสอบภาพรวมสถานะและจำนวนไฟล์ของทุกระบบ
 python3 run.py status
+
+# รันระบบ REA Reverse Engineering (หรือทดสอบ: python3 run.py rea test)
+python3 run.py rea
 
 # รันระบบ Apple Scraper
 python3 run.py apple

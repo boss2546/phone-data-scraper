@@ -1,0 +1,155 @@
+{
+  "success": true,
+  "returncode": 0,
+  "elapsed_sec": 2.45,
+  "command": "npx -y rea-agents inspect-plist /System/Applications/Calculator.app --format json",
+  "data": {
+    "evidence_id": "ev_94305699c5c44d2b45c000821f88724fdbfa6ac330254105bb86b28a9d19c713",
+    "subject": {
+      "name": "Calculator",
+      "digest": {
+        "sha256": "f11151e63f888232772e5e4319635fc847aea5419e5849d723a10281e69e5c42"
+      },
+      "format": "mach-o",
+      "architecture": "arm64",
+      "local_path": "/System/Applications/Calculator.app/Contents/MacOS/Calculator"
+    },
+    "provider": {
+      "id": "native-macos",
+      "name": "macOS native inspection utilities",
+      "version": null
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_plist",
+    "parameters": {},
+    "raw_result": null,
+    "normalized_result": {
+      "format": "xml",
+      "value": {
+        "CFBundleInfoDictionaryVersion": "6.0",
+        "UISupportedInterfaceOrientations~ipad": [
+          "UIInterfaceOrientationPortrait",
+          "UIInterfaceOrientationPortraitUpsideDown",
+          "UIInterfaceOrientationLandscapeLeft",
+          "UIInterfaceOrientationLandscapeRight"
+        ],
+        "DTPlatformVersion": "26.5",
+        "CFBundleIconFile": "AppIcon",
+        "CFBundleName": "Calculator",
+        "DTSDKName": "macosx26.5.internal",
+        "LSCounterpartIdentifiers": [
+          "com.apple.NanoCalculator.watchkitapp"
+        ],
+        "UIStatusBarStyle": "",
+        "UILaunchScreen": {
+          "UIColorName": "LaunchScreenColor"
+        },
+        "CFBundleDisplayName": "Calculator",
+        "PrivateURLSchemes": [
+          "calc"
+        ],
+        "DTSDKBuild": "25F63",
+        "NSAccentColorName": "AccentColor",
+        "CFBundleShortVersionString": "12.0",
+        "CFBundleSupportedPlatforms": [
+          "MacOSX"
+        ],
+        "BuildMachineOSBuild": "23A344017",
+        "DTPlatformBuild": "",
+        "CFBundlePackageType": "APPL",
+        "DTXcodeBuild": "17E6107",
+        "CFBundleDevelopmentRegion": "en",
+        "CFBundleVersion": "225",
+        "SBMatchingApplicationGenres": [
+          "Utilities",
+          "Productivity",
+          "Education",
+          "Finance"
+        ],
+        "CFBundleIdentifier": "com.apple.calculator",
+        "HPDHelpProjectIdentifier": "calculator",
+        "UIApplicationSceneManifest": {
+          "UIApplicationSupportsMultipleScenes": false,
+          "UISceneConfigurations": {}
+        },
+        "DTXcode": "2630",
+        "CFBundleIconName": "AppIcon",
+        "CFBundleHelpBookName": "com.apple.calculator.help",
+        "CFBundleHelpBookFolder": "calculator.help",
+        "UIApplicationSupportsIndirectInputEvents": false,
+        "CFBundleExecutable": "Calculator",
+        "UISupportedInterfaceOrientations~iphone": [
+          "UIInterfaceOrientationPortrait",
+          "UIInterfaceOrientationLandscapeLeft",
+          "UIInterfaceOrientationLandscapeRight"
+        ],
+        "LSMinimumSystemVersion": "26.5",
+        "DTPlatformName": "macosx",
+        "DTCompiler": "com.apple.compilers.llvm.clang.1_0"
+      },
+      "bundle": {
+        "identifier": "com.apple.calculator",
+        "executable": "Calculator",
+        "name": "Calculator",
+        "version": "225",
+        "short_version": "12.0"
+      },
+      "source_path": "/System/Applications/Calculator.app/Contents/Info.plist",
+      "provenance": [
+        {
+          "tool": "file",
+          "command": [
+            "/usr/bin/file",
+            "-b",
+            "$PLIST"
+          ],
+          "tool_version": null,
+          "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+          "executable_sha256": "a4ba66d26a9cfdc70637c78cdacef920f94147f6aa45ccc73858e493589ef94d",
+          "exit": {
+            "code": 0,
+            "signal": null
+          },
+          "stdout_bytes": 34,
+          "stderr_bytes": 0
+        },
+        {
+          "tool": "plutil",
+          "command": [
+            "/usr/bin/plutil",
+            "-convert",
+            "json",
+            "-o",
+            "-",
+            "--",
+            "$PLIST"
+          ],
+          "tool_version": null,
+          "version_reason": "Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.",
+          "executable_sha256": "9d2296746d4519a8094738e7570972d44791793a072767b8bcbf0ea82af90358",
+          "exit": {
+            "code": 0,
+            "signal": null
+          },
+          "stdout_bytes": 1608,
+          "stderr_bytes": 0
+        }
+      ],
+      "limitations": []
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [],
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "/System/Applications/Calculator.app/Contents/Info.plist"
+      }
+    ],
+    "evidence_links": []
+  },
+  "raw_stdout": "{\"evidence_id\":\"ev_94305699c5c44d2b45c000821f88724fdbfa6ac330254105bb86b28a9d19c713\",\"subject\":{\"name\":\"Calculator\",\"digest\":{\"sha256\":\"f11151e63f888232772e5e4319635fc847aea5419e5849d723a10281e69e5c42\"},\"format\":\"mach-o\",\"architecture\":\"arm64\",\"local_path\":\"/System/Applications/Calculator.app/Contents/MacOS/Calculator\"},\"provider\":{\"id\":\"native-macos\",\"name\":\"macOS native inspection utilities\",\"version\":null},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_plist\",\"parameters\":{},\"raw_result\":null,\"normalized_result\":{\"format\":\"xml\",\"value\":{\"CFBundleInfoDictionaryVersion\":\"6.0\",\"UISupportedInterfaceOrientations~ipad\":[\"UIInterfaceOrientationPortrait\",\"UIInterfaceOrientationPortraitUpsideDown\",\"UIInterfaceOrientationLandscapeLeft\",\"UIInterfaceOrientationLandscapeRight\"],\"DTPlatformVersion\":\"26.5\",\"CFBundleIconFile\":\"AppIcon\",\"CFBundleName\":\"Calculator\",\"DTSDKName\":\"macosx26.5.internal\",\"LSCounterpartIdentifiers\":[\"com.apple.NanoCalculator.watchkitapp\"],\"UIStatusBarStyle\":\"\",\"UILaunchScreen\":{\"UIColorName\":\"LaunchScreenColor\"},\"CFBundleDisplayName\":\"Calculator\",\"PrivateURLSchemes\":[\"calc\"],\"DTSDKBuild\":\"25F63\",\"NSAccentColorName\":\"AccentColor\",\"CFBundleShortVersionString\":\"12.0\",\"CFBundleSupportedPlatforms\":[\"MacOSX\"],\"BuildMachineOSBuild\":\"23A344017\",\"DTPlatformBuild\":\"\",\"CFBundlePackageType\":\"APPL\",\"DTXcodeBuild\":\"17E6107\",\"CFBundleDevelopmentRegion\":\"en\",\"CFBundleVersion\":\"225\",\"SBMatchingApplicationGenres\":[\"Utilities\",\"Productivity\",\"Education\",\"Finance\"],\"CFBundleIdentifier\":\"com.apple.calculator\",\"HPDHelpProjectIdentifier\":\"calculator\",\"UIApplicationSceneManifest\":{\"UIApplicationSupportsMultipleScenes\":false,\"UISceneConfigurations\":{}},\"DTXcode\":\"2630\",\"CFBundleIconName\":\"AppIcon\",\"CFBundleHelpBookName\":\"com.apple.calculator.help\",\"CFBundleHelpBookFolder\":\"calculator.help\",\"UIApplicationSupportsIndirectInputEvents\":false,\"CFBundleExecutable\":\"Calculator\",\"UISupportedInterfaceOrientations~iphone\":[\"UIInterfaceOrientationPortrait\",\"UIInterfaceOrientationLandscapeLeft\",\"UIInterfaceOrientationLandscapeRight\"],\"LSMinimumSystemVersion\":\"26.5\",\"DTPlatformName\":\"macosx\",\"DTCompiler\":\"com.apple.compilers.llvm.clang.1_0\"},\"bundle\":{\"identifier\":\"com.apple.calculator\",\"executable\":\"Calculator\",\"name\":\"Calculator\",\"version\":\"225\",\"short_version\":\"12.0\"},\"source_path\":\"/System/Applications/Calculator.app/Contents/Info.plist\",\"provenance\":[{\"tool\":\"file\",\"command\":[\"/usr/bin/file\",\"-b\",\"$PLIST\"],\"tool_version\":null,\"version_reason\":\"Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.\",\"executable_sha256\":\"a4ba66d26a9cfdc70637c78cdacef920f94147f6aa45ccc73858e493589ef94d\",\"exit\":{\"code\":0,\"signal\":null},\"stdout_bytes\":34,\"stderr_bytes\":0},{\"tool\":\"plutil\",\"command\":[\"/usr/bin/plutil\",\"-convert\",\"json\",\"-o\",\"-\",\"--\",\"$PLIST\"],\"tool_version\":null,\"version_reason\":\"Tool exposes no uniform stable version flag; executable SHA-256 is a prelaunch file sample and does not prove atomic OS image binding.\",\"executable_sha256\":\"9d2296746d4519a8094738e7570972d44791793a072767b8bcbf0ea82af90358\",\"exit\":{\"code\":0,\"signal\":null},\"stdout_bytes\":1608,\"stderr_bytes\":0}],\"limitations\":[]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/System/Applications/Calculator.app/Contents/Info.plist\"}],\"evidence_links\":[]}",
+  "raw_stderr": ""
+}
