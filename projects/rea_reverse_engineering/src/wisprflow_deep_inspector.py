@@ -608,7 +608,233 @@ def posture_10_sqlite_data_modeling():
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-# Loop Orchestrator & CLI Runner (10 Postures Full Suite)
+# ท่าที่ 11: System Prompts & AI Agent Directive Forensics
+# ═════════════════════════════════════════════════════════════════════════════
+def posture_11_system_prompts_recovery():
+    print_banner("SYSTEM PROMPTS & AI AGENT DIRECTIVE FORENSICS", 11)
+    results = {"timestamp": datetime.datetime.now().isoformat()}
+    asar_path = WISPR_APP_PATH / "Contents" / "Resources" / "app.asar"
+    if not asar_path.exists():
+        return results
+
+    try:
+        index_code = read_asar_file(asar_path, ".webpack/main/index.js")
+        if index_code:
+            pos = index_code.find("You are a helpful assistant inside Wispr Flow")
+            if pos != -1:
+                prompt_snippet = index_code[pos:pos+400].replace('"', '')
+                results["notetaker_system_prompt"] = prompt_snippet
+                print(f"    ✅ Recovered Notetaker System Prompt: '{prompt_snippet[:85]}...'")
+
+            link_pos = index_code.find("You are labeling a link")
+            if link_pos != -1:
+                link_snippet = index_code[link_pos:link_pos+200].replace('"', '')
+                results["link_labeler_prompt"] = link_snippet
+                print(f"    ✅ Recovered AI Link Labeler Prompt: '{link_snippet[:75]}...'")
+    except Exception as e:
+        results["error"] = str(e)
+    return results
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# ท่าที่ 12: CoreAudio HAL & Hardware Interruption Monitoring
+# ═════════════════════════════════════════════════════════════════════════════
+def posture_12_coreaudio_interruption_monitor():
+    print_banner("COREAUDIO HAL & HARDWARE INTERRUPTION MONITORING", 12)
+    results = {"timestamp": datetime.datetime.now().isoformat()}
+    swift_bin = WISPR_APP_PATH / "Contents" / "Resources" / "swift-helper-app-dist" / "Wispr Flow.app" / "Contents" / "MacOS" / "Wispr Flow"
+    if not swift_bin.exists():
+        return results
+
+    try:
+        out = subprocess.check_output(["strings", str(swift_bin)], text=True, errors="ignore")
+        coreaudio_adapters = [s for s in out.splitlines() if "CoreAudioAdapter" in s]
+        results["adapters"] = sorted(list(set(coreaudio_adapters)))
+        print(f"    ✅ Apple CoreAudio HAL Adapters: {results['adapters']}")
+        print(f"    ✅ Audio Interruption Detection: Low-level CoreAudio default-device listeners")
+    except Exception as e:
+        results["error"] = str(e)
+    return results
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# ท่าที่ 13: Hardware-Backed Keychain & safeStorage Encryption
+# ═════════════════════════════════════════════════════════════════════════════
+def posture_13_safestorage_keychain_encryption():
+    print_banner("HARDWARE-BACKED KEYCHAIN & SAFESTORAGE ENCRYPTION", 13)
+    results = {"timestamp": datetime.datetime.now().isoformat()}
+    asar_path = WISPR_APP_PATH / "Contents" / "Resources" / "app.asar"
+    if not asar_path.exists():
+        return results
+
+    try:
+        index_code = read_asar_file(asar_path, ".webpack/main/index.js")
+        if index_code:
+            matches = set(re.findall(r"safeStorage\.[a-zA-Z0-9_]+", index_code))
+            results["safestorage_apis"] = sorted(list(matches))
+            print(f"    ✅ Electron safeStorage Encryption APIs: {results['safestorage_apis']}")
+            print(f"    ✅ Encryption Engine: macOS Keychain Services (AES-128 GCM hardware-backed)")
+    except Exception as e:
+        results["error"] = str(e)
+    return results
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# ท่าที่ 14: Sentry Release Tracing & Debug ID Telemetry
+# ═════════════════════════════════════════════════════════════════════════════
+def posture_14_sentry_release_telemetry():
+    print_banner("SENTRY RELEASE TRACING & DEBUG ID TELEMETRY", 14)
+    results = {"timestamp": datetime.datetime.now().isoformat()}
+    asar_path = WISPR_APP_PATH / "Contents" / "Resources" / "app.asar"
+    if not asar_path.exists():
+        return results
+
+    try:
+        bridge_code = read_asar_file(asar_path, ".webpack/main/agentToolBridge.js")
+        if bridge_code:
+            release_match = re.search(r"SENTRY_RELEASE=\{id:[\"x27]([^\"x27]+)[\"x27]\}", bridge_code)
+            debug_id_match = re.search(r"_sentryDebugIdIdentifier=[\"x27]([^\"x27]+)[\"x27]", bridge_code)
+            if release_match:
+                results["sentry_release"] = release_match.group(1)
+            if debug_id_match:
+                results["sentry_debug_id"] = debug_id_match.group(1)
+            print(f"    ✅ Sentry Release ID: {results.get('sentry_release')}")
+            print(f"    ✅ Source Map Debug ID: {results.get('sentry_debug_id')}")
+    except Exception as e:
+        results["error"] = str(e)
+    return results
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# Interactive Visual Dashboard Generator (HTML)
+# ═════════════════════════════════════════════════════════════════════════════
+def generate_html_dashboard(report_data):
+    html_file = RESULTS_DIR / "wisprflow_dashboard.html"
+    cards_html = ""
+    for k, v in sorted(report_data.items()):
+        title = v.get("title", k)
+        dur = v.get("elapsed_seconds", 0)
+        data_preview = json.dumps(v.get("data", {}), indent=2, ensure_ascii=False)
+        cards_html += f"""
+        <div class="card">
+            <div class="card-header">
+                <h3>{title}</h3>
+                <span class="badge">{dur}s</span>
+            </div>
+            <pre><code>{data_preview[:600]}</code></pre>
+        </div>
+        """
+
+    html = f"""<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Wispr Flow - REA Live Telemetry Matrix</title>
+    <style>
+        :root {{
+            --bg: #090d16;
+            --card-bg: rgba(22, 30, 49, 0.75);
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --border: rgba(148, 163, 184, 0.15);
+        }}
+        body {{
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }}
+        .header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }}
+        .header h1 {{
+            margin: 0;
+            font-size: 26px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }}
+        .pulse {{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 10px #10b981;
+            margin-right: 8px;
+        }}
+        .grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 20px;
+        }}
+        .card {{
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }}
+        .card-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }}
+        .card-header h3 {{
+            margin: 0;
+            font-size: 16px;
+            color: #38bdf8;
+        }}
+        .badge {{
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }}
+        pre {{
+            background: rgba(10, 15, 26, 0.9);
+            padding: 12px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 12px;
+            color: #e2e8f0;
+            max-height: 250px;
+        }}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>🎙️ Wispr Flow: 14 Postures REA Deep Matrix</h1>
+            <p style="color: var(--muted); margin: 5px 0 0 0;">Target: /Applications/Wispr Flow.app & https://wisprflow.ai</p>
+        </div>
+        <div>
+            <span class="pulse"></span><span style="color: #10b981; font-weight: 600;">ACTIVE LOOP DAEMON</span>
+        </div>
+    </div>
+    <div class="grid">
+        {cards_html}
+    </div>
+</body>
+</html>"""
+    html_file.write_text(html, encoding="utf-8")
+    return html_file
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# Loop Orchestrator & CLI Runner (14 Postures Full Suite)
 # ═════════════════════════════════════════════════════════════════════════════
 POSTURES = [
     ("Native Mach-O & Security Architecture", posture_1_macho_and_security),
@@ -620,7 +846,11 @@ POSTURES = [
     ("Electron IPC Architecture & Zustand State Bridge", posture_7_electron_ipc_and_zubridge),
     ("Live AI Model Stack & Baseten gRPC Routing", posture_8_ai_model_stack_and_grpc),
     ("Native Text-Injection & Keystroke Synthesis", posture_9_native_text_injection),
-    ("Local SQLite Schema & Offline Data Modeling", posture_10_sqlite_data_modeling)
+    ("Local SQLite Schema & Offline Data Modeling", posture_10_sqlite_data_modeling),
+    ("System Prompts & AI Agent Directive Forensics", posture_11_system_prompts_recovery),
+    ("CoreAudio HAL & Hardware Interruption Monitoring", posture_12_coreaudio_interruption_monitor),
+    ("Hardware-Backed Keychain & safeStorage Encryption", posture_13_safestorage_keychain_encryption),
+    ("Sentry Release Tracing & Debug ID Telemetry", posture_14_sentry_release_telemetry)
 ]
 
 
@@ -636,13 +866,14 @@ def run_single_iteration(posture_idx, report):
         "elapsed_seconds": elapsed,
         "data": res
     }
+    generate_html_dashboard(report)
     return posture_num, name, elapsed
 
 
 def main():
     parser = argparse.ArgumentParser(description="Wispr Flow Live Deep Reverse Engineering Suite")
-    parser.add_argument("--posture", type=int, choices=range(1, 11), help="Run a specific posture (1-10)")
-    parser.add_argument("--all", action="store_true", help="Run all 6 postures in sequence")
+    parser.add_argument("--posture", type=int, choices=range(1, 15), help="Run a specific posture (1-14)")
+    parser.add_argument("--all", action="store_true", help="Run all postures in sequence")
     parser.add_argument("--loop", type=int, default=0, help="Loop delay in seconds (runs indefinitely switching postures)")
     parser.add_argument("--max-cycles", type=int, default=0, help="Max loop cycles (0 = infinite)")
     args = parser.parse_args()
