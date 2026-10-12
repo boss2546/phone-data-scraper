@@ -5,6 +5,7 @@ Powered by https://github.com/morluto/rea (rea-agents v6.4.0+)
 """
 
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -17,6 +18,8 @@ MODULE_DIR = Path(__file__).resolve().parent.parent
 CONFIG_PATH = MODULE_DIR / "config" / "config.json"
 RESULTS_DIR = MODULE_DIR / "data" / "results"
 SAMPLES_DIR = MODULE_DIR / "data" / "samples"
+LOCAL_REA_BIN = MODULE_DIR / "node_modules" / ".bin" / "rea"
+NODE24_PATH = "/Users/meuu/.nvm/versions/node/v24.16.0/bin"
 
 
 class ReaRunner:
@@ -34,30 +37,41 @@ class ReaRunner:
             except Exception:
                 pass
         return {
-            "rea_cli_runner": "npx -y rea-agents",
+            "rea_cli_runner": "local rea binary",
             "default_format": "json"
         }
 
     @staticmethod
     def check_environment() -> Tuple[bool, str]:
-        """Check if Node.js and npx are installed in the system."""
+        """Check if Node.js and npx/rea are installed in the system."""
         node_path = shutil.which("node")
         npx_path = shutil.which("npx")
 
-        if not node_path or not npx_path:
+        if not node_path and not Path(NODE24_PATH).exists():
             return False, "❌ ไม่พบ Node.js หรือ npx ในระบบ กรุณาติดตั้ง Node.js (v18+) ก่อนใช้งาน"
 
         try:
-            node_ver = subprocess.check_output(["node", "-v"], text=True).strip()
-            npx_ver = subprocess.check_output(["npx", "-v"], text=True).strip()
-            return True, f"✅ สิ่งแวดล้อมพร้อมใช้งาน (Node.js: {node_ver}, npx: {npx_ver})"
+            env = os.environ.copy()
+            if Path(NODE24_PATH).exists():
+                env["PATH"] = f"{NODE24_PATH}:{env.get('PATH', '')}"
+            node_ver = subprocess.check_output(["node", "-v"], text=True, env=env).strip()
+            mode_str = "🚀 โหมด High-Performance Local Binary" if LOCAL_REA_BIN.exists() else "🌐 โหมด Cloud NPX"
+            return True, f"✅ สิ่งแวดล้อมพร้อมใช้งาน (Node.js: {node_ver}) [{mode_str}]"
         except Exception as e:
             return False, f"⚠️ เกิดข้อผิดพลาดขณะตรวจสอบ Node.js: {e}"
 
     def execute_rea(self, sub_command: str, args: Optional[List[str]] = None, output_format: str = "json", timeout: int = 45) -> Dict[str, Any]:
-        """Execute a REA command via npx and return parsed output and status."""
+        """Execute a REA command via local binary or npx with Node 24 optimization."""
         args = args or []
-        cmd = ["npx", "-y", "rea-agents", sub_command] + args
+        env = os.environ.copy()
+        if Path(NODE24_PATH).exists():
+            env["PATH"] = f"{NODE24_PATH}:{env.get('PATH', '')}"
+
+        if LOCAL_REA_BIN.exists():
+            cmd = [str(LOCAL_REA_BIN), sub_command] + args
+        else:
+            cmd = ["npx", "-y", "rea-agents", sub_command] + args
+
         if output_format and "--format" not in args:
             cmd.extend(["--format", output_format])
 
@@ -67,7 +81,8 @@ class ReaRunner:
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=timeout
+                timeout=timeout,
+                env=env
             )
             elapsed = round(time.time() - start_time, 2)
             stdout = res.stdout.strip()
