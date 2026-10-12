@@ -157,6 +157,46 @@ def handle_custom(runner: ReaRunner):
     print(res.get("raw_stdout") or res.get("raw_stderr"))
 
 
+def handle_showcase_scraper(runner: ReaRunner):
+    from scraper_re_toolkit import ScraperReverseToolkit
+    print("\n" + "=" * 72)
+    print("🪄 REA FOR WEB SCRAPING & INTERCEPTION SHOWCASE")
+    print("   สาธิตการเชื่อมโยงพลัง REA เข้าสู่โปรเจกต์ดึงข้อมูล (Scraping Suite)")
+    print("=" * 72)
+
+    # 1. Reverse engineer HAR -> Python Scraper code
+    har_path = str(BASE_DIR / "data" / "samples" / "sample_api.har")
+    print(f"\n[Case 1] 🌐 ดักแกะ Network Capture ({har_path}) -> แปลงเป็น Code สำหรับดึงข้อมูล:")
+    res_har = runner.inspect_har(har_path)
+    if res_har["success"]:
+        recipes = ScraperReverseToolkit.har_to_scraper_recipe(res_har["data"])
+        for r in recipes["recipes"]:
+            print(f"  • Endpoint ที่ตรวจพบ: [{r['method']}] {r['url']}")
+            print(f"  • โค้ด Python Requests ที่สร้างให้อัตโนมัติ:\n")
+            for line in r["generated_code"].splitlines():
+                print(f"    {line}")
+    
+    # 2. Reverse engineer App Bundle -> Deeplinks
+    app_path = "/System/Applications/Calculator.app"
+    print(f"\n[Case 2] 📱 แกะสถาปัตยกรรม App Bundle ({app_path}) หา URL Scheme / Deeplink:")
+    res_app = runner.inspect_plist(app_path)
+    if res_app["success"]:
+        intel = ScraperReverseToolkit.app_to_scraping_intel(res_app["data"])
+        print(f"  • App Name: {intel['app_name']} | Bundle ID: {intel['bundle_id']}")
+        print(f"  • URL Schemes: {intel['url_schemes']}")
+        print(f"  • ประโยชน์ในการดึงข้อมูล: {intel['scraping_application']}")
+
+    # 3. Security & Binary Integrity Check
+    print(f"\n[Case 3] 🛡️ ตรวจสอบความถูกต้องของ Binary เครื่องมือ (curl / python / scraper drivers):")
+    res_sig = runner.inspect_signature("/usr/bin/curl")
+    if res_sig["success"]:
+        norm = res_sig.get("data", {}).get("normalized_result", {})
+        print(f"  • ไบนารี: /usr/bin/curl")
+        print(f"  • Identifier: {norm.get('identifier')} | Format: {norm.get('format')}")
+        print(f"  • สถานะ Signature: {'✅ ผ่านการรับรองถูกต้อง' if norm.get('signed') else '⚠️ ไม่ผ่านการรับรอง'}")
+        print(f"  • ผู้ออกใบรับรอง: {', '.join(norm.get('authorities', []))}")
+
+
 def interactive_menu():
     runner = ReaRunner()
     ok, env_msg = runner.check_environment()
@@ -174,10 +214,11 @@ def interactive_menu():
         print("  [6] 🤖 ตรวจสอบสถานะ MCP Server (mcp doctor)")
         print("  [7] 🧪 รันชุดทดสอบความสมบูรณ์ REA ทั้งหมด (Run Diagnostics)")
         print("  [8] 💻 รันคำสั่ง REA แบบกำหนดเอง (Custom REA Command)")
+        print("  [9] 🪄 สาธิตการใช้งานจริงสำหรับ Web Scraping (Scraping Showcase)")
         print("  [0] ออกจากเมนู")
         print("-" * 72)
 
-        choice = input("👉 เลือกเมนู (0-8): ").strip()
+        choice = input("👉 เลือกเมนู (0-9): ").strip()
 
         if choice == "0":
             print("👋 ออกจากโปรแกรม REA Reverse Engineering")
@@ -198,6 +239,8 @@ def interactive_menu():
             handle_diagnostics(runner)
         elif choice == "8":
             handle_custom(runner)
+        elif choice == "9":
+            handle_showcase_scraper(runner)
         else:
             print("❌ ตัวเลือกไม่ถูกต้อง")
 
@@ -222,8 +265,10 @@ if __name__ == "__main__":
             handle_doctor(runner)
         elif cmd in ["test", "diag", "diagnostics"]:
             handle_diagnostics(runner)
+        elif cmd in ["demo", "showcase"]:
+            handle_showcase_scraper(runner)
         else:
             print(f"❌ ไม่รู้จักคำสั่ง '{cmd}'")
-            print("💡 คำสั่ง CLI: signature, arch, plist, dylib, har, doctor, test")
+            print("💡 คำสั่ง CLI: signature, arch, plist, dylib, har, doctor, test, demo")
     else:
         interactive_menu()
