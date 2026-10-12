@@ -217,6 +217,11 @@ def handle_showcase_scraper(runner: ReaRunner):
         print(f"  • ผู้ออกใบรับรอง: {', '.join(norm.get('authorities', []))}")
 
 
+def handle_real_deep_test():
+    import real_deep_test
+    real_deep_test.main()
+
+
 def interactive_menu():
     runner = ReaRunner()
     ok, env_msg = runner.check_environment()
@@ -235,10 +240,11 @@ def interactive_menu():
         print("  [7] 🧪 รันชุดทดสอบความสมบูรณ์ REA ทั้งหมด (Run Diagnostics)")
         print("  [8] 💻 รันคำสั่ง REA แบบกำหนดเอง (Custom REA Command)")
         print("  [9] 🪄 สาธิตการใช้งานจริงสำหรับ Web Scraping (Scraping Showcase)")
+        print("  [r] ⚡ ทดสอบระบบจริงระดับลึก ไม่จำลอง (Real Live Benchmark)")
         print("  [0] ออกจากเมนู")
         print("-" * 72)
 
-        choice = input("👉 เลือกเมนู (0-9): ").strip()
+        choice = input("👉 เลือกเมนู (0-9 หรือ r): ").strip().lower()
 
         if choice == "0":
             print("👋 ออกจากโปรแกรม REA Reverse Engineering")
@@ -261,6 +267,8 @@ def interactive_menu():
             handle_custom(runner)
         elif choice == "9":
             handle_showcase_scraper(runner)
+        elif choice in ["r", "real", "live"]:
+            handle_real_deep_test()
         else:
             print("❌ ตัวเลือกไม่ถูกต้อง")
 
@@ -287,8 +295,10 @@ if __name__ == "__main__":
             handle_diagnostics(runner)
         elif cmd in ["demo", "showcase"]:
             handle_showcase_scraper(runner)
+        elif cmd in ["real", "live", "benchmark"]:
+            handle_real_deep_test()
         else:
             print(f"❌ ไม่รู้จักคำสั่ง '{cmd}'")
-            print("💡 คำสั่ง CLI: signature, arch, plist, dylib, har, doctor, test, demo")
+            print("💡 คำสั่ง CLI: signature, arch, plist, dylib, har, doctor, test, demo, real")
     else:
         interactive_menu()
