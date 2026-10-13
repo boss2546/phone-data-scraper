@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Wispr Flow - REA Live Telemetry Matrix</title>
+    <style>
+        :root {
+            --bg: #090d16;
+            --card-bg: rgba(22, 30, 49, 0.75);
+            --accent: #38bdf8;
+            --accent2: #818cf8;
+            --text: #f1f5f9;
+            --muted: #94a3b8;
+            --border: rgba(148, 163, 184, 0.15);
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 10px #10b981;
+            margin-right: 8px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .card-header h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #38bdf8;
+        }
+        .badge {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        pre {
+            background: rgba(10, 15, 26, 0.9);
+            padding: 12px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 12px;
+            color: #e2e8f0;
+            max-height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>🎙️ Wispr Flow: 14 Postures REA Deep Matrix</h1>
+            <p style="color: var(--muted); margin: 5px 0 0 0;">Target: /Applications/Wispr Flow.app & https://wisprflow.ai</p>
+        </div>
+        <div>
+            <span class="pulse"></span><span style="color: #10b981; font-weight: 600;">ACTIVE LOOP DAEMON</span>
+        </div>
+    </div>
+    <div class="grid">
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Native Mach-O & Security Architecture</h3>
+                <span class="badge">6.49s</span>
+            </div>
+            <pre><code>{
+  "target": "/Applications/Wispr Flow.app",
+  "timestamp": "2026-10-13T08:24:44.505173",
+  "bundle": {
+    "identifier": "com.electron.wispr-flow",
+    "executable": "Wispr Flow",
+    "name": "Wispr Flow",
+    "version": "1.6.1034",
+    "short_version": "1.6.1034"
+  },
+  "url_schemes": [],
+  "microphone_usage": "Allow Wispr Flow microphone access to transcribe your speech.",
+  "audio_capture_usage": "Wispr Flow needs to access your computer's audio to take notes during meetings.",
+  "signature": {
+    "team_id": "C9VQZ78H85",
+    "authorities": [
+      "Developer ID Application: Wispr AI INC</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Local SQLite Schema & Offline Data Modeling</h3>
+                <span class="badge">0.03s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:23:29.349360",
+  "total_tables": 28,
+  "tables": [
+    "Automations",
+    "InstructHistory",
+    "Polish",
+    "CalendarEvents",
+    "Links",
+    "RemoteNotifications",
+    "Dictionary",
+    "MeetingVersions",
+    "SequelizeMeta",
+    "FlowLensHistory",
+    "Meetings",
+    "SharedNotes",
+    "FolderMeetings",
+    "NoteImages",
+    "Todos",
+    "Folders",
+    "NoteVersions",
+    "TranscriptCorrections",
+    "GranolaImportRun",
+    "Notes",
+    "UserContext",
+    "GranolaTranscriptQueue",
+    "NotetakerChatAgentStates",
+    "UserVoicePreferences",
+    "History",
+ </code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>System Prompts & AI Agent Directive Forensics</h3>
+                <span class="badge">0.02s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:23:44.386937",
+  "notetaker_system_prompt": "You are a helpful assistant inside Wispr Flow's notetaker.:You are a helpful assistant inside Wispr Flow's notetaker hub.,Answer the user's questions about their meetings, notes, and schedule conversationally and directly, in plain prose.,n?This chat is pinned to the single meeting open in the drawer, mounted as the /wispr files. Treat that meeting as the subject of every question by default",
+  "link_labeler_prompt": "You are labeling a link a user just copied so they can find it on a links shelf.\\nOutput via the pr</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>CoreAudio HAL & Hardware Interruption Monitoring</h3>
+                <span class="badge">0.03s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:23:59.412202",
+  "adapters": [
+    "$s10Wispr_Flow33MicrophoneHoldersCoreAudioAdapterP",
+    "AudioInterruptionCoreAudioAdapter",
+    "MicrophoneHoldersCoreAudioAdapter",
+    "SystemAudioInterruptionCoreAudioAdapter",
+    "SystemMicrophoneHoldersCoreAudioAdapter",
+    "_TtC10Wispr_Flow39SystemAudioInterruptionCoreAudioAdapter",
+    "_TtC10Wispr_Flow39SystemMicrophoneHoldersCoreAudioAdapter"
+  ]
+}</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Hardware-Backed Keychain & safeStorage Encryption</h3>
+                <span class="badge">0.04s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:24:14.444733",
+  "safestorage_apis": [
+    "safeStorage.decryptString",
+    "safeStorage.encryptString",
+    "safeStorage.isEncryptionAvailable"
+  ]
+}</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Sentry Release Tracing & Debug ID Telemetry</h3>
+                <span class="badge">0.0s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:24:29.494540",
+  "sentry_release": "1.6.1034",
+  "sentry_debug_id": "sentry-dbid-0cc85d"
+}</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Accessibility Daemon & Companion Hardware</h3>
+                <span class="badge">2.08s</span>
+            </div>
+            <pre><code>{
+  "target": "/Applications/Wispr Flow.app/Contents/Resources/swift-helper-app-dist/Wispr Flow.app",
+  "timestamp": "2026-10-13T08:25:06.000861",
+  "helper_bundle": {
+    "identifier": "com.electron.wispr-flow.accessibility-mac-app",
+    "executable": "Wispr Flow",
+    "name": "Wispr Flow",
+    "version": "1",
+    "short_version": "1.6.1032"
+  },
+  "bluetooth_usage": "Allow Wispr Flow to connect to your BLE mic ring for hands-free dictation.",
+  "ui_element_daemon": true,
+  "provenance": {
+    "architecture": "arm64",
+    "bundle_tree": "44dc0a9f23f2ab2ba09531fb45d098c77ba56e74",
+    "helper_</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Native Node Addons & ASAR Integrity Verification</h3>
+                <span class="badge">5.32s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:25:23.082376",
+  "panel_activation_signature": {
+    "signed": true,
+    "identifier": "panel_activation",
+    "team_identifier": "C9VQZ78H85",
+    "format": "Mach-O thin (arm64)",
+    "cdhashes": [
+      "ea4915b14792a72ccafc926f9df99b96ed973dbb"
+    ],
+    "hash_algorithms": [
+      "sha256"
+    ],
+    "authorities": [
+      "Developer ID Application: Wispr AI INC (C9VQZ78H85)",
+      "Developer ID Certification Authority",
+      "Apple Root CA"
+    ],
+    "designated_requirement": "identifier \"panel_activation\" and anchor apple generic and certificate 1[fie</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Client Audio Pipeline & AI Agent Tool Bridge</h3>
+                <span class="badge">0.01s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:25:43.410846",
+  "opus_encoder": {
+    "size_bytes": 588575,
+    "wasm_engine": true,
+    "codec": "Opus WebAssembly Native Stream"
+  },
+  "mcp_server": {
+    "size_bytes": 2603,
+    "is_mcp_protocol": true,
+    "server_name": "wispr-extension-tools",
+    "protocol_version": "2024-11-05",
+    "socket_env": "AGENT_BRIDGE_SOCKET",
+    "tools_env": "AGENT_TOOLS_FILE"
+  },
+  "extension_bootstrap": {
+    "size_bytes": 1638684,
+    "mentions_sentry": true
+  }
+}</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Live Web Architecture & Telemetry Reconnaissance</h3>
+                <span class="badge">1.37s</span>
+            </div>
+            <pre><code>{
+  "target_url": "https://wisprflow.ai",
+  "timestamp": "2026-10-13T08:22:10.689874",
+  "http_status": 200,
+  "latency_ms": 1364.84,
+  "response_headers": {
+    "Date": "Tue, 13 Oct 2026 01:22:11 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "set-cookie": "_cfuvid=8a9x_hD5gqzkY3Z0fkSo.5_cno3P4ymbTkTlwgH0mps-1791854531.542152-1.0.1.1-obrnVD615AIkBfDB2G8xldD2c8gd86zrr9aukBWP1vM; HttpOnly; SameSite=None; Secure; Path=/; Domain=wisprflow.ai",
+    "CF-Ray": "a49a88262ed77c7d-BKK",
+    "CF-Cache-Status": "HIT",
+    "Age": "2</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Live HAR Traffic Synthesis & REA Network Forensics</h3>
+                <span class="badge">2.21s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:22:27.061514",
+  "rea_har_analysis": {
+    "entries_count": 2,
+    "summary": {}
+  }
+}</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Electron IPC Architecture & Zustand State Bridge</h3>
+                <span class="badge">0.03s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:22:44.269501",
+  "total_ipc_channels": 155,
+  "zubridge_channels": [
+    "zubridge:complete-thunk",
+    "zubridge:dispatch",
+    "zubridge:get-state",
+    "zubridge:get-thunk-state",
+    "zubridge:get-window-id",
+    "zubridge:get-window-subscriptions",
+    "zubridge:register-thunk",
+    "zubridge:state-update-ack",
+    "zubridge:track-action-dispatch"
+  ],
+  "audio_ipc_channels": [
+    "e2e:backdateDictationStart",
+    "e2e:closeDictationAudioContext",
+    "e2e:emitAudioStart",
+    "e2e:forceCompleteCurrentDictation",
+    "e2e:getDictationAudioGraph",
+    "e2e:</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Live AI Model Stack & Baseten gRPC Routing</h3>
+                <span class="badge">0.0s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:22:59.300813",
+  "grpc_endpoint": "model-v31pl413.grpc.api.baseten.co",
+  "instruct_models": {
+    "classifier": "gpt-5.5",
+    "instruct": "gpt-oss-120b",
+    "modelIsUnsure": "gpt-oss-120b",
+    "settingsUpdates": "gpt-oss-120b"
+  },
+  "mcp_server_flag": {
+    "enabled": false
+  },
+  "total_flags": 385
+}</code></pre>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3>Native Text-Injection & Keystroke Synthesis</h3>
+                <span class="badge">0.03s</span>
+            </div>
+            <pre><code>{
+  "timestamp": "2026-10-13T08:23:14.311861",
+  "discovered_insertion_mechanisms": [
+    "AXUIElement",
+    "AXUIElementDestroyed",
+    "Beginning pasteText with delimiters.",
+    "Beginning regular pasteText.",
+    "ConsentChatMessage: skipping the clipboard fallback, the pasteboard holds content that cannot be restored",
+    "Found an external non-Apple keyboard. Assuming no Fn key available.",
+    "Found known Apple keyboard: ",
+    "Found unknown Apple keyboard model",
+    "NAXUIElementRef",
+    "Restored pasteboard contents in "
+  ]
+}</code></pre>
+        </div>
+        
+    </div>
+</body>
+</html>
