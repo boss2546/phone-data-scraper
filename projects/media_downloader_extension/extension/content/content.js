@@ -1,8 +1,8 @@
 // Universal Media Grabber — Content Script
 // รองรับ:
-// 1. วางเมาส์เหนือภาพ/วิดีโอ (Hover HUD) -> กดโหลดเป็น .PNG / .JPG / .MP4 ทันที
-// 2. ลากภาพหรือวิดีโอมาวางที่ปุ่มลอยมุมขวาล่าง (Quick Drop Zone) -> โหลดเป็น .PNG / .JPG / .MP4 ทันที
-// 3. ระบบแปลงไฟล์คู่ขนาน (Dual-Engine): ใช้ Local Companion Server (Pillow + FFmpeg H.264) และมี Built-in HTML5 Canvas Converter ในตัวเมื่อรันเฉพาะ Extension เดี่ยวๆ
+// 1. วางเมาส์เหนือภาพ/วิดีโอ (Hover HUD) หรือลากมาวาง (Drag & Drop)
+// 2. ถ้าไฟล์ต้องใช้เซิร์ฟเวอร์แปลง (เช่น .m3u8, .webm, .mkv, .avif, .svg) จะสั่งปลุกเซิร์ฟเวอร์อัตโนมัติ
+// 3. แสดงสถานะ "⏳ กำลังประมวลผลภาพ/วิดีโอ..." และเมื่อเสร็จจะมีปุ่ม "📥 ประมวลผลเสร็จแล้ว! กดโหลดอีกครั้ง" ให้กดโหลดซ้ำได้ทันที!
 (() => {
   if (window.__UMG_INITIALIZED__) return;
   window.__UMG_INITIALIZED__ = true;
@@ -11,6 +11,7 @@
   const WEIRD_EXT_REGEX = /\.(webp|avif|svg|svgz|jfif|bmp|gif|ico|tiff|tif|heic|webm|ogv|ogg|mov|mkv|ts|m3u8|mpd|flv|avi|bin|dat|php)(\?.*|#.*|$)/i;
   let currentTarget = null;
   let hideTimer = null;
+  let lastReadyDownload = null; // { url, filename }
 
   function sanitizeCleanStem(rawName, prefix = "media") {
     if (!rawName) return `${prefix}_${Date.now()}`;
@@ -26,7 +27,6 @@
     return base.slice(0, 70);
   }
 
-  // Built-in Browser Canvas Image Converter (Fallback when Companion Server is offline)
   async function convertImageInBrowserCanvas(info, targetFormat) {
     const fmt = targetFormat === "jpg" ? "jpg" : "png";
     const mime = fmt === "jpg" ? "image/jpeg" : "image/png";
@@ -81,7 +81,7 @@
     }
   }
 
-  // Create Shadow DOM Hover HUD Host
+  // Hover HUD Host
   const hoverHost = document.createElement("div");
   hoverHost.id = "umg-hover-host";
   hoverHost.style.display = "none";
@@ -129,6 +129,14 @@
       .btn.secondary {
         background: linear-gradient(135deg, #3b82f6, #2563eb);
       }
+      .btn.processing {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        cursor: wait;
+      }
+      .btn.ready-again {
+        background: linear-gradient(135deg, #059669, #047857);
+        box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+      }
       .btn:hover {
         transform: translateY(-1px);
         opacity: 0.95;
@@ -138,61 +146,135 @@
       <span class="badge" id="hud-badge">MEDIA</span>
       <button class="btn" id="btn-primary">⬇ โหลด PNG</button>
       <button class="btn secondary" id="btn-secondary" style="display:none;">⬇ โหลด JPG</button>
+      <button class="btn ready-again" id="btn-redownload" style="display:none;">📥 กดโหลดอีกครั้ง</button>
     </div>
   `;
   document.documentElement.appendChild(hoverHost);
 
-  // Toast & Drag-Drop Dock Host
+  // Toast & Interactive Processing Card Host
   const toastHost = document.createElement("div");
   toastHost.id = "umg-toast-host";
   const toastShadow = toastHost.attachShadow({ mode: "open" });
   toastShadow.innerHTML = `
     <style>
-      .dock {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        pointer-events: none;
+      }
+      .dock, .status-card {
         pointer-events: auto;
-        background: rgba(15, 23, 42, 0.92);
-        border: 2px dashed rgba(52, 211, 153, 0.5);
-        color: #e2e8f0;
-        padding: 8px 14px;
+        background: rgba(15, 23, 42, 0.95);
+        color: #f8fafc;
+        padding: 10px 14px;
         border-radius: 12px;
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 12px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-        transition: all 0.15s ease;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      }
+      .dock {
+        border: 2px dashed rgba(52, 211, 153, 0.5);
         cursor: pointer;
       }
       .dock.dragover {
         background: rgba(16, 185, 129, 0.25);
         border-color: #10b981;
-        transform: scale(1.04);
       }
-      .toast {
-        background: rgba(15, 23, 42, 0.95);
+      .status-card {
+        border-left: 4px solid #f59e0b;
+        display: none;
+        align-items: center;
+        gap: 10px;
+      }
+      .status-card.ready {
+        border-left-color: #10b981;
+      }
+      .dl-again-btn {
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 6px 12px;
+        font-size: 12px;
+        font-weight: 700;
         color: #fff;
-        border-left: 4px solid #10b981;
-        padding: 10px 14px;
-        border-radius: 10px;
-        margin-top: 8px;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 13px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+        background: linear-gradient(135deg, #10b981, #059669);
+      }
+      .close-btn {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        color: #94a3b8;
+        font-size: 14px;
       }
     </style>
-    <div class="dock" id="quick-drop-dock" title="ลากรูปหรือวิดีโอมาวางที่นี่เพื่อโหลดเป็น .PNG / .MP4 ทันที">
-      📥 ลากภาพ/วิดีโอวางที่นี่ ➔ ได้ไฟล์ <b>.PNG / .MP4</b>
+    <div class="wrapper">
+      <div class="status-card" id="status-card">
+        <span id="status-text">⏳ กำลังประมวลผลภาพ/วิดีโอ...</span>
+        <button class="dl-again-btn" id="card-dl-btn" style="display:none;">📥 กดโหลดอีกครั้ง</button>
+        <button class="close-btn" id="card-close-btn">✕</button>
+      </div>
+      <div class="dock" id="quick-drop-dock" title="ลากรูปหรือวิดีโอมาวางที่นี่เพื่อโหลดเป็น .PNG / .MP4 ทันที">
+        📥 ลากภาพ/วิดีโอวางที่นี่ ➔ ได้ไฟล์ <b>.PNG / .MP4</b>
+      </div>
     </div>
-    <div id="toast-list"></div>
   `;
   document.documentElement.appendChild(toastHost);
 
-  function showToast(msg) {
-    const list = toastShadow.getElementById("toast-list");
-    const item = document.createElement("div");
-    item.className = "toast";
-    item.textContent = msg;
-    list.appendChild(item);
-    setTimeout(() => item.remove(), 3500);
+  const statusCard = toastShadow.getElementById("status-card");
+  const statusText = toastShadow.getElementById("status-text");
+  const cardDlBtn = toastShadow.getElementById("card-dl-btn");
+  const cardCloseBtn = toastShadow.getElementById("card-close-btn");
+
+  const badgeEl = shadow.getElementById("hud-badge");
+  const btnPrimary = shadow.getElementById("btn-primary");
+  const btnSecondary = shadow.getElementById("btn-secondary");
+  const btnRedownload = shadow.getElementById("btn-redownload");
+
+  cardCloseBtn.addEventListener("click", () => {
+    statusCard.style.display = "none";
+  });
+
+  function setProcessingState(mediaType, targetFormat) {
+    const label = mediaType === "video" ? "วิดีโอเป็น .MP4" : `ภาพเป็น .${targetFormat.toUpperCase()}`;
+    statusCard.style.display = " inline-flex";
+    statusCard.classList.remove("ready");
+    statusText.textContent = `⏳ กำลังประมวลผล${label}... รอสักครู่นะคะ`;
+    cardDlBtn.style.display = "none";
+
+    btnPrimary.classList.add("processing");
+    btnPrimary.textContent = `⏳ กำลังประมวลผล...`;
+    btnRedownload.style.display = "none";
   }
+
+  function setFinishedState(downloadUrl, filename, mediaType) {
+    lastReadyDownload = { url: downloadUrl, filename };
+    statusCard.style.display = "inline-flex";
+    statusCard.classList.add("ready");
+    statusText.textContent = `✅ ประมวลผลเสร็จแล้ว! (${filename})`;
+    cardDlBtn.style.display = "inline-flex";
+    cardDlBtn.textContent = "📥 กดโหลดอีกครั้ง";
+
+    btnPrimary.classList.remove("processing");
+    btnPrimary.textContent = mediaType === "video" ? "⬇ โหลด MP4" : "⬇ โหลด PNG";
+    btnRedownload.style.display = "inline-flex";
+    btnRedownload.textContent = `📥 ประมวลผลเสร็จแล้ว! กดโหลด (${filename})`;
+  }
+
+  cardDlBtn.addEventListener("click", () => {
+    if (lastReadyDownload) {
+      triggerBrowserDownload(lastReadyDownload.url, lastReadyDownload.filename);
+    }
+  });
+
+  btnRedownload.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    if (lastReadyDownload) {
+      triggerBrowserDownload(lastReadyDownload.url, lastReadyDownload.filename);
+    }
+  });
 
   function extractMediaInfo(el) {
     if (!el || !el.tagName) return null;
@@ -227,7 +309,8 @@
   }
 
   async function triggerConvertAndDownload(info, targetFormat) {
-    showToast(`⏳ กำลังแปลงและดาวน์โหลดเป็น .${targetFormat.toUpperCase()} ...`);
+    setProcessingState(info.mediaType, targetFormat);
+
     const payload = {
       url: info.url || "",
       base64Data: info.base64Data || "",
@@ -248,7 +331,7 @@
       } catch (_) {}
     }
 
-    // 1. ส่งให้ Background Service Worker จัดการ (รองรับทั้งโหมด Standalone ไม่ง้อเซิร์ฟเวอร์ ข้าม CORS ได้ทุกเว็บ + โหมด Companion FFmpeg)
+    // 1. ส่งให้ Background Service Worker (สั่งปลุกเซิร์ฟเวอร์อัตโนมัติถ้ายังไม่เปิด หรือแปลงผ่าน OffscreenCanvas)
     if (typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.sendMessage && !info.svgText) {
       try {
         const swRes = await new Promise((resolve) => {
@@ -262,18 +345,20 @@
                 svgText: payload.svgText,
                 targetFormat,
                 filename: payload.filename,
+                autoDownload: true,
               },
             },
             (res) => resolve(res)
           );
         });
         if (swRes && swRes.ok) {
-          showToast(`✅ ดาวน์โหลดสำเร็จ: ${swRes.filename}`);
+          setFinishedState(swRes.downloadUrl, swRes.filename, info.mediaType);
           return;
         }
       } catch (_) {}
     }
 
+    // 2. เรียก Companion Server โดยตรง
     const endpoint = info.mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
     try {
       const resp = await fetch(`${COMPANION_URL}${endpoint}`, {
@@ -284,30 +369,30 @@
       const data = await resp.json();
       if (data.ok && data.downloadUrl) {
         triggerBrowserDownload(data.downloadUrl, data.filename);
-        showToast(`✅ ดาวน์โหลดสำเร็จ: ${data.filename}`);
+        setFinishedState(data.downloadUrl, data.filename, info.mediaType);
         return;
       }
-    } catch (_) {
-      // Fallback to Built-in Browser Canvas / Direct MP4 Downloader when Companion Server is not running
-    }
+    } catch (_) {}
 
+    // 3. Fallback แปลงใน Browser Canvas ทันที
     try {
       if (info.mediaType === "image") {
         const converted = await convertImageInBrowserCanvas(info, targetFormat);
         triggerBrowserDownload(converted.dataUrl, converted.filename);
-        showToast(`✅ แปลงและดาวน์โหลดสำเร็จ: ${converted.filename}`);
+        setFinishedState(converted.dataUrl, converted.filename, info.mediaType);
       } else {
         const stem = sanitizeCleanStem(payload.filename, "video");
         const cleanMp4 = `${stem}.mp4`;
-        triggerBrowserDownload(payload.base64Data || payload.url, cleanMp4);
-        showToast(`✅ ดาวน์โหลดวิดีโอสำเร็จ: ${cleanMp4}`);
+        const dlUrl = payload.base64Data || payload.url;
+        triggerBrowserDownload(dlUrl, cleanMp4);
+        setFinishedState(dlUrl, cleanMp4, info.mediaType);
       }
     } catch (err) {
-      showToast(`❌ ไม่สามารถแปลงไฟล์ได้: ${err.message}`);
+      statusText.textContent = `❌ ประมวลผลไม่สำเร็จ: ${err.message}`;
+      btnPrimary.classList.remove("processing");
     }
   }
 
-  // Setup Drag-and-Drop on Quick Dock
   const quickDock = toastShadow.getElementById("quick-drop-dock");
   quickDock.addEventListener("dragover", (e) => {
     e.preventDefault();
@@ -328,10 +413,6 @@
       triggerConvertAndDownload({ mediaType: isVid ? "video" : "image", url: droppedUrl }, isVid ? "mp4" : "png");
     }
   });
-
-  const badgeEl = shadow.getElementById("hud-badge");
-  const btnPrimary = shadow.getElementById("btn-primary");
-  const btnSecondary = shadow.getElementById("btn-secondary");
 
   btnPrimary.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -359,6 +440,7 @@
     if (hideTimer) clearTimeout(hideTimer);
     if (currentTarget?.element && currentTarget.element !== info.element) {
       currentTarget.element.classList.remove("umg-media-hovered");
+      btnRedownload.style.display = "none";
     }
     currentTarget = info;
     info.element.classList.add("umg-media-hovered");
@@ -384,7 +466,7 @@
       hideTimer = setTimeout(() => {
         if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
         hoverHost.style.display = "none";
-      }, 600);
+      }, 900);
     }
   }, true);
 

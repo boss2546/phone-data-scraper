@@ -1,8 +1,11 @@
 // Universal Media Grabber — Manifest V3 Background Service Worker
-// ทำงานได้ 100% แบบ Standalone (ไม่ต้องรันเซิร์ฟเวอร์!) ด้วย OffscreenCanvas + Background CORS-Free Fetch
-// และถ้ามี Companion Server (127.0.0.1:8765) เปิดอยู่ ก็จะใช้ FFmpeg ช่วยแปลงวิดีโอสตรีมมิ่งขั้นสูงให้อัตโนมัติ
+// ความสามารถพิเศษ:
+// 1. สั่งปลุก Companion Server (127.0.0.1:8765) เองอัตโนมัติผ่าน Native Messaging / Auto-Start Daemon เมื่อต้องใช้เซิร์ฟเวอร์แปลงไฟล์
+// 2. รองรับโหมด Standalone (OffscreenCanvas) ในตัว Extension เอง
+// 3. ส่งสถานะ "กำลังประมวลผล..." ➔ "ประมวลผลเสร็จแล้ว! กดโหลดอีกครั้ง" กลับไปยังหน้าเว็บ พร้อมลิงก์ดาวน์โหลดซ้ำได้ทันที
 
 const COMPANION_URL = "http://127.0.0.1:8765";
+const NATIVE_HOST = "com.meuu.umg_companion";
 const WEIRD_EXT_REGEX = /\.(webp|avif|svg|svgz|jfif|bmp|gif|ico|tiff|tif|heic|webm|ogv|ogg|mov|mkv|ts|m3u8|mpd|flv|avi|bin|dat|php)(\?.*|#.*|$)/i;
 
 function sanitizeCleanStem(rawName, prefix = "media") {
@@ -29,7 +32,41 @@ function arrayBufferToBase64(buffer) {
   return btoa(binary);
 }
 
-// แปลงรูปภาพทุกชนิด (.webp, .avif, .bmp, .gif, .jfif, ข้ามโดเมนติด CORS) ให้เป็น .PNG หรือ .JPG แท้ใน Service Worker โดยไม่ต้องง้อเซิร์ฟเวอร์
+async function isCompanionAlive() {
+  try {
+    const controller = new AbortController();
+    const t = setTimeout(() => controller.abort(), 900);
+    const res = await fetch(`${COMPANION_URL}/api/health`, { signal: controller.signal });
+    clearTimeout(t);
+    const data = await res.json();
+    return Boolean(data && data.ok);
+  } catch (_) {
+    return false;
+  }
+}
+
+async function autoWakeupCompanionServer() {
+  if (await isCompanionAlive()) return true;
+
+  // สั่งปลุกผ่าน Chrome Native Messaging Host ถ้าลงทะเบียนไว้
+  if (chrome.runtime && chrome.runtime.sendNativeMessage) {
+    try {
+      await new Promise((resolve) => {
+        chrome.runtime.sendNativeMessage(NATIVE_HOST, { action: "ensure" }, () => {
+          void chrome.runtime.lastError;
+          resolve();
+        });
+      });
+    } catch (_) {}
+  }
+
+  for (let i = 0; i < 10; i++) {
+    if (await isCompanionAlive()) return true;
+    await new Promise((r) => setTimeout(r, 250));
+  }
+  return false;
+}
+
 async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFilename) {
   const fmt = targetFormat === "jpg" ? "jpg" : "png";
   const mime = fmt === "jpg" ? "image/jpeg" : "image/png";
@@ -54,74 +91,93 @@ async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFil
   return { dataUrl, filename };
 }
 
-async function handleSmartConvertAndDownload({ mediaType, url, base64Data, svgText, targetFormat, filename }) {
+async function handleSmartConvertAndDownload({ mediaType, url, base64Data, svgText, targetFormat, filename, autoDownload = true }) {
   const fmt = mediaType === "video" ? "mp4" : (targetFormat === "jpg" ? "jpg" : "png");
   const endpoint = mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
 
-  // 1. ลองถาม Companion Server ก่อน (เผื่อเปิดอยู่ จะได้ใช้ FFmpeg สำหรับวิดีโอ .m3u8/.webm)
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 1200);
-    const resp = await fetch(`${COMPANION_URL}${endpoint}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ url, base64Data, svgText, targetFormat: fmt, filename }),
-      signal: controller.signal,
-    });
-    clearTimeout(timer);
-    const data = await resp.json();
-    if (data && data.ok && data.downloadUrl) {
-      await chrome.downloads.download({
-        url: data.downloadUrl,
-        filename: data.filename,
-        conflictAction: "uniquify",
-        saveAs: false,
+  // 1. ตรวจสอบหรือสั่งปลุก Companion Server อัตโนมัติ
+  const alive = await autoWakeupCompanionServer();
+  if (alive) {
+    try {
+      const resp = await fetch(`${COMPANION_URL}${endpoint}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url, base64Data, svgText, targetFormat: fmt, filename }),
       });
-      return { ok: true, filename: data.filename, mode: "companion" };
-    }
-  } catch (_) {
-    // ถ้าไม่ได้เปิดเซิร์ฟเวอร์ไว้ จะสลับมาใช้โหมด Standalone ในตัว Chrome Extension ทันที!
+      const data = await resp.json();
+      if (data && data.ok && data.downloadUrl) {
+        if (autoDownload) {
+          await chrome.downloads.download({
+            url: data.downloadUrl,
+            filename: data.filename,
+            conflictAction: "uniquify",
+            saveAs: false,
+          });
+        }
+        return {
+          ok: true,
+          filename: data.filename,
+          downloadUrl: data.downloadUrl,
+          mode: "companion_auto",
+        };
+      }
+    } catch (_) {}
   }
 
-  // 2. โหมด Standalone 100% (ไม่ต้องเปิดเซิร์ฟเวอร์)
+  // 2. ถ้าเป็นรูปภาพและไม่ได้ใช้เซิร์ฟเวอร์ แปลงใน OffscreenCanvas ของ Extension ทันที
   if (mediaType === "image") {
     const inputUrl = base64Data || url;
     const converted = await convertImageStandaloneInWorker(inputUrl, fmt, filename);
-    await chrome.downloads.download({
-      url: converted.dataUrl,
+    if (autoDownload) {
+      await chrome.downloads.download({
+        url: converted.dataUrl,
+        filename: converted.filename,
+        conflictAction: "uniquify",
+        saveAs: false,
+      });
+    }
+    return {
+      ok: true,
       filename: converted.filename,
-      conflictAction: "uniquify",
-      saveAs: false,
-    });
-    return { ok: true, filename: converted.filename, mode: "standalone" };
+      downloadUrl: converted.dataUrl,
+      mode: "standalone",
+    };
   } else {
     const cleanMp4 = `${sanitizeCleanStem(filename || url, "video")}.mp4`;
     const downloadSource = base64Data || url;
-    await chrome.downloads.download({
-      url: downloadSource,
+    if (autoDownload) {
+      await chrome.downloads.download({
+        url: downloadSource,
+        filename: cleanMp4,
+        conflictAction: "uniquify",
+        saveAs: false,
+      });
+    }
+    return {
+      ok: true,
       filename: cleanMp4,
-      conflictAction: "uniquify",
-      saveAs: false,
-    });
-    return { ok: true, filename: cleanMp4, mode: "standalone" };
+      downloadUrl: downloadSource,
+      mode: "standalone",
+    };
   }
 }
 
 chrome.runtime.onInstalled.addListener(() => {
+  autoWakeupCompanionServer();
   chrome.contextMenus.removeAll(() => {
     chrome.contextMenus.create({
       id: "umg-save-png",
-      title: "🖼 ดาวน์โหลดภาพเป็นไฟล์มาตรฐาน (.PNG)",
+      title: "🖼 ประมวลผลและโหลดภาพเป็น (.PNG)",
       contexts: ["image"],
     });
     chrome.contextMenus.create({
       id: "umg-save-jpg",
-      title: "📷 ดาวน์โหลดภาพเป็นไฟล์มาตรฐาน (.JPG)",
+      title: "📷 ประมวลผลและโหลดภาพเป็น (.JPG)",
       contexts: ["image"],
     });
     chrome.contextMenus.create({
       id: "umg-save-mp4",
-      title: "🎬 ดาวน์โหลดวิดีโอเป็นไฟล์มาตรฐาน (.MP4)",
+      title: "🎬 ประมวลผลและโหลดวิดีโอเป็น (.MP4)",
       contexts: ["video", "audio"],
     });
   });

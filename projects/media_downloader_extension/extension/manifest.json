@@ -13,7 +13,8 @@
     "sidePanel",
     "offscreen",
     "notifications",
-    "webRequest"
+    "webRequest",
+    "nativeMessaging"
   ],
   "host_permissions": [
     "<all_urls>"
