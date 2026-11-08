@@ -298,11 +298,24 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
         imgEl.dispatchEvent(new MouseEvent('mousemove', {{ bubbles: true, clientX: iRect.left + 80, clientY: iRect.top + 80 }}));
         const imageDetectedBadge = badge.textContent;
 
+        // D. ทดสอบกดปุ่มปิดการทำงาน (OFF) -> ปุ่มลอยต้องซ่อนทันที และชี้รูปไม่ขึ้นปุ่มลอยอีก
+        const powerPill = toastHost.shadowRoot.getElementById('floating-power-pill');
+        powerPill.click();
+        const hudWhenOff = host.style.display;
+        const pillTextWhenOff = powerPill.textContent.trim();
+
+        // กดเปิดกลับมาเป็น ON อีกครั้ง
+        powerPill.click();
+        const pillTextWhenOn = powerPill.textContent.trim();
+
         document.getElementById('test-result').textContent = JSON.stringify({{
           ignoredButtonHud,
           videoDetectedBadge,
           videoStatus,
-          imageDetectedBadge
+          imageDetectedBadge,
+          hudWhenOff,
+          pillTextWhenOff,
+          pillTextWhenOn
         }});
       }} catch (err) {{
         document.getElementById('test-result').textContent = 'ERROR:' + err.message;
@@ -332,6 +345,9 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
             self.assertIn("VIDEO → MP4", dom_out, f"Video behind poster/overlay must be detected as VIDEO: {dom_out[-600:]}")
             self.assertIn(".mp4", dom_out, f"Video download must produce .mp4: {dom_out[-600:]}")
             self.assertIn("IMAGE → PNG/JPG", dom_out, f"Real image must be detected as IMAGE: {dom_out[-600:]}")
+            self.assertIn('"hudWhenOff":"none"', dom_out, f"HUD must hide when toggled OFF: {dom_out[-600:]}")
+            self.assertIn("ปิดพัก (OFF)", dom_out, f"Power pill must show OFF state: {dom_out[-600:]}")
+            self.assertIn("เปิด (ON)", dom_out, f"Power pill must restore ON state: {dom_out[-600:]}")
         finally:
             if os.path.exists(temp_html_path):
                 os.unlink(temp_html_path)

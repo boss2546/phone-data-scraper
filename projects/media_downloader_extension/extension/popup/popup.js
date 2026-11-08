@@ -2,6 +2,46 @@ const COMPANION_URL = "http://127.0.0.1:8765";
 const statusEl = document.getElementById("server-status");
 const listEl = document.getElementById("media-list");
 const dropzone = document.getElementById("dropzone");
+const powerBox = document.getElementById("power-box");
+const powerTitle = document.getElementById("power-title");
+const powerSub = document.getElementById("power-sub");
+const btnTogglePower = document.getElementById("btn-toggle-power");
+
+let isEnabled = true;
+
+function renderPowerState(enabled) {
+  isEnabled = Boolean(enabled);
+  if (isEnabled) {
+    powerBox.classList.remove("off");
+    btnTogglePower.classList.remove("off");
+    powerTitle.textContent = "🟢 เปิดใช้งานอยู่ (ON)";
+    powerSub.textContent = "วางเมาส์ชี้รูป/วิดีโอเพื่อโหลด (คีย์ลัด Alt+M)";
+    btnTogglePower.textContent = "🟢 เปิด (ON)";
+  } else {
+    powerBox.classList.add("off");
+    btnTogglePower.classList.add("off");
+    powerTitle.textContent = "⚪ ปิดพักการทำงาน (OFF)";
+    powerSub.textContent = "ซ่อนปุ่มลอยบนหน้าเว็บชั่วคราว (คีย์ลัด Alt+M)";
+    btnTogglePower.textContent = "⚪ ปิด (OFF)";
+  }
+}
+
+function initPowerState() {
+  if (chrome.storage && chrome.storage.local) {
+    chrome.storage.local.get({ umgEnabled: true }, (res) => {
+      renderPowerState(res.umgEnabled !== false);
+    });
+  }
+}
+
+btnTogglePower.addEventListener("click", () => {
+  const nextState = !isEnabled;
+  renderPowerState(nextState);
+  if (chrome.storage && chrome.storage.local) {
+    chrome.storage.local.set({ umgEnabled: nextState });
+  }
+  chrome.runtime.sendMessage({ type: "UMG_SET_ENABLED", enabled: nextState });
+});
 
 async function checkServer() {
   try {
@@ -12,7 +52,7 @@ async function checkServer() {
       return;
     }
   } catch (_) {}
-  statusEl.textContent = "🟢 โหมดทำงานเดี่ยว (ไม่ต้องรันเซิร์ฟเวอร์)";
+  statusEl.textContent = "🟢 โหมดทำงานเดี่ยว";
   statusEl.style.color = "#34d399";
 }
 
@@ -23,6 +63,7 @@ async function convertAndDownload(item, targetFormat) {
       payload: {
         mediaType: item.mediaType,
         url: item.url || "",
+        pageUrl: item.pageUrl || "",
         svgText: item.svgText || "",
         base64Data: item.base64Data || "",
         targetFormat,
@@ -43,7 +84,7 @@ document.getElementById("btn-scan").addEventListener("click", async () => {
       const row = document.createElement("div");
       row.className = "item";
       const label = document.createElement("span");
-      label.textContent = `[${item.label}] ${item.url || "Inline Media"}`;
+      label.textContent = `${item.label}: ${item.url || "Media"}`;
       const btn = document.createElement("button");
       const fmt = item.mediaType === "video" ? "mp4" : "png";
       btn.textContent = `.${fmt.toUpperCase()}`;
@@ -74,5 +115,5 @@ dropzone.addEventListener("drop", async (e) => {
   }
 });
 
+initPowerState();
 checkServer();
-

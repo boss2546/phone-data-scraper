@@ -30,10 +30,58 @@
       background: rgba(16, 185, 129, 0.2);
       color: #34d399;
     }
+    .power-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+    }
+    .power-box.off {
+      border-color: rgba(148, 163, 184, 0.3);
+      background: rgba(30, 41, 59, 0.5);
+    }
+    .power-label {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .power-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+    .power-sub {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .toggle-btn {
+      flex: 0 0 auto;
+      min-width: 92px;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #ffffff;
+      background: linear-gradient(135deg, #10b981, #059669);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+      transition: all 0.15s ease;
+    }
+    .toggle-btn.off {
+      background: #475569;
+      color: #e2e8f0;
+      box-shadow: none;
+    }
     .dropzone {
       border: 2px dashed rgba(52, 211, 153, 0.45);
       border-radius: 12px;
-      padding: 16px;
+      padding: 14px;
       text-align: center;
       background: rgba(30, 41, 59, 0.65);
       margin-bottom: 12px;
@@ -49,7 +97,7 @@
       gap: 8px;
       margin-bottom: 12px;
     }
-    button {
+    button.action-btn {
       flex: 1;
       border: none;
       border-radius: 8px;
@@ -60,11 +108,11 @@
       color: #fff;
       background: linear-gradient(135deg, #10b981, #059669);
     }
-    button.secondary {
+    button.action-btn.secondary {
       background: linear-gradient(135deg, #3b82f6, #2563eb);
     }
     .list {
-      max-height: 220px;
+      max-height: 200px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
@@ -87,8 +135,13 @@
     }
     .item button {
       flex: 0 0 auto;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      background: #10b981;
       padding: 4px 8px;
       font-size: 11px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -97,15 +150,24 @@
     <div class="title">⚡ Universal Media Grabber</div>
     <div class="status" id="server-status">กำลังเช็ก...</div>
   </div>
+
+  <!-- ปุ่มสวิตช์ เปิด / ปิด การทำงาน -->
+  <div class="power-box" id="power-box">
+    <div class="power-label">
+      <div class="power-title" id="power-title">🟢 เปิดใช้งานอยู่ (ON)</div>
+      <div class="power-sub" id="power-sub">ชี้รูป/วิดีโอเพื่อโหลด (คีย์ลัด Alt+M)</div>
+    </div>
+    <button class="toggle-btn" id="btn-toggle-power">เปิดอยู่ (ON)</button>
+  </div>
+
   <div class="dropzone" id="dropzone">
     📥 ลากรูปหรือวิดีโอมาวางที่นี่เพื่อแปลงเป็น <b>.PNG / .JPG / .MP4</b> ทันที
   </div>
   <div class="actions">
-    <button id="btn-scan">🔍 สแกนทั้งหน้าเว็บ</button>
-    <button class="secondary" id="btn-sandbox">🧪 เปิดหน้าทดสอบ</button>
+    <button class="action-btn" id="btn-scan">🔍 สแกนทั้งหน้าเว็บ</button>
+    <button class="action-btn secondary" id="btn-sandbox">🧪 เปิดหน้าทดสอบ</button>
   </div>
   <div class="list" id="media-list"></div>
   <script src="popup.js"></script>
 </body>
 </html>
-

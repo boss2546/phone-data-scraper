@@ -14,6 +14,7 @@
   let currentTarget = null;
   let hideTimer = null;
   let lastReadyDownload = null;
+  let isExtensionEnabled = true;
 
   function sanitizeCleanStem(rawName, prefix = "media") {
     if (!rawName) return `${prefix}_${Date.now()}`;
@@ -156,6 +157,7 @@
       <button class="btn" id="btn-primary">⬇ โหลด PNG</button>
       <button class="btn secondary" id="btn-secondary" style="display:none;">⬇ โหลด JPG</button>
       <button class="btn ready-again" id="btn-redownload" style="display:none;">📥 กดโหลดอีกครั้ง</button>
+      <button class="btn" id="btn-hud-pause" style="background:#475569; padding:5px 8px;" title="ปิดพักปุ่มลอย (Alt+M)">⏸ ปิด</button>
     </div>
   `;
   document.documentElement.appendChild(hoverHost);
@@ -207,6 +209,34 @@
         color: #94a3b8;
         font-size: 14px;
       }
+      .power-pill {
+        pointer-events: auto;
+        cursor: pointer;
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(15, 23, 42, 0.9);
+        backdrop-filter: blur(8px);
+        color: #f8fafc;
+        padding: 6px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(16, 185, 129, 0.5);
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+        transition: all 0.15s ease;
+      }
+      .power-pill.off {
+        border-color: rgba(148, 163, 184, 0.35);
+        color: #94a3b8;
+        opacity: 0.75;
+      }
+      .power-pill:hover {
+        opacity: 1;
+        transform: translateY(-1px);
+      }
     </style>
     <div class="wrapper">
       <div class="status-card" id="status-card">
@@ -214,6 +244,9 @@
         <button class="dl-again-btn" id="card-dl-btn" style="display:none;">📥 กดโหลดอีกครั้ง</button>
         <button class="close-btn" id="card-close-btn">✕</button>
       </div>
+      <button class="power-pill" id="floating-power-pill" title="คลิกเพื่อ เปิด/ปิด ปุ่มดึงภาพและวิดีโอ (คีย์ลัด Alt+M)">
+        🟢 โหมดดึงภาพ/วิดีโอ: เปิด (ON)
+      </button>
     </div>
   `;
   document.documentElement.appendChild(toastHost);
@@ -227,6 +260,57 @@
   const btnPrimary = shadow.getElementById("btn-primary");
   const btnSecondary = shadow.getElementById("btn-secondary");
   const btnRedownload = shadow.getElementById("btn-redownload");
+  const btnHudPause = shadow.getElementById("btn-hud-pause");
+  const floatingPowerPill = toastShadow.getElementById("floating-power-pill");
+
+  function applyEnabledState(enabled, persist = true) {
+    isExtensionEnabled = Boolean(enabled);
+    if (!isExtensionEnabled) {
+      if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
+      currentTarget = null;
+      hoverHost.style.display = "none";
+      floatingPowerPill.classList.add("off");
+      floatingPowerPill.textContent = "⚪ โหมดดึงภาพ/วิดีโอ: ปิดพัก (OFF)";
+    } else {
+      floatingPowerPill.classList.remove("off");
+      floatingPowerPill.textContent = "🟢 โหมดดึงภาพ/วิดีโอ: เปิด (ON)";
+    }
+    if (persist && typeof chrome !== "undefined" && chrome.storage && chrome.storage.local) {
+      chrome.storage.local.set({ umgEnabled: isExtensionEnabled });
+      if (chrome.runtime && chrome.runtime.sendMessage) {
+        chrome.runtime.sendMessage({ type: "UMG_SET_ENABLED", enabled: isExtensionEnabled });
+      }
+    }
+  }
+
+  floatingPowerPill.addEventListener("click", (e) => {
+    e.stopPropagation();
+    applyEnabledState(!isExtensionEnabled, true);
+  });
+
+  btnHudPause.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    applyEnabledState(false, true);
+  });
+
+  window.addEventListener("keydown", (e) => {
+    if (e.altKey && (e.key === "m" || e.key === "M" || e.code === "KeyM")) {
+      e.preventDefault();
+      applyEnabledState(!isExtensionEnabled, true);
+    }
+  });
+
+  if (typeof chrome !== "undefined" && chrome.storage && chrome.storage.local) {
+    chrome.storage.local.get({ umgEnabled: true }, (res) => {
+      applyEnabledState(res.umgEnabled !== false, false);
+    });
+    chrome.storage.onChanged.addListener((changes) => {
+      if (changes.umgEnabled) {
+        applyEnabledState(changes.umgEnabled.newValue !== false, false);
+      }
+    });
+  }
 
   cardCloseBtn.addEventListener("click", () => {
     statusCard.style.display = "none";
@@ -510,7 +594,8 @@
   document.addEventListener(
     "mousemove",
     (e) => {
-      if (e.target === hoverHost || hoverHost.contains(e.target)) {
+      if (!isExtensionEnabled) return;
+      if (e.target === hoverHost || hoverHost.contains(e.target) || e.target === toastHost || toastHost.contains(e.target)) {
         if (hideTimer) clearTimeout(hideTimer);
         return;
       }

@@ -191,8 +191,19 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
   }
 }
 
+function updateBadge(enabled) {
+  if (!chrome.action) return;
+  chrome.action.setBadgeText({ text: enabled ? "ON" : "OFF" });
+  chrome.action.setBadgeBackgroundColor({ color: enabled ? "#10b981" : "#64748b" });
+}
+
 chrome.runtime.onInstalled.addListener(() => {
   autoWakeupCompanionServer();
+  if (chrome.storage && chrome.storage.local) {
+    chrome.storage.local.get({ umgEnabled: true }, (res) => {
+      updateBadge(res.umgEnabled !== false);
+    });
+  }
   chrome.contextMenus.removeAll(() => {
     chrome.contextMenus.create({
       id: "umg-save-png",
@@ -254,6 +265,16 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         sendResponse({ ok: true, downloadId });
       }
     );
+    return true;
+  }
+
+  if (msg.type === "UMG_SET_ENABLED") {
+    const enabled = Boolean(msg.enabled);
+    updateBadge(enabled);
+    if (chrome.storage && chrome.storage.local) {
+      chrome.storage.local.set({ umgEnabled: enabled });
+    }
+    sendResponse({ ok: true, enabled });
     return true;
   }
 
