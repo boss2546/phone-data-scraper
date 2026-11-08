@@ -19,6 +19,7 @@ PROJECTS = {
     "9": ("rea_reverse_engineering", "🔬 REA Reverse Engineering (วิเคราะห์ Binary, App & Runtime ด้วย MCP/CLI)", "projects/rea_reverse_engineering/run.py"),
     "10": ("app_store_scraper", "📱 App Store & Play Store Scraper (คลังโลโก้ & ภาพหน้าจอ 35 แอปดัง)", "projects/app_store_scraper/run.py"),
     "11": ("pydronewire", "🛸 pyDroneWire Controller (ควบคุมโดรน FLOW-UFO ผ่าน UDP/RTSP & HUD)", "projects/pydronewire/run.py"),
+    "12": ("media_downloader_extension", "🎬 Universal Media Grabber Extension (ดึงภาพ/วิดีโอเป็น .PNG/.JPG/.MP4)", "projects/media_downloader_extension/run.py"),
 }
 
 ALIASES = {
@@ -33,6 +34,7 @@ ALIASES = {
     "rea": "9", "reverse": "9",
     "appstore": "10", "playstore": "10", "apps": "10",
     "drone": "11", "pydronewire": "11",
+    "media": "12", "ext": "12", "extension": "12",
 }
 
 def print_banner():

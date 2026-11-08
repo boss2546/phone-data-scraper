@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>Universal Media Grabber</title>
+  <style>
+    body {
+      width: 360px;
+      margin: 0;
+      padding: 16px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #34d399;
+    }
+    .status {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+    }
+    .dropzone {
+      border: 2px dashed rgba(52, 211, 153, 0.45);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      background: rgba(30, 41, 59, 0.65);
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+    .dropzone.dragover {
+      border-color: #10b981;
+      background: rgba(16, 185, 129, 0.15);
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    button {
+      flex: 1;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(135deg, #10b981, #059669);
+    }
+    button.secondary {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+    }
+    .list {
+      max-height: 220px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+    }
+    .item span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 190px;
+    }
+    .item button {
+      flex: 0 0 auto;
+      padding: 4px 8px;
+      font-size: 11px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="title">⚡ Universal Media Grabber</div>
+    <div class="status" id="server-status">กำลังเช็ก...</div>
+  </div>
+  <div class="dropzone" id="dropzone">
+    📥 ลากรูปหรือวิดีโอมาวางที่นี่เพื่อแปลงเป็น <b>.PNG / .JPG / .MP4</b> ทันที
+  </div>
+  <div class="actions">
+    <button id="btn-scan">🔍 สแกนทั้งหน้าเว็บ</button>
+    <button class="secondary" id="btn-sandbox">🧪 เปิดหน้าทดสอบ</button>
+  </div>
+  <div class="list" id="media-list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

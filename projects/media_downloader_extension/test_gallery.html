@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧪 Universal Media Grabber — ห้องแล็บทดสอบดึงภาพและวิดีโอครบทุกนามสกุล (25 Test Cases)</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-main: #090d16;
+      --bg-card: #111827;
+      --bg-card-hover: #1e293b;
+      --border-subtle: #1f2937;
+      --accent-emerald: #10b981;
+      --accent-cyan: #06b6d4;
+      --accent-amber: #f59e0b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      padding-inline: 2rem;
+      padding-block: 2rem 4rem;
+      scrollbar-gutter: stable;
+    }
+
+    header.lab-header {
+      max-inline-size: 1440px;
+      margin-inline: auto;
+      margin-block-end: 2rem;
+      padding: 1.5rem 2rem;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(6, 182, 212, 0.08));
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: safe center;
+      gap: 1rem;
+    }
+
+    .header-info {
+      flex: 1 1 500px;
+      min-inline-size: 0;
+    }
+
+    .header-info h1 {
+      font-size: 1.65rem;
+      margin-block-end: 0.35rem;
+      color: #ffffff;
+    }
+
+    .header-info p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .status-pill {
+      margin-inline-start: auto;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid var(--accent-emerald);
+      color: #6ee7b7;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    section.media-section {
+      max-inline-size: 1440px;
+      margin-inline: auto;
+      margin-block-end: 3rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      margin-block-end: 1rem;
+      padding-block-end: 0.5rem;
+      border-block-end: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: safe center;
+      gap: 0.75rem;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .media-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .media-card:hover {
+      border-color: var(--accent-emerald);
+      background: var(--bg-card-hover);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: safe center;
+      gap: 0.5rem;
+      min-inline-size: 0;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: #e2e8f0;
+      flex: 1 1 auto;
+      min-inline-size: 0;
+    }
+
+    .badge-ext {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 6px;
+      background: rgba(245, 158, 11, 0.2);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      white-space: nowrap;
+    }
+
+    .badge-ext.video-badge {
+      background: rgba(6, 182, 212, 0.2);
+      color: #67e8f9;
+      border-color: rgba(6, 182, 212, 0.4);
+    }
+
+    /* Use display: block on replaced elements per modern-web-guidance css-layout */
+    .media-viewport img,
+    .media-viewport video,
+    .media-viewport canvas,
+    .media-viewport svg {
+      display: block;
+      inline-size: 100%;
+      block-size: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #0f172a;
+    }
+
+    .bg-image-box {
+      display: block;
+      inline-size: 100%;
+      aspect-ratio: 16 / 10;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+    }
+
+    .shield-container {
+      position: relative;
+      inline-size: 100%;
+    }
+
+    .transparent-overlay-shield {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.12));
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .card-caption {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="lab-header">
+    <div class="header-info">
+      <h1>🧪 ห้องแล็บทดสอบ Universal Media Grabber (25 รูปแบบไฟล์จริง)</h1>
+      <p>เลื่อนเมาส์ไปวางเหนือรูปภาพหรือวิดีโอชิ้นใดก็ได้ จะมีปุ่มดาวน์โหลดลอยขึ้นมาทันที พร้อมแปลงนามสกุลแปลก (.webp, .avif, .svg, .webm, .ogv, .mkv, .ts, .m3u8, blob:) เป็นไฟล์มาตรฐาน (.png / .jpg / .mp4) อัตโนมัติ!</p>
+    </div>
+    <div id="lab-ready-indicator" class="status-pill" data-ready="false">⏳ กำลังเตรียมมีเดียทดสอบ...</div>
+  </header>
+
+  <!-- ==================== SECTION 1: 15 IMAGE FORMATS ==================== -->
+  <section class="media-section" id="section-images">
+    <h2 class="section-title">🖼️ หมวดที่ 1: ทดสอบดึงและแปลงไฟล์ภาพ 15 รูปแบบ (แปลงเป็น .PNG และ .JPG มาตรฐาน)</h2>
+    <div class="media-grid">
+
+      <!-- 1. WebP -->
+      <article class="media-card" data-case="img-webp">
+        <div class="card-header">
+          <span class="card-title">1. ภาพ WebP สมัยใหม่</span>
+          <span class="badge-ext">.webp ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-webp" src="/assets/images/sample_webp.webp" alt="WebP Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_webp.webp</p>
+      </article>
+
+      <!-- 2. AVIF -->
+      <article class="media-card" data-case="img-avif">
+        <div class="card-header">
+          <span class="card-title">2. ภาพ AVIF บีบอัดสูง</span>
+          <span class="badge-ext">.avif ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-avif" src="/assets/images/sample_avif.avif" alt="AVIF Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_avif.avif</p>
+      </article>
+
+      <!-- 3. External SVG -->
+      <article class="media-card" data-case="img-svg">
+        <div class="card-header">
+          <span class="card-title">3. ภาพเวกเตอร์ SVG (&lt;img&gt;)</span>
+          <span class="badge-ext">.svg ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-svg" src="/assets/images/sample_svg.svg" alt="SVG External Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_svg.svg</p>
+      </article>
+
+      <!-- 4. Inline SVG -->
+      <article class="media-card" data-case="img-inline-svg">
+        <div class="card-header">
+          <span class="card-title">4. กราฟิก Inline &lt;svg&gt;</span>
+          <span class="badge-ext">DOM SVG ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <svg id="media-img-inline-svg" xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+            <rect width="640" height="400" rx="20" fill="#1e1b4b"/>
+            <rect x="24" y="24" width="592" height="352" rx="14" fill="none" stroke="#a855f7" stroke-width="5"/>
+            <circle cx="490" cy="145" r="75" fill="#ec4899"/>
+            <polygon points="490,95 460,155 520,155" fill="#ffffff"/>
+            <text x="50" y="100" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="bold">INLINE DOM SVG</text>
+            <text x="50" y="145" fill="#f472b6" font-family="sans-serif" font-size="20">Serialized &amp; Rasterized to PNG/JPG</text>
+            <rect x="50" y="265" width="120" height="65" rx="8" fill="#10b981"/>
+            <rect x="190" y="265" width="120" height="65" rx="8" fill="#3b82f6"/>
+            <rect x="330" y="265" width="120" height="65" rx="8" fill="#f59e0b"/>
+          </svg>
+        </div>
+        <p class="card-caption">ต้นฉบับ: โค้ด &lt;svg&gt; ฝังในหน้าเว็บ</p>
+      </article>
+
+      <!-- 5. GIF -->
+      <article class="media-card" data-case="img-gif">
+        <div class="card-header">
+          <span class="card-title">5. ภาพ GIF เคลื่อนไหว</span>
+          <span class="badge-ext">.gif ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-gif" src="/assets/images/sample_gif.gif" alt="GIF Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_gif.gif</p>
+      </article>
+
+      <!-- 6. BMP -->
+      <article class="media-card" data-case="img-bmp">
+        <div class="card-header">
+          <span class="card-title">6. ภาพ Bitmap (.bmp)</span>
+          <span class="badge-ext">.bmp ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-bmp" src="/assets/images/sample_bmp.bmp" alt="BMP Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_bmp.bmp</p>
+      </article>
+
+      <!-- 7. JFIF -->
+      <article class="media-card" data-case="img-jfif">
+        <div class="card-header">
+          <span class="card-title">7. ภาพ JFIF จากโซเชียล</span>
+          <span class="badge-ext">.jfif ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-jfif" src="/assets/images/sample_jfif.jfif" alt="JFIF Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_jfif.jfif</p>
+      </article>
+
+      <!-- 8. PNG -->
+      <article class="media-card" data-case="img-png">
+        <div class="card-header">
+          <span class="card-title">8. ภาพ PNG มาตรฐาน</span>
+          <span class="badge-ext">.png ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-png" src="/assets/images/sample_png.png" alt="PNG Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_png.png</p>
+      </article>
+
+      <!-- 9. JPG -->
+      <article class="media-card" data-case="img-jpg">
+        <div class="card-header">
+          <span class="card-title">9. ภาพ JPG มาตรฐาน</span>
+          <span class="badge-ext">.jpg ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-jpg" src="/assets/images/sample_jpg.jpg" alt="JPG Test Sample">
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_jpg.jpg</p>
+      </article>
+
+      <!-- 10. Picture Element -->
+      <article class="media-card" data-case="img-picture">
+        <div class="card-header">
+          <span class="card-title">10. แท็ก &lt;picture&gt; (AVIF/WebP)</span>
+          <span class="badge-ext">picture ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <picture id="media-picture-wrap">
+            <source srcset="/assets/images/sample_avif.avif" type="image/avif">
+            <source srcset="/assets/images/sample_webp.webp" type="image/webp">
+            <img id="media-img-picture" src="/assets/images/sample_jpg.jpg" alt="Picture Element Sample">
+          </picture>
+        </div>
+        <p class="card-caption">ต้นฉบับ: &lt;picture&gt; เลือก AVIF อัตโนมัติ</p>
+      </article>
+
+      <!-- 11. CSS Background Image -->
+      <article class="media-card" data-case="img-bg">
+        <div class="card-header">
+          <span class="card-title">11. ภาพพื้นหลัง CSS Background</span>
+          <span class="badge-ext">CSS url(.webp) ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <div id="media-img-bg" class="bg-image-box" style="background-image: url('/assets/images/sample_webp.webp');" role="img" aria-label="CSS Background WebP"></div>
+        </div>
+        <p class="card-caption">ต้นฉบับ: div style="background-image: url(...)"</p>
+      </article>
+
+      <!-- 12. HTML5 Canvas -->
+      <article class="media-card" data-case="img-canvas">
+        <div class="card-header">
+          <span class="card-title">12. กราฟิก HTML5 &lt;canvas&gt;</span>
+          <span class="badge-ext">Canvas ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <canvas id="media-img-canvas" width="640" height="400"></canvas>
+        </div>
+        <p class="card-caption">ต้นฉบับ: วาดสดด้วย Canvas 2D Context</p>
+      </article>
+
+      <!-- 13. Blob URL Image -->
+      <article class="media-card" data-case="img-blob">
+        <div class="card-header">
+          <span class="card-title">13. ภาพจากหน่วยความจำ (blob:)</span>
+          <span class="badge-ext">blob:webp ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-blob" alt="Blob Image Test">
+        </div>
+        <p class="card-caption">ต้นฉบับ: blob:http://127.0.0.1:8765/...</p>
+      </article>
+
+      <!-- 14. Data URI Image -->
+      <article class="media-card" data-case="img-datauri">
+        <div class="card-header">
+          <span class="card-title">14. ภาพแบบ Base64 Data URI</span>
+          <span class="badge-ext">data:image/webp ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <img id="media-img-datauri" alt="Data URI Image Test">
+        </div>
+        <p class="card-caption">ต้นฉบับ: data:image/webp;base64,...</p>
+      </article>
+
+      <!-- 15. Overlay-Covered Protected Image -->
+      <article class="media-card" data-case="img-covered">
+        <div class="card-header">
+          <span class="card-title">15. ภาพที่มีเกราะใสบัง (Protected)</span>
+          <span class="badge-ext">Shielded .avif ➔ .png/.jpg</span>
+        </div>
+        <div class="media-viewport">
+          <div id="media-img-covered-shield" class="shield-container">
+            <img id="media-img-covered" src="/assets/images/sample_avif.avif" alt="Protected Covered Image">
+            <div class="transparent-overlay-shield" id="img-overlay-blocker"></div>
+          </div>
+        </div>
+        <p class="card-caption">ต้นฉบับ: มี &lt;div&gt; ใสทับเหมือน IG/Shopee</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: 10 VIDEO FORMATS ==================== -->
+  <section class="media-section" id="section-videos">
+    <h2 class="section-title">🎬 หมวดที่ 2: ทดสอบดึงและแปลงไฟล์วิดีโอ 10 รูปแบบ (แปลงเป็น .MP4 H.264 มาตรฐานทั้งหมด!)</h2>
+    <div class="media-grid">
+
+      <!-- 1. WebM Video -->
+      <article class="media-card" data-case="vid-webm">
+        <div class="card-header">
+          <span class="card-title">1. วิดีโอ WebM (VP8/VP9)</span>
+          <span class="badge-ext video-badge">.webm ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-webm" src="/assets/videos/sample_webm.webm" controls muted loop playsinline preload="auto"></video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_webm.webm</p>
+      </article>
+
+      <!-- 2. OGV Video -->
+      <article class="media-card" data-case="vid-ogv">
+        <div class="card-header">
+          <span class="card-title">2. วิดีโอ Ogg Video (.ogv)</span>
+          <span class="badge-ext video-badge">.ogv ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-ogv" src="/assets/videos/sample_ogv.ogv" controls muted loop playsinline preload="auto"></video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_ogv.ogv</p>
+      </article>
+
+      <!-- 3. QuickTime MOV -->
+      <article class="media-card" data-case="vid-mov">
+        <div class="card-header">
+          <span class="card-title">3. วิดีโอ QuickTime (.mov)</span>
+          <span class="badge-ext video-badge">.mov ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-mov" src="/assets/videos/sample_mov.mov" controls muted loop playsinline preload="auto"></video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_mov.mov</p>
+      </article>
+
+      <!-- 4. Matroska MKV -->
+      <article class="media-card" data-case="vid-mkv">
+        <div class="card-header">
+          <span class="card-title">4. วิดีโอ Matroska (.mkv)</span>
+          <span class="badge-ext video-badge">.mkv ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-mkv" src="/assets/videos/sample_mkv.mkv" data-stream-src="/assets/videos/sample_mkv.mkv" poster="/assets/images/sample_webp.webp" controls muted loop playsinline preload="metadata">
+            <source src="/assets/videos/sample_mkv.mkv" type="video/x-matroska">
+          </video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_mkv.mkv</p>
+      </article>
+
+      <!-- 5. MPEG-TS (.ts) -->
+      <article class="media-card" data-case="vid-ts">
+        <div class="card-header">
+          <span class="card-title">5. วิดีโอสตรีมเซกเมนต์ (.ts)</span>
+          <span class="badge-ext video-badge">.ts ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-ts" data-stream-src="/assets/videos/sample_ts.ts" poster="/assets/images/sample_bmp.bmp" controls muted loop playsinline>
+            <source src="/assets/videos/sample_ts.ts" type="video/mp2t">
+          </video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_ts.ts (MPEG-TS)</p>
+      </article>
+
+      <!-- 6. HLS Stream (.m3u8) -->
+      <article class="media-card" data-case="vid-hls">
+        <div class="card-header">
+          <span class="card-title">6. สตรีมมิ่ง HLS (.m3u8)</span>
+          <span class="badge-ext video-badge">.m3u8 ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-hls" data-stream-src="/assets/videos/sample_hls.m3u8" poster="/assets/images/sample_avif.avif" controls muted loop playsinline>
+            <source src="/assets/videos/sample_hls.m3u8" type="application/vnd.apple.mpegurl">
+          </video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_hls.m3u8 (HLS Stream)</p>
+      </article>
+
+      <!-- 7. Standard MP4 -->
+      <article class="media-card" data-case="vid-mp4">
+        <div class="card-header">
+          <span class="card-title">7. วิดีโอ MP4 มาตรฐาน</span>
+          <span class="badge-ext video-badge">.mp4 ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-mp4" src="/assets/videos/sample_mp4.mp4" controls muted loop playsinline preload="auto"></video>
+        </div>
+        <p class="card-caption">ไฟล์ต้นฉบับ: sample_mp4.mp4</p>
+      </article>
+
+      <!-- 8. Blob Video (blob:http://...) -->
+      <article class="media-card" data-case="vid-blob">
+        <div class="card-header">
+          <span class="card-title">8. วิดีโอ Blob ในหน่วยความจำ (blob:)</span>
+          <span class="badge-ext video-badge">blob:webm ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-blob" controls muted loop playsinline preload="auto"></video>
+        </div>
+        <p class="card-caption">ต้นฉบับ: blob:http://... (จาก WebM Blob)</p>
+      </article>
+
+      <!-- 9. Live MediaStream Video (srcObject, no URL) -->
+      <article class="media-card" data-case="vid-stream">
+        <div class="card-header">
+          <span class="card-title">9. วิดีโอสตรีมสดไร้ URL (MediaStream)</span>
+          <span class="badge-ext video-badge">Live Stream ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <video id="media-vid-stream" data-live-stream="true" autoplay muted loop playsinline></video>
+        </div>
+        <p class="card-caption">ต้นฉบับ: video.srcObject (อัดสตรีมสดแปลงเป็น MP4)</p>
+      </article>
+
+      <!-- 10. Overlay-Covered Protected Video -->
+      <article class="media-card" data-case="vid-covered">
+        <div class="card-header">
+          <span class="card-title">10. วิดีโอที่มีเกราะใสบัง (TikTok/Reels)</span>
+          <span class="badge-ext video-badge">Shielded .webm ➔ .mp4</span>
+        </div>
+        <div class="media-viewport">
+          <div id="media-vid-covered-shield" class="shield-container">
+            <video id="media-vid-covered" src="/assets/videos/sample_webm.webm" muted loop playsinline preload="auto"></video>
+            <div class="transparent-overlay-shield" id="vid-overlay-blocker"></div>
+          </div>
+        </div>
+        <p class="card-caption">ต้นฉบับ: มี &lt;div&gt; ใสทับกันคลิกขวา</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Hidden generator canvas for live MediaStream video #9 -->
+  <canvas id="stream-generator-canvas" width="480" height="270" style="display:none;"></canvas>
+
+  <script>
+    (async function initLabPage() {
+      // 1. วาดกราฟิกลงบน HTML5 Canvas (#12)
+      const canvas = document.getElementById('media-img-canvas');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        const grad = ctx.createLinearGradient(0, 0, 640, 400);
+        grad.addColorStop(0, '#0f172a');
+        grad.addColorStop(1, '#065f46');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 640, 400);
+
+        ctx.strokeStyle = '#34d399';
+        ctx.lineWidth = 6;
+        ctx.strokeRect(20, 20, 600, 360);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 30px system-ui, sans-serif';
+        ctx.fillText('HTML5 CANVAS GRAPHIC', 50, 95);
+        ctx.fillStyle = '#6ee7b7';
+        ctx.font = '20px system-ui, sans-serif';
+        ctx.fillText('Captured directly to .PNG / .JPG', 50, 138);
+
+        const colors = ['#ef4444', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6'];
+        colors.forEach((c, idx) => {
+          ctx.fillStyle = c;
+          ctx.fillRect(50 + idx * 110, 250, 95, 80);
+        });
+      }
+
+      // 2. สร้าง Blob Image (#13) และ Data URI Image (#14) จากไฟล์ .webp
+      try {
+        const resp = await fetch('/assets/images/sample_webp.webp');
+        const webpBlob = await resp.blob();
+        const blobImgUrl = URL.createObjectURL(webpBlob);
+        const blobImgEl = document.getElementById('media-img-blob');
+        if (blobImgEl) {
+          blobImgEl.src = blobImgUrl;
+          blobImgEl.dataset.originalFormat = 'webp';
+        }
+
+        const reader = new FileReader();
+        const dataUriPromise = new Promise((resolve) => {
+          reader.onloadend = () => resolve(reader.result);
+        });
+        reader.readAsDataURL(webpBlob);
+        const dataUri = await dataUriPromise;
+        const dataImgEl = document.getElementById('media-img-datauri');
+        if (dataImgEl) {
+          dataImgEl.src = dataUri;
+        }
+      } catch (err) {
+        console.error('Failed to initialize blob/data image:', err);
+      }
+
+      // 3. สร้าง Blob Video (#8) จากไฟล์ .webm
+      try {
+        const vResp = await fetch('/assets/videos/sample_webm.webm');
+        const webmBlob = await vResp.blob();
+        const blobVidUrl = URL.createObjectURL(webmBlob);
+        const blobVidEl = document.getElementById('media-vid-blob');
+        if (blobVidEl) {
+          blobVidEl.src = blobVidUrl;
+          blobVidEl.dataset.originalFormat = 'webm';
+        }
+      } catch (err) {
+        console.error('Failed to initialize blob video:', err);
+      }
+
+      // 4. สร้าง Live MediaStream Video (#9) จาก Canvas
+      try {
+        const streamCanvas = document.getElementById('stream-generator-canvas');
+        const sCtx = streamCanvas.getContext('2d');
+        let frame = 0;
+        function drawStreamFrame() {
+          frame++;
+          sCtx.fillStyle = '#1e1b4b';
+          sCtx.fillRect(0, 0, 480, 270);
+          sCtx.fillStyle = '#10b981';
+          const x = 40 + (frame * 6) % 340;
+          sCtx.beginPath();
+          sCtx.arc(x, 135, 42, 0, Math.PI * 2);
+          sCtx.fill();
+          sCtx.fillStyle = '#ffffff';
+          sCtx.font = 'bold 22px sans-serif';
+          sCtx.fillText('LIVE STREAM FRAME #' + frame, 40, 55);
+          sCtx.fillStyle = '#38bdf8';
+          sCtx.font = '16px sans-serif';
+          sCtx.fillText('Recorded & Converted to Standard .MP4', 40, 235);
+          requestAnimationFrame(drawStreamFrame);
+        }
+        drawStreamFrame();
+
+        const liveVideo = document.getElementById('media-vid-stream');
+        if (liveVideo && streamCanvas.captureStream) {
+          const stream = streamCanvas.captureStream(24);
+          liveVideo.srcObject = stream;
+          try {
+            await liveVideo.play();
+          } catch (_) {
+            // Autoplay fallback
+          }
+        }
+      } catch (err) {
+        console.error('Failed to initialize live stream video:', err);
+      }
+
+      const readyEl = document.getElementById('lab-ready-indicator');
+      if (readyEl) {
+        readyEl.textContent = '🟢 มีเดียทั้ง 25 รูปแบบพร้อมทดสอบ!';
+        readyEl.dataset.ready = 'true';
+      }
+    })();
+  </script>
+</body>
+</html>
