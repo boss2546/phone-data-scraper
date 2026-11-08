@@ -33,7 +33,7 @@ from PIL import Image, ImageDraw
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEST_ASSETS_DIR = BASE_DIR / "data" / "test_assets"
-DOWNLOADS_DIR = BASE_DIR / "data" / "downloads"
+DOWNLOADS_DIR = Path(os.environ.get("UMG_DOWNLOADS_DIR") or (BASE_DIR / "data" / "downloads"))
 IMAGES_OUT_DIR = DOWNLOADS_DIR / "images"
 VIDEOS_OUT_DIR = DOWNLOADS_DIR / "videos"
 HISTORY_FILE = DOWNLOADS_DIR / "history.json"
@@ -62,13 +62,17 @@ def ensure_dirs():
 def sanitize_base_filename(raw_name: str, fallback_prefix: str = "media") -> str:
     """ทำความสะอาดชื่อไฟล์และตัดนามสกุลแปลกออกทั้งหมด เหลือเฉพาะชื่อไฟล์ที่ปลอดภัย"""
     if not raw_name or not str(raw_name).strip():
-        return f"{fallback_prefix}_{int(time.time() * 1000)}"
+        return f"{fallback_prefix}_{time.strftime('%Y%m%d_%H%M%S')}"
 
     name = str(raw_name).strip()
     # ตัด query string และ hash
     name = name.split("?")[0].split("#")[0]
-    name = os.path.basename(name)
+    if "://" in name or "/" in name:
+        name = os.path.basename(name)
     name = urllib.parse.unquote(name)
+
+    # ตัด thumbnail suffix เช่น .jpg_80x80.jpg หรือ _220x220xz.webp
+    name = re.sub(r"\.(jpg|jpeg|png|webp|avif|gif)_\d+x\d+.*$", "", name, flags=re.IGNORECASE)
 
     # ตัดนามสกุลออกทั้งหมด (รองรับทั้ง .webp, .sample.avif ฯลฯ)
     stem, ext = os.path.splitext(name)
@@ -78,10 +82,158 @@ def sanitize_base_filename(raw_name: str, fallback_prefix: str = "media") -> str
 
     # แทนที่อักขระไม่พึงประสงค์
     clean = re.sub(r"[^a-zA-Z0-9ก-๙_\-]", "_", stem or name)
-    clean = re.sub(r"_+", "_", clean).strip("_")
-    if not clean or clean in {"blob", "data", "media", "image", "video"}:
-        clean = f"{clean or fallback_prefix}_{int(time.time() * 1000) % 100000}"
+    clean = re.sub(r"_+", "_", clean).strip("_-")
+    if not clean or clean.lower() in {"blob", "data", "media", "image", "video", "watch"}:
+        clean = f"{fallback_prefix}_{time.strftime('%Y%m%d_%H%M%S')}"
     return clean[:80]
+
+
+def extract_site_label(page_url: str = "", media_url: str = "", site_hint: str = "") -> str:
+    """สกัดชื่อเว็บไซต์ให้สั้น อ่านง่าย เช่น Alibaba, Shopee, Lazada, YouTube, TikTok"""
+    if site_hint and str(site_hint).strip():
+        clean_hint = re.sub(r"[^a-zA-Z0-9ก-๙]", "", str(site_hint).strip())
+        if clean_hint:
+            return clean_hint[:20]
+
+    for candidate in (page_url, media_url):
+        if not candidate or not str(candidate).startswith(("http://", "https://")):
+            continue
+        host = (urllib.parse.urlparse(str(candidate)).hostname or "").lower()
+        if not host or host in ("127.0.0.1", "localhost"):
+            continue
+        brand_map = [
+            (("alibaba.", "alicdn."), "Alibaba"),
+            (("aliexpress.",), "AliExpress"),
+            (("1688.",), "1688"),
+            (("taobao.", "tbcdn."), "Taobao"),
+            (("tmall.",), "Tmall"),
+            (("shopee.", "shopeemobile."), "Shopee"),
+            (("lazada.", "lzd-img"), "Lazada"),
+            (("youtube.", "youtu.be", "ytimg.", "googlevideo."), "YouTube"),
+            (("tiktok.", "tiktokcdn."), "TikTok"),
+            (("facebook.", "fbcdn.", "fb.watch"), "Facebook"),
+            (("instagram.", "cdninstagram."), "Instagram"),
+            (("twitter.", "x.com", "twimg."), "X"),
+            (("pinterest.", "pinimg."), "Pinterest"),
+            (("apple.", "cdn-apple."), "Apple"),
+            (("amazon.", "media-amazon."), "Amazon"),
+            (("jd.com", "360buyimg."), "JD"),
+        ]
+        for keys, label in brand_map:
+            if any(k in host for k in keys):
+                return label
+        parts = [p for p in host.split(".") if p not in ("www", "m", "mobile", "cdn", "img", "s", "gv", "videocdn", "com", "co", "th", "net", "org", "io")]
+        if parts:
+            return parts[0].capitalize()[:18]
+    return ""
+
+
+def is_gibberish_or_hash(text: str) -> bool:
+    """ตรวจจับว่าชื่อไฟล์เป็นรหัสสุ่ม/Hash ของ CDN หรือไม่ (เช่น 5kiu9u-h264-hd หรือ Ha0fe3c1058624d3194b6d68a220f9dcb3)"""
+    if not text:
+        return True
+    s = str(text).strip("_- ")
+    if len(s) < 2:
+        return True
+    low = s.lower()
+    # คำทั่วไปที่ไม่มีความหมายเฉพาะเจาะจง
+    generic_words = {
+        "image", "video", "media", "blob", "data", "watch", "default", "maxresdefault",
+        "hqdefault", "sddefault", "mqdefault", "master", "playlist", "index", "unnamed",
+        "untitled", "download", "file", "live_blob_video", "blob_video_stream", "blob_image",
+    }
+    if low in generic_words:
+        return True
+    # ถ้ามีภาษาไทยถือว่าเป็นชื่อที่มีความหมายเสมอ
+    if re.search(r"[ก-๙]", s):
+        return False
+    # ตัวเลขล้วน หรือตัวเลขปนขนาด เช่น 1793862955635 หรือ 80x80
+    if re.fullmatch(r"[\d_\-xX]+", s):
+        return True
+    # รหัส Alibaba / Taobao / Hex ยาวๆ เช่น Ha0fe3c1058624d3194b6d68a220f9dcb3 หรือ O1CN01...
+    if re.fullmatch(r"[a-fA-F0-9_\-]{12,}", s) or re.match(r"^(H[a-fA-F0-9]{16,}|O1CN01[a-zA-Z0-9_\-]+|TB2[a-zA-Z0-9_\-]+)", s):
+        return True
+    # แยกคำย่อยด้วย _ หรือ - เพื่อตรวจรหัสสุ่มอย่าง 5kiu9u-h264-hd หรือ gv98-cab36d37-a1ab2d16
+    tokens = [t for t in re.split(r"[_\-\s]+", low) if t]
+    codec_tokens = {"h264", "h265", "hevc", "avc", "hd", "sd", "fhd", "uhd", "mp4", "webm", "1080p", "720p", "480p", "360p", "trans", "aidc", "vod", "target"}
+    meaningful_tokens = 0
+    gibberish_tokens = 0
+    for tok in tokens:
+        if tok in codec_tokens or tok.isdigit():
+            continue
+        # คำที่มีตัวเลขสลับตัวอักษรแบบรหัสสุ่ม เช่น 5kiu9u, a1ab2d16, gv98
+        if re.search(r"\d", tok) and re.search(r"[a-z]", tok):
+            gibberish_tokens += 1
+        elif len(tok) >= 16 and not re.search(r"[aeiou]{2}", tok):
+            gibberish_tokens += 1
+        elif len(tok) >= 3:
+            meaningful_tokens += 1
+    if meaningful_tokens == 0 and (gibberish_tokens > 0 or all(t in codec_tokens or t.isdigit() for t in tokens)):
+        return True
+    return False
+
+
+def clean_page_title(raw_title: str) -> str:
+    """ตัดคำต่อท้ายชื่อเว็บออกจาก Title เช่น '- Alibaba.com', '| Shopee Thailand', '(3) YouTube'"""
+    if not raw_title:
+        return ""
+    t = str(raw_title).strip()
+    # ตัดตัวเลขแจ้งเตือนข้างหน้า เช่น (12)
+    t = re.sub(r"^\(\d+\)\s*", "", t)
+    # ตัดส่วนท้ายหลัง - หรือ | ที่เป็นชื่อเว็บ
+    t = re.split(r"\s+(?:\||-|\u2013|\u2014)\s+(?:Alibaba|AliExpress|Shopee|Lazada|YouTube|TikTok|Facebook|Instagram|Twitter|X|Buy\s|ซื้อ\s)", t, maxsplit=1, flags=re.IGNORECASE)[0]
+    t = re.sub(r"[^a-zA-Z0-9ก-๙_\-\s]", " ", t)
+    t = re.sub(r"[\s_]+", "_", t).strip("_-")
+    return t[:52].strip("_-")
+
+
+def build_smart_filename(
+    raw_name: str = "",
+    media_type: str = "image",
+    url: str = "",
+    page_url: str = "",
+    page_title: str = "",
+    site_name: str = "",
+) -> str:
+    """
+    สร้างชื่อไฟล์ที่อ่านเข้าใจง่ายทันที ไม่เป็นรหัสต่างดาว:
+    รูปแบบ: <รูปภาพ|วิดีโอ>_<ชื่อเว็บ>_<ชื่อสินค้า/หัวข้อ>_<YYYYMMDD_HHMMSS>
+    """
+    type_prefix = "วิดีโอ" if media_type == "video" else "รูปภาพ"
+    site_label = extract_site_label(page_url=page_url, media_url=url, site_hint=site_name)
+    timestamp_str = time.strftime("%Y%m%d_%H%M%S")
+
+    # 1. ลองดึงชื่อจาก raw_name ก่อน (ถ้าไม่ใช่ URL และไม่ใช่รหัสสุ่ม Hash)
+    candidate_stem = ""
+    if raw_name and not str(raw_name).startswith(("http://", "https://", "data:", "blob:")):
+        stem = sanitize_base_filename(raw_name, fallback_prefix="")
+        if not is_gibberish_or_hash(stem):
+            candidate_stem = stem[:50]
+
+    # 2. ถ้า raw_name เป็นรหัสสุ่มหรือเป็น URL ให้ใช้ page_title (ชื่อสินค้า/ชื่อหน้าเว็บ) แทน
+    if not candidate_stem and page_title:
+        cleaned_title = clean_page_title(page_title)
+        if cleaned_title and not is_gibberish_or_hash(cleaned_title):
+            candidate_stem = cleaned_title
+
+    # 3. ถ้ายังไม่มี ให้ลองดูชื่อไฟล์จาก URL (เฉพาะกรณีไม่ใช่รหัสสุ่ม Hash เช่น sample_webp)
+    if not candidate_stem and (raw_name or url):
+        url_stem = sanitize_base_filename(raw_name or url, fallback_prefix="")
+        if not is_gibberish_or_hash(url_stem):
+            candidate_stem = url_stem[:50]
+
+    parts = [type_prefix]
+    if site_label:
+        parts.append(site_label)
+    if candidate_stem:
+        # หลีกเลี่ยงการซ้ำชื่อเว็บถ้า candidate_stem มีคำนั้นอยู่แล้ว
+        if not site_label or candidate_stem.lower() != site_label.lower():
+            parts.append(candidate_stem)
+    parts.append(timestamp_str)
+
+    final_stem = "_".join(parts)
+    final_stem = re.sub(r"_+", "_", final_stem).strip("_")
+    return final_stem[:95]
 
 
 def append_history(entry: dict):
@@ -223,17 +375,23 @@ def resolve_input_bytes(url: str = None, base64_data: str = None, server_port: i
             mime, _ = mimetypes.guess_type(str(local_file))
             return local_file.read_bytes(), mime or ""
 
-    # ดึงผ่าน HTTP/HTTPS
-    req = urllib.request.Request(
-        url_str,
-        headers={
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/136.0.0.0 Safari/537.36",
-            "Accept": "*/*",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        content_type = resp.headers.get("Content-Type", "").split(";")[0].strip()
-        return resp.read(), content_type
+    # ดึงผ่าน HTTP/HTTPS (ถ้าเป็นรูปย่อของ Alibaba/AliCDN เช่น .jpg_80x80.jpg ให้ดึงภาพเต็มความละเอียดอัตโนมัติ)
+    upgraded_url = re.sub(r"(\.(?:jpg|jpeg|png))_\d+x\d+[^?]*", r"\1", url_str, flags=re.IGNORECASE)
+    for target_u in ([upgraded_url, url_str] if upgraded_url != url_str else [url_str]):
+        try:
+            req = urllib.request.Request(
+                target_u,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/136.0.0.0 Safari/537.36",
+                    "Accept": "*/*",
+                },
+            )
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                content_type = resp.headers.get("Content-Type", "").split(";")[0].strip()
+                return resp.read(), content_type
+        except Exception:
+            if target_u == url_str:
+                raise
 
 
 def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
@@ -243,6 +401,9 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
     """
     ensure_dirs()
     url = payload.get("url")
+    page_url = payload.get("pageUrl") or ""
+    page_title = payload.get("pageTitle") or ""
+    site_name = payload.get("siteName") or ""
     base64_data = payload.get("base64Data") or payload.get("dataUrl")
     svg_text = payload.get("svgText")
     target_fmt = str(payload.get("targetFormat") or "png").lower().strip().lstrip(".")
@@ -252,8 +413,15 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
         target_fmt = "png"
 
     source_fmt = str(payload.get("sourceFormat") or "").lower().strip()
-    raw_filename = payload.get("filename") or url or f"image_{int(time.time())}"
-    clean_stem = sanitize_base_filename(raw_filename, fallback_prefix="image")
+    raw_filename = payload.get("filename") or ""
+    clean_stem = build_smart_filename(
+        raw_name=raw_filename,
+        media_type="image",
+        url=str(url or ""),
+        page_url=page_url,
+        page_title=page_title,
+        site_name=site_name,
+    )
 
     if svg_text:
         raw_bytes = svg_text.encode("utf-8")
@@ -327,7 +495,7 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
         "sourceFormat": detected_src_fmt,
         "targetFormat": target_fmt.upper(),
         "filename": out_filename,
-        "savedPath": str(out_path.relative_to(BASE_DIR)),
+        "savedPath": str(out_path.relative_to(BASE_DIR)) if str(out_path).startswith(str(BASE_DIR)) else str(out_path),
         "sizeBytes": len(out_bytes),
         "width": width,
         "height": height,
@@ -398,11 +566,20 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
     ensure_dirs()
     url = payload.get("url")
     page_url = payload.get("pageUrl") or ""
+    page_title = payload.get("pageTitle") or ""
+    site_name = payload.get("siteName") or ""
     sniffed_url = payload.get("sniffedUrl") or ""
     base64_data = payload.get("base64Data") or payload.get("dataUrl")
     source_fmt = str(payload.get("sourceFormat") or "").upper().strip()
-    raw_filename = payload.get("filename") or url or page_url or f"video_{int(time.time())}"
-    clean_stem = sanitize_base_filename(raw_filename, fallback_prefix="video")
+    raw_filename = payload.get("filename") or ""
+    clean_stem = build_smart_filename(
+        raw_name=raw_filename,
+        media_type="video",
+        url=str(url or sniffed_url or ""),
+        page_url=page_url,
+        page_title=page_title,
+        site_name=site_name,
+    )
 
     out_filename = f"{clean_stem}.mp4"
     out_path = VIDEOS_OUT_DIR / out_filename
@@ -506,7 +683,7 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
             "sourceFormat": source_fmt or "VIDEO",
             "targetFormat": "MP4",
             "filename": out_filename,
-            "savedPath": str(out_path.relative_to(BASE_DIR)),
+            "savedPath": str(out_path.relative_to(BASE_DIR)) if str(out_path).startswith(str(BASE_DIR)) else str(out_path),
             "sizeBytes": len(out_bytes),
             "codec": probe_meta["codec"],
             "width": probe_meta["width"],
@@ -641,10 +818,15 @@ class CompanionRequestHandler(BaseHTTPRequestHandler):
                 ".mp4": "video/mp4",
             }.get(ext, "application/octet-stream")
             data = target_file.read_bytes()
+            ascii_fallback = re.sub(r"[^\x20-\x7E]", "_", target_file.name)
+            utf8_quoted = urllib.parse.quote(target_file.name)
             self.send_response(200)
             self._send_cors_headers()
             self.send_header("Content-Type", content_type)
-            self.send_header("Content-Disposition", f'attachment; filename="{target_file.name}"')
+            self.send_header(
+                "Content-Disposition",
+                f"attachment; filename=\"{ascii_fallback}\"; filename*=UTF-8''{utf8_quoted}",
+            )
             self.send_header("Content-Length", str(len(data)))
             self.end_headers()
             self.wfile.write(data)

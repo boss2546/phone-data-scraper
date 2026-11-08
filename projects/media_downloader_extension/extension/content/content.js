@@ -16,24 +16,169 @@
   let lastReadyDownload = null;
   let isExtensionEnabled = true;
 
-  function sanitizeCleanStem(rawName, prefix = "media") {
-    if (!rawName) return `${prefix}_${Date.now()}`;
-    let base = String(rawName).split("?")[0].split("#")[0].split("/").pop() || prefix;
+  function formatNowTimestamp() {
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, "0");
+    return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}_${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
+  }
+
+  function extractSiteBrand(urlOrPage) {
     try {
-      base = decodeURIComponent(base);
+      const u = new URL(urlOrPage || window.location.href);
+      const host = (u.hostname || "").toLowerCase();
+      if (!host || host === "127.0.0.1" || host === "localhost") return "";
+      const brandMap = [
+        [["alibaba.", "alicdn."], "Alibaba"],
+        [["aliexpress."], "AliExpress"],
+        [["1688."], "1688"],
+        [["taobao.", "tbcdn."], "Taobao"],
+        [["tmall."], "Tmall"],
+        [["shopee.", "shopeemobile."], "Shopee"],
+        [["lazada.", "lzd-img"], "Lazada"],
+        [["youtube.", "youtu.be", "ytimg.", "googlevideo."], "YouTube"],
+        [["tiktok.", "tiktokcdn."], "TikTok"],
+        [["facebook.", "fbcdn.", "fb.watch"], "Facebook"],
+        [["instagram.", "cdninstagram."], "Instagram"],
+        [["twitter.", "x.com", "twimg."], "X"],
+        [["pinterest.", "pinimg."], "Pinterest"],
+        [["apple.", "cdn-apple."], "Apple"],
+        [["amazon.", "media-amazon."], "Amazon"],
+      ];
+      for (const [keys, label] of brandMap) {
+        if (keys.some((k) => host.includes(k))) return label;
+      }
+      const parts = host.split(".").filter((p) => !["www", "m", "mobile", "cdn", "img", "s", "gv", "videocdn", "com", "co", "th", "net", "org", "io"].includes(p));
+      if (parts.length > 0) {
+        return parts[0].charAt(0).toUpperCase() + parts[0].slice(1, 18);
+      }
     } catch (_) {}
-    base = base.replace(WEIRD_EXT_REGEX, "").replace(/\.(png|jpg|jpeg|mp4)$/i, "");
-    base = base.replace(/[^a-zA-Z0-9ก-๙_\-]/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "");
-    if (!base || ["blob", "data", "media", "image", "video", "watch"].includes(base.toLowerCase())) {
-      base = `${prefix}_${Date.now().toString().slice(-6)}`;
+    return "";
+  }
+
+  function isGibberishOrHash(text) {
+    if (!text) return true;
+    const s = String(text).trim().replace(/^[_\-\s]+|[_\-\s]+$/g, "");
+    if (s.length < 2) return true;
+    if (/[ก-๙]/.test(s)) return false;
+    const low = s.toLowerCase();
+    const generic = new Set([
+      "image", "video", "media", "blob", "data", "watch", "default", "maxresdefault",
+      "hqdefault", "sddefault", "mqdefault", "master", "playlist", "index", "unnamed",
+      "untitled", "download", "file", "poster", "thumbnail", "thumb",
+    ]);
+    if (generic.has(low)) return true;
+    if (/^[\d_\-xX]+$/.test(s)) return true;
+    if (/^[a-fA-F0-9_\-]{12,}$/.test(s) || /^(H[a-fA-F0-9]{16,}|O1CN01[a-zA-Z0-9_\-]+|TB2[a-zA-Z0-9_\-]+)/.test(s)) return true;
+
+    const tokens = low.split(/[_\-\s]+/).filter(Boolean);
+    const codecSet = new Set(["h264", "h265", "hevc", "avc", "hd", "sd", "fhd", "uhd", "mp4", "webm", "1080p", "720p", "480p", "360p", "trans", "aidc", "vod", "target"]);
+    let meaningful = 0;
+    let gibberish = 0;
+    for (const tok of tokens) {
+      if (codecSet.has(tok) || /^\d+$/.test(tok)) continue;
+      if (/\d/.test(tok) && /[a-z]/.test(tok)) {
+        gibberish++;
+      } else if (tok.length >= 16 && !/[aeiou]{2}/.test(tok)) {
+        gibberish++;
+      } else if (tok.length >= 3) {
+        meaningful++;
+      }
     }
-    return base.slice(0, 70);
+    if (meaningful === 0 && (gibberish > 0 || tokens.every((t) => codecSet.has(t) || /^\d+$/.test(t)))) {
+      return true;
+    }
+    return false;
+  }
+
+  function cleanPageTitle(rawTitle) {
+    if (!rawTitle) return "";
+    let t = String(rawTitle).trim().replace(/^\(\d+\)\s*/, "");
+    t = t.split(/\s+(?:\||-|\u2013|\u2014)\s+(?:Alibaba|AliExpress|Shopee|Lazada|YouTube|TikTok|Facebook|Instagram|Twitter|X|Buy\s|ซื้อ\s)/i)[0];
+    t = t.replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, " ").replace(/[\s_]+/g, "_").replace(/^[_\-]+|[_\-]+$/g, "");
+    return t.slice(0, 50);
+  }
+
+  function extractSmartContext(info) {
+    const el = info?.element;
+    const siteName = extractSiteBrand(info?.pageUrl || window.location.href) || extractSiteBrand(info?.url);
+    const candidates = [];
+
+    if (el) {
+      candidates.push(el.getAttribute("alt"));
+      candidates.push(el.getAttribute("title"));
+      candidates.push(el.getAttribute("aria-label"));
+      candidates.push(el.dataset?.name);
+      candidates.push(el.dataset?.title);
+
+      // ค้นหาหัวข้อสินค้า/ชื่อโพสต์ที่อยู่ใกล้เคียงในการ์ดเดียวกัน
+      let parent = el.parentElement;
+      for (let i = 0; i < 6 && parent && parent !== document.body; i++) {
+        const heading = parent.querySelector("h1, h2, h3, figcaption, [class*='title'], [class*='subject']");
+        if (heading && heading.textContent) {
+          candidates.push(heading.textContent.trim().slice(0, 80));
+          break;
+        }
+        parent = parent.parentElement;
+      }
+    }
+
+    const mainH1 = document.querySelector("h1");
+    if (mainH1 && mainH1.textContent) {
+      candidates.push(mainH1.textContent.trim().slice(0, 80));
+    }
+    if (document.title) {
+      candidates.push(document.title);
+    }
+
+    let bestTitle = "";
+    for (const raw of candidates) {
+      if (!raw || String(raw).startsWith("http")) continue;
+      const cleaned = cleanPageTitle(raw);
+      if (cleaned && !isGibberishOrHash(cleaned)) {
+        bestTitle = cleaned;
+        break;
+      }
+    }
+
+    return { siteName, pageTitle: bestTitle };
+  }
+
+  function sanitizeCleanStem(rawName, prefix = "media", mediaType = "image", pageTitle = "", siteName = "") {
+    const typePrefix = mediaType === "video" ? "วิดีโอ" : "รูปภาพ";
+    const ts = formatNowTimestamp();
+    let stem = "";
+
+    if (rawName && !String(rawName).startsWith("http") && !String(rawName).startsWith("data:") && !String(rawName).startsWith("blob:")) {
+      const cleaned = cleanPageTitle(rawName);
+      if (cleaned && !isGibberishOrHash(cleaned)) stem = cleaned;
+    }
+    if (!stem && pageTitle) {
+      const cleaned = cleanPageTitle(pageTitle);
+      if (cleaned && !isGibberishOrHash(cleaned)) stem = cleaned;
+    }
+    if (!stem && rawName) {
+      let base = String(rawName).split("?")[0].split("#")[0].split("/").pop() || "";
+      try {
+        base = decodeURIComponent(base);
+      } catch (_) {}
+      base = base.replace(/\.(jpg|jpeg|png|webp|avif|gif)_\d+x\d+.*$/i, "");
+      base = base.replace(WEIRD_EXT_REGEX, "").replace(/\.(png|jpg|jpeg|mp4)$/i, "");
+      base = base.replace(/[^a-zA-Z0-9ก-๙_\-]/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "");
+      if (base && !isGibberishOrHash(base)) stem = base.slice(0, 50);
+    }
+
+    const parts = [typePrefix];
+    if (siteName) parts.push(siteName);
+    if (stem && (!siteName || stem.toLowerCase() !== siteName.toLowerCase())) parts.push(stem);
+    parts.push(ts);
+    return parts.join("_").replace(/_+/g, "_").slice(0, 90);
   }
 
   async function convertImageInBrowserCanvas(info, targetFormat) {
     const fmt = targetFormat === "jpg" ? "jpg" : "png";
     const mime = fmt === "jpg" ? "image/jpeg" : "image/png";
-    const stem = sanitizeCleanStem(info.element?.getAttribute("alt") || info.url, "image");
+    const ctxInfo = extractSmartContext(info);
+    const stem = sanitizeCleanStem(info.element?.getAttribute("alt") || info.url, "image", "image", ctxInfo.pageTitle, ctxInfo.siteName);
     const filename = `${stem}.${fmt}`;
 
     const img = new Image();
@@ -68,6 +213,10 @@
   }
 
   function triggerBrowserDownload(urlOrDataUrl, filename) {
+    if (window.__UMG_TEST_MODE__) {
+      window.__UMG_LAST_DOWNLOAD__ = { url: urlOrDataUrl, filename };
+      return;
+    }
     if (typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.sendMessage) {
       chrome.runtime.sendMessage({
         type: "UMG_DIRECT_DOWNLOAD",
@@ -485,15 +634,19 @@
   async function triggerConvertAndDownload(info, targetFormat) {
     setProcessingState(info.mediaType, targetFormat);
 
+    const ctxInfo = extractSmartContext(info);
     const payload = {
       url: info.url || "",
       pageUrl: info.pageUrl || window.location.href,
+      pageTitle: ctxInfo.pageTitle || document.title || "",
+      siteName: ctxInfo.siteName || "",
       base64Data: info.base64Data || "",
       svgText: info.svgText || "",
       targetFormat,
       filename:
         info.element?.getAttribute("alt") ||
         info.element?.dataset?.name ||
+        ctxInfo.pageTitle ||
         info.url ||
         document.title ||
         `media_${Date.now()}`,
@@ -527,6 +680,8 @@
                 mediaType: info.mediaType,
                 url: payload.url,
                 pageUrl: payload.pageUrl,
+                pageTitle: payload.pageTitle,
+                siteName: payload.siteName,
                 base64Data: payload.base64Data,
                 svgText: payload.svgText,
                 targetFormat,

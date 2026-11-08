@@ -110,7 +110,7 @@ async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFil
 }
 
 async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
-  const { mediaType, url, pageUrl, base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
+  const { mediaType, url, pageUrl, pageTitle = "", siteName = "", base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
   const fmt = mediaType === "video" ? "mp4" : (targetFormat === "jpg" ? "jpg" : "png");
   const endpoint = mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
   const sniffedUrl = senderTabId >= 0 ? (tabSniffedVideoMap.get(senderTabId) || "") : "";
@@ -124,6 +124,8 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
         body: JSON.stringify({
           url,
           pageUrl,
+          pageTitle,
+          siteName,
           sniffedUrl,
           base64Data,
           svgText,
@@ -153,7 +155,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
 
   if (mediaType === "image") {
     const inputUrl = base64Data || url;
-    const converted = await convertImageStandaloneInWorker(inputUrl, fmt, filename);
+    const converted = await convertImageStandaloneInWorker(inputUrl, fmt, pageTitle || filename);
     if (autoDownload) {
       await chrome.downloads.download({
         url: converted.dataUrl,
@@ -169,7 +171,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
       mode: "standalone",
     };
   } else {
-    const cleanMp4 = `${sanitizeCleanStem(filename || url || pageUrl, "video")}.mp4`;
+    const cleanMp4 = `${sanitizeCleanStem(pageTitle || filename || url || pageUrl, "วิดีโอ")}.mp4`;
     const downloadSource = base64Data || (url && !url.startsWith("blob:") ? url : sniffedUrl);
     if (!downloadSource) {
       throw new Error("วิดีโอนี้เป็นสตรีมเข้ารหัส กรุณารอเซิร์ฟเวอร์ประมวลผล");
@@ -225,15 +227,18 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   const tabId = tab ? tab.id : -1;
+  const tabTitle = (tab && tab.title) || "";
+  const tabUrl = info.pageUrl || (tab && tab.url) || "";
   if (info.menuItemId === "umg-save-png" || info.menuItemId === "umg-save-jpg") {
     if (!info.srcUrl) return;
     handleSmartConvertAndDownload(
       {
         mediaType: "image",
         url: info.srcUrl,
-        pageUrl: info.pageUrl || "",
+        pageUrl: tabUrl,
+        pageTitle: tabTitle,
         targetFormat: info.menuItemId === "umg-save-jpg" ? "jpg" : "png",
-        filename: info.srcUrl,
+        filename: tabTitle || info.srcUrl,
       },
       tabId
     );
@@ -242,9 +247,10 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       {
         mediaType: "video",
         url: info.srcUrl || "",
-        pageUrl: info.pageUrl || "",
+        pageUrl: tabUrl,
+        pageTitle: tabTitle,
         targetFormat: "mp4",
-        filename: info.srcUrl || info.pageUrl,
+        filename: tabTitle || info.srcUrl || tabUrl,
       },
       tabId
     );

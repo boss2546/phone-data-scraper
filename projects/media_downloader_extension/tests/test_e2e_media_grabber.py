@@ -33,12 +33,15 @@ from PIL import Image
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
+import shutil
+import src.companion_server as cs_mod
 from src.companion_server import (
     CompanionRequestHandler,
+    build_smart_filename,
     ensure_dirs,
     inspect_video_with_ffprobe,
+    is_gibberish_or_hash,
     sanitize_base_filename,
-    DOWNLOADS_DIR,
     TEST_ASSETS_DIR,
 )
 
@@ -55,6 +58,11 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         os.environ["UMG_QUIET"] = "1"
+        cls.temp_dl_dir = Path(tempfile.mkdtemp(prefix="umg_e2e_dl_"))
+        cs_mod.DOWNLOADS_DIR = cls.temp_dl_dir
+        cs_mod.IMAGES_OUT_DIR = cls.temp_dl_dir / "images"
+        cs_mod.VIDEOS_OUT_DIR = cls.temp_dl_dir / "videos"
+        cs_mod.HISTORY_FILE = cls.temp_dl_dir / "history.json"
         ensure_dirs()
         cls.port = get_free_port()
         cls.base_url = f"http://127.0.0.1:{cls.port}"
@@ -67,6 +75,7 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
     def tearDownClass(cls):
         cls.httpd.shutdown()
         cls.httpd.server_close()
+        shutil.rmtree(cls.temp_dl_dir, ignore_errors=True)
 
     def _post_json(self, path: str, payload: dict) -> dict:
         req = urllib.request.Request(
@@ -170,7 +179,7 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
         self.assertGreater(corner_pixel[2], 245)
 
     def test_gate_05_weird_extension_and_query_string_sanitization(self):
-        """[Gate 5] ทดสอบการตัดนามสกุลแปลกซ้อนกันและ Query String ยาวๆ ให้เหลือแค่ .png / .jpg / .mp4 สะอาด"""
+        """[Gate 5] ทดสอบการตั้งชื่อไฟล์อัจฉริยะ (Smart Human-Readable Filename) ไม่เอาชื่อรหัสต่างดาว CDN"""
         dirty_names = [
             "https://cdn.example.com/media/photo_01.webp.avif?token=12345&format=webp#hero",
             "banner.svgz.webp",
@@ -181,6 +190,30 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
             stem = sanitize_base_filename(raw_name)
             for forbidden in (".webp", ".avif", ".svg", ".webm", ".mkv", ".m3u8", "?", "#"):
                 self.assertNotIn(forbidden, stem.lower())
+
+        # ทดสอบตรวจจับรหัสสุ่ม CDN ของ Alibaba (5kiu9u-h264-hd และ Ha0fe3c1058624d3194b6d68a220f9dcb3)
+        self.assertTrue(is_gibberish_or_hash("5kiu9u-h264-hd"))
+        self.assertTrue(is_gibberish_or_hash("Ha0fe3c1058624d3194b6d68a220f9dcb3"))
+
+        smart_vid = build_smart_filename(
+            raw_name="5kiu9u-h264-hd.mp4",
+            media_type="video",
+            url="https://gv.videocdn.alibaba.com/icbu_vod_video/5kiu9u-h264-hd.mp4",
+            page_url="https://www.alibaba.com/product-detail/Mini-Drone-4K_123.html",
+            page_title="Mini Drone 4K Camera - Alibaba.com",
+        )
+        self.assertTrue(smart_vid.startswith("วิดีโอ_Alibaba_Mini_Drone_4K_Camera_"))
+        self.assertNotIn("5kiu9u", smart_vid)
+
+        smart_img = build_smart_filename(
+            raw_name="Ha0fe3c1058624d3194b6d68a220f9dcb3.jpg_80x80.jpg",
+            media_type="image",
+            url="https://s.alicdn.com/@sc04/kf/Ha0fe3c1058624d3194b6d68a220f9dcb3.jpg_80x80.jpg",
+            page_url="https://www.alibaba.com/product-detail/Mini-Drone-4K_123.html",
+            page_title="โดรนติดกล้อง 4K พับได้ | Alibaba.com",
+        )
+        self.assertTrue(smart_img.startswith("รูปภาพ_Alibaba_โดรนติดกล้อง_4K_พับได้_"))
+        self.assertNotIn("Ha0fe3c", smart_img)
 
     def test_gate_06_all_video_formats_to_standard_h264_mp4(self):
         """[Gate 6] ทดสอบแปลงวิดีโอทุกนามสกุล (.webm, .ogv, .mov, .mkv, .ts, .m3u8 HLS, .mp4, Blob) เป็น H.264 .MP4 แท้"""
@@ -207,7 +240,7 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
             self.assertGreater(res.get("width", 0), 0)
             self.assertGreater(res.get("height", 0), 0)
 
-            saved_path = BASE_DIR / res["savedPath"]
+            saved_path = Path(res["savedPath"]) if os.path.isabs(res["savedPath"]) else (BASE_DIR / res["savedPath"])
             probe = inspect_video_with_ffprobe(saved_path)
             self.assertEqual(probe["codec"], "h264")
 
@@ -263,6 +296,7 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
   <img id="test-img" src="{self.base_url}/assets/images/sample_webp.webp" alt="chrome_e2e_webp" style="width:300px; height:200px; display:block; margin-top:20px;" />
 
   <div id="test-result">PENDING</div>
+  <script>window.__UMG_TEST_MODE__ = true;</script>
   <script>{content_js_patched}</script>
   <script>
     window.addEventListener('load', async () => {{
