@@ -77,3 +77,4 @@ def install_auto_daemon():
 if __name__ == "__main__":
     info = install_auto_daemon()
     print("✅ ติดตั้งระบบ Auto-Start เบื้องหลังสำเร็จ:", json.dumps(info, ensure_ascii=False))
+

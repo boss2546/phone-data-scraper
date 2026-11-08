@@ -145,7 +145,7 @@ def rasterize_svg_bytes_to_pil(svg_bytes: bytes) -> Image.Image:
 
     width = max(16, min(width, 4096))
     height = max(16, min(height, 4096))
-    img = Image.new("RGBA", (width, height), (15, 23, 42, 255))
+    img = Image.new("RGBA", (width, height), (255, 255, 255, 0))
     draw = ImageDraw.Draw(img)
 
     if root is not None:
