@@ -344,8 +344,8 @@ def rasterize_svg_bytes_to_pil(svg_bytes: bytes) -> Image.Image:
     return img
 
 
-def resolve_input_bytes(url: str = None, base64_data: str = None, server_port: int = 8765) -> tuple[bytes, str]:
-    """ดึงข้อมูล Bytes ดิบจาก base64Data, data: URI, Local Asset Path หรือ HTTP/HTTPS URL"""
+def resolve_input_bytes(url: str = None, base64_data: str = None, server_port: int = 8765, referer_url: str = "") -> tuple[bytes, str]:
+    """ดึงข้อมูล Bytes ดิบจาก base64Data, data: URI, Local Asset Path หรือ HTTP/HTTPS URL พร้อมส่ง Referer ป้องกัน 403"""
     if base64_data:
         raw_str = str(base64_data).strip()
         mime_hint = ""
@@ -377,13 +377,15 @@ def resolve_input_bytes(url: str = None, base64_data: str = None, server_port: i
 
     # ดึงผ่าน HTTP/HTTPS (ถ้าเป็นรูปย่อของ Alibaba/AliCDN เช่น .jpg_80x80.jpg ให้ดึงภาพเต็มความละเอียดอัตโนมัติ)
     upgraded_url = re.sub(r"(\.(?:jpg|jpeg|png))_\d+x\d+[^?]*", r"\1", url_str, flags=re.IGNORECASE)
+    origin_referer = referer_url if (referer_url and referer_url.startswith("http")) else f"{parsed.scheme}://{parsed.netloc}/"
     for target_u in ([upgraded_url, url_str] if upgraded_url != url_str else [url_str]):
         try:
             req = urllib.request.Request(
                 target_u,
                 headers={
                     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/136.0.0.0 Safari/537.36",
-                    "Accept": "*/*",
+                    "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+                    "Referer": origin_referer,
                 },
             )
             with urllib.request.urlopen(req, timeout=20) as resp:
@@ -427,7 +429,7 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
         raw_bytes = svg_text.encode("utf-8")
         mime_hint = "image/svg+xml"
     else:
-        raw_bytes, mime_hint = resolve_input_bytes(url=url, base64_data=base64_data, server_port=server_port)
+        raw_bytes, mime_hint = resolve_input_bytes(url=url, base64_data=base64_data, server_port=server_port, referer_url=page_url)
 
     if not raw_bytes:
         raise ValueError("Empty image payload received")
@@ -558,6 +560,35 @@ def download_with_ytdlp(target_url: str, dest_dir: Path) -> Path:
     return matches[0]
 
 
+def extract_video_urls_from_webpage(page_url: str) -> list[str]:
+    """ดึงลิงก์วิดีโอ (.mp4, .m3u8, .webm) ที่ซ่อนอยู่ใน HTML ของหน้าเว็บ (เช่น Alibaba, Shopee, เว็บสินค้าทั่วไป)"""
+    if not page_url or not page_url.startswith(("http://", "https://")):
+        return []
+    try:
+        req = urllib.request.Request(
+            page_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/136.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+        raw_matches = re.findall(
+            r'https?:\\?/\\?/[^\s"\'<>\\]+\.(?:mp4|m3u8|webm)(?:\?[^\s"\'<>\\]*)?',
+            html,
+            flags=re.IGNORECASE,
+        )
+        cleaned = []
+        for m in raw_matches:
+            u = m.replace("\\/", "/").replace("\\u002F", "/").replace("&amp;", "&")
+            if u not in cleaned:
+                cleaned.append(u)
+        return cleaned
+    except Exception:
+        return []
+
+
 def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
     """
     แปลงไฟล์วิดีโอทุกชนิด (.webm, .ogv, .mov, .mkv, .ts, .m3u8 HLS, blob:, live stream, .mp4, หรือหน้าเว็บวิดีโอ)
@@ -569,6 +600,7 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
     page_title = payload.get("pageTitle") or ""
     site_name = payload.get("siteName") or ""
     sniffed_url = payload.get("sniffedUrl") or ""
+    resource_urls = payload.get("resourceUrls") or []
     base64_data = payload.get("base64Data") or payload.get("dataUrl")
     source_fmt = str(payload.get("sourceFormat") or "").upper().strip()
     raw_filename = payload.get("filename") or ""
@@ -594,11 +626,11 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
 
     try:
         if base64_data:
-            raw_bytes, mime_hint = resolve_input_bytes(base64_data=base64_data, server_port=server_port)
+            raw_bytes, mime_hint = resolve_input_bytes(base64_data=base64_data, server_port=server_port, referer_url=page_url)
             if not raw_bytes:
                 raise ValueError("Empty video base64Data received")
             suffix = ".webm"
-            if "mp4" in mime_hint:
+            if "mp4" in mime_hint or raw_bytes[4:8] == b"ftyp":
                 suffix = ".mp4"
             elif "ogg" in mime_hint or "ogv" in mime_hint:
                 suffix = ".ogv"
@@ -611,8 +643,17 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
                 source_fmt = "BLOB_STREAM"
         else:
             candidate_url = str(url or "").strip()
-            if (not candidate_url or candidate_url.startswith("blob:")) and sniffed_url:
-                candidate_url = str(sniffed_url).strip()
+            if not candidate_url or candidate_url.startswith("blob:"):
+                if sniffed_url and not str(sniffed_url).startswith("blob:"):
+                    candidate_url = str(sniffed_url).strip()
+                elif resource_urls:
+                    # เลือก URL ที่เป็น .mp4 หรือ .m3u8 ก่อน .ts
+                    for ru in resource_urls:
+                        if ru and not str(ru).startswith("blob:") and any(k in str(ru).lower() for k in (".mp4", ".m3u8", ".webm", ".mov", "videocdn", "videoplayback")):
+                            candidate_url = str(ru).strip()
+                            break
+                    if (not candidate_url or candidate_url.startswith("blob:")) and resource_urls:
+                        candidate_url = str(resource_urls[0]).strip()
 
             if candidate_url and not candidate_url.startswith("blob:"):
                 parsed = urllib.parse.urlparse(candidate_url)
@@ -627,21 +668,49 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
                 else:
                     ffmpeg_input = candidate_url
             elif page_url and page_url.startswith(("http://", "https://")):
-                temp_input_file = download_with_ytdlp(page_url, Path(tempfile.gettempdir()))
-                ffmpeg_input = str(temp_input_file)
-                source_fmt = "WEB_STREAM"
+                scraped_vids = extract_video_urls_from_webpage(page_url)
+                if scraped_vids:
+                    ffmpeg_input = scraped_vids[0]
+                    source_fmt = "WEB_VIDEO"
+                else:
+                    temp_input_file = download_with_ytdlp(page_url, Path(tempfile.gettempdir()))
+                    ffmpeg_input = str(temp_input_file)
+                    source_fmt = "WEB_STREAM"
             else:
                 raise ValueError("Cannot resolve video stream (blob URL without pageUrl or stream)")
 
-        # แปลงด้วย FFmpeg เป็น H.264 + AAC MP4 มาตรฐาน
+        def build_http_headers_args(inp_str: str) -> list[str]:
+            if not str(inp_str).startswith(("http://", "https://")):
+                return []
+            p = urllib.parse.urlparse(str(inp_str))
+            if p.hostname in ("127.0.0.1", "localhost"):
+                return []
+            ref = page_url if (page_url and page_url.startswith("http")) else f"{p.scheme}://{p.netloc}/"
+            ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/136.0.0.0 Safari/537.36"
+            return ["-user_agent", ua, "-headers", f"Referer: {ref}\r\n"]
+
+        # แปลงด้วย FFmpeg เป็น H.264 + AAC MP4 มาตรฐาน (ถ้าต้นฉบับเป็น H.264 อยู่แล้ว ใช้ Stream Copy ความเร็วสูง 0.1 วินาทีก่อน!)
         def run_ffmpeg_transcode(inp: str) -> subprocess.CompletedProcess:
+            http_hdrs = build_http_headers_args(inp)
+            is_hls = str(inp).endswith(".m3u8") or ".m3u8" in str(inp)
+
+            # Fast-Path: ถ้าเป็นไฟล์ .mp4 / .mov / .ts ที่เป็น H.264 อยู่แล้วและไม่ใช่ HLS ให้ลอง remux (-c:v copy) ก่อนเพื่อให้เสร็จไวในเสี้ยววินาที
+            if not is_hls and str(inp).lower().split("?")[0].endswith((".mp4", ".mov", ".m4v")):
+                fast_cmd = [FFMPEG_BIN, "-y", "-hide_banner", "-loglevel", "error", *http_hdrs, "-i", str(inp), "-c:v", "copy", "-c:a", "aac", "-movflags", "+faststart", str(out_path)]
+                fast_proc = subprocess.run(fast_cmd, capture_output=True, text=True, timeout=45)
+                if fast_proc.returncode == 0 and out_path.exists() and out_path.stat().st_size > 1000:
+                    meta = inspect_video_with_ffprobe(out_path)
+                    if meta.get("codec") == "h264":
+                        return fast_proc
+
             cmd = [
                 FFMPEG_BIN,
                 "-y",
                 "-hide_banner",
                 "-loglevel", "error",
+                *http_hdrs,
             ]
-            if str(inp).endswith(".m3u8") or ".m3u8" in str(inp):
+            if is_hls:
                 cmd.extend(["-allowed_extensions", "ALL", "-protocol_whitelist", "file,http,https,tcp,tls,crypto,data"])
             cmd.extend([
                 "-i", str(inp),
@@ -742,6 +811,7 @@ class CompanionRequestHandler(BaseHTTPRequestHandler):
                 history = []
             return self._send_json({
                 "ok": True,
+                "version": "2.5",
                 "service": "Universal Media Grabber Companion Server",
                 "port": self.server.server_port,
                 "ffmpeg": FFMPEG_BIN,

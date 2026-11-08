@@ -24,14 +24,24 @@ def is_server_alive() -> bool:
     try:
         with urllib.request.urlopen(SERVER_URL, timeout=0.8) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-            return bool(data.get("ok"))
+            return bool(data.get("ok")) and data.get("version") == "2.5"
     except Exception:
         return False
 
 
 def ensure_companion_server_started() -> dict:
     if is_server_alive():
-        return {"ok": True, "status": "already_running", "port": 8765}
+        return {"ok": True, "status": "already_running", "port": 8765, "version": "2.5"}
+
+    # ถ้ามีเซิร์ฟเวอร์รุ่นเก่าค้างอยู่ที่พอร์ต 8765 ให้ปิดตัวเก่าก่อนเริ่มรุ่น 2.5
+    try:
+        res = subprocess.run(["lsof", "-ti", ":8765"], capture_output=True, text=True, timeout=3)
+        for pid_str in res.stdout.strip().splitlines():
+            if pid_str.strip().isdigit():
+                subprocess.run(["kill", "-9", pid_str.strip()], check=False)
+                time.sleep(0.2)
+    except Exception:
+        pass
 
     log_file = BASE_DIR / "data" / "companion_server.log"
     log_file.parent.mkdir(parents=True, exist_ok=True)

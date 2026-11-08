@@ -244,7 +244,7 @@ async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFil
 }
 
 async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
-  const { mediaType, url, pageUrl, pageTitle = "", siteName = "", base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
+  const { mediaType, url, resourceUrls = [], pageUrl, pageTitle = "", siteName = "", base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
   const fmt = mediaType === "video" ? "mp4" : (targetFormat === "jpg" ? "jpg" : "png");
   const endpoint = mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
   const sniffedUrl = senderTabId >= 0 ? (tabSniffedVideoMap.get(senderTabId) || "") : "";
@@ -257,6 +257,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           url,
+          resourceUrls,
           pageUrl,
           pageTitle,
           siteName,
@@ -296,17 +297,21 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
     };
   } else {
     const cleanMp4 = `${sanitizeCleanStem(filename || url, "วิดีโอ", pageUrl, pageTitle, siteName)}.mp4`;
-    const downloadSource = base64Data || (url && !url.startsWith("blob:") ? url : sniffedUrl);
-    if (!downloadSource) {
+    const bestFallbackUrl =
+      base64Data ||
+      (url && !url.startsWith("blob:") ? url : "") ||
+      sniffedUrl ||
+      (resourceUrls.length > 0 ? resourceUrls[0] : "");
+    if (!bestFallbackUrl) {
       throw new Error("วิดีโอนี้เป็นสตรีมเข้ารหัส กรุณารอเซิร์ฟเวอร์ประมวลผล");
     }
     if (autoDownload) {
-      await triggerManagedChromeDownload(downloadSource, cleanMp4);
+      await triggerManagedChromeDownload(bestFallbackUrl, cleanMp4);
     }
     return {
       ok: true,
       filename: cleanMp4,
-      downloadUrl: downloadSource,
+      downloadUrl: bestFallbackUrl,
       mode: "standalone",
     };
   }
@@ -318,8 +323,34 @@ function updateBadge(enabled) {
   chrome.action.setBadgeBackgroundColor({ color: enabled ? "#10b981" : "#64748b" });
 }
 
+async function reinjectIntoAllOpenTabs() {
+  if (!chrome.tabs || !chrome.scripting) return;
+  try {
+    const tabs = await chrome.tabs.query({ url: ["http://*/*", "https://*/*"] });
+    for (const tab of tabs) {
+      if (!tab.id) continue;
+      try {
+        await chrome.scripting.insertCSS({
+          target: { tabId: tab.id },
+          files: ["content/content.css"],
+        });
+        await chrome.scripting.executeScript({
+          target: { tabId: tab.id },
+          files: ["content/content.js"],
+        });
+      } catch (_) {}
+    }
+  } catch (_) {}
+}
+
+chrome.runtime.onStartup?.addListener(() => {
+  autoWakeupCompanionServer();
+  reinjectIntoAllOpenTabs();
+});
+
 chrome.runtime.onInstalled.addListener(() => {
   autoWakeupCompanionServer();
+  reinjectIntoAllOpenTabs();
   if (chrome.storage && chrome.storage.local) {
     chrome.storage.local.get({ umgEnabled: true }, (res) => {
       updateBadge(res.umgEnabled !== false);
