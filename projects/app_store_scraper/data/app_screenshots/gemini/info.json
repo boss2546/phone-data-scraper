@@ -1,0 +1,59 @@
+{
+  "id": "gemini",
+  "name": "Google Gemini",
+  "official_title": "Google Gemini",
+  "package_id": "com.google.android.apps.bard",
+  "category": "ปัญญาประดิษฐ์ (AI Tools)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.google.android.apps.bard&hl=th",
+  "total_screenshots": 8,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/FnrqFJwnGH1AcfSHVlacKBsznJBswL9PmQktyNJl2BwDxbY6TO_lTV1pc7KEFs7bbtZowF-AvYo7Te9OvzwUkQ=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/W7Ziks0d5IluuG6j0lfAubEJj3uwGaSvME_0bT35frNQruvIjj2B6h9A6cd8MNG9Os3XDQBOY6DncfCi_mAhhQ=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/TAjQvjkB-V85pb3idblN4_WmT-3SwD-nEAxPiO8sw_1KhvlmHcpNox_AWX4hIqk62lj77nlg-4DHYJj3JO--=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/jQpv3b7LCldC_d3WQycQd4LKgLm8DrEzV3asYsMpg5fPqHPtAJEhXp1xW_0IY8n7eOun0QloMGalbQaGisEB=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/oWPOSvdpPSfkJklJdlmSKZyg-Ry27mryGeDM4bUb5y-u5ihG3opvAU1UROKsETXtQHC7oIBeANqaB95wLrgCMQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/ohDwVhdgs2_J947ApW2XMz50_1orVLxuZZXsaXu6zTTdHkiYJv62C0NpgLLma-3OVnDnKww63X00c_7qcbnh=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/NKM4IUZJ1o2VJkkr9eBoRGvruKRxybi1aGfyt14V6_lPmlLRpO6sFOUof9IHrODmQ1A5Q98Kn02-f3RVxKHo7w=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/gemini/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/2V83sfVy37-WSg8ksiMWcWm9bLQx2Ku6oQDXXwNRDWk5GfcMjbiuCsQWoDvxcAjdUz_yTnhE0x0j89ZOJqhVQg=s0"
+    }
+  ]
+}

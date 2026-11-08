@@ -1,0 +1,53 @@
+{
+  "id": "flickreels",
+  "name": "FlickReels",
+  "official_title": "FlickReels - เรื่อง&amp;ซีรีส์ AI",
+  "package_id": "com.zyhwplatform.shortplay",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.zyhwplatform.shortplay&hl=th",
+  "total_screenshots": 7,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/iDO3G4fQEpNLzClAyjftJcFz9fH9G6Bi5OB96bBPZe1iQEuK3PqX6Q5QpL4q972mfxre3nsNKFyVodp4Q_i6eaU=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/yzlF20_Jy_yE59-PMM5EpUqM58SXIpmXJRP0NVwvvAxCRA3eaj82e7IiA1hO6FeV893GhoYhO4mqBkIg7jYjzs0=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/JHclUs2N_Wni5gBhQVh3nUNOkKj7NEWP7VWFc3Wkt3wJsqw9UHtPYEa7eGSn2n7OrNZ89ZBBPvbgBLs2wVBgPhQ=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/dWCk12_wRV4ubt9wYIv7rR19CFV_Fs6oZ1hK-JDI3W5jfarnJJnQBDIiUOVp6X-dmAJG3i6Gwkt-hxWi4EMGBg=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/S_nOHPWsVUem26O7pRjY66kbeabF2enAW192Xkc6QMLDt2_ehUo_9Aeg4DCdN8VjjTMFFi8anh_g2xiGhUhHbA=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/WetuCKvV0nlgCjFRIUxCL69nP8Tw3_xwiXnUz6UKtemjcL1LnYLh0Xe5SDSG1SlreedQs-toxxmp4EA_6v7-qQ=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/flickreels/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/UCih8utnlNTOAP8Z_K_0yXzR4MNSzbDr1V9lgxAfjolYA0w1Xm8bkJQyhnbsr3DLjrve8VP3mvURK1e3Du629g=s0"
+    }
+  ]
+}

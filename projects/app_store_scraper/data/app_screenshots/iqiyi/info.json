@@ -1,0 +1,71 @@
+{
+  "id": "iqiyi",
+  "name": "iQIYI",
+  "official_title": "iQIYI - ซีรีส์,​ วาไรตี้โชว์",
+  "package_id": "com.iqiyi.i18n",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.iqiyi.i18n&hl=th",
+  "total_screenshots": 10,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/fYuT1isqRZKpPO6rtcaJJaUqvD8V_9tYSrGwIATDMqR44LcuyZ62-0btC5VfwtZmfqypKOjaDKoPcaCQWAzdMso=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/zvw_Aw2CBVNtJezJiaOy-hNvZMNkL8V_P2SPqlJptY19m6k4wRBShkO81oQeisUEcSaUPVO4Ko8Q8en0T74RFw=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/3jlGEG2T0U6pKDjMr2GyLCwfjpj-ovqjbNawNAOkTODudE3WKfkNq-iKj_5WdJ9CuEhpAYVw3HxSSn-tq2uS=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/jTx5IVycTmAK5Zd0vyxMeRv55vNMpatTkyck-hhin7cPp-3xPn9AO6lLM_zhUO5271uUYxmF7qrTOY1jUsxg=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/ZHjzLlD9UAy5zH7N8nX1hDq5HMwG1f34ZcVD8_bWOaD9ZQGM0DXJZdJZkUmR-hbQjsD-o11oUCPilxyPx3S59g=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/v3gLzztCTAdDAJu9v3ZWOkaih6Pjy_ppEdvP7Xwf2LeVH5nk_v8go-oCN8lYWbzSoHs646njlzDYFlldHO-8Kw=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/0KAazmlyatjoQgGwrsVcmZfHygBTyBpCCeQ3wiyqMTBLZiXZIQzoQH1TDnFgJ8PGlLQ8vU2PzMFEcVo9HlvVog=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/CZNUl3zm2pokbMeKEAeKwJTpiPq-9IKGgiD-5bbBre9TNJLTnKOeUQ6zHdgEnT3APv5EZHMZeyHr17ksK2h8=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/YenV14IuXHtyZK4HMMekpS5IzaLB7e--pHJMZffO0QdbqRB7omw8whQCxP4lXgHF6ovV7BMqMHbgYkFtfw4WPC0=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/iqiyi/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/5D3WSkDDJHc6pHfDcWdBC6uwcjLUJL6cGjrS3UVBwj0q0KI2yguFrCi0Oc4fMWeoRPmVAGVCh5Aas5u_LDkPeg=s0"
+    }
+  ]
+}

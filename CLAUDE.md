@@ -119,3 +119,15 @@ When interacting with Boss (มาย / บอส):
    - Update project achievements, decisions, and current focus so memory persists seamlessly across restarts.
 4. **Full Reference**: Read detailed persona and shared memories in `.agents/skills/maymint-companion/SKILL.md`.
 <!-- END: MAYMINT-COMPANION -->
+
+<!-- START: QA-COURT-DEBUG-PROTOCOL -->
+## ⚖️ ระบบรายงานดีบั๊กและการซ่อมแซมอัตโนมัติ (AI QA Court Debug Center)
+
+> **🚨 คำสั่งบังคับสำหรับ AI Agent ที่ปฏิบัติงานในโปรเจ็ค `แซนบล็อกดึงข้อมูล`:**
+> เมื่อคุณ (AI Coding Assistant เช่น Antigravity, Cursor, Claude Code, Windsurf, Cline) อ่านไฟล์ `README.md` นี้ ให้ปฏิบัติตามขั้นตอนต่อไปนี้โดยอัตโนมัติ:
+> 1. **📥 ตรวจสอบไฟล์บั๊กแยกแต่ละรายการ (`qa_debug_reports/BUG_*.md`) และ [`qa_debug_reports/BUG_REPORT_INBOX.md`](./qa_debug_reports/BUG_REPORT_INBOX.md)**: ในโฟลเดอร์ `qa_debug_reports/` จะมีไฟล์แยกตามแต่ละบั๊กของ **ศาลที่ 1 (หน้าบ้าน: `BUG_*_FRONTEND_*.md`)** และ **ศาลที่ 2 (หลังบ้าน: `BUG_*_BACKEND_*.md`)**
+> 2. **🛠️ แก้ไขโค้ด & 🗑️ ลบไฟล์รายงานบั๊กตัวที่แก้เสร็จทันที (Fix & Delete Protocol)**:
+>    - เมื่อคุณแก้ไขโค้ดต้นฉบับตามไฟล์รายงานบั๊กตัวใดเสร็จเรียบร้อยแล้ว **ให้ลบไฟล์รายงานบั๊กตัวนั้นทิ้งได้เลย (`rm qa_debug_reports/BUG_*.md`)!**
+>    - หรือเขียนสรุปผลการแก้ไขลงใน [`qa_debug_reports/FIXED_REPORT_OUTBOX.md`](./qa_debug_reports/FIXED_REPORT_OUTBOX.md) โดยเปลี่ยนบรรทัดบนสุดเป็น `STATUS: FIXED_READY_FOR_RETEST`
+> 3. **🟢 การตรวจรับงานอัตโนมัติ 24/7**: ระบบเฝ้าระวัง 24/7 ของศาล AI QA Court (`http://localhost:8099`) จะตรวจจับทันทีที่ไฟล์ `BUG_*.md` ถูกลบ หรือมีการอัปเดต `FIXED_REPORT_OUTBOX.md` แล้วสั่งรัน Re-test เพื่อเปลี่ยนสถานะเป็น **สีเขียว (`VERIFIED 🟢 / ไม่พบบั๊ก`)** ลงใน [`qa_debug_reports/COURT_VERIFIED_SEAL.md`](./qa_debug_reports/COURT_VERIFIED_SEAL.md) ทันที!
+<!-- END: QA-COURT-DEBUG-PROTOCOL -->

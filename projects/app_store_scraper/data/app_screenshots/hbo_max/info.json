@@ -1,0 +1,179 @@
+{
+  "id": "hbo_max",
+  "name": "HBO MAX",
+  "official_title": "HBO Max: สตรีมซีรีส์และหนัง",
+  "package_id": "com.wbd.stream",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.wbd.stream&hl=th",
+  "total_screenshots": 28,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/3uc9j3WzDwVai9EZCrFLkjR3XDmqSNkdfk0P1MiAHReYmViESBBg3-KWSsQR9vu2yNTyOaR0hsN5KIqZnfkR1A=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/QmCUwJsN4mWPUkg33Wmp4lSNGznRASEFSMS43XG2pTgA3_o5cLiJB8jkSDxC68se_rb_CEb-Ob-kRTrKqlBn9A=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/gLyRIWpCMZ1pUONytgqF-QMNAxJ13ZfsNnbfchT8pktooBLn7rihkljCfYPTtJW7Yz7XMNSzIk0MegJD4oAW=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/IiHzWslmq6Wh0s8LcFBiiVNQQ0bW9oT7WWXUHTB_cZJ3_CdNHZprhbS16cmA8lVXtqYU7IrTqcSlcjE88cRd=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/9WQh5LSD1zN3tF7c5QdeFG2d1hhJOb1gkdHTlvDeECYUL_6vcD6NRSdiWRPfNXu0XNTScpjVaQBMw-NA_EKzug=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/swb11mjv6hbUlK6814i0JkN8iCTZUTZG_YvBiwB5nDhcU2gCFLg6Up2I9ez3v10gZ2LcSsH_miBxyUErGgsg0g=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/hNEwdaJ0kAeYVmfXwkCf_ZPD9JszRqaEss0HUJIRYapJi4PZc5FwnUcaLe_Ax6rr6mq2DSOUrFSHUkN-yXHZWg=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/57IU6ZJOZGdth2h6bPw0DAtetHhGElE3lkK5nZJdUT8BtWkEnxMNgUKbODloVK2nEXfrhhPLgIaBqBJYfMjV4w=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/IBUbDR-QVZkgLRCrQuk4RzRgAeuoR2AUcvSts4XLVLL5TFkW0dql_RbsTJxi0iGaQrui7pHI9M6Epv0qIXdu=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/b_0E8ut3gHuDvM5M6lQ5BKObfp3_cJUOLj4_pQsyTBtIjkgMk12gF5ewP8jQ2EqpzODABbU42ZDM1dKXnKLBdQ=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/y4TzrgFfT3vwHGZhCcm88tP6AhOBJimQ9cAio11-rSzLxWrOHwiYxUC4X1NkrdDgH4F6RM_4QoDy4yQZrG9lZUY=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/N0TwljjEQhZkQ_U-OIOS7vANNJ41wJNflyLyV3r2gp8imf1Do3VMZ6f3bTdZEp9Ip9ptqUEKvQhLoFplMdDg3A=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/oioaCun9qDl7V27SABxgnmc5LCwgLgcXnkBklyliwMtyIVM585H8TEjbndrLr0RhN9gcNyRM6e5XBmVmUYOUThk=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/EMLh2tpEj3_sFYvse7WO2ZFbYgFpxL0yPqQbrEUKC4TkiNbAhHpHhbBcJlK4lGU2opZ2lP9pWp8PJwPURxOBsw=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/oAVFQZrjzQEwTLFzyJMrDCeL4uIla-72oxfeGSFP7Ggz2WyySEsDMNR8ydx6fEjyUsbu9vy3cgGVgouxFAzWyw=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/s7i5NTt9OAa1Wb47O9he245d6w0Tj9Gn8FXHlWBdcEqVZVkLtTMnTwE1Ax8LZJHXWuO2fQxkE4io2obCyVTJ=s0"
+    },
+    {
+      "index": 17,
+      "filename": "screenshot_17.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_17.png",
+      "source_url": "https://play-lh.googleusercontent.com/a-la0qTZzxSVz3BvGoztwBYPqrxsCQ09GNkV4ZVKjIIk70NSbqbXfsGqIfPv7QUMDdbklsLKou4_at4TiTdLVg=s0"
+    },
+    {
+      "index": 18,
+      "filename": "screenshot_18.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_18.png",
+      "source_url": "https://play-lh.googleusercontent.com/42RgsJ54mepW1k57NXp63kdCt-PU0Jd5NTCADZ7a2Crfu8za31GdmU_pSmDuVR92terTLHVvb2Jcrq_puLQltf4=s0"
+    },
+    {
+      "index": 19,
+      "filename": "screenshot_19.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_19.png",
+      "source_url": "https://play-lh.googleusercontent.com/pBfR7_iNRi9UoSnjoXaLSMcF_k-4rWm_6tGUg8U9IQjhkH5nAj8ZU_MDXHfU_5p9qUoj0fjC2RwB2xKj1IYC7Q=s0"
+    },
+    {
+      "index": 20,
+      "filename": "screenshot_20.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_20.png",
+      "source_url": "https://play-lh.googleusercontent.com/bX8RYrtYassx5_G7tHYGUULx6761YqEWjppkykBHWNMofvk4vezqu5kE_MtMv4odEJOAsfuhqOAZvkV_ZAdVww=s0"
+    },
+    {
+      "index": 21,
+      "filename": "screenshot_21.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_21.png",
+      "source_url": "https://play-lh.googleusercontent.com/Z_5SV-vLJCksirRm8gmy_qN25rU6YffULR2T4k_UK3OrA_iIehhKO6fdVna6q8KcOQnT9xO8a98NVa01wKpmqQ=s0"
+    },
+    {
+      "index": 22,
+      "filename": "screenshot_22.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_22.png",
+      "source_url": "https://play-lh.googleusercontent.com/LIu26GnbwiTQSD-SDV1l0Ap1ZSpmHgqvONajxG5GKkfeomDQgbYn2G9yZi9cTWlSNl6upNto313yOcBzyufWPg=s0"
+    },
+    {
+      "index": 23,
+      "filename": "screenshot_23.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_23.png",
+      "source_url": "https://play-lh.googleusercontent.com/q2q8zBr6Wdn2472C4Zo2tAR3GKmhhjja2PGwdYhaeO-9nYHsxEVmYASeJnCS6gxzc-bFrcqFj5XR0fjShq4lWg=s0"
+    },
+    {
+      "index": 24,
+      "filename": "screenshot_24.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_24.png",
+      "source_url": "https://play-lh.googleusercontent.com/hbIvLxB6qidpvqtUtyeS5mIAacU2iIOOlgdEEpYATu4ouwzCao_7qbUVH9dd3iYw2Lzqr5GyUVegJmDK1tl9lbk=s0"
+    },
+    {
+      "index": 25,
+      "filename": "screenshot_25.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_25.png",
+      "source_url": "https://play-lh.googleusercontent.com/fQYrIYomesxqAUSLMqfQXKKttELmCDJVPMEV_URgmPHU7Pbs2Jmg8DbX44T5QTrZ0jQE06YX50Pl-oYUeDw4AKA=s0"
+    },
+    {
+      "index": 26,
+      "filename": "screenshot_26.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_26.png",
+      "source_url": "https://play-lh.googleusercontent.com/Ww1ZRiPbBHowChtshUQjTXs6gUyZCtcAvAbnpPmQNM2MC4Y7opJb8_tJOV45ezpLOI7-pC5yapEQmAjaoBHolw=s0"
+    },
+    {
+      "index": 27,
+      "filename": "screenshot_27.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_27.png",
+      "source_url": "https://play-lh.googleusercontent.com/EmSKvFXU-6yeKKCtKN8kPzD612ommgmsjycitZ870Nfz8akJn5pppzzm8hjnf2C_npLMK1wZjrOqxF852FtCqQ=s0"
+    },
+    {
+      "index": 28,
+      "filename": "screenshot_28.png",
+      "rel_path": "data/app_screenshots/hbo_max/screenshot_28.png",
+      "source_url": "https://play-lh.googleusercontent.com/ieSnMR2qxhuiwaZ39aMlLYFDTddJ6IMC-GRV1CKLOl8AGsB4ZpXVXUAdbiwp_Nwl43n4m7tvYn4CLtpappBL=s0"
+    }
+  ]
+}

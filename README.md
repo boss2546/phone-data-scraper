@@ -15,8 +15,9 @@
 ├── .gitignore                      # 🛡️ ละเว้นไฟล์ Caches, Sessions, Virtualenvs
 ├── README.md                       # 📖 คู่มือและสถาปัตยกรรมแม่บท
 │
-└── projects/                       # 📂 ศูนย์รวมโมดูลโปรเจกต์ย่อย (9 Subprojects)
+└── projects/                       # 📂 ศูนย์รวมโมดูลโปรเจกต์ย่อย (11 Subprojects)
     ├── apple_scraper/              # 🍎 Apple Official Store Crawler (188 รุ่น 515 สี + 4K Retina)
+    ├── app_store_scraper/          # 📱 App Store & Play Store Scraper (โลโก้ & ภาพหน้าจอ 35 แอปดัง)
     ├── facebook_scraper/           # 📘 Facebook Groups & Post Intelligence
     ├── compasia_scraper/           # 🛍️ CompAsia Secondhand Phone Scraper
     ├── advice_scraper/             # 💻 Advice IT Products & Schema Scraper
@@ -24,7 +25,8 @@
     ├── bma_weather_radar/          # 🌧️ BMA Real-time Weather Radar & Rain Tracker
     ├── market_intelligence/        # 📊 Cross-Platform Price Comparison & Deal Hunter
     ├── user_account_generator/     # 👥 Synthetic User Accounts & GraphQL Persona Generator
-    └── rea_reverse_engineering/    # 🔬 Reverse Engineer Anything (MCP Server & Binary/HAR Inspector)
+    ├── rea_reverse_engineering/    # 🔬 Reverse Engineer Anything (MCP Server & Binary/HAR Inspector)
+    └── pydronewire/                # 🛸 FLOW-UFO Drone UDP/RTSP Controller & Optical Flow HUD
 ```
 
 ---
@@ -42,6 +44,8 @@
 | **7** | **User Account Generator** | `projects/user_account_generator/` | `users`, `mod` | 🟢 พร้อมใช้งาน | สร้างบัญชีผู้ใช้จำลองสำหรับทดสอบ E-Commerce / GraphQL |
 | **8** | **Apple Scraper** | `projects/apple_scraper/` | `apple`, `ap` | 🟢 สมบูรณ์ 100% | ดึงข้อมูลทางการ Apple Store Thailand ครบ 188 รุ่น 515 สี, SQLite, Web Studio |
 | **9** | **REA Reverse Engineering** | `projects/rea_reverse_engineering/` | `rea`, `reverse` | 🟢 สมบูรณ์ 100% | วิเคราะห์ Binary (Mach-O/ELF), Codesign, Plist, Dynamic Libs & Network HAR |
+| **10** | **App Store & Play Store** | `projects/app_store_scraper/` | `appstore`, `playstore` | 🟢 สมบูรณ์ 100% | ดึงโลโก้และภาพตัวอย่างหน้าจอ (460 ภาพ) ของ 35 แอปดัง พร้อม Web Studio |
+| **11** | **pyDroneWire Controller** | `projects/pydronewire/` | `drone`, `pydronewire` | 🟢 สมบูรณ์ 100% | ควบคุมโดรน FLOW-UFO ผ่าน UDP/RTSP พร้อม DJI HUD & Optical Flow |
 
 ---
 
@@ -114,3 +118,15 @@ python3 run.py users 20
 - **CSV (Excel UTF-8 BOM)**: ตารางข้อมูลพร้อมเปิดใน Microsoft Excel ได้ทันที (`data/exports/`)
 - **SQLite Relational DB**: ฐานข้อมูลเชิงสัมพันธ์พร้อม Views และ Foreign Keys (ใน `apple_scraper`)
 - **Web UI Studio**: พรีวิวแบบอินเตอร์แอคทีฟ (เช่น `projects/apple_scraper/catalog_preview.html`)
+
+<!-- START: QA-COURT-DEBUG-PROTOCOL -->
+## ⚖️ ระบบรายงานดีบั๊กและการซ่อมแซมอัตโนมัติ (AI QA Court Debug Center)
+
+> **🚨 คำสั่งบังคับสำหรับ AI Agent ที่ปฏิบัติงานในโปรเจ็ค `แซนบล็อกดึงข้อมูล`:**
+> เมื่อคุณ (AI Coding Assistant เช่น Antigravity, Cursor, Claude Code, Windsurf, Cline) อ่านไฟล์ `README.md` นี้ ให้ปฏิบัติตามขั้นตอนต่อไปนี้โดยอัตโนมัติ:
+> 1. **📥 ตรวจสอบไฟล์บั๊กแยกแต่ละรายการ (`qa_debug_reports/BUG_*.md`) และ [`qa_debug_reports/BUG_REPORT_INBOX.md`](./qa_debug_reports/BUG_REPORT_INBOX.md)**: ในโฟลเดอร์ `qa_debug_reports/` จะมีไฟล์แยกตามแต่ละบั๊กของ **ศาลที่ 1 (หน้าบ้าน: `BUG_*_FRONTEND_*.md`)** และ **ศาลที่ 2 (หลังบ้าน: `BUG_*_BACKEND_*.md`)**
+> 2. **🛠️ แก้ไขโค้ด & 🗑️ ลบไฟล์รายงานบั๊กตัวที่แก้เสร็จทันที (Fix & Delete Protocol)**:
+>    - เมื่อคุณแก้ไขโค้ดต้นฉบับตามไฟล์รายงานบั๊กตัวใดเสร็จเรียบร้อยแล้ว **ให้ลบไฟล์รายงานบั๊กตัวนั้นทิ้งได้เลย (`rm qa_debug_reports/BUG_*.md`)!**
+>    - หรือเขียนสรุปผลการแก้ไขลงใน [`qa_debug_reports/FIXED_REPORT_OUTBOX.md`](./qa_debug_reports/FIXED_REPORT_OUTBOX.md) โดยเปลี่ยนบรรทัดบนสุดเป็น `STATUS: FIXED_READY_FOR_RETEST`
+> 3. **🟢 การตรวจรับงานอัตโนมัติ 24/7**: ระบบเฝ้าระวัง 24/7 ของศาล AI QA Court (`http://localhost:8099`) จะตรวจจับทันทีที่ไฟล์ `BUG_*.md` ถูกลบ หรือมีการอัปเดต `FIXED_REPORT_OUTBOX.md` แล้วสั่งรัน Re-test เพื่อเปลี่ยนสถานะเป็น **สีเขียว (`VERIFIED 🟢 / ไม่พบบั๊ก`)** ลงใน [`qa_debug_reports/COURT_VERIFIED_SEAL.md`](./qa_debug_reports/COURT_VERIFIED_SEAL.md) ทันที!
+<!-- END: QA-COURT-DEBUG-PROTOCOL -->

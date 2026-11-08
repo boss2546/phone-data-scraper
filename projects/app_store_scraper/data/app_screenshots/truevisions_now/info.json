@@ -1,0 +1,113 @@
+{
+  "id": "truevisions_now",
+  "name": "TrueVision Now",
+  "official_title": "TrueVisions NOW",
+  "package_id": "com.truevisions.android",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.truevisions.android&hl=th",
+  "total_screenshots": 17,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/nixO2dpV7ksy5le3mxzWIKFnFeOrQcQza3Ky8tt1wZYwhnYXas69e5y3hUCA1pw70MALihwNw7Uk2mHZWAXe-w=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/ijQZeEIQDxXObbp4_pVOZzeSOGYol2fo6CVuI7zUs-t-DAYdwAetEg9a_vAa3AA1dUp26AP1Vom-SxNzMKgSnA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/QZEuslWB9CpriDU-MIckTWv1NnvXmiHe9mHgMsHIWnHtl359HkRQIYOuzMyDvbZG8yKzTj9pt9QqKXku254w9A=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/JC5G-B2rnyKn3dTeteqOQhdV8-1i7Nrry63Mi4SiDhZsWmTAxUv2_HriwHfb1R154FnDk8oFLI4fhDtmRyNfyA=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/Bh3DfIwOw1m06G3wSU9JuAvxU1zPiDgGj4_hX3n8J0i_S55WJ1oCOxVoaM0cvikGNSGNwcU33RIWyY5ci6tnIw=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/TOVcpD0IM7kZpuvTJpFbMGCg0Uj7yr9ax-tfVfPgXCEqqxVCDWmtF0mlJYSATIlI6ynyHsi1qyeq1jFRmffHPQ=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/EVXjHLwXZQb3SJ-VJJ7hennJE3rQGCFX9fvnwiYM4iGVje3dDYxg0mi4BwvHGsmWRKn1ctRa5pACFqmL9c4wVqU=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/-o9qGMfBHhWJys5ya6jqdnL0NVQETx0KcZ68ynP_K-UKfKw9KEQnjl-ZdOKUAQiMEUyGOQgegmRRMNKdGjuy=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/L4skhy4i5ArFgog1CMjzKpD-Z2gU1IykuH2yywK5j41o4mt1Ows_6PDFN1VXNFYWxOoJl7oOfSX6y7Km2XuUYw=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/8d9tVMbCe9fgv4LZ7REXHeT7tCIz9KISfx1vOZWtX1eXf3_8P6V385wHfH1YKOCiLWlsVgCEH7U57a1SSedXxw=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/KqCr4nINmJySwuVycoyaF_ictT5faqRh8KlBEjYvAnXKcwKCxxADviJSok_sijQIt3v8CQBBAfsmIyJrO5xOfQ=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/xNCmM7MpV-lezsx9L7kjUygI1IFaj1ifcanh38q5po_h1mbQjGVS6CAT9WCU213werp7tbrSAC5uDreSlh8RfQ=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/BG8VzvabEasc6O3nBgETVAsV33ceT6q38CcfQxJHfHOBVIWYOYR-wybFdunhBGArtrKwVjOGqtJS-ydHq9cV5Q=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/Gt408oqdOkyNtb4YLTpSY1h4863Jb4DF5zy8PVRDrf0wl0tSrS64doTv6IDmak1pJ92LB0X947paJmAuuHIMjw=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/-4jt2XU-dAkYoOHztsXf3H98rwH6AJlKwETp5xvOEzjL-ZO__Lr-rRCWRTcMH_hCgGK3Afkyre5SjtENWx0RYA=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/2WV2o9yKCu9wnd17F4-s6K19P8TUZSy8g37_O1dbsqIgLeu2aLupmPt3W1RcS67zjguAlDNJl6hg1w8rdrBXXw=s0"
+    },
+    {
+      "index": 17,
+      "filename": "screenshot_17.png",
+      "rel_path": "data/app_screenshots/truevisions_now/screenshot_17.png",
+      "source_url": "https://play-lh.googleusercontent.com/lZIj4qhz3ovpvoDD5Hwh2wgBqi9wIJKHxXsWCoGkcJc4h9LFhTJV1hW8pHvmSOLtyb8jiZrIdRLOAW_xs-fUag=s0"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "disney_plus",
+  "name": "Disney+ Hotstar",
+  "official_title": "Disney+",
+  "package_id": "com.disney.disneyplus",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=th",
+  "total_screenshots": 15,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/ggdGZe2gD2kcKK8HFg9YG3yJ_33DwBEMy4uH_tqwWzpDusoAdDt_rCgSDokBLQkJhgogebl-jSd4Zqr666vQ6Q=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/WlwESKDXBDScfnk0VTEu7OBzrkHM8m-OGsJ5jyEktaDfvI7WUhll7ezmUootEMXkjmqmboQnRXtBRFGWYTo7Zg=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/mbOECEXszieNPjB-vR03f7HT2iLJAY3RXkMXktKvFVv80SUdy4K8u-pJbqk5I0GLzdflDgTU6FXHDNbFxNJ8kg=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/Z0EQGZE1rapqp4aluE0qZL8h976Ef20l1u2ONRwIzLaGF-TQmCXc9VB-poOrZdx7qJUTUq0vX6XiWz7A2i3ZwFQ=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/dep3DOoEcWcSUnGrrU-H9jv1RHRtuBKy6XmkH2BczSX2ZcSVXPAq_KCAZEg1-opJOwicaSX5zNCFV1MrahUDHQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/AEXNZtiuvstF-lPboAUrZW1phVh8ooovPJjah4arxnjqV9ih2hKEwTZC9Z0GuxAcGH_kgyIG8PAtUupkwQ11RQ=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/F0uoFzE8h0SyNeONnuOth8sgjllkKKeFM1SJwO2NP8qF2J6Jpsc97mPL6uB1Cc9QRj2zeOKUAYJ-8B2_iGZRjg=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/mr9Y6B2wc_VQhC1C85YF3LzsRF_f374BosYv2FS-lJ0H4bs5n0tPMRfUU_O8E-oXAPtpbBjHLCzdL6FqKJBx=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/zql7OdMd7RilsF7zS1v3rxGf2sVZIPnDRS1qvoUXSd3ERu4SLx4T_FcHVfZ_WCIBb1csRwnzLp9C9sIdcyIBug=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/R1NfqOq9QF3fBj2Nj-aYGVpI6r4C4IVc7KTcnVG_aNBmi6_YP53Hmh3ZjgasRtayI933LQfVRb-KjKJxidZl=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/Vovv8oUoIyA17pKWYH-fyytxBokZueeYbGag-JW35Z1QKHgRWJrLRTBJQtKmCOoCoCiSe9lVG3s8dZ27x9puBw=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/CmGTpaIwo7c8Ztij1pjMe8GhSuFiu4FT84D9a5ZPpOkjjVLHkyaHyg20ESRTyTcHoz_pQSMxVDOFshv1cuOXFw=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/VOsUjlq_Yyc-b5hTlgYSQghNLNneHvPxuaKTLooT_vAMgdqTVgSBRAn317WJvg8CL1konSB5TpEGClWZ7JGQpQ=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/_u9_Mq9shl37DgIwAwr9jPVHT-Ua8gAR2Ni5EeMeIi8FvEON3Bj6u8xNnj2KVuytnu65aaDycwwxqCtvTJTK=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/disney_plus/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/fQycm4BZTSNVjaubjIWiUaAfH2Xq_SWN8e-Jo6M9RJXWeyO1Sq_WujQB9EpcbvVEQwz90qch508NxbXTZR_JBQ=s0"
+    }
+  ]
+}

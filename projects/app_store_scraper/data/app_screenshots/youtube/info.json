@@ -1,0 +1,41 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "official_title": "YouTube",
+  "package_id": "com.google.android.youtube",
+  "category": "สตรีมมิ่งเพลงและวิดีโอ",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=th",
+  "total_screenshots": 5,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/youtube/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/E8v7V_wV9ywTlM2RRGLNuLliFFDqZjZaEwOKzrjZciBJp3tngfW12H1ebhEEaYfvgFTd2P1D7b6sRlCJE-Bj=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/youtube/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/ckZSl5R9MfpSrAJd0VSV_Fpoj8NxDD6vJzlgJvhqCwUpGmH8a1EOgV0ls9dWtSEAMxIGcUBBekBlu0Ey2STAzw=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/youtube/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/1iC2MBBHknEu_p_SxZG4_mr2PhG-P3O_9fL4HsnoOe9aKIllGdmct-76og0VVfkWZulUPGoiblOWFv89RsJ0jg=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/youtube/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/Zl6A6dhB1KH5J9CXjFNKFa4EhDK873prcZzfnTkHdCSieQK4LhMTRrRKPfq13jEEmI6lGyv5y8jJk95RKOXWdA=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/youtube/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/wmQTZ8Ma7k18HGnGhTg2NjdNNXD4gVtAxO3gKnh1ud-CSYGDTzrs42Gk8Zf8LRAjVaPFLQLaE9qqdZSq7pjhNdg=s0"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "idrama",
+  "name": "iDrama",
+  "official_title": "iDrama – ซีรีส์สั้นสุดฮิต",
+  "package_id": "com.gooddrama.idrama",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.gooddrama.idrama&hl=th",
+  "total_screenshots": 6,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/idrama/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/yFHqdS-6ehKL3c4dGoUSVD2jqZcA7MrtnJjL3L4_GOEwcIF0rOHb7TEaKNyO9l6u-l5EtF5G7H9XxVgxsj-Q0A=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/idrama/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/V1an2cMlCkGrx8wWNxG3GWYhZXtg3pa2AQVY7ZJtjBeq9BfJCNYIbcttwo6hv3GDWlroRRIcSW3j2riuGYPCpw=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/idrama/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/GctcvNany9VWTtUjtRQmIwt2e-KPPLLEVfGuhZVbbnVZDkfOT8uJ0Ywja-dkZP1sP4NUcW9o1N7X6h5QGe0L=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/idrama/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/HajbXxhY8qBoR-RypoNA7hMe9O3Bc3mQSe4kbGkp-uP3Cwq0EGsaZjPQyXAYw3CllT2oBp_b6PqVwZQoyiijrg=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/idrama/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/M7oClQnm67_hdR9L2Q0C0wsLMGTL2hS3CES45KtDrp6nWn864w_-wpk63obBppDpLWQMSiujPfLbTMUNXDpk9sk=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/idrama/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/0bc7xhiKlAmJEoEBAdv9q94ZNhL_X9c0sPkFQ1Lkho8HxIiZ9XyRx9oTPDQpJ1IjqPg4Qw74nYgVAGNPrkqLnzk=s0"
+    }
+  ]
+}

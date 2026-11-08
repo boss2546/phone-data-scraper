@@ -1,0 +1,47 @@
+{
+  "id": "viu",
+  "name": "Viu",
+  "official_title": "Viu : Korean &amp; Asian content",
+  "package_id": "com.viu.phone",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.viu.phone&hl=th",
+  "total_screenshots": 6,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/viu/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/UNhFb_7uXnoZ-n5XlvBYEaA6M6sXl8VomU5P92VGul4YBOZl6ZV4KhrJ_8YFmgN8SfKAqbP4pd7GHwNyihZs=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/viu/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/YrNT7cwPu2kYoG6kXCsZpT3OeRQt3RR0r2NAwUOpbV7aP1SrpZFg9oE7IYYbrHgXqCLL7jBSA-WgYyFpXaLEeA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/viu/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/oF8NwW5229zv6VAblxhi3ErBgmm6mnjpviYyrYVW_XPDzXEltHzxrEncbyj6dGOFcbfGo3UI69qSNyZUFYX9YXw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/viu/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/nUZk4JmIk3sysJ5tmXLjYvVl95YRyRehmdFOFiHZVqWfaSE0gathBgq9Fplaktk1bQeN754TK866Rzrc2qP8mQ=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/viu/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/s9GwuODauJwZRuTG4oeZExpn7W_YWDyb-Tu00F8qlvhAN4doZNit7u64UDr75m_IQdwHOrWhcFjc_L0HnUPq=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/viu/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/z8JrRKxyvuhzYDMhh1yNAhF9YaSBWlmSnGyVxymR3kfh24X_0xEcbU8iZmBlFesAv7ZH1cDeUrhbcd4ziuovOg=s0"
+    }
+  ]
+}

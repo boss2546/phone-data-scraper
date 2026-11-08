@@ -1,0 +1,155 @@
+{
+  "id": "oned",
+  "name": "One D",
+  "official_title": "oneD",
+  "package_id": "com.gmm.onehd",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.gmm.onehd&hl=th",
+  "total_screenshots": 24,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/A43RV89FABq0EfkaKrHMJBmKtUEAhpx9U4p8_4atC43HrRxU6IZTLvzPF_R7x2hX0q-7Fpv0HG1v5enb43hjag=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/vwkZ5M30waK2qu3LgWFKleYeNmIdNbF7lKNcy9HnUMMq_8VUl_xH5zQgWs57Ne_7O0pkSmRgzq8L48I6sgisczc=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/W2VOs9sSWHGl6K4kdZWM6P5GBbqS6cevVvUiInOBql6qVbBGVj5LcGV2JfjRKy4eYytWCSHZt38BC3ERqpzX=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/xIeOCwVkQC-irpAmdol_Q2iKylQajdvjyI3jv-WN9SZimrSTItzlvyLLv56UQ2I3Ni47npbg7-y42BWFKucU=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/DRacpzV7zc16ux2VtF314RT2tKjGmefL6IFYPaQeDyFojSo6nhIevBiXr0naM04IQlb1vwVYTp9ZEcdCkg3W=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/fdMu1xEpBdwL2fBaRoCAHYv725_OlqZT2Lx71GPybHPzGC5CXVAfDaQlt8zBsmkKZzTEXlnArMZVyVfoltKw=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/a0snF6STyuPKVO_-yIY19FKY4kk0DZLciB_YluFQoF0s69xtefg5dsMDsANb47Y8e6g4AOVmtQUR4DXOmiJZ=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/3QsKPkR3zFgY1En9qExIK9tPW4QIqy0wfIi6Ve4tI0xAY4YPj1klC_hKHqNPAymJdVhdQy_yP-twmMGeRNlJ=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/pcs-B33cBbW1EVU698qQuq59sJ4DNK3H3xubHUedq3BUd2TQlnk_QxfxAHg_dZNM4iQuabk-YwJSXwBm0GJBwQ=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/V5bQk6wkT4ycYnLe5q8MdwuMOrn-MdOtNFdBn4jLQfcwpIJjuh_LpEdFLjIjQdfOhtYmcrAmdVPzuzRgsavkvQ=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/n5hlLxf0KrFIUBX_099wqefTChbaRELnT_RXUKB5RlAR17EeNCpmCPWOkNtxg0hmQHQyZgACs-7S8uRYZm3ikg=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/mbRLwMAJLgvSGG_EUh36tbHA378qHiULWqEoMzaOBGWZfAoI3zO84EkdKFSxFwPF0ON23shyi5CDEofmRDOu2w=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/9GxIgK69gXqAsSKvGzWJzLQ_GMQRThqlRTbX7GT3-rYzEU9ppD2GILKajMo50TgKi88Ks9UVv_8g5izj7wCo=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/02VuC06gRcckTA9BKF6Hz680Q1M-LMMvbP0mx8SIfFdqbbp-OL98TMAkwJaLkeW0rqda8qSxZZamUj2le3zI=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/dfchjy58e5CbY2NP5yrzadXhcR5wY7IFQ27uCvIkoo0hTOG2_38PLK-y-GJReTdkVZg0lMAGm-ArZu0UznLw=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/I00pAYxGaKQBh5-K7mwavO1JLfm7dbW5Lcyp7vvKGjMlfWNJK1uDxTrkYT7fuQbajXB3IqoqkouGTzyFVcfX=s0"
+    },
+    {
+      "index": 17,
+      "filename": "screenshot_17.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_17.png",
+      "source_url": "https://play-lh.googleusercontent.com/5G9MmsKbzIQ5L6nz_n5i2DRsIzdGFUthwmyTCTyz-MD0u3TwlaKexJzvEko2PaU6FqD5S8cysgawfYyK5ud9yQ=s0"
+    },
+    {
+      "index": 18,
+      "filename": "screenshot_18.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_18.png",
+      "source_url": "https://play-lh.googleusercontent.com/6uLJtLzdnv_1Y17zsATE29knHj4BYt4ukYB_O4im4Vha64G_hVBe3wlJ2SYm4ZLTkkM-WNkrZX6bVTBPhsax5Q=s0"
+    },
+    {
+      "index": 19,
+      "filename": "screenshot_19.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_19.png",
+      "source_url": "https://play-lh.googleusercontent.com/iI-rvbdvYVOd5Ruz4OgDggqvPEFxYdzat0WlPkvrgnu-rE2tDcgz3H2ooIuMjDvkDFAEGVDeh12B6zNG28lslg=s0"
+    },
+    {
+      "index": 20,
+      "filename": "screenshot_20.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_20.png",
+      "source_url": "https://play-lh.googleusercontent.com/gaA964X50SAFnOmeGkhl_zL22KQ8wd6WmCcQdC6-0B45CynnhfJIuxo910GBcXGI1zPrg9m0D7wAc93-avWq_Vg=s0"
+    },
+    {
+      "index": 21,
+      "filename": "screenshot_21.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_21.png",
+      "source_url": "https://play-lh.googleusercontent.com/7GecldRcoZCrMI6Zy1PkEvgb-6J71ttH9RQbaMZ3jLKbbtZGY3_A8gA2DLaNSPshL4wvOWaZR6j2_tahf7QoZFQ=s0"
+    },
+    {
+      "index": 22,
+      "filename": "screenshot_22.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_22.png",
+      "source_url": "https://play-lh.googleusercontent.com/7tfhPNFb9s0glgs7afM7caAZQvYRhTuIOIi5tLvGLTuYBN1DlWxzMF-xsZ8fwEFTgIZvqPDiq9QSYVKrWUnl=s0"
+    },
+    {
+      "index": 23,
+      "filename": "screenshot_23.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_23.png",
+      "source_url": "https://play-lh.googleusercontent.com/2v7pmjaMGiyt4X53YQuGlPk-q6419s1wutc5vf8zr-1gzvKSuzuOQXU7upyb3oIuHZoUgASPtOoYGsG0pFT2=s0"
+    },
+    {
+      "index": 24,
+      "filename": "screenshot_24.png",
+      "rel_path": "data/app_screenshots/oned/screenshot_24.png",
+      "source_url": "https://play-lh.googleusercontent.com/rImv9Xox4fgdFhbAM8Cq0xyEVx9WFfqoRK6aZt5gtvsosqvtxMjN4ruD-EJQzJ_A6uKWTPB9zJSWJiYBoupOlw=s0"
+    }
+  ]
+}

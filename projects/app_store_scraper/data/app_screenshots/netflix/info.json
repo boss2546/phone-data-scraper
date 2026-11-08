@@ -1,0 +1,77 @@
+{
+  "id": "netflix",
+  "name": "Netflix",
+  "official_title": "Netflix",
+  "package_id": "com.netflix.mediaclient",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=th",
+  "total_screenshots": 11,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/xiKPLBxiAHaucqg4VE4DjB7pHFjoKNiMuEeDuUcM0wVF_2-gYCF-wmiJG-TsuEIuBepyFDEBhxv2sdEAjh73hw=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/TqXJbLfIIu8-3KdsDeEvdiQkBPu7N31gVRGDllidfYqpQQA54F9d3dljmDH1W1TrpbUhwNIMSzdhIYWrzTfkLg=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/dP4wee0g3X7sn1WcM9qHT_OKp0ltLnu0ClK3ObfdnDssPemSEZAKogq1GgLHBx2mB2yITYUhrD_cG_v4_vj-7Yk=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/VKWmdA4pl8P6T36j7EW-he9QzHFAf65BFgdOvjkOv6ZFlER91Unm9xn-LgNC3OJBTcNDN9Ixik6gujbAlVpjCg=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/dpdIzWBb763APlb8TqcUbjRjRtDct4q1Mr0Jkfd2YC_e40NrJY1q-GB79beBJLzG2kMER9vU4MCkYDeysdv5Ig=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/-Gouye2lwaRLuehNKo2gkRzJbAHfk9RBRMQ-X4gMgJFxC3Gk-lmWGaFdsKVsbMwz0AVQ0fDOdwZxCwHyjEo8=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/JtBetUgFh9xqXOuqt_d5YC8R5Lbui7ROIFOwVJCvaitJtoHNCu2KqgqFoD1HD7PYe4QlJHdIMVe71e-W5Z5SIjY=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/X64SXcUXIgdfzvi5QHGyxwkMv6TKE5KglaZ3JAjZRerkaCsUHud6i3qmv78L-qlS5MTf2-4BFJF08eh14hRQmw=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/6y41DRp5LW_cKOPBDe_Cx56W_sHjH7GU_cKS183N2-41dP3ttj_2G2VVGgbg0DMDrvLxkW0q2lIEVgdCVjjPobE=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/DZBWjAGN_e8IMqHaNyWa3MVSutqUh48B_-YOkl_3SV-23tEbp6TmZ4np-niSejeMTYX-hmlmfsQB4OX-cDdHOw=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/netflix/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/ZBr9lTELWcmYCcNtxp-g2fa93B5I-jZtDF9SOuvOaUHQ5e6NCPedOXluYRjN0swLeaWb68n5H_mGCnmmkcsHmw=s0"
+    }
+  ]
+}

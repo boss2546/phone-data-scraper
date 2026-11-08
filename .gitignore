@@ -31,12 +31,14 @@ projects/*/data/session/
 node_modules/
 npm-debug.log
 
-# Scraper Caches
+# Scraper Caches & Heavy Raw Screenshot Binaries (Manifests & Logos are tracked)
 projects/*/data/raw_html/
 projects/*/data/videos/
 projects/apple_scraper/data/raw_html/
 projects/apple_scraper/data/videos/
+projects/app_store_scraper/data/app_screenshots/*/screenshot_*.png
 
-# Legacy Archives
+# Legacy Archives & Temp Folders
 _archive_legacy/
+_to_delete/
 

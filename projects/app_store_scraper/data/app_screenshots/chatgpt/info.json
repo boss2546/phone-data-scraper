@@ -1,0 +1,107 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "official_title": "ChatGPT",
+  "package_id": "com.openai.chatgpt",
+  "category": "ปัญญาประดิษฐ์ (AI Tools)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=th",
+  "total_screenshots": 16,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/1pPR65FM0YXnTsASsbp_9QHENbFpU2BvL_mpMvv9zILYvTMVh6rR56J1JSZDM8TqSE7KskbgeMk4gD3H5Y2L-g=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/FHPIzXWNvUgkmmPvI0WOUzuBy9VU8LTxOW5RoRbCiP_XUSKl9E-R9Je4x-F-HwkBEav_xX_bXRGYaf2U1V-S=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/gvqk4Qp_R-RqweucqHnRniK3fsOcURI_OuIR305bOO5ZRs_jOzcbniFZ_DtOT5O6ELAXqfVY0UMzpYXRmL_jdA=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/shgAWlWWaBJOLcR4rkwjmTqO_ku3MdvQwKUngdspFcaNd96KMd-y3FUkYmeFOwV92X98WrxQzvdPNU6QubsQ=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/5MU-xzmQKxui5ZHRqWqSoPoG693xbYK4d6fGlgpMkY8QFQ4qQSklf689Zius5u4emKAwD_AhMSWSkEAp-7AWJQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/c2vMTHFYdkzh1NPGYP2h0ekfQDHpBLzkY5cJgVhFThKfGXHTg9mKSDi8FsZzdsoaKeJv4tirSxr8vb6nSQYR=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/ZFs5UCYVtHt0eKwS1UcXimHD9_BWE3WFdTJhcyLr2MSy3M-QtuwWo0BHCmLlRmoIWWM5XbcbBsYX6lGx3skoNA=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/JFtVj-z0_o6xsDZaW4h9wnHKJpspPJWqvftT9eEY0cxxDZyJk1sQHmVrhRY71I3iX8tnOwIwvld4bC550jZmZTk=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/EuE28Nw5-nbFV-bxpDaXcPc4lD1XKukQeHLP2nc-7LXOvC9V-EUesSVNMWXQW5DiBaHVsg_69mTrp9CvH3f8lIk=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/Xq0s_-Gb3Mk5bY99qINBEZUbY51e8XU1CsYKgqHW7GxWjvwcFXxxjver0kZCf1LC2i6L3TYJ5nUPN6vyb6pY=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/eNUH-XUB5onrJeZjxY4UR5bAS7BQbE7SIs2GxmOc4GKRNVy8qRJqHBA1ETgAuY-t0UwdVnogXXhP1nO_cHpnLhk=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/rzvuKXsF6YQ6blbV14zTOIDzYJf4gfV-GSS8xJOQ2V8jekWCfR2tlFILRJpO4HKkkpOn5TvzcUFFduPDYbri=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/cNX0IdGc7W9NA4IbU9qhxFpEBXMHrpaEimlkVl9PCPVI6k9nrc-_ggxNkeUnibasRJwv_FmsXVqQTcBOTedRWo4=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/5hCHg-lck1-YzIlotJZ32D-ovgVTMUvt4hTV81Rv9D2nZ3iwX0JzvrGNX4mxsBp70pZqabAJ13P-MWc_DMJ6UQ=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/YiK9xB_4Vhy_xC2TeDJxvqIBglyx9z1QXhK1uakKsxOL19lfeY0_ZzH-JEee_rt2yQ_JTAjYO3273tEf2d07hw=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/chatgpt/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/iCY1MdWedwFlGC6Uo2Jczo921IdF5D_Q52WmTHd9sdaSPKjwGiDLk6YqfXqcI0XFuxyO-_-Bg-pJ7n3KyFXQf7g=s0"
+    }
+  ]
+}

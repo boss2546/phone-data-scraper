@@ -1,0 +1,59 @@
+{
+  "id": "beauticam",
+  "name": "BeautiCam",
+  "official_title": "BeautyCam-กล้องรีโทรว์",
+  "package_id": "com.meitu.meiyancamera",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.meitu.meiyancamera&hl=th",
+  "total_screenshots": 8,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/BapbP-ImhHJ519Yu4mu0J12hDFoVGhrHIX--sLwEvTi-Dfqp-89SjB28bzMEE-UvViFNp8SJy8ppktbJreN1yCw=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/V25DNGME8GE0058TgH3PvA_t3jrfpDCicrn0wBGTzUkuSjbxZinTkqZsxN4irLpwRnMPp_cCjQ4ltnta75xo=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/kgYiMt8uOR7OCqGv4V-QpyLihMPL9_KzR2danW2CT2FTR3Vncs8nQuw7OZyI44zYO924K2DVaDZ9kvIItkHp-A=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/ypiU1MPxEObcFDFt_NvU4ioI504ewq6j-amQLSKZbWUZURWzE6-eejQqoUh9sR-UUUgxq7wSNRxdEw8LQ-QVig=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/yWxycKE-8qkvH4M82YQ_IpDj6NIGQwrNW-TeCz2ddZAk5rzHTtC4KH57HGLTEJe6gLlrpfXbW7R4YsFKslnUTw=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/Q3fyPQYKuFkJDnsOr45G3V3s588FusVOiVwF54O_Soy16-Chqq7mRB_twEBErnvfqaH-vJZcimEkzFvJYY8l6w=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/KqjTqw8TPvm6U3uYON7B7uw_gBd1mJZNOcmcOrZ6g0lbo1ymc6DWjmR1aF1n77DlICESScRI22vOyq5_9MCtgg=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/beauticam/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/JWautEXkymSq9Rlv3FYZaufBbvtLoJbSHfg9dcR5MMqYeTcXMd9dzOypVj6sLhNulPht-snIeL_JOa1_lKDGkA=s0"
+    }
+  ]
+}

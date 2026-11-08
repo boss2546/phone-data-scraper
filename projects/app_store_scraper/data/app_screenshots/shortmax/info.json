@@ -1,0 +1,41 @@
+{
+  "id": "shortmax",
+  "name": "ShortMax",
+  "official_title": "ShortMax - หนังสั้น &amp; ละครสั้น",
+  "package_id": "live.shorttv.apps",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=live.shorttv.apps&hl=th",
+  "total_screenshots": 5,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/shortmax/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/Q5EJPNPsern1IVsHtnvSdgQRA1cIoekzzkEsvMGjpCWt9KjXB_70mlSZwDh6eBepkF3_qaGALQEjf7WL8R55kQ=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/shortmax/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/u4v76J8FMp5E1BeKCwvQL5t9u8IKXdyaVgcITESQvyY2ypw8vIfzvzth84ANOjJI4rwp-3Lw2GO6IW53wbaFTA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/shortmax/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/0HgCZliTNoPvML6TK3kT7WGBTZsVZYJ_wYIxr7e2_4VVJt6P3KVYFtaV-wGfS11bC9IjNGqCqMN3P0grppfEOP0=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/shortmax/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/QTNjYKB-UTa7pLWSHMWo4fb1aY_czQqvJ32ATBDJDS93fNWYVBSUOuNIG_wQVBWG5VpZvoIo5IUFLXJXBOX2QWY=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/shortmax/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/NwryFNUgVfrsiqUnsxi_L9zytndAfEHoEi-w5XcuO17UY-pjefCVRoAkotcenwsriTeC2uQb0yQOCSF3XQ5flw=s0"
+    }
+  ]
+}

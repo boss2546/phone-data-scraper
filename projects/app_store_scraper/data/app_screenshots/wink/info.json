@@ -1,0 +1,59 @@
+{
+  "id": "wink",
+  "name": "Wink",
+  "official_title": "Wink · ปรับความคมชัดวิดีโอ",
+  "package_id": "com.meitu.wink",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.meitu.wink&hl=th",
+  "total_screenshots": 8,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/aHd0VSspadssqWuVavc3s7UyoVqAQGQq6hJIxr_Yl0MdgWWPKoPOTAGDOrWFOM8-_4uPlwo7qU9HxQ3Zi4Kj=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/Wa-V96loNlZPl-RbnYnPFtpc9np6-UlxJR2whYGDKytyOoeKEnOdZWd29L418MyRm0mKC6GAYFvD1G_Xzng3ytw=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/7vqNQaejckEjqNNw11ie-PEqyoqXSuhagHoFlV0wvJD2-JfarVh8eikbWy-3lP06cZgC3OZ_m79VQDGyfZVq=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/bUqQE9Iw34cBXX9dEK3d1aM_A-HVIwpgeAVTJD811soiVDMCOP0mmQ8tSPfr8DrSEbfcPl0W356YEV3rMrjI=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/xBcxtdsVudsMNnw0UkuyKVPb3HqqXxGfcN4n8_U7JT72MawxaaV3DYGZshAd0qLzarx4odG1kElc0pdNeof8GQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/5Yw_lsjCAcx9tismpi0gUaiua7BtGmjNArqW6PnAXY60ZjY0b-Z-Q4O819z6yo7mMYR4HLx7pQP-QZ8zgiui2A=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/A7JXC_BG5TAZx_4hXZQgcmnMXiwBZrrNq4tP7-L872hM9m-5zzMBZ_ItRevdZerl0NXSJHlNMFob3D133QCPBrI=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/wink/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/KWabWK_1A9Av3bD8cP6U7N2mPJtcc3USeozRq5kt-CG_MtLF64zViN40B1ng7VEZw5Z5pHjOKtI2sWptDultCw=s0"
+    }
+  ]
+}

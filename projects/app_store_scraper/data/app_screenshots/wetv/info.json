@@ -1,0 +1,119 @@
+{
+  "id": "wetv",
+  "name": "WeTV",
+  "official_title": "WeTV- ซีรีส์ อนิเมะ เอเชีย",
+  "package_id": "com.tencent.qqlivei18n",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.tencent.qqlivei18n&hl=th",
+  "total_screenshots": 18,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/_duONaoprX5vQ3VUKaxLY74CVLTnyJCPgML0Gza2DzlFshkmkq4g2XwmicfV3kbIu_WVy3XnxO3MEsLkezMQPg=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/7GEHrUcRzZRYjI5cP-PMps3lzcwTWXkeggEbGqsoAu9x5zKiOD-29j7uU3FRlgI3popGN0Hmjh7ELAI1-5XeFlo=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/ltUkmCYIzMwj6v0YM8JvJhgUoEpMv86VwYr-F5J4ZWZuNv5LnbF84ZJBumoTqmqGjd9mmvS-p4ds__cLSqU6rw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/-zc5CtI-uZqyUVRM7iBOKgAhz45iXoH_r2xE7d3kyeon54MFTmVRCJGMPKKfZv2GomZzUy6va_8uA3Dhixk8Jg=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/gXl5DegDjE-5xWWOB50Xju1neYr-dytkvrkfkhyrt5qvlrsAY9R_TrNiYvK4W5BW-_hZ3FsuOg3el8p37Gz5gA=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/nwgu9u8pogu4_y9Tu-yMUHt5pZHOO7Zhyodi9koirxXnlfWy9S56jf5QSLuFyNT7YrCmsPrBUNLOehRP73kCnA=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/NUL8wnhTFeFd1MfC4CqVkTM-kcVSmwPVCYtta39LTwolaRy7GBtNY1I7XG1LC40mwM9iWU-tIDcZ0HdWj8_H5Q=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/0s-qIc8A8WyS84wLwxKcTB8inVdd4KL4-vKxfwoeu2dXvVt4-dHbQbsFFhabmZjc79SSt7xpoUCpHuvCLuAPIg=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/DHZFyhxzYxMYFAXlzAZSlIbwg96p-h-A_SUfWlh7k7Bf7wWlms3yuNoZ_FxzqRtMqtDvAP_LncQfLpRcre03bf4=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/Qh8lck80uCGulPQcerjjr0dyLY-sjq2xEDKt-fegs9ViVIbvYfBvKmWItFZjV3N4AGfVp_OQA2gUUzR28mL2=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/8R4k5coJxu3H3p0LcsPtiMzAmB5-cN3iqud_F2-LJc1YaRyhvKUWnBLZhqv2hwXWDrYWTPSz3uJfGW7m1U-yvQ=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/t7Kgvy6Qn9_TNTDabpn659GHcPlVJsG69GVseq-1UplFV-H_0uFKJsmEMcac1yIXfCu5tS8FIlN5rvMmoakU=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/Aio2GSkE2YgR6Fj1rlrjmWzaf3jOuiaDN21s0LOEK0xRfKpXD-hdpuglB5hAy8cqq4ny13KkZp8FjZWRRlrPkA=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/Ei0SIoUZQMT1TZu2SyBSrhmWcRZU68_6t09RGPSQlYc5GIgOKFKj1CsaVvQ4YSx8kV-cmT30wg8YWq2ajaVsgG0=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/5f51zXxyEilLj7zHLyLTi9pyNrSHvvYWXqw-71AJK9ym0m6N7hy_Fyo7O6mFYgot4ZM1OCycCpOb5n_rTnjD=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/fgOb2Ir4JpZ4fbQrh_mD62wuyO0WM1x8n9zkXW61MLJA3-wBYxQYnbfxfoDtSOnpbgEcl0fKnbIeizow4AvUAA=s0"
+    },
+    {
+      "index": 17,
+      "filename": "screenshot_17.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_17.png",
+      "source_url": "https://play-lh.googleusercontent.com/jOoi2n9dF5C1D27BlIFHzrfR-nEnHD8E-GY8Yhsuj5Ii_6QcXLF9gxos0s2BLFWQswX1ssuQGdflhpsmxRhlP5A=s0"
+    },
+    {
+      "index": 18,
+      "filename": "screenshot_18.png",
+      "rel_path": "data/app_screenshots/wetv/screenshot_18.png",
+      "source_url": "https://play-lh.googleusercontent.com/Pnmb7t02rtJwNeH1VB1gVUmJI-ssn3YedVW8WdWAF1RneLRzs35nzFfjAOs0lZHkkhiP0jPglDIg8ViTybUH3g=s0"
+    }
+  ]
+}

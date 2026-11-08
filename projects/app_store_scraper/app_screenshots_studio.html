@@ -1,0 +1,2841 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📱 Google Play Store Screenshots Studio — 35 แอพพลิเคชัน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --card-bg: rgba(18, 22, 31, 0.85);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Thai', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      padding: 40px 24px;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 5% 10%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 95% 90%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
+    }
+    .container { max-width: 1440px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 36px; }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #7dd3fc;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle { color: var(--text-muted); font-size: 16px; max-width: 720px; margin: 0 auto; }
+    .stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 16px 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 16px;
+      z-index: 50;
+    }
+    .search-box { position: relative; flex: 1; min-width: 280px; }
+    .search-box input {
+      width: 100%;
+      padding: 12px 18px 12px 42px;
+      background: rgba(10, 14, 22, 0.85);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: white;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .search-box input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
+    .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+    .filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filter-btn {
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent);
+      color: #030712;
+      border-color: var(--accent);
+      font-weight: 700;
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+    .apps-stack { display: flex; flex-direction: column; gap: 36px; }
+    .app-section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 28px;
+      backdrop-filter: blur(16px);
+      transition: border-color 0.3s;
+    }
+    .app-section:hover { border-color: rgba(56, 189, 248, 0.4); }
+    .app-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .app-meta-left { display: flex; align-items: center; gap: 18px; }
+    .app-logo-badge {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: #1e293b;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+    .app-logo-badge img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .app-titles h2 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    .app-titles p { font-size: 13px; color: var(--text-muted); }
+    .app-meta-right { display: flex; align-items: center; gap: 12px; }
+    .cat-tag {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.12);
+      color: #7dd3fc;
+    }
+    .play-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .play-link:hover { text-decoration: underline; }
+    .carousel {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding-bottom: 14px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    }
+    .carousel::-webkit-scrollbar { height: 8px; }
+    .carousel::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
+    .screen-item {
+      flex: 0 0 auto;
+      width: 220px;
+      height: 440px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      cursor: pointer;
+      scroll-snap-align: start;
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+    }
+    .screen-item:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 16px var(--accent-glow);
+    }
+    .screen-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .screen-num {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(4px);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: white;
+    }
+    /* Modal Lightbox */
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(10px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">GOOGLE PLAY STORE HIGH-RES PREVIEWS</div>
+      <h1>📱 Google Play Store Screenshots Studio</h1>
+      <p class="subtitle">คลังภาพหน้าจอตัวอย่าง (Preview Screenshots) คุณภาพสูงระดับ Full HD ครบทั้ง 35 แอพพลิเคชัน แยกเก็บเป็นระเบียบรายโฟลเดอร์</p>
+      <div class="stat-pill">📦 สกัดทั้งหมด <strong>460 ภาพ</strong> • ครบถ้วน 35/35 แอพพลิเคชัน 100%</div>
+    </header>
+
+    <div class="controls">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="ค้นหาตามชื่อแอพ (เช่น Google Gemini, Netflix, CapCut)..." oninput="filterApps()">
+      </div>
+      <div class="filter-pills">
+        <button class="filter-btn active" onclick="setCategory('ALL')">ทั้งหมด (35)</button>
+        <button class="filter-btn" onclick="setCategory('สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)')">🎬 สตรีมมิ่ง OTT</button>
+        <button class="filter-btn" onclick="setCategory('แอปซีรีส์สั้น (Short Drama)')">📱 ซีรีส์สั้น</button>
+        <button class="filter-btn" onclick="setCategory('ตัดต่อ & แต่งภาพ & ดีไซน์')">🎨 แต่งรูป/ตัดต่อ</button>
+        <button class="filter-btn" onclick="setCategory('สตรีมมิ่งเพลงและวิดีโอ')">🎵 เพลง/วิดีโอ</button>
+        <button class="filter-btn" onclick="setCategory('ปัญญาประดิษฐ์ (AI Tools)')">🤖 AI Tools</button>
+        <button class="filter-btn" onclick="setCategory('ซอฟต์แวร์ทำงาน (Office)')">💼 Office</button>
+      </div>
+    </div>
+
+    <div class="apps-stack" id="appsStack">
+      <div class="app-section" data-name="netflix" data-title="netflix" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/netflix.png" alt="Netflix" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Netflix</h2>
+              <p>Netflix • 📁 <code>data/app_screenshots/netflix/</code> (11 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_01.png')">
+            <img src="data/app_screenshots/netflix/screenshot_01.png" alt="Netflix Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_02.png')">
+            <img src="data/app_screenshots/netflix/screenshot_02.png" alt="Netflix Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_03.png')">
+            <img src="data/app_screenshots/netflix/screenshot_03.png" alt="Netflix Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_04.png')">
+            <img src="data/app_screenshots/netflix/screenshot_04.png" alt="Netflix Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_05.png')">
+            <img src="data/app_screenshots/netflix/screenshot_05.png" alt="Netflix Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_06.png')">
+            <img src="data/app_screenshots/netflix/screenshot_06.png" alt="Netflix Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_07.png')">
+            <img src="data/app_screenshots/netflix/screenshot_07.png" alt="Netflix Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_08.png')">
+            <img src="data/app_screenshots/netflix/screenshot_08.png" alt="Netflix Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_09.png')">
+            <img src="data/app_screenshots/netflix/screenshot_09.png" alt="Netflix Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_10.png')">
+            <img src="data/app_screenshots/netflix/screenshot_10.png" alt="Netflix Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netflix/screenshot_11.png')">
+            <img src="data/app_screenshots/netflix/screenshot_11.png" alt="Netflix Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="iqiyi" data-title="iqiyi - ซีรีส์,​ วาไรตี้โชว์" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/iqiyi.png" alt="iQIYI" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>iQIYI</h2>
+              <p>iQIYI - ซีรีส์,​ วาไรตี้โชว์ • 📁 <code>data/app_screenshots/iqiyi/</code> (10 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.iqiyi.i18n&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_01.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_01.png" alt="iQIYI Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_02.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_02.png" alt="iQIYI Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_03.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_03.png" alt="iQIYI Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_04.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_04.png" alt="iQIYI Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_05.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_05.png" alt="iQIYI Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_06.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_06.png" alt="iQIYI Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_07.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_07.png" alt="iQIYI Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_08.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_08.png" alt="iQIYI Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_09.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_09.png" alt="iQIYI Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/iqiyi/screenshot_10.png')">
+            <img src="data/app_screenshots/iqiyi/screenshot_10.png" alt="iQIYI Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="monomax" data-title="monomax บริการดูหนังออนไลน์" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/monomax.png" alt="Monomax" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Monomax</h2>
+              <p>Monomax บริการดูหนังออนไลน์ • 📁 <code>data/app_screenshots/monomax/</code> (13 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.doonung.activity&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_01.png')">
+            <img src="data/app_screenshots/monomax/screenshot_01.png" alt="Monomax Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_02.png')">
+            <img src="data/app_screenshots/monomax/screenshot_02.png" alt="Monomax Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_03.png')">
+            <img src="data/app_screenshots/monomax/screenshot_03.png" alt="Monomax Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_04.png')">
+            <img src="data/app_screenshots/monomax/screenshot_04.png" alt="Monomax Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_05.png')">
+            <img src="data/app_screenshots/monomax/screenshot_05.png" alt="Monomax Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_06.png')">
+            <img src="data/app_screenshots/monomax/screenshot_06.png" alt="Monomax Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_07.png')">
+            <img src="data/app_screenshots/monomax/screenshot_07.png" alt="Monomax Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_08.png')">
+            <img src="data/app_screenshots/monomax/screenshot_08.png" alt="Monomax Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_09.png')">
+            <img src="data/app_screenshots/monomax/screenshot_09.png" alt="Monomax Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_10.png')">
+            <img src="data/app_screenshots/monomax/screenshot_10.png" alt="Monomax Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_11.png')">
+            <img src="data/app_screenshots/monomax/screenshot_11.png" alt="Monomax Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_12.png')">
+            <img src="data/app_screenshots/monomax/screenshot_12.png" alt="Monomax Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/monomax/screenshot_13.png')">
+            <img src="data/app_screenshots/monomax/screenshot_13.png" alt="Monomax Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="prime video" data-title="prime video" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/prime_video.png" alt="Prime Video" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Prime Video</h2>
+              <p>Prime Video • 📁 <code>data/app_screenshots/prime_video/</code> (16 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_01.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_01.png" alt="Prime Video Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_02.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_02.png" alt="Prime Video Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_03.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_03.png" alt="Prime Video Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_04.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_04.png" alt="Prime Video Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_05.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_05.png" alt="Prime Video Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_06.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_06.png" alt="Prime Video Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_07.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_07.png" alt="Prime Video Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_08.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_08.png" alt="Prime Video Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_09.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_09.png" alt="Prime Video Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_10.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_10.png" alt="Prime Video Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_11.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_11.png" alt="Prime Video Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_12.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_12.png" alt="Prime Video Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_13.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_13.png" alt="Prime Video Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_14.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_14.png" alt="Prime Video Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_15.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_15.png" alt="Prime Video Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/prime_video/screenshot_16.png')">
+            <img src="data/app_screenshots/prime_video/screenshot_16.png" alt="Prime Video Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="disney+ hotstar" data-title="disney+" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/disney_plus.png" alt="Disney+ Hotstar" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Disney+ Hotstar</h2>
+              <p>Disney+ • 📁 <code>data/app_screenshots/disney_plus/</code> (15 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_01.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_01.png" alt="Disney+ Hotstar Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_02.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_02.png" alt="Disney+ Hotstar Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_03.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_03.png" alt="Disney+ Hotstar Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_04.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_04.png" alt="Disney+ Hotstar Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_05.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_05.png" alt="Disney+ Hotstar Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_06.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_06.png" alt="Disney+ Hotstar Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_07.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_07.png" alt="Disney+ Hotstar Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_08.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_08.png" alt="Disney+ Hotstar Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_09.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_09.png" alt="Disney+ Hotstar Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_10.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_10.png" alt="Disney+ Hotstar Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_11.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_11.png" alt="Disney+ Hotstar Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_12.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_12.png" alt="Disney+ Hotstar Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_13.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_13.png" alt="Disney+ Hotstar Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_14.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_14.png" alt="Disney+ Hotstar Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/disney_plus/screenshot_15.png')">
+            <img src="data/app_screenshots/disney_plus/screenshot_15.png" alt="Disney+ Hotstar Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="viu" data-title="viu : korean &amp; asian content" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/viu.png" alt="Viu" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Viu</h2>
+              <p>Viu : Korean &amp; Asian content • 📁 <code>data/app_screenshots/viu/</code> (6 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.viu.phone&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/viu/screenshot_01.png')">
+            <img src="data/app_screenshots/viu/screenshot_01.png" alt="Viu Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/viu/screenshot_02.png')">
+            <img src="data/app_screenshots/viu/screenshot_02.png" alt="Viu Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/viu/screenshot_03.png')">
+            <img src="data/app_screenshots/viu/screenshot_03.png" alt="Viu Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/viu/screenshot_04.png')">
+            <img src="data/app_screenshots/viu/screenshot_04.png" alt="Viu Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/viu/screenshot_05.png')">
+            <img src="data/app_screenshots/viu/screenshot_05.png" alt="Viu Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/viu/screenshot_06.png')">
+            <img src="data/app_screenshots/viu/screenshot_06.png" alt="Viu Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="wetv" data-title="wetv- ซีรีส์ อนิเมะ เอเชีย" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/wetv.png" alt="WeTV" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>WeTV</h2>
+              <p>WeTV- ซีรีส์ อนิเมะ เอเชีย • 📁 <code>data/app_screenshots/wetv/</code> (18 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.tencent.qqlivei18n&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_01.png')">
+            <img src="data/app_screenshots/wetv/screenshot_01.png" alt="WeTV Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_02.png')">
+            <img src="data/app_screenshots/wetv/screenshot_02.png" alt="WeTV Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_03.png')">
+            <img src="data/app_screenshots/wetv/screenshot_03.png" alt="WeTV Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_04.png')">
+            <img src="data/app_screenshots/wetv/screenshot_04.png" alt="WeTV Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_05.png')">
+            <img src="data/app_screenshots/wetv/screenshot_05.png" alt="WeTV Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_06.png')">
+            <img src="data/app_screenshots/wetv/screenshot_06.png" alt="WeTV Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_07.png')">
+            <img src="data/app_screenshots/wetv/screenshot_07.png" alt="WeTV Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_08.png')">
+            <img src="data/app_screenshots/wetv/screenshot_08.png" alt="WeTV Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_09.png')">
+            <img src="data/app_screenshots/wetv/screenshot_09.png" alt="WeTV Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_10.png')">
+            <img src="data/app_screenshots/wetv/screenshot_10.png" alt="WeTV Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_11.png')">
+            <img src="data/app_screenshots/wetv/screenshot_11.png" alt="WeTV Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_12.png')">
+            <img src="data/app_screenshots/wetv/screenshot_12.png" alt="WeTV Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_13.png')">
+            <img src="data/app_screenshots/wetv/screenshot_13.png" alt="WeTV Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_14.png')">
+            <img src="data/app_screenshots/wetv/screenshot_14.png" alt="WeTV Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_15.png')">
+            <img src="data/app_screenshots/wetv/screenshot_15.png" alt="WeTV Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_16.png')">
+            <img src="data/app_screenshots/wetv/screenshot_16.png" alt="WeTV Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_17.png')">
+            <img src="data/app_screenshots/wetv/screenshot_17.png" alt="WeTV Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wetv/screenshot_18.png')">
+            <img src="data/app_screenshots/wetv/screenshot_18.png" alt="WeTV Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="hbo max" data-title="hbo max: สตรีมซีรีส์และหนัง" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/hbo_max.png" alt="HBO MAX" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>HBO MAX</h2>
+              <p>HBO Max: สตรีมซีรีส์และหนัง • 📁 <code>data/app_screenshots/hbo_max/</code> (28 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.wbd.stream&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_01.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_01.png" alt="HBO MAX Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_02.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_02.png" alt="HBO MAX Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_03.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_03.png" alt="HBO MAX Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_04.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_04.png" alt="HBO MAX Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_05.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_05.png" alt="HBO MAX Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_06.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_06.png" alt="HBO MAX Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_07.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_07.png" alt="HBO MAX Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_08.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_08.png" alt="HBO MAX Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_09.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_09.png" alt="HBO MAX Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_10.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_10.png" alt="HBO MAX Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_11.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_11.png" alt="HBO MAX Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_12.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_12.png" alt="HBO MAX Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_13.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_13.png" alt="HBO MAX Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_14.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_14.png" alt="HBO MAX Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_15.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_15.png" alt="HBO MAX Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_16.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_16.png" alt="HBO MAX Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_17.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_17.png" alt="HBO MAX Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_18.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_18.png" alt="HBO MAX Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_19.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_19.png" alt="HBO MAX Screenshot 19" loading="lazy">
+            <span class="screen-num">#19</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_20.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_20.png" alt="HBO MAX Screenshot 20" loading="lazy">
+            <span class="screen-num">#20</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_21.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_21.png" alt="HBO MAX Screenshot 21" loading="lazy">
+            <span class="screen-num">#21</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_22.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_22.png" alt="HBO MAX Screenshot 22" loading="lazy">
+            <span class="screen-num">#22</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_23.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_23.png" alt="HBO MAX Screenshot 23" loading="lazy">
+            <span class="screen-num">#23</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_24.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_24.png" alt="HBO MAX Screenshot 24" loading="lazy">
+            <span class="screen-num">#24</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_25.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_25.png" alt="HBO MAX Screenshot 25" loading="lazy">
+            <span class="screen-num">#25</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_26.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_26.png" alt="HBO MAX Screenshot 26" loading="lazy">
+            <span class="screen-num">#26</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_27.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_27.png" alt="HBO MAX Screenshot 27" loading="lazy">
+            <span class="screen-num">#27</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/hbo_max/screenshot_28.png')">
+            <img src="data/app_screenshots/hbo_max/screenshot_28.png" alt="HBO MAX Screenshot 28" loading="lazy">
+            <span class="screen-num">#28</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="youku" data-title="youku-ละคร หนัง วาไรตี้ อนิเมะ" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/youku.png" alt="Youku" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Youku</h2>
+              <p>YOUKU-ละคร หนัง วาไรตี้ อนิเมะ • 📁 <code>data/app_screenshots/youku/</code> (7 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.youku.international.phone&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_01.png')">
+            <img src="data/app_screenshots/youku/screenshot_01.png" alt="Youku Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_02.png')">
+            <img src="data/app_screenshots/youku/screenshot_02.png" alt="Youku Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_03.png')">
+            <img src="data/app_screenshots/youku/screenshot_03.png" alt="Youku Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_04.png')">
+            <img src="data/app_screenshots/youku/screenshot_04.png" alt="Youku Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_05.png')">
+            <img src="data/app_screenshots/youku/screenshot_05.png" alt="Youku Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_06.png')">
+            <img src="data/app_screenshots/youku/screenshot_06.png" alt="Youku Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youku/screenshot_07.png')">
+            <img src="data/app_screenshots/youku/screenshot_07.png" alt="Youku Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="bilibili" data-title="bilibili - อนิเมะ hd, วิดีโอ" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/bilibili.png" alt="Bilibili" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Bilibili</h2>
+              <p>BiliBili - อนิเมะ HD, วิดีโอ • 📁 <code>data/app_screenshots/bilibili/</code> (8 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.bstar.intl&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_01.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_01.png" alt="Bilibili Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_02.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_02.png" alt="Bilibili Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_03.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_03.png" alt="Bilibili Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_04.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_04.png" alt="Bilibili Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_05.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_05.png" alt="Bilibili Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_06.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_06.png" alt="Bilibili Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_07.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_07.png" alt="Bilibili Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bilibili/screenshot_08.png')">
+            <img src="data/app_screenshots/bilibili/screenshot_08.png" alt="Bilibili Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="one d" data-title="oned" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/oned.png" alt="One D" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>One D</h2>
+              <p>oneD • 📁 <code>data/app_screenshots/oned/</code> (24 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.gmm.onehd&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_01.png')">
+            <img src="data/app_screenshots/oned/screenshot_01.png" alt="One D Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_02.png')">
+            <img src="data/app_screenshots/oned/screenshot_02.png" alt="One D Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_03.png')">
+            <img src="data/app_screenshots/oned/screenshot_03.png" alt="One D Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_04.png')">
+            <img src="data/app_screenshots/oned/screenshot_04.png" alt="One D Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_05.png')">
+            <img src="data/app_screenshots/oned/screenshot_05.png" alt="One D Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_06.png')">
+            <img src="data/app_screenshots/oned/screenshot_06.png" alt="One D Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_07.png')">
+            <img src="data/app_screenshots/oned/screenshot_07.png" alt="One D Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_08.png')">
+            <img src="data/app_screenshots/oned/screenshot_08.png" alt="One D Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_09.png')">
+            <img src="data/app_screenshots/oned/screenshot_09.png" alt="One D Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_10.png')">
+            <img src="data/app_screenshots/oned/screenshot_10.png" alt="One D Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_11.png')">
+            <img src="data/app_screenshots/oned/screenshot_11.png" alt="One D Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_12.png')">
+            <img src="data/app_screenshots/oned/screenshot_12.png" alt="One D Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_13.png')">
+            <img src="data/app_screenshots/oned/screenshot_13.png" alt="One D Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_14.png')">
+            <img src="data/app_screenshots/oned/screenshot_14.png" alt="One D Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_15.png')">
+            <img src="data/app_screenshots/oned/screenshot_15.png" alt="One D Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_16.png')">
+            <img src="data/app_screenshots/oned/screenshot_16.png" alt="One D Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_17.png')">
+            <img src="data/app_screenshots/oned/screenshot_17.png" alt="One D Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_18.png')">
+            <img src="data/app_screenshots/oned/screenshot_18.png" alt="One D Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_19.png')">
+            <img src="data/app_screenshots/oned/screenshot_19.png" alt="One D Screenshot 19" loading="lazy">
+            <span class="screen-num">#19</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_20.png')">
+            <img src="data/app_screenshots/oned/screenshot_20.png" alt="One D Screenshot 20" loading="lazy">
+            <span class="screen-num">#20</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_21.png')">
+            <img src="data/app_screenshots/oned/screenshot_21.png" alt="One D Screenshot 21" loading="lazy">
+            <span class="screen-num">#21</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_22.png')">
+            <img src="data/app_screenshots/oned/screenshot_22.png" alt="One D Screenshot 22" loading="lazy">
+            <span class="screen-num">#22</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_23.png')">
+            <img src="data/app_screenshots/oned/screenshot_23.png" alt="One D Screenshot 23" loading="lazy">
+            <span class="screen-num">#23</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/oned/screenshot_24.png')">
+            <img src="data/app_screenshots/oned/screenshot_24.png" alt="One D Screenshot 24" loading="lazy">
+            <span class="screen-num">#24</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="bugaboo.tv" data-title="ch7on" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/bugaboo.png" alt="Bugaboo.TV" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Bugaboo.TV</h2>
+              <p>CH7ON • 📁 <code>data/app_screenshots/bugaboo/</code> (23 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.bbtv.bugabootvinter&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_01.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_01.png" alt="Bugaboo.TV Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_02.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_02.png" alt="Bugaboo.TV Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_03.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_03.png" alt="Bugaboo.TV Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_04.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_04.png" alt="Bugaboo.TV Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_05.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_05.png" alt="Bugaboo.TV Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_06.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_06.png" alt="Bugaboo.TV Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_07.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_07.png" alt="Bugaboo.TV Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_08.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_08.png" alt="Bugaboo.TV Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_09.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_09.png" alt="Bugaboo.TV Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_10.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_10.png" alt="Bugaboo.TV Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_11.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_11.png" alt="Bugaboo.TV Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_12.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_12.png" alt="Bugaboo.TV Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_13.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_13.png" alt="Bugaboo.TV Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_14.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_14.png" alt="Bugaboo.TV Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_15.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_15.png" alt="Bugaboo.TV Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_16.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_16.png" alt="Bugaboo.TV Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_17.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_17.png" alt="Bugaboo.TV Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_18.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_18.png" alt="Bugaboo.TV Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_19.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_19.png" alt="Bugaboo.TV Screenshot 19" loading="lazy">
+            <span class="screen-num">#19</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_20.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_20.png" alt="Bugaboo.TV Screenshot 20" loading="lazy">
+            <span class="screen-num">#20</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_21.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_21.png" alt="Bugaboo.TV Screenshot 21" loading="lazy">
+            <span class="screen-num">#21</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_22.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_22.png" alt="Bugaboo.TV Screenshot 22" loading="lazy">
+            <span class="screen-num">#22</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/bugaboo/screenshot_23.png')">
+            <img src="data/app_screenshots/bugaboo/screenshot_23.png" alt="Bugaboo.TV Screenshot 23" loading="lazy">
+            <span class="screen-num">#23</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="true id" data-title="trueid: ดูทีวี ซีรีส์ หนัง" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/true_id.png" alt="True ID" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>True ID</h2>
+              <p>TrueID: ดูทีวี ซีรีส์ หนัง • 📁 <code>data/app_screenshots/true_id/</code> (12 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.tdcm.trueidapp&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_01.png')">
+            <img src="data/app_screenshots/true_id/screenshot_01.png" alt="True ID Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_02.png')">
+            <img src="data/app_screenshots/true_id/screenshot_02.png" alt="True ID Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_03.png')">
+            <img src="data/app_screenshots/true_id/screenshot_03.png" alt="True ID Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_04.png')">
+            <img src="data/app_screenshots/true_id/screenshot_04.png" alt="True ID Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_05.png')">
+            <img src="data/app_screenshots/true_id/screenshot_05.png" alt="True ID Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_06.png')">
+            <img src="data/app_screenshots/true_id/screenshot_06.png" alt="True ID Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_07.png')">
+            <img src="data/app_screenshots/true_id/screenshot_07.png" alt="True ID Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_08.png')">
+            <img src="data/app_screenshots/true_id/screenshot_08.png" alt="True ID Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_09.png')">
+            <img src="data/app_screenshots/true_id/screenshot_09.png" alt="True ID Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_10.png')">
+            <img src="data/app_screenshots/true_id/screenshot_10.png" alt="True ID Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_11.png')">
+            <img src="data/app_screenshots/true_id/screenshot_11.png" alt="True ID Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/true_id/screenshot_12.png')">
+            <img src="data/app_screenshots/true_id/screenshot_12.png" alt="True ID Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="truevision now" data-title="truevisions now" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/truevisions_now.png" alt="TrueVision Now" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>TrueVision Now</h2>
+              <p>TrueVisions NOW • 📁 <code>data/app_screenshots/truevisions_now/</code> (17 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.truevisions.android&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_01.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_01.png" alt="TrueVision Now Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_02.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_02.png" alt="TrueVision Now Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_03.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_03.png" alt="TrueVision Now Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_04.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_04.png" alt="TrueVision Now Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_05.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_05.png" alt="TrueVision Now Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_06.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_06.png" alt="TrueVision Now Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_07.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_07.png" alt="TrueVision Now Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_08.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_08.png" alt="TrueVision Now Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_09.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_09.png" alt="TrueVision Now Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_10.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_10.png" alt="TrueVision Now Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_11.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_11.png" alt="TrueVision Now Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_12.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_12.png" alt="TrueVision Now Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_13.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_13.png" alt="TrueVision Now Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_14.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_14.png" alt="TrueVision Now Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_15.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_15.png" alt="TrueVision Now Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_16.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_16.png" alt="TrueVision Now Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/truevisions_now/screenshot_17.png')">
+            <img src="data/app_screenshots/truevisions_now/screenshot_17.png" alt="TrueVision Now Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="ch3 plus" data-title="ch3 plus" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/ch3_plus.png" alt="CH3 Plus" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>CH3 Plus</h2>
+              <p>CH3 Plus • 📁 <code>data/app_screenshots/ch3_plus/</code> (21 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.beci.thaitv3android&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_01.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_01.png" alt="CH3 Plus Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_02.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_02.png" alt="CH3 Plus Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_03.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_03.png" alt="CH3 Plus Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_04.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_04.png" alt="CH3 Plus Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_05.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_05.png" alt="CH3 Plus Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_06.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_06.png" alt="CH3 Plus Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_07.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_07.png" alt="CH3 Plus Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_08.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_08.png" alt="CH3 Plus Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_09.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_09.png" alt="CH3 Plus Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_10.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_10.png" alt="CH3 Plus Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_11.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_11.png" alt="CH3 Plus Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_12.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_12.png" alt="CH3 Plus Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_13.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_13.png" alt="CH3 Plus Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_14.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_14.png" alt="CH3 Plus Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_15.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_15.png" alt="CH3 Plus Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_16.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_16.png" alt="CH3 Plus Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_17.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_17.png" alt="CH3 Plus Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_18.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_18.png" alt="CH3 Plus Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_19.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_19.png" alt="CH3 Plus Screenshot 19" loading="lazy">
+            <span class="screen-num">#19</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_20.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_20.png" alt="CH3 Plus Screenshot 20" loading="lazy">
+            <span class="screen-num">#20</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/ch3_plus/screenshot_21.png')">
+            <img src="data/app_screenshots/ch3_plus/screenshot_21.png" alt="CH3 Plus Screenshot 21" loading="lazy">
+            <span class="screen-num">#21</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="gagaoolala" data-title="gagaoolala: หนัง gay, les, bl" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/gagaoolala.png" alt="GagaOOLala" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>GagaOOLala</h2>
+              <p>GagaOOLala: หนัง Gay, Les, BL • 📁 <code>data/app_screenshots/gagaoolala/</code> (16 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.gagaoolala.app&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_01.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_01.png" alt="GagaOOLala Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_02.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_02.png" alt="GagaOOLala Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_03.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_03.png" alt="GagaOOLala Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_04.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_04.png" alt="GagaOOLala Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_05.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_05.png" alt="GagaOOLala Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_06.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_06.png" alt="GagaOOLala Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_07.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_07.png" alt="GagaOOLala Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_08.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_08.png" alt="GagaOOLala Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_09.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_09.png" alt="GagaOOLala Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_10.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_10.png" alt="GagaOOLala Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_11.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_11.png" alt="GagaOOLala Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_12.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_12.png" alt="GagaOOLala Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_13.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_13.png" alt="GagaOOLala Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_14.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_14.png" alt="GagaOOLala Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_15.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_15.png" alt="GagaOOLala Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gagaoolala/screenshot_16.png')">
+            <img src="data/app_screenshots/gagaoolala/screenshot_16.png" alt="GagaOOLala Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="shortmax" data-title="shortmax - หนังสั้น &amp; ละครสั้น" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/shortmax.png" alt="ShortMax" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>ShortMax</h2>
+              <p>ShortMax - หนังสั้น &amp; ละครสั้น • 📁 <code>data/app_screenshots/shortmax/</code> (5 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=live.shorttv.apps&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortmax/screenshot_01.png')">
+            <img src="data/app_screenshots/shortmax/screenshot_01.png" alt="ShortMax Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortmax/screenshot_02.png')">
+            <img src="data/app_screenshots/shortmax/screenshot_02.png" alt="ShortMax Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortmax/screenshot_03.png')">
+            <img src="data/app_screenshots/shortmax/screenshot_03.png" alt="ShortMax Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortmax/screenshot_04.png')">
+            <img src="data/app_screenshots/shortmax/screenshot_04.png" alt="ShortMax Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortmax/screenshot_05.png')">
+            <img src="data/app_screenshots/shortmax/screenshot_05.png" alt="ShortMax Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="dramawave" data-title="dramawave - ละครสั้น &amp; รีลส์" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/dramawave.png" alt="DramaWave" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>DramaWave</h2>
+              <p>DramaWave - ละครสั้น &amp; รีลส์ • 📁 <code>data/app_screenshots/dramawave/</code> (7 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.dramawave.app&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_01.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_01.png" alt="DramaWave Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_02.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_02.png" alt="DramaWave Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_03.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_03.png" alt="DramaWave Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_04.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_04.png" alt="DramaWave Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_05.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_05.png" alt="DramaWave Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_06.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_06.png" alt="DramaWave Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramawave/screenshot_07.png')">
+            <img src="data/app_screenshots/dramawave/screenshot_07.png" alt="DramaWave Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="dramabox" data-title="dramabox – สตรีมละครสั้น" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/dramabox.png" alt="DramaBox" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>DramaBox</h2>
+              <p>DramaBox – สตรีมละครสั้น • 📁 <code>data/app_screenshots/dramabox/</code> (7 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_01.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_01.png" alt="DramaBox Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_02.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_02.png" alt="DramaBox Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_03.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_03.png" alt="DramaBox Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_04.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_04.png" alt="DramaBox Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_05.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_05.png" alt="DramaBox Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_06.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_06.png" alt="DramaBox Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/dramabox/screenshot_07.png')">
+            <img src="data/app_screenshots/dramabox/screenshot_07.png" alt="DramaBox Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="reelshort" data-title="reelshort - stream drama &amp; tv" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/reelshort.png" alt="ReelShort" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>ReelShort</h2>
+              <p>ReelShort - Stream Drama &amp; TV • 📁 <code>data/app_screenshots/reelshort/</code> (17 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.newleaf.app.android.victor&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_01.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_01.png" alt="ReelShort Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_02.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_02.png" alt="ReelShort Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_03.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_03.png" alt="ReelShort Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_04.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_04.png" alt="ReelShort Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_05.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_05.png" alt="ReelShort Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_06.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_06.png" alt="ReelShort Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_07.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_07.png" alt="ReelShort Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_08.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_08.png" alt="ReelShort Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_09.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_09.png" alt="ReelShort Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_10.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_10.png" alt="ReelShort Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_11.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_11.png" alt="ReelShort Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_12.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_12.png" alt="ReelShort Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_13.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_13.png" alt="ReelShort Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_14.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_14.png" alt="ReelShort Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_15.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_15.png" alt="ReelShort Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_16.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_16.png" alt="ReelShort Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/reelshort/screenshot_17.png')">
+            <img src="data/app_screenshots/reelshort/screenshot_17.png" alt="ReelShort Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="shortwave" data-title="shortswave: ซีรีส์สั้นยอดฮิต" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/shortwave.png" alt="ShortWave" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>ShortWave</h2>
+              <p>ShortsWave: ซีรีส์สั้นยอดฮิต • 📁 <code>data/app_screenshots/shortwave/</code> (6 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.shorts.wave.drama&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortwave/screenshot_01.png')">
+            <img src="data/app_screenshots/shortwave/screenshot_01.png" alt="ShortWave Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortwave/screenshot_02.png')">
+            <img src="data/app_screenshots/shortwave/screenshot_02.png" alt="ShortWave Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortwave/screenshot_03.png')">
+            <img src="data/app_screenshots/shortwave/screenshot_03.png" alt="ShortWave Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortwave/screenshot_04.png')">
+            <img src="data/app_screenshots/shortwave/screenshot_04.png" alt="ShortWave Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortwave/screenshot_05.png')">
+            <img src="data/app_screenshots/shortwave/screenshot_05.png" alt="ShortWave Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/shortwave/screenshot_06.png')">
+            <img src="data/app_screenshots/shortwave/screenshot_06.png" alt="ShortWave Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="goodshort" data-title="goodshort - ศูนย์รวมละครสั้น" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/goodshort.png" alt="GoodShort" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>GoodShort</h2>
+              <p>GoodShort - ศูนย์รวมละครสั้น • 📁 <code>data/app_screenshots/goodshort/</code> (6 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.newreading.goodreels&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/goodshort/screenshot_01.png')">
+            <img src="data/app_screenshots/goodshort/screenshot_01.png" alt="GoodShort Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/goodshort/screenshot_02.png')">
+            <img src="data/app_screenshots/goodshort/screenshot_02.png" alt="GoodShort Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/goodshort/screenshot_03.png')">
+            <img src="data/app_screenshots/goodshort/screenshot_03.png" alt="GoodShort Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/goodshort/screenshot_04.png')">
+            <img src="data/app_screenshots/goodshort/screenshot_04.png" alt="GoodShort Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/goodshort/screenshot_05.png')">
+            <img src="data/app_screenshots/goodshort/screenshot_05.png" alt="GoodShort Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/goodshort/screenshot_06.png')">
+            <img src="data/app_screenshots/goodshort/screenshot_06.png" alt="GoodShort Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="netshort" data-title="netshort - ละครและซีรีส์ฮิต" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/netshort.png" alt="NetShort" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>NetShort</h2>
+              <p>NetShort - ละครและซีรีส์ฮิต • 📁 <code>data/app_screenshots/netshort/</code> (14 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.netshort.abroad&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_01.png')">
+            <img src="data/app_screenshots/netshort/screenshot_01.png" alt="NetShort Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_02.png')">
+            <img src="data/app_screenshots/netshort/screenshot_02.png" alt="NetShort Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_03.png')">
+            <img src="data/app_screenshots/netshort/screenshot_03.png" alt="NetShort Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_04.png')">
+            <img src="data/app_screenshots/netshort/screenshot_04.png" alt="NetShort Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_05.png')">
+            <img src="data/app_screenshots/netshort/screenshot_05.png" alt="NetShort Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_06.png')">
+            <img src="data/app_screenshots/netshort/screenshot_06.png" alt="NetShort Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_07.png')">
+            <img src="data/app_screenshots/netshort/screenshot_07.png" alt="NetShort Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_08.png')">
+            <img src="data/app_screenshots/netshort/screenshot_08.png" alt="NetShort Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_09.png')">
+            <img src="data/app_screenshots/netshort/screenshot_09.png" alt="NetShort Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_10.png')">
+            <img src="data/app_screenshots/netshort/screenshot_10.png" alt="NetShort Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_11.png')">
+            <img src="data/app_screenshots/netshort/screenshot_11.png" alt="NetShort Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_12.png')">
+            <img src="data/app_screenshots/netshort/screenshot_12.png" alt="NetShort Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_13.png')">
+            <img src="data/app_screenshots/netshort/screenshot_13.png" alt="NetShort Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/netshort/screenshot_14.png')">
+            <img src="data/app_screenshots/netshort/screenshot_14.png" alt="NetShort Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="flickreels" data-title="flickreels - เรื่อง&amp;ซีรีส์ ai" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/flickreels.png" alt="FlickReels" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>FlickReels</h2>
+              <p>FlickReels - เรื่อง&amp;ซีรีส์ AI • 📁 <code>data/app_screenshots/flickreels/</code> (7 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.zyhwplatform.shortplay&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_01.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_01.png" alt="FlickReels Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_02.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_02.png" alt="FlickReels Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_03.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_03.png" alt="FlickReels Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_04.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_04.png" alt="FlickReels Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_05.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_05.png" alt="FlickReels Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_06.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_06.png" alt="FlickReels Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/flickreels/screenshot_07.png')">
+            <img src="data/app_screenshots/flickreels/screenshot_07.png" alt="FlickReels Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="idrama" data-title="idrama – ซีรีส์สั้นสุดฮิต" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/idrama.png" alt="iDrama" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>iDrama</h2>
+              <p>iDrama – ซีรีส์สั้นสุดฮิต • 📁 <code>data/app_screenshots/idrama/</code> (6 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">แอปซีรีส์สั้น (Short Drama)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.gooddrama.idrama&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/idrama/screenshot_01.png')">
+            <img src="data/app_screenshots/idrama/screenshot_01.png" alt="iDrama Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/idrama/screenshot_02.png')">
+            <img src="data/app_screenshots/idrama/screenshot_02.png" alt="iDrama Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/idrama/screenshot_03.png')">
+            <img src="data/app_screenshots/idrama/screenshot_03.png" alt="iDrama Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/idrama/screenshot_04.png')">
+            <img src="data/app_screenshots/idrama/screenshot_04.png" alt="iDrama Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/idrama/screenshot_05.png')">
+            <img src="data/app_screenshots/idrama/screenshot_05.png" alt="iDrama Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/idrama/screenshot_06.png')">
+            <img src="data/app_screenshots/idrama/screenshot_06.png" alt="iDrama Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="capcut" data-title="capcut" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/capcut.png" alt="CapCut" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>CapCut</h2>
+              <p>CapCut • 📁 <code>data/app_screenshots/capcut/</code> (17 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ตัดต่อ & แต่งภาพ & ดีไซน์</span>
+            <a href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_01.png')">
+            <img src="data/app_screenshots/capcut/screenshot_01.png" alt="CapCut Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_02.png')">
+            <img src="data/app_screenshots/capcut/screenshot_02.png" alt="CapCut Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_03.png')">
+            <img src="data/app_screenshots/capcut/screenshot_03.png" alt="CapCut Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_04.png')">
+            <img src="data/app_screenshots/capcut/screenshot_04.png" alt="CapCut Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_05.png')">
+            <img src="data/app_screenshots/capcut/screenshot_05.png" alt="CapCut Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_06.png')">
+            <img src="data/app_screenshots/capcut/screenshot_06.png" alt="CapCut Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_07.png')">
+            <img src="data/app_screenshots/capcut/screenshot_07.png" alt="CapCut Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_08.png')">
+            <img src="data/app_screenshots/capcut/screenshot_08.png" alt="CapCut Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_09.png')">
+            <img src="data/app_screenshots/capcut/screenshot_09.png" alt="CapCut Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_10.png')">
+            <img src="data/app_screenshots/capcut/screenshot_10.png" alt="CapCut Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_11.png')">
+            <img src="data/app_screenshots/capcut/screenshot_11.png" alt="CapCut Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_12.png')">
+            <img src="data/app_screenshots/capcut/screenshot_12.png" alt="CapCut Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_13.png')">
+            <img src="data/app_screenshots/capcut/screenshot_13.png" alt="CapCut Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_14.png')">
+            <img src="data/app_screenshots/capcut/screenshot_14.png" alt="CapCut Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_15.png')">
+            <img src="data/app_screenshots/capcut/screenshot_15.png" alt="CapCut Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_16.png')">
+            <img src="data/app_screenshots/capcut/screenshot_16.png" alt="CapCut Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/capcut/screenshot_17.png')">
+            <img src="data/app_screenshots/capcut/screenshot_17.png" alt="CapCut Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="meitu" data-title="meitu เหมยตู แอปแต่งรูป วิดีโอ" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/meitu.png" alt="Meitu" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Meitu</h2>
+              <p>Meitu เหมยตู แอปแต่งรูป วิดีโอ • 📁 <code>data/app_screenshots/meitu/</code> (8 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ตัดต่อ & แต่งภาพ & ดีไซน์</span>
+            <a href="https://play.google.com/store/apps/details?id=com.mt.mtxx.mtxx&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_01.png')">
+            <img src="data/app_screenshots/meitu/screenshot_01.png" alt="Meitu Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_02.png')">
+            <img src="data/app_screenshots/meitu/screenshot_02.png" alt="Meitu Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_03.png')">
+            <img src="data/app_screenshots/meitu/screenshot_03.png" alt="Meitu Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_04.png')">
+            <img src="data/app_screenshots/meitu/screenshot_04.png" alt="Meitu Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_05.png')">
+            <img src="data/app_screenshots/meitu/screenshot_05.png" alt="Meitu Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_06.png')">
+            <img src="data/app_screenshots/meitu/screenshot_06.png" alt="Meitu Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_07.png')">
+            <img src="data/app_screenshots/meitu/screenshot_07.png" alt="Meitu Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/meitu/screenshot_08.png')">
+            <img src="data/app_screenshots/meitu/screenshot_08.png" alt="Meitu Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="wink" data-title="wink · ปรับความคมชัดวิดีโอ" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/wink.png" alt="Wink" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Wink</h2>
+              <p>Wink · ปรับความคมชัดวิดีโอ • 📁 <code>data/app_screenshots/wink/</code> (8 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ตัดต่อ & แต่งภาพ & ดีไซน์</span>
+            <a href="https://play.google.com/store/apps/details?id=com.meitu.wink&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_01.png')">
+            <img src="data/app_screenshots/wink/screenshot_01.png" alt="Wink Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_02.png')">
+            <img src="data/app_screenshots/wink/screenshot_02.png" alt="Wink Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_03.png')">
+            <img src="data/app_screenshots/wink/screenshot_03.png" alt="Wink Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_04.png')">
+            <img src="data/app_screenshots/wink/screenshot_04.png" alt="Wink Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_05.png')">
+            <img src="data/app_screenshots/wink/screenshot_05.png" alt="Wink Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_06.png')">
+            <img src="data/app_screenshots/wink/screenshot_06.png" alt="Wink Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_07.png')">
+            <img src="data/app_screenshots/wink/screenshot_07.png" alt="Wink Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/wink/screenshot_08.png')">
+            <img src="data/app_screenshots/wink/screenshot_08.png" alt="Wink Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="beauticam" data-title="beautycam-กล้องรีโทรว์" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/beauticam.png" alt="BeautiCam" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>BeautiCam</h2>
+              <p>BeautyCam-กล้องรีโทรว์ • 📁 <code>data/app_screenshots/beauticam/</code> (8 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ตัดต่อ & แต่งภาพ & ดีไซน์</span>
+            <a href="https://play.google.com/store/apps/details?id=com.meitu.meiyancamera&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_01.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_01.png" alt="BeautiCam Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_02.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_02.png" alt="BeautiCam Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_03.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_03.png" alt="BeautiCam Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_04.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_04.png" alt="BeautiCam Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_05.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_05.png" alt="BeautiCam Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_06.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_06.png" alt="BeautiCam Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_07.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_07.png" alt="BeautiCam Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/beauticam/screenshot_08.png')">
+            <img src="data/app_screenshots/beauticam/screenshot_08.png" alt="BeautiCam Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="canva" data-title="canva: ai แต่งรูป ตัดต่อวีดีโอ" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/canva.png" alt="Canva" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Canva</h2>
+              <p>Canva: AI แต่งรูป ตัดต่อวีดีโอ • 📁 <code>data/app_screenshots/canva/</code> (24 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ตัดต่อ & แต่งภาพ & ดีไซน์</span>
+            <a href="https://play.google.com/store/apps/details?id=com.canva.editor&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_01.png')">
+            <img src="data/app_screenshots/canva/screenshot_01.png" alt="Canva Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_02.png')">
+            <img src="data/app_screenshots/canva/screenshot_02.png" alt="Canva Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_03.png')">
+            <img src="data/app_screenshots/canva/screenshot_03.png" alt="Canva Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_04.png')">
+            <img src="data/app_screenshots/canva/screenshot_04.png" alt="Canva Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_05.png')">
+            <img src="data/app_screenshots/canva/screenshot_05.png" alt="Canva Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_06.png')">
+            <img src="data/app_screenshots/canva/screenshot_06.png" alt="Canva Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_07.png')">
+            <img src="data/app_screenshots/canva/screenshot_07.png" alt="Canva Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_08.png')">
+            <img src="data/app_screenshots/canva/screenshot_08.png" alt="Canva Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_09.png')">
+            <img src="data/app_screenshots/canva/screenshot_09.png" alt="Canva Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_10.png')">
+            <img src="data/app_screenshots/canva/screenshot_10.png" alt="Canva Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_11.png')">
+            <img src="data/app_screenshots/canva/screenshot_11.png" alt="Canva Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_12.png')">
+            <img src="data/app_screenshots/canva/screenshot_12.png" alt="Canva Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_13.png')">
+            <img src="data/app_screenshots/canva/screenshot_13.png" alt="Canva Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_14.png')">
+            <img src="data/app_screenshots/canva/screenshot_14.png" alt="Canva Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_15.png')">
+            <img src="data/app_screenshots/canva/screenshot_15.png" alt="Canva Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_16.png')">
+            <img src="data/app_screenshots/canva/screenshot_16.png" alt="Canva Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_17.png')">
+            <img src="data/app_screenshots/canva/screenshot_17.png" alt="Canva Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_18.png')">
+            <img src="data/app_screenshots/canva/screenshot_18.png" alt="Canva Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_19.png')">
+            <img src="data/app_screenshots/canva/screenshot_19.png" alt="Canva Screenshot 19" loading="lazy">
+            <span class="screen-num">#19</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_20.png')">
+            <img src="data/app_screenshots/canva/screenshot_20.png" alt="Canva Screenshot 20" loading="lazy">
+            <span class="screen-num">#20</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_21.png')">
+            <img src="data/app_screenshots/canva/screenshot_21.png" alt="Canva Screenshot 21" loading="lazy">
+            <span class="screen-num">#21</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_22.png')">
+            <img src="data/app_screenshots/canva/screenshot_22.png" alt="Canva Screenshot 22" loading="lazy">
+            <span class="screen-num">#22</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_23.png')">
+            <img src="data/app_screenshots/canva/screenshot_23.png" alt="Canva Screenshot 23" loading="lazy">
+            <span class="screen-num">#23</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/canva/screenshot_24.png')">
+            <img src="data/app_screenshots/canva/screenshot_24.png" alt="Canva Screenshot 24" loading="lazy">
+            <span class="screen-num">#24</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="youtube" data-title="youtube" data-category="สตรีมมิ่งเพลงและวิดีโอ">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/youtube.png" alt="YouTube" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>YouTube</h2>
+              <p>YouTube • 📁 <code>data/app_screenshots/youtube/</code> (5 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งเพลงและวิดีโอ</span>
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youtube/screenshot_01.png')">
+            <img src="data/app_screenshots/youtube/screenshot_01.png" alt="YouTube Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youtube/screenshot_02.png')">
+            <img src="data/app_screenshots/youtube/screenshot_02.png" alt="YouTube Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youtube/screenshot_03.png')">
+            <img src="data/app_screenshots/youtube/screenshot_03.png" alt="YouTube Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youtube/screenshot_04.png')">
+            <img src="data/app_screenshots/youtube/screenshot_04.png" alt="YouTube Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/youtube/screenshot_05.png')">
+            <img src="data/app_screenshots/youtube/screenshot_05.png" alt="YouTube Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="spotify" data-title="spotify: เพลงและพอดแคสต์" data-category="สตรีมมิ่งเพลงและวิดีโอ">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/spotify.png" alt="Spotify" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Spotify</h2>
+              <p>Spotify: เพลงและพอดแคสต์ • 📁 <code>data/app_screenshots/spotify/</code> (38 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">สตรีมมิ่งเพลงและวิดีโอ</span>
+            <a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_01.png')">
+            <img src="data/app_screenshots/spotify/screenshot_01.png" alt="Spotify Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_02.png')">
+            <img src="data/app_screenshots/spotify/screenshot_02.png" alt="Spotify Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_03.png')">
+            <img src="data/app_screenshots/spotify/screenshot_03.png" alt="Spotify Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_04.png')">
+            <img src="data/app_screenshots/spotify/screenshot_04.png" alt="Spotify Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_05.png')">
+            <img src="data/app_screenshots/spotify/screenshot_05.png" alt="Spotify Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_06.png')">
+            <img src="data/app_screenshots/spotify/screenshot_06.png" alt="Spotify Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_07.png')">
+            <img src="data/app_screenshots/spotify/screenshot_07.png" alt="Spotify Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_08.png')">
+            <img src="data/app_screenshots/spotify/screenshot_08.png" alt="Spotify Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_09.png')">
+            <img src="data/app_screenshots/spotify/screenshot_09.png" alt="Spotify Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_10.png')">
+            <img src="data/app_screenshots/spotify/screenshot_10.png" alt="Spotify Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_11.png')">
+            <img src="data/app_screenshots/spotify/screenshot_11.png" alt="Spotify Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_12.png')">
+            <img src="data/app_screenshots/spotify/screenshot_12.png" alt="Spotify Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_13.png')">
+            <img src="data/app_screenshots/spotify/screenshot_13.png" alt="Spotify Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_14.png')">
+            <img src="data/app_screenshots/spotify/screenshot_14.png" alt="Spotify Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_15.png')">
+            <img src="data/app_screenshots/spotify/screenshot_15.png" alt="Spotify Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_16.png')">
+            <img src="data/app_screenshots/spotify/screenshot_16.png" alt="Spotify Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_17.png')">
+            <img src="data/app_screenshots/spotify/screenshot_17.png" alt="Spotify Screenshot 17" loading="lazy">
+            <span class="screen-num">#17</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_18.png')">
+            <img src="data/app_screenshots/spotify/screenshot_18.png" alt="Spotify Screenshot 18" loading="lazy">
+            <span class="screen-num">#18</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_19.png')">
+            <img src="data/app_screenshots/spotify/screenshot_19.png" alt="Spotify Screenshot 19" loading="lazy">
+            <span class="screen-num">#19</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_20.png')">
+            <img src="data/app_screenshots/spotify/screenshot_20.png" alt="Spotify Screenshot 20" loading="lazy">
+            <span class="screen-num">#20</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_21.png')">
+            <img src="data/app_screenshots/spotify/screenshot_21.png" alt="Spotify Screenshot 21" loading="lazy">
+            <span class="screen-num">#21</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_22.png')">
+            <img src="data/app_screenshots/spotify/screenshot_22.png" alt="Spotify Screenshot 22" loading="lazy">
+            <span class="screen-num">#22</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_23.png')">
+            <img src="data/app_screenshots/spotify/screenshot_23.png" alt="Spotify Screenshot 23" loading="lazy">
+            <span class="screen-num">#23</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_24.png')">
+            <img src="data/app_screenshots/spotify/screenshot_24.png" alt="Spotify Screenshot 24" loading="lazy">
+            <span class="screen-num">#24</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_25.png')">
+            <img src="data/app_screenshots/spotify/screenshot_25.png" alt="Spotify Screenshot 25" loading="lazy">
+            <span class="screen-num">#25</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_26.png')">
+            <img src="data/app_screenshots/spotify/screenshot_26.png" alt="Spotify Screenshot 26" loading="lazy">
+            <span class="screen-num">#26</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_27.png')">
+            <img src="data/app_screenshots/spotify/screenshot_27.png" alt="Spotify Screenshot 27" loading="lazy">
+            <span class="screen-num">#27</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_28.png')">
+            <img src="data/app_screenshots/spotify/screenshot_28.png" alt="Spotify Screenshot 28" loading="lazy">
+            <span class="screen-num">#28</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_29.png')">
+            <img src="data/app_screenshots/spotify/screenshot_29.png" alt="Spotify Screenshot 29" loading="lazy">
+            <span class="screen-num">#29</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_30.png')">
+            <img src="data/app_screenshots/spotify/screenshot_30.png" alt="Spotify Screenshot 30" loading="lazy">
+            <span class="screen-num">#30</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_31.png')">
+            <img src="data/app_screenshots/spotify/screenshot_31.png" alt="Spotify Screenshot 31" loading="lazy">
+            <span class="screen-num">#31</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_32.png')">
+            <img src="data/app_screenshots/spotify/screenshot_32.png" alt="Spotify Screenshot 32" loading="lazy">
+            <span class="screen-num">#32</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_33.png')">
+            <img src="data/app_screenshots/spotify/screenshot_33.png" alt="Spotify Screenshot 33" loading="lazy">
+            <span class="screen-num">#33</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_34.png')">
+            <img src="data/app_screenshots/spotify/screenshot_34.png" alt="Spotify Screenshot 34" loading="lazy">
+            <span class="screen-num">#34</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_35.png')">
+            <img src="data/app_screenshots/spotify/screenshot_35.png" alt="Spotify Screenshot 35" loading="lazy">
+            <span class="screen-num">#35</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_36.png')">
+            <img src="data/app_screenshots/spotify/screenshot_36.png" alt="Spotify Screenshot 36" loading="lazy">
+            <span class="screen-num">#36</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_37.png')">
+            <img src="data/app_screenshots/spotify/screenshot_37.png" alt="Spotify Screenshot 37" loading="lazy">
+            <span class="screen-num">#37</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/spotify/screenshot_38.png')">
+            <img src="data/app_screenshots/spotify/screenshot_38.png" alt="Spotify Screenshot 38" loading="lazy">
+            <span class="screen-num">#38</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="chatgpt" data-title="chatgpt" data-category="ปัญญาประดิษฐ์ (AI Tools)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/chatgpt.png" alt="ChatGPT" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>ChatGPT</h2>
+              <p>ChatGPT • 📁 <code>data/app_screenshots/chatgpt/</code> (16 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ปัญญาประดิษฐ์ (AI Tools)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_01.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_01.png" alt="ChatGPT Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_02.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_02.png" alt="ChatGPT Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_03.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_03.png" alt="ChatGPT Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_04.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_04.png" alt="ChatGPT Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_05.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_05.png" alt="ChatGPT Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_06.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_06.png" alt="ChatGPT Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_07.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_07.png" alt="ChatGPT Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_08.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_08.png" alt="ChatGPT Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_09.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_09.png" alt="ChatGPT Screenshot 9" loading="lazy">
+            <span class="screen-num">#9</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_10.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_10.png" alt="ChatGPT Screenshot 10" loading="lazy">
+            <span class="screen-num">#10</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_11.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_11.png" alt="ChatGPT Screenshot 11" loading="lazy">
+            <span class="screen-num">#11</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_12.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_12.png" alt="ChatGPT Screenshot 12" loading="lazy">
+            <span class="screen-num">#12</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_13.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_13.png" alt="ChatGPT Screenshot 13" loading="lazy">
+            <span class="screen-num">#13</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_14.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_14.png" alt="ChatGPT Screenshot 14" loading="lazy">
+            <span class="screen-num">#14</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_15.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_15.png" alt="ChatGPT Screenshot 15" loading="lazy">
+            <span class="screen-num">#15</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/chatgpt/screenshot_16.png')">
+            <img src="data/app_screenshots/chatgpt/screenshot_16.png" alt="ChatGPT Screenshot 16" loading="lazy">
+            <span class="screen-num">#16</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="google gemini" data-title="google gemini" data-category="ปัญญาประดิษฐ์ (AI Tools)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/gemini.png" alt="Google Gemini" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Google Gemini</h2>
+              <p>Google Gemini • 📁 <code>data/app_screenshots/gemini/</code> (8 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ปัญญาประดิษฐ์ (AI Tools)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.bard&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_01.png')">
+            <img src="data/app_screenshots/gemini/screenshot_01.png" alt="Google Gemini Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_02.png')">
+            <img src="data/app_screenshots/gemini/screenshot_02.png" alt="Google Gemini Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_03.png')">
+            <img src="data/app_screenshots/gemini/screenshot_03.png" alt="Google Gemini Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_04.png')">
+            <img src="data/app_screenshots/gemini/screenshot_04.png" alt="Google Gemini Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_05.png')">
+            <img src="data/app_screenshots/gemini/screenshot_05.png" alt="Google Gemini Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_06.png')">
+            <img src="data/app_screenshots/gemini/screenshot_06.png" alt="Google Gemini Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_07.png')">
+            <img src="data/app_screenshots/gemini/screenshot_07.png" alt="Google Gemini Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/gemini/screenshot_08.png')">
+            <img src="data/app_screenshots/gemini/screenshot_08.png" alt="Google Gemini Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+        </div>
+      </div>
+      <div class="app-section" data-name="microsoft 365" data-title="microsoft copilot" data-category="ซอฟต์แวร์ทำงาน (Office)">
+        <div class="app-header">
+          <div class="app-meta-left">
+            <div class="app-logo-badge">
+              <img src="data/app_logos/images/microsoft_365.png" alt="Microsoft 365" loading="lazy">
+            </div>
+            <div class="app-titles">
+              <h2>Microsoft 365</h2>
+              <p>Microsoft Copilot • 📁 <code>data/app_screenshots/microsoft_365/</code> (8 รูป)</p>
+            </div>
+          </div>
+          <div class="app-meta-right">
+            <span class="cat-tag">ซอฟต์แวร์ทำงาน (Office)</span>
+            <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=th" target="_blank" class="play-link">🌐 ดูบน Play Store ↗</a>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_01.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_01.png" alt="Microsoft 365 Screenshot 1" loading="lazy">
+            <span class="screen-num">#1</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_02.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_02.png" alt="Microsoft 365 Screenshot 2" loading="lazy">
+            <span class="screen-num">#2</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_03.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_03.png" alt="Microsoft 365 Screenshot 3" loading="lazy">
+            <span class="screen-num">#3</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_04.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_04.png" alt="Microsoft 365 Screenshot 4" loading="lazy">
+            <span class="screen-num">#4</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_05.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_05.png" alt="Microsoft 365 Screenshot 5" loading="lazy">
+            <span class="screen-num">#5</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_06.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_06.png" alt="Microsoft 365 Screenshot 6" loading="lazy">
+            <span class="screen-num">#6</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_07.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_07.png" alt="Microsoft 365 Screenshot 7" loading="lazy">
+            <span class="screen-num">#7</span>
+          </div>
+          <div class="screen-item" onclick="openLightbox('data/app_screenshots/microsoft_365/screenshot_08.png')">
+            <img src="data/app_screenshots/microsoft_365/screenshot_08.png" alt="Microsoft 365 Screenshot 8" loading="lazy">
+            <span class="screen-num">#8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightboxModal" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="Fullscreen Screenshot">
+  </div>
+
+  <script>
+    let currentCategory = 'ALL';
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.includes(cat) || (cat === 'ALL' && btn.textContent.includes('ทั้งหมด')));
+      });
+      filterApps();
+    }
+
+    function filterApps() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      document.querySelectorAll('.app-section').forEach(sec => {
+        const name = sec.getAttribute('data-name');
+        const title = sec.getAttribute('data-title');
+        const cat = sec.getAttribute('data-category');
+
+        const matchQ = !q || name.includes(q) || title.includes(q);
+        const matchCat = currentCategory === 'ALL' || cat === currentCategory;
+
+        sec.style.display = (matchQ && matchCat) ? 'block' : 'none';
+      });
+    }
+
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxModal').classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('active');
+    }
+  </script>
+</body>
+</html>

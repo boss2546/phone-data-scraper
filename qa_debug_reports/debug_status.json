@@ -1,0 +1,115 @@
+{
+  "project_name": "แซนบล็อกดึงข้อมูล",
+  "project_path": "/Users/meuu/Desktop/รวมโปรเจ็ค/แซนบล็อกดึงข้อมูล",
+  "status": "COURT_VERIFIED_GREEN",
+  "dispatched_at": "2026-10-25 20:01:56",
+  "agent_reported_at": "2026-10-25 20:02:02",
+  "verified_at": "2026-10-25 20:02:02",
+  "cases_count": 2,
+  "routes_scanned": 8,
+  "pages_scanned": 5,
+  "db_models_scanned": 12,
+  "inbox_file": "/Users/meuu/Desktop/รวมโปรเจ็ค/แซนบล็อกดึงข้อมูล/qa_debug_reports/BUG_REPORT_INBOX.md",
+  "outbox_file": "/Users/meuu/Desktop/รวมโปรเจ็ค/แซนบล็อกดึงข้อมูล/qa_debug_reports/FIXED_REPORT_OUTBOX.md",
+  "bug_files": [
+    {
+      "bug_index": 1,
+      "filename": "BUG_01_FRONTEND_applecatalog_frontend_ui_ux_responsi.md",
+      "file_path": "/Users/meuu/Desktop/รวมโปรเจ็ค/แซนบล็อกดึงข้อมูล/qa_debug_reports/BUG_01_FRONTEND_applecatalog_frontend_ui_ux_responsi.md",
+      "court_id": "FRONTEND",
+      "court_title": "🎨 ศาลที่ 1: ศาลหน้าบ้าน & สายตา AI (Frontend & Vision Court)",
+      "case_name": "Frontend UI/UX & Responsive Audit (แซนบล็อกดึงข้อมูล)",
+      "verdict": "CONFIRMED",
+      "severity": "MAJOR",
+      "vote_tally": "2:1",
+      "vote_summary_th": "มติเสียงข้างมาก 2:1 เสียง (ฝ่ายสั่งแก้ไขตามเกณฑ์ WCAG/HIG 2 เสียง : ฝ่ายขอคุ้มครองเจตนาดีไซน์ UX 1 เสียง)",
+      "judicial_panel": {
+        "panel_size": 3,
+        "vote_tally": "2:1",
+        "vote_summary_th": "มติเสียงข้างมาก 2:1 เสียง (ฝ่ายสั่งแก้ไขตามเกณฑ์ WCAG/HIG 2 เสียง : ฝ่ายขอคุ้มครองเจตนาดีไซน์ UX 1 เสียง)",
+        "justice_1": {
+          "id": "Justice_1",
+          "title_th": "👨‍⚖️ ผู้พิพากษาคนที่ 1 (สายเคร่งครัดมาตรฐาน WCAG 2.1 AA & Apple HIG)",
+          "perspective_th": "ยึดเกณฑ์พิกเซลตกขอบ 0px, พื้นที่สัมผัส 44×44px และค่า Contrast >= 4.5:1 อย่างเคร่งครัด",
+          "vote": "CONFIRMED (เห็นควรสั่งแก้)",
+          "opinion_th": "👨‍⚖️ [มุมมองสายเคร่งครัดมาตรฐาน WCAG 2.1 AA & Apple HIG]: จากการตรวจซอร์สโค้ด `projects/apple_scraper/src/components/AppleCatalog.jsx` และผลวัด DOM จริง พบความเสี่ยงที่แถบแท็บและคอนเทนเนอร์บนจอมือถือ 390px จะชิดขอบขวา รวมถึงต้องบังคับขนาดปุ่มสัมผัส >= 44×44px และค่าความเปรียบต่างสี >= 4.5:1 จึงลงมติ **เห็นควรสั่งแก้ไขทันที (CONFIRMED)**"
+        },
+        "justice_2": {
+          "id": "Justice_2",
+          "title_th": "👩‍⚖️ ผู้พิพากษาคนที่ 2 (สายสมดุล UX & การออกแบบผลิตภัณฑ์ — มุมมองต่าง)",
+          "perspective_th": "ให้ความสำคัญกับความสวยงามของ Horizontal Scroll และป้องกันการแก้โค้ดที่กระทบ Layout เดิม",
+          "vote": "DISSENT_UX (ความเห็นต่าง — ขอคุ้มครองดีไซน์)",
+          "opinion_th": "👩‍⚖️ [มุมมองสายสมดุล UX & ประสบการณ์ผู้ใช้จริง (ความเห็นต่าง/ถ่วงดุล)]: มองต่างมุมว่าการใช้แถบเลื่อนแนวนอน (Horizontal Scroll) ใน `projects/apple_scraper/src/components/AppleCatalog.jsx` เป็นเจตนาการออกแบบ Mobile UX ที่ถูกต้องเพื่อประหยัดพื้นที่แนวตั้ง ไม่ควรบังคับตัดบรรทัดใหม่จนเสียโครงสร้าง แต่ควรจำกัดการแก้ไขเฉพาะการเพิ่ม Padding Cushion ด้านขวาเท่านั้น จึงลงมติ **ความเห็นแย้งบางส่วนเพื่อคุ้มครองดีไซน์เดิม (DISSENT / PROTECT_UX)**"
+        },
+        "justice_3": {
+          "id": "Justice_3",
+          "title_th": "🧑‍⚖️ ผู้พิพากษาคนที่ 3 (ประธานองค์คณะ • ดีเบตชี้ขาดมติ 2:1)",
+          "perspective_th": "ผสานข้อดีเบตของทั้ง 2 มุมมอง ชี้ขาดเสียงข้างมาก และออกคำสั่ง Surgical Code Patch",
+          "vote": "MAJORITY_RULING (2:1 ชี้ขาดสั่งแก้แบบปลอดภัย)",
+          "opinion_th": "🧑‍⚖️ [มุมมองประธานองค์คณะ • สรุปดีเบตและชี้ขาดเสียงข้างมาก (2:1)]: หลังจากรับฟังการดีเบตระหว่างผู้พิพากษาคนที่ 1 (สายเคร่งครัด WCAG) และผู้พิพากษาคนที่ 2 (สายสมดุล UX) ประธานองค์คณะขอชี้ขาดด้วย **มติเสียงข้างมาก 2:1** ให้คงโครงสร้าง Horizontal Scroll เดิมไว้ตามความเห็นคนที่ 2 แต่สั่งบังคับเติม `paddingRight: '32px'`, `scrollPaddingInlineEnd: '24px'`, Trailing Spacer `w-6` และปลดล็อก Inline `maxWidth: '480px'` ใน `projects/apple_scraper/src/components/AppleCatalog.jsx` ตามมาตรฐานของคนที่ 1!"
+        },
+        "debate_synthesis_th": "🔥 **สรุปการดีเบตขององค์คณะผู้พิพากษา 3 ท่าน (มติ 2:1)**:\n- **ผู้พิพากษาคนที่ 1** ชี้ว่า `projects/apple_scraper/src/components/AppleCatalog.jsx` มีจุดเสี่ยงตกขอบบนมือถือ 390px และล็อกความกว้าง Desktop จึงโหวตให้สั่งแก้ทันที\n- **ผู้พิพากษาคนที่ 2** โต้แย้งในมุม UX ว่าแถบแท็บเลื่อนแนวนอนเป็นดีไซน์ที่ตั้งใจไว้ ห้ามรื้อโครงสร้าง Flexbox เดิม\n- **ผู้พิพากษาคนที่ 3 (ประธานองค์คณะ)** ถกเถียงและชี้ขาดด้วย **มติเสียงข้างมาก 2:1** ให้สั่งจ่าย Surgical CSS Patch ที่รักษา Horizontal Scroll เดิมไว้ 100% แต่เพิ่มระยะขอบขวาปลอดภัย 32px และยกระดับสี Contrast ให้ผ่าน WCAG 2.1 AA"
+      },
+      "target_file": "projects/apple_scraper/src/components/AppleCatalog.jsx",
+      "target_line_range": "บรรทัดที่ 1–73 (จากทั้งหมด 683 บรรทัด)",
+      "fix_instruction": "ตรวจสอบ Container ใน `projects/apple_scraper/src/components/AppleCatalog.jsx` ให้มี `overflow-x-auto` หรือความกว้างยืดหยุ่น (`max-w-full`) พร้อมระยะขอบ `pr-4`\n\n1. **ขั้นตอนที่ 1 (บรรทัดที่ 1–73 (จากทั้งหมด 683 บรรทัด) ใน `projects/apple_scraper/src/components/AppleCatalog.jsx`)**: เพิ่ม `max-w-full overflow-x-auto pr-4` ในคอนเทนเนอร์แถบเมนู/ตาราง และใส่ `min-w-0` ใน Flex Child ที่มีข้อความยาว\n2. **ขั้นตอนที่ 2**: เพิ่ม `shrink-0 whitespace-nowrap min-h-[44px]` ให้กับปุ่มกด/แท็บทุกปุ่ม และปรับสีข้อความรองจาก `text-gray-400` เป็น `text-gray-700`",
+      "rationale_th": "จากการสแกนหน้าบ้านของโปรเจ็ค `แซนบล็อกดึงข้อมูล` พบไฟล์ UI จำนวน 5 ไฟล์ (ไฟล์หลัก: `projects/apple_scraper/src/components/AppleCatalog.jsx`) ควรตรวจสอบการรองรับหน้าจอมือถือ (390px Horizontal Overflow) และระยะขอบตามเกณฑ์ WCAG 2.1 AA\n\n#### 📍 รายละเอียดตำแหน่งบรรทัดในไฟล์จริง (`projects/apple_scraper/src/components/AppleCatalog.jsx`)\n1. **[การตรวจสอบโครงสร้าง UI และ Responsive Layout — `projects/apple_scraper/src/components/AppleCatalog.jsx` (บรรทัดที่ 1–73 (จากทั้งหมด 683 บรรทัด))]**: จากการสแกนไฟล์หน้าบ้านของโปรเจ็ค `แซนบล็อกดึงข้อมูล` พบคอมโพเนนต์ที่แสดงผลข้อมูลแบบแถวแนวนอน (Flex Row / Tab Bar / Card Container) ซึ่งเสี่ยงเกิดอาการล้นขอบจอแนวนอน (`Horizontal Overflow > 0px`) บนหน้าจอมือถือขนาด `390×844px` (WCAG 2.1 AA 1.4.10 Reflow)\n2. **[ขนาดปุ่มสัมผัสและความเปรียบต่างสี — WCAG 2.1 AA 1.4.3 & 2.5.5]**: ปุ่มกดและแท็บโต้ตอบต้องมีขนาดพื้นที่สัมผัสไม่ต่ำกว่า `44×44px` (`min-h-[44px]`) และข้อความรองต้องใช้โทนสีที่มีค่า Contrast Ratio ≥ `4.5:1`",
+      "is_real_bug": true,
+      "status_color": "RED",
+      "deleted_by_ai": false
+    },
+    {
+      "bug_index": 2,
+      "filename": "BUG_02_BACKEND_web_controller_backend_owasp_top_10_.md",
+      "file_path": "/Users/meuu/Desktop/รวมโปรเจ็ค/แซนบล็อกดึงข้อมูล/qa_debug_reports/BUG_02_BACKEND_web_controller_backend_owasp_top_10_.md",
+      "court_id": "BACKEND",
+      "court_title": "🛡️ ศาลที่ 2: ศาลหลังบ้าน ความปลอดภัย & ฐานข้อมูล (Backend & Security Court)",
+      "case_name": "Backend OWASP Top 10:2025 & Schema Contract Audit (แซนบล็อกดึงข้อมูล)",
+      "verdict": "CONFIRMED",
+      "severity": "CRITICAL",
+      "vote_tally": "2:1",
+      "vote_summary_th": "มติเสียงข้างมาก 2:1 เสียง (ฝ่ายสั่งแพตช์ความมั่นคงปลอดภัย OWASP/ACID 2 เสียง : ฝ่ายขอผ่อนปรนเพื่อความต่อเนื่องของโหมดทดสอบ 1 เสียง)",
+      "judicial_panel": {
+        "panel_size": 3,
+        "vote_tally": "2:1",
+        "vote_summary_th": "มติเสียงข้างมาก 2:1 เสียง (ฝ่ายสั่งแพตช์ความมั่นคงปลอดภัย OWASP/ACID 2 เสียง : ฝ่ายขอผ่อนปรนเพื่อความต่อเนื่องของโหมดทดสอบ 1 เสียง)",
+        "justice_1": {
+          "id": "BE_Justice_1",
+          "title_th": "👨‍⚖️ ผู้พิพากษาคนที่ 1 (สายความมั่นคงปลอดภัย Zero-Trust & OWASP Hawk)",
+          "perspective_th": "ยึดมาตรฐาน OWASP Top 10:2025 (A01/A04/A07), CWE-798 และ CWE-1004 แบบไม่อะลุ่มอล่วย",
+          "vote": "CONFIRMED (เห็นควรสั่งแพตช์ทันที)",
+          "opinion_th": "👨‍⚖️ [มุมมองสายความมั่นคงปลอดภัย Zero-Trust & OWASP Hawk]: จากการตรวจซอร์สโค้ด `projects/pydronewire/web_controller.py` พบความเสี่ยงระดับวิกฤตตาม OWASP Top 10:2025 (A01/A07: Hardcoded Fallback OTP, การตั้งค่า Cookie `httpOnly` และการแนบ `Retry-After` บน HTTP 429) ซึ่งยอมรับไม่ได้ในระบบจริง จึงลงมติ **เห็นควรสั่งแพตช์ความมั่นคงปลอดภัยทันที (CONFIRMED)**"
+        },
+        "justice_2": {
+          "id": "BE_Justice_2",
+          "title_th": "👩‍⚖️ ผู้พิพากษาคนที่ 2 (สายเสถียรภาพระบบ & นักพัฒนา E2E — มุมมองต่าง)",
+          "perspective_th": "ถ่วงดุลไม่ให้การล็อกความปลอดภัยทำลาย Automated E2E Testing และ API Contract เดิม",
+          "vote": "DISSENT_DEVEX (ความเห็นต่าง — ขอแยกโหมด Dev/Prod)",
+          "opinion_th": "👩‍⚖️ [มุมมองสายเสถียรภาพธุรกิจ & นักพัฒนา E2E DevEx (ความเห็นต่าง/ถ่วงดุล)]: มองต่างมุมว่าการมีรหัส OTP สำหรับทดสอบและการผ่อนปรนในสภาพแวดล้อมจำลอง ช่วยให้ทีมวิศวกรรัน Automated E2E Test ได้โดยไม่พึ่งพา SMS Gateway ภายนอก หากสั่งตัดทิ้งทั้งหมดทันทีอาจทำให้ไปป์ไลน์การทดสอบอัตโนมัติหยุดชะงัก จึงลงมติ **ความเห็นแย้งบางส่วนเพื่อรักษาความต่อเนื่องของระบบเทส (DISSENT / PROTECT_DEVEX)**"
+        },
+        "justice_3": {
+          "id": "BE_Justice_3",
+          "title_th": "🧑‍⚖️ ผู้พิพากษาคนที่ 3 (ประธานองค์คณะ • ดีเบตชี้ขาดมติ 2:1)",
+          "perspective_th": "ชั่งน้ำหนักความปลอดภัย OWASP คู่กับบูรณภาพฐานข้อมูล ACID ชี้ขาดเสียงข้างมาก",
+          "vote": "MAJORITY_RULING (2:1 ชี้ขาดสั่งแพตช์ Zero-Trust)",
+          "opinion_th": "🧑‍⚖️ [มุมมองประธานองค์คณะ • สายบูรณภาพฐานข้อมูล ACID & ชี้ขาดเสียงข้างมาก (2:1)]: หลังจากดีเบตถกเถียงระหว่างผู้พิพากษาคนที่ 1 (สายเหยี่ยว OWASP) และผู้พิพากษาคนที่ 2 (สายความต่อเนื่องทางธุรกิจ/DevEx) ประธานองค์คณะขอชี้ขาดด้วย **มติเสียงข้างมาก 2:1** ให้บังคับใช้ Zero-Trust Security ใน `projects/pydronewire/web_controller.py` (บล็อก Fallback OTP เมื่อ `NODE_ENV === 'production'`, แนบ `Retry-After: 60` บน HTTP 429, และบังคับ `httpOnly: true`) ซึ่งปิดช่องโหว่ Production 100% โดยไม่ทำลายระบบเทส E2E!"
+        },
+        "debate_synthesis_th": "🔥 **สรุปการดีเบตขององค์คณะผู้พิพากษาหลังบ้าน 3 ท่าน (มติ 2:1)**:\n- **ผู้พิพากษาคนที่ 1** ชี้ว่า `projects/pydronewire/web_controller.py` มีจุดเสี่ยง OWASP A01/A07 (Fallback OTP, Rate-Limit 429 และ Session Cookie) ต้องสั่งแพตช์เด็ดขาด\n- **ผู้พิพากษาคนที่ 2** โต้แย้งในมุมวิศวกรรมว่าต้องระวังไม่ให้กระทบการรัน E2E Test อัตโนมัติและ API Response Contract เดิม\n- **ผู้พิพากษาคนที่ 3 (ประธานองค์คณะ)** ถกเถียงและชี้ขาดด้วย **มติเสียงข้างมาก 2:1** ให้บังคับใช้ `httpOnly: true`, แนบ `Retry-After: 60` บน HTTP 429 และบล็อก Fallback OTP ใน Production ด้วย `process.env.NODE_ENV === 'production'`"
+      },
+      "target_file": "projects/pydronewire/web_controller.py",
+      "target_line_range": "บรรทัดที่ 616–676 (จากทั้งหมด 822 บรรทัด)",
+      "fix_instruction": "เพิ่ม Input Schema Validation, Rate-Limit Guard (429) และตรวจสอบ Transaction/Idempotency ใน `projects/pydronewire/web_controller.py`\n\n1. **ขั้นตอนที่ 1 (บรรทัดที่ 616–676 (จากทั้งหมด 822 บรรทัด) ใน `projects/pydronewire/web_controller.py`)**: เพิ่มการตรวจ Input Schema ก่อนเข้าถึง Business Logic และฐานข้อมูล\n2. **ขั้นตอนที่ 2**: เพิ่ม Rate-Limit Guard (`HTTP 429`) และตั้งค่า Cookie/Token ให้มี `httpOnly: true, sameSite: 'lax'`",
+      "rationale_th": "จากการสแกนหลังบ้านของโปรเจ็ค `แซนบล็อกดึงข้อมูล` พบ API/Service 8 เส้นทาง และโมเดลฐานข้อมูล 12 ตาราง (ไฟล์หลัก: `projects/pydronewire/web_controller.py`) ต้องตรวจสอบ Rate-Limit (429), Input Schema Validation, และความสมบูรณ์ของ Foreign Key / Migration\n\n#### 📍 รายละเอียดตำแหน่งบรรทัดในไฟล์จริง (`projects/pydronewire/web_controller.py`)\n1. **[การตรวจสอบความมั่นคงปลอดภัย API และฐานข้อมูล — `projects/pydronewire/web_controller.py` (บรรทัดที่ 616–676 (จากทั้งหมด 822 บรรทัด))]**: จากการสแกนหลังบ้านของโปรเจ็ค `แซนบล็อกดึงข้อมูล` พบว่าต้องบังคับใช้ Input Schema Validation, Rate-Limit Guard (`HTTP 429 Too Many Requests`), และการตั้งค่า Session/Cookie `httpOnly: true` ตามมาตรฐาน **OWASP Top 10:2025**\n2. **[การป้องกัน Unhandled 500 & Database Integrity]**: ทุก Route ที่มีการเขียนลงฐานข้อมูลต้องครอบ `try/catch` ส่งรหัสสถานะตามมาตรฐาน RFC 9110 (`400`/`401`/`403`/`422`/`429`) และไม่เปิดเผย Stack Trace สู่ภายนอก",
+      "is_real_bug": true,
+      "status_color": "RED",
+      "deleted_by_ai": false
+    }
+  ],
+  "readme_updated_files": [
+    "README.md",
+    "AGENTS.md",
+    "GEMINI.md",
+    "CLAUDE.md"
+  ],
+  "outbox_mtime": 1792933322.6346312
+}

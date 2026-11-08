@@ -1,0 +1,53 @@
+{
+  "id": "dramabox",
+  "name": "DramaBox",
+  "official_title": "DramaBox – สตรีมละครสั้น",
+  "package_id": "com.storymatrix.drama",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.storymatrix.drama&hl=th",
+  "total_screenshots": 7,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/YRIvv-Ter4xMVFXSEmxvAOYY66rOL3NU23d05koUN5q9h5nJIad3dhniDI7DMdOmFrPptGccga_qWHGQ0jnVNJk=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/7arKITKZuYx4igf0NGXTHe-6M3pt2UvLgwLP_HJhIOkm79oMcQ7x3Fo0MaqxWf4lopQSt1RK9wimCEDpRzS8DA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/Bx5MstJBzRXCJ-bi3CPeNjZ-y_jbTb3RYM7RI8f-EyRuKLoyfJdgGFs65SOS8ILfvoP7y6PYsryJaVExuY4GAg=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/cKhlC68Z01kShM9bkc77pEPS54F2I2DpJprdQwRwqJzKGomDgSj3H0Sl_--KLOm-5LbilxyF9uTOUM9vHYprQQ=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/3ehvWyLkpXkGjlQIv8GYJ_RtqMMT1LWvEZpkr63YS-UoJL9W_liD5LHYP5goGwDQY_yzHs8PXhP8UStGDbpPrQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/LXtzWORYHYPOE7Rlop_gGDKWPUBcbhucUgCFAEPT3bEJpEm7fS8awL-gFhMWg1tWvKXXnQXwk6WLLFjQqOg2EA=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/dramabox/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/BtP-LQ01NeC1Y2nvA8ASerhXxJ-cbqLpbyJSPH0EG53PvTGpswApXwcChpUtFRxSup7vVDYuR8UUwfaLN_NOAVE=s0"
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>pyDroneWire</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#07110d">
+<link rel="icon" href="data:,">
+<style>
+/* ใช้ฟอนต์ในเครื่องเท่านั้น: ตอน Mac ต่อ WiFi โดรนจะไม่มีอินเทอร์เน็ตให้โหลดฟอนต์ */
+:root{
+  --hull:#07110d;          /* พื้นแผง */
+  --hull-2:#0c1a15;
+  --line:#1e3a2f;
+  --line-2:#2c5242;
+  --text:#e3eee8;
+  --muted:#7f9a8e;
+  --emerald:#3ccb8f;
+  --emerald-deep:#0f3d2e;
+  --amber:#edb247;
+  --red:#e5484d;
+  --s:clamp(124px,30vmin,200px);   /* ขนาดจอย */
+  --gap:14px;
+  --radius-sm:8px; --radius:12px;
+  --font:"Sukhumvit Set","Thonburi",-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:#000;color:var(--text);overflow:hidden;
+  font:15px/1.4 var(--font);font-variant-numeric:tabular-nums;
+  overscroll-behavior:none;touch-action:none;-webkit-user-select:none;user-select:none}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+button:focus-visible,input:focus-visible{outline:2px solid var(--emerald);outline-offset:2px}
+#app{position:fixed;inset:0}
+
+/* ---------- วิดีโอ ---------- */
+#video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000;transition:filter .3s}
+#app.vlost #video{filter:grayscale(.7) brightness(.55)}
+#signal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:none;text-align:center;pointer-events:none;max-width:min(520px,80vw)}
+#signal.on{display:block}
+#signal strong{display:block;font-size:clamp(20px,3.2vw,30px);font-weight:600;color:var(--text)}
+#signal span{display:block;margin-top:6px;color:var(--muted);font-size:14px}
+#signal .pulse{width:10px;height:10px;border-radius:50%;background:var(--amber);margin:0 auto 14px;animation:pulse 1.4s ease-in-out infinite}
+#app.vlost #signal .pulse{background:var(--red)}
+@keyframes pulse{50%{opacity:.25}}
+
+/* ---------- แถบบน ---------- */
+#top{position:absolute;left:0;right:0;top:0;display:flex;align-items:center;gap:var(--gap);
+  padding:max(10px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) 10px max(14px,env(safe-area-inset-left));
+  background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,0))}
+#status{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.ind{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);white-space:nowrap}
+.ind::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--muted);flex:none}
+.ind.ok{color:var(--text)} .ind.ok::before{background:var(--emerald)}
+.ind.warn{color:var(--amber)} .ind.warn::before{background:var(--amber)}
+.ind.bad{color:#ffb4b6} .ind.bad::before{background:var(--red)}
+#clock{flex:1;text-align:center;line-height:1.1}
+#clock b{display:block;font-size:24px;font-weight:600;letter-spacing:.02em}
+#clock small{color:var(--muted);font-size:11px}
+.seg{display:flex;padding:3px;gap:2px;border-radius:10px;background:var(--hull);border:1px solid var(--line)}
+.seg button{border:0;background:transparent;color:var(--muted);padding:6px 11px;border-radius:7px;font-size:13px;font-weight:600}
+.seg button.on{background:var(--emerald-deep);color:var(--emerald)}
+.ibtn{width:40px;height:38px;border-radius:10px;border:1px solid var(--line);background:var(--hull);display:grid;place-items:center}
+.ibtn svg{width:19px;height:19px;stroke:var(--text);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ibtn.on{border-color:var(--line-2);background:var(--hull-2)}
+#btnStop{height:42px;padding:0 16px 0 18px;border-radius:10px;border:0;background:var(--red);color:#fff;
+  font-weight:700;font-size:15px;letter-spacing:.06em;display:flex;align-items:center;gap:10px;
+  box-shadow:0 0 0 4px rgba(229,72,77,.22)}
+#btnStop kbd{font:600 11px var(--font);padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.25);letter-spacing:0}
+#btnStop:active{background:#b4363a}
+
+/* ---------- ข้อความลอย ---------- */
+#banner{position:absolute;top:70px;left:50%;transform:translateX(-50%);display:none;gap:12px;align-items:center;
+  padding:9px 10px 9px 16px;border-radius:var(--radius);background:var(--hull);border:1px solid var(--amber);color:var(--amber);font-size:14px;z-index:4}
+#banner.on{display:flex}
+#banner button{border:0;background:var(--amber);color:#1f1606;padding:6px 12px;border-radius:7px;font-weight:600}
+#toast{position:absolute;left:50%;bottom:calc(var(--s) + 70px);transform:translate(-50%,8px);opacity:0;pointer-events:none;
+  padding:9px 16px;border-radius:10px;background:var(--hull);border:1px solid var(--line-2);font-size:14px;
+  transition:opacity .16s,transform .16s;max-width:70vw;text-align:center;z-index:4}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+#toast.bad{border-color:var(--red);color:#ffc9cb}
+
+/* ---------- จอย ---------- */
+.stick{position:absolute;bottom:max(16px,env(safe-area-inset-bottom));width:var(--s);touch-action:none}
+#stickL{left:max(16px,env(safe-area-inset-left))}
+#stickR{right:max(16px,env(safe-area-inset-right))}
+.dial{position:relative;width:var(--s);height:var(--s);border-radius:50%;background:rgba(7,17,13,.78);border:1.5px solid var(--line-2);
+  transition:border-color .12s,box-shadow .12s}
+/* ขีดสเกลรอบวง ทุก 30° */
+.dial::before{content:"";position:absolute;inset:5px;border-radius:50%;
+  background:repeating-conic-gradient(from -1deg,var(--line-2) 0 2deg,transparent 2deg 30deg);
+  -webkit-mask:radial-gradient(closest-side,transparent 88%,#000 89%);
+          mask:radial-gradient(closest-side,transparent 88%,#000 89%)}
+.dial .axis{position:absolute;background:var(--line)}
+.dial .axis.v{left:50%;top:16%;bottom:16%;width:1px}
+.dial .axis.h{top:50%;left:16%;right:16%;height:1px}
+/* วงความแรง: ระยะสูงสุดที่โดรนได้รับจริง (30/60/100%) */
+.dial .env{position:absolute;left:50%;top:50%;border-radius:50%;border:1.5px dashed rgba(60,203,143,.55);
+  width:calc(var(--s) * .62 * var(--scale,.3));height:calc(var(--s) * .62 * var(--scale,.3));
+  transform:translate(-50%,-50%);transition:width .2s,height .2s}
+.dial .knob{position:absolute;left:50%;top:50%;width:36%;height:36%;margin:-18% 0 0 -18%;border-radius:50%;z-index:2;
+  background:radial-gradient(circle at 38% 32%,#5c7a6d,#24392f 70%);border:1px solid #3d5c4f;box-shadow:0 6px 16px rgba(0,0,0,.55)}
+.dial .knob.kb{transition:transform .07s ease-out}
+.dial .out{position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;z-index:3;
+  background:var(--emerald);box-shadow:0 0 0 3px rgba(60,203,143,.25);pointer-events:none}
+.stick.active .dial{border-color:var(--emerald);box-shadow:0 0 0 4px rgba(60,203,143,.12)}
+.read{display:flex;justify-content:center;gap:18px;margin-top:8px;font-size:12px;color:var(--muted)}
+.read b{color:var(--text);font-weight:600;margin-left:4px;display:inline-block;min-width:3.4em;text-align:right}
+.read b.hot{color:var(--emerald)}
+.stick .cap{position:absolute;left:0;right:0;top:-24px;text-align:center;font-size:12px;color:var(--muted)}
+
+/* ---------- ปุ่มคำสั่ง ---------- */
+#actions{position:absolute;bottom:calc(max(16px,env(safe-area-inset-bottom)) + 26px);left:50%;transform:translateX(-50%);
+  display:flex;gap:8px;padding:6px;border-radius:14px;background:rgba(7,17,13,.82);border:1px solid var(--line)}
+.abtn{position:relative;overflow:hidden;min-width:84px;height:52px;padding:0 14px;border-radius:10px;border:1px solid transparent;
+  background:transparent;font-weight:600;font-size:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+.abtn small{font-size:11px;font-weight:400;color:var(--muted)}
+.abtn:hover:not(:disabled){background:var(--hull-2)}
+.abtn:disabled{opacity:.32;cursor:default}
+.abtn.armed{border-color:var(--amber);color:var(--amber)}
+.abtn.primary{background:var(--emerald-deep);border-color:rgba(60,203,143,.5);color:var(--emerald)}
+.abtn.primary:hover:not(:disabled){background:#14503c}
+.abtn .prog{position:absolute;left:0;top:0;bottom:0;width:0;background:rgba(60,203,143,.35)}
+.abtn.holding .prog{width:100%;transition:width var(--hold,.8s) linear}
+.abtn span,.abtn small{position:relative}
+.sep{width:1px;margin:8px 2px;background:var(--line)}
+
+/* ---------- แผงปุ่มคีย์บอร์ด ---------- */
+.keys{position:absolute;top:78px;padding:14px;border-radius:var(--radius);background:rgba(7,17,13,.84);border:1px solid var(--line);
+  font-size:12px;color:var(--muted);z-index:3;pointer-events:none}
+#keysL{left:max(14px,env(safe-area-inset-left))}
+#keysR{right:max(14px,env(safe-area-inset-right))}
+.keys h4{margin:0 0 8px;font-size:13px;font-weight:600;color:var(--text)}
+.keys h4 small{font-weight:400;color:var(--muted);margin-left:6px;font-size:11px}
+.keys .grp+.grp{margin-top:16px}
+.pad{display:grid;grid-template-columns:repeat(3,48px);grid-template-rows:44px 44px;gap:5px}
+.pad .k:nth-child(1){grid-column:2}
+.pad .k:nth-child(2){grid-column:1;grid-row:2}
+.pad .k:nth-child(3){grid-column:2;grid-row:2}
+.pad .k:nth-child(4){grid-column:3;grid-row:2}
+.k{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:var(--radius-sm);
+  border:1px solid var(--line-2);border-bottom-width:3px;background:var(--hull-2);color:var(--text);font-weight:600;font-size:15px;line-height:1;
+  transition:background .06s,border-color .06s,color .06s,transform .06s}
+.k i{font-style:normal;font-size:10px;font-weight:400;color:var(--muted);margin-top:4px;white-space:nowrap}
+.k.down{background:var(--emerald);border-color:#1f8a5e;color:#03140c;transform:translateY(2px);border-bottom-width:1px}
+.k.down i{color:#03140c}
+.k.danger{color:#ffb4b6}
+.k.danger.down{background:var(--red);border-color:#9b2a2e;color:#fff}
+.keys .alt{margin-top:8px;font-size:11px}
+.cmds{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center}
+.cmds .k{height:28px;min-width:30px;padding:0 8px;font-size:13px;justify-self:start}
+.cmds .multi{display:flex;gap:4px}
+.cmds span{color:var(--text);font-size:13px}
+.cmds span.danger{color:#ffb4b6}
+#app.nokeys .keys{display:none}
+
+/* ---------- เมนูด้านข้าง ---------- */
+#scrim{position:absolute;inset:0;background:rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:opacity .2s;z-index:5}
+#scrim.on{opacity:1;pointer-events:auto}
+#drawer{position:absolute;top:0;right:0;bottom:0;width:min(380px,92vw);transform:translateX(102%);transition:transform .22s ease;
+  background:var(--hull);border-left:1px solid var(--line);padding:max(16px,env(safe-area-inset-top)) 20px 24px;
+  overflow-y:auto;touch-action:pan-y;z-index:6}
+#drawer.on{transform:none}
+#drawer header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+#drawer h2{margin:0;font-size:18px;font-weight:600}
+#drawer section{padding:16px 0;border-top:1px solid var(--line)}
+#drawer header+section{border-top:0}
+#drawer h3{margin:0 0 10px;font-size:14px;font-weight:600;color:var(--text)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.dbtn{flex:1;min-width:120px;padding:11px 12px;border-radius:10px;border:1px solid var(--line-2);background:var(--hull-2);font-size:14px;text-align:left}
+.dbtn:hover{border-color:var(--emerald)}
+.dbtn.on{border-color:var(--emerald);color:var(--emerald)}
+.hint{color:var(--muted);font-size:12.5px;margin-top:8px;line-height:1.55}
+#streamUrl{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line-2);background:#040b08;color:var(--text);
+  font:13px ui-monospace,Menlo,monospace;-webkit-user-select:text;user-select:text}
+#streamBtn{width:100%;margin-top:8px;padding:12px;border-radius:10px;border:0;background:var(--emerald);color:#03140c;font-weight:600}
+#streamBtn.stop{background:var(--red);color:#fff}
+#streamStat{margin-top:8px;font-size:12.5px;color:var(--emerald);word-break:break-all;white-space:pre-line}
+#streamStat.err{color:#ffb4b6}
+dl.diag{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:13px}
+dl.diag dt{color:var(--muted)}
+dl.diag dd{margin:0;text-align:right}
+dl.diag dd.code{grid-column:1/-1;text-align:left;font:12px ui-monospace,Menlo,monospace;color:var(--muted);word-break:break-all;
+  padding:8px 10px;border-radius:8px;background:#040b08;border:1px solid var(--line)}
+
+/* ---------- จอเล็ก / แนวตั้ง ---------- */
+@media (max-height:600px),(max-width:1000px){ .keys{display:none} #btnKeys{display:none} }
+@media (orientation:portrait){
+  #top{flex-wrap:wrap;row-gap:8px}
+  #status{order:5;width:100%;gap:12px}
+  #clock{text-align:left;flex:1}
+  #actions{bottom:calc(var(--s) + 70px);max-width:96vw;flex-wrap:wrap;justify-content:center}
+  .abtn{min-width:64px;padding:0 8px}
+  .sep{display:none}
+  #toast{bottom:calc(var(--s) + 150px)}
+  #banner{top:148px;width:calc(100vw - 24px);justify-content:space-between}
+  #banner button{flex:none}
+}
+@media (max-width:640px),(max-height:500px){
+  .read{flex-direction:column;align-items:center;gap:0;font-size:11px}
+  .read span{white-space:nowrap}
+  .stick .cap{display:none}
+}
+#banner span{min-width:0}
+#banner button{white-space:nowrap}
+@media (max-width:640px) and (orientation:landscape){
+  .abtn{min-width:58px;padding:0 6px;height:46px;font-size:13px}
+  .abtn small{display:none}
+  #clock small{display:none}
+}
+.viewer .stick,.viewer #actions,.viewer .seg{opacity:.35;pointer-events:none}
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;animation:none!important} }
+</style>
+</head>
+<body>
+<div id="app">
+  <img id="video" alt="ภาพสดจากกล้องโดรน">
+  <div id="signal" class="on"><div class="pulse"></div><strong id="sigTitle">กำลังเชื่อมต่อภาพจากโดรน</strong><span id="sigText">ตรวจว่า Mac ต่อ WiFi ของโดรนอยู่</span></div>
+
+  <header id="top">
+    <div id="status" role="status">
+      <span class="ind" id="indMode">…</span>
+      <span class="ind" id="indLink">ยังไม่เชื่อมต่อ</span>
+      <span class="ind" id="indVideo">ภาพ</span>
+      <span class="ind" id="indArm">ยังไม่ ARM</span>
+    </div>
+    <div id="clock"><b id="timer">00:00</b><small>เวลาบิน</small></div>
+    <div class="seg" id="speed" aria-label="ความแรงก้าน">
+      <button data-v="0">30%</button><button data-v="1">60%</button><button data-v="2">100%</button>
+    </div>
+    <button class="ibtn on" id="btnKeys" aria-label="แสดงหรือซ่อนปุ่มคีย์บอร์ด" title="แสดงหรือซ่อนปุ่มคีย์บอร์ด">
+      <svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6 10h.01M9.5 10h.01M13 10h.01M16.5 10h.01M7 14h10"/></svg>
+    </button>
+    <button class="ibtn" id="btnMenu" aria-label="เมนู" title="เมนู">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <button id="btnStop" title="หยุดมอเตอร์ทันที โดรนจะตก">STOP <kbd>E</kbd></button>
+  </header>
+
+  <div id="banner"><span>มีอีกเครื่องกำลังควบคุมอยู่ หน้านี้ดูได้อย่างเดียว</span><button id="btnTake">ควบคุมจากเครื่องนี้</button></div>
+  <div id="toast" role="alert"></div>
+
+  <aside class="keys" id="keysL" aria-hidden="true">
+    <div class="grp">
+      <h4>เคลื่อนที่<small>จอยขวา</small></h4>
+      <div class="pad">
+        <div class="k" data-k="w">W<i>หน้า</i></div>
+        <div class="k" data-k="a">A<i>ซ้าย</i></div>
+        <div class="k" data-k="s">S<i>หลัง</i></div>
+        <div class="k" data-k="d">D<i>ขวา</i></div>
+      </div>
+    </div>
+    <div class="grp">
+      <h4>ความสูงและหมุน<small>จอยซ้าย</small></h4>
+      <div class="pad">
+        <div class="k" data-k="i arrowup">I<i>ขึ้น</i></div>
+        <div class="k" data-k="j arrowleft">J<i>หมุนซ้าย</i></div>
+        <div class="k" data-k="k arrowdown">K<i>ลง</i></div>
+        <div class="k" data-k="o arrowright">O<i>หมุนขวา</i></div>
+      </div>
+      <div class="alt">ใช้ปุ่มลูกศร ↑ ↓ ← → แทนได้</div>
+    </div>
+  </aside>
+
+  <aside class="keys" id="keysR" aria-hidden="true">
+    <h4>คำสั่ง</h4>
+    <div class="cmds">
+      <div class="k" data-k="c">C</div><span>ARM / DISARM</span>
+      <div class="k" data-k="t">T</div><span>ขึ้นบิน (กดค้าง)</span>
+      <div class="k" data-k="l">L</div><span>ลงจอด</span>
+      <div class="k" data-k=" ">Space</div><span>ลอยนิ่ง</span>
+      <div class="k" data-k="f">F</div><span>ตีลังกา</span>
+      <div class="multi"><div class="k" data-k="1">1</div><div class="k" data-k="2">2</div><div class="k" data-k="3">3</div></div><span>ความแรง 30, 60, 100%</span>
+      <div class="k" data-k="p">P</div><span>ถ่ายภาพ</span>
+      <div class="k danger" data-k="e">E</div><span class="danger">STOP ตัดมอเตอร์</span>
+    </div>
+  </aside>
+
+  <div class="stick" id="stickL">
+    <span class="cap">คันเร่งและหมุน</span>
+    <div class="dial"><i class="axis v"></i><i class="axis h"></i><i class="env"></i><div class="knob"></div><i class="out"></i></div>
+    <div class="read"><span>ขึ้นลง<b id="rTh">0%</b></span><span>หมุน<b id="rY">0%</b></span></div>
+  </div>
+  <div class="stick" id="stickR">
+    <span class="cap">เอนและเอียง</span>
+    <div class="dial"><i class="axis v"></i><i class="axis h"></i><i class="env"></i><div class="knob"></div><i class="out"></i></div>
+    <div class="read"><span>หน้าหลัง<b id="rP">0%</b></span><span>ซ้ายขวา<b id="rR">0%</b></span></div>
+  </div>
+
+  <div id="actions">
+    <button class="abtn" id="btnArm"><span>ARM</span><small>เริ่มส่งคำสั่ง</small></button>
+    <button class="abtn primary" id="btnTakeoff"><i class="prog"></i><span>ขึ้นบิน</span><small>กดค้าง</small></button>
+    <button class="abtn" id="btnLand"><span>ลงจอด</span><small>ลงช้าๆ</small></button>
+    <i class="sep"></i>
+    <button class="abtn" id="btnHover"><span>ลอยนิ่ง</span><small>คืนก้านกลาง</small></button>
+    <button class="abtn" id="btnFlip"><span>ตีลังกา</span><small>ขณะบิน</small></button>
+  </div>
+
+  <div id="scrim"></div>
+  <aside id="drawer" aria-label="เมนู">
+    <header>
+      <h2>เมนู</h2>
+      <button class="ibtn" id="btnClose" aria-label="ปิดเมนู"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </header>
+
+    <section>
+      <h3>ภาพ</h3>
+      <div class="row">
+        <button class="dbtn" id="btnShot">บันทึกภาพ</button>
+        <button class="dbtn" id="btnFull">เต็มจอ</button>
+      </div>
+      <div class="hint">ภาพที่บันทึกเก็บไว้ที่โฟลเดอร์ DroneCaptures ในเครื่องที่รันโปรแกรม</div>
+    </section>
+
+    <section>
+      <h3>โดรน</h3>
+      <div class="row">
+        <button class="dbtn" id="btnHeadless">สลับ Headless</button>
+        <button class="dbtn" id="btnCalib">คาลิเบรตไจโร</button>
+      </div>
+      <div class="row" style="margin-top:8px" id="camRow">
+        <button class="dbtn" data-cam="1">กล้องหน้า</button>
+        <button class="dbtn" data-cam="2">กล้องล่าง</button>
+      </div>
+      <div class="hint">คาลิเบรตไจโรได้เมื่อวางโดรนบนพื้นราบและ ARM แล้ว กล้องล่างใช้ได้เฉพาะรุ่นที่มี</div>
+    </section>
+
+    <section>
+      <h3>ส่งภาพไปสตรีมต่อ</h3>
+      <input id="streamUrl" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false"
+             placeholder="rtmp://, rtmps:// หรือ srt://" aria-label="URL ปลายทางสตรีม">
+      <button id="streamBtn">เริ่มสตรีม</button>
+      <div id="streamStat"></div>
+      <div class="hint">ใส่ URL พร้อม stream key เครื่องที่รันโปรแกรมต้องออกอินเทอร์เน็ตได้และติดตั้ง ffmpeg แล้ว</div>
+    </section>
+
+    <section>
+      <h3>การเชื่อมต่อกับโดรน</h3>
+      <dl class="diag">
+        <dt>ปลายทาง</dt><dd id="dTarget">-</dd>
+        <dt>ส่งคำสั่งแล้ว</dt><dd id="dTx">0</dd>
+        <dt>Heartbeat</dt><dd id="dHb">0</dd>
+        <dt>โดรนตอบกลับ</dt><dd id="dRx">0</dd>
+        <dt>ส่งไม่สำเร็จ</dt><dd id="dErr">0</dd>
+        <dt>ภาพ</dt><dd id="dVid">-</dd>
+        <dd class="code" id="dPkt">ยังไม่ได้ส่ง กด ARM ก่อน</dd>
+      </dl>
+    </section>
+  </aside>
+</div>
+
+<script>
+(function(){
+'use strict';
+var $=function(id){ return document.getElementById(id); };
+var TOKEN=new URLSearchParams(location.search).get('t')||'';
+var CID=Math.random().toString(36).slice(2)+Date.now().toString(36);
+var st={scale:.3}, lastOk=0, inflight=false, lastBody='', lastSent=0;
+var SCALES=[.3,.6,1];
+
+/* ---------- วิดีโอ ---------- */
+function loadVideo(){ $('video').src='/video?t='+encodeURIComponent(TOKEN)+'&_='+Date.now(); }
+$('video').onerror=function(){ setTimeout(loadVideo,1500); };
+loadVideo();
+
+/* ---------- HTTP ---------- */
+function post(path,body){
+  body.cid=CID;
+  return fetch(path+'?t='+encodeURIComponent(TOKEN),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})
+    .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); });
+}
+function cmd(name,v){
+  post('/api/cmd',{name:name,v:v}).then(function(j){ toast(j.msg,j.ok); })
+    .catch(function(){ toast('ติดต่อโปรแกรมบน Mac ไม่ได้ ตรวจว่ายังเปิดอยู่',false); });
+}
+
+/* ---------- UI helpers ---------- */
+function ind(id,text,cls){ var e=$(id); e.textContent=text; e.className='ind'+(cls?' '+cls:''); }
+var toastT=null;
+function toast(msg,ok){
+  var t=$('toast'); t.textContent=msg; t.className='on'+(ok===false?' bad':'');
+  clearTimeout(toastT); toastT=setTimeout(function(){ t.className=''; },2400);
+}
+function mmss(s){ var m=Math.floor(s/60), r=s%60; return (m<10?'0':'')+m+':'+(r<10?'0':'')+r; }
+setInterval(function(){
+  if(Date.now()-lastOk<1500) ind('indLink','เชื่อมต่อแล้ว','ok');
+  else ind('indLink', TOKEN?'ขาดการเชื่อมต่อ':'ลิงก์ไม่มีรหัส ?t=','bad');
+},500);
+
+function onStatus(s){
+  st=s;
+  ind('indMode', s.live?'ส่งคำสั่งจริง':'ทดลอง ไม่ส่งจริง', s.live?'bad':'warn');
+  ind('indArm', s.flying?'กำลังบิน':(s.armed?'ARM แล้ว':'ยังไม่ ARM'), s.flying?'ok':(s.armed?'warn':''));
+  var v=s.video||{}, state=v.state||(v.live?'live':'connecting');
+  ind('indVideo', state==='live'?('ภาพ '+Math.round(v.fps||0)+' fps'):(state==='lost'?'ภาพขาด':'รอภาพ'), state==='live'?'ok':'bad');
+  $('app').classList.toggle('vlost', state==='lost');
+  $('signal').className = state==='live'?'':'on';
+  if(state==='lost'){ $('sigTitle').textContent='ภาพจากโดรนขาดหาย'; $('sigText').textContent='กำลังต่อใหม่ ถ้าไม่กลับมา ให้ตรวจว่า Mac ยังต่อ WiFi ของโดรน'; }
+  else if(state!=='live'){ $('sigTitle').textContent='กำลังเชื่อมต่อภาพจากโดรน'; $('sigText').textContent='ตรวจว่า Mac ต่อ WiFi ของโดรนอยู่'; }
+  $('timer').textContent=mmss(s.flight_s||0);
+  document.querySelectorAll('#speed button').forEach(function(b){ b.classList.toggle('on', +b.dataset.v===s.speed); });
+  document.querySelectorAll('#camRow button').forEach(function(b){ b.classList.toggle('on', +b.dataset.cam===s.camera); });
+  document.documentElement.style.setProperty('--scale', s.scale||SCALES[s.speed]||.3);
+  var arm=$('btnArm');
+  arm.firstChild.textContent=s.armed?'DISARM':'ARM';
+  arm.lastChild.textContent=s.armed?'หยุดส่งคำสั่ง':'เริ่มส่งคำสั่ง';
+  arm.classList.toggle('armed',!!s.armed);
+  arm.disabled=!!s.flying;
+  $('btnTakeoff').disabled=!!s.flying;
+  $('btnLand').disabled=!s.flying;
+  $('btnFlip').disabled=!s.flying;
+  var viewer=s.role==='viewer';
+  $('app').classList.toggle('viewer',viewer);
+  $('banner').className=viewer?'on':'';
+  // วินิจฉัย
+  $('dTarget').textContent=s.target||'-';
+  $('dTx').textContent=s.tx||0; $('dHb').textContent=s.hb||0; $('dRx').textContent=s.rx||0; $('dErr').textContent=s.errs||0;
+  $('dVid').textContent=v.size?(v.size[0]+'×'+v.size[1]+', '+(v.fps||0)+' fps'):'ยังไม่มีภาพ';
+  $('dPkt').textContent=s.pkt||'ยังไม่ได้ส่ง กด ARM ก่อน';
+  // สตรีม
+  var ss=s.stream||{}, el=$('streamStat'), btn=$('streamBtn');
+  if(ss.running){
+    el.className=''; el.textContent='กำลังสตรีมไปที่ '+ss.target+'\n'+mmss(ss.seconds)+', ส่งแล้ว '+ss.sent+' เฟรม'+(ss.error?'\n'+ss.error:'');
+    btn.textContent='หยุดสตรีม'; btn.className='stop';
+  } else {
+    el.className=ss.error?'err':''; el.textContent=ss.error||'';
+    btn.textContent='เริ่มสตรีม'; btn.className='';
+  }
+}
+
+/* ---------- จอยสัมผัส ---------- */
+var touch={L:[0,0],R:[0,0]}, DZ=0.06;
+function makeStick(el,key){
+  var dial=el.querySelector('.dial'), knob=el.querySelector('.knob'), out=el.querySelector('.out'), pid=null, rect=null;
+  function travel(){ return dial.getBoundingClientRect().width/2*0.62; }
+  function place(node,x,y,R){ node.style.transform='translate('+(x*R)+'px,'+(-y*R)+'px)'; }
+  function setVec(x,y){
+    place(knob,x,y,travel());
+    var dz=function(v){ return Math.abs(v)<DZ?0:v; };
+    touch[key]=[dz(x),dz(y)];
+  }
+  function move(e){
+    var R=rect.width/2*0.62, cx=rect.left+rect.width/2, cy=rect.top+rect.height/2;
+    var dx=(e.clientX-cx)/R, dy=(cy-e.clientY)/R, m=Math.hypot(dx,dy);
+    if(m>1){ dx/=m; dy/=m; }
+    setVec(dx,dy);
+  }
+  dial.addEventListener('pointerdown',function(e){
+    if(pid!==null) return;
+    pid=e.pointerId; try{ dial.setPointerCapture(pid); }catch(x){}
+    knob.classList.remove('kb'); rect=dial.getBoundingClientRect(); move(e); e.preventDefault();
+  });
+  dial.addEventListener('pointermove',function(e){ if(e.pointerId===pid) move(e); });
+  var end=function(e){ if(e.pointerId===pid){ pid=null; setVec(0,0); } };
+  ['pointerup','pointercancel','lostpointercapture'].forEach(function(n){ dial.addEventListener(n,end); });
+  el._reset=function(){ pid=null; setVec(0,0); };
+  // ตำแหน่งจริงรวมคีย์บอร์ด: หัวจอย = ที่คุณสั่ง, จุดเขียว = ค่าที่โดรนได้รับ (คูณความแรง)
+  el._show=function(x,y,scale){
+    var m=Math.hypot(x,y), R=travel();
+    el.classList.toggle('active',m>0.001);
+    if(m>1){ x/=m; y/=m; }
+    if(pid===null){ knob.classList.add('kb'); place(knob,x,y,R); }
+    place(out,x*scale,y*scale,R);
+  };
+}
+makeStick($('stickL'),'L');   // x = หมุน (yaw), y = คันเร่ง
+makeStick($('stickR'),'R');   // x = เอียง (roll), y = เอน (pitch)
+
+/* ---------- คีย์บอร์ด ---------- */
+var keys={};
+function clamp(v){ return Math.max(-1,Math.min(1,v)); }
+function vec(){
+  var r=touch.R[0], p=touch.R[1], th=touch.L[1], y=touch.L[0];
+  if(keys.d) r+=1; if(keys.a) r-=1;
+  if(keys.w) p+=1; if(keys.s) p-=1;
+  if(keys.i||keys.arrowup) th+=1; if(keys.k||keys.arrowdown) th-=1;
+  if(keys.o||keys.arrowright) y+=1; if(keys.j||keys.arrowleft) y-=1;
+  return {r:clamp(r),p:clamp(p),th:clamp(th),y:clamp(y)};
+}
+setInterval(function(){
+  if(inflight) return;
+  var v=vec(), body=JSON.stringify(v), now=Date.now();
+  if(body===lastBody && now-lastSent<150) return;     // ไม่เปลี่ยน -> ส่งทุก 150 ms เป็น keepalive
+  lastBody=body; lastSent=now; inflight=true;
+  post('/api/control',v).then(function(j){ lastOk=Date.now(); onStatus(j); })
+    .catch(function(){}).then(function(){ inflight=false; });
+},50);
+
+function pct(v){ var n=Math.round(v*100); return (n>0?'+':'')+n+'%'; }
+function readout(id,v){ var e=$(id); e.textContent=pct(v); e.classList.toggle('hot',Math.abs(v)>0.001); }
+(function draw(){
+  var v=vec(), sc=st.scale||SCALES[st.speed]||.3;
+  $('stickL')._show(v.y,v.th,sc);
+  $('stickR')._show(v.r,v.p,sc);
+  readout('rTh',v.th*sc); readout('rY',v.y*sc); readout('rP',v.p*sc); readout('rR',v.r*sc);
+  requestAnimationFrame(draw);
+})();
+
+function paintKeys(){
+  document.querySelectorAll('.keys .k').forEach(function(el){
+    var on=el.dataset.k.split(' ').some(function(n){ return keys[n]; });
+    el.classList.toggle('down',!!on);
+  });
+}
+/* อ่านตำแหน่งปุ่มจริง ไม่ขึ้นกับภาษาแป้นพิมพ์ */
+function keyName(e){
+  var c=e.code||'';
+  if(c.indexOf('Key')===0) return c.slice(3).toLowerCase();
+  if(c.indexOf('Digit')===0) return c.slice(5);
+  if(c.indexOf('Numpad')===0&&/\d$/.test(c)) return c.slice(-1);
+  if(c==='Space') return ' ';
+  if(c.indexOf('Arrow')===0) return c.toLowerCase();
+  return (e.key||'').toLowerCase();
+}
+(function(){
+  var app=$('app'), hide=false;
+  try{ hide=localStorage.getItem('pdw_keys')==='0'; }catch(x){}
+  function apply(){ app.classList.toggle('nokeys',hide); $('btnKeys').classList.toggle('on',!hide); }
+  apply();
+  $('btnKeys').addEventListener('click',function(){
+    hide=!hide; apply();
+    try{ localStorage.setItem('pdw_keys',hide?'0':'1'); }catch(x){}
+  });
+})();
+function releaseAll(){ keys={}; paintKeys(); $('stickL')._reset(); $('stickR')._reset(); cancelHold(); }
+window.addEventListener('blur',releaseAll);
+document.addEventListener('visibilitychange',function(){ if(document.hidden) releaseAll(); });
+
+/* ---------- กดค้างเพื่อขึ้นบิน ---------- */
+var holdT=null, holdBtn=null, HOLD_MS=800;
+function startHold(btn,fn){
+  if(btn.disabled||holdT) return;
+  holdBtn=btn; btn.style.setProperty('--hold',(HOLD_MS/1000)+'s');
+  void btn.offsetWidth; btn.classList.add('holding');
+  holdT=setTimeout(function(){ cancelHold(); fn(); },HOLD_MS);
+}
+function cancelHold(){
+  if(holdT){ clearTimeout(holdT); holdT=null; }
+  if(holdBtn){ holdBtn.classList.remove('holding'); holdBtn=null; }
+}
+var tk=$('btnTakeoff');
+tk.addEventListener('pointerdown',function(e){ e.preventDefault(); startHold(tk,function(){ cmd('takeoff'); }); });
+['pointerup','pointerleave','pointercancel'].forEach(function(n){ tk.addEventListener(n,cancelHold); });
+
+document.addEventListener('keydown',function(e){
+  if(e.target&&e.target.tagName==='INPUT') return;
+  if(e.metaKey||e.ctrlKey||e.altKey) return;       // ไม่ยุ่งกับ Cmd+R ฯลฯ
+  var k=keyName(e);
+  if(k.indexOf('arrow')===0||k===' ') e.preventDefault();
+  if(k==='escape'){ closeDrawer(); return; }
+  if(e.repeat) return;
+  keys[k]=true; paintKeys();
+  if(k==='c') cmd(st.armed?'disarm':'arm');
+  else if(k==='t') startHold(tk,function(){ cmd('takeoff'); });
+  else if(k==='l') cmd('land');
+  else if(k==='e') stop();
+  else if(k==='f') cmd('flip');
+  else if(k===' ') cmd('hover');
+  else if(k==='1'||k==='2'||k==='3') cmd('speed',+k-1);
+  else if(k==='p') shot();
+});
+document.addEventListener('keyup',function(e){ var k=keyName(e); delete keys[k]; paintKeys(); if(k==='t') cancelHold(); });
+// คลิกปุ่มด้วยเมาส์แล้วเอาโฟกัสออก ไม่ให้ Space ไปกดปุ่มนั้นซ้ำ
+document.addEventListener('click',function(e){
+  var b=e.target.closest&&e.target.closest('button'); if(b&&e.detail>0) b.blur();
+});
+
+/* ---------- ปุ่ม ---------- */
+function stop(){
+  toast('STOP ตัดมอเตอร์แล้ว',false);
+  post('/api/cmd',{name:'estop'}).then(function(j){ toast(j.msg,false); })
+    .catch(function(){ toast('ส่ง STOP ไม่สำเร็จ กดอีกครั้ง',false); });
+}
+$('btnStop').addEventListener('pointerdown',function(e){ e.preventDefault(); stop(); });
+$('btnArm').addEventListener('click',function(){ cmd(st.armed?'disarm':'arm'); });
+$('btnLand').addEventListener('click',function(){ cmd('land'); });
+$('btnFlip').addEventListener('click',function(){ cmd('flip'); });
+$('btnHover').addEventListener('click',function(){ cmd('hover'); });
+document.querySelectorAll('#speed button').forEach(function(b){ b.addEventListener('click',function(){ cmd('speed',+b.dataset.v); }); });
+document.querySelectorAll('#camRow button').forEach(function(b){ b.addEventListener('click',function(){ cmd('camera',+b.dataset.cam); }); });
+$('btnHeadless').addEventListener('click',function(){ cmd('headless'); });
+$('btnCalib').addEventListener('click',function(){ cmd('calibrate'); });
+$('btnTake').addEventListener('click',function(){ post('/api/take',{}).then(function(j){ toast(j.msg,j.ok); }).catch(function(){}); });
+function openDrawer(){ $('drawer').classList.add('on'); $('scrim').classList.add('on'); }
+function closeDrawer(){ $('drawer').classList.remove('on'); $('scrim').classList.remove('on'); }
+$('btnMenu').addEventListener('click',openDrawer);
+$('btnClose').addEventListener('click',closeDrawer);
+$('scrim').addEventListener('click',closeDrawer);
+function shot(){
+  var a=document.createElement('a'); a.href='/snapshot.jpg?dl=1&t='+encodeURIComponent(TOKEN); a.download='';
+  document.body.appendChild(a); a.click(); a.remove(); toast('บันทึกภาพแล้ว',true);
+}
+$('btnShot').addEventListener('click',shot);
+$('btnFull').addEventListener('click',function(){
+  var d=document.documentElement;
+  try{ if(document.fullscreenElement) document.exitFullscreen(); else (d.requestFullscreen||d.webkitRequestFullscreen).call(d); }
+  catch(e){ toast('อุปกรณ์นี้เต็มจอไม่ได้ ใช้ Add to Home Screen แทน',false); }
+});
+
+/* ---------- สตรีมต่อ ---------- */
+try{ $('streamUrl').value=sessionStorage.getItem('streamUrl')||''; }catch(e){}
+$('streamBtn').addEventListener('click',function(){
+  if(st.stream&&st.stream.running){ post('/api/stream',{action:'stop'}).then(function(j){ toast(j.msg,j.ok); }); return; }
+  var u=$('streamUrl').value.trim();
+  if(!u){ toast('ใส่ URL ปลายทางก่อน',false); $('streamUrl').focus(); return; }
+  try{ sessionStorage.setItem('streamUrl',u); }catch(e){}
+  post('/api/stream',{action:'start',url:u}).then(function(j){ toast(j.msg,j.ok); }).catch(function(){ toast('ส่งคำสั่งสตรีมไม่สำเร็จ',false); });
+});
+
+try{ if(navigator.wakeLock) navigator.wakeLock.request('screen').catch(function(){}); }catch(e){}
+document.addEventListener('contextmenu',function(e){ e.preventDefault(); });
+})();
+</script>
+</body>
+</html>

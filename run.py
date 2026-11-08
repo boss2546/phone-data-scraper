@@ -17,6 +17,8 @@ PROJECTS = {
     "7": ("user_account_generator", "👥 User Account Generator (สร้างบัญชี GraphQL อัตโนมัติ)", "projects/user_account_generator/run.py"),
     "8": ("apple_scraper", "🍎 Apple Scraper (ดึงข้อมูลสินค้าทางการ สเปก & ราคาจาก Apple Store)", "projects/apple_scraper/run.py"),
     "9": ("rea_reverse_engineering", "🔬 REA Reverse Engineering (วิเคราะห์ Binary, App & Runtime ด้วย MCP/CLI)", "projects/rea_reverse_engineering/run.py"),
+    "10": ("app_store_scraper", "📱 App Store & Play Store Scraper (คลังโลโก้ & ภาพหน้าจอ 35 แอปดัง)", "projects/app_store_scraper/run.py"),
+    "11": ("pydronewire", "🛸 pyDroneWire Controller (ควบคุมโดรน FLOW-UFO ผ่าน UDP/RTSP & HUD)", "projects/pydronewire/run.py"),
 }
 
 ALIASES = {
@@ -28,7 +30,9 @@ ALIASES = {
     "market": "6", "analyze": "6",
     "users": "7", "mod": "7",
     "apple": "8", "ap": "8",
-    "rea": "9", "reverse": "9"
+    "rea": "9", "reverse": "9",
+    "appstore": "10", "playstore": "10", "apps": "10",
+    "drone": "11", "pydronewire": "11",
 }
 
 def print_banner():
@@ -93,7 +97,7 @@ def interactive_menu():
         print("  [0] ออกจากโปรแกรม")
         print("-" * 72)
 
-        choice = input("👉 เลือกเมนู (0-9 หรือ s): ").strip().lower()
+        choice = input("👉 เลือกเมนู (0-11 หรือ s): ").strip().lower()
 
         if choice == "0":
             print("👋 ออกจากโปรแกรม ขอบคุณครับ!")
@@ -126,6 +130,8 @@ if __name__ == "__main__":
             print("  users, mod          -> User Account Generator")
             print("  apple, ap           -> Apple Scraper")
             print("  rea, reverse        -> REA Reverse Engineering")
+            print("  appstore, playstore -> App Store & Play Store Scraper")
+            print("  drone, pydronewire  -> pyDroneWire Controller")
             print("  status, overview    -> ตรวจสอบสถานะข้อมูลทั้งหมด")
         elif arg in ["status", "overview", "info"]:
             print_banner()

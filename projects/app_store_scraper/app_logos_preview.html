@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎨 Digital Apps Logo Studio — 35 แอพพลิเคชัน</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0c10;
+      --card-bg: rgba(22, 27, 34, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover-border: rgba(99, 102, 241, 0.5);
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.25);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Thai', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      padding: 40px 24px;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
+    }
+    .container {
+      max-width: 1380px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #a5b4fc;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 16px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 16px 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+    }
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 280px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 12px 18px 12px 42px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: white;
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .search-box input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-btn {
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .app-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(16px);
+      position: relative;
+      overflow: hidden;
+    }
+    .app-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--card-hover-border);
+      box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.6), 0 0 24px var(--accent-glow);
+    }
+    .logo-wrapper {
+      width: 108px;
+      height: 108px;
+      border-radius: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      margin-bottom: 18px;
+      background: #1e293b;
+      position: relative;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-card:hover .logo-wrapper {
+      transform: scale(1.06);
+    }
+    .logo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .app-category {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #818cf8;
+      background: rgba(99, 102, 241, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .app-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .app-official {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 16px;
+      min-height: 34px;
+    }
+    .card-footer {
+      width: 100%;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+    }
+    .seller-tag {
+      color: #64748b;
+      max-width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+    }
+    .download-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 0.2s;
+    }
+    .download-link:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">OFFICIAL RETINA LOGO ASSETS</div>
+      <h1>🎨 Digital Subscriptions Logo Studio</h1>
+      <p class="subtitle">คลังโลโก้ทางการความละเอียดสูง 512×512 HD ครบทั้ง 35 แอพพลิเคชัน จากตารางราคาสินค้า ดึงสดผ่าน Apple App Store CDN</p>
+    </header>
+
+    <div class="controls">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="พิมพ์ชื่อแอพเพื่อค้นหา (เช่น Netflix, CapCut, ShortMax)..." oninput="filterApps()">
+      </div>
+      <div class="filter-pills" id="categoryFilters">
+        <button class="filter-btn active" onclick="setCategory('ALL')">ทั้งหมด (35)</button>
+        <button class="filter-btn" onclick="setCategory('สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)')">🎬 สตรีมมิ่ง OTT</button>
+        <button class="filter-btn" onclick="setCategory('แอปซีรีส์สั้น (Short Drama)')">📱 ซีรีส์สั้น</button>
+        <button class="filter-btn" onclick="setCategory('ตัดต่อ & แต่งภาพ & ดีไซน์')">🎨 แต่งรูป/ตัดต่อ</button>
+        <button class="filter-btn" onclick="setCategory('สตรีมมิ่งเพลงและวิดีโอ')">🎵 เพลง/วิดีโอ</button>
+        <button class="filter-btn" onclick="setCategory('ปัญญาประดิษฐ์ (AI Tools)')">🤖 AI Tools</button>
+        <button class="filter-btn" onclick="setCategory('ซอฟต์แวร์ทำงาน (Office)')">💼 Office</button>
+      </div>
+    </div>
+
+    <div class="grid" id="appsGrid">
+      <div class="app-card" data-name="netflix" data-official="netflix" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/netflix.png" alt="Netflix" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/40/c4/4940c495-d5d5-00ac-0d3b-65945eb7e4a2/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Netflix</h3>
+        <p class="app-official">Netflix</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Netflix, Inc.">🏢 Netflix, Inc.</span>
+          <a href="data/app_logos/images/netflix.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="iqiyi" data-official="iqiyi - dramas, anime, shows" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/iqiyi.png" alt="iQIYI" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ab/65/62/ab656281-15e8-b149-9390-92807ecca132/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">iQIYI</h3>
+        <p class="app-official">iQIYI - Dramas, Anime, Shows</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="IQIYI INTERNATIONAL SINGAPORE PTE. LTD.">🏢 IQIYI INTERNATIONAL SINGAPORE PTE. LTD.</span>
+          <a href="data/app_logos/images/iqiyi.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="monomax" data-official="monomax" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/monomax.png" alt="Monomax" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/ec/fd/18ecfdb9-61a1-cdf4-524e-47a8448b6688/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Monomax</h3>
+        <p class="app-official">Monomax</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Mono Streaming Company Limited">🏢 Mono Streaming Company Limited</span>
+          <a href="data/app_logos/images/monomax.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="prime video" data-official="amazon prime video" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/prime_video.png" alt="Prime Video" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/f0/ac/2bf0acc8-5fc6-44bf-13b6-9f85937ed415/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Prime Video</h3>
+        <p class="app-official">Amazon Prime Video</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="AMZN Mobile LLC">🏢 AMZN Mobile LLC</span>
+          <a href="data/app_logos/images/prime_video.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="disney+ hotstar" data-official="disney+" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/disney_plus.png" alt="Disney+ Hotstar" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/d6/4a/e8d64aa6-5c37-5335-c178-0d327afadd45/AppIcon-0-0-1x_U007emarketing-0-8-0-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Disney+ Hotstar</h3>
+        <p class="app-official">Disney+</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Disney Electronic Content, Inc.">🏢 Disney Electronic Content, Inc.</span>
+          <a href="data/app_logos/images/disney_plus.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="viu" data-official="viu" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/viu.png" alt="Viu" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/98/8f/27988f57-6509-e171-6d98-e5f54849af98/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Viu</h3>
+        <p class="app-official">Viu</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="PCCW OTT (Hong Kong) Limited">🏢 PCCW OTT (Hong Kong) Limited</span>
+          <a href="data/app_logos/images/viu.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="wetv" data-official="wetv asian & local dramas" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/wetv.png" alt="WeTV" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/4d/53/a14d53a7-5f86-6817-271f-da8498d0bff6/AppIcon-0-1x_U007emarketing-0-8-0-0-85-220-0.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">WeTV</h3>
+        <p class="app-official">WeTV Asian & Local Dramas</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="IMAGE FUTURE INVESTMENT (HK) LIMITED">🏢 IMAGE FUTURE INVESTMENT (HK) LIMITED</span>
+          <a href="data/app_logos/images/wetv.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="hbo max" data-official="hbo max: watch movies & tv" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/hbo_max.png" alt="HBO MAX" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/b3/cb/88b3cb65-9dd7-8801-bb47-affd72805a82/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">HBO MAX</h3>
+        <p class="app-official">HBO Max: Watch Movies & TV</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="WarnerMedia Global Digital Services, LLC">🏢 WarnerMedia Global Digital Services, LLC</span>
+          <a href="data/app_logos/images/hbo_max.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="youku" data-official="youku-drama, film, show, anime" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/youku.png" alt="Youku" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/2d/cc/b02dcc3e-d5f5-0a71-91b9-c0edad5d83af/AppIcon-0-0-1x_U007emarketing-0-9-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Youku</h3>
+        <p class="app-official">YOUKU-Drama, Film, Show, Anime</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="JET BRILLIANT LIMITED">🏢 JET BRILLIANT LIMITED</span>
+          <a href="data/app_logos/images/youku.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="bilibili" data-official="bilibili -hd anime, videos" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/bilibili.png" alt="Bilibili" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/bf/14/b6bf1482-be0c-3aef-2d2e-83e9b2f73ab3/AppIcon-inter-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Bilibili</h3>
+        <p class="app-official">BiliBili -HD Anime, Videos</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="BALABOOM PTE LTD">🏢 BALABOOM PTE LTD</span>
+          <a href="data/app_logos/images/bilibili.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="one d" data-official="oned" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/oned.png" alt="One D" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/23/f9/4723f916-487b-e827-274f-65e71f6cf3ff/AppIcon-AppStore-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">One D</h3>
+        <p class="app-official">oneD</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="ONE 31 COMPANY LIMITED">🏢 ONE 31 COMPANY LIMITED</span>
+          <a href="data/app_logos/images/oned.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="bugaboo.tv" data-official="ch7on" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/bugaboo.png" alt="Bugaboo.TV" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/72/3e/64/723e64d9-1f21-4ad2-b183-8001401fe76f/AppCh7onIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">Bugaboo.TV</h3>
+        <p class="app-official">CH7ON</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="BANGKOK BROADCASTING & T.V. COMPANY LIMITED">🏢 BANGKOK BROADCASTING & T.V. COMPANY LIMITED</span>
+          <a href="data/app_logos/images/bugaboo.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="true id" data-official="trueid: #1 smart entertainment" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/true_id.png" alt="True ID" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/4f/76/604f7601-879c-ea25-8ecd-0aa0ac4be782/TatangIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">True ID</h3>
+        <p class="app-official">TrueID: #1 Smart Entertainment</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="True Digital Group Co., Ltd.">🏢 True Digital Group Co., Ltd.</span>
+          <a href="data/app_logos/images/true_id.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="truevision now" data-official="truevisions now" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/truevisions_now.png" alt="TrueVision Now" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9f/bc/8c/9fbc8c78-cdaa-f7ba-2fdf-d870a17754dc/prodAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">TrueVision Now</h3>
+        <p class="app-official">TrueVisions NOW</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="TRUE VISIONS GROUP COMPANY LIMITED">🏢 TRUE VISIONS GROUP COMPANY LIMITED</span>
+          <a href="data/app_logos/images/truevisions_now.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="ch3 plus" data-official="ch3 plus" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/ch3_plus.png" alt="CH3 Plus" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/17/a3/1d/17a31d99-a08b-8c34-3c5c-21fb62bf9612/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">CH3 Plus</h3>
+        <p class="app-official">CH3 Plus</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="BECI CORPORATION LTD.">🏢 BECI CORPORATION LTD.</span>
+          <a href="data/app_logos/images/ch3_plus.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="gagaoolala" data-official="gagaoolala: gay, les, bl shows" data-category="สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/gagaoolala.png" alt="GagaOOLala" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/a6/b3/33a6b301-fbfa-9b50-d3e7-63deb5e85200/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งดูหนัง/ซีรีส์</div>
+        <h3 class="app-title">GagaOOLala</h3>
+        <p class="app-official">GagaOOLala: Gay, Les, BL Shows</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Portico Media Co., Ltd">🏢 Portico Media Co., Ltd</span>
+          <a href="data/app_logos/images/gagaoolala.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="shortmax" data-official="shortmax - short dramas & tv" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/shortmax.png" alt="ShortMax" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/9c/af/5f9caf18-7042-46c2-721b-2797b9380c8d/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">ShortMax</h3>
+        <p class="app-official">ShortMax - Short Dramas & TV</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="SHORTTV LIMITED">🏢 SHORTTV LIMITED</span>
+          <a href="data/app_logos/images/shortmax.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="dramawave" data-official="dramawave - dramas & reels" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/dramawave.png" alt="DramaWave" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/97/16/279716b1-a124-611e-04a6-911a8b845dc1/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">DramaWave</h3>
+        <p class="app-official">DramaWave - Dramas & Reels</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="SKYWORK AI PTE LTD">🏢 SKYWORK AI PTE LTD</span>
+          <a href="data/app_logos/images/dramawave.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="dramabox" data-official="dramabox - stream drama shorts" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/dramabox.png" alt="DramaBox" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/47/bf/aa47bf74-45ed-aaac-384c-57c89b28c919/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">DramaBox</h3>
+        <p class="app-official">DramaBox - Stream Drama Shorts</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="STORYMATRIX PTE. LTD">🏢 STORYMATRIX PTE. LTD</span>
+          <a href="data/app_logos/images/dramabox.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="reelshort" data-official="reelshort - stream drama & tv" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/reelshort.png" alt="ReelShort" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/d5/c1/41d5c184-935e-0040-b565-a9dedfeccbb5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">ReelShort</h3>
+        <p class="app-official">ReelShort - Stream Drama & TV</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="New Leaf Publishing, Inc.">🏢 New Leaf Publishing, Inc.</span>
+          <a href="data/app_logos/images/reelshort.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="shortwave" data-official="shortswave: watch drama series" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/shortwave.png" alt="ShortWave" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/28/da/5428da65-5eb7-06f5-6cc6-bf5763d3ac09/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">ShortWave</h3>
+        <p class="app-official">ShortsWave: Watch Drama Series</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="HALOFUN PTE. LTD.">🏢 HALOFUN PTE. LTD.</span>
+          <a href="data/app_logos/images/shortwave.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="goodshort" data-official="goodshort - short dramas hub" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/goodshort.png" alt="GoodShort" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/48/60/b7/4860b765-25ca-06fd-52c4-1369dbfad509/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">GoodShort</h3>
+        <p class="app-official">GoodShort - Short Dramas Hub</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="SINGAPORE NEW READING TECHNOLOGY PTE. LTD.">🏢 SINGAPORE NEW READING TECHNOLOGY PTE. LTD.</span>
+          <a href="data/app_logos/images/goodshort.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="netshort" data-official="netshort - popular dramas & tv" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/netshort.png" alt="NetShort" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ef/0d/42/ef0d42c6-12b6-b9f6-3d9f-d95b91cd5627/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">NetShort</h3>
+        <p class="app-official">NetShort - Popular Dramas & TV</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="NETSTORY PTE. LTD.">🏢 NETSTORY PTE. LTD.</span>
+          <a href="data/app_logos/images/netshort.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="flickreels" data-official="flickreels - ai story & drama" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/flickreels.png" alt="FlickReels" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/70/15/75701515-8eb3-776e-87b2-fc126105c912/AppIcon-1x_U007epad-0-1-0-85-220-0.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">FlickReels</h3>
+        <p class="app-official">FlickReels - AI Story & Drama</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="FARSUN PTE. LTD.">🏢 FARSUN PTE. LTD.</span>
+          <a href="data/app_logos/images/flickreels.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="idrama" data-official="idrama – short dramas & reels" data-category="แอปซีรีส์สั้น (Short Drama)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/idrama.png" alt="iDrama" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/9d/0f/9c9d0f9e-2cae-e959-677c-192772e8e654/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">แอปซีรีส์สั้น</div>
+        <h3 class="app-title">iDrama</h3>
+        <p class="app-official">iDrama – Short Dramas & Reels</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="HK Good Drama Technology Limited">🏢 HK Good Drama Technology Limited</span>
+          <a href="data/app_logos/images/idrama.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="capcut" data-official="capcut: photo & video editor" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/capcut.png" alt="CapCut" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fb/53/9e/fb539e09-8f98-9b9e-0d13-c19c2373ff2b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ตัดต่อ</div>
+        <h3 class="app-title">CapCut</h3>
+        <p class="app-official">CapCut: Photo & Video Editor</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="BYTEDANCE PTE. LTD.">🏢 BYTEDANCE PTE. LTD.</span>
+          <a href="data/app_logos/images/capcut.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="meitu" data-official="meitu: ai photo & video editor" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/meitu.png" alt="Meitu" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/7a/90/d67a903a-2889-b6de-00de-25affb157469/AppIcon-0-0-1x_U007emarketing-0-9-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ตัดต่อ</div>
+        <h3 class="app-title">Meitu</h3>
+        <p class="app-official">Meitu: AI Photo & Video Editor</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Meitu Technology Co., Ltd.">🏢 Meitu Technology Co., Ltd.</span>
+          <a href="data/app_logos/images/meitu.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="wink" data-official="wink: video enhancer & editor" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/wink.png" alt="Wink" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/ed/65/f0ed651e-8515-28eb-280b-c2a0460f7f01/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ตัดต่อ</div>
+        <h3 class="app-title">Wink</h3>
+        <p class="app-official">Wink: Video Enhancer & Editor</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Meitu Technology Co., Ltd.">🏢 Meitu Technology Co., Ltd.</span>
+          <a href="data/app_logos/images/wink.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="beauticam" data-official="beautycam-digicam&photo editor" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/beauticam.png" alt="BeautiCam" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/1f/4a/831f4a52-4d37-9ea6-41b1-ea24451edf34/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ตัดต่อ</div>
+        <h3 class="app-title">BeautiCam</h3>
+        <p class="app-official">BeautyCam-Digicam&Photo Editor</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Meitu Technology Co., Ltd.">🏢 Meitu Technology Co., Ltd.</span>
+          <a href="data/app_logos/images/beauticam.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="canva" data-official="canva: ai video & photo editor" data-category="ตัดต่อ & แต่งภาพ & ดีไซน์">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/canva.png" alt="Canva" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/f2/7b/54f27b60-a3a3-62bc-8bc7-2cf1ce516731/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ตัดต่อ</div>
+        <h3 class="app-title">Canva</h3>
+        <p class="app-official">Canva: AI Video & Photo Editor</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Canva Pty Ltd">🏢 Canva Pty Ltd</span>
+          <a href="data/app_logos/images/canva.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="youtube" data-official="youtube" data-category="สตรีมมิ่งเพลงและวิดีโอ">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/youtube.png" alt="YouTube" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/1f/1e/111f1e29-ab13-355b-4ed2-b1b97abc2200/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งเพลงและวิดีโอ</div>
+        <h3 class="app-title">YouTube</h3>
+        <p class="app-official">YouTube</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Google LLC">🏢 Google LLC</span>
+          <a href="data/app_logos/images/youtube.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="spotify" data-official="spotify: music and podcasts" data-category="สตรีมมิ่งเพลงและวิดีโอ">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/spotify.png" alt="Spotify" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/f2/6a/8bf26ab9-3ced-cb5c-a2b3-19f65e7f5cc6/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">สตรีมมิ่งเพลงและวิดีโอ</div>
+        <h3 class="app-title">Spotify</h3>
+        <p class="app-official">Spotify: Music and Podcasts</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Spotify">🏢 Spotify</span>
+          <a href="data/app_logos/images/spotify.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="chatgpt" data-official="chatgpt" data-category="ปัญญาประดิษฐ์ (AI Tools)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/chatgpt.png" alt="ChatGPT" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/3b/1d/423b1d61-1b55-0bca-d3b9-1ce597c7b4b0/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ปัญญาประดิษฐ์</div>
+        <h3 class="app-title">ChatGPT</h3>
+        <p class="app-official">ChatGPT</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="OpenAI OpCo, LLC">🏢 OpenAI OpCo, LLC</span>
+          <a href="data/app_logos/images/chatgpt.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="gemini" data-official="google gemini" data-category="ปัญญาประดิษฐ์ (AI Tools)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/gemini.png" alt="Gemini" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/06/62/300662ce-cd91-f109-8ca9-ca1517193f61/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-0-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ปัญญาประดิษฐ์</div>
+        <h3 class="app-title">Gemini</h3>
+        <p class="app-official">Google Gemini</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Google LLC">🏢 Google LLC</span>
+          <a href="data/app_logos/images/gemini.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+      <div class="app-card" data-name="microsoft 365" data-official="microsoft copilot" data-category="ซอฟต์แวร์ทำงาน (Office)">
+        <div class="logo-wrapper">
+          <img src="data/app_logos/images/microsoft_365.png" alt="Microsoft 365" loading="lazy" onerror="this.src='https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/37/d4/7c/37d47cd5-4589-dd66-d248-780f0be78127/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg'">
+        </div>
+        <div class="app-category">ซอฟต์แวร์ทำงาน</div>
+        <h3 class="app-title">Microsoft 365</h3>
+        <p class="app-official">Microsoft Copilot</p>
+        <div class="card-footer">
+          <span class="seller-tag" title="Microsoft Corporation">🏢 Microsoft Corporation</span>
+          <a href="data/app_logos/images/microsoft_365.png" download class="download-link">💾 บันทึกรูป</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentCategory = 'ALL';
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.includes(cat) || (cat === 'ALL' && btn.textContent.includes('ทั้งหมด')));
+      });
+      filterApps();
+    }
+
+    function filterApps() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.app-card');
+
+      cards.forEach(card => {
+        const name = card.getAttribute('data-name');
+        const official = card.getAttribute('data-official');
+        const category = card.getAttribute('data-category');
+
+        const matchesQuery = !query || name.includes(query) || official.includes(query);
+        const matchesCategory = currentCategory === 'ALL' || category === currentCategory;
+
+        if (matchesQuery && matchesCategory) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+  "id": "gagaoolala",
+  "name": "GagaOOLala",
+  "official_title": "GagaOOLala: หนัง Gay, Les, BL",
+  "package_id": "com.gagaoolala.app",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.gagaoolala.app&hl=th",
+  "total_screenshots": 16,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/LJ711J5ZBl4tb8wFSZ4GA1s3Er7kSAR40p2xmC1ojlielN3qNCY7y1_l70FpY5kp4OtWkZzHnvoOnz7BgE7j=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/yVv5qE9bdsfm5o4DyAzvDizp1xa_qsdeT3Ni4FKCMlBMGntZ13GliDFR69bi9nBhYIjPuLZFMJw-aoZclrtf=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/qXpxHngm5iJjjc0zzqUbBfoy0vmy1evQEnTq_674hqOE2JQY71GsWA8m25GRUIZ3AX1lz21NXlX3h_LAWA7D0Fw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/zaYotjiOCDKD8c3XmD2HZZ57-XxGZPRZ7Vah-JNVlP8MF1bp5CjKwFr41NFVSiiszIO6ojLCGeRPc65UirJzVg=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/G4ZyJCuRKLopjdeid-GA_hBBzJPcuge7hEssnxRgsdJIv6LsIQ1WMWR17RqEG7ZF_1y6zKfXylLWiS8NGH4Mxg=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/M-oN1Ct8fTGjzfyZOLSfWNCowdPZO7JD_Fjdvypu_3mbkXPtUKx5fWUm4v7f7sL0KBCKd0_2cyioWRSsQDQg8A=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/0f65LXgYjC3hCzjO8-2sEt50itLHWSdvyqukAU-kwbQoZpwVURdZlipRs6aQa8P4goqmXkf2zcO0qhsKIeyD=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/O3iqte_3eLgGFguqw_XNg5vtrymrCc8MsrYMzIaR3EIdhEUHZSp8uI7_3vmaB2K8MpWEi082waQ3xbTWDEc7LA=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/GOwMF2J2fvCAdK-SWmICFuS0kJnUt1Iikfy_dItjUQD0hypibGq7s_7gG3GUTHTfRwSRNsL-9ZviYzsLFwIQ=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/z8FxYu7zZs0kzIZhpY-IEXJA0F6ZUPs89OhS5HxcqvK62YVBqbEmYJ0nRMuMNjVJX0005NjWZq-VKOlVghxqNg=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/uMetZoqtu7dR4-XHQaMZSgHzFUkPBmawYj0xwVMRUzrys86mNY4xZXQ4yXK5w43FjipvQ7SVdnZ-qJIVHPva=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/LAdDV6dO0iIjeoVlaj6M42H-VFmYVZjeKQwSHT8zirsaTDMLg2KuVsfohbFQgyniYjE-hpe5gSGhU1J78pSmyaA=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/-ofN0B9mW1YmNVLq9jf1ejEx0ZmcUMEzR2GBp6wAEVM7kJGTq_xdbpfThGzr5hJvHsUkbGjLBQ1i5ny_gy_rdTY=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/ejVGXlByXH8epT6iPNB-TIosnjL7Z5IDVpWEOpUXBFOvQ3jO3a17qc8qneZIGoNmNS49NE3wDh4JtNp423CYvis=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/gEJ2PvFy0qZZH7C3wB8LRNVU-IRo5Usd6-t4kCwAJ5ygsT3qYZLXaqYyBnD9oEm369JDo0D4jtNgoalWwV65-g=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/gagaoolala/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/Cm6ooUFANkROhYhqYTjkfHsPIOOqzq1XcmjMqWEojk2thYsHhEavvhMFsfQxH-9UaooOaIK1URpzkVntxZHAzw=s0"
+    }
+  ]
+}

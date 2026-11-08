@@ -1,0 +1,59 @@
+{
+  "id": "bilibili",
+  "name": "Bilibili",
+  "official_title": "BiliBili - อนิเมะ HD, วิดีโอ",
+  "package_id": "com.bstar.intl",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.bstar.intl&hl=th",
+  "total_screenshots": 8,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/gDSaY2OtOL8EtDXGzrQjZPnASSAYfFljtHZqyppKRegeRIH53lYjurzJE6ZoOqPvp4RepoIoIP90OpIwAXj8FA=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/O3AVZVJaVO5Xz2310pV_NwNKnJ2w4XleQcpHBEzWFfvcV1l376r_XvjqHk5PRTa0MjnGfw75EfntjZQH6tle_A=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/jZj6Yx6JFwIFx1zMfUFdksZDXSe_LW3WZkptTaoE6sQQ5fvMLVJ1PGrGovhdhDD5S17nHsD1mLLBClfqLkxiibA=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/PGwNmmdWxjWBp1TOoKiK4NFxPCCXgAAx6Tbk6f99bfe2nB9rVR6jTYPzyzBDAm1WQkrfGbJTP_1642_5iBo-Jvo=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/m9rFtPGRqHu50CTIadATioGsJcIFGFv24alqsOa7sKpPHsUPDpwG3asfxB2oa-vvG-yH-MBPfGQ1x2FlC4qy1Q=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/V_xWHDY5Q4lDkRGsOUqkjs0zLvswOz4-wHFvkWpTw-SjkY_S-c0Bdp9XPPVstwFQMpLVY51K_FAg-J1BjszetNw=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/yBV3LX2SdlBijzLSLTgYSKXvA2_piw5t0cCaoPlygiMoW960JhzGbjefIVwKWid0NM-zo5AUa1uS1fjB3rWC=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/bilibili/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/A_wzmnwIbVQAI-iWGE7qXANsNO2e2r23zpWRwJRsm-JBIUrzB0ildkHV3VpH6akTMKn62bDlcoojRTbDXf9D3QA=s0"
+    }
+  ]
+}

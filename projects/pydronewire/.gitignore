@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Network captures (contain raw traffic data)
+*.pcap
+*.pcapng
+
+# Debug / runtime logs
+debug.log
+*.log
+
+# Captures output directory
+DroneCaptures/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code local project config
+.claude/

@@ -1,0 +1,239 @@
+{
+  "id": "spotify",
+  "name": "Spotify",
+  "official_title": "Spotify: เพลงและพอดแคสต์",
+  "package_id": "com.spotify.music",
+  "category": "สตรีมมิ่งเพลงและวิดีโอ",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.spotify.music&hl=th",
+  "total_screenshots": 38,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/_03n3Dq5utF0anGMDMNDQrxP0vETDL7XZNdpf-zvgrr5bbiLAsntLWs3tC8_pO_7XcrH7WV0RIUZNw2I9WcZXQ=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/V1ROynAX4u2Tz0_uDiYe8UKXeScKj3ybLaWqWJ60QSInyIa77cKTDRWxfvNeXXXTX6adAHF3epS7XHBUnff1ToQ=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/-lHensKxU59dPtS4OodG6pRsBuQXDgT-G_NR-_vHh4wFhToXSS3TWTzpBATDsZd7yW4LspSo2eea75uWkI_XgR8=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/Y4SM4Eo94SGGBbpFYC2V3gOvvb_2m-3QMbnBL7ue4voKTuVT8T9chPyHIrff93wIa695ppYYR3leyzzM9wFB=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/sJ2fAInTf2qFQQ8xqx_Tx80E5IwkV7M3MEmmtwNEwSY38bfn8K-veiDjQRBb94TOXJ9MfRC5WrBciJDMr-ppmFc=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/kRNMc2uSKED20ztHKWsHQLhtzA__lLOKoviFDFLspIQ58oslc2Jc6JOO-5ZZjRchG6AIfVAlHN_2DgXWn1ZvQqs=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/lYF2OqkT-qFpGGYKrWt5XvGVbORx8Kvl88FNI6BiNQ_R-Ix3VJHJdoXrP1M3jH5yF_tVr3X4IMlLTwDCN5Xc=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/NNU2F3ixpQzEDd8irS4ZLPDUTF6tduLnMr9pQ5LBfX43TbWKLCc9aJl8OISt_rIw-qNzXkrdoTZicK2mcHoXTw=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/ToFCcJvHsyRCdFFM4_BFaFfuwxN5qtWgP5hdLttPED7Uk6RiDl-o-QC-3zzUapVQi7ULR3SpBG6OrfayyYIRnA=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/_WYdqcLBCQKBv-Oup9FtV8XtBb66ZuSk8_ZU5hQ7KUSHgyw3cU6NKLvqrYtGp8JysEi_bu6vedb-8XWjSKBF-g=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/tUqP7Ky_NCMUyYKfZq-VpMBXJRS_RE07c7pjq3Af25nbmX21mdlQj3cl_emz9ITFKo9aHll3icAOrcraz59tJw=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/nj8bwV1NWF20PUGhw1kKWx4kI_a8-Q621A80Z62wkg2sxB2sBb-dAkBALdwT3FfpxG24IX7Hi1hZ55DS3emV=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/rSq85AEQlmJYL0JTJ8ueHze9cYA0DPLdPiYZCAUieBVQs2K-Z39R8zgklXTOEvvzmUMr7nF7jHE8Irmh-dO6=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/cTEfX_P9TNmeZ_a1rdB2hTIctOQFHXXURDiGv3XKmTZt5ZzUQX1ul4iwUTqQ1gapnaOjOLt7zXd2LuvoCb6l_g=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/CMF0NTdFe3NZEcmgIrRz0c3DQH8GBNFRCh6Fv2vLrxJIE_W1fbIeqdM9KUaxAKV0qlxLE8HFb00jtWVYUPT-=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/Wk6tAHLLyHES0pMfBjNb8pLjU4HS953IPbmk2Uxzx0bXt-rIdHTP0rnwwuXy6Uo2OD-y5fRz5qVNx6FoUME9PQ=s0"
+    },
+    {
+      "index": 17,
+      "filename": "screenshot_17.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_17.png",
+      "source_url": "https://play-lh.googleusercontent.com/8NSGnUGT_KYe9KK-CYOjvBLHheA410QZXPWxan5IHzrzlHDHwLceWKVRPzsgXwFET13w3esnNyl9ReEna7iwgQ=s0"
+    },
+    {
+      "index": 18,
+      "filename": "screenshot_18.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_18.png",
+      "source_url": "https://play-lh.googleusercontent.com/KIr7s9H-agB_9nkD9MRtdUnjVPEyoZhfJOS0sd75r3ER4M38hN13VsVV5UEJLVmsnMrOZKSTzqvCzAgLMiz8zDQ=s0"
+    },
+    {
+      "index": 19,
+      "filename": "screenshot_19.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_19.png",
+      "source_url": "https://play-lh.googleusercontent.com/ejL_WKHac3NVb1_jcWLuIFlRcgJYHwiXXwfOc-K7jEuj4ymzDTbeU-nB0FUUgG7Vt8fUeSog1m6VJJ9GUtmb1g=s0"
+    },
+    {
+      "index": 20,
+      "filename": "screenshot_20.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_20.png",
+      "source_url": "https://play-lh.googleusercontent.com/futERZbazS7TjIdcQiKxT9w3Y0Ecff_FLMseyhIWoHTdDFzaTiP_04Gtrnpv0bnuGHoJnp8V4_6wy63J2d5I=s0"
+    },
+    {
+      "index": 21,
+      "filename": "screenshot_21.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_21.png",
+      "source_url": "https://play-lh.googleusercontent.com/nQ3OLtOBs0JH_j0e_hHMW7MD6wiqsHpUhBQYnA2Kbc1dC3g3QdMuGt7G3qpcnNEdHR5fJroTB5boZryhiFCCjzs=s0"
+    },
+    {
+      "index": 22,
+      "filename": "screenshot_22.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_22.png",
+      "source_url": "https://play-lh.googleusercontent.com/7FW89wNwVLFHwFlGY4yeyLq54kyDUMPbp7st5Mx6OB6dcmkiiBmvPKBiY-tdcorqkvxDACKjcdLMS04E5R3P-w=s0"
+    },
+    {
+      "index": 23,
+      "filename": "screenshot_23.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_23.png",
+      "source_url": "https://play-lh.googleusercontent.com/0LzvZLcSyd7LJERKX-eW46cJsBK4qZzs245Fl370ZwnxNg6Yo2sWMneOApY4V737hMrPpQoYsmxf4ZWfah1f=s0"
+    },
+    {
+      "index": 24,
+      "filename": "screenshot_24.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_24.png",
+      "source_url": "https://play-lh.googleusercontent.com/0YeQ13O1vMKWTRlaqljFVv_gqdq8dXteEMSdux9t-JRoZ2wiZ5A0tvX7r4yEKg1w8Y1eEbzxhlxpoXO6kCz3WQ=s0"
+    },
+    {
+      "index": 25,
+      "filename": "screenshot_25.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_25.png",
+      "source_url": "https://play-lh.googleusercontent.com/aa6cWwbCH64dUgwDzQ9du74gSmF1U7eEfDTb-OFpO8BiLKoUiWrGJKLKqjomD_ELkXxBaA9dQ8y0KBQ-mAvg61k=s0"
+    },
+    {
+      "index": 26,
+      "filename": "screenshot_26.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_26.png",
+      "source_url": "https://play-lh.googleusercontent.com/qV-df-bKI2V5Hd95Or7-OovQ9_8xFd4r6Bxp-p1vAofQgVJPOae0oSqrmKLonAYmXxdPnGeY4FPzRgwotQaTtwc=s0"
+    },
+    {
+      "index": 27,
+      "filename": "screenshot_27.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_27.png",
+      "source_url": "https://play-lh.googleusercontent.com/IPjkw7JybGPr6gYAtZP1WxVPKorbDDwbec_Hjx1oEgG35n3oFY-ZChmIeFky23WZqqG35I19jFVO2WrgKAzQog=s0"
+    },
+    {
+      "index": 28,
+      "filename": "screenshot_28.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_28.png",
+      "source_url": "https://play-lh.googleusercontent.com/2qxMsl8_c57jDsrpFXza6gHH2c8WaSuMN4jV72ODhoIIKVaFkJUxGIrK0X9Y1vE4ALwRcJCYpn8YThzqaloB=s0"
+    },
+    {
+      "index": 29,
+      "filename": "screenshot_29.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_29.png",
+      "source_url": "https://play-lh.googleusercontent.com/khrxpvoLonWHB0iw2JJ3fEtwOFtDbCz-OW_cLlfIyxOvGqE5BHYqUIt1FBje9wzOROblT8dXzZg31EUTlEJc3g=s0"
+    },
+    {
+      "index": 30,
+      "filename": "screenshot_30.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_30.png",
+      "source_url": "https://play-lh.googleusercontent.com/SuCacwI-2qHDLchSKr4YgfoMaV0MN-YZIER5oRUMr3N18cFG7tpwzXJP6g4a9zNjEvlzzVcrUTu38CAixnu6e9o=s0"
+    },
+    {
+      "index": 31,
+      "filename": "screenshot_31.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_31.png",
+      "source_url": "https://play-lh.googleusercontent.com/huEFLXVarWRbTm-pbyKIf7Ol2eGaJ9xVxEkHwrXdv_ZwKC5iOuPGaaKo_T4KJ4zTTj2LlZ74-CPvd9YNJTQFVA=s0"
+    },
+    {
+      "index": 32,
+      "filename": "screenshot_32.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_32.png",
+      "source_url": "https://play-lh.googleusercontent.com/rFoXeIDjZCBMQkkN6vRBU1XKjnzgeHIxCnFsc67ERHiD-qUBOlRe3zLQPsDcF8UcPshqTeUpmftxvcCvYeK2Yg=s0"
+    },
+    {
+      "index": 33,
+      "filename": "screenshot_33.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_33.png",
+      "source_url": "https://play-lh.googleusercontent.com/QU5YJgtOILus3BAWhJWUTsEbbs32Ui22VyzQcwwZIiJ26scLP8IpV65vv_wJYxNYtpZKfOqL6QZgf4tE3Hf4Xm4=s0"
+    },
+    {
+      "index": 34,
+      "filename": "screenshot_34.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_34.png",
+      "source_url": "https://play-lh.googleusercontent.com/P_-JQnxzVUX35kVcUN5iGnngoiuo0izuOFDY1_P8QF23OQ56mCDUZRe7NHxFzWRHZtGdJ70W-BANFJfPefghBXw=s0"
+    },
+    {
+      "index": 35,
+      "filename": "screenshot_35.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_35.png",
+      "source_url": "https://play-lh.googleusercontent.com/CxRYcrCrCX-MffVdTZik8D8F5yKfsxfvAHIgGNtsW7qjkiscN0C32Yh9MrEOp0dd8IUOLx59jRMtvZzxH0iAiw=s0"
+    },
+    {
+      "index": 36,
+      "filename": "screenshot_36.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_36.png",
+      "source_url": "https://play-lh.googleusercontent.com/eVRXQpXFVQ-lCh23oZdXpArdi_cxS8f2RStut6SVkh8AvTxe0FKUvk3W7ADknRLVnYMir8n4KtGpvm2q7y6oXw=s0"
+    },
+    {
+      "index": 37,
+      "filename": "screenshot_37.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_37.png",
+      "source_url": "https://play-lh.googleusercontent.com/v1C0op3c2rzev1KMFp1dSsht2brc6gyQBmejQDwsYJbl52wlD23URW3hhcXJM38F5ylfhXIckfTn01ogAe_hsx4=s0"
+    },
+    {
+      "index": 38,
+      "filename": "screenshot_38.png",
+      "rel_path": "data/app_screenshots/spotify/screenshot_38.png",
+      "source_url": "https://play-lh.googleusercontent.com/LrA8X3klps_ivlM2kzTWqvV4rWk-cjKoAlRmOg9Q_EYWj4X0ViXA_6zOor0Ty_tDEbQ73IKFptv-KsvE3SoFpgQ=s0"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "netshort",
+  "name": "NetShort",
+  "official_title": "NetShort - ละครและซีรีส์ฮิต",
+  "package_id": "com.netshort.abroad",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.netshort.abroad&hl=th",
+  "total_screenshots": 14,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/lNJa_uixW0_n1Bon9uKuBxw7tflfgEWck-YWyI_rr4Rke0kaVbpl0ebdS-WKGEOLSJoeHMSliq3I9JhllRR5=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/CA10-d9MV68D9kzcDeLB4cqSBTyalnt-bj-w0GPQdYI4avMNOiL5l-C5EdNRWs5it_DsDIzgqYKvi_Y9JuI2iQ=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/QSB190rQDGRmTXiIMFatAwWL7qjxYSA9Ym-UOneYMpfXGsHLxxQnzSQJqpdKc4RTFreYfU4ieVLQwYKwxCno9g=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/2hxoMoc4SBErpA-2ftk3ul1pOwnT0SD7OPJDkF9UDeIeNhCVGNIov-ekwtFpUtIwRGnq6iv6IQWcvqAUwtU8c4k=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/gpW2lCESn2pCpHw3gKlYvUfqn8kmrdY4ykkuPsQIlTOKeA3g3Jje-BYMX1w21OICjFjXgPTXOAF7IEslKmyxCIY=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/ZDs28S-MEyeyqN6p9s2DzgQDG5kT9_csvRRL8BiYpc_HmMItfGwQ-tW_CjH5iaTazF4Ac6jcKYeKXC5b_0jdGIs=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/vS8rbRhkmBkoiA0BLNMUWFv_LiOd3qN_sostAr6fnB-LwbpSfv5cwAnSEGcE5eYxolQ0F8YryfRk_7odN-8aocA=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/EkNmDHtbyXqhghPV3a5yDhLKWt-Htj8Q2-zmfZB5jaxwkyhmiDXH1u_JdY54pxvrEvNh2OTFIvXw2-JT2_h8XA=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/zAETij67WwGXxjnPJa78rIohW7dBjCrWWNN36MfcPXiGFuRzNJqj8OS62SQsR1VTaOJ3pF5X1_a2c2zuzjVC6w=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/a7GgbTMQutYtF4m9Mk7fjmf_xKyVrsZS7hxCglZC-UcmBsrdmAERJYWEUgc7MgzkDqxksDZu3o3vaiBilibqf6Y=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/7XcC9MG87KdlLMUPPWK8_LMecvNNSkywTC3RiY1qLrHzgjuT_OgOOzlyC9Z7SGr8D809ov_7hsSX4IQuZukG=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/EupbtYgIFRJLvGkLELx7Z7KQ0bwxdnZYBWDH3z4_ZYmcf-eyD8hdltwwEdr3rHjCTKTaW-pqCgomH_d0Ncgxlw=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/RsQK372NRMdg2Q6R5uw1nnhupmkZjU3JZk8gmUxVQ-RF8GHDpdIyn7XMKt2S6332uKnj58Z9pnnh1WBQkt6P=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/netshort/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/Srrr7prVXrUXhac6cRF0Yz1Ip3RsnJCQcCl58UYwKqWppWXmdu52MENI-Lq3jI-O5QKk4dIaGJ0AQG01IHkVUuo=s0"
+    }
+  ]
+}

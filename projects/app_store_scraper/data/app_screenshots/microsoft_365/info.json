@@ -1,0 +1,59 @@
+{
+  "id": "microsoft_365",
+  "name": "Microsoft 365",
+  "official_title": "Microsoft Copilot",
+  "package_id": "com.microsoft.office.officehubrow",
+  "category": "ซอฟต์แวร์ทำงาน (Office)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=th",
+  "total_screenshots": 8,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/XfQdf_crB-xqW8EPAPfZ90S0cMuHeQC9fjV1Hvna3Hc5UTpigc5DDZxnRbLctD5E3OZw6mHFhoZwVnxDYWZeirA=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/UMi3Xgf7FaVDhiek3iNs0gN94213SbBGNpRf4z-_YS-dBCvcAH0YOkNUTqslEdmp7ZW2Gefu6zl7kNAVsyZu3A=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/nfwYBIDLSIHFtBkaEMx3DkDorsWAacMaN1rI_SKD0fKR7HcppVKpqddFm516zpAHi9QHohqST7U8scXs0FmHQw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/Wg7BArumlqUxl91M-qrqlVEStGkZp4frThcBlzotOg83ARCncVH72wXiXC5saMr51fZfyDUl0Cr_kpeZJmzySBQ=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/vIzMQgOjJcF2QQZHBurWaHiI3y1zbqIhboj6LNSqg4qgj25uqEibCwBrS4rSgkmEkfJyozupe6u1xJgATWUNTKM=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/Av6O5Q2GWtf4wGNit0WNKEz5T0AprRF7RK98HPxT5353Rh7DgckZx5upW3dyxF9FoIQTShpnBHNplzRLiQlreLo=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/B0JaL6Z_LwzAaMge2R10IuXoA_lU8ldpcnUthuxDYIsBvZOHKDGqAbpU_e_fQIxzCnctR-B-dOAalelKUv6-RQ=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/microsoft_365/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/Wa3b5hU-203aqcpB9J9vq2cCVLfBqAvOo54bi5YJc4zGzzoDBQl8OPV2MUMi-rTpAesNLYUwaFdqsIiNuKFmQg=s0"
+    }
+  ]
+}

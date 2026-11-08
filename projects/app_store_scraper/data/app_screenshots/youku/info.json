@@ -1,0 +1,53 @@
+{
+  "id": "youku",
+  "name": "Youku",
+  "official_title": "YOUKU-ละคร หนัง วาไรตี้ อนิเมะ",
+  "package_id": "com.youku.international.phone",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.youku.international.phone&hl=th",
+  "total_screenshots": 7,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/fFnVRfvGIgfdOcfE-4-yY5ad3U4OuXlKn7TvJGAP6OmdDaX22h1MGZakWWuUhetfUkHJX7lO9JpNaWU0uvB7=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/9QUqEIQZVamtnjdRa-YGhtOCUoBE4mk_IjjpVAEkjHnP427fOsZQ_JfBPAurj-awiAyzU7AZkwVBuLl_aYGLWE0=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/n3w6n5PAzGIXhnaNIB2_ipszKyTeCKaO-fH68VVJnLO4H22rPS6F0fHpsUvNNjD37qKJCODF6IxUox9_7iiOZw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/vXGU1dptv2ILvh7FJATWLLp4yamqiyzKPCU8vTLmMJF2YXA6tD8bY-m5T4-2yVigJxkes2qh6eaefeSb3KWcOaA=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/BPiEnIEojwltumyRHw8mEB_XCyu763eaf1QiaeVf3aZJ0QGzL2Yg7M50B9xJaUn9TV7vgYCW4VAW588nBFgAKrU=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/zSqCwJV5FUGrtQCDOCt2Em7FzXHAODB-tRgwhXXvRZnuL9yj8ZOTT4xQKsWydu1RYYnBcOfGiNHE3E5VFzoWv-Q=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/youku/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/nNRf6lqLS4606UDbWjADrxiMqsQ6OLniaGsNQdBivafJ2lqMKarCheq4lEmJ-tZlNjdtOjnduZ5qmjIR5UTm06M=s0"
+    }
+  ]
+}

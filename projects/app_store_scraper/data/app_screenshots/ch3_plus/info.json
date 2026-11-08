@@ -1,0 +1,137 @@
+{
+  "id": "ch3_plus",
+  "name": "CH3 Plus",
+  "official_title": "CH3 Plus",
+  "package_id": "com.beci.thaitv3android",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.beci.thaitv3android&hl=th",
+  "total_screenshots": 21,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/NIejwNH7EJvxPuWWP4NmeZPDGVnkmt2VUR70XmqRjOgHywChcIZQKG5_6XJYhhTx_VJ9Sj9WN5vek4ADSycCxA=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/ZRN9BDiRYkKSRNQOKraaMqoJ-zVEs0ZxPBxlZ_NCBdraAI7IKNz-Wp0l88K4m9Ww_22PXCwBTkDa7MNoF7zEeA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/wkXgXlVwy0nFop6l0tOA81vC-j_Yb5Xe1uxJ9XZCjdn2v80A7459o8PK86QSaRHEHZp1odB9WF9gaSBeVF_3LQ=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/tsJv39lbeRmKyy5vIYOiAwI-diOjOvhkVFB_BDV8uVyYtqUgGm7Dxn2bE0ClyHunEJ7WLWT1DAaDlp1Iog9D5A=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/iqItpw8WvHrw92cW7QCnwgKdF5nmFEVPCk5O01BlcEaxmucvtxgvJ_amhl6aDXlLfJFvwS8V3dFs7dp1_ZYm=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/FR5AltXDMK9R0N7msFsFU2lPnkQ_5m70YRSuYwZ6sjv-QhlR1yyXM1G0i-RMzCkL7X0E__2nBMxx7xU0g99_Kg=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/TihRh-tum5j97yf3Rl0RBhLILbpdTL42gQ7AtbIVhVqG8A1QfQfXL85tNqwI9FTZNV6qsOiM7b3yz1jyGSRIXA=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/ZpRwu1E--Yc6tnQkV0D6soD_mZSr1_MP0NytYSTX1lLMsLrAzg_rmRN5AP5DlTTtG1KkMxW-P4kIl7DxyanS=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/bsvL0ZINWjkQAuvKu54kkyRKs72b114_ZmnOBNF8MInJoMwH4dEFetQv3UDzoMiudoeHU_hk8OHAl4aM7yU4gA=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/PXuKf_98jbWU4Jex9P3ZEfgR-PJ8SxSmCLWXw99nENt_lb4AMFP3iehIYCnV_c8K5tOJ-aOzU5tFcs6nv1cJ=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/qUFtOrlXnUHYXF9V0Mu5BIZ6RTpfW5A7kHlRZauMypbQHUhCy4zTmoYqMltmycSAHRB4GQjT_tRqDQy22De-GA=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/t3UbbzVL4-UX0PX7lcQEP5Rv_yGA54iGdvEMEHnD6TcnY4lIJdSZ7wKj8pjCxa00AkS6p_Ak03_MvU-BF6xYXq8=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/-Fw2-2rDQjzz5rALOBi2UO0qrBLu67KfeMh43Ub-nB6giFGCLwrIISP1QMBk7U2y7ByCqhrxp_MQ5F_-J-xtHA=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/qoAmvRtITyi4R30JFNcNYa_UCOTWZN3jW2Z2_VmII1KmBWcO5AiDH-nu2XDgkanaqO5noEVzcy983YvEt0yi=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/r3cA_qnxHedHDf-eb9nkh5o0d4GGPlHUZ-cEHn1TGZOb0XPFjc33X567lj-LZjTguDoVxOWBnOlTsfE16Kdv=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/zEyYvPof1oEb4xcwC0v52y_LAPwBE1HzDFi16p8xGiYKiVNlHH6lPyy25Zd5FzLcKvE25etW4SCgmBWtpsIToA=s0"
+    },
+    {
+      "index": 17,
+      "filename": "screenshot_17.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_17.png",
+      "source_url": "https://play-lh.googleusercontent.com/aesrcjdCT3YZZvAxDf8O02p1A6Ryq6c9lDuaI_xKc5PwMbawIOJbBIn37fnjvVLcBIbOLaDYa6RjMgX5YlkN=s0"
+    },
+    {
+      "index": 18,
+      "filename": "screenshot_18.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_18.png",
+      "source_url": "https://play-lh.googleusercontent.com/fk9rklE7x8pxVAzD5-Jq_WPdX4Ei8rr9tyo20Lm-BGPgyZPdUvtNBkUUUneTJGRznxDD1DmY2lVAtFTpIwrK=s0"
+    },
+    {
+      "index": 19,
+      "filename": "screenshot_19.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_19.png",
+      "source_url": "https://play-lh.googleusercontent.com/2Qn4IOgn80BNZmq2cW3j8T4zeysjCjc-xRf-dt-gK0YIk6tY5T3ZLueZwJbcjtisXuIH7d_5AYOW9rKyeT-NwA=s0"
+    },
+    {
+      "index": 20,
+      "filename": "screenshot_20.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_20.png",
+      "source_url": "https://play-lh.googleusercontent.com/y-0Uy9FV2wevneCt3jMIpSmkMVd4bengrVvFUXPJ3ShSe6PjX_U0VLmS267YVwfW9RuOymCWDAyH9FqIAXyQ=s0"
+    },
+    {
+      "index": 21,
+      "filename": "screenshot_21.png",
+      "rel_path": "data/app_screenshots/ch3_plus/screenshot_21.png",
+      "source_url": "https://play-lh.googleusercontent.com/IkkHQ5xO_y25SJgsNpFkk-7ivz5cbgBRjF421yOMbw4vpOKg5GvOs0zFxUVn6SxdTFg7cjfZgc4a3Nf4hdaEsg=s0"
+    }
+  ]
+}

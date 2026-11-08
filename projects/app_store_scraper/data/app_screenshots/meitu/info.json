@@ -1,0 +1,59 @@
+{
+  "id": "meitu",
+  "name": "Meitu",
+  "official_title": "Meitu เหมยตู แอปแต่งรูป วิดีโอ",
+  "package_id": "com.mt.mtxx.mtxx",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.mt.mtxx.mtxx&hl=th",
+  "total_screenshots": 8,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/SP3YYo527XahEpLRQoB1gNs92gGRGJtTUy6wnAHAgZUrJMG-YDBWb2JojY24G5e5Fj6iXzIemWlNHtRF9iA=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/CYKyOUhSm1MQiOjraPIhyamKGRXE_4QYUDPrNboZ9ut8NBITsrGNHZHgsxnlwhs8v4VVJY5caZEBn27qggQRvw=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/JmhEWEHHCRsdgf_mE8nHiD95a1ohVnt5ogCVNi4qs2mud1rnkK_UxKVyJZnfrZRM59AnxWwD8iF9HtquS2T4dw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/zi4satMnSxqylbOYeCN0QpxLYTRSVet6FJs15w4VnxmwtNt9XNI4yL9MByrN7zOh0ZR3PKS-j575Y8U3Zx8THA=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/3kwwcYQ-9Rq2wnHZSI3a7GhyVv8T-a3JyIezjpJYBaN1a-F-9K67ixsWm1RDQhXnGiEBKZaU45DCL_qozIDhVLM=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/I2lxF85fSLrAipOOX1lrfbnIMo7gnt-7zMTIKJRPwyv5ScAxzENs-N6XQiQJBlhaUNfolYSWLxEPrlHJNaOdqQ=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/PHJUfm8PZ3FRoZThUeFm_WP60fGe6DCEJDnCYnMCUYQaEJfrUSbKE5n3JitI7DacEaJWOZq5IMxmMzRE2IRfDC0=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/meitu/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/_5aovvDtwO_NM807z9LbxAxLcUv02Stq4-BZYsMseUUJca8cUNZarjYmlpig4PHR7_w5Z2rLkNXfhEaLHsnj=s0"
+    }
+  ]
+}

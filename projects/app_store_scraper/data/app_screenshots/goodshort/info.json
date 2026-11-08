@@ -1,0 +1,47 @@
+{
+  "id": "goodshort",
+  "name": "GoodShort",
+  "official_title": "GoodShort - ศูนย์รวมละครสั้น",
+  "package_id": "com.newreading.goodreels",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.newreading.goodreels&hl=th",
+  "total_screenshots": 6,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/goodshort/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/A_KQsq6asXfv8sEUoQU_qu39M_Nq3J02SOHqLkH7nBoVb5cwuS0IZkWodTiEjopVIbsc44YrN6SGmEzvqzbkq-o=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/goodshort/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/MKLX2scwAlJmZi6Lf7wlGpNeuXjEwNGkAAMWeUxvDmz53eVGPBMT-wcx7C8RAXWoP1G9f05rNbByM2zJLOdLXA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/goodshort/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/A8eX0mNe9z98B3HCRV42AxklHdKjV4aPYA0DuUuqHlC7h7I1ZVd_JaDOsyCsMoAJZpJnjRulGgyMkCCoeuSAzw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/goodshort/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/LxLohD9WjZL5lKCHI2olUY4fILbmeq7B03GAFSF2orLsUCtW6POEtrZL8swROAj0qWzOQ4JBOJwjB59kkskFSas=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/goodshort/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/UQ0Y96LImvgybeBzt_n2bOAEcXhrj30JDoLyWVBKkFEjrzHckxPhX-ebGKyZO8AHhLuLpCLMr19ehI8VFMfQjgs=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/goodshort/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/A2AT1yONGAHz9ksMpBCJX72oulZ_OFTzvOr17n-81xtca_S-vCPElOLVx6CFXh0onog28rkSgtU0BbJd24mDlxY=s0"
+    }
+  ]
+}

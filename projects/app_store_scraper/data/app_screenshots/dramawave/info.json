@@ -1,0 +1,53 @@
+{
+  "id": "dramawave",
+  "name": "DramaWave",
+  "official_title": "DramaWave - ละครสั้น &amp; รีลส์",
+  "package_id": "com.dramawave.app",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.dramawave.app&hl=th",
+  "total_screenshots": 7,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/cFKTEmmfHn6g_GxsnYiCm7gvarcqfdqyyC-WLWL3KaBCAKfmf4i1QjMcHwEV1SWqrzuqAN3h9QfxxT5pF04VGf4=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/_dkYpaR-V42-A5_YRC9UIfg4dEIJDXldC9EbubyPJMY9kh8bOJX-hNwjczQ1a4ULedM-VjgJYoK-OWP2PX8S8g=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/xSxPtQAdkhehWtL4pFOxwzzoQEDLk84SPN2E8k02S68l5cCNHmddeLWOrgZzUL9bVth6OKUe_pls9BOjQ9vwfMk=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/5GBJURHt_3kHjJAr_6z5mC_lqpXYpQeFGJRG0D3cBhyvwlpPFqKUAWnu3tRZAeu8GKn8lI3DWiafa_GRy4YI=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/lMOkD-RJeZ13k8mOt0R0PneJMeOot29C9NeXqbKAK0ZDoeeMdvynvso2N5wVzFJkFmPuH17XIOAuPjppFuDqiQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/4iwS2gHzkLrfi7flZoQVFSQKqPXQOzdLsHVNTmHGCzLfaeqAQPDwu6aU2JQADcC_l7cG5iOYnveyawRQe9Zo=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/dramawave/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/DDRqrOVMhOtT2FXcBnvRjcTaH83k4NCpRHUjgLU48ZCnlyMGg9ULeuSXDyWf7Qc7XaVr9bCXLXq1htSFFEABYi0=s0"
+    }
+  ]
+}

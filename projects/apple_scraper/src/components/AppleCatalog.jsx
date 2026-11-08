@@ -183,24 +183,27 @@ export default function AppleCatalog({
             <h2 style={{ fontSize: '28px', fontWeight: 700, margin: '0 0 6px 0', letterSpacing: '-0.5px' }}>
               Apple Store Official Catalog
             </h2>
-            <p style={{ margin: 0, fontSize: '14px', color: '#86868b' }}>
+            <p style={{ margin: 0, fontSize: '14px', color: '#424245' }}>
               ข้อมูลสินค้า สเปก ชิป ราคา และรูปภาพทางการส่งตรงจาก Apple Store Thailand
             </p>
           </div>
 
           {/* View Mode Toggle */}
-          <div style={{ display: 'flex', backgroundColor: '#f5f5f7', padding: '4px', borderRadius: '12px', border: '1px solid #d2d2d7' }}>
+          <div style={{ display: 'flex', maxWidth: '100%', overflowX: 'auto', backgroundColor: '#f5f5f7', padding: '4px', borderRadius: '12px', border: '1px solid #d2d2d7' }}>
             <button
               onClick={() => setViewMode('color')}
               style={{
+                minHeight: '44px',
                 padding: '8px 16px',
                 borderRadius: '8px',
                 border: 'none',
                 cursor: 'pointer',
                 fontWeight: 600,
                 fontSize: '13px',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
                 backgroundColor: viewMode === 'color' ? '#ffffff' : 'transparent',
-                color: viewMode === 'color' ? '#0071e3' : '#6e6e73',
+                color: viewMode === 'color' ? '#0071e3' : '#424245',
                 boxShadow: viewMode === 'color' ? '0 2px 6px rgba(0,0,0,0.08)' : 'none',
                 transition: 'all 0.2s',
               }}
@@ -210,14 +213,17 @@ export default function AppleCatalog({
             <button
               onClick={() => setViewMode('product')}
               style={{
+                minHeight: '44px',
                 padding: '8px 16px',
                 borderRadius: '8px',
                 border: 'none',
                 cursor: 'pointer',
                 fontWeight: 600,
                 fontSize: '13px',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
                 backgroundColor: viewMode === 'product' ? '#ffffff' : 'transparent',
-                color: viewMode === 'product' ? '#0071e3' : '#6e6e73',
+                color: viewMode === 'product' ? '#0071e3' : '#424245',
                 boxShadow: viewMode === 'product' ? '0 2px 6px rgba(0,0,0,0.08)' : 'none',
                 transition: 'all 0.2s',
               }}
@@ -228,9 +234,9 @@ export default function AppleCatalog({
         </div>
 
         {/* Filter Pills & Search */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', maxWidth: '100%' }}>
           {/* Category Tabs */}
-          <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '4px' }}>
+          <div style={{ display: 'flex', gap: '8px', maxWidth: '100%', overflowX: 'auto', paddingBottom: '4px', paddingRight: '16px', scrollPaddingInlineEnd: '24px' }}>
             {categories.map((c) => {
               const active = selectedCategory === c.id;
               return (
@@ -241,6 +247,8 @@ export default function AppleCatalog({
                     display: 'flex',
                     alignItems: 'center',
                     gap: '6px',
+                    minHeight: '44px',
+                    flexShrink: 0,
                     padding: '8px 18px',
                     borderRadius: '20px',
                     border: '1px solid',

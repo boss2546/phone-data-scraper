@@ -1,0 +1,83 @@
+{
+  "id": "true_id",
+  "name": "True ID",
+  "official_title": "TrueID: ดูทีวี ซีรีส์ หนัง",
+  "package_id": "com.tdcm.trueidapp",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.tdcm.trueidapp&hl=th",
+  "total_screenshots": 12,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/gqKSLdn2xP-wzG6Rf4hbz86l8WvCrISy0-NgMBew3JeSnS1J9njhXC4GmmFWTnJbxGFmt_wIP6RmA7MUzPXF=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/30IoFNANswlKT3RE7vHxkG0hhAtKxyMrii5PKSO5eKnleWNz67c29YJeDsQltGjkIaA2ptmFDFxyxWCq5WecHA=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/9zk3tW8VNw9Ec-5KIK3G3GSffb88syI1P8fFEWn6uxEGAvgPUD6D4h64rb9zAYylq5MhffXkGS71qiOUBrkInQ=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/Myc35i5xmW4wqQODH6gOOo6m9-ekY7lfB_2nF1hL6Imjsp-gmd_eSB2YKKpu3GnkSv5JQfoM0OgslYlfkf5Qig=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/aFgJ7QEt7lV-mLoV3sul8luQwX3HACqQOTmBKkJjbS9msVL-oRzF3eCRjW7U3OeJrho_hkSZSv3hhmsmo1YN=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/gMCEPjddBjEMJ5a7k_u5fe8HmdF4q3V5S4xTZaGtjycvZsbg8S-P3UIErcUxejYYBdVHFbdmWjH23LKN_YPk=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/sRDWd3QLQgeJh7FK-mAI75HwQ5aNpC2MIMFSRaF7fOzKVdOrxRzDsUSOrviU_YOBR3iBP8yVFN-16avtL4Gzug=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/IgBZ7xgZn4_n0bbMGxzsYBYtQpy9ZKP5UIG2BXshWjdd9eaaNhZWmJG8ROV7quON-ZepuGMHIcJ61Aej2aSh=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/65cpYovDxT35-_ak2LYhABoNpg4Aw5EG1bhVTwkr8exYXh5iJ7cWL2n8YldXapQCWH4zNz3TcujflJFvh71p=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/XvpuN4ALL-w_caGYFK86lbngn0Qlo3icvsyS5dqBO4duid-8TEwDN_dieazEFPbcAu1yt49YdC5W5pxZzWAmgA=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/-i195YPQ75xC8wPt30H6eu7bNcQm_ZxKqy61Z1AMTdJclM980aXDYEbEkxDv_sp6douoxuNjgFs8K4yAjcq9BFo=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/true_id/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/-Fm4PwbZfkqMdpZcq7eKytDm6H6_w58s4V4NwwT8pj_xR41Iu3QYMdJ8Tnk8uknm7L4bE4MfwR_uS2YhnHg6dg=s0"
+    }
+  ]
+}

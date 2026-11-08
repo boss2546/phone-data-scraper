@@ -1,0 +1,47 @@
+{
+  "id": "shortwave",
+  "name": "ShortWave",
+  "official_title": "ShortsWave: ซีรีส์สั้นยอดฮิต",
+  "package_id": "com.shorts.wave.drama",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.shorts.wave.drama&hl=th",
+  "total_screenshots": 6,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/shortwave/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/_-RqISmexRBgHdtCzptmZGO5nIw2fPTPZ230YUIhB5P13AGhmM0AUmz_swwkbvlP463xoJbvWWh3KU6Cb6dd=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/shortwave/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/7466upDNk9KNrvKief72dWHBi2LmRSIE7PAoqCcwF4-SGAkds3HV3SX2TayNIJda1fkQFUh4AKXt9oAnjv1sow=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/shortwave/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/k34p0xXSjXsYkAp0rMbI8I3fYspBqo93fRu-pO3_Lp-CfwNoIaxGKL7l-0JAaA38peIlXbq24k_gT-oKGtd6cg=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/shortwave/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/7Jh3Hc39qnGktNWc0t3jq4s6c1E0ZneqDsVBZvRumVkHWtu7UTGdnwtEDdkujsmzTbwiTppSvjJ73fLpByQq=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/shortwave/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/LrYB0rEqA_KSx95VbgksGa8o4Owc0t5zSuKwoIPf8heIIgCpjnm1eA03N_N9NSw4SkOhWk8E7OqjYjq6DRfR_EM=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/shortwave/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/T1IfZtuo7_4xPl9wgXyOsk0mLqNHNv97Gyqa7RIlg-P8raQyX01CGFIxx9-teRAFVAVW0tqh0gTOwvn_Q0Oovw=s0"
+    }
+  ]
+}

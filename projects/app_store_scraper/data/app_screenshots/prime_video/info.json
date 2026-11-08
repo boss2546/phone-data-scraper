@@ -1,0 +1,107 @@
+{
+  "id": "prime_video",
+  "name": "Prime Video",
+  "official_title": "Prime Video",
+  "package_id": "com.amazon.avod.thirdpartyclient",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient&hl=th",
+  "total_screenshots": 16,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/LvtquXX8fAzs_YewT0L2tXwo5mK4bYb57X28c3-npaez8zNQcMRUjvcgALfXHNhZ7CVUGFPZZMhWEx2Ir380Wg=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/vYIROhWlrAtOYCt9kOF5K6Tt8otgbQ9tj1yGkNMoRnP7CjOlHw1IKoZ1a-AHNXLC9XcM0q4kEXyMFDlh3n09Vik=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/P_WitdaufjfUGKs0ARfbdHB9x9rBqKJUwREqSQhRnXPrIJDHmGKMA9r1ERFak41lQJKYD6V8bjyGBITlPgB1Kw=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/5oEhPi68SAikZ0XQWovT9KGvQ0dZbywwIiV4UGQUj7OjTEZIzEtQyxAvkaW8RziBZsV99LHx3yfwfQ1KcwUeyA=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/JFTOZIDSm4OQ24WyABtdjIvNS1qlXjg7GpFj2Pkl6OgAi17i6FWsz8796RmQewbZX4ltOUyfCN-PaJaWQUnaGLY=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/e_F9XmZdUXsWfgNSJ1msIOyVgsTE_RM_Dpm76Q6O_v1MbIw0EjLK7wm-KzbIh0Yqg1SCCI6Aq4XWptfIvuyJY00=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/y5V-TuVDZpzWeDwNmEuLIMnjei4PRNzAu_uzEz2EYRkKXfVpsoYsrHy9tsfDEMOmpQcGn0wSymlMzEQzOWgIIw=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/pUh-C3V9iN8D9mNO6aj8oJsgwRjwoDEPTDJlVLsRAla9UFRcpVGYqhebmT6y4p36qFxa5TwnL-c-_IBR38C69J8=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/JMiHqBB1JV7YS0Uw4QRaRFPIVk-HbaU2HFqlUNfnlwI_czzuABWH8YnLIz32uEg1MZRDAtdTAuwE4yI2O3w-=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/tzAkVUwDujovnt-8peUyttCYCEUp0rEcnTv7ULTGoal1Wz1MdZoOqMcT3PPgB6I6qkaOeooTh5CvM9wQ6mOIaHo=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/jRcFoLEQ9fbkLwmW228QQZfxm2Qp824GiknLn_g0g4OBRzl_9ywbnwldGiRhztmXW9FxZe0HfAMaD2Nu_96K=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/zEs22TGxSgVYjzvoXomgzzRwIxrhLV5hUD9gj2P25O3gK6ZFvbwkwwGWsBCznr5pPAerstUH6PwpzaoZD-IKmQ=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/sXEtNyc75VvHVItjtn7g7z3ITLL4p2c4ELhzMzb_ll0oCuphMfDOO2lgZA1kFGcGEptpDytYQ1WIePYXoCsKug=s0"
+    },
+    {
+      "index": 14,
+      "filename": "screenshot_14.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_14.png",
+      "source_url": "https://play-lh.googleusercontent.com/86g3g632Rs2LgyxYiuGSYydzFTNGB3Orcy0p9cgaPF9UQRbWya27UW_X81G7YpnwWoE6IKCjG-tAMW0RKkbQmg=s0"
+    },
+    {
+      "index": 15,
+      "filename": "screenshot_15.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_15.png",
+      "source_url": "https://play-lh.googleusercontent.com/P-q6GCov0Ew6iE0dIwymBzZtCkZ6bP_nEegMj5nGLxaFsKou5L4lD_SW2q6xRTAi8nILcw3FFLt7vPxcIpluCiY=s0"
+    },
+    {
+      "index": 16,
+      "filename": "screenshot_16.png",
+      "rel_path": "data/app_screenshots/prime_video/screenshot_16.png",
+      "source_url": "https://play-lh.googleusercontent.com/2GJGHHmZBDPcxh0Xwoyo5CDx5aSPlTGRNvqd1APAngHFTwbk-V19HsbWPQ5SBWmlUmVvXqm7R3yuxNbPr5YH=s0"
+    }
+  ]
+}

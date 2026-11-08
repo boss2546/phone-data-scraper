@@ -1,0 +1,89 @@
+{
+  "id": "monomax",
+  "name": "Monomax",
+  "official_title": "Monomax บริการดูหนังออนไลน์",
+  "package_id": "com.doonung.activity",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "playstore_url": "https://play.google.com/store/apps/details?id=com.doonung.activity&hl=th",
+  "total_screenshots": 13,
+  "screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_01.png",
+      "source_url": "https://play-lh.googleusercontent.com/tJbxhxIFy3KcqcUlfEfQkXOYBRMJmoZc1em5WmIYEouY-bJouUErkwHwnzOoN2yGZIBqjNIwa9KjCNJ5nTvwyw=s0"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_02.png",
+      "source_url": "https://play-lh.googleusercontent.com/tWWpi8HW9WQRsRSJm4d3D6BwRHx5AY5hpgznmMEvvVdLXTxa2TkjXgvX-rA5Gk5W5GI6CteayjsdIp53XhSm5w=s0"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_03.png",
+      "source_url": "https://play-lh.googleusercontent.com/7RjizovUY_1RN3IhaKvktfbhtzWcBYQUHxy0u020X_4dx-9VhHBbSFkBCxJ1lvA0TOvjHS6GCzMXFOY1xOickA=s0"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_04.png",
+      "source_url": "https://play-lh.googleusercontent.com/4LmCUOdMH7X49P05nIfUwJUsVNA29uTpqIKoTrDreGvcvRBK27OIvBJHS5AphXbRXUOV8SktZzT8ZB5U12AM=s0"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_05.png",
+      "source_url": "https://play-lh.googleusercontent.com/eKyCm8QFkfzwuVy3HfHjWkoSye0nFtTfdHvVCN3Cqn-3gm-yqvOQpemEx4jV53k8LzqAOYZg8VKLFSaqwxmfWQ=s0"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_06.png",
+      "source_url": "https://play-lh.googleusercontent.com/npaBA6PR0Xu6_OVo_xkZa381PgQrMvh-DnwV2r3eMivBqMvdJ9oT3CWXs6NYXTTRR_xaFJx3uww9PWSACqhMpA=s0"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_07.png",
+      "source_url": "https://play-lh.googleusercontent.com/L9ja3M5SmFVSvXnUcUN0LQHJ1Uyt3hVRMh4HUeHJ-4QCUxgc5SPP98PKsN8zINiL6OV_X86HqcklQp4svPeltw=s0"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_08.png",
+      "source_url": "https://play-lh.googleusercontent.com/6LMZ7EKXgFHZ4NAcPrb0Un5CWeSMXjIaQUmxeFTTqtJRVoY8cHPnWy0g0Opsswv5WSTwcFn4P_TqOZ2aeH50bQ=s0"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_09.png",
+      "source_url": "https://play-lh.googleusercontent.com/fAiclEYX0dO3toHythsnCTwNzIaECE45XCixre119VQnibsRIi9e7Elzx2dcTC1cm9oVMLhQgSMZavKScQUFefc=s0"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_10.png",
+      "source_url": "https://play-lh.googleusercontent.com/O-y-kHGcosEIbCiC9rbqhhCt68Qvg2et98z9rJE6WfdFf_u64SZ6Gz8kArk12YwEOoiE-4P9kq_BOy87xp-BYg=s0"
+    },
+    {
+      "index": 11,
+      "filename": "screenshot_11.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_11.png",
+      "source_url": "https://play-lh.googleusercontent.com/t54rxntrULw_LKd47u6bzIlyakJMPUj625lwJAHkO_W7LfysTNXP3f3VPrnD0dVshL78xt8jrztXzsSTshjoLw=s0"
+    },
+    {
+      "index": 12,
+      "filename": "screenshot_12.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_12.png",
+      "source_url": "https://play-lh.googleusercontent.com/MgEF-CMjywXTC7y2GKJVwTcjLHCUho3ogTix64Wggh44hPAgXr6AICjovH4xgclMoClsDjwongr-0aMYSOnN_w=s0"
+    },
+    {
+      "index": 13,
+      "filename": "screenshot_13.png",
+      "rel_path": "data/app_screenshots/monomax/screenshot_13.png",
+      "source_url": "https://play-lh.googleusercontent.com/wOvLbVuKUdQPNueS0o4GOwavL-8uthGBehQ6VZAQhhBxp_Ck8GHnZi0t4x-zmf1g8fVn6SgPx3BIEko28TSnkg=s0"
+    }
+  ]
+}
