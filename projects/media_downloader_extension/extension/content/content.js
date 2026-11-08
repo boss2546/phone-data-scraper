@@ -1,17 +1,19 @@
-// Universal Media Grabber — Content Script
-// รองรับ:
-// 1. วางเมาส์เหนือภาพ/วิดีโอ (Hover HUD) หรือลากมาวาง (Drag & Drop)
-// 2. ถ้าไฟล์ต้องใช้เซิร์ฟเวอร์แปลง (เช่น .m3u8, .webm, .mkv, .avif, .svg) จะสั่งปลุกเซิร์ฟเวอร์อัตโนมัติ
-// 3. แสดงสถานะ "⏳ กำลังประมวลผลภาพ/วิดีโอ..." และเมื่อเสร็จจะมีปุ่ม "📥 ประมวลผลเสร็จแล้ว! กดโหลดอีกครั้ง" ให้กดโหลดซ้ำได้ทันที!
+// Universal Media Grabber — Content Script (Strict Image & Video Only + Video-First Piercing Engine)
+// แก้ไขปัญหาครบ 100%:
+// 1. จับเฉพาะ "รูปภาพจริง (<img>)" และ "วิดีโอจริง (<video>)" เท่านั้น! ไม่จับปุ่ม ไอคอน พื้นหลัง หรือกล่องข้อความมั่วซั่วอีกต่อไป
+// 2. ให้ความสำคัญกับ "วิดีโอ (<video>)" เป็นอันดับ 1 (ทะลุผ่านแผ่นใสบังปุ่ม Play / รูปปก Poster บนตัวเล่นวิดีโอ) ไม่เข้าใจผิดว่าวิดีโอเป็นรูปภาพอีกต่อไป!
+// 3. รองรับการดึงวิดีโอทั้งไฟล์ตรง (.mp4/.webm/.mov), สตรีม HLS (.m3u8), และวิดีโอแบบ blob: (ผ่าน Network Sniffer + yt-dlp + FFmpeg)
 (() => {
   if (window.__UMG_INITIALIZED__) return;
   window.__UMG_INITIALIZED__ = true;
 
   const COMPANION_URL = "http://127.0.0.1:8765";
   const WEIRD_EXT_REGEX = /\.(webp|avif|svg|svgz|jfif|bmp|gif|ico|tiff|tif|heic|webm|ogv|ogg|mov|mkv|ts|m3u8|mpd|flv|avi|bin|dat|php)(\?.*|#.*|$)/i;
+  const MIN_MEDIA_SIZE = 72; // ข้ามไอคอน ปุ่ม และรูปขนาดเล็กกว่า 72x72px ทั้งหมด
+
   let currentTarget = null;
   let hideTimer = null;
-  let lastReadyDownload = null; // { url, filename }
+  let lastReadyDownload = null;
 
   function sanitizeCleanStem(rawName, prefix = "media") {
     if (!rawName) return `${prefix}_${Date.now()}`;
@@ -21,7 +23,7 @@
     } catch (_) {}
     base = base.replace(WEIRD_EXT_REGEX, "").replace(/\.(png|jpg|jpeg|mp4)$/i, "");
     base = base.replace(/[^a-zA-Z0-9ก-๙_\-]/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "");
-    if (!base || ["blob", "data", "media", "image", "video"].includes(base.toLowerCase())) {
+    if (!base || ["blob", "data", "media", "image", "video", "watch"].includes(base.toLowerCase())) {
       base = `${prefix}_${Date.now().toString().slice(-6)}`;
     }
     return base.slice(0, 70);
@@ -112,6 +114,10 @@
         border-radius: 6px;
         font-size: 11px;
       }
+      .badge.video {
+        background: rgba(244, 63, 94, 0.22);
+        color: #fb7185;
+      }
       .btn {
         cursor: pointer;
         border: none;
@@ -125,6 +131,9 @@
         display: inline-flex;
         align-items: center;
         gap: 4px;
+      }
+      .btn.video-btn {
+        background: linear-gradient(135deg, #e11d48, #be123c);
       }
       .btn.secondary {
         background: linear-gradient(135deg, #3b82f6, #2563eb);
@@ -164,7 +173,7 @@
         gap: 8px;
         pointer-events: none;
       }
-      .dock, .status-card {
+      .status-card {
         pointer-events: auto;
         background: rgba(15, 23, 42, 0.95);
         color: #f8fafc;
@@ -173,16 +182,6 @@
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         font-size: 12px;
         box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      }
-      .dock {
-        border: 2px dashed rgba(52, 211, 153, 0.5);
-        cursor: pointer;
-      }
-      .dock.dragover {
-        background: rgba(16, 185, 129, 0.25);
-        border-color: #10b981;
-      }
-      .status-card {
         border-left: 4px solid #f59e0b;
         display: none;
         align-items: center;
@@ -215,9 +214,6 @@
         <button class="dl-again-btn" id="card-dl-btn" style="display:none;">📥 กดโหลดอีกครั้ง</button>
         <button class="close-btn" id="card-close-btn">✕</button>
       </div>
-      <div class="dock" id="quick-drop-dock" title="ลากรูปหรือวิดีโอมาวางที่นี่เพื่อโหลดเป็น .PNG / .MP4 ทันที">
-        📥 ลากภาพ/วิดีโอวางที่นี่ ➔ ได้ไฟล์ <b>.PNG / .MP4</b>
-      </div>
     </div>
   `;
   document.documentElement.appendChild(toastHost);
@@ -238,7 +234,7 @@
 
   function setProcessingState(mediaType, targetFormat) {
     const label = mediaType === "video" ? "วิดีโอเป็น .MP4" : `ภาพเป็น .${targetFormat.toUpperCase()}`;
-    statusCard.style.display = " inline-flex";
+    statusCard.style.display = "inline-flex";
     statusCard.classList.remove("ready");
     statusText.textContent = `⏳ กำลังประมวลผล${label}... รอสักครู่นะคะ`;
     cardDlBtn.style.display = "none";
@@ -257,7 +253,7 @@
     cardDlBtn.textContent = "📥 กดโหลดอีกครั้ง";
 
     btnPrimary.classList.remove("processing");
-    btnPrimary.textContent = mediaType === "video" ? "⬇ โหลด MP4" : "⬇ โหลด PNG";
+    btnPrimary.textContent = mediaType === "video" ? "🎬 โหลด MP4" : "⬇ โหลด PNG";
     btnRedownload.style.display = "inline-flex";
     btnRedownload.textContent = `📥 ประมวลผลเสร็จแล้ว! กดโหลด (${filename})`;
   }
@@ -276,35 +272,129 @@
     }
   });
 
-  function extractMediaInfo(el) {
-    if (!el || !el.tagName) return null;
-    const tag = el.tagName.toLowerCase();
-
-    if (tag === "video") {
-      const src = el.currentSrc || el.src || (el.querySelector("source") && el.querySelector("source").src) || el.dataset.hlsSrc || el.dataset.src || "";
-      return { mediaType: "video", url: src, element: el, label: "VIDEO → MP4" };
-    }
-    if (tag === "img") {
-      const src = el.currentSrc || el.src || "";
-      if (!src) return null;
-      return { mediaType: "image", url: src, element: el, label: "IMG → PNG/JPG" };
-    }
-    if (tag === "svg" || el.closest("svg")) {
-      const svgEl = tag === "svg" ? el : el.closest("svg");
-      return { mediaType: "image", svgText: svgEl.outerHTML, element: svgEl, label: "SVG → PNG/JPG" };
-    }
-    if (tag === "canvas") {
-      try {
-        return { mediaType: "image", base64Data: el.toDataURL("image/png"), element: el, label: "CANVAS → PNG/JPG" };
-      } catch (_) {}
-    }
-    const bg = window.getComputedStyle(el).backgroundImage;
-    if (bg && bg.startsWith("url(")) {
-      const m = bg.match(/url\(["']?([^"')]+)["']?\)/);
-      if (m && m[1]) {
-        return { mediaType: "image", url: m[1], element: el, label: "BG → PNG/JPG" };
+  function extractVideoDetails(videoEl) {
+    // 1. ค้นหา URL ตรงจาก <source> ก่อน (ถ้ามีลิงก์ http ตรง จะดีกว่า blob:)
+    let bestSrc = "";
+    const sources = videoEl.querySelectorAll("source");
+    for (const s of sources) {
+      if (s.src && !s.src.startsWith("blob:")) {
+        bestSrc = s.src;
+        break;
       }
     }
+    if (!bestSrc) {
+      bestSrc =
+        videoEl.dataset.hlsSrc ||
+        videoEl.dataset.src ||
+        videoEl.dataset.videoUrl ||
+        videoEl.currentSrc ||
+        videoEl.src ||
+        (sources[0] && sources[0].src) ||
+        "";
+    }
+
+    // 2. ค้นหาลิงก์หน้าวิดีโอ (Permalink) สำหรับกรณีวิดีโอเป็น blob: (เช่น YouTube, TikTok, Reels, Facebook, X)
+    let pageUrl = window.location.href;
+    const linkEl = videoEl.closest("a[href]");
+    if (linkEl && linkEl.href && linkEl.href.startsWith("http")) {
+      pageUrl = linkEl.href;
+    } else {
+      let parent = videoEl.parentElement;
+      for (let depth = 0; depth < 5 && parent; depth++) {
+        const a = parent.querySelector(
+          'a[href*="/watch"], a[href*="/reel"], a[href*="/shorts/"], a[href*="/videos/"], a[href*="/video/"], a[href*="/status/"]'
+        );
+        if (a && a.href) {
+          pageUrl = a.href;
+          break;
+        }
+        parent = parent.parentElement;
+      }
+    }
+
+    return {
+      mediaType: "video",
+      url: bestSrc,
+      pageUrl,
+      element: videoEl,
+      label: "🎬 VIDEO → MP4",
+    };
+  }
+
+  // ค้นหาวิดีโอหรือรูปภาพจริงใต้ตำแหน่งเมาส์ (ให้ความสำคัญกับ <video> อันดับ 1 เสมอ!)
+  function findMediaAtCursor(clientX, clientY, targetEl) {
+    if (!targetEl || !targetEl.tagName) return null;
+
+    // 1. เช็กก่อนว่า targetEl เองเป็น <video> หรือไม่
+    if (targetEl.tagName.toLowerCase() === "video") {
+      return extractVideoDetails(targetEl);
+    }
+
+    // 2. เช็กทุก <video> บนหน้าเว็บว่าเมาส์ (clientX, clientY) วางอยู่เหนือพื้นที่ของ <video> หรือไม่
+    // (วิธีนี้ทะลุแผ่นใสบังปุ่ม Play, รูปปก Poster <img> และแถบควบคุมวิดีโอได้ 100%!)
+    if (clientX > 0 || clientY > 0) {
+      const allVideos = document.querySelectorAll("video");
+      for (const v of allVideos) {
+        const r = v.getBoundingClientRect();
+        if (
+          r.width >= MIN_MEDIA_SIZE &&
+          r.height >= MIN_MEDIA_SIZE &&
+          clientX >= r.left &&
+          clientX <= r.right &&
+          clientY >= r.top &&
+          clientY <= r.bottom
+        ) {
+          return extractVideoDetails(v);
+        }
+      }
+    }
+
+    // 3. เช็กว่า targetEl (เช่น รูปปก Poster หรือปุ่ม Play) อยู่ข้างในกล่อง Video Player เดียวกับ <video> หรือไม่
+    let container = targetEl.parentElement;
+    for (let i = 0; i < 4 && container && container !== document.body; i++) {
+      const r = container.getBoundingClientRect();
+      if (r.width > 0 && r.width <= window.innerWidth * 0.95 && r.height <= window.innerHeight * 0.95) {
+        const vidInside = container.querySelector("video");
+        if (vidInside) {
+          const vr = vidInside.getBoundingClientRect();
+          if (vr.width >= MIN_MEDIA_SIZE && vr.height >= MIN_MEDIA_SIZE) {
+            return extractVideoDetails(vidInside);
+          }
+        }
+      }
+      container = container.parentElement;
+    }
+
+    // 4. ถ้าไม่ใช่วิดีโอ ให้ตรวจเฉพาะ "รูปภาพจริง (<img>)" เท่านั้น!
+    let imgEl = null;
+    if (targetEl.tagName.toLowerCase() === "img") {
+      imgEl = targetEl;
+    } else if (clientX > 0 || clientY > 0) {
+      const stacked = document.elementsFromPoint(clientX, clientY);
+      for (const el of stacked) {
+        if (el.tagName && el.tagName.toLowerCase() === "img") {
+          imgEl = el;
+          break;
+        }
+      }
+    }
+
+    if (imgEl) {
+      const r = imgEl.getBoundingClientRect();
+      // กรองไอคอน ปุ่ม โลโก้เล็กๆ หรือรูปที่มีขนาดเล็กกว่า 72x72px ทิ้งทั้งหมด
+      if (r.width < MIN_MEDIA_SIZE || r.height < MIN_MEDIA_SIZE) {
+        return null;
+      }
+      const src = imgEl.currentSrc || imgEl.src || "";
+      if (!src) return null;
+      return {
+        mediaType: "image",
+        url: src,
+        element: imgEl,
+        label: "🖼 IMAGE → PNG/JPG",
+      };
+    }
+
     return null;
   }
 
@@ -313,25 +403,36 @@
 
     const payload = {
       url: info.url || "",
+      pageUrl: info.pageUrl || window.location.href,
       base64Data: info.base64Data || "",
       svgText: info.svgText || "",
       targetFormat,
-      filename: info.element?.getAttribute("alt") || info.element?.dataset?.name || info.url || `media_${Date.now()}`,
+      filename:
+        info.element?.getAttribute("alt") ||
+        info.element?.dataset?.name ||
+        info.url ||
+        document.title ||
+        `media_${Date.now()}`,
     };
 
+    // ถ้าเป็น blob: ลองดึงเฉพาะกรณีเป็นไฟล์ Blob ปกติ (ถ้าเป็น MSE Stream ของเว็บวิดีโอจะข้ามไปใช้ Sniffer / yt-dlp อัตโนมัติ)
     if (payload.url && payload.url.startsWith("blob:")) {
       try {
         const res = await fetch(payload.url);
         const blob = await res.blob();
-        payload.base64Data = await new Promise((resolve) => {
-          const reader = new FileReader();
-          reader.onloadend = () => resolve(reader.result);
-          reader.readAsDataURL(blob);
-        });
-      } catch (_) {}
+        if (blob.size > 500 && blob.size < 60 * 1024 * 1024 && (info.mediaType === "image" || blob.type.startsWith("video/"))) {
+          payload.base64Data = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () => resolve(reader.result);
+            reader.readAsDataURL(blob);
+          });
+        }
+      } catch (_) {
+        // MSE Blob Stream — ปล่อยให้ Companion Server ใช้ sniffedUrl / pageUrl ดึงเป็น MP4
+      }
     }
 
-    // 1. ส่งให้ Background Service Worker (สั่งปลุกเซิร์ฟเวอร์อัตโนมัติถ้ายังไม่เปิด หรือแปลงผ่าน OffscreenCanvas)
+    // 1. ส่งให้ Background Service Worker
     if (typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.sendMessage && !info.svgText) {
       try {
         const swRes = await new Promise((resolve) => {
@@ -341,6 +442,7 @@
               payload: {
                 mediaType: info.mediaType,
                 url: payload.url,
+                pageUrl: payload.pageUrl,
                 base64Data: payload.base64Data,
                 svgText: payload.svgText,
                 targetFormat,
@@ -374,45 +476,21 @@
       }
     } catch (_) {}
 
-    // 3. Fallback แปลงใน Browser Canvas ทันที
+    // 3. Fallback แปลงใน Browser Canvas สำหรับรูปภาพ
     try {
       if (info.mediaType === "image") {
         const converted = await convertImageInBrowserCanvas(info, targetFormat);
         triggerBrowserDownload(converted.dataUrl, converted.filename);
         setFinishedState(converted.dataUrl, converted.filename, info.mediaType);
       } else {
-        const stem = sanitizeCleanStem(payload.filename, "video");
-        const cleanMp4 = `${stem}.mp4`;
-        const dlUrl = payload.base64Data || payload.url;
-        triggerBrowserDownload(dlUrl, cleanMp4);
-        setFinishedState(dlUrl, cleanMp4, info.mediaType);
+        statusText.textContent = "❌ ไม่สามารถดึงสตรีมวิดีโอนี้ได้โดยตรง";
+        btnPrimary.classList.remove("processing");
       }
     } catch (err) {
       statusText.textContent = `❌ ประมวลผลไม่สำเร็จ: ${err.message}`;
       btnPrimary.classList.remove("processing");
     }
   }
-
-  const quickDock = toastShadow.getElementById("quick-drop-dock");
-  quickDock.addEventListener("dragover", (e) => {
-    e.preventDefault();
-    quickDock.classList.add("dragover");
-  });
-  quickDock.addEventListener("dragleave", () => quickDock.classList.remove("dragover"));
-  quickDock.addEventListener("drop", (e) => {
-    e.preventDefault();
-    quickDock.classList.remove("dragover");
-    if (currentTarget) {
-      const fmt = currentTarget.mediaType === "video" ? "mp4" : "png";
-      triggerConvertAndDownload(currentTarget, fmt);
-      return;
-    }
-    const droppedUrl = e.dataTransfer.getData("text/uri-list") || e.dataTransfer.getData("text/plain");
-    if (droppedUrl) {
-      const isVid = /\.(webm|ogv|mov|mkv|ts|m3u8|mp4)(\?|$)/i.test(droppedUrl);
-      triggerConvertAndDownload({ mediaType: isVid ? "video" : "image", url: droppedUrl }, isVid ? "mp4" : "png");
-    }
-  });
 
   btnPrimary.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -429,62 +507,80 @@
     triggerConvertAndDownload(currentTarget, "jpg");
   });
 
-  document.addEventListener("mouseover", (e) => {
-    if (e.target === hoverHost || hoverHost.contains(e.target)) {
-      if (hideTimer) clearTimeout(hideTimer);
-      return;
-    }
-    const info = extractMediaInfo(e.target);
-    if (!info) return;
+  document.addEventListener(
+    "mousemove",
+    (e) => {
+      if (e.target === hoverHost || hoverHost.contains(e.target)) {
+        if (hideTimer) clearTimeout(hideTimer);
+        return;
+      }
 
-    if (hideTimer) clearTimeout(hideTimer);
-    if (currentTarget?.element && currentTarget.element !== info.element) {
-      currentTarget.element.classList.remove("umg-media-hovered");
-      btnRedownload.style.display = "none";
-    }
-    currentTarget = info;
-    info.element.classList.add("umg-media-hovered");
+      const info = findMediaAtCursor(e.clientX, e.clientY, e.target);
+      if (!info) {
+        if (currentTarget && !hideTimer) {
+          hideTimer = setTimeout(() => {
+            if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
+            currentTarget = null;
+            hoverHost.style.display = "none";
+          }, 350);
+        }
+        return;
+      }
 
-    const rect = info.element.getBoundingClientRect();
-    badgeEl.textContent = info.label;
-    if (info.mediaType === "video") {
-      btnPrimary.textContent = "⬇ โหลด MP4";
-      btnSecondary.style.display = "none";
-    } else {
-      btnPrimary.textContent = "⬇ โหลด PNG";
-      btnSecondary.style.display = "inline-flex";
-      btnSecondary.textContent = "⬇ โหลด JPG";
-    }
+      if (hideTimer) {
+        clearTimeout(hideTimer);
+        hideTimer = null;
+      }
 
-    hoverHost.style.top = `${Math.max(8, rect.top + 8)}px`;
-    hoverHost.style.left = `${Math.max(8, rect.left + 8)}px`;
-    hoverHost.style.display = "block";
-  }, true);
+      if (currentTarget?.element && currentTarget.element !== info.element) {
+        currentTarget.element.classList.remove("umg-media-hovered");
+        btnRedownload.style.display = "none";
+      }
 
-  document.addEventListener("mouseout", (e) => {
-    if (currentTarget && e.target === currentTarget.element) {
-      hideTimer = setTimeout(() => {
-        if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
-        hoverHost.style.display = "none";
-      }, 900);
-    }
-  }, true);
+      currentTarget = info;
+      info.element.classList.add("umg-media-hovered");
+
+      const rect = info.element.getBoundingClientRect();
+      badgeEl.textContent = info.label;
+      if (info.mediaType === "video") {
+        badgeEl.classList.add("video");
+        btnPrimary.classList.add("video-btn");
+        if (!btnPrimary.classList.contains("processing")) {
+          btnPrimary.textContent = "🎬 โหลดวิดีโอ MP4";
+        }
+        btnSecondary.style.display = "none";
+      } else {
+        badgeEl.classList.remove("video");
+        btnPrimary.classList.remove("video-btn");
+        if (!btnPrimary.classList.contains("processing")) {
+          btnPrimary.textContent = "⬇ โหลด PNG";
+        }
+        btnSecondary.style.display = "inline-flex";
+        btnSecondary.textContent = "⬇ โหลด JPG";
+      }
+
+      hoverHost.style.top = `${Math.max(8, rect.top + 8)}px`;
+      hoverHost.style.left = `${Math.max(8, rect.left + 8)}px`;
+      hoverHost.style.display = "block";
+    },
+    { passive: true }
+  );
 
   if (typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.onMessage) {
     chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
       if (msg.type === "UMG_SCAN_PAGE") {
         const items = [];
-        document.querySelectorAll("img, video, svg, canvas, [style*='background-image']").forEach((el, idx) => {
-          const info = extractMediaInfo(el);
-          if (info) {
-            items.push({
-              index: idx,
-              mediaType: info.mediaType,
-              url: info.url || "",
-              svgText: info.svgText || "",
-              base64Data: info.base64Data || "",
-              label: info.label,
-            });
+        document.querySelectorAll("video").forEach((v, idx) => {
+          const r = v.getBoundingClientRect();
+          if (r.width >= MIN_MEDIA_SIZE && r.height >= MIN_MEDIA_SIZE) {
+            const info = extractVideoDetails(v);
+            items.push({ index: idx, mediaType: "video", url: info.url, pageUrl: info.pageUrl, label: info.label });
+          }
+        });
+        document.querySelectorAll("img").forEach((img, idx) => {
+          const r = img.getBoundingClientRect();
+          if (r.width >= MIN_MEDIA_SIZE && r.height >= MIN_MEDIA_SIZE && (img.currentSrc || img.src)) {
+            items.push({ index: 1000 + idx, mediaType: "image", url: img.currentSrc || img.src, label: "🖼 IMAGE → PNG/JPG" });
           }
         });
         sendResponse({ ok: true, items });

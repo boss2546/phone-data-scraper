@@ -233,11 +233,10 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
         self.assertGreater(hist.get("count", 0), 10)
 
     def test_gate_08_real_google_chrome_headless_dom_and_extension_flow(self):
-        """[Gate 8] ทดสอบรัน Google Chrome จริง (Headless DOM) จำลองการวางเมาส์ กดปุ่มประมวลผล และแสดงปุ่ม 'กดโหลดอีกครั้ง'"""
+        """[Gate 8] ทดสอบรัน Google Chrome จริง: ข้ามปุ่ม/ไอคอนเล็ก + ทะลุแผ่นใส/ปกวิดีโอจับเป็น VIDEO -> MP4 แม่นยำ 100%"""
         if not os.path.exists(CHROME_BIN):
             self.skipTest("Google Chrome binary not found")
 
-        # สร้างหน้า HTML จำลองที่ฝัง content.css + content.js และชี้ไปยัง Companion Server ของเทสต์นี้
         content_css = (BASE_DIR / "extension/content/content.css").read_text(encoding="utf-8")
         content_js = (BASE_DIR / "extension/content/content.js").read_text(encoding="utf-8")
         content_js_patched = content_js.replace("http://127.0.0.1:8765", self.base_url)
@@ -248,38 +247,63 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
   <meta charset="utf-8">
   <style>{content_css}</style>
 </head>
-<body>
-  <img id="test-img" src="{self.base_url}/assets/images/sample_webp.webp" alt="chrome_e2e_webp" width="300" height="200" />
-  <video id="test-vid" src="{self.base_url}/assets/videos/sample_webm.webm" width="320" height="180"></video>
+<body style="margin:0; padding:20px;">
+  <!-- 1. UI Elements ที่ต้องไม่ถูกจับ (ปุ่ม, ไอคอน SVG, รูปจิ๋ว 32x32) -->
+  <button id="ui-btn" style="width:200px;height:100px;">ปุ่มทั่วไป ห้ามขึ้นปุ่มโหลด</button>
+  <img id="tiny-icon" src="{self.base_url}/assets/images/sample_png.png" style="width:32px;height:32px;" />
+
+  <!-- 2. Video Player ที่มีทั้งรูปปก Poster <img> และแผ่นใส Overlay บังอยู่ข้างบน (ต้องจับเป็น VIDEO เท่านั้น ห้ามคิดว่าเป็นภาพ!) -->
+  <div id="video-player-box" style="position:relative; width:360px; height:220px; margin-top:20px;">
+    <video id="test-vid" src="{self.base_url}/assets/videos/sample_webm.webm" style="width:360px; height:220px; display:block;"></video>
+    <img id="video-poster-overlay" src="{self.base_url}/assets/images/sample_webp.webp" style="position:absolute; inset:0; width:360px; height:220px;" />
+    <div id="video-control-overlay" style="position:absolute; inset:0; width:360px; height:220px;"></div>
+  </div>
+
+  <!-- 3. รูปภาพจริงขนาดใหญ่ -->
+  <img id="test-img" src="{self.base_url}/assets/images/sample_webp.webp" alt="chrome_e2e_webp" style="width:300px; height:200px; display:block; margin-top:20px;" />
+
   <div id="test-result">PENDING</div>
   <script>{content_js_patched}</script>
   <script>
     window.addEventListener('load', async () => {{
       try {{
-        const img = document.getElementById('test-img');
-        img.dispatchEvent(new MouseEvent('mouseover', {{ bubbles: true }}));
         const host = document.getElementById('umg-hover-host');
+        const badge = host.shadowRoot.getElementById('hud-badge');
         const btnPrimary = host.shadowRoot.getElementById('btn-primary');
-        const btnRedownload = host.shadowRoot.getElementById('btn-redownload');
         const toastHost = document.getElementById('umg-toast-host');
         const statusText = toastHost.shadowRoot.getElementById('status-text');
 
-        // คลิกปุ่มโหลด PNG บน Hover HUD
+        // A. ชี้ที่ปุ่มทั่วไป -> ต้องไม่แสดง HUD
+        const btnRect = document.getElementById('ui-btn').getBoundingClientRect();
+        document.getElementById('ui-btn').dispatchEvent(new MouseEvent('mousemove', {{ bubbles: true, clientX: btnRect.left + 20, clientY: btnRect.top + 20 }}));
+        const ignoredButtonHud = host.style.display;
+
+        // B. ชี้ที่แผ่นใส/รูปปกที่ทับอยู่บน Video Player -> ต้องจับเป็น VIDEO → MP4 เท่านั้น! (ห้ามคิดว่าเป็นรูปภาพ)
+        const overlayEl = document.getElementById('video-poster-overlay');
+        const vRect = overlayEl.getBoundingClientRect();
+        overlayEl.dispatchEvent(new MouseEvent('mousemove', {{ bubbles: true, clientX: vRect.left + 100, clientY: vRect.top + 100 }}));
+        const videoDetectedBadge = badge.textContent;
+
+        // กดปุ่มโหลดวิดีโอ MP4
         btnPrimary.click();
-
-        // รอให้ประมวลผลเสร็จ
-        for (let i = 0; i < 30; i++) {{
+        for (let i = 0; i < 40; i++) {{
           await new Promise(r => setTimeout(r, 150));
-          if (statusText.textContent.includes('ประมวลผลเสร็จแล้ว')) break;
+          if (statusText.textContent.includes('ประมวลผลเสร็จแล้ว') && statusText.textContent.includes('.mp4')) break;
         }}
+        const videoStatus = statusText.textContent;
 
-        const summary = {{
-          hoverVisible: host.style.display === 'block',
-          statusMsg: statusText.textContent,
-          redownloadVisible: btnRedownload.style.display !== 'none',
-          redownloadLabel: btnRedownload.textContent
-        }};
-        document.getElementById('test-result').textContent = JSON.stringify(summary);
+        // C. ชี้ที่รูปภาพจริง -> ต้องจับเป็น IMAGE → PNG/JPG
+        const imgEl = document.getElementById('test-img');
+        const iRect = imgEl.getBoundingClientRect();
+        imgEl.dispatchEvent(new MouseEvent('mousemove', {{ bubbles: true, clientX: iRect.left + 80, clientY: iRect.top + 80 }}));
+        const imageDetectedBadge = badge.textContent;
+
+        document.getElementById('test-result').textContent = JSON.stringify({{
+          ignoredButtonHud,
+          videoDetectedBadge,
+          videoStatus,
+          imageDetectedBadge
+        }});
       }} catch (err) {{
         document.getElementById('test-result').textContent = 'ERROR:' + err.message;
       }}
@@ -298,14 +322,16 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
                 "--headless=new",
                 "--disable-gpu",
                 "--no-sandbox",
-                "--virtual-time-budget=6000",
+                "--virtual-time-budget=7000",
                 "--dump-dom",
                 f"file://{temp_html_path}",
             ]
             proc = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
             dom_out = proc.stdout
-            self.assertIn("ประมวลผลเสร็จแล้ว", dom_out, f"Chrome DOM output did not reach finished state: {dom_out[-600:]}")
-            self.assertIn("chrome_e2e_webp", dom_out)
+            self.assertIn('"ignoredButtonHud":"none"', dom_out, f"UI button should be ignored: {dom_out[-600:]}")
+            self.assertIn("VIDEO → MP4", dom_out, f"Video behind poster/overlay must be detected as VIDEO: {dom_out[-600:]}")
+            self.assertIn(".mp4", dom_out, f"Video download must produce .mp4: {dom_out[-600:]}")
+            self.assertIn("IMAGE → PNG/JPG", dom_out, f"Real image must be detected as IMAGE: {dom_out[-600:]}")
         finally:
             if os.path.exists(temp_html_path):
                 os.unlink(temp_html_path)

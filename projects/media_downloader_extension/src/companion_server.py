@@ -366,16 +366,42 @@ def inspect_video_with_ffprobe(video_path: Path) -> dict:
         return {"codec": "h264", "width": 0, "height": 0, "duration": 0.0, "container": "mp4"}
 
 
+def download_with_ytdlp(target_url: str, dest_dir: Path) -> Path:
+    """ใช้ yt-dlp ดึงวิดีโอจากหน้าเว็บหรือสตรีม (รองรับ YouTube, TikTok, FB, IG, X, HLS, MSE blob pageUrl)"""
+    import yt_dlp
+
+    tmp_stem = f"ytdlp_{uuid.uuid4().hex[:8]}"
+    out_tmpl = str(dest_dir / f"{tmp_stem}.%(ext)s")
+    ydl_opts = {
+        "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
+        "merge_output_format": "mp4",
+        "outtmpl": out_tmpl,
+        "noplaylist": True,
+        "quiet": True,
+        "no_warnings": True,
+        "ffmpeg_location": os.path.dirname(FFMPEG_BIN) if os.path.sep in FFMPEG_BIN else None,
+    }
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([target_url])
+
+    matches = list(dest_dir.glob(f"{tmp_stem}.*"))
+    if not matches:
+        raise RuntimeError(f"yt-dlp could not extract video from {target_url}")
+    return matches[0]
+
+
 def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
     """
-    แปลงไฟล์วิดีโอทุกชนิด (.webm, .ogv, .mov, .mkv, .ts, .m3u8 HLS, blob:, live stream, .mp4)
+    แปลงไฟล์วิดีโอทุกชนิด (.webm, .ogv, .mov, .mkv, .ts, .m3u8 HLS, blob:, live stream, .mp4, หรือหน้าเว็บวิดีโอ)
     ให้เป็นไฟล์ .mp4 (H.264 + AAC) มาตรฐานสากล 100%
     """
     ensure_dirs()
     url = payload.get("url")
+    page_url = payload.get("pageUrl") or ""
+    sniffed_url = payload.get("sniffedUrl") or ""
     base64_data = payload.get("base64Data") or payload.get("dataUrl")
     source_fmt = str(payload.get("sourceFormat") or "").upper().strip()
-    raw_filename = payload.get("filename") or url or f"video_{int(time.time())}"
+    raw_filename = payload.get("filename") or url or page_url or f"video_{int(time.time())}"
     clean_stem = sanitize_base_filename(raw_filename, fallback_prefix="video")
 
     out_filename = f"{clean_stem}.mp4"
@@ -406,50 +432,61 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
             ffmpeg_input = str(temp_input_file)
             if not source_fmt:
                 source_fmt = "BLOB_STREAM"
-        elif url:
-            url_str = str(url).strip()
-            parsed = urllib.parse.urlparse(url_str)
-            if not source_fmt:
-                ext_guess = os.path.splitext(parsed.path)[1].lower().lstrip(".")
-                source_fmt = (ext_guess or "VIDEO").upper()
-
-            # ถ้าเป็นไฟล์ใน /assets/ ของเซิร์ฟเวอร์ทดสอบและไม่ใช่ .m3u8 ให้ชี้ไปยังไฟล์จริงได้ทันที
-            if parsed.hostname in ("127.0.0.1", "localhost") and parsed.path.startswith("/assets/"):
-                rel = parsed.path[len("/assets/"):].lstrip("/")
-                local_asset = (TEST_ASSETS_DIR / rel).resolve()
-                if local_asset.exists():
-                    ffmpeg_input = str(local_asset)
-                else:
-                    ffmpeg_input = url_str
-            else:
-                ffmpeg_input = url_str
         else:
-            raise ValueError("Missing both 'url' and 'base64Data' for video conversion")
+            candidate_url = str(url or "").strip()
+            if (not candidate_url or candidate_url.startswith("blob:")) and sniffed_url:
+                candidate_url = str(sniffed_url).strip()
+
+            if candidate_url and not candidate_url.startswith("blob:"):
+                parsed = urllib.parse.urlparse(candidate_url)
+                if not source_fmt:
+                    ext_guess = os.path.splitext(parsed.path)[1].lower().lstrip(".")
+                    source_fmt = (ext_guess or "VIDEO").upper()
+
+                if parsed.hostname in ("127.0.0.1", "localhost") and parsed.path.startswith("/assets/"):
+                    rel = parsed.path[len("/assets/"):].lstrip("/")
+                    local_asset = (TEST_ASSETS_DIR / rel).resolve()
+                    ffmpeg_input = str(local_asset) if local_asset.exists() else candidate_url
+                else:
+                    ffmpeg_input = candidate_url
+            elif page_url and page_url.startswith(("http://", "https://")):
+                temp_input_file = download_with_ytdlp(page_url, Path(tempfile.gettempdir()))
+                ffmpeg_input = str(temp_input_file)
+                source_fmt = "WEB_STREAM"
+            else:
+                raise ValueError("Cannot resolve video stream (blob URL without pageUrl or stream)")
 
         # แปลงด้วย FFmpeg เป็น H.264 + AAC MP4 มาตรฐาน
-        ffmpeg_cmd = [
-            FFMPEG_BIN,
-            "-y",
-            "-hide_banner",
-            "-loglevel", "error",
-        ]
-        if str(ffmpeg_input).endswith(".m3u8"):
-            ffmpeg_cmd.extend(["-allowed_extensions", "ALL", "-protocol_whitelist", "file,http,https,tcp,tls,crypto,data"])
+        def run_ffmpeg_transcode(inp: str) -> subprocess.CompletedProcess:
+            cmd = [
+                FFMPEG_BIN,
+                "-y",
+                "-hide_banner",
+                "-loglevel", "error",
+            ]
+            if str(inp).endswith(".m3u8") or ".m3u8" in str(inp):
+                cmd.extend(["-allowed_extensions", "ALL", "-protocol_whitelist", "file,http,https,tcp,tls,crypto,data"])
+            cmd.extend([
+                "-i", str(inp),
+                "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
+                "-c:v", "libx264",
+                "-preset", "ultrafast",
+                "-crf", "22",
+                "-pix_fmt", "yuv420p",
+                "-c:a", "aac",
+                "-b:a", "128k",
+                "-movflags", "+faststart",
+                str(out_path),
+            ])
+            return subprocess.run(cmd, capture_output=True, text=True, timeout=90)
 
-        ffmpeg_cmd.extend([
-            "-i", str(ffmpeg_input),
-            "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
-            "-c:v", "libx264",
-            "-preset", "ultrafast",
-            "-crf", "22",
-            "-pix_fmt", "yuv420p",
-            "-c:a", "aac",
-            "-b:a", "128k",
-            "-movflags", "+faststart",
-            str(out_path),
-        ])
+        proc = run_ffmpeg_transcode(ffmpeg_input)
+        # ถ้า FFmpeg ดึงตรงจาก URL ไม่ได้ (เช่น เป็นลิงก์หน้าเว็บวิดีโอ) ให้ใช้ yt-dlp ดึงแล้วแปลงเป็น MP4
+        if (proc.returncode != 0 or not out_path.exists() or out_path.stat().st_size == 0) and (page_url or ffmpeg_input.startswith("http")):
+            fallback_target = page_url if page_url.startswith("http") else ffmpeg_input
+            temp_input_file = download_with_ytdlp(fallback_target, Path(tempfile.gettempdir()))
+            proc = run_ffmpeg_transcode(str(temp_input_file))
 
-        proc = subprocess.run(ffmpeg_cmd, capture_output=True, text=True, timeout=60)
         if proc.returncode != 0 or not out_path.exists() or out_path.stat().st_size == 0:
             raise RuntimeError(f"FFmpeg conversion failed: {proc.stderr.strip()}")
 

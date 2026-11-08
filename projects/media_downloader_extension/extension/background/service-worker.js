@@ -1,12 +1,31 @@
 // Universal Media Grabber — Manifest V3 Background Service Worker
-// ความสามารถพิเศษ:
-// 1. สั่งปลุก Companion Server (127.0.0.1:8765) เองอัตโนมัติผ่าน Native Messaging / Auto-Start Daemon เมื่อต้องใช้เซิร์ฟเวอร์แปลงไฟล์
-// 2. รองรับโหมด Standalone (OffscreenCanvas) ในตัว Extension เอง
-// 3. ส่งสถานะ "กำลังประมวลผล..." ➔ "ประมวลผลเสร็จแล้ว! กดโหลดอีกครั้ง" กลับไปยังหน้าเว็บ พร้อมลิงก์ดาวน์โหลดซ้ำได้ทันที
+// 1. ดักจับ URL สตรีมวิดีโอจริงในแต่ละแท็บ (webRequest Sniffer) สำหรับวิดีโอแบบ blob: / HLS (.m3u8) / MP4
+// 2. สั่งปลุก Companion Server (127.0.0.1:8765) อัตโนมัติ (รองรับทั้ง FFmpeg + yt-dlp)
+// 3. รองรับโหมด Standalone (OffscreenCanvas) สำหรับรูปภาพทุกชนิด
 
 const COMPANION_URL = "http://127.0.0.1:8765";
 const NATIVE_HOST = "com.meuu.umg_companion";
 const WEIRD_EXT_REGEX = /\.(webp|avif|svg|svgz|jfif|bmp|gif|ico|tiff|tif|heic|webm|ogv|ogg|mov|mkv|ts|m3u8|mpd|flv|avi|bin|dat|php)(\?.*|#.*|$)/i;
+const VIDEO_STREAM_REGEX = /\.(mp4|m3u8|webm|mov|mkv|ogv|ts|m4v)(\?.*|#.*|$)/i;
+
+// เก็บ URL สตรีมวิดีโอล่าสุดที่ดักจับได้ของแต่ละ Tab
+const tabSniffedVideoMap = new Map();
+
+if (chrome.webRequest && chrome.webRequest.onBeforeRequest) {
+  chrome.webRequest.onBeforeRequest.addListener(
+    (details) => {
+      if (details.tabId < 0 || !details.url) return;
+      if (details.url.startsWith(COMPANION_URL)) return;
+      if (details.type === "media" || VIDEO_STREAM_REGEX.test(details.url)) {
+        // ข้ามชิ้นส่วนย่อยเล็กๆ ถ้ามี .m3u8 อยู่แล้ว
+        const prev = tabSniffedVideoMap.get(details.tabId) || "";
+        if (prev.includes(".m3u8") && details.url.includes(".ts")) return;
+        tabSniffedVideoMap.set(details.tabId, details.url);
+      }
+    },
+    { urls: ["<all_urls>"] }
+  );
+}
 
 function sanitizeCleanStem(rawName, prefix = "media") {
   if (!rawName) return `${prefix}_${Date.now()}`;
@@ -16,7 +35,7 @@ function sanitizeCleanStem(rawName, prefix = "media") {
   } catch (_) {}
   base = base.replace(WEIRD_EXT_REGEX, "").replace(/\.(png|jpg|jpeg|mp4)$/i, "");
   base = base.replace(/[^a-zA-Z0-9ก-๙_\-]/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "");
-  if (!base || ["blob", "data", "media", "image", "video"].includes(base.toLowerCase())) {
+  if (!base || ["blob", "data", "media", "image", "video", "watch"].includes(base.toLowerCase())) {
     base = `${prefix}_${Date.now().toString().slice(-6)}`;
   }
   return base.slice(0, 70);
@@ -48,7 +67,6 @@ async function isCompanionAlive() {
 async function autoWakeupCompanionServer() {
   if (await isCompanionAlive()) return true;
 
-  // สั่งปลุกผ่าน Chrome Native Messaging Host ถ้าลงทะเบียนไว้
   if (chrome.runtime && chrome.runtime.sendNativeMessage) {
     try {
       await new Promise((resolve) => {
@@ -91,18 +109,27 @@ async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFil
   return { dataUrl, filename };
 }
 
-async function handleSmartConvertAndDownload({ mediaType, url, base64Data, svgText, targetFormat, filename, autoDownload = true }) {
+async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
+  const { mediaType, url, pageUrl, base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
   const fmt = mediaType === "video" ? "mp4" : (targetFormat === "jpg" ? "jpg" : "png");
   const endpoint = mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
+  const sniffedUrl = senderTabId >= 0 ? (tabSniffedVideoMap.get(senderTabId) || "") : "";
 
-  // 1. ตรวจสอบหรือสั่งปลุก Companion Server อัตโนมัติ
   const alive = await autoWakeupCompanionServer();
   if (alive) {
     try {
       const resp = await fetch(`${COMPANION_URL}${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url, base64Data, svgText, targetFormat: fmt, filename }),
+        body: JSON.stringify({
+          url,
+          pageUrl,
+          sniffedUrl,
+          base64Data,
+          svgText,
+          targetFormat: fmt,
+          filename,
+        }),
       });
       const data = await resp.json();
       if (data && data.ok && data.downloadUrl) {
@@ -124,7 +151,6 @@ async function handleSmartConvertAndDownload({ mediaType, url, base64Data, svgTe
     } catch (_) {}
   }
 
-  // 2. ถ้าเป็นรูปภาพและไม่ได้ใช้เซิร์ฟเวอร์ แปลงใน OffscreenCanvas ของ Extension ทันที
   if (mediaType === "image") {
     const inputUrl = base64Data || url;
     const converted = await convertImageStandaloneInWorker(inputUrl, fmt, filename);
@@ -143,8 +169,11 @@ async function handleSmartConvertAndDownload({ mediaType, url, base64Data, svgTe
       mode: "standalone",
     };
   } else {
-    const cleanMp4 = `${sanitizeCleanStem(filename || url, "video")}.mp4`;
-    const downloadSource = base64Data || url;
+    const cleanMp4 = `${sanitizeCleanStem(filename || url || pageUrl, "video")}.mp4`;
+    const downloadSource = base64Data || (url && !url.startsWith("blob:") ? url : sniffedUrl);
+    if (!downloadSource) {
+      throw new Error("วิดีโอนี้เป็นสตรีมเข้ารหัส กรุณารอเซิร์ฟเวอร์ประมวลผล");
+    }
     if (autoDownload) {
       await chrome.downloads.download({
         url: downloadSource,
@@ -183,26 +212,36 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-chrome.contextMenus.onClicked.addListener((info) => {
-  if (!info.srcUrl) return;
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+  const tabId = tab ? tab.id : -1;
   if (info.menuItemId === "umg-save-png" || info.menuItemId === "umg-save-jpg") {
-    handleSmartConvertAndDownload({
-      mediaType: "image",
-      url: info.srcUrl,
-      targetFormat: info.menuItemId === "umg-save-jpg" ? "jpg" : "png",
-      filename: info.srcUrl,
-    });
+    if (!info.srcUrl) return;
+    handleSmartConvertAndDownload(
+      {
+        mediaType: "image",
+        url: info.srcUrl,
+        pageUrl: info.pageUrl || "",
+        targetFormat: info.menuItemId === "umg-save-jpg" ? "jpg" : "png",
+        filename: info.srcUrl,
+      },
+      tabId
+    );
   } else if (info.menuItemId === "umg-save-mp4") {
-    handleSmartConvertAndDownload({
-      mediaType: "video",
-      url: info.srcUrl,
-      targetFormat: "mp4",
-      filename: info.srcUrl,
-    });
+    handleSmartConvertAndDownload(
+      {
+        mediaType: "video",
+        url: info.srcUrl || "",
+        pageUrl: info.pageUrl || "",
+        targetFormat: "mp4",
+        filename: info.srcUrl || info.pageUrl,
+      },
+      tabId
+    );
   }
 });
 
-chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  const tabId = sender && sender.tab ? sender.tab.id : -1;
   if (msg.type === "UMG_DIRECT_DOWNLOAD" && msg.url) {
     chrome.downloads.download(
       {
@@ -219,7 +258,7 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   }
 
   if (msg.type === "UMG_SMART_CONVERT_AND_DOWNLOAD") {
-    handleSmartConvertAndDownload(msg.payload)
+    handleSmartConvertAndDownload(msg.payload, tabId)
       .then((res) => sendResponse(res))
       .catch((err) => sendResponse({ ok: false, error: err.message }));
     return true;
