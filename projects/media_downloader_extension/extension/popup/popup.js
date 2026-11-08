@@ -8,31 +8,29 @@ async function checkServer() {
     const res = await fetch(`${COMPANION_URL}/api/health`);
     const data = await res.json();
     if (data.ok) {
-      statusEl.textContent = `ออนไลน์ (${data.totalConverted} ไฟล์)`;
+      statusEl.textContent = `⚡ โหมดเต็มรูปแบบ + FFmpeg`;
+      return;
     }
-  } catch (_) {
-    statusEl.textContent = "ออฟไลน์ (รัน run.py)";
-    statusEl.style.color = "#f87171";
-  }
+  } catch (_) {}
+  statusEl.textContent = "🟢 โหมดทำงานเดี่ยว (ไม่ต้องรันเซิร์ฟเวอร์)";
+  statusEl.style.color = "#34d399";
 }
 
 async function convertAndDownload(item, targetFormat) {
-  const endpoint = item.mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
-  const res = await fetch(`${COMPANION_URL}${endpoint}`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      url: item.url || "",
-      svgText: item.svgText || "",
-      base64Data: item.base64Data || "",
-      targetFormat,
-    }),
-  });
-  const data = await res.json();
-  if (data.ok && data.downloadUrl) {
-    chrome.downloads.download({ url: data.downloadUrl, filename: data.filename, saveAs: false });
-    checkServer();
-  }
+  chrome.runtime.sendMessage(
+    {
+      type: "UMG_SMART_CONVERT_AND_DOWNLOAD",
+      payload: {
+        mediaType: item.mediaType,
+        url: item.url || "",
+        svgText: item.svgText || "",
+        base64Data: item.base64Data || "",
+        targetFormat,
+        filename: item.url || `media_${Date.now()}`,
+      },
+    },
+    () => checkServer()
+  );
 }
 
 document.getElementById("btn-scan").addEventListener("click", async () => {
@@ -77,3 +75,4 @@ dropzone.addEventListener("drop", async (e) => {
 });
 
 checkServer();
+

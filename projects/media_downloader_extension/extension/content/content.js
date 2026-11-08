@@ -248,6 +248,32 @@
       } catch (_) {}
     }
 
+    // 1. ส่งให้ Background Service Worker จัดการ (รองรับทั้งโหมด Standalone ไม่ง้อเซิร์ฟเวอร์ ข้าม CORS ได้ทุกเว็บ + โหมด Companion FFmpeg)
+    if (typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.sendMessage && !info.svgText) {
+      try {
+        const swRes = await new Promise((resolve) => {
+          chrome.runtime.sendMessage(
+            {
+              type: "UMG_SMART_CONVERT_AND_DOWNLOAD",
+              payload: {
+                mediaType: info.mediaType,
+                url: payload.url,
+                base64Data: payload.base64Data,
+                svgText: payload.svgText,
+                targetFormat,
+                filename: payload.filename,
+              },
+            },
+            (res) => resolve(res)
+          );
+        });
+        if (swRes && swRes.ok) {
+          showToast(`✅ ดาวน์โหลดสำเร็จ: ${swRes.filename}`);
+          return;
+        }
+      } catch (_) {}
+    }
+
     const endpoint = info.mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
     try {
       const resp = await fetch(`${COMPANION_URL}${endpoint}`, {

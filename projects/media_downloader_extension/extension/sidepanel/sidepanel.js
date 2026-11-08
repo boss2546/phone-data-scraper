@@ -23,3 +23,4 @@ async function loadHistory() {
 
 loadHistory();
 setInterval(loadHistory, 3000);
+

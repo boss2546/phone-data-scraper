@@ -64,3 +64,4 @@ if __name__ == "__main__":
             print("วิธีใช้: python3 run.py [server | test | assets]")
     else:
         interactive_menu()
+
