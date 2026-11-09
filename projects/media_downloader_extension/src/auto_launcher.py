@@ -35,6 +35,9 @@ def sync_tcc_safe_runtime():
     shutil.copy2(NATIVE_HOST_SCRIPT, RUNTIME_NATIVE_SCRIPT)
     if GALLERY_HTML.exists():
         shutil.copy2(GALLERY_HTML, RUNTIME_DIR / "test_gallery.html")
+    test_assets_src = BASE_DIR / "data" / "test_assets"
+    if test_assets_src.exists():
+        shutil.copytree(test_assets_src, RUNTIME_DIR / "data" / "test_assets", dirs_exist_ok=True)
 
     for script in (NATIVE_HOST_SCRIPT, SERVER_SCRIPT, RUNTIME_NATIVE_SCRIPT, RUNTIME_SERVER_SCRIPT):
         if script.exists():
@@ -104,8 +107,15 @@ def install_auto_daemon():
 """
     plist_path.write_text(plist_content, encoding="utf-8")
 
-    # Reload launchctl service
+    # Reload launchctl service and restart running process so latest synced code is active
     subprocess.run(["launchctl", "unload", str(plist_path)], capture_output=True)
+    try:
+        res = subprocess.run(["lsof", "-ti", ":8765"], capture_output=True, text=True, timeout=3)
+        for pid_str in res.stdout.strip().splitlines():
+            if pid_str.strip().isdigit():
+                subprocess.run(["kill", "-9", pid_str.strip()], check=False)
+    except Exception:
+        pass
     subprocess.run(["launchctl", "load", "-w", str(plist_path)], capture_output=True)
 
     # Also ensure server is running right now via native_host --ensure

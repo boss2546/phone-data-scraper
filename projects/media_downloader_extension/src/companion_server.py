@@ -29,7 +29,7 @@ import uuid
 import xml.etree.ElementTree as ET
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEST_ASSETS_DIR = BASE_DIR / "data" / "test_assets"
@@ -473,7 +473,16 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
     else:
         pil_img = Image.open(io.BytesIO(raw_bytes))
         detected_src_fmt = (pil_img.format or source_fmt or "IMAGE").upper()
+        try:
+            if getattr(pil_img, "is_animated", False):
+                pil_img.seek(0)
+        except Exception:
+            pass
         pil_img.load()
+        try:
+            pil_img = ImageOps.exif_transpose(pil_img) or pil_img
+        except Exception:
+            pass
 
     width, height = pil_img.size
 
@@ -497,7 +506,9 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
             final_img = pil_img.convert("RGB")
         final_img.save(out_path, format="JPEG", quality=95, optimize=True)
     else:
-        if pil_img.mode not in ("RGB", "RGBA"):
+        if pil_img.mode in ("CMYK", "YCbCr", "I", "I;16", "F"):
+            final_img = pil_img.convert("RGB")
+        elif pil_img.mode not in ("RGB", "RGBA"):
             final_img = pil_img.convert("RGBA")
         else:
             final_img = pil_img
@@ -532,13 +543,13 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
 
 
 def inspect_video_with_ffprobe(video_path: Path) -> dict:
-    """ตรวจสอบข้อมูลวิดีโอที่ได้ด้วย ffprobe เพื่อยืนยันว่าเป็น H.264 MP4 มาตรฐานจริง"""
+    """ตรวจสอบข้อมูลวิดีโอที่ได้ด้วย ffprobe เพื่อยืนยันว่าเป็น H.264 MP4 มาตรฐานจริง (yuv420p เปิดได้บน QuickTime / Windows 100%)"""
     try:
         cmd = [
             FFPROBE_BIN,
             "-v", "error",
             "-select_streams", "v:0",
-            "-show_entries", "stream=codec_name,width,height,duration:format=format_name,duration",
+            "-show_entries", "stream=codec_name,pix_fmt,width,height,duration:format=format_name,duration",
             "-of", "json",
             str(video_path),
         ]
@@ -550,13 +561,14 @@ def inspect_video_with_ffprobe(video_path: Path) -> dict:
         dur = float(st.get("duration") or fmt.get("duration") or 0.0)
         return {
             "codec": st.get("codec_name", "unknown"),
+            "pix_fmt": st.get("pix_fmt", "yuv420p"),
             "width": int(st.get("width") or 0),
             "height": int(st.get("height") or 0),
             "duration": round(dur, 2),
             "container": fmt.get("format_name", ""),
         }
     except Exception:
-        return {"codec": "h264", "width": 0, "height": 0, "duration": 0.0, "container": "mp4"}
+        return {"codec": "h264", "pix_fmt": "yuv420p", "width": 0, "height": 0, "duration": 0.0, "container": "mp4"}
 
 
 def download_with_ytdlp(target_url: str, dest_dir: Path) -> Path:
@@ -717,13 +729,13 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
             http_hdrs = build_http_headers_args(inp)
             is_hls = str(inp).endswith(".m3u8") or ".m3u8" in str(inp)
 
-            # Fast-Path: ถ้าเป็นไฟล์ .mp4 / .mov / .ts ที่เป็น H.264 อยู่แล้วและไม่ใช่ HLS ให้ลอง remux (-c:v copy) ก่อนเพื่อให้เสร็จไวในเสี้ยววินาที
+            # Fast-Path: ถ้าเป็นไฟล์ .mp4 / .mov / .ts ที่เป็น H.264 (yuv420p) อยู่แล้วและไม่ใช่ HLS ให้ลอง remux (-c:v copy) ก่อนเพื่อให้เสร็จไวในเสี้ยววินาที
             if not is_hls and str(inp).lower().split("?")[0].endswith((".mp4", ".mov", ".m4v")):
                 fast_cmd = [FFMPEG_BIN, "-y", "-hide_banner", "-loglevel", "error", *http_hdrs, "-i", str(inp), "-c:v", "copy", "-c:a", "aac", "-movflags", "+faststart", str(out_path)]
                 fast_proc = subprocess.run(fast_cmd, capture_output=True, text=True, timeout=45)
                 if fast_proc.returncode == 0 and out_path.exists() and out_path.stat().st_size > 1000:
                     meta = inspect_video_with_ffprobe(out_path)
-                    if meta.get("codec") == "h264":
+                    if meta.get("codec") == "h264" and meta.get("pix_fmt", "yuv420p") == "yuv420p":
                         return fast_proc
 
             cmd = [

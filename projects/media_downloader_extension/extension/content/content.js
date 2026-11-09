@@ -528,18 +528,59 @@
     }
   });
 
-  function collectSniffedVideoResources() {
+  function collectSniffedVideoResources(videoEl = null) {
     const urls = [];
+    const addCandidate = (u) => {
+      if (!u || typeof u !== "string") return;
+      const clean = u.replace(/\\\//g, "/").replace(/\\u002F/gi, "/").replace(/&amp;/g, "&").trim();
+      if (!clean.startsWith("http") || clean.startsWith(COMPANION_URL) || clean.startsWith("blob:")) return;
+      if (/\.(mp4|m3u8|webm|mov|m4v)(\?|$|#)/i.test(clean) || /(videocdn|videoplayback|icbu_vod_video|mime=video)/i.test(clean)) {
+        if (!urls.includes(clean)) urls.push(clean);
+      }
+    };
+
+    // 1. ค้นหาจาก React / Vue Props บนตัว <video> และกล่องครอบโดยตรง (แม่นยำที่สุดสำหรับเว็บสมัยใหม่ที่ใช้ blob:)
+    if (videoEl) {
+      let node = videoEl;
+      for (let depth = 0; depth < 6 && node && node !== document.body; depth++) {
+        try {
+          const keys = Object.keys(node);
+          for (const k of keys) {
+            if (k.startsWith("__reactProps") || k.startsWith("__reactFiber") || k.startsWith("__vue")) {
+              const str = JSON.stringify(node[k], (key, val) => (key.startsWith("_") || val instanceof Node ? undefined : val));
+              if (str) {
+                const matches = str.match(/https?:\\?\/\\?\/[^\s"'<>\\]+\.(?:mp4|m3u8|webm)(?:\?[^\s"'<>\\]*)?/gi) || [];
+                matches.forEach(addCandidate);
+              }
+            }
+          }
+        } catch (_) {}
+        node = node.parentElement;
+      }
+    }
+
+    // 2. ค้นหาจาก Performance Resource Timing API ในแท็บปัจจุบัน
     try {
       const entries = performance.getEntriesByType("resource") || [];
       for (let i = entries.length - 1; i >= 0; i--) {
-        const name = entries[i].name || "";
-        if (!name || name.startsWith(COMPANION_URL) || name.startsWith("blob:")) continue;
-        if (/\.(mp4|m3u8|webm|mov|m4v)(\?|$|#)/i.test(name) || /(videocdn|videoplayback|icbu_vod_video|mime=video)/i.test(name)) {
-          if (!urls.includes(name)) urls.push(name);
-        }
+        addCandidate(entries[i].name || "");
       }
     } catch (_) {}
+
+    // 3. ค้นหาจาก JSON-LD และ Inline Script ในหน้าเว็บที่ล็อกอินอยู่แล้ว
+    if (urls.length === 0) {
+      try {
+        const scripts = document.querySelectorAll('script[type="application/ld+json"], script:not([src])');
+        for (const s of scripts) {
+          const txt = s.textContent || "";
+          if (!txt || (!txt.includes(".mp4") && !txt.includes(".m3u8") && !txt.includes("videoUrl"))) continue;
+          const matches = txt.match(/https?:\\?\/\\?\/[^\s"'<>\\]+\.(?:mp4|m3u8|webm)(?:\?[^\s"'<>\\]*)?/gi) || [];
+          matches.forEach(addCandidate);
+          if (urls.length >= 8) break;
+        }
+      } catch (_) {}
+    }
+
     return urls.slice(0, 12);
   }
 
@@ -575,7 +616,7 @@
       }
     }
 
-    const resourceUrls = collectSniffedVideoResources();
+    const resourceUrls = collectSniffedVideoResources(videoEl);
     if ((!bestSrc || bestSrc.startsWith("blob:")) && resourceUrls.length > 0) {
       bestSrc = resourceUrls[0];
     }
@@ -736,7 +777,9 @@
           resolveBestImageSrc(img)
         ) {
           const style = window.getComputedStyle(img);
-          if (style.visibility === "hidden" || style.display === "none" || parseFloat(style.opacity) === 0) continue;
+          if (style.visibility === "hidden" || style.display === "none") continue;
+          // อนุญาตกรณีแว่นขยายสินค้า (Zoom Lens) ซ่อน <img> ต้นฉบับด้วย opacity: 0 ชั่วคราวตอนเอาเมาส์ชี้ (ถ้ารูปมีขนาด >= 120x120px)
+          if (parseFloat(style.opacity) === 0 && (r.width < 120 || r.height < 120)) continue;
           const area = r.width * r.height;
           if (area > bestArea) {
             bestArea = area;
@@ -753,6 +796,28 @@
         element: bestImg,
         label: "🖼 IMAGE → PNG/JPG",
       };
+    }
+
+    // 6. กรณีเว็บใช้กล่องรูปสินค้าแบบ CSS background-image ขนาดใหญ่ (>= 150x150px และไม่ใช่ปุ่ม/เมนู/พื้นหลังทั้งหน้า)
+    let bgNode = targetEl;
+    for (let depth = 0; depth < 2 && bgNode && bgNode !== document.body && bgNode !== document.documentElement; depth++) {
+      const tag = (bgNode.tagName || "").toLowerCase();
+      if (["button", "a", "input", "select", "textarea", "nav", "header", "footer", "aside"].includes(tag)) break;
+      const r = bgNode.getBoundingClientRect();
+      if (r.width >= 150 && r.height >= 150 && r.width <= window.innerWidth * 0.85 && r.height <= window.innerHeight * 0.85) {
+        const bg = window.getComputedStyle(bgNode).backgroundImage || "";
+        const m = bg.match(/url\(["']?(https?:\/\/[^"')]+)["']?\)/i);
+        if (m && m[1] && /\.(jpg|jpeg|png|webp|avif)(\?|$)/i.test(m[1]) && !bgNode.querySelector("button, input, video")) {
+          const cleanBgUrl = m[1].replace(/(\.(?:jpg|jpeg|png))_\d+x\d+[^?]*$/i, "$1").replace(/_\.webp$/i, "");
+          return {
+            mediaType: "image",
+            url: cleanBgUrl,
+            element: bgNode,
+            label: "🖼 IMAGE → PNG/JPG",
+          };
+        }
+      }
+      bgNode = bgNode.parentElement;
     }
 
     return null;
