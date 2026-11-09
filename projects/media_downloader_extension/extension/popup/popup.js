@@ -57,17 +57,28 @@ async function checkServer() {
 }
 
 async function convertAndDownload(item, targetFormat) {
+  let tabUrl = item.pageUrl || "";
+  let tabTitle = "";
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    if (tab) {
+      if (!tabUrl) tabUrl = tab.url || "";
+      tabTitle = tab.title || "";
+    }
+  } catch (_) {}
+
   chrome.runtime.sendMessage(
     {
       type: "UMG_SMART_CONVERT_AND_DOWNLOAD",
       payload: {
         mediaType: item.mediaType,
         url: item.url || "",
-        pageUrl: item.pageUrl || "",
+        pageUrl: tabUrl,
+        pageTitle: tabTitle,
         svgText: item.svgText || "",
         base64Data: item.base64Data || "",
         targetFormat,
-        filename: item.url || `media_${Date.now()}`,
+        filename: tabTitle || item.url || `media_${Date.now()}`,
       },
     },
     () => checkServer()

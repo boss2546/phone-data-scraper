@@ -610,17 +610,48 @@
   }
 
   function resolveBestImageSrc(imgEl) {
-    const raw =
-      imgEl.currentSrc ||
-      imgEl.src ||
-      imgEl.dataset?.src ||
-      imgEl.dataset?.original ||
-      imgEl.dataset?.lazySrc ||
-      imgEl.getAttribute("src") ||
-      "";
+    let raw = "";
+    // 1. ถ้ามี srcset ให้เลือก URL ที่มีความละเอียดสูงสุดก่อน
+    const srcset = imgEl.getAttribute("srcset") || imgEl.dataset?.srcset || "";
+    if (srcset) {
+      let maxScore = -1;
+      for (const part of srcset.split(",")) {
+        const tokens = part.trim().split(/\s+/);
+        const candidateUrl = tokens[0];
+        if (!candidateUrl) continue;
+        let score = 1;
+        if (tokens[1]) {
+          const m = tokens[1].match(/^(\d+(?:\.\d+)?)(w|x)$/i);
+          if (m) {
+            score = m[2].toLowerCase() === "w" ? parseFloat(m[1]) : parseFloat(m[1]) * 1000;
+          }
+        }
+        if (score >= maxScore) {
+          maxScore = score;
+          raw = candidateUrl;
+        }
+      }
+    }
+    if (!raw) {
+      raw =
+        imgEl.dataset?.zoomImage ||
+        imgEl.dataset?.largeImage ||
+        imgEl.dataset?.original ||
+        imgEl.currentSrc ||
+        imgEl.src ||
+        imgEl.dataset?.src ||
+        imgEl.dataset?.lazySrc ||
+        imgEl.getAttribute("src") ||
+        "";
+    }
     if (!raw) return "";
-    // อัปเกรดรูปย่อ Alibaba / AliExpress (.jpg_80x80.jpg -> .jpg) ทันทีถ้ามี
-    return raw.replace(/(\.(?:jpg|jpeg|png))_\d+x\d+[^?]*/i, "$1");
+    try {
+      raw = new URL(raw, window.location.href).href;
+    } catch (_) {}
+    // 2. อัปเกรดรูปย่อของ Alibaba / AliExpress / Taobao (.jpg_80x80.jpg, .jpg_300x300q90.jpg_.webp -> .jpg) ให้ได้ภาพชัดเต็มความละเอียดทันที
+    return raw
+      .replace(/(\.(?:jpg|jpeg|png))_\d+x\d+[^?]*$/i, "$1")
+      .replace(/_\.webp$/i, "");
   }
 
   // ค้นหาวิดีโอหรือรูปภาพจริงใต้ตำแหน่งเมาส์ (ให้ความสำคัญกับ <video> อันดับ 1 เสมอ!)
@@ -746,115 +777,129 @@
     }
   }
 
+  let isProcessingDownload = false;
+  let lastMouseX = 0;
+  let lastMouseY = 0;
+
+  function clearAllHoveredOutlines() {
+    if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
+    document.querySelectorAll(".umg-media-hovered").forEach((el) => el.classList.remove("umg-media-hovered"));
+  }
+
   async function triggerConvertAndDownload(info, targetFormat) {
-    if (!info) return;
-    setProcessingState(info.mediaType, targetFormat);
+    if (!info || isProcessingDownload) return;
+    isProcessingDownload = true;
+    try {
+      setProcessingState(info.mediaType, targetFormat);
 
-    const ctxInfo = extractSmartContext(info);
-    const payload = {
-      url: info.url || "",
-      resourceUrls: info.resourceUrls || collectSniffedVideoResources(),
-      pageUrl: info.pageUrl || window.location.href,
-      pageTitle: ctxInfo.pageTitle || document.title || "",
-      siteName: ctxInfo.siteName || "",
-      base64Data: info.base64Data || "",
-      svgText: info.svgText || "",
-      targetFormat,
-      filename:
-        info.element?.getAttribute("alt") ||
-        info.element?.dataset?.name ||
-        ctxInfo.pageTitle ||
-        info.url ||
-        document.title ||
-        `media_${Date.now()}`,
-    };
+      const ctxInfo = extractSmartContext(info);
+      const payload = {
+        url: info.url || "",
+        resourceUrls: info.resourceUrls || collectSniffedVideoResources(),
+        pageUrl: info.pageUrl || window.location.href,
+        pageTitle: ctxInfo.pageTitle || document.title || "",
+        siteName: ctxInfo.siteName || "",
+        base64Data: info.base64Data || "",
+        svgText: info.svgText || "",
+        targetFormat,
+        filename:
+          info.element?.getAttribute("alt") ||
+          info.element?.dataset?.name ||
+          ctxInfo.pageTitle ||
+          info.url ||
+          document.title ||
+          `media_${Date.now()}`,
+      };
 
-    // สำหรับรูปภาพ ลองดึง Bytes จาก Browser Session ก่อน (ช่วยทะลุเว็บที่บล็อก Hotlink 403 ได้ 100%)
-    if (info.mediaType === "image" && !payload.base64Data && !payload.svgText && payload.url) {
-      payload.base64Data = await tryCaptureBrowserImageBase64(payload.url);
-    }
-
-    // ถ้าเป็นวิดีโอแบบ blob: ลองดึง Blob ในเบราว์เซอร์ (รองรับแม้ไม่มี blob.type)
-    if (payload.url && payload.url.startsWith("blob:") && !payload.base64Data) {
-      try {
-        const res = await fetch(payload.url);
-        const blob = await res.blob();
-        if (blob.size > 500 && blob.size < 65 * 1024 * 1024) {
-          payload.base64Data = await new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onloadend = () => resolve(reader.result);
-            reader.readAsDataURL(blob);
-          });
-        }
-      } catch (_) {
-        // MSE Blob Stream — ใช้ resourceUrls / sniffedUrl / pageUrl
+      // สำหรับรูปภาพ ลองดึง Bytes จาก Browser Session ก่อน (ช่วยทะลุเว็บที่บล็อก Hotlink 403 ได้ 100%)
+      if (info.mediaType === "image" && !payload.base64Data && !payload.svgText && payload.url) {
+        payload.base64Data = await tryCaptureBrowserImageBase64(payload.url);
       }
-    }
 
-    // 1. ส่งให้ Background Service Worker (เฉพาะกรณีข้อมูลไม่ใหญ่เกินขีดจำกัด IPC ของ Chrome)
-    const ipcSafeBase64 = payload.base64Data && payload.base64Data.length < 12 * 1024 * 1024 ? payload.base64Data : "";
-    if (isExtensionContextValid() && chrome.runtime.sendMessage && !info.svgText && (!payload.base64Data || ipcSafeBase64)) {
-      try {
-        const swRes = await new Promise((resolve) => {
-          chrome.runtime.sendMessage(
-            {
-              type: "UMG_SMART_CONVERT_AND_DOWNLOAD",
-              payload: {
-                mediaType: info.mediaType,
-                url: payload.url,
-                resourceUrls: payload.resourceUrls,
-                pageUrl: payload.pageUrl,
-                pageTitle: payload.pageTitle,
-                siteName: payload.siteName,
-                base64Data: ipcSafeBase64,
-                svgText: payload.svgText,
-                targetFormat,
-                filename: payload.filename,
-                autoDownload: true,
+      // ถ้าเป็นวิดีโอแบบ blob: ลองดึง Blob ในเบราว์เซอร์ (รองรับแม้ไม่มี blob.type)
+      if (payload.url && payload.url.startsWith("blob:") && !payload.base64Data) {
+        try {
+          const res = await fetch(payload.url);
+          const blob = await res.blob();
+          if (blob.size > 500 && blob.size < 65 * 1024 * 1024) {
+            payload.base64Data = await new Promise((resolve) => {
+              const reader = new FileReader();
+              reader.onloadend = () => resolve(reader.result);
+              reader.readAsDataURL(blob);
+            });
+          }
+        } catch (_) {
+          // MSE Blob Stream — ใช้ resourceUrls / sniffedUrl / pageUrl
+        }
+      }
+
+      // 1. ส่งให้ Background Service Worker (เฉพาะกรณีข้อมูลไม่ใหญ่เกินขีดจำกัด IPC ของ Chrome)
+      const ipcSafeBase64 = payload.base64Data && payload.base64Data.length < 12 * 1024 * 1024 ? payload.base64Data : "";
+      if (isExtensionContextValid() && chrome.runtime.sendMessage && !info.svgText && (!payload.base64Data || ipcSafeBase64)) {
+        try {
+          const swRes = await new Promise((resolve) => {
+            chrome.runtime.sendMessage(
+              {
+                type: "UMG_SMART_CONVERT_AND_DOWNLOAD",
+                payload: {
+                  mediaType: info.mediaType,
+                  url: payload.url,
+                  resourceUrls: payload.resourceUrls,
+                  pageUrl: payload.pageUrl,
+                  pageTitle: payload.pageTitle,
+                  siteName: payload.siteName,
+                  base64Data: ipcSafeBase64,
+                  svgText: payload.svgText,
+                  targetFormat,
+                  filename: payload.filename,
+                  autoDownload: true,
+                },
               },
-            },
-            (res) => {
-              void chrome.runtime?.lastError;
-              resolve(res);
-            }
-          );
+              (res) => {
+                void chrome.runtime?.lastError;
+                resolve(res);
+              }
+            );
+          });
+          if (swRes && swRes.ok) {
+            setFinishedState(swRes.downloadUrl, swRes.filename, info.mediaType);
+            return;
+          }
+        } catch (_) {}
+      }
+
+      // 2. เรียก Companion Server โดยตรง (รองรับไฟล์ใหญ่ไม่จำกัดขนาด และทำงานได้แม้เพิ่งกด Reload Extension!)
+      const endpoint = info.mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
+      try {
+        const resp = await fetch(`${COMPANION_URL}${endpoint}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
         });
-        if (swRes && swRes.ok) {
-          setFinishedState(swRes.downloadUrl, swRes.filename, info.mediaType);
+        const data = await resp.json();
+        if (data.ok && data.downloadUrl) {
+          triggerBrowserDownload(data.downloadUrl, data.filename);
+          setFinishedState(data.downloadUrl, data.filename, info.mediaType);
           return;
         }
       } catch (_) {}
-    }
 
-    // 2. เรียก Companion Server โดยตรง (รองรับไฟล์ใหญ่ไม่จำกัดขนาด และทำงานได้แม้เพิ่งกด Reload Extension!)
-    const endpoint = info.mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
-    try {
-      const resp = await fetch(`${COMPANION_URL}${endpoint}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const data = await resp.json();
-      if (data.ok && data.downloadUrl) {
-        triggerBrowserDownload(data.downloadUrl, data.filename);
-        setFinishedState(data.downloadUrl, data.filename, info.mediaType);
-        return;
-      }
-    } catch (_) {}
-
-    // 3. Fallback แปลงใน Browser Canvas สำหรับรูปภาพ
-    try {
-      if (info.mediaType === "image") {
-        const converted = await convertImageInBrowserCanvas(info, targetFormat);
-        triggerBrowserDownload(converted.dataUrl, converted.filename);
-        setFinishedState(converted.dataUrl, converted.filename, info.mediaType);
-      } else {
-        statusText.textContent = "❌ ไม่สามารถดึงสตรีมวิดีโอนี้ได้ กรุณากดเล่นวิดีโอสักครู่แล้วกดโหลดอีกครั้งค่ะ";
+      // 3. Fallback แปลงใน Browser Canvas สำหรับรูปภาพ
+      try {
+        if (info.mediaType === "image") {
+          const converted = await convertImageInBrowserCanvas(info, targetFormat);
+          triggerBrowserDownload(converted.dataUrl, converted.filename);
+          setFinishedState(converted.dataUrl, converted.filename, info.mediaType);
+        } else {
+          statusText.textContent = "❌ ไม่สามารถดึงสตรีมวิดีโอนี้ได้ กรุณากดเล่นวิดีโอสักครู่แล้วกดโหลดอีกครั้งค่ะ";
+          btnPrimary.classList.remove("processing");
+        }
+      } catch (err) {
+        statusText.textContent = `❌ ประมวลผลไม่สำเร็จ: ${err.message}`;
         btnPrimary.classList.remove("processing");
       }
-    } catch (err) {
-      statusText.textContent = `❌ ประมวลผลไม่สำเร็จ: ${err.message}`;
-      btnPrimary.classList.remove("processing");
+    } finally {
+      isProcessingDownload = false;
     }
   }
 
@@ -886,8 +931,48 @@
     hoverHost.style.left = `${leftPos}px`;
   }
 
+  // ซ่อนหรือขยับปุ่มลอยทันทีเมื่อผู้ใช้เลื่อนหน้าจอ (Scroll) หรือย่อขยายหน้าจอ (Resize) ไม่ให้ปุ่มลอยค้างกลางอากาศ!
+  const onScrollOrResize = () => {
+    if (!currentTarget || !currentTarget.element) {
+      if (hoverHost.style.display !== "none" && !isMouseOnHud) {
+        hoverHost.style.display = "none";
+      }
+      return;
+    }
+    if (!document.contains(currentTarget.element)) {
+      clearAllHoveredOutlines();
+      currentTarget = null;
+      hoverHost.style.display = "none";
+      return;
+    }
+    const r = currentTarget.element.getBoundingClientRect();
+    const outOfViewport = r.bottom < 40 || r.top > window.innerHeight - 40 || r.right < 40 || r.left > window.innerWidth - 40;
+    const cursorLeftElement =
+      !isMouseOnHud &&
+      (lastMouseX > 0 || lastMouseY > 0) &&
+      (lastMouseX < r.left - 24 || lastMouseX > r.right + 24 || lastMouseY < r.top - 24 || lastMouseY > r.bottom + 24);
+    if (outOfViewport || cursorLeftElement) {
+      clearAllHoveredOutlines();
+      currentTarget = null;
+      hoverHost.style.display = "none";
+    } else {
+      positionHudForElement(currentTarget.element);
+    }
+  };
+
+  const onVisibilityOrBlur = () => {
+    if (document.hidden) {
+      clearAllHoveredOutlines();
+      currentTarget = null;
+      isMouseOnHud = false;
+      hoverHost.style.display = "none";
+    }
+  };
+
   const onMouseMove = (e) => {
     if (!isExtensionEnabled) return;
+    lastMouseX = e.clientX;
+    lastMouseY = e.clientY;
     const path = typeof e.composedPath === "function" ? e.composedPath() : [];
     if (
       isMouseOnHud ||
@@ -913,7 +998,7 @@
             hideTimer = null;
             return;
           }
-          if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
+          clearAllHoveredOutlines();
           currentTarget = null;
           hoverHost.style.display = "none";
           hideTimer = null;
@@ -928,7 +1013,7 @@
     }
 
     if (currentTarget?.element && currentTarget.element !== info.element) {
-      currentTarget.element.classList.remove("umg-media-hovered");
+      clearAllHoveredOutlines();
       btnRedownload.style.display = "none";
     }
 
@@ -959,12 +1044,18 @@
   };
 
   document.addEventListener("mousemove", onMouseMove, { passive: true });
+  window.addEventListener("scroll", onScrollOrResize, { passive: true, capture: true });
+  window.addEventListener("resize", onScrollOrResize, { passive: true });
+  document.addEventListener("visibilitychange", onVisibilityOrBlur);
 
   window.__UMG_CLEANUP__ = () => {
     if (statusAutoHideTimer) clearTimeout(statusAutoHideTimer);
     if (hideTimer) clearTimeout(hideTimer);
-    if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
+    clearAllHoveredOutlines();
     document.removeEventListener("mousemove", onMouseMove);
+    window.removeEventListener("scroll", onScrollOrResize, { capture: true });
+    window.removeEventListener("resize", onScrollOrResize);
+    document.removeEventListener("visibilitychange", onVisibilityOrBlur);
     window.removeEventListener("keydown", onKeyDown);
     hoverHost.remove();
     toastHost.remove();
@@ -975,6 +1066,16 @@
       if (msg.type === "UMG_SET_ENABLED") {
         applyEnabledState(Boolean(msg.enabled), false, false);
         sendResponse({ ok: true, enabled: isExtensionEnabled });
+        return true;
+      }
+      if (msg.type === "UMG_SHOW_PROCESSING") {
+        setProcessingState(msg.mediaType || "video", msg.targetFormat || "mp4");
+        sendResponse({ ok: true });
+        return true;
+      }
+      if (msg.type === "UMG_SHOW_FINISHED") {
+        setFinishedState(msg.downloadUrl || "", msg.filename || "media", msg.mediaType || "video");
+        sendResponse({ ok: true });
         return true;
       }
       if (msg.type === "UMG_SCAN_PAGE") {
@@ -989,7 +1090,7 @@
         document.querySelectorAll("img").forEach((img, idx) => {
           const r = img.getBoundingClientRect();
           if (r.width >= MIN_MEDIA_SIZE && r.height >= MIN_MEDIA_SIZE && (img.currentSrc || img.src)) {
-            items.push({ index: 1000 + idx, mediaType: "image", url: img.currentSrc || img.src, label: "🖼 IMAGE → PNG/JPG" });
+            items.push({ index: 1000 + idx, mediaType: "image", url: resolveBestImageSrc(img), label: "🖼 IMAGE → PNG/JPG" });
           }
         });
         sendResponse({ ok: true, items });

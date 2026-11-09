@@ -236,8 +236,30 @@ def build_smart_filename(
     return final_stem[:95]
 
 
+def cleanup_old_staging_files(max_files_per_dir: int = 60, max_age_seconds: int = 86400):
+    """ล้างไฟล์พักชั่วคราวที่เก่าเกิน 24 ชั่วโมง หรือเกินโควตา เพื่อไม่ให้เปลืองพื้นที่เครื่อง Mac"""
+    now = time.time()
+    for folder in (IMAGES_OUT_DIR, VIDEOS_OUT_DIR):
+        if not folder.exists():
+            continue
+        try:
+            files = sorted(
+                (f for f in folder.iterdir() if f.is_file()),
+                key=lambda p: p.stat().st_mtime,
+                reverse=True,
+            )
+            for idx, f in enumerate(files):
+                if idx >= max_files_per_dir or (now - f.stat().st_mtime) > max_age_seconds:
+                    try:
+                        f.unlink()
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+
+
 def append_history(entry: dict):
-    """บันทึกประวัติการแปลงไฟล์อย่างปลอดภัยด้วย Thread Lock"""
+    """บันทึกประวัติการแปลงไฟล์อย่างปลอดภัยด้วย Thread Lock พร้อมล้างไฟล์พักเก่าอัตโนมัติ"""
     ensure_dirs()
     with HISTORY_LOCK:
         try:
@@ -249,6 +271,7 @@ def append_history(entry: dict):
         items.insert(0, entry)
         # เก็บสูงสุด 500 รายการล่าสุด
         HISTORY_FILE.write_text(json.dumps(items[:500], ensure_ascii=False, indent=2), encoding="utf-8")
+    cleanup_old_staging_files()
 
 
 def parse_svg_color(val: str, default=(30, 41, 59, 255)) -> tuple:

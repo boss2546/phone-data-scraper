@@ -8,7 +8,7 @@ const NATIVE_HOST = "com.meuu.umg_companion";
 const WEIRD_EXT_REGEX = /\.(webp|avif|svg|svgz|jfif|bmp|gif|ico|tiff|tif|heic|webm|ogv|ogg|mov|mkv|ts|m3u8|mpd|flv|avi|bin|dat|php)(\?.*|#.*|$)/i;
 const VIDEO_STREAM_REGEX = /\.(mp4|m3u8|webm|mov|mkv|ogv|ts|m4v)(\?.*|#.*|$)/i;
 
-// เก็บ URL สตรีมวิดีโอล่าสุดที่ดักจับได้ของแต่ละ Tab
+// เก็บรายการ URL สตรีมวิดีโอล่าสุดที่ดักจับได้ของแต่ละ Tab (เก็บสูงสุด 12 รายการต่อแท็บ + ล้างเมื่อปิดแท็บ)
 const tabSniffedVideoMap = new Map();
 
 if (chrome.webRequest && chrome.webRequest.onBeforeRequest) {
@@ -17,14 +17,22 @@ if (chrome.webRequest && chrome.webRequest.onBeforeRequest) {
       if (details.tabId < 0 || !details.url) return;
       if (details.url.startsWith(COMPANION_URL)) return;
       if (details.type === "media" || VIDEO_STREAM_REGEX.test(details.url)) {
-        // ข้ามชิ้นส่วนย่อยเล็กๆ ถ้ามี .m3u8 อยู่แล้ว
-        const prev = tabSniffedVideoMap.get(details.tabId) || "";
-        if (prev.includes(".m3u8") && details.url.includes(".ts")) return;
-        tabSniffedVideoMap.set(details.tabId, details.url);
+        const list = tabSniffedVideoMap.get(details.tabId) || [];
+        // ข้ามชิ้นส่วน .ts ย่อยๆ ถ้ามี .m3u8 อยู่แล้วในรายการ
+        if (details.url.includes(".ts") && list.some((u) => u.includes(".m3u8"))) return;
+        const filtered = list.filter((u) => u !== details.url);
+        filtered.unshift(details.url);
+        tabSniffedVideoMap.set(details.tabId, filtered.slice(0, 12));
       }
     },
     { urls: ["<all_urls>"] }
   );
+}
+
+if (chrome.tabs && chrome.tabs.onRemoved) {
+  chrome.tabs.onRemoved.addListener((tabId) => {
+    tabSniffedVideoMap.delete(tabId);
+  });
 }
 
 // เก็บชื่อไฟล์ที่ต้องการบังคับใช้เมื่อสั่ง chrome.downloads.download
@@ -54,6 +62,7 @@ function triggerManagedChromeDownload(url, filename) {
       (downloadId) => {
         if (downloadId && filename) {
           pendingDownloadFilenameById.set(downloadId, filename);
+          setTimeout(() => pendingDownloadFilenameById.delete(downloadId), 30000);
         }
         resolve(downloadId);
       }
@@ -247,7 +256,9 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
   const { mediaType, url, resourceUrls = [], pageUrl, pageTitle = "", siteName = "", base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
   const fmt = mediaType === "video" ? "mp4" : (targetFormat === "jpg" ? "jpg" : "png");
   const endpoint = mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
-  const sniffedUrl = senderTabId >= 0 ? (tabSniffedVideoMap.get(senderTabId) || "") : "";
+  const sniffedList = senderTabId >= 0 ? (tabSniffedVideoMap.get(senderTabId) || []) : [];
+  const sniffedUrl = Array.isArray(sniffedList) ? (sniffedList[0] || "") : String(sniffedList || "");
+  const mergedResourceUrls = [...new Set([...resourceUrls, ...(Array.isArray(sniffedList) ? sniffedList : [])])];
 
   const alive = await autoWakeupCompanionServer();
   if (alive) {
@@ -257,7 +268,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           url,
-          resourceUrls,
+          resourceUrls: mergedResourceUrls,
           pageUrl,
           pageTitle,
           siteName,
@@ -381,18 +392,29 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   const tabUrl = info.pageUrl || (tab && tab.url) || "";
   if (info.menuItemId === "umg-save-png" || info.menuItemId === "umg-save-jpg") {
     if (!info.srcUrl) return;
+    const fmt = info.menuItemId === "umg-save-jpg" ? "jpg" : "png";
+    if (tabId >= 0) {
+      chrome.tabs.sendMessage(tabId, { type: "UMG_SHOW_PROCESSING", mediaType: "image", targetFormat: fmt }, () => void chrome.runtime.lastError);
+    }
     handleSmartConvertAndDownload(
       {
         mediaType: "image",
         url: info.srcUrl,
         pageUrl: tabUrl,
         pageTitle: tabTitle,
-        targetFormat: info.menuItemId === "umg-save-jpg" ? "jpg" : "png",
+        targetFormat: fmt,
         filename: tabTitle || info.srcUrl,
       },
       tabId
-    );
+    ).then((res) => {
+      if (tabId >= 0 && res && res.ok) {
+        chrome.tabs.sendMessage(tabId, { type: "UMG_SHOW_FINISHED", downloadUrl: res.downloadUrl, filename: res.filename, mediaType: "image" }, () => void chrome.runtime.lastError);
+      }
+    });
   } else if (info.menuItemId === "umg-save-mp4") {
+    if (tabId >= 0) {
+      chrome.tabs.sendMessage(tabId, { type: "UMG_SHOW_PROCESSING", mediaType: "video", targetFormat: "mp4" }, () => void chrome.runtime.lastError);
+    }
     handleSmartConvertAndDownload(
       {
         mediaType: "video",
@@ -403,7 +425,11 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         filename: tabTitle || info.srcUrl || tabUrl,
       },
       tabId
-    );
+    ).then((res) => {
+      if (tabId >= 0 && res && res.ok) {
+        chrome.tabs.sendMessage(tabId, { type: "UMG_SHOW_FINISHED", downloadUrl: res.downloadUrl, filename: res.filename, mediaType: "video" }, () => void chrome.runtime.lastError);
+      }
+    });
   }
 });
 
