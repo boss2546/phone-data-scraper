@@ -144,26 +144,72 @@ function isGibberishOrHash(text) {
   return false;
 }
 
-function cleanPageTitle(rawTitle) {
+const workerNamingCounters = new Map();
+const SEO_FILLER_SET = new Set([
+  "factory", "direct", "wholesale", "wholesaler", "hot", "sale", "selling", "bestseller",
+  "high", "quality", "top", "best", "cheap", "cheapest", "price", "low", "moq", "oem", "odm",
+  "custom", "customized", "customizable", "logo", "private", "label", "manufacturer", "manufacturers",
+  "supplier", "suppliers", "exporter", "exporters", "importer", "importers", "ready", "to", "ship",
+  "fast", "shipping", "delivery", "free", "sample", "new", "arrival", "design", "style", "fashion",
+  "popular", "trendy", "modern", "professional", "good", "supply", "amazon", "alibaba", "aliexpress",
+  "shopee", "lazada", "1688", "taobao", "tmall", "buy", "online", "shop", "store", "official",
+  "authentic", "original", "product", "products", "item", "china", "chinese", "thailand",
+  "for", "with", "and", "the", "in", "on", "of", "at", "by", "from", "or", "a", "an", "com", "www",
+  "image", "images", "video", "videos", "photo", "picture", "media", "main", "detail",
+  "พร้อมส่ง", "ส่งฟรี", "ราคาโรงงาน", "ราคาถูก", "ราคาส่ง", "ขายส่ง", "แท้", "เกรดพรีเมี่ยม", "รุ่นใหม่", "ยอดฮิต", "ขายดี",
+]);
+
+function nextWorkerSeq(baseStem) {
+  const next = (workerNamingCounters.get(baseStem) || 0) + 1;
+  workerNamingCounters.set(baseStem, next);
+  return String(next).padStart(2, "0");
+}
+
+function cleanPageTitle(rawTitle, maxWords = 5, maxChars = 38) {
   if (!rawTitle) return "";
   let t = String(rawTitle).trim().replace(/^\(\d+\)\s*/, "");
   t = t.split(/\s+(?:\||-|\u2013|\u2014)\s+(?:Alibaba|AliExpress|Shopee|Lazada|YouTube|TikTok|Facebook|Instagram|Twitter|X|Buy\s|ซื้อ\s)/i)[0];
-  t = t.replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, " ").replace(/[\s_]+/g, "_").replace(/^[_\-]+|[_\-]+$/g, "");
-  return t.slice(0, 50);
+  t = t.replace(/\b(?:Buy|Wholesale|on\s+Alibaba\.com|Product\s+on\s+Alibaba\.com)\b/gi, " ");
+  t = t.replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, " ");
+
+  const rawTokens = t.split(/[\s_\-]+/).map((w) => w.replace(/^[_\-]+|[_\-]+$/g, "")).filter(Boolean);
+  if (rawTokens.length === 0) return "";
+
+  const coreTokens = rawTokens.filter(
+    (tok) => !SEO_FILLER_SET.has(tok.toLowerCase()) && !/^202\d$|^100%$/.test(tok) && !(tok.length >= 12 && /^\d+$/.test(tok))
+  );
+  const pool = coreTokens.length >= 1 ? coreTokens : rawTokens;
+
+  const selected = [];
+  let totalLen = 0;
+  for (const tok of pool) {
+    if (selected.length >= maxWords) break;
+    const addLen = tok.length + (selected.length > 0 ? 1 : 0);
+    if (selected.length > 0 && totalLen + addLen > maxChars) break;
+    selected.push(tok.slice(0, 24));
+    totalLen += addLen;
+  }
+  return selected.join("_");
 }
 
-function sanitizeCleanStem(rawName, prefix = "รูปภาพ", pageUrl = "", pageTitle = "", siteName = "") {
+function sanitizeCleanStem(rawName, prefix = "รูปภาพ", pageUrl = "", pageTitle = "", siteName = "", customPrefix = "") {
   const typePrefix = prefix === "video" || prefix === "วิดีโอ" ? "วิดีโอ" : "รูปภาพ";
+  if (customPrefix && String(customPrefix).trim()) {
+    const cleanCustom = String(customPrefix).trim().replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, "").replace(/[\s_]+/g, "_").slice(0, 35);
+    if (cleanCustom) {
+      const base = `${cleanCustom}_${typePrefix}`;
+      return `${base}_${nextWorkerSeq(base)}`;
+    }
+  }
   const site = siteName || extractSiteBrand(pageUrl) || extractSiteBrand(rawName);
-  const ts = formatNowTimestamp();
   let stem = "";
 
   if (pageTitle) {
-    const cleaned = cleanPageTitle(pageTitle);
+    const cleaned = cleanPageTitle(pageTitle, 5, 38);
     if (cleaned && !isGibberishOrHash(cleaned)) stem = cleaned;
   }
   if (!stem && rawName && !String(rawName).startsWith("http") && !String(rawName).startsWith("data:") && !String(rawName).startsWith("blob:")) {
-    const cleaned = cleanPageTitle(rawName);
+    const cleaned = cleanPageTitle(rawName, 5, 38);
     if (cleaned && !isGibberishOrHash(cleaned)) stem = cleaned;
   }
   if (!stem && rawName) {
@@ -174,14 +220,14 @@ function sanitizeCleanStem(rawName, prefix = "รูปภาพ", pageUrl = "",
     base = base.replace(/\.(jpg|jpeg|png|webp|avif|gif)_\d+x\d+.*$/i, "");
     base = base.replace(WEIRD_EXT_REGEX, "").replace(/\.(png|jpg|jpeg|mp4)$/i, "");
     base = base.replace(/[^a-zA-Z0-9ก-๙_\-]/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "");
-    if (base && !isGibberishOrHash(base)) stem = base.slice(0, 50);
+    if (base && !isGibberishOrHash(base)) stem = cleanPageTitle(base, 5, 38) || base.slice(0, 38);
   }
 
   const parts = [typePrefix];
   if (site) parts.push(site);
   if (stem && (!site || stem.toLowerCase() !== site.toLowerCase())) parts.push(stem);
-  parts.push(ts);
-  return parts.join("_").replace(/_+/g, "_").slice(0, 90);
+  const baseStem = parts.join("_").replace(/_+/g, "_").slice(0, 65);
+  return `${baseStem}_${nextWorkerSeq(baseStem)}`;
 }
 
 function arrayBufferToBase64(buffer) {
@@ -228,10 +274,10 @@ async function autoWakeupCompanionServer() {
   return false;
 }
 
-async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFilename, pageUrl = "", pageTitle = "", siteName = "") {
+async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFilename, pageUrl = "", pageTitle = "", siteName = "", customPrefix = "") {
   const fmt = targetFormat === "jpg" ? "jpg" : "png";
   const mime = fmt === "jpg" ? "image/jpeg" : "image/png";
-  const filename = `${sanitizeCleanStem(rawFilename || urlOrDataUrl, "รูปภาพ", pageUrl, pageTitle, siteName)}.${fmt}`;
+  const filename = `${sanitizeCleanStem(rawFilename || urlOrDataUrl, "รูปภาพ", pageUrl, pageTitle, siteName, customPrefix)}.${fmt}`;
 
   const response = await fetch(urlOrDataUrl);
   const srcBlob = await response.blob();
@@ -252,8 +298,22 @@ async function convertImageStandaloneInWorker(urlOrDataUrl, targetFormat, rawFil
   return { dataUrl, filename };
 }
 
+async function getStoredCustomPrefix() {
+  if (!chrome.storage || !chrome.storage.local) return "";
+  try {
+    return await new Promise((resolve) => {
+      chrome.storage.local.get({ umgCustomPrefix: "" }, (res) => {
+        resolve(String((res && res.umgCustomPrefix) || "").trim());
+      });
+    });
+  } catch (_) {
+    return "";
+  }
+}
+
 async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
-  const { mediaType, url, resourceUrls = [], pageUrl, pageTitle = "", siteName = "", base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
+  const { mediaType, url, resourceUrls = [], pageUrl, pageTitle = "", siteName = "", customPrefix = "", base64Data, svgText, targetFormat, filename, autoDownload = true } = payload;
+  const resolvedCustomPrefix = customPrefix || (await getStoredCustomPrefix());
   const fmt = mediaType === "video" ? "mp4" : (targetFormat === "jpg" ? "jpg" : "png");
   const endpoint = mediaType === "video" ? "/api/convert/video" : "/api/convert/image";
   const sniffedList = senderTabId >= 0 ? (tabSniffedVideoMap.get(senderTabId) || []) : [];
@@ -272,6 +332,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
           pageUrl,
           pageTitle,
           siteName,
+          customPrefix: resolvedCustomPrefix,
           sniffedUrl,
           base64Data,
           svgText,
@@ -296,7 +357,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
 
   if (mediaType === "image") {
     const inputUrl = base64Data || url;
-    const converted = await convertImageStandaloneInWorker(inputUrl, fmt, filename, pageUrl, pageTitle, siteName);
+    const converted = await convertImageStandaloneInWorker(inputUrl, fmt, filename, pageUrl, pageTitle, siteName, resolvedCustomPrefix);
     if (autoDownload) {
       await triggerManagedChromeDownload(converted.dataUrl, converted.filename);
     }
@@ -307,7 +368,7 @@ async function handleSmartConvertAndDownload(payload, senderTabId = -1) {
       mode: "standalone",
     };
   } else {
-    const cleanMp4 = `${sanitizeCleanStem(filename || url, "วิดีโอ", pageUrl, pageTitle, siteName)}.mp4`;
+    const cleanMp4 = `${sanitizeCleanStem(filename || url, "วิดีโอ", pageUrl, pageTitle, siteName, resolvedCustomPrefix)}.mp4`;
     const bestFallbackUrl =
       base64Data ||
       (url && !url.startsWith("blob:") ? url : "") ||

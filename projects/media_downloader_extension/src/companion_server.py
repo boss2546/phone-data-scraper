@@ -128,6 +128,24 @@ def extract_site_label(page_url: str = "", media_url: str = "", site_hint: str =
     return ""
 
 
+NAMING_COUNTER_LOCK = threading.Lock()
+NAMING_SEQ_COUNTERS: dict[str, int] = {}
+
+SEO_FILLER_WORDS = {
+    "factory", "direct", "wholesale", "wholesaler", "hot", "sale", "selling", "bestseller",
+    "high", "quality", "top", "best", "cheap", "cheapest", "price", "low", "moq", "oem", "odm",
+    "custom", "customized", "customizable", "logo", "private", "label", "manufacturer", "manufacturers",
+    "supplier", "suppliers", "exporter", "exporters", "importer", "importers", "ready", "to", "ship",
+    "fast", "shipping", "delivery", "free", "sample", "new", "arrival", "design", "style", "fashion",
+    "popular", "trendy", "modern", "professional", "good", "supply", "amazon", "alibaba", "aliexpress",
+    "shopee", "lazada", "1688", "taobao", "tmall", "buy", "online", "shop", "store", "official",
+    "authentic", "original", "product", "products", "item", "china", "chinese", "thailand",
+    "for", "with", "and", "the", "in", "on", "of", "at", "by", "from", "or", "a", "an", "com", "www",
+    "image", "images", "video", "videos", "photo", "picture", "media", "main", "detail",
+    "พร้อมส่ง", "ส่งฟรี", "ราคาโรงงาน", "ราคาถูก", "ราคาส่ง", "ขายส่ง", "แท้", "เกรดพรีเมี่ยม", "รุ่นใหม่", "ยอดฮิต", "ขายดี",
+}
+
+
 def is_gibberish_or_hash(text: str) -> bool:
     """ตรวจจับว่าชื่อไฟล์เป็นรหัสสุ่ม/Hash ของ CDN หรือไม่ (เช่น 5kiu9u-h264-hd หรือ Ha0fe3c1058624d3194b6d68a220f9dcb3)"""
     if not text:
@@ -136,24 +154,20 @@ def is_gibberish_or_hash(text: str) -> bool:
     if len(s) < 2:
         return True
     low = s.lower()
-    # คำทั่วไปที่ไม่มีความหมายเฉพาะเจาะจง
     generic_words = {
         "image", "video", "media", "blob", "data", "watch", "default", "maxresdefault",
         "hqdefault", "sddefault", "mqdefault", "master", "playlist", "index", "unnamed",
         "untitled", "download", "file", "live_blob_video", "blob_video_stream", "blob_image",
+        "alibaba", "aliexpress", "shopee", "lazada", "youtube", "tiktok", "facebook", "instagram",
     }
     if low in generic_words:
         return True
-    # ถ้ามีภาษาไทยถือว่าเป็นชื่อที่มีความหมายเสมอ
     if re.search(r"[ก-๙]", s):
         return False
-    # ตัวเลขล้วน หรือตัวเลขปนขนาด เช่น 1793862955635 หรือ 80x80
     if re.fullmatch(r"[\d_\-xX]+", s):
         return True
-    # รหัส Alibaba / Taobao / Hex ยาวๆ เช่น Ha0fe3c1058624d3194b6d68a220f9dcb3 หรือ O1CN01...
     if re.fullmatch(r"[a-fA-F0-9_\-]{12,}", s) or re.match(r"^(H[a-fA-F0-9]{16,}|O1CN01[a-zA-Z0-9_\-]+|TB2[a-zA-Z0-9_\-]+)", s):
         return True
-    # แยกคำย่อยด้วย _ หรือ - เพื่อตรวจรหัสสุ่มอย่าง 5kiu9u-h264-hd หรือ gv98-cab36d37-a1ab2d16
     tokens = [t for t in re.split(r"[_\-\s]+", low) if t]
     codec_tokens = {"h264", "h265", "hevc", "avc", "hd", "sd", "fhd", "uhd", "mp4", "webm", "1080p", "720p", "480p", "360p", "trans", "aidc", "vod", "target"}
     meaningful_tokens = 0
@@ -161,7 +175,6 @@ def is_gibberish_or_hash(text: str) -> bool:
     for tok in tokens:
         if tok in codec_tokens or tok.isdigit():
             continue
-        # คำที่มีตัวเลขสลับตัวอักษรแบบรหัสสุ่ม เช่น 5kiu9u, a1ab2d16, gv98
         if re.search(r"\d", tok) and re.search(r"[a-z]", tok):
             gibberish_tokens += 1
         elif len(tok) >= 16 and not re.search(r"[aeiou]{2}", tok):
@@ -173,18 +186,93 @@ def is_gibberish_or_hash(text: str) -> bool:
     return False
 
 
-def clean_page_title(raw_title: str) -> str:
-    """ตัดคำต่อท้ายชื่อเว็บออกจาก Title เช่น '- Alibaba.com', '| Shopee Thailand', '(3) YouTube'"""
+def clean_page_title(raw_title: str, max_words: int = 5, max_chars: int = 38) -> str:
+    """
+    สกัดเฉพาะคำสำคัญของชื่อสินค้า/หัวข้อ (3-5 คำสมบูรณ์ ไม่ตัดกลางคำ และกรองคำโฆษณา SEO รกๆ ออก)
+    """
     if not raw_title:
         return ""
     t = str(raw_title).strip()
-    # ตัดตัวเลขแจ้งเตือนข้างหน้า เช่น (12)
     t = re.sub(r"^\(\d+\)\s*", "", t)
-    # ตัดส่วนท้ายหลัง - หรือ | ที่เป็นชื่อเว็บ
-    t = re.split(r"\s+(?:\||-|\u2013|\u2014)\s+(?:Alibaba|AliExpress|Shopee|Lazada|YouTube|TikTok|Facebook|Instagram|Twitter|X|Buy\s|ซื้อ\s)", t, maxsplit=1, flags=re.IGNORECASE)[0]
+    t = re.split(
+        r"\s+(?:\||-|\u2013|\u2014)\s+(?:Alibaba|AliExpress|Shopee|Lazada|YouTube|TikTok|Facebook|Instagram|Twitter|X|Buy\s|ซื้อ\s)",
+        t,
+        maxsplit=1,
+        flags=re.IGNORECASE,
+    )[0]
+    t = re.sub(r"\b(?:Buy|Wholesale|on\s+Alibaba\.com|Product\s+on\s+Alibaba\.com)\b", " ", t, flags=re.IGNORECASE)
     t = re.sub(r"[^a-zA-Z0-9ก-๙_\-\s]", " ", t)
-    t = re.sub(r"[\s_]+", "_", t).strip("_-")
-    return t[:52].strip("_-")
+
+    raw_tokens = [tok.strip("_-") for tok in re.split(r"[\s_\-]+", t) if tok.strip("_-")]
+    if not raw_tokens:
+        return ""
+
+    # กรองคำโฆษณา SEO ออก (แต่ถ้ากรองแล้วไม่เหลือคำเลย ให้ใช้คำต้นฉบับ)
+    core_tokens = [
+        tok for tok in raw_tokens
+        if tok.lower() not in SEO_FILLER_WORDS
+        and not re.fullmatch(r"202\d|100%", tok)
+        and not (len(tok) >= 12 and tok.isdigit())
+    ]
+    chosen_pool = core_tokens if len(core_tokens) >= 1 else raw_tokens
+
+    # เลือกไม่เกิน max_words คำ และความยาวรวมไม่เกิน max_chars โดยไม่ตัดกลางคำเด็ดขาด!
+    selected = []
+    total_len = 0
+    for tok in chosen_pool:
+        if len(selected) >= max_words:
+            break
+        add_len = len(tok) + (1 if selected else 0)
+        if selected and (total_len + add_len) > max_chars:
+            break
+        selected.append(tok[:24])
+        total_len += add_len
+
+    return "_".join(selected).strip("_-")
+
+
+def extract_slug_from_page_url(page_url: str) -> str:
+    """ดึงชื่อสินค้าจาก URL หน้าเว็บ (เช่น /product-detail/Luxury-Glass-Candle-Jar_160098.html)"""
+    if not page_url or not str(page_url).startswith(("http://", "https://")):
+        return ""
+    try:
+        path = urllib.parse.unquote(urllib.parse.urlparse(str(page_url)).path or "")
+        for seg in reversed([s for s in path.split("/") if s]):
+            seg_clean = re.sub(r"\.(html?|php|asp|jsp)$", "", seg, flags=re.IGNORECASE)
+            seg_clean = re.sub(r"[_\-\.]?\d{7,}$", "", seg_clean)
+            seg_clean = re.sub(r"-i\.\d+\.\d+$", "", seg_clean)
+            if seg_clean.lower() in ("watch", "reel", "shorts", "video", "videos", "product", "item", "detail", "search", "sandbox"):
+                continue
+            if not is_gibberish_or_hash(seg_clean):
+                cleaned = clean_page_title(seg_clean, max_words=5, max_chars=36)
+                if cleaned and not is_gibberish_or_hash(cleaned):
+                    return cleaned
+    except Exception:
+        pass
+    return ""
+
+
+def next_clean_sequence_number(base_stem: str) -> str:
+    """สร้างเลขลำดับ 01, 02, 03... ต่อท้ายชื่อไฟล์แทนรหัสเวลา 14 หลัก เพื่อให้ชื่อไฟล์สั้น สวย และดูง่าย"""
+    user_downloads = Path.home() / "Downloads"
+    with NAMING_COUNTER_LOCK:
+        seq = NAMING_SEQ_COUNTERS.get(base_stem, 0) + 1
+        while True:
+            seq_str = f"{seq:02d}"
+            candidate = f"{base_stem}_{seq_str}"
+            exists_anywhere = False
+            for folder in (user_downloads, IMAGES_OUT_DIR, VIDEOS_OUT_DIR):
+                if folder and folder.exists():
+                    for ext in (".png", ".jpg", ".mp4"):
+                        if (folder / f"{candidate}{ext}").exists():
+                            exists_anywhere = True
+                            break
+                if exists_anywhere:
+                    break
+            if not exists_anywhere:
+                NAMING_SEQ_COUNTERS[base_stem] = seq
+                return seq_str
+            seq += 1
 
 
 def build_smart_filename(
@@ -194,46 +282,63 @@ def build_smart_filename(
     page_url: str = "",
     page_title: str = "",
     site_name: str = "",
+    custom_prefix: str = "",
 ) -> str:
     """
-    สร้างชื่อไฟล์ที่อ่านเข้าใจง่ายทันที ไม่เป็นรหัสต่างดาว:
-    รูปแบบ: <รูปภาพ|วิดีโอ>_<ชื่อเว็บ>_<ชื่อสินค้า/หัวข้อ>_<YYYYMMDD_HHMMSS>
+    ระบบตั้งชื่อไฟล์อัจฉริยะ v3.0 (อ่านง่าย กระชับ ไม่ตัดกลางคำ ไม่มีเลขเวลา 14 หลักรกตา):
+    - กรณีผู้ใช้ตั้งชื่อนำหน้าเอง (custom_prefix): <ชื่อที่ตั้งเอง>_<รูปภาพ|วิดีโอ>_01
+    - กรณีอัตโนมัติ: <รูปภาพ|วิดีโอ>_<ชื่อเว็บ>_<ชื่อสินค้าสั้นกระชับ 3-5 คำ>_01
     """
     type_prefix = "วิดีโอ" if media_type == "video" else "รูปภาพ"
+
+    # กรณีผู้ใช้ระบุชื่อหมวด/ชื่อสินค้าเองจากช่องตั้งชื่อใน Popup
+    if custom_prefix and str(custom_prefix).strip():
+        clean_custom = re.sub(r"[^a-zA-Z0-9ก-๙_\-\s]", "", str(custom_prefix).strip())
+        clean_custom = re.sub(r"[\s_]+", "_", clean_custom).strip("_-")[:35]
+        if clean_custom:
+            base_stem = f"{clean_custom}_{type_prefix}"
+            seq_str = next_clean_sequence_number(base_stem)
+            return f"{base_stem}_{seq_str}"
+
     site_label = extract_site_label(page_url=page_url, media_url=url, site_hint=site_name)
-    timestamp_str = time.strftime("%Y%m%d_%H%M%S")
-
-    # 1. ลองดึงชื่อจาก raw_name ก่อน (ถ้าไม่ใช่ URL และไม่ใช่รหัสสุ่ม Hash)
     candidate_stem = ""
-    if raw_name and not str(raw_name).startswith(("http://", "https://", "data:", "blob:")):
-        stem = sanitize_base_filename(raw_name, fallback_prefix="")
-        if not is_gibberish_or_hash(stem):
-            candidate_stem = stem[:50]
 
-    # 2. ถ้า raw_name เป็นรหัสสุ่มหรือเป็น URL ให้ใช้ page_title (ชื่อสินค้า/ชื่อหน้าเว็บ) แทน
-    if not candidate_stem and page_title:
-        cleaned_title = clean_page_title(page_title)
+    # 1. ลองดึงจาก page_title (ชื่อสินค้า/หัวข้อโพสต์) ก่อน และกรองคำโฆษณา SEO ออก
+    if page_title:
+        cleaned_title = clean_page_title(page_title, max_words=5, max_chars=38)
         if cleaned_title and not is_gibberish_or_hash(cleaned_title):
             candidate_stem = cleaned_title
 
-    # 3. ถ้ายังไม่มี ให้ลองดูชื่อไฟล์จาก URL (เฉพาะกรณีไม่ใช่รหัสสุ่ม Hash เช่น sample_webp)
+    # 2. ลองดึงจาก raw_name (เช่น alt ของรูปภาพ หรือชื่อไฟล์ที่ส่งมา) ถ้าไม่ใช่ URL และไม่ใช่รหัสสุ่ม Hash
+    if not candidate_stem and raw_name and not str(raw_name).startswith(("http://", "https://", "data:", "blob:")):
+        stem = sanitize_base_filename(raw_name, fallback_prefix="")
+        if not is_gibberish_or_hash(stem):
+            cleaned_raw = clean_page_title(stem, max_words=5, max_chars=38)
+            candidate_stem = cleaned_raw or stem[:38]
+
+    # 3. ลองดึงชื่อสินค้าจาก URL Slug ของหน้าเว็บ (เช่น /product-detail/Luxury-Glass-Candle_1600.html)
+    if not candidate_stem and page_url:
+        slug_stem = extract_slug_from_page_url(page_url)
+        if slug_stem:
+            candidate_stem = slug_stem
+
+    # 4. ลองดึงจากชื่อไฟล์ใน URL ต้นฉบับ (ถ้าไม่ใช่รหัสสุ่ม Hash ของ CDN เช่น sample_webp)
     if not candidate_stem and (raw_name or url):
         url_stem = sanitize_base_filename(raw_name or url, fallback_prefix="")
         if not is_gibberish_or_hash(url_stem):
-            candidate_stem = url_stem[:50]
+            candidate_stem = clean_page_title(url_stem, max_words=5, max_chars=38) or url_stem[:38]
 
     parts = [type_prefix]
     if site_label:
         parts.append(site_label)
     if candidate_stem:
-        # หลีกเลี่ยงการซ้ำชื่อเว็บถ้า candidate_stem มีคำนั้นอยู่แล้ว
         if not site_label or candidate_stem.lower() != site_label.lower():
             parts.append(candidate_stem)
-    parts.append(timestamp_str)
 
-    final_stem = "_".join(parts)
-    final_stem = re.sub(r"_+", "_", final_stem).strip("_")
-    return final_stem[:95]
+    base_stem = "_".join(parts)
+    base_stem = re.sub(r"_+", "_", base_stem).strip("_")[:65]
+    seq_str = next_clean_sequence_number(base_stem)
+    return f"{base_stem}_{seq_str}"
 
 
 def cleanup_old_staging_files(max_files_per_dir: int = 60, max_age_seconds: int = 86400):
@@ -439,6 +544,7 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
 
     source_fmt = str(payload.get("sourceFormat") or "").lower().strip()
     raw_filename = payload.get("filename") or ""
+    custom_prefix = str(payload.get("customPrefix") or "").strip()
     clean_stem = build_smart_filename(
         raw_name=raw_filename,
         media_type="image",
@@ -446,6 +552,7 @@ def convert_image_pipeline(payload: dict, server_port: int = 8765) -> dict:
         page_url=page_url,
         page_title=page_title,
         site_name=site_name,
+        custom_prefix=custom_prefix,
     )
 
     if svg_text:
@@ -639,6 +746,7 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
     base64_data = payload.get("base64Data") or payload.get("dataUrl")
     source_fmt = str(payload.get("sourceFormat") or "").upper().strip()
     raw_filename = payload.get("filename") or ""
+    custom_prefix = str(payload.get("customPrefix") or "").strip()
     clean_stem = build_smart_filename(
         raw_name=raw_filename,
         media_type="video",
@@ -646,6 +754,7 @@ def convert_video_pipeline(payload: dict, server_port: int = 8765) -> dict:
         page_url=page_url,
         page_title=page_title,
         site_name=site_name,
+        custom_prefix=custom_prefix,
     )
 
     out_filename = f"{clean_stem}.mp4"

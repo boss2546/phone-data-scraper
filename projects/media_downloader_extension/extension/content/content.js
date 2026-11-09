@@ -27,6 +27,28 @@
   let hideTimer = null;
   let lastReadyDownload = null;
   let isExtensionEnabled = true;
+  let customFilenamePrefix = "";
+  const localNamingCounters = new Map();
+
+  const SEO_FILLER_SET = new Set([
+    "factory", "direct", "wholesale", "wholesaler", "hot", "sale", "selling", "bestseller",
+    "high", "quality", "top", "best", "cheap", "cheapest", "price", "low", "moq", "oem", "odm",
+    "custom", "customized", "customizable", "logo", "private", "label", "manufacturer", "manufacturers",
+    "supplier", "suppliers", "exporter", "exporters", "importer", "importers", "ready", "to", "ship",
+    "fast", "shipping", "delivery", "free", "sample", "new", "arrival", "design", "style", "fashion",
+    "popular", "trendy", "modern", "professional", "good", "supply", "amazon", "alibaba", "aliexpress",
+    "shopee", "lazada", "1688", "taobao", "tmall", "buy", "online", "shop", "store", "official",
+    "authentic", "original", "product", "products", "item", "china", "chinese", "thailand",
+    "for", "with", "and", "the", "in", "on", "of", "at", "by", "from", "or", "a", "an", "com", "www",
+    "image", "images", "video", "videos", "photo", "picture", "media", "main", "detail",
+    "พร้อมส่ง", "ส่งฟรี", "ราคาโรงงาน", "ราคาถูก", "ราคาส่ง", "ขายส่ง", "แท้", "เกรดพรีเมี่ยม", "รุ่นใหม่", "ยอดฮิต", "ขายดี",
+  ]);
+
+  function nextLocalSeq(baseStem) {
+    const next = (localNamingCounters.get(baseStem) || 0) + 1;
+    localNamingCounters.set(baseStem, next);
+    return String(next).padStart(2, "0");
+  }
 
   function isExtensionContextValid() {
     try {
@@ -34,12 +56,6 @@
     } catch (_) {
       return false;
     }
-  }
-
-  function formatNowTimestamp() {
-    const d = new Date();
-    const pad = (n) => String(n).padStart(2, "0");
-    return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}_${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
   }
 
   function extractSiteBrand(urlOrPage) {
@@ -85,6 +101,7 @@
       "image", "video", "media", "blob", "data", "watch", "default", "maxresdefault",
       "hqdefault", "sddefault", "mqdefault", "master", "playlist", "index", "unnamed",
       "untitled", "download", "file", "poster", "thumbnail", "thumb",
+      "alibaba", "aliexpress", "shopee", "lazada", "youtube", "tiktok", "facebook", "instagram",
     ]);
     if (generic.has(low)) return true;
     if (/^[\d_\-xX]+$/.test(s)) return true;
@@ -110,12 +127,47 @@
     return false;
   }
 
-  function cleanPageTitle(rawTitle) {
+  function cleanPageTitle(rawTitle, maxWords = 5, maxChars = 38) {
     if (!rawTitle) return "";
     let t = String(rawTitle).trim().replace(/^\(\d+\)\s*/, "");
     t = t.split(/\s+(?:\||-|\u2013|\u2014)\s+(?:Alibaba|AliExpress|Shopee|Lazada|YouTube|TikTok|Facebook|Instagram|Twitter|X|Buy\s|ซื้อ\s)/i)[0];
-    t = t.replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, " ").replace(/[\s_]+/g, "_").replace(/^[_\-]+|[_\-]+$/g, "");
-    return t.slice(0, 50);
+    t = t.replace(/\b(?:Buy|Wholesale|on\s+Alibaba\.com|Product\s+on\s+Alibaba\.com)\b/gi, " ");
+    t = t.replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, " ");
+
+    const rawTokens = t.split(/[\s_\-]+/).map((w) => w.replace(/^[_\-]+|[_\-]+$/g, "")).filter(Boolean);
+    if (rawTokens.length === 0) return "";
+
+    const coreTokens = rawTokens.filter(
+      (tok) => !SEO_FILLER_SET.has(tok.toLowerCase()) && !/^202\d$|^100%$/.test(tok) && !(tok.length >= 12 && /^\d+$/.test(tok))
+    );
+    const pool = coreTokens.length >= 1 ? coreTokens : rawTokens;
+
+    const selected = [];
+    let totalLen = 0;
+    for (const tok of pool) {
+      if (selected.length >= maxWords) break;
+      const addLen = tok.length + (selected.length > 0 ? 1 : 0);
+      if (selected.length > 0 && totalLen + addLen > maxChars) break;
+      selected.push(tok.slice(0, 24));
+      totalLen += addLen;
+    }
+    return selected.join("_");
+  }
+
+  function extractSlugFromUrl(pageUrl) {
+    try {
+      const u = new URL(pageUrl || window.location.href);
+      const segs = decodeURIComponent(u.pathname || "").split("/").filter(Boolean).reverse();
+      for (const seg of segs) {
+        let s = seg.replace(/\.(html?|php|asp|jsp)$/i, "").replace(/[_\-\.]?\d{7,}$/, "").replace(/-i\.\d+\.\d+$/, "");
+        if (["watch", "reel", "shorts", "video", "videos", "product", "item", "detail", "search", "sandbox"].includes(s.toLowerCase())) continue;
+        if (!isGibberishOrHash(s)) {
+          const cleaned = cleanPageTitle(s, 5, 36);
+          if (cleaned && !isGibberishOrHash(cleaned)) return cleaned;
+        }
+      }
+    } catch (_) {}
+    return "";
   }
 
   function extractSmartContext(info) {
@@ -133,27 +185,37 @@
       // ค้นหาหัวข้อสินค้า/ชื่อโพสต์ที่อยู่ใกล้เคียงในการ์ดเดียวกัน
       let parent = el.parentElement;
       for (let i = 0; i < 6 && parent && parent !== document.body; i++) {
-        const heading = parent.querySelector("h1, h2, h3, figcaption, [class*='title'], [class*='subject']");
-        if (heading && heading.textContent) {
-          candidates.push(heading.textContent.trim().slice(0, 80));
-          break;
+        const heading = parent.querySelector("h1, h2, h3, a[title], figcaption, [class*='title'], [class*='subject']");
+        if (heading) {
+          const txt = heading.getAttribute("title") || heading.textContent || "";
+          if (txt.trim()) {
+            candidates.push(txt.trim().slice(0, 100));
+            break;
+          }
         }
         parent = parent.parentElement;
       }
     }
 
-    const mainH1 = document.querySelector("h1");
+    const ogTitle = document.querySelector('meta[property="og:title"], meta[name="twitter:title"]')?.getAttribute("content");
+    if (ogTitle) candidates.push(ogTitle.trim());
+
+    const mainH1 = document.querySelector("h1, .module-pdp-title, [data-spm='title']");
     if (mainH1 && mainH1.textContent) {
-      candidates.push(mainH1.textContent.trim().slice(0, 80));
+      candidates.push(mainH1.textContent.trim().slice(0, 100));
     }
     if (document.title) {
       candidates.push(document.title);
+    }
+    const urlSlug = extractSlugFromUrl(info?.pageUrl || window.location.href);
+    if (urlSlug) {
+      candidates.push(urlSlug);
     }
 
     let bestTitle = "";
     for (const raw of candidates) {
       if (!raw || String(raw).startsWith("http")) continue;
-      const cleaned = cleanPageTitle(raw);
+      const cleaned = cleanPageTitle(raw, 5, 38);
       if (cleaned && !isGibberishOrHash(cleaned)) {
         bestTitle = cleaned;
         break;
@@ -165,15 +227,21 @@
 
   function sanitizeCleanStem(rawName, prefix = "media", mediaType = "image", pageTitle = "", siteName = "") {
     const typePrefix = mediaType === "video" ? "วิดีโอ" : "รูปภาพ";
-    const ts = formatNowTimestamp();
-    let stem = "";
+    if (customFilenamePrefix && customFilenamePrefix.trim()) {
+      const cleanCustom = customFilenamePrefix.trim().replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, "").replace(/[\s_]+/g, "_").slice(0, 35);
+      if (cleanCustom) {
+        const base = `${cleanCustom}_${typePrefix}`;
+        return `${base}_${nextLocalSeq(base)}`;
+      }
+    }
 
-    if (rawName && !String(rawName).startsWith("http") && !String(rawName).startsWith("data:") && !String(rawName).startsWith("blob:")) {
-      const cleaned = cleanPageTitle(rawName);
+    let stem = "";
+    if (pageTitle) {
+      const cleaned = cleanPageTitle(pageTitle, 5, 38);
       if (cleaned && !isGibberishOrHash(cleaned)) stem = cleaned;
     }
-    if (!stem && pageTitle) {
-      const cleaned = cleanPageTitle(pageTitle);
+    if (!stem && rawName && !String(rawName).startsWith("http") && !String(rawName).startsWith("data:") && !String(rawName).startsWith("blob:")) {
+      const cleaned = cleanPageTitle(rawName, 5, 38);
       if (cleaned && !isGibberishOrHash(cleaned)) stem = cleaned;
     }
     if (!stem && rawName) {
@@ -184,14 +252,14 @@
       base = base.replace(/\.(jpg|jpeg|png|webp|avif|gif)_\d+x\d+.*$/i, "");
       base = base.replace(WEIRD_EXT_REGEX, "").replace(/\.(png|jpg|jpeg|mp4)$/i, "");
       base = base.replace(/[^a-zA-Z0-9ก-๙_\-]/g, "_").replace(/_+/g, "_").replace(/^_|_$/g, "");
-      if (base && !isGibberishOrHash(base)) stem = base.slice(0, 50);
+      if (base && !isGibberishOrHash(base)) stem = cleanPageTitle(base, 5, 38) || base.slice(0, 38);
     }
 
     const parts = [typePrefix];
     if (siteName) parts.push(siteName);
     if (stem && (!siteName || stem.toLowerCase() !== siteName.toLowerCase())) parts.push(stem);
-    parts.push(ts);
-    return parts.join("_").replace(/_+/g, "_").slice(0, 90);
+    const baseStem = parts.join("_").replace(/_+/g, "_").slice(0, 65);
+    return `${baseStem}_${nextLocalSeq(baseStem)}`;
   }
 
   async function convertImageInBrowserCanvas(info, targetFormat) {
@@ -453,12 +521,18 @@
 
   if (isExtensionContextValid() && chrome.storage && chrome.storage.local) {
     try {
-      chrome.storage.local.get({ umgEnabled: true }, (res) => {
-        if (res) applyEnabledState(res.umgEnabled !== false, false, false);
+      chrome.storage.local.get({ umgEnabled: true, umgCustomPrefix: "" }, (res) => {
+        if (res) {
+          applyEnabledState(res.umgEnabled !== false, false, false);
+          customFilenamePrefix = String(res.umgCustomPrefix || "").trim();
+        }
       });
       chrome.storage.onChanged.addListener((changes) => {
         if (changes.umgEnabled) {
           applyEnabledState(changes.umgEnabled.newValue !== false, false, false);
+        }
+        if (changes.umgCustomPrefix) {
+          customFilenamePrefix = String(changes.umgCustomPrefix.newValue || "").trim();
         }
       });
     } catch (_) {}
@@ -864,6 +938,7 @@
         pageUrl: info.pageUrl || window.location.href,
         pageTitle: ctxInfo.pageTitle || document.title || "",
         siteName: ctxInfo.siteName || "",
+        customPrefix: customFilenamePrefix || "",
         base64Data: info.base64Data || "",
         svgText: info.svgText || "",
         targetFormat,
@@ -913,6 +988,7 @@
                   pageUrl: payload.pageUrl,
                   pageTitle: payload.pageTitle,
                   siteName: payload.siteName,
+                  customPrefix: payload.customPrefix,
                   base64Data: ipcSafeBase64,
                   svgText: payload.svgText,
                   targetFormat,

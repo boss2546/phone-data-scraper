@@ -6,8 +6,20 @@ const powerBox = document.getElementById("power-box");
 const powerTitle = document.getElementById("power-title");
 const powerSub = document.getElementById("power-sub");
 const btnTogglePower = document.getElementById("btn-toggle-power");
+const customPrefixInput = document.getElementById("custom-prefix-input");
+const btnClearPrefix = document.getElementById("btn-clear-prefix");
+const namingPreview = document.getElementById("naming-preview");
 
 let isEnabled = true;
+
+function updateNamingPreview(val) {
+  const clean = String(val || "").trim().replace(/[^a-zA-Z0-9ก-๙_\-\s]/g, "").replace(/[\s_]+/g, "_").slice(0, 35);
+  if (clean) {
+    namingPreview.textContent = `📌 ชื่อไฟล์ที่ได้: ${clean}_รูปภาพ_01.png / ${clean}_วิดีโอ_01.mp4`;
+  } else {
+    namingPreview.textContent = `✨ โหมดออโต้: รูปภาพ_ชื่อเว็บ_ชื่อสินค้า_01.png / .mp4`;
+  }
+}
 
 function renderPowerState(enabled) {
   isEnabled = Boolean(enabled);
@@ -28,11 +40,30 @@ function renderPowerState(enabled) {
 
 function initPowerState() {
   if (chrome.storage && chrome.storage.local) {
-    chrome.storage.local.get({ umgEnabled: true }, (res) => {
+    chrome.storage.local.get({ umgEnabled: true, umgCustomPrefix: "" }, (res) => {
       renderPowerState(res.umgEnabled !== false);
+      const savedPrefix = String(res.umgCustomPrefix || "");
+      customPrefixInput.value = savedPrefix;
+      updateNamingPreview(savedPrefix);
     });
   }
 }
+
+customPrefixInput.addEventListener("input", () => {
+  const val = customPrefixInput.value.trim();
+  updateNamingPreview(val);
+  if (chrome.storage && chrome.storage.local) {
+    chrome.storage.local.set({ umgCustomPrefix: val });
+  }
+});
+
+btnClearPrefix.addEventListener("click", () => {
+  customPrefixInput.value = "";
+  updateNamingPreview("");
+  if (chrome.storage && chrome.storage.local) {
+    chrome.storage.local.set({ umgCustomPrefix: "" });
+  }
+});
 
 btnTogglePower.addEventListener("click", () => {
   const nextState = !isEnabled;

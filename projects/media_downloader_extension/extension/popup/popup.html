@@ -143,6 +143,55 @@
       font-size: 11px;
       cursor: pointer;
     }
+    .naming-box {
+      background: #1e293b;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+    .naming-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #93c5fd;
+      margin-bottom: 6px;
+    }
+    .naming-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .naming-input {
+      flex: 1;
+      background: #0f172a;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      border-radius: 8px;
+      padding: 7px 10px;
+      color: #f8fafc;
+      font-size: 12px;
+      outline: none;
+    }
+    .naming-input:focus {
+      border-color: #34d399;
+    }
+    .naming-clear {
+      border: none;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #334155;
+      color: #cbd5e1;
+    }
+    .naming-preview {
+      margin-top: 6px;
+      font-size: 11px;
+      color: #34d399;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   </style>
 </head>
 <body>
@@ -158,6 +207,16 @@
       <div class="power-sub" id="power-sub">ชี้รูป/วิดีโอเพื่อโหลด (คีย์ลัด Alt+M)</div>
     </div>
     <button class="toggle-btn" id="btn-toggle-power">เปิดอยู่ (ON)</button>
+  </div>
+
+  <!-- ระบบตั้งชื่อไฟล์อัจฉริยะ + ตั้งชื่อเองได้ -->
+  <div class="naming-box">
+    <div class="naming-title">🏷️ ตั้งชื่อไฟล์นำหน้าเอง (เว้นว่าง = ตั้งตามชื่อสินค้าอัตโนมัติ)</div>
+    <div class="naming-row">
+      <input type="text" class="naming-input" id="custom-prefix-input" placeholder="เช่น เทียนหอมเซ็ตA, ขวดแก้วสีชา..." />
+      <button class="naming-clear" id="btn-clear-prefix" title="กลับไปใช้โหมดตั้งชื่ออัตโนมัติ">ออโต้</button>
+    </div>
+    <div class="naming-preview" id="naming-preview">✨ โหมดออโต้: รูปภาพ_ชื่อเว็บ_ชื่อสินค้า_01.png / .mp4</div>
   </div>
 
   <div class="dropzone" id="dropzone">

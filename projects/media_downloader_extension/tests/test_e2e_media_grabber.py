@@ -200,19 +200,28 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
             media_type="video",
             url="https://gv.videocdn.alibaba.com/icbu_vod_video/5kiu9u-h264-hd.mp4",
             page_url="https://www.alibaba.com/product-detail/Mini-Drone-4K_123.html",
-            page_title="Mini Drone 4K Camera - Alibaba.com",
+            page_title="Factory Direct Wholesale Hot Sale Custom Logo Mini Drone 4K Camera - Alibaba.com",
         )
-        self.assertTrue(smart_vid.startswith("วิดีโอ_Alibaba_Mini_Drone_4K_Camera_"))
+        self.assertEqual(smart_vid, "วิดีโอ_Alibaba_Mini_Drone_4K_Camera_01")
         self.assertNotIn("5kiu9u", smart_vid)
+        self.assertNotIn("Wholesale", smart_vid)
 
         smart_img = build_smart_filename(
             raw_name="Ha0fe3c1058624d3194b6d68a220f9dcb3.jpg_80x80.jpg",
             media_type="image",
             url="https://s.alicdn.com/@sc04/kf/Ha0fe3c1058624d3194b6d68a220f9dcb3.jpg_80x80.jpg",
             page_url="https://www.alibaba.com/product-detail/Mini-Drone-4K_123.html",
-            page_title="โดรนติดกล้อง 4K พับได้ | Alibaba.com",
+            page_title="พร้อมส่ง ส่งฟรี โดรนติดกล้อง 4K พับได้ | Alibaba.com",
         )
-        self.assertTrue(smart_img.startswith("รูปภาพ_Alibaba_โดรนติดกล้อง_4K_พับได้_"))
+        self.assertEqual(smart_img, "รูปภาพ_Alibaba_โดรนติดกล้อง_4K_พับได้_01")
+
+        # ทดสอบกรณีผู้ใช้ตั้งชื่อนำหน้าเอง (custom_prefix)
+        custom_named = build_smart_filename(
+            raw_name="Ha0fe3c1058624d3194b6d68a220f9dcb3.jpg",
+            media_type="image",
+            custom_prefix="เทียนหอมเซ็ตA",
+        )
+        self.assertEqual(custom_named, "เทียนหอมเซ็ตA_รูปภาพ_01")
         self.assertNotIn("Ha0fe3c", smart_img)
 
     def test_gate_06_all_video_formats_to_standard_h264_mp4(self):
