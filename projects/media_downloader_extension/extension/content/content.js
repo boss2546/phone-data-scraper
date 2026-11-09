@@ -12,6 +12,9 @@
   }
   document.getElementById("umg-hover-host")?.remove();
   document.getElementById("umg-toast-host")?.remove();
+  if (window !== window.top && (window.innerWidth < 150 || window.innerHeight < 120)) {
+    return;
+  }
   window.__UMG_INITIALIZED__ = true;
 
   const COMPANION_URL = "http://127.0.0.1:8765";
@@ -330,7 +333,7 @@
   `;
   document.documentElement.appendChild(hoverHost);
 
-  // Toast & Interactive Processing Card Host
+  // Toast & Interactive Processing Card Host (แสดงเฉพาะตอนกำลังแปลงไฟล์และซ่อนอัตโนมัติ ไม่วางค้างเกะกะบนหน้าเว็บ!)
   const toastHost = document.createElement("div");
   toastHost.id = "umg-toast-host";
   const toastShadow = toastHost.attachShadow({ mode: "open" });
@@ -339,7 +342,7 @@
       .wrapper {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         gap: 8px;
         pointer-events: none;
       }
@@ -377,34 +380,6 @@
         color: #94a3b8;
         font-size: 14px;
       }
-      .power-pill {
-        pointer-events: auto;
-        cursor: pointer;
-        user-select: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: rgba(15, 23, 42, 0.9);
-        backdrop-filter: blur(8px);
-        color: #f8fafc;
-        padding: 6px 12px;
-        border-radius: 999px;
-        border: 1px solid rgba(16, 185, 129, 0.5);
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        font-size: 12px;
-        font-weight: 600;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-        transition: all 0.15s ease;
-      }
-      .power-pill.off {
-        border-color: rgba(148, 163, 184, 0.35);
-        color: #94a3b8;
-        opacity: 0.75;
-      }
-      .power-pill:hover {
-        opacity: 1;
-        transform: translateY(-1px);
-      }
     </style>
     <div class="wrapper">
       <div class="status-card" id="status-card">
@@ -412,9 +387,6 @@
         <button class="dl-again-btn" id="card-dl-btn" style="display:none;">📥 กดโหลดอีกครั้ง</button>
         <button class="close-btn" id="card-close-btn">✕</button>
       </div>
-      <button class="power-pill" id="floating-power-pill" title="คลิกเพื่อ เปิด/ปิด ปุ่มดึงภาพและวิดีโอ (คีย์ลัด Alt+M)">
-        🟢 โหมดดึงภาพ/วิดีโอ: เปิด (ON)
-      </button>
     </div>
   `;
   document.documentElement.appendChild(toastHost);
@@ -429,20 +401,31 @@
   const btnSecondary = shadow.getElementById("btn-secondary");
   const btnRedownload = shadow.getElementById("btn-redownload");
   const btnHudPause = shadow.getElementById("btn-hud-pause");
-  const floatingPowerPill = toastShadow.getElementById("floating-power-pill");
+  let statusAutoHideTimer = null;
 
-  function applyEnabledState(enabled, persist = true) {
+  function showTransientNotice(message, durationMs = 2200) {
+    if (statusAutoHideTimer) clearTimeout(statusAutoHideTimer);
+    statusCard.style.display = "inline-flex";
+    statusCard.classList.add("ready");
+    statusText.textContent = message;
+    cardDlBtn.style.display = "none";
+    statusAutoHideTimer = setTimeout(() => {
+      statusCard.style.display = "none";
+    }, durationMs);
+  }
+
+  function applyEnabledState(enabled, persist = true, showNotice = false) {
     isExtensionEnabled = Boolean(enabled);
     if (!isExtensionEnabled) {
       if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
       currentTarget = null;
       lockedHudTarget = null;
       hoverHost.style.display = "none";
-      floatingPowerPill.classList.add("off");
-      floatingPowerPill.textContent = "⚪ โหมดดึงภาพ/วิดีโอ: ปิดพัก (OFF)";
-    } else {
-      floatingPowerPill.classList.remove("off");
-      floatingPowerPill.textContent = "🟢 โหมดดึงภาพ/วิดีโอ: เปิด (ON)";
+      if (showNotice) {
+        showTransientNotice("⚪ ปิดพักโหมดดึงภาพ/วิดีโอแล้ว (กด Alt+M หรือคลิกไอคอนส่วนขยายเพื่อเปิดใหม่)");
+      }
+    } else if (showNotice) {
+      showTransientNotice("🟢 เปิดโหมดดึงภาพ/วิดีโอแล้ว (ON)");
     }
     if (persist && isExtensionContextValid() && chrome.storage && chrome.storage.local) {
       try {
@@ -454,21 +437,16 @@
     }
   }
 
-  floatingPowerPill.addEventListener("click", (e) => {
-    e.stopPropagation();
-    applyEnabledState(!isExtensionEnabled, true);
-  });
-
   btnHudPause.addEventListener("click", (e) => {
     e.stopPropagation();
     e.preventDefault();
-    applyEnabledState(false, true);
+    applyEnabledState(false, true, true);
   });
 
   const onKeyDown = (e) => {
     if (e.altKey && (e.key === "m" || e.key === "M" || e.code === "KeyM")) {
       e.preventDefault();
-      applyEnabledState(!isExtensionEnabled, true);
+      applyEnabledState(!isExtensionEnabled, true, true);
     }
   };
   window.addEventListener("keydown", onKeyDown);
@@ -476,11 +454,11 @@
   if (isExtensionContextValid() && chrome.storage && chrome.storage.local) {
     try {
       chrome.storage.local.get({ umgEnabled: true }, (res) => {
-        if (res) applyEnabledState(res.umgEnabled !== false, false);
+        if (res) applyEnabledState(res.umgEnabled !== false, false, false);
       });
       chrome.storage.onChanged.addListener((changes) => {
         if (changes.umgEnabled) {
-          applyEnabledState(changes.umgEnabled.newValue !== false, false);
+          applyEnabledState(changes.umgEnabled.newValue !== false, false, false);
         }
       });
     } catch (_) {}
@@ -499,10 +477,12 @@
   });
 
   cardCloseBtn.addEventListener("click", () => {
+    if (statusAutoHideTimer) clearTimeout(statusAutoHideTimer);
     statusCard.style.display = "none";
   });
 
   function setProcessingState(mediaType, targetFormat) {
+    if (statusAutoHideTimer) clearTimeout(statusAutoHideTimer);
     const label = mediaType === "video" ? "วิดีโอเป็น .MP4" : `ภาพเป็น .${targetFormat.toUpperCase()}`;
     statusCard.style.display = "inline-flex";
     statusCard.classList.remove("ready");
@@ -515,6 +495,7 @@
   }
 
   function setFinishedState(downloadUrl, filename, mediaType) {
+    if (statusAutoHideTimer) clearTimeout(statusAutoHideTimer);
     lastReadyDownload = { url: downloadUrl, filename };
     statusCard.style.display = "inline-flex";
     statusCard.classList.add("ready");
@@ -526,6 +507,11 @@
     btnPrimary.textContent = mediaType === "video" ? "🎬 โหลด MP4" : "⬇ โหลด PNG";
     btnRedownload.style.display = "inline-flex";
     btnRedownload.textContent = `📥 ประมวลผลเสร็จแล้ว! กดโหลด (${filename})`;
+
+    // ซ่อนการ์ดแจ้งเตือนอัตโนมัติใน 4.5 วินาที ไม่ค้างเกะกะหน้าเว็บ
+    statusAutoHideTimer = setTimeout(() => {
+      statusCard.style.display = "none";
+    }, 4500);
   }
 
   cardDlBtn.addEventListener("click", () => {
@@ -975,6 +961,9 @@
   document.addEventListener("mousemove", onMouseMove, { passive: true });
 
   window.__UMG_CLEANUP__ = () => {
+    if (statusAutoHideTimer) clearTimeout(statusAutoHideTimer);
+    if (hideTimer) clearTimeout(hideTimer);
+    if (currentTarget?.element) currentTarget.element.classList.remove("umg-media-hovered");
     document.removeEventListener("mousemove", onMouseMove);
     window.removeEventListener("keydown", onKeyDown);
     hoverHost.remove();
@@ -983,6 +972,11 @@
 
   if (typeof chrome !== "undefined" && chrome.runtime && chrome.runtime.onMessage) {
     chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+      if (msg.type === "UMG_SET_ENABLED") {
+        applyEnabledState(Boolean(msg.enabled), false, false);
+        sendResponse({ ok: true, enabled: isExtensionEnabled });
+        return true;
+      }
       if (msg.type === "UMG_SCAN_PAGE") {
         const items = [];
         document.querySelectorAll("video").forEach((v, idx) => {

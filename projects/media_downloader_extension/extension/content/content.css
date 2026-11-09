@@ -20,7 +20,7 @@
 #umg-toast-host {
   position: fixed !important;
   z-index: 2147483647 !important;
-  bottom: 20px !important;
-  right: 20px !important;
+  bottom: 24px !important;
+  left: 24px !important;
   pointer-events: none !important;
 }

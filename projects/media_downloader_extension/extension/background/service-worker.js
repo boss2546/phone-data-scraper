@@ -331,11 +331,11 @@ async function reinjectIntoAllOpenTabs() {
       if (!tab.id) continue;
       try {
         await chrome.scripting.insertCSS({
-          target: { tabId: tab.id },
+          target: { tabId: tab.id, allFrames: true },
           files: ["content/content.css"],
         });
         await chrome.scripting.executeScript({
-          target: { tabId: tab.id },
+          target: { tabId: tab.id, allFrames: true },
           files: ["content/content.js"],
         });
       } catch (_) {}

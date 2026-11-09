@@ -8,6 +8,7 @@
 """
 import json
 import os
+import shutil
 import stat
 import subprocess
 import sys
@@ -16,21 +17,61 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 NATIVE_HOST_SCRIPT = BASE_DIR / "src" / "native_host.py"
 SERVER_SCRIPT = BASE_DIR / "src" / "companion_server.py"
+GALLERY_HTML = BASE_DIR / "test_gallery.html"
 HOST_NAME = "com.meuu.umg_companion"
 LAUNCH_AGENT_LABEL = "com.meuu.umg.companion"
 
+# คัดลอก Runtime ไปไว้ที่ ~/.umg_companion (นอก ~/Desktop) เพื่อไม่ให้ติดสิทธิ์ macOS TCC (Operation not permitted)
+RUNTIME_DIR = Path.home() / ".umg_companion"
+RUNTIME_SRC_DIR = RUNTIME_DIR / "src"
+RUNTIME_SERVER_SCRIPT = RUNTIME_SRC_DIR / "companion_server.py"
+RUNTIME_NATIVE_SCRIPT = RUNTIME_SRC_DIR / "native_host.py"
+
+
+def sync_tcc_safe_runtime():
+    RUNTIME_SRC_DIR.mkdir(parents=True, exist_ok=True)
+    (RUNTIME_DIR / "data").mkdir(parents=True, exist_ok=True)
+    shutil.copy2(SERVER_SCRIPT, RUNTIME_SERVER_SCRIPT)
+    shutil.copy2(NATIVE_HOST_SCRIPT, RUNTIME_NATIVE_SCRIPT)
+    if GALLERY_HTML.exists():
+        shutil.copy2(GALLERY_HTML, RUNTIME_DIR / "test_gallery.html")
+
+    for script in (NATIVE_HOST_SCRIPT, SERVER_SCRIPT, RUNTIME_NATIVE_SCRIPT, RUNTIME_SERVER_SCRIPT):
+        if script.exists():
+            st = os.stat(script)
+            os.chmod(script, st.st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
+
 
 def install_auto_daemon():
-    # 1. Make scripts executable
-    for script in (NATIVE_HOST_SCRIPT, SERVER_SCRIPT):
-        st = os.stat(script)
-        os.chmod(script, st.st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
+    sync_tcc_safe_runtime()
 
-    # 2. Install macOS LaunchAgent so companion_server runs automatically on demand / background
+    # ติดตั้ง Chrome Native Messaging Host ชี้ไปยัง ~/.umg_companion/src/native_host.py
+    nm_dirs = [
+        Path.home() / "Library" / "Application Support" / "Google" / "Chrome" / "NativeMessagingHosts",
+        Path.home() / "Library" / "Application Support" / "BraveSoftware" / "Brave-Browser" / "NativeMessagingHosts",
+        Path.home() / "Library" / "Application Support" / "Chromium" / "NativeMessagingHosts",
+    ]
+    nm_manifest = {
+        "name": HOST_NAME,
+        "description": "Universal Media Grabber Auto-Start Companion Host",
+        "path": str(RUNTIME_NATIVE_SCRIPT),
+        "type": "stdio",
+        "allowed_origins": [
+            "chrome-extension://*/",
+        ],
+    }
+    for d in nm_dirs:
+        try:
+            d.mkdir(parents=True, exist_ok=True)
+            (d / f"{HOST_NAME}.json").write_text(json.dumps(nm_manifest, indent=2), encoding="utf-8")
+        except Exception:
+            pass
+
+    # ติดตั้ง macOS LaunchAgent ชี้ไปยัง ~/.umg_companion/src/companion_server.py (ไม่ติด TCC ~/Desktop)
     launch_agents_dir = Path.home() / "Library" / "LaunchAgents"
     launch_agents_dir.mkdir(parents=True, exist_ok=True)
     plist_path = launch_agents_dir / f"{LAUNCH_AGENT_LABEL}.plist"
-    log_path = BASE_DIR / "data" / "companion_server.log"
+    log_path = RUNTIME_DIR / "data" / "companion_server.log"
     log_path.parent.mkdir(parents=True, exist_ok=True)
 
     plist_content = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -42,15 +83,18 @@ def install_auto_daemon():
     <key>ProgramArguments</key>
     <array>
         <string>{sys.executable}</string>
-        <string>{SERVER_SCRIPT}</string>
+        <string>{RUNTIME_SERVER_SCRIPT}</string>
         <string>8765</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>{BASE_DIR}</string>
+    <string>{RUNTIME_DIR}</string>
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
-    <true/>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
     <key>StandardOutPath</key>
     <string>{log_path}</string>
     <key>StandardErrorPath</key>
@@ -65,12 +109,13 @@ def install_auto_daemon():
     subprocess.run(["launchctl", "load", "-w", str(plist_path)], capture_output=True)
 
     # Also ensure server is running right now via native_host --ensure
-    subprocess.run([sys.executable, str(NATIVE_HOST_SCRIPT), "--ensure"], capture_output=True)
+    subprocess.run([sys.executable, str(RUNTIME_NATIVE_SCRIPT), "--ensure"], capture_output=True)
 
     return {
         "ok": True,
+        "runtime_dir": str(RUNTIME_DIR),
         "launch_agent": str(plist_path),
-        "native_host_script": str(NATIVE_HOST_SCRIPT),
+        "native_host_script": str(RUNTIME_NATIVE_SCRIPT),
     }
 
 

@@ -941,7 +941,13 @@ class CompanionRequestHandler(BaseHTTPRequestHandler):
 
 def start_server(host: str = "127.0.0.1", port: int = 8765):
     ensure_dirs()
-    httpd = ThreadingHTTPServer((host, port), CompanionRequestHandler)
+    ThreadingHTTPServer.allow_reuse_address = True
+    try:
+        httpd = ThreadingHTTPServer((host, port), CompanionRequestHandler)
+    except OSError as e:
+        if e.errno in (48, 98):  # Address already in use
+            return
+        raise
     print("=" * 72)
     print(f"🚀 Universal Media Grabber Companion Server กำลังทำงานที่ http://{host}:{port}")
     print(f"🧪 หน้าเว็บทดสอบครบทุกนามสกุล (Test Lab): http://{host}:{port}/sandbox")

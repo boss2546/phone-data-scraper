@@ -332,24 +332,28 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
         imgEl.dispatchEvent(new MouseEvent('mousemove', {{ bubbles: true, clientX: iRect.left + 80, clientY: iRect.top + 80 }}));
         const imageDetectedBadge = badge.textContent;
 
-        // D. ทดสอบกดปุ่มปิดการทำงาน (OFF) -> ปุ่มลอยต้องซ่อนทันที และชี้รูปไม่ขึ้นปุ่มลอยอีก
-        const powerPill = toastHost.shadowRoot.getElementById('floating-power-pill');
-        powerPill.click();
-        const hudWhenOff = host.style.display;
-        const pillTextWhenOff = powerPill.textContent.trim();
+        // D. ตรวจสอบว่าไม่มีปุ่มลอย #floating-power-pill ค้างเกะกะมุมขวาล่างอีกต่อไป!
+        const noFloatingPill = toastHost.shadowRoot.getElementById('floating-power-pill') === null;
 
-        // กดเปิดกลับมาเป็น ON อีกครั้ง
-        powerPill.click();
-        const pillTextWhenOn = powerPill.textContent.trim();
+        // E. ทดสอบกดปุ่ม ⏸ ปิด (#btn-hud-pause) หรือคีย์ลัด Alt+M เพื่อปิด/เปิดการทำงาน
+        const btnHudPause = host.shadowRoot.getElementById('btn-hud-pause');
+        btnHudPause.click();
+        const hudWhenOff = host.style.display;
+        const noticeWhenOff = statusText.textContent.trim();
+
+        // กดคีย์ลัด Alt+M เพื่อเปิดกลับมาเป็น ON อีกครั้ง
+        window.dispatchEvent(new KeyboardEvent('keydown', {{ altKey: true, key: 'm', code: 'KeyM', bubbles: true }}));
+        const noticeWhenOn = statusText.textContent.trim();
 
         document.getElementById('test-result').textContent = JSON.stringify({{
+          noFloatingPill,
           ignoredButtonHud,
           videoDetectedBadge,
           videoStatus,
           imageDetectedBadge,
           hudWhenOff,
-          pillTextWhenOff,
-          pillTextWhenOn
+          noticeWhenOff,
+          noticeWhenOn
         }});
       }} catch (err) {{
         document.getElementById('test-result').textContent = 'ERROR:' + err.message;
@@ -375,13 +379,14 @@ class TestUniversalMediaGrabberDeepE2E(unittest.TestCase):
             ]
             proc = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
             dom_out = proc.stdout
+            self.assertIn('"noFloatingPill":true', dom_out, f"Floating power pill must be completely removed: {dom_out[-600:]}")
             self.assertIn('"ignoredButtonHud":"none"', dom_out, f"UI button should be ignored: {dom_out[-600:]}")
             self.assertIn("VIDEO → MP4", dom_out, f"Video behind poster/overlay must be detected as VIDEO: {dom_out[-600:]}")
             self.assertIn(".mp4", dom_out, f"Video download must produce .mp4: {dom_out[-600:]}")
             self.assertIn("IMAGE → PNG/JPG", dom_out, f"Real image must be detected as IMAGE: {dom_out[-600:]}")
             self.assertIn('"hudWhenOff":"none"', dom_out, f"HUD must hide when toggled OFF: {dom_out[-600:]}")
-            self.assertIn("ปิดพัก (OFF)", dom_out, f"Power pill must show OFF state: {dom_out[-600:]}")
-            self.assertIn("เปิด (ON)", dom_out, f"Power pill must restore ON state: {dom_out[-600:]}")
+            self.assertIn("ปิดพักโหมดดึงภาพ/วิดีโอแล้ว", dom_out, f"Must show transient OFF notice: {dom_out[-600:]}")
+            self.assertIn("เปิดโหมดดึงภาพ/วิดีโอแล้ว (ON)", dom_out, f"Alt+M must restore ON state: {dom_out[-600:]}")
         finally:
             if os.path.exists(temp_html_path):
                 os.unlink(temp_html_path)
