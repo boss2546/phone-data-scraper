@@ -1,0 +1,26 @@
+services:
+  vesselfinder-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vesselfinder-radar-microservice
+    restart: unless-stopped
+    ports:
+      - "8088:8000"
+    environment:
+      - PORT=8000
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+

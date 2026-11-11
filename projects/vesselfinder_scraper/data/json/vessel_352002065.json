@@ -1,0 +1,1765 @@
+{
+  "query_id": 352002065,
+  "mmsi": 352002065,
+  "imo": 9928188,
+  "scraped_at_utc": "2026-11-10 08:50:40 UTC",
+  "name": "MAERSK ACADIA",
+  "type": "Container Ship",
+  "country": "Panama",
+  "flag_code": "pa",
+  "year_built": 2022,
+  "gt": 42799,
+  "dwt": 49953,
+  "length_m": 200,
+  "beam_m": 36,
+  "draught_m": 10.6,
+  "max_draught_m": "13.0",
+  "sog_knots": 15.8,
+  "cog_deg": 246.9,
+  "destination_raw": "CLSVE>>>BRIOA",
+  "eta_timestamp": 1794438000,
+  "eta_utc": "2026-11-11 23:00:00 UTC",
+  "last_report_timestamp": 1793672610,
+  "last_report_utc": "2026-11-03 02:23:30 UTC",
+  "nav_status_code": -1,
+  "nav_status": "Unknown / Not Reported",
+  "photo_token": "9928188-352002065-b401fa1d818c7d37afa36e634b5d6c2a",
+  "photo_url_hd": "https://static.vesselfinder.net/ship-photo/9928188-352002065-b401fa1d818c7d37afa36e634b5d6c2a/1",
+  "photo_url_thumb": "https://static.vesselfinder.net/ship-photo/9928188-352002065-b401fa1d818c7d37afa36e634b5d6c2a/3",
+  "voyage": {
+    "next_port_id": "BRIOA001",
+    "next_port_name": "CLSVE>>>BRIOA",
+    "next_port_eta_ts": 1794438000,
+    "next_port_eta_utc": "2026-11-11 23:00:00 UTC",
+    "arrived_at_next_port": false,
+    "last_port_id": "CLSVE001",
+    "last_port_name": "San Vicente",
+    "last_port_country": "Chile",
+    "last_port_country_code": "cl",
+    "last_port_atd_ts": 1793668599,
+    "last_port_atd_utc": "2026-11-03 01:16:39 UTC"
+  },
+  "lat": -36.69972,
+  "lon": -73.415252,
+  "weather": {
+    "air_temp_c": 14,
+    "wind_speed_ms": 4.8,
+    "wind_speed_knots": 9.3,
+    "wind_dir_deg": 212,
+    "wave_height_m": 2.5,
+    "wave_dir_deg": null
+  },
+  "track_points": [
+    {
+      "timestamp": 1793586325,
+      "datetime_utc": "2026-11-02 02:25:25 UTC",
+      "lat": -36.730328,
+      "lon": -73.136222,
+      "cog_deg": 328.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793586684,
+      "datetime_utc": "2026-11-02 02:31:24 UTC",
+      "lat": -36.730325,
+      "lon": -73.136197,
+      "cog_deg": 322.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793586905,
+      "datetime_utc": "2026-11-02 02:35:05 UTC",
+      "lat": -36.7303,
+      "lon": -73.136212,
+      "cog_deg": 321.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793587586,
+      "datetime_utc": "2026-11-02 02:46:26 UTC",
+      "lat": -36.73033,
+      "lon": -73.136202,
+      "cog_deg": 322.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793588126,
+      "datetime_utc": "2026-11-02 02:55:26 UTC",
+      "lat": -36.730323,
+      "lon": -73.136178,
+      "cog_deg": 160.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793589025,
+      "datetime_utc": "2026-11-02 03:10:25 UTC",
+      "lat": -36.730313,
+      "lon": -73.136193,
+      "cog_deg": 301.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793589609,
+      "datetime_utc": "2026-11-02 03:20:09 UTC",
+      "lat": -36.730325,
+      "lon": -73.136165,
+      "cog_deg": 158.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793589925,
+      "datetime_utc": "2026-11-02 03:25:25 UTC",
+      "lat": -36.730323,
+      "lon": -73.136183,
+      "cog_deg": 311.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793590285,
+      "datetime_utc": "2026-11-02 03:31:25 UTC",
+      "lat": -36.730292,
+      "lon": -73.136188,
+      "cog_deg": 311.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793590646,
+      "datetime_utc": "2026-11-02 03:37:26 UTC",
+      "lat": -36.730333,
+      "lon": -73.136197,
+      "cog_deg": 161.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793590831,
+      "datetime_utc": "2026-11-02 03:40:31 UTC",
+      "lat": -36.73031,
+      "lon": -73.13618,
+      "cog_deg": 176.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793591112,
+      "datetime_utc": "2026-11-02 03:45:12 UTC",
+      "lat": -36.730333,
+      "lon": -73.136202,
+      "cog_deg": 159.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793591412,
+      "datetime_utc": "2026-11-02 03:50:12 UTC",
+      "lat": -36.730302,
+      "lon": -73.136182,
+      "cog_deg": 319.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793591726,
+      "datetime_utc": "2026-11-02 03:55:26 UTC",
+      "lat": -36.73032,
+      "lon": -73.136175,
+      "cog_deg": 328.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793592087,
+      "datetime_utc": "2026-11-02 04:01:27 UTC",
+      "lat": -36.730295,
+      "lon": -73.13621,
+      "cog_deg": 334.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793592614,
+      "datetime_utc": "2026-11-02 04:10:14 UTC",
+      "lat": -36.7303,
+      "lon": -73.136172,
+      "cog_deg": 329.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793592914,
+      "datetime_utc": "2026-11-02 04:15:14 UTC",
+      "lat": -36.73031,
+      "lon": -73.136185,
+      "cog_deg": 336.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793593215,
+      "datetime_utc": "2026-11-02 04:20:15 UTC",
+      "lat": -36.730282,
+      "lon": -73.13619,
+      "cog_deg": 140.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793593881,
+      "datetime_utc": "2026-11-02 04:31:21 UTC",
+      "lat": -36.730302,
+      "lon": -73.136195,
+      "cog_deg": 140.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793594245,
+      "datetime_utc": "2026-11-02 04:37:25 UTC",
+      "lat": -36.730317,
+      "lon": -73.13619,
+      "cog_deg": 140.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793594426,
+      "datetime_utc": "2026-11-02 04:40:26 UTC",
+      "lat": -36.730283,
+      "lon": -73.136178,
+      "cog_deg": 140.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793595147,
+      "datetime_utc": "2026-11-02 04:52:27 UTC",
+      "lat": -36.7303,
+      "lon": -73.136205,
+      "cog_deg": 325.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793595331,
+      "datetime_utc": "2026-11-02 04:55:31 UTC",
+      "lat": -36.730282,
+      "lon": -73.136205,
+      "cog_deg": 325.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793595689,
+      "datetime_utc": "2026-11-02 05:01:29 UTC",
+      "lat": -36.730315,
+      "lon": -73.136185,
+      "cog_deg": 325.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793596220,
+      "datetime_utc": "2026-11-02 05:10:20 UTC",
+      "lat": -36.73032,
+      "lon": -73.136205,
+      "cog_deg": 324.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793596946,
+      "datetime_utc": "2026-11-02 05:22:26 UTC",
+      "lat": -36.730305,
+      "lon": -73.13619,
+      "cog_deg": 135.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793597846,
+      "datetime_utc": "2026-11-02 05:37:26 UTC",
+      "lat": -36.730288,
+      "lon": -73.13618,
+      "cog_deg": 306.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793598026,
+      "datetime_utc": "2026-11-02 05:40:26 UTC",
+      "lat": -36.730302,
+      "lon": -73.136173,
+      "cog_deg": 306.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793598323,
+      "datetime_utc": "2026-11-02 05:45:23 UTC",
+      "lat": -36.730285,
+      "lon": -73.136182,
+      "cog_deg": 306.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793598746,
+      "datetime_utc": "2026-11-02 05:52:26 UTC",
+      "lat": -36.730308,
+      "lon": -73.136175,
+      "cog_deg": 306.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793598927,
+      "datetime_utc": "2026-11-02 05:55:27 UTC",
+      "lat": -36.73032,
+      "lon": -73.136192,
+      "cog_deg": 306.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793599646,
+      "datetime_utc": "2026-11-02 06:07:26 UTC",
+      "lat": -36.730305,
+      "lon": -73.136178,
+      "cog_deg": 326.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793599824,
+      "datetime_utc": "2026-11-02 06:10:24 UTC",
+      "lat": -36.730282,
+      "lon": -73.136195,
+      "cog_deg": 326.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793600186,
+      "datetime_utc": "2026-11-02 06:16:26 UTC",
+      "lat": -36.730313,
+      "lon": -73.136208,
+      "cog_deg": 326.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793600726,
+      "datetime_utc": "2026-11-02 06:25:26 UTC",
+      "lat": -36.730287,
+      "lon": -73.136203,
+      "cog_deg": 326.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793601088,
+      "datetime_utc": "2026-11-02 06:31:28 UTC",
+      "lat": -36.7303,
+      "lon": -73.1362,
+      "cog_deg": 158.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793601446,
+      "datetime_utc": "2026-11-02 06:37:26 UTC",
+      "lat": -36.730305,
+      "lon": -73.13618,
+      "cog_deg": 168.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793601986,
+      "datetime_utc": "2026-11-02 06:46:26 UTC",
+      "lat": -36.730297,
+      "lon": -73.136203,
+      "cog_deg": 136.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793602348,
+      "datetime_utc": "2026-11-02 06:52:28 UTC",
+      "lat": -36.730288,
+      "lon": -73.136183,
+      "cog_deg": 136.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793603431,
+      "datetime_utc": "2026-11-02 07:10:31 UTC",
+      "lat": -36.730307,
+      "lon": -73.136185,
+      "cog_deg": 196.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793603790,
+      "datetime_utc": "2026-11-02 07:16:30 UTC",
+      "lat": -36.730292,
+      "lon": -73.136203,
+      "cog_deg": 328.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793604325,
+      "datetime_utc": "2026-11-02 07:25:25 UTC",
+      "lat": -36.730288,
+      "lon": -73.13618,
+      "cog_deg": 328.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793604934,
+      "datetime_utc": "2026-11-02 07:35:34 UTC",
+      "lat": -36.730287,
+      "lon": -73.136205,
+      "cog_deg": 328.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793605950,
+      "datetime_utc": "2026-11-02 07:52:30 UTC",
+      "lat": -36.730283,
+      "lon": -73.136168,
+      "cog_deg": 359.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793606485,
+      "datetime_utc": "2026-11-02 08:01:25 UTC",
+      "lat": -36.730295,
+      "lon": -73.136183,
+      "cog_deg": 147.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793606845,
+      "datetime_utc": "2026-11-02 08:07:25 UTC",
+      "lat": -36.730282,
+      "lon": -73.136158,
+      "cog_deg": 346.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793607025,
+      "datetime_utc": "2026-11-02 08:10:25 UTC",
+      "lat": -36.730322,
+      "lon": -73.136168,
+      "cog_deg": 346.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793607386,
+      "datetime_utc": "2026-11-02 08:16:26 UTC",
+      "lat": -36.730307,
+      "lon": -73.1362,
+      "cog_deg": 296.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793607638,
+      "datetime_utc": "2026-11-02 08:20:38 UTC",
+      "lat": -36.730292,
+      "lon": -73.1362,
+      "cog_deg": 296.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793607926,
+      "datetime_utc": "2026-11-02 08:25:26 UTC",
+      "lat": -36.730318,
+      "lon": -73.136212,
+      "cog_deg": 354.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793608826,
+      "datetime_utc": "2026-11-02 08:40:26 UTC",
+      "lat": -36.730292,
+      "lon": -73.136192,
+      "cog_deg": 333.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793609185,
+      "datetime_utc": "2026-11-02 08:46:25 UTC",
+      "lat": -36.730277,
+      "lon": -73.136165,
+      "cog_deg": 333.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793609546,
+      "datetime_utc": "2026-11-02 08:52:26 UTC",
+      "lat": -36.730315,
+      "lon": -73.1362,
+      "cog_deg": 333.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793609729,
+      "datetime_utc": "2026-11-02 08:55:29 UTC",
+      "lat": -36.730297,
+      "lon": -73.136177,
+      "cog_deg": 333.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793610086,
+      "datetime_utc": "2026-11-02 09:01:26 UTC",
+      "lat": -36.730282,
+      "lon": -73.136173,
+      "cog_deg": 323.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793610943,
+      "datetime_utc": "2026-11-02 09:15:43 UTC",
+      "lat": -36.730297,
+      "lon": -73.136197,
+      "cog_deg": 157.8,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793611346,
+      "datetime_utc": "2026-11-02 09:22:26 UTC",
+      "lat": -36.730295,
+      "lon": -73.136213,
+      "cog_deg": 151.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793611527,
+      "datetime_utc": "2026-11-02 09:25:27 UTC",
+      "lat": -36.730295,
+      "lon": -73.13616,
+      "cog_deg": 135.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793611884,
+      "datetime_utc": "2026-11-02 09:31:24 UTC",
+      "lat": -36.730278,
+      "lon": -73.136205,
+      "cog_deg": 328.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793612244,
+      "datetime_utc": "2026-11-02 09:37:24 UTC",
+      "lat": -36.730292,
+      "lon": -73.136212,
+      "cog_deg": 321.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793613047,
+      "datetime_utc": "2026-11-02 09:50:47 UTC",
+      "lat": -36.73028,
+      "lon": -73.136197,
+      "cog_deg": 311.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793613326,
+      "datetime_utc": "2026-11-02 09:55:26 UTC",
+      "lat": -36.730305,
+      "lon": -73.136188,
+      "cog_deg": 163.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793614229,
+      "datetime_utc": "2026-11-02 10:10:29 UTC",
+      "lat": -36.730282,
+      "lon": -73.136197,
+      "cog_deg": 315.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793614549,
+      "datetime_utc": "2026-11-02 10:15:49 UTC",
+      "lat": -36.73026,
+      "lon": -73.136182,
+      "cog_deg": 337.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793615128,
+      "datetime_utc": "2026-11-02 10:25:28 UTC",
+      "lat": -36.730303,
+      "lon": -73.13619,
+      "cog_deg": 149.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793615491,
+      "datetime_utc": "2026-11-02 10:31:31 UTC",
+      "lat": -36.730267,
+      "lon": -73.136202,
+      "cog_deg": 326.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793615849,
+      "datetime_utc": "2026-11-02 10:37:29 UTC",
+      "lat": -36.730288,
+      "lon": -73.13618,
+      "cog_deg": 317.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793616028,
+      "datetime_utc": "2026-11-02 10:40:28 UTC",
+      "lat": -36.7303,
+      "lon": -73.13619,
+      "cog_deg": 317.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793616387,
+      "datetime_utc": "2026-11-02 10:46:27 UTC",
+      "lat": -36.730278,
+      "lon": -73.136197,
+      "cog_deg": 336.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793616927,
+      "datetime_utc": "2026-11-02 10:55:27 UTC",
+      "lat": -36.730297,
+      "lon": -73.136185,
+      "cog_deg": 332.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793617647,
+      "datetime_utc": "2026-11-02 11:07:27 UTC",
+      "lat": -36.730265,
+      "lon": -73.136185,
+      "cog_deg": 170.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793618184,
+      "datetime_utc": "2026-11-02 11:16:24 UTC",
+      "lat": -36.730278,
+      "lon": -73.136192,
+      "cog_deg": 149.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793618545,
+      "datetime_utc": "2026-11-02 11:22:25 UTC",
+      "lat": -36.730303,
+      "lon": -73.13619,
+      "cog_deg": 149.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793618725,
+      "datetime_utc": "2026-11-02 11:25:25 UTC",
+      "lat": -36.730278,
+      "lon": -73.136205,
+      "cog_deg": 172.0,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793619085,
+      "datetime_utc": "2026-11-02 11:31:25 UTC",
+      "lat": -36.730322,
+      "lon": -73.136197,
+      "cog_deg": 186.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793619449,
+      "datetime_utc": "2026-11-02 11:37:29 UTC",
+      "lat": -36.730302,
+      "lon": -73.136185,
+      "cog_deg": 151.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793619988,
+      "datetime_utc": "2026-11-02 11:46:28 UTC",
+      "lat": -36.730288,
+      "lon": -73.136172,
+      "cog_deg": 305.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793620888,
+      "datetime_utc": "2026-11-02 12:01:28 UTC",
+      "lat": -36.730282,
+      "lon": -73.136185,
+      "cog_deg": 327.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793621426,
+      "datetime_utc": "2026-11-02 12:10:26 UTC",
+      "lat": -36.730283,
+      "lon": -73.13621,
+      "cog_deg": 312.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793621789,
+      "datetime_utc": "2026-11-02 12:16:29 UTC",
+      "lat": -36.730258,
+      "lon": -73.136193,
+      "cog_deg": 339.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793622147,
+      "datetime_utc": "2026-11-02 12:22:27 UTC",
+      "lat": -36.730283,
+      "lon": -73.136185,
+      "cog_deg": 320.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793622335,
+      "datetime_utc": "2026-11-02 12:25:35 UTC",
+      "lat": -36.730267,
+      "lon": -73.136185,
+      "cog_deg": 140.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793622685,
+      "datetime_utc": "2026-11-02 12:31:25 UTC",
+      "lat": -36.730297,
+      "lon": -73.136208,
+      "cog_deg": 131.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793623045,
+      "datetime_utc": "2026-11-02 12:37:25 UTC",
+      "lat": -36.730277,
+      "lon": -73.136213,
+      "cog_deg": 157.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793623586,
+      "datetime_utc": "2026-11-02 12:46:26 UTC",
+      "lat": -36.730293,
+      "lon": -73.13618,
+      "cog_deg": 193.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793623948,
+      "datetime_utc": "2026-11-02 12:52:28 UTC",
+      "lat": -36.730308,
+      "lon": -73.136227,
+      "cog_deg": 156.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793624129,
+      "datetime_utc": "2026-11-02 12:55:29 UTC",
+      "lat": -36.730302,
+      "lon": -73.136208,
+      "cog_deg": 325.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793624490,
+      "datetime_utc": "2026-11-02 13:01:30 UTC",
+      "lat": -36.730297,
+      "lon": -73.136228,
+      "cog_deg": 341.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793624847,
+      "datetime_utc": "2026-11-02 13:07:27 UTC",
+      "lat": -36.730307,
+      "lon": -73.136185,
+      "cog_deg": 327.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793625030,
+      "datetime_utc": "2026-11-02 13:10:30 UTC",
+      "lat": -36.730297,
+      "lon": -73.136203,
+      "cog_deg": 319.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793625386,
+      "datetime_utc": "2026-11-02 13:16:26 UTC",
+      "lat": -36.730278,
+      "lon": -73.136193,
+      "cog_deg": 333.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793625667,
+      "datetime_utc": "2026-11-02 13:21:07 UTC",
+      "lat": -36.730262,
+      "lon": -73.13618,
+      "cog_deg": 3.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793626646,
+      "datetime_utc": "2026-11-02 13:37:26 UTC",
+      "lat": -36.730292,
+      "lon": -73.136185,
+      "cog_deg": 326.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793627907,
+      "datetime_utc": "2026-11-02 13:58:27 UTC",
+      "lat": -36.730307,
+      "lon": -73.13619,
+      "cog_deg": 186.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793628086,
+      "datetime_utc": "2026-11-02 14:01:26 UTC",
+      "lat": -36.730295,
+      "lon": -73.136168,
+      "cog_deg": 168.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793628446,
+      "datetime_utc": "2026-11-02 14:07:26 UTC",
+      "lat": -36.73031,
+      "lon": -73.1362,
+      "cog_deg": 353.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793628989,
+      "datetime_utc": "2026-11-02 14:16:29 UTC",
+      "lat": -36.7303,
+      "lon": -73.136185,
+      "cog_deg": 320.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793629530,
+      "datetime_utc": "2026-11-02 14:25:30 UTC",
+      "lat": -36.730297,
+      "lon": -73.136207,
+      "cog_deg": 327.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793629886,
+      "datetime_utc": "2026-11-02 14:31:26 UTC",
+      "lat": -36.730287,
+      "lon": -73.136177,
+      "cog_deg": 304.8,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793630246,
+      "datetime_utc": "2026-11-02 14:37:26 UTC",
+      "lat": -36.7303,
+      "lon": -73.136185,
+      "cog_deg": 347.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793631146,
+      "datetime_utc": "2026-11-02 14:52:26 UTC",
+      "lat": -36.7303,
+      "lon": -73.136203,
+      "cog_deg": 310.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793632047,
+      "datetime_utc": "2026-11-02 15:07:27 UTC",
+      "lat": -36.730307,
+      "lon": -73.136222,
+      "cog_deg": 134.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793632226,
+      "datetime_utc": "2026-11-02 15:10:26 UTC",
+      "lat": -36.730303,
+      "lon": -73.136183,
+      "cog_deg": 134.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793632578,
+      "datetime_utc": "2026-11-02 15:16:18 UTC",
+      "lat": -36.730295,
+      "lon": -73.136155,
+      "cog_deg": 347.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793632946,
+      "datetime_utc": "2026-11-02 15:22:26 UTC",
+      "lat": -36.73031,
+      "lon": -73.136178,
+      "cog_deg": 349.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793633128,
+      "datetime_utc": "2026-11-02 15:25:28 UTC",
+      "lat": -36.730328,
+      "lon": -73.13618,
+      "cog_deg": 150.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793633488,
+      "datetime_utc": "2026-11-02 15:31:28 UTC",
+      "lat": -36.730318,
+      "lon": -73.136198,
+      "cog_deg": 136.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793633780,
+      "datetime_utc": "2026-11-02 15:36:20 UTC",
+      "lat": -36.730285,
+      "lon": -73.136202,
+      "cog_deg": 331.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793634026,
+      "datetime_utc": "2026-11-02 15:40:26 UTC",
+      "lat": -36.730322,
+      "lon": -73.13622,
+      "cog_deg": 331.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793634386,
+      "datetime_utc": "2026-11-02 15:46:26 UTC",
+      "lat": -36.730317,
+      "lon": -73.136237,
+      "cog_deg": 192.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793634681,
+      "datetime_utc": "2026-11-02 15:51:21 UTC",
+      "lat": -36.730292,
+      "lon": -73.136182,
+      "cog_deg": 337.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793634921,
+      "datetime_utc": "2026-11-02 15:55:21 UTC",
+      "lat": -36.730317,
+      "lon": -73.136162,
+      "cog_deg": 337.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793635285,
+      "datetime_utc": "2026-11-02 16:01:25 UTC",
+      "lat": -36.730292,
+      "lon": -73.1362,
+      "cog_deg": 328.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793635883,
+      "datetime_utc": "2026-11-02 16:11:23 UTC",
+      "lat": -36.73032,
+      "lon": -73.136197,
+      "cog_deg": 0.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793636185,
+      "datetime_utc": "2026-11-02 16:16:25 UTC",
+      "lat": -36.730278,
+      "lon": -73.136178,
+      "cog_deg": 210.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793636725,
+      "datetime_utc": "2026-11-02 16:25:25 UTC",
+      "lat": -36.730293,
+      "lon": -73.136168,
+      "cog_deg": 112.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793637088,
+      "datetime_utc": "2026-11-02 16:31:28 UTC",
+      "lat": -36.73032,
+      "lon": -73.136202,
+      "cog_deg": 296.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793637450,
+      "datetime_utc": "2026-11-02 16:37:30 UTC",
+      "lat": -36.730313,
+      "lon": -73.136175,
+      "cog_deg": 296.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793637630,
+      "datetime_utc": "2026-11-02 16:40:30 UTC",
+      "lat": -36.730317,
+      "lon": -73.1362,
+      "cog_deg": 286.2,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793638346,
+      "datetime_utc": "2026-11-02 16:52:26 UTC",
+      "lat": -36.7303,
+      "lon": -73.13619,
+      "cog_deg": 339.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793638888,
+      "datetime_utc": "2026-11-02 17:01:28 UTC",
+      "lat": -36.730313,
+      "lon": -73.136177,
+      "cog_deg": 265.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793639248,
+      "datetime_utc": "2026-11-02 17:07:28 UTC",
+      "lat": -36.730278,
+      "lon": -73.136153,
+      "cog_deg": 292.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793639606,
+      "datetime_utc": "2026-11-02 17:13:26 UTC",
+      "lat": -36.730332,
+      "lon": -73.136223,
+      "cog_deg": 324.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793639786,
+      "datetime_utc": "2026-11-02 17:16:26 UTC",
+      "lat": -36.730313,
+      "lon": -73.136218,
+      "cog_deg": 309.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793640090,
+      "datetime_utc": "2026-11-02 17:21:30 UTC",
+      "lat": -36.730292,
+      "lon": -73.136165,
+      "cog_deg": 315.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793640330,
+      "datetime_utc": "2026-11-02 17:25:30 UTC",
+      "lat": -36.730282,
+      "lon": -73.13619,
+      "cog_deg": 315.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793640688,
+      "datetime_utc": "2026-11-02 17:31:28 UTC",
+      "lat": -36.730293,
+      "lon": -73.136175,
+      "cog_deg": 300.8,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793641046,
+      "datetime_utc": "2026-11-02 17:37:26 UTC",
+      "lat": -36.730323,
+      "lon": -73.136192,
+      "cog_deg": 3.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793641586,
+      "datetime_utc": "2026-11-02 17:46:26 UTC",
+      "lat": -36.730295,
+      "lon": -73.136178,
+      "cog_deg": 318.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793641946,
+      "datetime_utc": "2026-11-02 17:52:26 UTC",
+      "lat": -36.730308,
+      "lon": -73.136195,
+      "cog_deg": 330.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793642125,
+      "datetime_utc": "2026-11-02 17:55:25 UTC",
+      "lat": -36.730323,
+      "lon": -73.136175,
+      "cog_deg": 330.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793642486,
+      "datetime_utc": "2026-11-02 18:01:26 UTC",
+      "lat": -36.730297,
+      "lon": -73.136203,
+      "cog_deg": 322.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793642846,
+      "datetime_utc": "2026-11-02 18:07:26 UTC",
+      "lat": -36.730323,
+      "lon": -73.136207,
+      "cog_deg": 344.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793643746,
+      "datetime_utc": "2026-11-02 18:22:26 UTC",
+      "lat": -36.730315,
+      "lon": -73.13618,
+      "cog_deg": 317.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793644286,
+      "datetime_utc": "2026-11-02 18:31:26 UTC",
+      "lat": -36.730312,
+      "lon": -73.136207,
+      "cog_deg": 302.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793644829,
+      "datetime_utc": "2026-11-02 18:40:29 UTC",
+      "lat": -36.730292,
+      "lon": -73.136173,
+      "cog_deg": 0.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793645187,
+      "datetime_utc": "2026-11-02 18:46:27 UTC",
+      "lat": -36.730328,
+      "lon": -73.13619,
+      "cog_deg": 351.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793645546,
+      "datetime_utc": "2026-11-02 18:52:26 UTC",
+      "lat": -36.730317,
+      "lon": -73.136205,
+      "cog_deg": 120.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793645725,
+      "datetime_utc": "2026-11-02 18:55:25 UTC",
+      "lat": -36.730308,
+      "lon": -73.136192,
+      "cog_deg": 120.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793646086,
+      "datetime_utc": "2026-11-02 19:01:26 UTC",
+      "lat": -36.730323,
+      "lon": -73.136183,
+      "cog_deg": 325.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793646446,
+      "datetime_utc": "2026-11-02 19:07:26 UTC",
+      "lat": -36.7303,
+      "lon": -73.136218,
+      "cog_deg": 278.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793646984,
+      "datetime_utc": "2026-11-02 19:16:24 UTC",
+      "lat": -36.730312,
+      "lon": -73.136192,
+      "cog_deg": 204.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793647885,
+      "datetime_utc": "2026-11-02 19:31:25 UTC",
+      "lat": -36.730305,
+      "lon": -73.136213,
+      "cog_deg": 342.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793648245,
+      "datetime_utc": "2026-11-02 19:37:25 UTC",
+      "lat": -36.73032,
+      "lon": -73.136217,
+      "cog_deg": 316.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793648605,
+      "datetime_utc": "2026-11-02 19:43:25 UTC",
+      "lat": -36.730313,
+      "lon": -73.136195,
+      "cog_deg": 293.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793648785,
+      "datetime_utc": "2026-11-02 19:46:25 UTC",
+      "lat": -36.730317,
+      "lon": -73.136222,
+      "cog_deg": 293.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793650046,
+      "datetime_utc": "2026-11-02 20:07:26 UTC",
+      "lat": -36.73032,
+      "lon": -73.136205,
+      "cog_deg": 150.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793650225,
+      "datetime_utc": "2026-11-02 20:10:25 UTC",
+      "lat": -36.730313,
+      "lon": -73.13622,
+      "cog_deg": 296.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793650586,
+      "datetime_utc": "2026-11-02 20:16:26 UTC",
+      "lat": -36.730317,
+      "lon": -73.13619,
+      "cog_deg": 147.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793650945,
+      "datetime_utc": "2026-11-02 20:22:25 UTC",
+      "lat": -36.730297,
+      "lon": -73.136177,
+      "cog_deg": 283.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793652026,
+      "datetime_utc": "2026-11-02 20:40:26 UTC",
+      "lat": -36.73031,
+      "lon": -73.136197,
+      "cog_deg": 320.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793652746,
+      "datetime_utc": "2026-11-02 20:52:26 UTC",
+      "lat": -36.7303,
+      "lon": -73.13621,
+      "cog_deg": 313.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793652926,
+      "datetime_utc": "2026-11-02 20:55:26 UTC",
+      "lat": -36.730278,
+      "lon": -73.136185,
+      "cog_deg": 307.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793653646,
+      "datetime_utc": "2026-11-02 21:07:26 UTC",
+      "lat": -36.730292,
+      "lon": -73.136207,
+      "cog_deg": 135.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793653827,
+      "datetime_utc": "2026-11-02 21:10:27 UTC",
+      "lat": -36.730313,
+      "lon": -73.136198,
+      "cog_deg": 159.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793654186,
+      "datetime_utc": "2026-11-02 21:16:26 UTC",
+      "lat": -36.730325,
+      "lon": -73.136213,
+      "cog_deg": 322.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793654513,
+      "datetime_utc": "2026-11-02 21:21:53 UTC",
+      "lat": -36.730357,
+      "lon": -73.136207,
+      "cog_deg": 322.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793654725,
+      "datetime_utc": "2026-11-02 21:25:25 UTC",
+      "lat": -36.7303,
+      "lon": -73.136218,
+      "cog_deg": 149.2,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793655087,
+      "datetime_utc": "2026-11-02 21:31:27 UTC",
+      "lat": -36.730343,
+      "lon": -73.136198,
+      "cog_deg": 129.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793655626,
+      "datetime_utc": "2026-11-02 21:40:26 UTC",
+      "lat": -36.7303,
+      "lon": -73.136193,
+      "cog_deg": 129.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793655985,
+      "datetime_utc": "2026-11-02 21:46:25 UTC",
+      "lat": -36.730325,
+      "lon": -73.136222,
+      "cog_deg": 356.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793656345,
+      "datetime_utc": "2026-11-02 21:52:25 UTC",
+      "lat": -36.730307,
+      "lon": -73.136203,
+      "cog_deg": 356.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793656526,
+      "datetime_utc": "2026-11-02 21:55:26 UTC",
+      "lat": -36.730278,
+      "lon": -73.136197,
+      "cog_deg": 288.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793656886,
+      "datetime_utc": "2026-11-02 22:01:26 UTC",
+      "lat": -36.730293,
+      "lon": -73.136218,
+      "cog_deg": 307.2,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793657785,
+      "datetime_utc": "2026-11-02 22:16:25 UTC",
+      "lat": -36.730313,
+      "lon": -73.136203,
+      "cog_deg": 164.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793658119,
+      "datetime_utc": "2026-11-02 22:21:59 UTC",
+      "lat": -36.730302,
+      "lon": -73.136192,
+      "cog_deg": 135.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793658686,
+      "datetime_utc": "2026-11-02 22:31:26 UTC",
+      "lat": -36.730312,
+      "lon": -73.136203,
+      "cog_deg": 331.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793659226,
+      "datetime_utc": "2026-11-02 22:40:26 UTC",
+      "lat": -36.730292,
+      "lon": -73.136207,
+      "cog_deg": 329.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793659586,
+      "datetime_utc": "2026-11-02 22:46:26 UTC",
+      "lat": -36.730323,
+      "lon": -73.136198,
+      "cog_deg": 329.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793659946,
+      "datetime_utc": "2026-11-02 22:52:26 UTC",
+      "lat": -36.730277,
+      "lon": -73.1362,
+      "cog_deg": 5.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793660486,
+      "datetime_utc": "2026-11-02 23:01:26 UTC",
+      "lat": -36.730288,
+      "lon": -73.136185,
+      "cog_deg": 5.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793660846,
+      "datetime_utc": "2026-11-02 23:07:26 UTC",
+      "lat": -36.730303,
+      "lon": -73.136202,
+      "cog_deg": 156.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793661389,
+      "datetime_utc": "2026-11-02 23:16:29 UTC",
+      "lat": -36.730287,
+      "lon": -73.136182,
+      "cog_deg": 343.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793661926,
+      "datetime_utc": "2026-11-02 23:25:26 UTC",
+      "lat": -36.73031,
+      "lon": -73.136193,
+      "cog_deg": 316.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793662288,
+      "datetime_utc": "2026-11-02 23:31:28 UTC",
+      "lat": -36.7303,
+      "lon": -73.13621,
+      "cog_deg": 314.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793662648,
+      "datetime_utc": "2026-11-02 23:37:28 UTC",
+      "lat": -36.730273,
+      "lon": -73.136203,
+      "cog_deg": 314.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793662822,
+      "datetime_utc": "2026-11-02 23:40:22 UTC",
+      "lat": -36.730288,
+      "lon": -73.13621,
+      "cog_deg": 146.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793663188,
+      "datetime_utc": "2026-11-02 23:46:28 UTC",
+      "lat": -36.730303,
+      "lon": -73.1362,
+      "cog_deg": 170.4,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793663728,
+      "datetime_utc": "2026-11-02 23:55:28 UTC",
+      "lat": -36.730288,
+      "lon": -73.13622,
+      "cog_deg": 143.6,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793664085,
+      "datetime_utc": "2026-11-03 00:01:25 UTC",
+      "lat": -36.730307,
+      "lon": -73.136195,
+      "cog_deg": 67.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793664447,
+      "datetime_utc": "2026-11-03 00:07:27 UTC",
+      "lat": -36.730293,
+      "lon": -73.136175,
+      "cog_deg": 67.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793664989,
+      "datetime_utc": "2026-11-03 00:16:29 UTC",
+      "lat": -36.730302,
+      "lon": -73.136193,
+      "cog_deg": 67.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793665346,
+      "datetime_utc": "2026-11-03 00:22:26 UTC",
+      "lat": -36.730292,
+      "lon": -73.13618,
+      "cog_deg": 145.8,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793665886,
+      "datetime_utc": "2026-11-03 00:31:26 UTC",
+      "lat": -36.73027,
+      "lon": -73.136207,
+      "cog_deg": 320.0,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793666428,
+      "datetime_utc": "2026-11-03 00:40:28 UTC",
+      "lat": -36.730277,
+      "lon": -73.136185,
+      "cog_deg": 150.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793667021,
+      "datetime_utc": "2026-11-03 00:50:21 UTC",
+      "lat": -36.730283,
+      "lon": -73.136203,
+      "cog_deg": 150.2,
+      "sog_knots": 0.0
+    },
+    {
+      "timestamp": 1793667300,
+      "datetime_utc": "2026-11-03 00:55:00 UTC",
+      "lat": -36.730297,
+      "lon": -73.136185,
+      "cog_deg": 145.0,
+      "sog_knots": 0.1
+    },
+    {
+      "timestamp": 1793667600,
+      "datetime_utc": "2026-11-03 01:00:00 UTC",
+      "lat": -36.730853,
+      "lon": -73.13556,
+      "cog_deg": 103.2,
+      "sog_knots": 0.3
+    },
+    {
+      "timestamp": 1793667900,
+      "datetime_utc": "2026-11-03 01:05:00 UTC",
+      "lat": -36.732835,
+      "lon": -73.137315,
+      "cog_deg": 217.4,
+      "sog_knots": 3.2
+    },
+    {
+      "timestamp": 1793668211,
+      "datetime_utc": "2026-11-03 01:10:11 UTC",
+      "lat": -36.73638,
+      "lon": -73.140765,
+      "cog_deg": 214.8,
+      "sog_knots": 2.7
+    },
+    {
+      "timestamp": 1793668511,
+      "datetime_utc": "2026-11-03 01:15:11 UTC",
+      "lat": -36.738838,
+      "lon": -73.14419,
+      "cog_deg": 248.8,
+      "sog_knots": 3.4
+    },
+    {
+      "timestamp": 1793668801,
+      "datetime_utc": "2026-11-03 01:20:01 UTC",
+      "lat": -36.739728,
+      "lon": -73.15222,
+      "cog_deg": 274.2,
+      "sog_knots": 6.0
+    },
+    {
+      "timestamp": 1793669102,
+      "datetime_utc": "2026-11-03 01:25:02 UTC",
+      "lat": -36.73344,
+      "lon": -73.164077,
+      "cog_deg": 328.0,
+      "sog_knots": 10.9
+    },
+    {
+      "timestamp": 1793669402,
+      "datetime_utc": "2026-11-03 01:30:02 UTC",
+      "lat": -36.719368,
+      "lon": -73.175777,
+      "cog_deg": 312.0,
+      "sog_knots": 12.6
+    },
+    {
+      "timestamp": 1793669730,
+      "datetime_utc": "2026-11-03 01:35:30 UTC",
+      "lat": -36.704928,
+      "lon": -73.19188,
+      "cog_deg": 326.4,
+      "sog_knots": 13.1
+    },
+    {
+      "timestamp": 1793670021,
+      "datetime_utc": "2026-11-03 01:40:21 UTC",
+      "lat": -36.689148,
+      "lon": -73.204007,
+      "cog_deg": 329.0,
+      "sog_knots": 14.3
+    },
+    {
+      "timestamp": 1793670301,
+      "datetime_utc": "2026-11-03 01:45:01 UTC",
+      "lat": -36.672288,
+      "lon": -73.216353,
+      "cog_deg": 327.6,
+      "sog_knots": 15.7
+    },
+    {
+      "timestamp": 1793670604,
+      "datetime_utc": "2026-11-03 01:50:04 UTC",
+      "lat": -36.670218,
+      "lon": -73.238087,
+      "cog_deg": 261.0,
+      "sog_knots": 13.8
+    },
+    {
+      "timestamp": 1793670952,
+      "datetime_utc": "2026-11-03 01:55:52 UTC",
+      "lat": -36.67435,
+      "lon": -73.267018,
+      "cog_deg": 260.2,
+      "sog_knots": 15.4
+    },
+    {
+      "timestamp": 1793671207,
+      "datetime_utc": "2026-11-03 02:00:07 UTC",
+      "lat": -36.677492,
+      "lon": -73.28916,
+      "cog_deg": 259.6,
+      "sog_knots": 15.1
+    },
+    {
+      "timestamp": 1793671539,
+      "datetime_utc": "2026-11-03 02:05:39 UTC",
+      "lat": -36.68161,
+      "lon": -73.318323,
+      "cog_deg": 259.8,
+      "sog_knots": 16.0
+    },
+    {
+      "timestamp": 1793671802,
+      "datetime_utc": "2026-11-03 02:10:02 UTC",
+      "lat": -36.684803,
+      "lon": -73.34221,
+      "cog_deg": 260.2,
+      "sog_knots": 16.1
+    },
+    {
+      "timestamp": 1793672147,
+      "datetime_utc": "2026-11-03 02:15:47 UTC",
+      "lat": -36.689128,
+      "lon": -73.373555,
+      "cog_deg": 259.4,
+      "sog_knots": 16.6
+    },
+    {
+      "timestamp": 1793672420,
+      "datetime_utc": "2026-11-03 02:20:20 UTC",
+      "lat": -36.694048,
+      "lon": -73.398703,
+      "cog_deg": 249.8,
+      "sog_knots": 16.4
+    }
+  ],
+  "track_points_count": 204,
+  "annual_utilization": {
+    "2025": {
+      "year": 2025,
+      "port_calls_count": 75,
+      "speed_average_knots": 14.4,
+      "speed_max_knots": 20.2,
+      "ports_visited": [
+        {
+          "a2": "cl",
+          "country": "Chile",
+          "st": 1,
+          "name": "San Antonio",
+          "locode": "CLSAI001"
+        },
+        {
+          "a2": "cl",
+          "country": "Chile",
+          "st": 1,
+          "name": "Arica",
+          "locode": "CLARI001"
+        }
+      ],
+      "countries_visited": [
+        {
+          "country": "Chile",
+          "a2": "cl"
+        },
+        {
+          "country": "Brazil",
+          "a2": "br"
+        }
+      ]
+    },
+    "2024": {
+      "year": 2024,
+      "port_calls_count": 73,
+      "speed_average_knots": 13.2,
+      "speed_max_knots": 20.4,
+      "ports_visited": [
+        {
+          "a2": "cl",
+          "country": "Chile",
+          "st": 1,
+          "name": "San Antonio",
+          "locode": "CLSAI001"
+        },
+        {
+          "a2": "br",
+          "country": "Brazil",
+          "st": 1,
+          "name": "Itapoa",
+          "locode": "BRIOA001"
+        }
+      ],
+      "countries_visited": [
+        {
+          "country": "Brazil",
+          "a2": "br"
+        },
+        {
+          "country": "Chile",
+          "a2": "cl"
+        }
+      ]
+    }
+  },
+  "technical_specs": {
+    "Current draught": "10.6 m",
+    "Position Received": "7 days ago",
+    "IMO / MMSI": "9928188 / 352002065",
+    "Callsign": "3E3754",
+    "AIS Type": "Cargo ship",
+    "AIS Flag": "Panama",
+    "Length / Beam": "200 / 36 m"
+  },
+  "summary_text": "The current position of MAERSK ACADIA is at South America West Coast reported 7 days ago by AIS. The vessel is en route to the port of Itapoa, Brazil , sailing at a speed of 15.8 knots and expected to arrive there on Nov 11, 23:00 . The vessel MAERSK ACADIA (IMO 9928188, MMSI 352002065) is a Container Ship built in 2022 (4 years old) and currently sailing under the flag of Panama .",
+  "details_url": "https://www.vesselfinder.com/vessels/details/352002065",
+  "local_photo": "data/images/maersk_acadia_352002065.jpg"
+}

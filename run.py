@@ -20,6 +20,7 @@ PROJECTS = {
     "10": ("app_store_scraper", "📱 App Store & Play Store Scraper (คลังโลโก้ & ภาพหน้าจอ 35 แอปดัง)", "projects/app_store_scraper/run.py"),
     "11": ("pydronewire", "🛸 pyDroneWire Controller (ควบคุมโดรน FLOW-UFO ผ่าน UDP/RTSP & HUD)", "projects/pydronewire/run.py"),
     "12": ("media_downloader_extension", "🎬 Universal Media Grabber Extension (ดึงภาพ/วิดีโอเป็น .PNG/.JPG/.MP4)", "projects/media_downloader_extension/run.py"),
+    "13": ("vesselfinder_scraper", "🚢 VesselFinder Scraper (เรดาร์เรือเดินสมุทร AIS สด, เส้นทางเดินเรือ & ท่าเรือทั่วโลก)", "projects/vesselfinder_scraper/run.py"),
 }
 
 ALIASES = {
@@ -35,6 +36,7 @@ ALIASES = {
     "appstore": "10", "playstore": "10", "apps": "10",
     "drone": "11", "pydronewire": "11",
     "media": "12", "ext": "12", "extension": "12",
+    "vessel": "13", "vesselfinder": "13", "ship": "13", "ais": "13",
 }
 
 def print_banner():
@@ -99,7 +101,7 @@ def interactive_menu():
         print("  [0] ออกจากโปรแกรม")
         print("-" * 72)
 
-        choice = input("👉 เลือกเมนู (0-11 หรือ s): ").strip().lower()
+        choice = input("👉 เลือกเมนู (0-13 หรือ s): ").strip().lower()
 
         if choice == "0":
             print("👋 ออกจากโปรแกรม ขอบคุณครับ!")

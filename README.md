@@ -26,7 +26,9 @@
     ├── market_intelligence/        # 📊 Cross-Platform Price Comparison & Deal Hunter
     ├── user_account_generator/     # 👥 Synthetic User Accounts & GraphQL Persona Generator
     ├── rea_reverse_engineering/    # 🔬 Reverse Engineer Anything (MCP Server & Binary/HAR Inspector)
-    └── pydronewire/                # 🛸 FLOW-UFO Drone UDP/RTSP Controller & Optical Flow HUD
+    ├── pydronewire/                # 🛸 FLOW-UFO Drone UDP/RTSP Controller & Optical Flow HUD
+    ├── media_downloader_extension/ # 🎬 Universal Media Grabber Chrome Extension (.PNG/.JPG/.MP4)
+    └── vesselfinder_scraper/       # 🚢 VesselFinder Live AIS Radar, XOR Track & Global Ports Decoder
 ```
 
 ---
@@ -47,6 +49,7 @@
 | **10** | **App Store & Play Store** | `projects/app_store_scraper/` | `appstore`, `playstore` | 🟢 สมบูรณ์ 100% | ดึงโลโก้และภาพตัวอย่างหน้าจอ (460 ภาพ) ของ 35 แอปดัง พร้อม Web Studio |
 | **11** | **pyDroneWire Controller** | `projects/pydronewire/` | `drone`, `pydronewire` | 🟢 สมบูรณ์ 100% | ควบคุมโดรน FLOW-UFO ผ่าน UDP/RTSP พร้อม DJI HUD & Optical Flow |
 | **12** | **Universal Media Grabber** | `projects/media_downloader_extension/` | `media`, `ext` | 🟢 สมบูรณ์ 100% | Chrome Extension ดึงภาพและวิดีโอทุกนามสกุลแปลงเป็น `.png`/`.jpg`/`.mp4` |
+| **13** | **VesselFinder Scraper** | `projects/vesselfinder_scraper/` | `vessel`, `ship`, `ais` | 🟢 สมบูรณ์ 100% | ถอดรหัส Binary AIS Radar สด, เส้นทางเดินเรือ XOR, ท่าเรือทั่วโลก 11,367 แห่ง & Web Studio |
 
 ---
 

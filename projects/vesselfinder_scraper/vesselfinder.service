@@ -1,0 +1,32 @@
+# ==============================================================================
+# 🐧 Systemd Service Unit for VesselFinder Live Radar Microservice
+#    Save to /etc/systemd/system/vesselfinder.service on Ubuntu/Debian Linux VPS
+# ==============================================================================
+# Usage:
+#   sudo cp vesselfinder.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now vesselfinder
+#   sudo systemctl status vesselfinder
+# ==============================================================================
+
+[Unit]
+Description=VesselFinder Live AIS Maritime Radar Microservice
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/vesselfinder_scraper
+ExecStart=/usr/bin/python3 /opt/vesselfinder_scraper/run.py api 8088
+Restart=always
+RestartSec=5s
+Environment=PYTHONUNBUFFERED=1
+Environment=PORT=8088
+
+# Resource safety & logging
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+

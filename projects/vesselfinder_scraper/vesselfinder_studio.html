@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚢 VesselFinder Live AIS Maritime Radar & Intelligence Studio</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data/exports/vesselfinder_live_bundle.js"></script>
+  <style>
+    :root {
+      --bg: #070d19;
+      --panel: #0f172a;
+      --panel-hover: #1e293b;
+      --border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --cargo: #22c55e;
+      --tanker: #ef4444;
+      --passenger: #3b82f6;
+      --tug: #f59e0b;
+      --fishing: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Thai", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(90deg, #091326 0%, #0f203c 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .brand p {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .stats-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .stat-pill {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+    .stat-pill strong {
+      color: var(--accent);
+      font-size: 15px;
+      margin-left: 4px;
+    }
+    .workspace {
+      display: grid;
+      grid-template-columns: 400px 1fr 360px;
+      flex: 1;
+      min-height: 0;
+    }
+    .sidebar {
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .inspector {
+      background: var(--panel);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      overflow-y: auto;
+      padding: 16px;
+    }
+    .controls {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .controls input, .controls select {
+      width: 100%;
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #09101f;
+      color: #fff;
+      font-size: 13px;
+    }
+    .filter-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .chip {
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      background: #0b1324;
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+    }
+    .chip.active {
+      background: var(--accent);
+      color: #020617;
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    .vessel-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .vessel-card {
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: #0b1324;
+      border: 1px solid #1e293b;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .vessel-card:hover, .vessel-card.selected {
+      background: var(--panel-hover);
+      border-color: var(--accent);
+    }
+    .vc-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .vc-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+    }
+    .badge {
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .vc-meta {
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      background: #040914;
+    }
+    .ship-photo {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #334155;
+      background: #09101f;
+      margin-bottom: 12px;
+    }
+    .detail-group {
+      background: #0b1324;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+    .detail-group h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .kv-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12.5px;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .kv-row:last-child { border-bottom: none; }
+    .kv-label { color: var(--muted); }
+    .kv-val { color: #fff; font-weight: 600; text-align: right; }
+    .btn-link {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      background: var(--accent);
+      color: #020617;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+    @media (max-width: 1100px) {
+      .workspace { grid-template-columns: 320px 1fr; }
+      .inspector { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div style="font-size:28px;">🚢</div>
+      <div>
+        <h1>VesselFinder Live AIS Maritime Radar Studio</h1>
+        <p id="zone-subtitle">ระบบเรดาร์เดินเรือสมุทรสด & ฐานข้อมูลท่าเรือไทย (Binary Protocol Decoded)</p>
+      </div>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-pill">🌍 เรือออนไลน์ทั่วโลก <strong id="stat-global">-</strong></div>
+      <div class="stat-pill">📡 เรือสดในเรดาร์ <strong id="stat-area">-</strong></div>
+      <div class="stat-pill">🛳️ ข้อมูลเชิงลึก <strong id="stat-enriched">-</strong></div>
+      <div class="stat-pill">⚓ ท่าเรือไทย <strong id="stat-ports">-</strong></div>
+    </div>
+  </header>
+
+  <div class="workspace">
+    <aside class="sidebar">
+      <div class="controls">
+        <input type="text" id="search-input" placeholder="🔍 ค้นหาชื่อเรือ, MMSI, IMO, ปลายทาง..." />
+        <div class="filter-chips" id="filter-chips">
+          <span class="chip active" data-filter="all">ทั้งหมด</span>
+          <span class="chip" data-filter="enriched">⭐ มีสเปก/รูปภาพ</span>
+          <span class="chip" data-filter="6">🟩 Cargo</span>
+          <span class="chip" data-filter="8">🟥 Tanker</span>
+          <span class="chip" data-filter="4">🟦 Passenger</span>
+          <span class="chip" data-filter="3">🟨 Tug/Special</span>
+          <span class="chip" data-filter="5">🟪 Fishing</span>
+        </div>
+      </div>
+      <div class="vessel-list" id="vessel-list"></div>
+    </aside>
+
+    <main id="map"></main>
+
+    <aside class="inspector" id="inspector">
+      <div style="color:var(--muted); text-align:center; margin-top:60px;">
+        คลิกเลือกเรือบนแผนที่เรดาร์ หรือจากตารางด้านซ้าย<br/>เพื่อดูข้อมูล AIS สด, ท่าเรือปลายทาง, รูปเรือ HD และเส้นทางย้อนหลัง
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    const DATA = window.VESSELFINDER_DATA || { vessels: [], thailand_ports: [] };
+    const vessels = DATA.vessels || [];
+    const ports = DATA.thailand_ports || [];
+
+    document.getElementById("stat-global").textContent = (DATA.global_online_ships || 0).toLocaleString();
+    document.getElementById("stat-area").textContent = vessels.length.toLocaleString();
+    document.getElementById("stat-enriched").textContent = (DATA.enriched_vessels_count || 0).toLocaleString();
+    document.getElementById("stat-ports").textContent = ports.length.toLocaleString();
+    if (DATA.zone_name_th) {
+      document.getElementById("zone-subtitle").textContent = `${DATA.zone_name_th} • อัปเดตเมื่อ ${DATA.scraped_at_utc || "-"}`;
+    }
+
+    const COLOR_MAP = {
+      6: "#22c55e",
+      7: "#16a34a",
+      8: "#ef4444",
+      4: "#3b82f6",
+      3: "#f59e0b",
+      5: "#a855f7",
+      2: "#eab308",
+      9: "#06b6d4",
+      0: "#94a3b8"
+    };
+
+    const map = L.map("map", { zoomControl: true }).setView([13.15, 100.80], 10);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+      attribution: "&copy; OpenStreetMap &copy; CARTO | VesselFinder AIS Decoder",
+      maxZoom: 19
+    }).addTo(map);
+
+    const vesselLayer = L.layerGroup().addTo(map);
+    const portLayer = L.layerGroup().addTo(map);
+    const trackLayer = L.layerGroup().addTo(map);
+    const markerByMmsi = {};
+
+    // Render Thailand Ports
+    ports.forEach(p => {
+      const icon = L.divIcon({
+        className: "port-marker",
+        html: `<div style="background:#0284c7;color:#fff;border:2px solid #bae6fd;border-radius:50%;width:18px;height:18px;display:flex;align-items:center;justify-content:center;font-size:10px;box-shadow:0 0 8px #0284c7;">⚓</div>`,
+        iconSize: [18, 18],
+        iconAnchor: [9, 9]
+      });
+      L.marker([p.lat, p.lon], { icon })
+        .bindPopup(`<b>⚓ ${p.name} (${p.locode})</b><br/>${p.port_type}<br/>พิกัด: ${p.lat}, ${p.lon}`)
+        .addTo(portLayer);
+    });
+
+    function createShipIcon(v) {
+      const color = COLOR_MAP[v.type_color_code] || "#38bdf8";
+      const rot = v.heading_deg != null ? v.heading_deg : (v.cog_deg || 0);
+      const size = v.imo ? 18 : 13;
+      return L.divIcon({
+        className: "ship-icon",
+        html: `<div style="transform:rotate(${rot}deg);width:${size}px;height:${size}px;display:flex;align-items:center;justify-content:center;">
+          <svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="${color}" stroke="#020617" stroke-width="2">
+            <polygon points="12,2 20,21 12,17 4,21" />
+          </svg>
+        </div>`,
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2]
+      });
+    }
+
+    function selectVessel(v) {
+      document.querySelectorAll(".vessel-card").forEach(el => {
+        el.classList.toggle("selected", Number(el.dataset.mmsi) === v.mmsi);
+      });
+      map.flyTo([v.lat, v.lon], Math.max(map.getZoom(), 13), { duration: 0.6 });
+      if (markerByMmsi[v.mmsi]) {
+        markerByMmsi[v.mmsi].openPopup();
+      }
+
+      // Draw track if present
+      trackLayer.clearLayers();
+      if (v.track_points && v.track_points.length > 1) {
+        const latlngs = v.track_points.map(pt => [pt.lat, pt.lon]);
+        L.polyline(latlngs, { color: "#38bdf8", weight: 3, dashArray: "6, 6" }).addTo(trackLayer);
+      }
+
+      const voyage = v.voyage || {};
+      const photoSrc = v.local_photo || v.photo_url_hd || v.photo_url_thumb || "";
+      const photoHtml = photoSrc
+        ? `<img class="ship-photo" src="${photoSrc}" alt="${v.name}" onerror="this.style.display='none'" />`
+        : "";
+      const detailsUrl = `https://www.vesselfinder.com/vessels/details/${v.imo && v.imo > 0 ? v.imo : v.mmsi}`;
+
+      document.getElementById("inspector").innerHTML = `
+        ${photoHtml}
+        <h2 style="font-size:18px;margin-bottom:4px;">${v.name}</h2>
+        <p style="font-size:12px;color:var(--muted);margin-bottom:14px;">${v.type || v.category_group} • ${v.country || "Unknown Flag"}</p>
+
+        <div class="detail-group">
+          <h3>📡 พิกัดและสถานะ AIS สด (Live Telemetry)</h3>
+          <div class="kv-row"><span class="kv-label">MMSI / IMO</span><span class="kv-val">${v.mmsi} / ${v.imo || "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">พิกัด (Lat, Lon)</span><span class="kv-val">${v.lat}, ${v.lon}</span></div>
+          <div class="kv-row"><span class="kv-label">ความเร็ว (SOG)</span><span class="kv-val">${v.sog_knots != null ? v.sog_knots + " knots" : "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">ทิศทาง (COG / Heading)</span><span class="kv-val">${v.cog_deg ?? "-"}° / ${v.heading_deg ?? "-"}°</span></div>
+          <div class="kv-row"><span class="kv-label">สถานะการเดินเรือ</span><span class="kv-val">${v.nav_status || "-"}</span></div>
+        </div>
+
+        <div class="detail-group">
+          <h3>⚓ เส้นทางและท่าเรือ (Voyage Info)</h3>
+          <div class="kv-row"><span class="kv-label">ปลายทาง (AIS Dest)</span><span class="kv-val">${v.destination_raw || "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">ท่าเรือปลายทาง</span><span class="kv-val">${voyage.next_port_name || "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">เวลาถึงโดยประมาณ (ETA)</span><span class="kv-val">${voyage.next_port_eta_utc || v.eta_utc || "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">ท่าเรือต้นทางล่าสุด</span><span class="kv-val">${voyage.last_port_name ? voyage.last_port_name + " (" + (voyage.last_port_country || "") + ")" : "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">จุดพิกัดย้อนหลัง</span><span class="kv-val">${v.track_points ? v.track_points.length + " จุด" : "ไม่มี"}</span></div>
+        </div>
+
+        <div class="detail-group">
+          <h3>📐 ข้อมูลจำเพาะตัวเรือ (Vessel Specs)</h3>
+          <div class="kv-row"><span class="kv-label">ขนาด (ยาว × กว้าง)</span><span class="kv-val">${v.length_m || "-"} m × ${v.beam_m || "-"} m</span></div>
+          <div class="kv-row"><span class="kv-label">กินน้ำลึกปัจจุบัน</span><span class="kv-val">${v.draught_m ? v.draught_m + " m" : "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">Gross Tonnage (GT)</span><span class="kv-val">${v.gt ? v.gt.toLocaleString() : "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">Deadweight (DWT)</span><span class="kv-val">${v.dwt ? v.dwt.toLocaleString() + " t" : "-"}</span></div>
+          <div class="kv-row"><span class="kv-label">ปีที่สร้าง (Built)</span><span class="kv-val">${v.year_built || "-"}</span></div>
+        </div>
+
+        <a class="btn-link" href="${detailsUrl}" target="_blank" rel="noopener">🔗 เปิดหน้า VesselFinder ต้นฉบับ</a>
+      `;
+    }
+
+    let currentFilter = "all";
+    let searchQuery = "";
+
+    function renderListAndMarkers() {
+      vesselLayer.clearLayers();
+      const listEl = document.getElementById("vessel-list");
+      listEl.innerHTML = "";
+
+      const filtered = vessels.filter(v => {
+        if (currentFilter === "enriched" && !v.imo) return false;
+        if (currentFilter !== "all" && currentFilter !== "enriched" && String(v.type_color_code) !== currentFilter) return false;
+        if (searchQuery) {
+          const hay = `${v.name} ${v.mmsi} ${v.imo || ""} ${v.type || ""} ${v.country || ""} ${v.destination_raw || ""}`.toLowerCase();
+          if (!hay.includes(searchQuery)) return false;
+        }
+        return true;
+      });
+
+      // Sort enriched vessels first
+      filtered.sort((a, b) => (b.imo || 0) - (a.imo || 0));
+
+      filtered.forEach(v => {
+        const marker = L.marker([v.lat, v.lon], { icon: createShipIcon(v) })
+          .bindPopup(`<b>🚢 ${v.name}</b><br/>MMSI: ${v.mmsi}${v.imo ? " | IMO: " + v.imo : ""}<br/>${v.type || v.category_group}`)
+          .on("click", () => selectVessel(v));
+        marker.addTo(vesselLayer);
+        markerByMmsi[v.mmsi] = marker;
+      });
+
+      filtered.slice(0, 150).forEach(v => {
+        const color = COLOR_MAP[v.type_color_code] || "#38bdf8";
+        const card = document.createElement("div");
+        card.className = "vessel-card";
+        card.dataset.mmsi = v.mmsi;
+        card.innerHTML = `
+          <div class="vc-top">
+            <span class="vc-name">${v.name}</span>
+            <span class="badge" style="background:${color}22;color:${color};border:1px solid ${color}66;">
+              ${v.type || v.category_group}
+            </span>
+          </div>
+          <div class="vc-meta">
+            <span>MMSI: ${v.mmsi}${v.imo ? " • IMO: " + v.imo : ""}</span>
+            <span>${v.sog_knots != null ? v.sog_knots + " kn" : (v.country || "")}</span>
+          </div>
+        `;
+        card.addEventListener("click", () => selectVessel(v));
+        listEl.appendChild(card);
+      });
+    }
+
+    document.getElementById("search-input").addEventListener("input", e => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      renderListAndMarkers();
+    });
+
+    document.querySelectorAll("#filter-chips .chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        document.querySelectorAll("#filter-chips .chip").forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        currentFilter = chip.dataset.filter;
+        renderListAndMarkers();
+      });
+    });
+
+    renderListAndMarkers();
+    const firstEnriched = vessels.find(v => v.imo && v.imo > 0) || vessels[0];
+    if (firstEnriched) selectVessel(firstEnriched);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,967 @@
+﻿mmsi,imo,name,type,category_group,country,flag_code,lat,lon,sog_knots,cog_deg,heading_deg,nav_status,destination_raw,next_port_name,eta_utc,last_port_name,last_port_country,draught_m,length_m,beam_m,gt,dwt,year_built,photo_url_hd,details_url
+567112299,,SUWITKANPRAMONG 53,Fishing Vessel,Fishing Vessel,,,12.800603,100.429845,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567112299
+567910995,,PICHIT N1,Fishing,Fishing Vessel,,,12.74103,100.42987,,,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567910995
+567982210,,567982210,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.152883,100.440215,,,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567982210
+567980599,,567980599,Fishing Vessel,Fishing Vessel,,,12.78944,100.44684,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567980599
+567910990,,PICHIT N2,Fishing,Fishing Vessel,,,12.93617,100.46411,,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567910990
+567000874,7727504,OCEANSAPPHIRE,Bunkering Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.696165,100.490482,0.0,360.0,,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),,-,,,,3.8,69,11,931,1800,1978,https://static.vesselfinder.net/ship-photo/7727504-567000874-0c86a8babc6173d49d60f3613bd0713f/1,https://www.vesselfinder.com/vessels/details/7727504
+441723000,9051789,SEIN FRONTIER,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Korea,kr,13.6866,100.49665,0.0,280.0,,Moored (จอดเทียบท่า),TH_BKK,Bangkok,2026-10-29 02:46:04 UTC,Bangkok Anch.,Thailand,7.6,126,19,6082,7179,1993,https://static.vesselfinder.net/ship-photo/9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563/1,https://www.vesselfinder.com/vessels/details/9051789
+441034000,8513871,SUN FLOWER 7,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Korea,kr,13.686327,100.497613,0.0,134.4,,Moored (จอดเทียบท่า),TH/BKK,Bangkok,2026-11-05 04:05:52 UTC,Bangkok Anch.,Thailand,6.7,91,16,3244,3958,1986,https://static.vesselfinder.net/ship-photo/8513871-441034000-9b473df1d6d4e1e40096373c83c89188/1,https://www.vesselfinder.com/vessels/details/8513871
+567065100,9282572,SCENA RAJA,Towing,Other / Unknown,,,13.07712,100.490033,1.7,155.0,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9282572
+567982801,,PORNMAEIEKDUADEE3,Fishing Vessel,Fishing Vessel,,,13.183305,100.484315,,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567982801
+567213637,,CHOCKPAILIN 89,Towing,Other / Unknown,,,13.68697,100.498198,2.0,,112,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567213637
+567072800,8356156,HARIN NAVEE 5,General Cargo Ship,Passenger / Cruise / Ferry,Thailand,th,13.699017,100.492232,0.0,34.0,,Moored (จอดเทียบท่า),"BANGKOK,THAILAND",Bangkok,2026-11-05 01:34:21 UTC,Bangkok Anch.,Thailand,3.9,99,15,2978,5100,2005,https://static.vesselfinder.net/ship-photo/8356156-567072800-f04dc5cfe22a33b570476feed18d5030/1,https://www.vesselfinder.com/vessels/details/8356156
+567111254,,DJMGAP,Fishing Vessel,Fishing Vessel,,,13.698475,100.491862,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111254
+567002260,,RUJIPA,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.698312,100.491338,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002260
+372594000,8319055,EURO STAR,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.689945,100.491725,0.0,0.0,,Moored (จอดเทียบท่า),TH BKK,Bangkok,2026-11-04 05:50:32 UTC,Bangkok Anch.,Thailand,7.3,109,16,4364,5522,1984,https://static.vesselfinder.net/ship-photo/8319055-372594000-883f231602aef5abff0238b11641bea6/1,https://www.vesselfinder.com/vessels/details/8319055
+567002710,9157583,PILATUS 54,LPG Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.689522,100.49436,0.0,288.4,,At anchor (ทอดสมอ),WANGCHAO,WANGCHAO,2026-11-10 11:00:00 UTC,Bangkok,Thailand,3.2,65,12,983,960,1997,https://static.vesselfinder.net/ship-photo/9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e/1,https://www.vesselfinder.com/vessels/details/9157583
+567006667,,RAMTHEP 7,Other / Unknown,Other / Unknown,,,13.685138,100.500627,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006667
+567698867,,567698867,Fishing Vessel,Fishing Vessel,,,13.331322,100.504997,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567698867
+567072200,8575647,GRACE KORAKOT,Oil Products Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.352335,100.509985,8.3,125.0,123,Under way sailing (กำลังแล่นใบ),SRIRACHA,SRIRACHA,2026-11-10 19:00:00 UTC,Samut Sakhon,Thailand,3.0,78,13,1582,2591,2006,,https://www.vesselfinder.com/vessels/details/8575647
+567457600,,S.SUPRASERD 7,Fishing Vessel,Fishing Vessel,,,13.209565,100.50386,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567457600
+567002940,9100437,THE BLUE DOLPHIN,Passenger/Ro-Ro Cargo Ship,Tug / Special / Pilot / SAR,Thailand,th,13.684792,100.502723,0.0,0.0,,Moored (จอดเทียบท่า),"29A,BKK","29A,BKK",2026-11-02 12:00:00 UTC,Bangkok,Thailand,5.0,137,21,7003,3037,1994,https://static.vesselfinder.net/ship-photo/9100437-567002940-f70f812cd311e8090115aa53f7ec553b/1,https://www.vesselfinder.com/vessels/details/9100437
+374769000,9057549,SEA BLAZER,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.683877,100.50892,0.0,360.0,,Moored (จอดเทียบท่า),BANGKOK THAILAND,Bangkok,2026-11-02 05:24:18 UTC,Bangkok Anch.,Thailand,7.3,122,18,4830,6066,1993,https://static.vesselfinder.net/ship-photo/9057549-374769000-1e69e905b8375d310dd123c05efae3d9/1,https://www.vesselfinder.com/vessels/details/9057549
+567889545,,567889545,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.319375,100.520582,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567889545
+574001300,9593024,STAR 16,General Cargo Ship,Passenger / Cruise / Ferry,Vietnam,vn,13.56535,100.57547,8.1,291.4,189,At anchor (ทอดสมอ),BANGKOK,Bangkok,2026-11-02 01:26:23 UTC,Bangkok Anch.,Thailand,4.0,186,30,3202,5492,2013,,https://www.vesselfinder.com/vessels/details/9593024
+567254486,,KOR TRAP 9,Fishing,Fishing Vessel,,,13.037477,100.519373,5.9,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567254486
+567249107,,RS 7,High Speed Craft,High Speed Craft,,,13.643397,100.532853,,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567249107
+567003180,1068437,.SRI AMPHAN,Container Ship,Passenger / Cruise / Ferry,Thailand,th,13.619323,100.549768,5.3,312.4,303,Moored (จอดเทียบท่า),BKK,Bangkok,2026-11-09 22:08:59 UTC,Sriracha,Thailand,4.4,50,16,1438,1898,2004,https://static.vesselfinder.net/ship-photo/1068437-567003180-acbc35929e400d7c3314c9f61179be1a/1,https://www.vesselfinder.com/vessels/details/1068437
+374030000,9087908,SYOTA MARU,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.668317,100.536088,0.0,282.0,,Moored (จอดเทียบท่า),BANGKOK,Bangkok,2026-10-30 05:41:58 UTC,Bangkok Anch.,Thailand,6.6,120,17,4491,5103,1994,https://static.vesselfinder.net/ship-photo/9087908-374030000-33e8551b1dd6aa4867d296749ea3622b/1,https://www.vesselfinder.com/vessels/details/9087908
+567656000,9172131,GAS COURAGE,LPG Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.622008,100.544792,0.0,156.0,,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),BKK 7C,BKK 7C,2026-10-30 14:00:00 UTC,Bangkok,Thailand,5.3,96,15,2998,3183,1998,https://static.vesselfinder.net/ship-photo/9172131-565046000-6402159b86e3796d58207b4d8d809412/1,https://www.vesselfinder.com/vessels/details/9172131
+374830000,8609979,SEIN GRACE,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.669205,100.544408,0.0,243.8,,Moored (จอดเทียบท่า),TH BKK,Bangkok,2026-10-31 09:02:57 UTC,General Santos,Philippines,7.3,125,18,4963,6553,1986,,https://www.vesselfinder.com/vessels/details/8609979
+441822000,9105360,MV.KATAH,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Korea,kr,13.669667,100.545548,0.0,247.0,,Moored (จอดเทียบท่า),TH BKK,Bangkok,2026-11-09 02:41:47 UTC,Bangkok Anch.,Thailand,6.8,121,16,4457,5232,1995,,https://www.vesselfinder.com/vessels/details/9105360
+440101000,8911607,SEIN SPRING,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Korea,kr,13.668712,100.543225,0.0,246.0,,Moored (จอดเทียบท่า),TH BKK,Bangkok,2026-11-10 03:01:21 UTC,Bangkok Anch.,Thailand,6.8,120,16,4429,5601,1989,,https://www.vesselfinder.com/vessels/details/8911607
+567256308,,KETSARIN 12,Other / Unknown,Other / Unknown,,,13.627342,100.54466,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567256308
+567002380,8791485,NP TRAT,Container Ship,Passenger / Cruise / Ferry,Thailand,th,13.63327,100.538047,4.7,334.8,326,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),BKK,BKK,2026-10-29 19:00:00 UTC,Sriracha,Thailand,3.0,67,18,2099,2000,2015,https://static.vesselfinder.net/ship-photo/8791485-567002380-ea543cfa4edf50bc69055108eede8bcd/1,https://www.vesselfinder.com/vessels/details/8791485
+371156000,9041540,HUA FU 207,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.6314,100.53757,0.0,210.0,332,Moored (จอดเทียบท่า),BKK/THAILAND,BKK/THAILAND,2026-10-28 12:30:00 UTC,Bangkok,Thailand,8.0,138,18,6399,7368,1991,https://static.vesselfinder.net/ship-photo/9041540-371156000-7047822626298b6f984daebdf5b55b19/1,https://www.vesselfinder.com/vessels/details/9041540
+567110032,,S.DUANGDEE88,Fishing Vessel,Fishing Vessel,,,12.641395,100.542447,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110032
+668116241,8357370,QUANG HAI 07,General Cargo Ship,Passenger / Cruise / Ferry,Sao Tome & Principe,st,13.63303,100.53665,0.0,263.5,333,Moored (จอดเทียบท่า),BANGKOK,BANGKOK,2026-11-03 18:00:00 UTC,"Plaju, Sumatra Anch.",Indonesia,5.8,114,16,4410,6743,2009,,https://www.vesselfinder.com/vessels/details/8357370
+567007056,,MDC5,High Speed Craft,High Speed Craft,,,13.656712,100.534937,,,202,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567007056
+567006669,1068499,SRI SIRAPAT,Container Ship,Passenger / Cruise / Ferry,Thailand,th,13.658438,100.54426,0.0,0.0,,Moored (จอดเทียบท่า),STT,STT,2026-11-10 12:00:00 UTC,Bangkok,Thailand,4.0,50,16,1550,2500,2011,https://static.vesselfinder.net/ship-photo/1068499-567006669-c70d9cf8179821df2b7084d42f030a30/1,https://www.vesselfinder.com/vessels/details/1068499
+567043400,,HTMS.PATTANI,Law enforcment,Cargo (Hazard),Thailand,th,13.334817,100.540597,3.8,28.5,22,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),"SAMUT,PRA","SAMUT,PRA",2027-04-21 05:30:00 UTC,Bangkok,Thailand,,95,12,,,,,https://www.vesselfinder.com/vessels/details/567043400
+567900312,,M.CHAROENNAWIN 5,Fishing Vessel,Fishing Vessel,,,12.690325,100.54284,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567900312
+567400646,,UMNAJUTSAHA2,Fishing,Fishing Vessel,,,12.57907,100.548822,6.6,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567400646
+590000320,,PORNPIYACHAN 18,High Speed Craft,High Speed Craft,,,13.699383,100.549918,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/590000320
+567001041,,MV RATTANA THANAKIJ,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.630667,100.538315,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001041
+369970580,,369970580,Other / Unknown,Other / Unknown,,,13.736832,100.546898,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/369970580
+369970579,,G,Other / Unknown,Other / Unknown,,,13.736795,100.546872,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/369970579
+574408000,9536557,QUANG MINH 18,General Cargo Ship,Passenger / Cruise / Ferry,Vietnam,vn,13.68136,100.55323,0.0,299.2,286,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),,-,"Jan 08, 18:58 UTC",Bangkok,Thailand,3.4,91,13,2551,4375,2008,,https://www.vesselfinder.com/vessels/details/9536557
+413547430,9996666,MING RUN 68,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,China,cn,13.687788,100.554123,0.0,188.0,,Moored (จอดเทียบท่า),BANGKOK,Bangkok,2026-11-02 03:26:45 UTC,Bangkok Anch.,Thailand,7.1,134,18,6803,7075,2024,,https://www.vesselfinder.com/vessels/details/9996666
+352006047,9474591,LUCAS,Chemical/Oil Products Tanker,Cargo / Container / Bulk Carrier,Panama,pa,13.613137,100.556432,0.0,174.0,,Moored (จอดเทียบท่า),MY LBU =>TH BKK,Bangkok,2026-11-09 23:21:52 UTC,Bangkok Anch.,Thailand,6.4,104,17,4289,6578,2010,https://static.vesselfinder.net/ship-photo/9474591-413375810-f3bad3083e77c565856b9b674c045901/1,https://www.vesselfinder.com/vessels/details/9474591
+440295000,9284829,PRINCESS CRYSTAL,Chemical/Oil Products Tanker,Cargo / Container / Bulk Carrier,Korea,kr,12.978812,100.560475,1.2,252.4,247,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),SRI TH,SRI TH,2026-11-10 16:01:00 UTC,Bangkok,Thailand,5.4,108,18,4812,7938,2003,https://static.vesselfinder.net/ship-photo/9284829-440295000-de733d8caa4a04b4d2b6be96a504f4ac/1,https://www.vesselfinder.com/vessels/details/9284829
+567001640,8663638,LERTPHRAWWILAI,General Cargo Ship,Passenger / Cruise / Ferry,Thailand,th,13.654423,100.557167,0.0,360.0,,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),BKK,Bangkok,2026-11-09 23:59:43 UTC,Bangkok Anch.,Thailand,3.0,50,14,992,1100,2003,https://static.vesselfinder.net/ship-photo/8663638-567001640-99c9adf3e75bd0f61ddc80c5edcebfb3/1,https://www.vesselfinder.com/vessels/details/8663638
+567213633,,RAMTHEP 9,Other / Unknown,Other / Unknown,,,13.654158,100.558242,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567213633
+567000124,,TARUA 124,Tug,High Speed Craft,,,13.70679,100.56565,0.0,360.0,294,,,,"Jan 07, 00:38 UTC",,,,47,,,,,,https://www.vesselfinder.com/vessels/details/567000124
+412054780,1096161,SHENG HANG FA XIAN,Chemical/Oil Products Tanker,Cargo / Container / Bulk Carrier,China,cn,13.696725,100.550152,0.0,255.6,,Moored (จอดเทียบท่า),TH  BKK,Bangkok,2026-11-09 00:46:18 UTC,Bangkok Anch.,Thailand,6.9,112,18,4948,6760,2025,,https://www.vesselfinder.com/vessels/details/1096161
+440932000,9047245,SEIN TOPAZ,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Korea,kr,13.654427,100.561278,0.0,78.0,,Moored (จอดเทียบท่า),TH BKK,Bangkok,2026-10-30 01:48:10 UTC,Bangkok Anch.,Thailand,7.9,134,21,7313,8044,1993,https://static.vesselfinder.net/ship-photo/9047245-440932000-a23067a186d7f93b2a6697ab5ff3e180/1,https://www.vesselfinder.com/vessels/details/9047245
+567221848,,AKEMARINE INTER,Towing,Other / Unknown,,,13.656107,100.56582,0.0,0.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567221848
+567001490,8981482,ACS 38,Oil Products Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.679447,100.552978,0.0,0.0,,Moored (จอดเทียบท่า),,-,,Bangkok,Thailand,4.7,115,16,4114,6512,2001,https://static.vesselfinder.net/ship-photo/8981482-567001490-39b90e48d0725d5987ef3ab26d86f53b/1,https://www.vesselfinder.com/vessels/details/8981482
+567000120,,TARUA 120,Tug,High Speed Craft,,,13.70651,100.56622,0.0,64.0,63,,,,"Jan 01, 00:26 UTC",,,,50,,,,,,https://www.vesselfinder.com/vessels/details/567000120
+374446000,9241932,HARU,Refrigerated Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.655447,100.5653,0.0,97.9,,Moored (จอดเทียบท่า),BANGKOK,Bangkok,2026-10-26 02:20:11 UTC,Bangkok Anch.,Thailand,6.7,120,16,4521,5035,2001,https://static.vesselfinder.net/ship-photo/9241932-374446000-230a6dd75064a38f81076b1d2732ea55/1,https://www.vesselfinder.com/vessels/details/9241932
+370681000,,ARIES LEADER,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.846877,100.557493,,,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/370681000
+567109293,,M.CHAROENNAWIN3,Fishing Vessel,Fishing Vessel,,,12.682565,100.579422,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109293
+567003300,,RTN.THADINDAENG_634,Ship according to RR Resolution No. 18,Cargo (Hazard),,,13.549848,100.576062,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003300
+477423200,9628867,DERYOUNG SUCCESS,Cargo,Passenger / Cruise / Ferry,,,13.68789,100.58908,10.8,165.0,174,,,,"Jan 09, 14:34 UTC",,,,127,,,,,,https://www.vesselfinder.com/vessels/details/9628867
+563078500,9325398,SKY LOVER,Cargo,Passenger / Cruise / Ferry,,,13.703267,100.576017,0.0,294.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9325398
+567000640,8304244,MT.PP3,Tanker,Cargo / Container / Bulk Carrier,,,13.57203,100.575,0.0,0.0,,,,,"Jan 08, 21:33 UTC",,,,49,,,,,,https://www.vesselfinder.com/vessels/details/8304244
+567001010,8555752,SAMUT CHEDI,Cargo,Passenger / Cruise / Ferry,,,13.52433,100.6162,8.2,308.0,310,,,,"Jan 09, 02:17 UTC",,,,63,,,,,,https://www.vesselfinder.com/vessels/details/8555752
+567003320,1070909,SRI AROON,Cargo,Passenger / Cruise / Ferry,,,13.665527,100.574837,5.1,199.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1070909
+676502995,,SONCHON4014,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.557728,100.581267,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/676502995
+567000011,9818125,RUA DIN 11,Dredging,Other / Unknown,,,13.702323,100.580622,102.3,339.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9818125
+567000521,,PILATUS 45,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.378685,100.571463,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000521
+574930000,9562960,QUANG MINH 29,Cargo,Passenger / Cruise / Ferry,,,13.60842,100.57683,0.0,74.0,268,,,,"Jan 09, 13:29 UTC",,,,103,,,,,,https://www.vesselfinder.com/vessels/details/9562960
+567004481,,RS 28,High Speed Craft,High Speed Craft,,,13.609077,100.569107,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004481
+567580229,,TB 28,Other / Unknown,Other / Unknown,,,13.556817,100.578407,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567580229
+567003230,1044792,SRI LERT,Cargo,Passenger / Cruise / Ferry,,,13.611623,100.57536,6.9,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1044792
+567003220,,SRI SUREE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.657262,100.568733,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003220
+567040600,9296937,SEAFDEC2,Other,Other / Unknown,,,13.56882,100.57406,0.0,307.0,307,,,,"Jan 09, 01:33 UTC",,,,32,,,,,,https://www.vesselfinder.com/vessels/details/9296937
+567052500,,HTMS.PHARUEHATSABODI,Military Ops,Cargo (Hazard),,,13.55083,100.57852,0.0,0.0,,,,,"Jan 08, 02:15 UTC",,,,,,,,,,https://www.vesselfinder.com/vessels/details/567052500
+567888886,,PATTHARAMARINE4,Cargo,Passenger / Cruise / Ferry,,,13.56611,100.57458,6.0,191.0,191,,,,"Jan 09, 21:43 UTC",,,,61,,,,,,https://www.vesselfinder.com/vessels/details/567888886
+567999991,9092628,O.P.K.2,Cargo,Passenger / Cruise / Ferry,,,13.664292,100.573498,7.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9092628
+567100001,9092630,O.P.K.3,Cargo,Passenger / Cruise / Ferry,,,13.70617,100.56759,0.0,341.0,341,,,,"Jan 03, 18:46 UTC",,,,97,,,,,,https://www.vesselfinder.com/vessels/details/9092630
+538010048,9940784,SAWASDEE INCHEON,Cargo,Passenger / Cruise / Ferry,,,13.699705,100.582667,17.1,136.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9940784
+567011045,,SC 14,Fishing Vessel,Fishing Vessel,,,13.569142,100.578087,,,22,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567011045
+567110526,,CHOKPRIMSIRI,Fishing Vessel,Fishing Vessel,,,12.8871,100.582157,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110526
+567244927,,TANANCHAINAVEE 9,Other / Unknown,Other / Unknown,,,13.66671,100.574667,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567244927
+412085050,1118464,RUN JIU 68,Tanker,Cargo / Container / Bulk Carrier,,,13.570855,100.57992,10.3,150.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1118464
+567255801,,KETSARIN 4,Towing,Other / Unknown,,,13.62445,100.54501,3.5,134.0,134,,,,"Jan 01, 00:26 UTC",,,,21,,,,,,https://www.vesselfinder.com/vessels/details/567255801
+567001970,9081045,R M 1,Tanker,Cargo / Container / Bulk Carrier,,,13.572257,100.575407,0.0,1.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9081045
+567003250,1042457,MOE LINE 5,Cargo,Passenger / Cruise / Ferry,,,13.701052,100.581652,5.4,151.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1042457
+567073400,9499632,HARIN NAVEE 9,Cargo,Passenger / Cruise / Ferry,,,13.661737,100.574708,8.2,192.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9499632
+351158000,9156759,BAO ANH,Cargo,Passenger / Cruise / Ferry,,,13.704035,100.574333,0.1,286.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9156759
+352003827,1045019,YAN GANG 2,Cargo,Passenger / Cruise / Ferry,,,13.703752,100.567852,0.0,288.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1045019
+567073800,1036654,LA PHA PHAT,Tanker,Cargo / Container / Bulk Carrier,,,13.57842,100.58018,0.0,121.0,45,,,,"Jan 09, 12:55 UTC",,,,78,,,,,,https://www.vesselfinder.com/vessels/details/1036654
+567062020,,RS 20,Tug,High Speed Craft,,,13.60819,100.57337,0.0,360.0,360,,,,"Jan 01, 00:26 UTC",,,,29,,,,,,https://www.vesselfinder.com/vessels/details/567062020
+567001500,,541 .HUAHIN,?,Reserved / Wing in Ground,,,13.552533,100.5759,0.0,330.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001500
+567001502,8216813,SEATRAN FERRY4,Passenger,Tug / Special / Pilot / SAR,,,13.57198,100.5749,0.0,206.0,206,,,,"Jan 07, 11:53 UTC",,,,71,,,,,,https://www.vesselfinder.com/vessels/details/8216813
+567002520,,NP CHUMPHON,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.608293,100.575662,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002520
+567003160,,VL 24,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.368313,100.570527,,,202,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003160
+567001580,9062271,SRI NARA,Tanker,Cargo / Container / Bulk Carrier,,,13.689517,100.5901,12.6,215.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9062271
+567571000,9796274,JARU BHUM,Cargo,Passenger / Cruise / Ferry,,,13.693898,100.587792,7.3,181.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9796274
+356012000,9202481,SEA OF LUCK,Cargo,Passenger / Cruise / Ferry,,,13.536267,100.598993,1.0,38.0,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9202481
+567930994,,KNO201,Pilot,Other / Unknown,,,13.591088,100.594923,10.7,150.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567930994
+567950769,,567950769,Fishing Vessel,Fishing Vessel,,,13.247345,100.583525,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950769
+538010558,9947677,TS CHIBA,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,13.34777,100.59839,11.9,165.0,159,,,,"Jan 09, 14:43 UTC",,,,148,,,,,,https://www.vesselfinder.com/vessels/details/9947677
+567072100,8351675,M/T BKK 1,Tanker,Cargo / Container / Bulk Carrier,,,13.688207,100.590373,,106.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8351675
+567073700,9290969,CHIANG IN,Cargo,Passenger / Cruise / Ferry,,,13.58365,100.58653,0.1,289.0,289,,,,"Jan 09, 09:42 UTC",,,,80,,,,,,https://www.vesselfinder.com/vessels/details/9290969
+567002490,,PILATUS 50,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.690537,100.589733,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002490
+567000768,,RS14,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.550637,100.594513,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000768
+567002240,9424704,M.T.V.L.19,Tanker,Cargo / Container / Bulk Carrier,,,13.57602,100.5788,0.0,238.0,37,,,,"Jan 09, 14:08 UTC",,,,105,,,,,,https://www.vesselfinder.com/vessels/details/9424704
+636022814,9972127,LITTLE DOLPHIN,Cargo,Passenger / Cruise / Ferry,,,13.697282,100.585097,,157.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9972127
+567074300,1078315,ONE VELA,"Tanker, Hazmat B",Cargo / Container / Bulk Carrier,,,13.684658,100.590603,9.4,203.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1078315
+574920000,,QUANG MINH 6,Fishing Vessel,Fishing Vessel,,,12.986473,100.585255,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574920000
+567110350,,SH110350,Fishing,Fishing Vessel,,,12.563252,100.598682,,,247,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110350
+477798900,,KANWAY FORTUNE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.695527,100.586415,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477798900
+567075400,8537281,PONPATTRA,Tanker,Cargo / Container / Bulk Carrier,,,13.5859,100.58731,0.0,195.0,26,,,,"Jan 09, 13:43 UTC",,,,79,,,,,,https://www.vesselfinder.com/vessels/details/8537281
+567907914,,SH907914,Fishing Vessel,Fishing Vessel,,,12.986475,100.59218,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567907914
+565112000,,XAN,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.686525,100.590487,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/565112000
+567004000,9173123,SANDON 9,Dredging,Other / Unknown,,,13.59598,100.59219,0.0,144.0,5,,,,"Jan 05, 23:37 UTC",,,,91,,,,,,https://www.vesselfinder.com/vessels/details/9173123
+567002142,,TUG403,High Speed Craft,High Speed Craft,,,13.550563,100.594817,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002142
+567004372,,THAILAEMTHONG 7,Other,Reserved / Wing in Ground,,,13.579008,100.587602,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004372
+567001810,,NP_LOVEGISTICS_4,Cargo,Passenger / Cruise / Ferry,,,13.539237,100.595743,8.2,115.0,292,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001810
+567061400,,PGM.995,Law Enforcement,Cargo (Hazard),,,13.608935,100.591903,11.0,209.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567061400
+567069400,9100566,THAILAEMTHONG 7,Tanker,Cargo / Container / Bulk Carrier,,,13.57897,100.58763,0.0,294.0,243,,,,"Jan 01, 00:26 UTC",,,,845,,,,,,https://www.vesselfinder.com/vessels/details/9100566
+567595000,,V.L.23,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.162992,100.612512,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567595000
+567111081,,SH111081,Fishing Vessel,Fishing Vessel,,,13.067708,100.60727,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111081
+567250731,,567250731,Fishing Vessel,Fishing Vessel,,,13.225397,100.609075,,,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567250731
+567632000,9495789,PHILIPPA_PIRAYA,Tanker,Cargo / Container / Bulk Carrier,,,13.373052,100.61068,0.0,193.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9495789
+567111080,,SH111080,Fishing,Fishing Vessel,,,13.069382,100.607895,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111080
+567007424,,P.PORNPAYONG 11,Other / Unknown,Other / Unknown,,,13.533482,100.604907,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567007424
+567310768,,567310768,Fishing Vessel,Fishing Vessel,,,13.22587,100.605748,,,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567310768
+567069700,,DONLAPHON,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.379162,100.612785,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567069700
+567981901,,THA NOSS 98,Fishing Vessel,Fishing Vessel,,,12.750018,100.613052,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567981901
+563032600,9350147,WAN HAI 173,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,13.35389,100.600433,0.0,315.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9350147
+567001510,,RS 39,Tug,High Speed Craft,,,13.60825,100.5734,0.1,360.0,360,,,,"Jan 01, 00:26 UTC",,,,27,,,,,,https://www.vesselfinder.com/vessels/details/567001510
+567110710,,SH110710,Fishing,Fishing Vessel,,,12.8719,100.61788,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110710
+567111369,,SH,Fishing Vessel,Fishing Vessel,,,13.021752,100.633052,,,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111369
+567001170,9583378,BIG SEA 101,Tanker,Cargo / Container / Bulk Carrier,,,13.372478,100.619773,0.0,50.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9583378
+567249109,,RS9,High Speed Craft,High Speed Craft,,,13.522623,100.618313,,,303,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567249109
+567908720,,NAVEE18,Fishing Vessel,Fishing Vessel,,,13.037352,100.630537,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908720
+574012854,9717735,TRUONG MINH DRAGON,?,Reserved / Wing in Ground,,,13.35287,100.61727,0.0,286.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9717735
+355513000,9016076,FENG YU,Cargo,Passenger / Cruise / Ferry,,,13.344833,100.630712,0.2,45.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9016076
+567035800,9818137,SANDON 7,Dredging,Other / Unknown,,,13.50933,100.62687,5.8,344.0,344,,,,"Jan 06, 10:50 UTC",,,,40,,,,,,https://www.vesselfinder.com/vessels/details/9818137
+567111130,,SH111130,Fishing,Fishing Vessel,,,12.734755,100.639967,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111130
+431640000,,MONOCEROS LEADER,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.9933,100.640942,,,33,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/431640000
+598844330,,SAMAT01,Fishing,Fishing Vessel,,,12.572612,100.642023,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/598844330
+440316000,9886067,SAWASDEE BALTIC,Cargo,Passenger / Cruise / Ferry,,,13.241772,100.652935,14.2,150.0,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9886067
+567007451,,PATTHARA MARINE 8,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.311257,100.666598,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567007451
+354787000,,HAYABUSA,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.02179,100.66502,,,236,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/354787000
+533133697,,VIBE,Sailing,Tanker (Oil / Chemical / LPG / LNG),,,12.943117,100.67754,,128.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533133697
+567266503,,OR RUNGRUENG 9,Fishing Vessel,Fishing Vessel,,,12.917787,100.668887,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567266503
+567900298,,M.THUNYAMAS 28,Fishing Vessel,Fishing Vessel,,,12.567012,100.668367,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567900298
+567110717,,SH110717,Fishing Vessel,Fishing Vessel,,,12.919398,100.672807,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110717
+567111196,,SHABCD,Fishing Vessel,Fishing Vessel,,,12.699248,100.666948,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111196
+413091302,,413091302,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.09433,100.678462,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413091302
+538007457,,INFINITY,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.168815,100.69496,,,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538007457
+413000000,,HONG GUI,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.255038,100.697973,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413000000
+567110714,,SH110714,Fishing Vessel,Fishing Vessel,,,12.896272,100.695015,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110714
+567266502,,OR SINCHARUEN 18,Fishing Vessel,Fishing Vessel,,,13.149568,100.69354,,,90,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567266502
+567875574,,567875574,Fishing Vessel,Fishing Vessel,,,12.698513,100.698018,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567875574
+567063100,,NP LOVEGISTICS 2,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.33346,100.703045,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567063100
+567002482,,MY OCEAN 6,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.80361,100.704198,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002482
+567110222,,CHOKSIRIWAT2,Fishing Vessel,Fishing Vessel,,,12.91521,100.712772,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110222
+567100425,,SIRIRUNGROD,Fishing Vessel,Fishing Vessel,,,12.957045,100.70575,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567100425
+567310368,,THAIRUNGTHIP8,Fishing Vessel,Fishing Vessel,,,13.15037,100.709752,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567310368
+538012164,,ERASMUS OASIS,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.027578,100.716445,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538012164
+567130968,,CHOKNIPAT.2,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.417948,100.702315,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567130968
+636023726,,LEOPOLD STAFF,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.10579,100.72652,,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636023726
+567050626,,UDOMRAT9,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.671812,100.724763,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567050626
+636012795,,YM INCEPTION,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.662407,100.72068,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636012795
+563149100,,SIEM COPERNICUS,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.634608,100.718288,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563149100
+567222357,,SILAKEAW 4,Fishing Vessel,Fishing Vessel,,,13.173903,100.727473,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567222357
+567362000,,TB 8,Other / Unknown,Other / Unknown,,,13.358258,100.719493,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567362000
+567111187,,SHAABCDD,Fishing Vessel,Fishing Vessel,,,12.981497,100.722303,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111187
+352005498,,DESHINE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.09836,100.747947,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352005498
+567003150,8569753,BKK 8,Tanker,Cargo / Container / Bulk Carrier,,,12.922925,100.747873,9.2,123.0,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8569753
+567254471,,SOMPRASONG,Fishing Vessel,Fishing Vessel,,,13.294238,100.74308,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567254471
+567906476,,PRONRUNGAROON 2,Fishing Vessel,Fishing Vessel,,,12.63987,100.748272,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567906476
+567066300,,PATARAVARIN88,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.832518,100.74474,,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567066300
+567110933,,SH110933,Fishing Vessel,Fishing Vessel,,,12.968537,100.740482,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110933
+241340000,,OLYMPIC LUCK,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.697518,100.736922,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/241340000
+567111347,,CHOKPANOMKORN,Fishing Vessel,Fishing Vessel,,,13.061368,100.736717,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111347
+567908381,,CHOPORNCHAI 2,Fishing Vessel,Fishing Vessel,,,12.62202,100.758822,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908381
+636023937,,DELPHINUS,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.108293,100.757517,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636023937
+567891159,,PONGSIRIPORNO ONE,Fishing Vessel,Fishing Vessel,,,12.609993,100.764317,,,303,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567891159
+352004012,,SUPER RICE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.095028,100.75991,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352004012
+440491000,9217424,KMTC JAKARTA,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,12.510168,100.752888,0.0,317.0,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9217424
+567111099,,SINSAMUKKEE35,Fishing,Fishing Vessel,,,12.974855,100.755283,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111099
+567111323,,SHDMPJAW,Fishing Vessel,Fishing Vessel,,,12.833038,100.754303,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111323
+567002348,,VAREEWAN,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.80039,100.782707,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002348
+538011003,9973494,DARYA MAHI,Cargo,Passenger / Cruise / Ferry,,,13.116515,100.76898,,321.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9973494
+341139002,,PROFESSOR WENGER,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.098437,100.76911,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/341139002
+440190000,9402512,KHARIS HERITAGE,Cargo,Passenger / Cruise / Ferry,,,13.116218,100.782833,0.1,42.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9402512
+567111161,,PONGSIRIPORN11,Fishing Vessel,Fishing Vessel,,,12.596972,100.782395,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111161
+317504432,,SUTEP98 C 30E,Fishing Vessel,Fishing Vessel,,,13.401977,100.797587,,,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/317504432
+567002640,,DRAGON NINE,Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.126223,100.798157,0.1,351.4,351,Undefined,,-,,Sriracha Anch.,Thailand,,50,8,,,,https://static.vesselfinder.net/ship-photo/0-567002640-770c85fddaa757eaee3019e78c8a0ac6/1,https://www.vesselfinder.com/vessels/details/567002640
+567220968,,567220968,Fishing Vessel,Fishing Vessel,,,13.3666,100.785067,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567220968
+567111335,,SHGTPJDD,Fishing Vessel,Fishing Vessel,,,13.14112,100.797397,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111335
+567255813,,WATTHANA 7,Towing,Other / Unknown,,,13.62735,100.54469,0.0,193.0,193,,,,"Jan 01, 00:26 UTC",,,,24,,,,,,https://www.vesselfinder.com/vessels/details/567255813
+317500161,,SUTEP89C30E,Fishing Vessel,Fishing Vessel,,,13.400393,100.7964,,,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/317500161
+567255812,,WATTANA 6,Other / Unknown,Other / Unknown,,,13.14435,100.795313,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567255812
+567123165,,MAGIC SEA WORLD 2,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.942125,100.793445,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567123165
+567110938,,SH110938,Fishing Vessel,Fishing Vessel,,,13.009162,100.786203,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110938
+414289000,9207766,BEI LUN HAI SHI,Bulk Carrier,Passenger / Cruise / Ferry,China,cn,13.089218,100.79898,0.0,175.0,137,At anchor (ทอดสมอ),KOHSICHANG,KOHSICHANG,2026-11-10 06:00:00 UTC,Sriracha Anch.,Thailand,14.0,225,32,40072,75971,2001,https://static.vesselfinder.net/ship-photo/9207766-477711200-756161895dcb6bfb3244177c9d27a019/1,https://www.vesselfinder.com/vessels/details/9207766
+567000094,,PASITTIPRON 8,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.917078,100.790125,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000094
+405000090,9109366,AKIJ WAVE,Bulk Carrier,Passenger / Cruise / Ferry,Bangladesh,bd,13.09619,100.79842,0.1,38.0,357,At anchor (ทอดสมอ),,-,,Sriracha Anch.,Thailand,6.5,190,31,27011,46640,1995,https://static.vesselfinder.net/ship-photo/9109366-405000090-04664947d8f77f910474eeb055e8b16f/1,https://www.vesselfinder.com/vessels/details/9109366
+567006648,,SRI WANWALAI,Cargo,Passenger / Cruise / Ferry,,,13.65443,100.55757,0.0,360.0,360,,,,"Jan 07, 12:41 UTC",,,,60,,,,,,https://www.vesselfinder.com/vessels/details/567006648
+567281168,,CHOKJITCHAYA,Fishing,Fishing Vessel,,,12.55044,100.790832,2.9,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567281168
+567071700,,PILATUS 55,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.618955,100.793087,,,292,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567071700
+567002475,,RATTANAWANICH 14,High Speed Craft,High Speed Craft,,,13.130815,100.816095,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002475
+567982110,,F,Fishing Vessel,Fishing Vessel,,,13.384992,100.805642,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567982110
+567111265,,K.WATSANUCHAI 333,Fishing Vessel,Fishing Vessel,,,13.145542,100.802953,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111265
+567203234,,POR PORNPAYUNG 9,Towing,Other / Unknown,,,13.104427,100.803482,0.0,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567203234
+258002000,9908475,BELMAR,Bulk Carrier,Passenger / Cruise / Ferry,Norway,no,13.088107,100.807305,0.0,113.0,345,At anchor (ทอดสมอ),TH KSI,TH KSI,2026-11-07 05:00:00 UTC,Sriracha Anch.,Thailand,13.5,199,32,36174,63641,2021,https://static.vesselfinder.net/ship-photo/9908475-258002000-513af8b2dc16ee739d1fc2d8dcccdbcc/1,https://www.vesselfinder.com/vessels/details/9908475
+567256320,,LAPKANCHAPORN,Fishing Vessel,Fishing Vessel,,,13.142428,100.80458,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567256320
+567352901,,TB 5,Other / Unknown,Other / Unknown,,,13.109698,100.801287,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567352901
+477181800,9760354,MAPLE AMBITION,Bulk Carrier,Passenger / Cruise / Ferry,Hong Kong,hk,13.099585,100.807787,0.0,313.2,2,At anchor (ทอดสมอ),TH KSI,TH KSI,2026-11-04 23:00:00 UTC,Sriracha Anch.,Thailand,9.4,180,30,23872,35513,2015,https://static.vesselfinder.net/ship-photo/9760354-477181800-366a57d4691f474d876f31fe8429d70c/1,https://www.vesselfinder.com/vessels/details/9760354
+567243449,,SOR SURIYACHAI,Fishing Vessel,Fishing Vessel,,,13.304932,100.815713,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567243449
+374171000,9725469,NORD MISSOURI,Bulk Carrier,Passenger / Cruise / Ferry,Panama,pa,13.094535,100.814178,0.1,329.0,8,At anchor (ทอดสมอ),TH KSI,TH KSI,2026-11-04 22:00:00 UTC,Sriracha Anch.,Thailand,13.2,200,32,34558,60463,2015,https://static.vesselfinder.net/ship-photo/9725469-374171000-21bb8693181767ae9ad27af7669699bc/1,https://www.vesselfinder.com/vessels/details/9725469
+567063800,8978394,CHALAKARN,Oil Products Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.093397,100.80221,1.0,345.4,14,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),SRIRACHA,Sriracha Anch.,2026-11-09 14:57:37 UTC,Mab Tapud,Thailand,6.7,116,16,3993,6523,2002,https://static.vesselfinder.net/ship-photo/8978394-567063800-d8fcbd63dc6866f97f0fd4c05d301ca1/1,https://www.vesselfinder.com/vessels/details/8978394
+567221845,,JINDAIKADA,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.146302,100.80442,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567221845
+567006455,,NAVACHOKNUMSAP 2,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.161623,100.810952,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006455
+352006053,9509425,DORIS,Bulk Carrier,Passenger / Cruise / Ferry,Panama,pa,13.110742,100.81637,0.0,342.0,6,At anchor (ทอดสมอ),TH KSI,TH KSI,2026-11-10 00:30:00 UTC,Sriracha Anch.,Thailand,8.3,180,30,23458,34505,2011,https://static.vesselfinder.net/ship-photo/9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735/1,https://www.vesselfinder.com/vessels/details/9509425
+567240625,,S.R.A. 12,Fishing Vessel,Fishing Vessel,,,13.144695,100.80191,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567240625
+567221936,,NOR SALAKPETCH 2,Other / Unknown,Other / Unknown,,,13.06976,100.820413,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567221936
+636014798,9450765,ORIENT POWER,Bulk Carrier,Passenger / Cruise / Ferry,Liberia,lr,13.124188,100.829562,0.0,127.2,0,At anchor (ทอดสมอ),JPMKW,JPMKW,2026-11-21 12:00:00 UTC,Sriracha Anch.,Thailand,10.2,180,30,23456,34428,2011,https://static.vesselfinder.net/ship-photo/9450765-636014798-8eada862a813cf810d04777f626c33d0/1,https://www.vesselfinder.com/vessels/details/9450765
+419000160,9561332,MARATHA PRESTIGE,Bulk Carrier,Passenger / Cruise / Ferry,India,in,13.116955,100.827982,0.2,284.8,13,At anchor (ทอดสมอ),TH KSI,TH KSI,2026-11-09 04:00:00 UTC,Sriracha Anch.,Thailand,8.7,175,29,19785,32080,2010,https://static.vesselfinder.net/ship-photo/9561332-419000160-7f7528f01f26b51b837f436f53dde324/1,https://www.vesselfinder.com/vessels/details/9561332
+548996000,9621716,SEACON FUKUOKA,Cargo,Passenger / Cruise / Ferry,,,13.137642,100.832152,,6.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9621716
+574001480,9561710,VINH QUANG GOLD,General Cargo Ship,Passenger / Cruise / Ferry,Vietnam,vn,13.131267,100.82635,0.0,15.3,,At anchor (ทอดสมอ),KOHSICHANG,KOHSICHANG,2026-10-12 14:00:00 UTC,Sriracha Anch.,Thailand,6.7,106,16,4353,7060,2012,https://static.vesselfinder.net/ship-photo/9561710-574001480-797acdf4bd712a4ba53684e1760c313b/1,https://www.vesselfinder.com/vessels/details/9561710
+567006331,,SANGPRATEEP9 AAA,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.163442,100.817697,,,67,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006331
+567255806,,WATTHANA 2,Other / Unknown,Other / Unknown,,,13.125315,100.821307,,,236,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567255806
+314001025,9573799,CORELIT,Bulk Carrier,Passenger / Cruise / Ferry,Barbados,bb,13.041017,100.832583,0.4,289.3,10,At anchor (ทอดสมอ),TH_LCH,Laem Chabang Anch.,2026-11-08 10:10:00 UTC,Sriracha,Thailand,7.3,169,27,17009,28189,2010,https://static.vesselfinder.net/ship-photo/9573799-312685000-862f38dbcc56364fd226d6c51ff31503/1,https://www.vesselfinder.com/vessels/details/9573799
+477148300,9700586,MERIT TRADER,Bulk Carrier,Passenger / Cruise / Ferry,Hong Kong,hk,13.101947,100.826682,0.1,333.0,5,At anchor (ทอดสมอ),KOHSICHANG,KOHSICHANG,2026-11-04 10:30:00 UTC,Sriracha Anch.,Thailand,13.2,189,32,32726,58175,2014,https://static.vesselfinder.net/ship-photo/9700586-477148300-8314b2b987827e925c775c3c93134bef/1,https://www.vesselfinder.com/vessels/details/9700586
+205392000,9590759,GOLDEN DAISY,Bulk Carrier,Passenger / Cruise / Ferry,Belgium,be,13.116727,100.82121,0.0,136.0,,At anchor (ทอดสมอ),ID TKP,ID TKP,2026-11-13 12:00:00 UTC,Sriracha Anch.,Thailand,8.2,229,32,44485,81507,2012,https://static.vesselfinder.net/ship-photo/9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1/1,https://www.vesselfinder.com/vessels/details/9590759
+351339000,9743318,ZHONG SHAN MEN,General Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.116065,100.833068,0.1,203.2,17,At anchor (ทอดสมอ),KO SI CHANG,KO SI CHANG,2026-11-08 06:15:00 UTC,Sriracha Anch.,Thailand,11.7,189,32,34859,55449,2016,https://static.vesselfinder.net/ship-photo/9743318-351339000-46313445ca53ef5a5bfec9a5d077c5e1/1,https://www.vesselfinder.com/vessels/details/9743318
+567909268,,SH909268,Fishing Vessel,Fishing Vessel,,,13.50529,100.817903,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909268
+567222149,,SOR.AKEMARINE 8,Other / Unknown,Other / Unknown,,,13.161455,100.829307,,,281,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567222149
+210469000,9337092,LITO,Bulk Carrier,Passenger / Cruise / Ferry,Cyprus,cy,13.093267,100.820867,0.0,26.0,17,At anchor (ทอดสมอ),TH.KOH SICHANG,TH.KOH SICHANG,2026-11-08 23:00:00 UTC,Sriracha Anch.,Thailand,11.5,225,32,39659,75395,2006,https://static.vesselfinder.net/ship-photo/9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7/1,https://www.vesselfinder.com/vessels/details/9337092
+636021350,9497854,HELENA K,Bulk Carrier,Passenger / Cruise / Ferry,Liberia,lr,13.10675,100.821908,0.0,104.3,353,At anchor (ทอดสมอ),TH KSI,TH KSI,2026-11-04 00:00:00 UTC,Sriracha Anch.,Thailand,6.4,190,33,33044,56868,2009,https://static.vesselfinder.net/ship-photo/9497854-538003411-161d4fe46feaefd6281acc68b00ba093/1,https://www.vesselfinder.com/vessels/details/9497854
+352004405,9369100,HIROMOTO,General Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.12365,100.822967,0.1,261.0,6,At anchor (ทอดสมอ),KOHSICHANG,KOHSICHANG,2026-11-08 18:00:00 UTC,Sriracha Anch.,Thailand,4.7,127,20,9932,14407,2007,https://static.vesselfinder.net/ship-photo/9369100-352004405-a748e0c6caf1c638397d776088e4e7ce/1,https://www.vesselfinder.com/vessels/details/9369100
+567233624,,WATTHANA10,Other / Unknown,Other / Unknown,,,13.141608,100.831053,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567233624
+567245398,,PATTHARA 11,Other / Unknown,Other / Unknown,,,13.135625,100.82648,,,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567245398
+567002641,,RAMTHEP 6,Other / Unknown,Other / Unknown,,,13.153413,100.819887,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002641
+567110865,,SH110865,Fishing Vessel,Fishing Vessel,,,12.666745,100.826988,,,247,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110865
+563283700,,ASTORIA HARMONY,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.163672,100.840823,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563283700
+574961000,,TTC AN BINH,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.190392,100.83392,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574961000
+567635000,9440564,RATTANADHEVI,Cargo,Passenger / Cruise / Ferry,,,13.155983,100.842757,,16.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9440564
+338316554,,WHITE SQUALL,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.898437,100.841025,,,303,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/338316554
+567005360,,INTER 5,Other / Unknown,Other / Unknown,,,13.163583,100.847307,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005360
+352002973,9449493,EAGLE,Bulk Carrier,Passenger / Cruise / Ferry,Panama,pa,13.12756,100.833503,0.0,163.3,16,At anchor (ทอดสมอ),,-,,Sriracha Anch.,Thailand,7.2,179,28,20763,32978,2009,https://static.vesselfinder.net/ship-photo/9449493-356748000-04064df2ca5ac0d1c153bc7e95948344/1,https://www.vesselfinder.com/vessels/details/9449493
+574000160,,VIMC FREEDOM,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.158033,100.83745,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574000160
+477103200,,FIFI,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.16325,100.846817,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477103200
+574000730,,QUANG HAI 09,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.14502,100.835858,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574000730
+567005500,,INTER 7,Other / Unknown,Other / Unknown,,,13.163745,100.846933,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005500
+533132664,,MAYA ONE,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.759292,100.8468,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533132664
+538009316,,GOOBY,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.149147,100.83869,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538009316
+314325000,,NJ TRITON,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.169083,100.843678,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/314325000
+567001525,,SERENITY 5,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.759618,100.847605,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001525
+352006202,9675767,TRUONG MINH SUCCESS,Cargo,Passenger / Cruise / Ferry,,,13.142017,100.84386,9.2,15.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9675767
+314088000,,LADY STEFI,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.171773,100.837917,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/314088000
+352002804,9379674,SOUL MERCY,Bulk Carrier,Passenger / Cruise / Ferry,Panama,pa,13.023303,100.840242,0.3,360.0,53,At anchor (ทอดสมอ),THLCH,Laem Chabang Anch.,2026-10-11 18:47:47 UTC,Singapore Anch. 4,Singapore,6.0,175,29,19825,31922,2009,https://static.vesselfinder.net/ship-photo/9379674-352002804-eb28230a9739b5b54c7b56a267062223/1,https://www.vesselfinder.com/vessels/details/9379674
+567001476,,SERENITY 3,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.760023,100.84718,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001476
+268260404,9288239,ELIF O,Bulk Carrier,Passenger / Cruise / Ferry,San Marino,sm,13.046138,100.843633,0.3,12.0,58,At anchor (ทอดสมอ),TH LCH,TH LCH,2026-10-26 10:10:00 UTC,,,6.4,177,28,19885,32740,2005,https://static.vesselfinder.net/ship-photo/9288239-352328000-11523a3470d8c83f6d72889ff1ddb666/1,https://www.vesselfinder.com/vessels/details/9288239
+563146400,,ANANI,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.136697,100.837778,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563146400
+622121410,9460722,WADI ALBOSTAN,Cargo,Passenger / Cruise / Ferry,,,13.148507,100.845572,,71.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9460722
+249194000,9566916,ALONISSOS,Bulk Carrier,Passenger / Cruise / Ferry,Malta,mt,13.123047,100.837505,0.0,145.7,38,At anchor (ทอดสมอ),KOHSICHANG,KOHSICHANG,2026-11-10 03:00:00 UTC,Sriracha Anch.,Thailand,13.1,190,32,32858,57155,2010,https://static.vesselfinder.net/ship-photo/9566916-249194000-788b713f49a097b1cf2ee061a73a956d/1,https://www.vesselfinder.com/vessels/details/9566916
+567277453,,S.DANSAMUT111,Fishing Vessel,Fishing Vessel,,,12.62677,100.864223,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567277453
+567531000,9135561,SENNA 7,LPG Tanker,Cargo / Container / Bulk Carrier,Thailand,th,13.50321,100.62609,12.3,24.5,203,Moored (จอดเทียบท่า),MT1B,MT1B,2026-11-10 05:59:00 UTC,Sriracha,Thailand,3.6,106,16,4000,3714,1996,https://static.vesselfinder.net/ship-photo/9135561-567531000-6ab66e97045840a59d1ca455b2028927/1,https://www.vesselfinder.com/vessels/details/9135561
+567007599,,PATTHARAMARINE1,Cargo ship,Passenger / Cruise / Ferry,Thailand,th,13.060628,100.85509,0.2,360.0,,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),LCB,LCB,2027-05-05 05:37:00 UTC,Bangkok,Thailand,3.0,68,14,,,,,https://www.vesselfinder.com/vessels/details/567007599
+567003470,,PILATUS17,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.298088,100.854638,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003470
+567072300,8577279,HARI BHUM,Container Ship,Passenger / Cruise / Ferry,Thailand,th,13.05916,100.852087,0.2,149.4,45,Moored (จอดเทียบท่า),PAT THBKK,PAT THBKK,2027-05-11 10:00:00 UTC,Laem Chabang Anch.,Thailand,4.5,79,18,2940,3555,2018,https://static.vesselfinder.net/ship-photo/8577279-567072300-50ddee2ca2c693d0b74c8b4e84cd2a80/1,https://www.vesselfinder.com/vessels/details/8577279
+567000004,8997455,CHIANG TUN,General Cargo Ship,Passenger / Cruise / Ferry,Thailand,th,13.065978,100.863468,0.2,297.0,,Under way using engine (กำลังแล่นด้วยเครื่องยนต์),BANGKOK,BANGKOK,2027-05-02 04:00:00 UTC,Laem Chabang Anch.,Thailand,2.3,49,15,670,1300,1995,,https://www.vesselfinder.com/vessels/details/8997455
+676700797,,CHALITA11,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.927712,100.865068,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/676700797
+567003260,1050650,SRI LERTWILAI,Container Ship,Passenger / Cruise / Ferry,Thailand,th,13.061937,100.859433,0.0,69.6,,At anchor (ทอดสมอ),,-,,Laem Chabang Anch.,Thailand,3.6,60,17,1534,2500,2011,https://static.vesselfinder.net/ship-photo/1050650-567003260-35361940ab05a4b69971c173d74cae7d/1,https://www.vesselfinder.com/vessels/details/1050650
+567180800,,PINCHAREON 2,Other / Unknown,Other / Unknown,,,13.06879,100.85595,,,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567180800
+567002395,,SRIRACHA 37,Fishing Vessel,Fishing Vessel,,,13.120465,100.853775,,,236,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002395
+636019772,,MXD XIAMEN,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.156607,100.850395,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636019772
+567300169,,567300169,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.147987,100.865735,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567300169
+567001234,,JC_MARINE 22,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.131462,100.857273,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001234
+567006327,,N SANGPRATEEP JJJ,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.163028,100.866043,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006327
+422040200,9387786,PARSHAD,Bulk Carrier,Passenger / Cruise / Ferry,Iran,ir,13.130313,100.876973,0.0,307.9,201,Moored (จอดเทียบท่า),BIK,BIK,2026-11-30 08:30:00 UTC,Sriracha,Thailand,10.4,190,32,32474,53459,2008,https://static.vesselfinder.net/ship-photo/9387786-422040200-7e0568974c9d2872ef090bee795dcbea/1,https://www.vesselfinder.com/vessels/details/9387786
+563229300,9935258,EVER MEED,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,13.141782,100.877237,15.0,156.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9935258
+574447000,9359624,PETROLIMEX 09,Chemical/Oil Products Tanker,Cargo / Container / Bulk Carrier,Vietnam,vn,13.120607,100.868603,0.0,304.2,28,Moored (จอดเทียบท่า),TH SRI,Sriracha,2026-11-09 00:42:03 UTC,Sriracha Anch.,Thailand,8.3,175,31,25413,40020,2007,https://static.vesselfinder.net/ship-photo/9359624-574447000-48ef78b5ed28f73c6404451f3e2b1f8e/1,https://www.vesselfinder.com/vessels/details/9359624
+536101855,,J C MARINE 44,High Speed Craft,High Speed Craft,,,13.143597,100.876025,,,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/536101855
+353153000,,STELLAR SUNRISE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.157952,100.882595,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/353153000
+567700911,,JAPAIANG 2,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.929292,100.871683,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567700911
+567002290,,TUG 604,High Speed Craft,High Speed Craft,,,13.063447,100.882603,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002290
+352003271,9980667,BRIGHT OAK,General Cargo Ship,Passenger / Cruise / Ferry,Panama,pa,13.074802,100.881595,0.0,29.3,60,Moored (จอดเทียบท่า),TH LCH,Laem Chabang,2026-11-10 01:58:45 UTC,Laem Chabang Anch.,Thailand,4.7,120,22,9953,13682,2023,https://static.vesselfinder.net/ship-photo/9980667-352003271-8c4a9bb381180c3a90cb8adbfc06118f/1,https://www.vesselfinder.com/vessels/details/9980667
+567559000,,SRI KANCHANADIT,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.136362,100.883062,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567559000
+567073100,8360559,PATARAWIN,Tanker,Cargo / Container / Bulk Carrier,,,13.109415,100.872222,9.5,163.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8360559
+567003460,9682227,PP 9,Tanker,Cargo / Container / Bulk Carrier,,,13.13915,100.881525,11.0,208.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9682227
+352005811,,PACIFIC BEAUTY,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.132303,100.874393,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352005811
+511101245,,LONDON BAY,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.138193,100.876868,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/511101245
+332000963,,HONESTAR,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.176133,100.869948,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/332000963
+574379000,,GREAT OCEAN,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.121263,100.867892,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574379000
+567292000,9111503,PILATUS 33,Tanker,Cargo / Container / Bulk Carrier,,,13.69056,100.58972,0.0,360.0,360,,,,"Jan 09, 15:06 UTC",,,,69,,,,,,https://www.vesselfinder.com/vessels/details/9111503
+567789000,,RTN455,Cargo (Hazard),Cargo (Hazard),,,12.649633,100.867433,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567789000
+567602500,,MAKUTRAJAKUMARN433,Cargo (Hazard),Cargo (Hazard),,,12.652253,100.883285,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567602500
+253771000,,SIMOUST,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.7675,100.880205,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/253771000
+352001188,,NORD SANTOS,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.140018,100.877727,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352001188
+567000276,,OCEAN PLANNER,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.138838,100.883067,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000276
+567001940,,NS309,High Speed Craft,High Speed Craft,,,13.063572,100.882653,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001940
+563013420,,NEOLUNA,Sailing,Tanker (Oil / Chemical / LPG / LNG),,,12.783933,100.867407,,,202,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563013420
+567001710,9748629,NP LOVEGISTICS 3,Cargo,Passenger / Cruise / Ferry,,,13.6373,100.53731,0.1,360.0,360,,,,"Jan 08, 22:24 UTC",,,,120,,,,,,https://www.vesselfinder.com/vessels/details/9748629
+567002210,,SRIRACHA 30,High Speed Craft,High Speed Craft,,,13.173927,100.877853,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002210
+567003240,1042469,MOE LINE 6,Cargo,Passenger / Cruise / Ferry,,,13.662,100.57201,5.7,232.0,232,,,,"Jan 09, 17:55 UTC",,,,50,,,,,,https://www.vesselfinder.com/vessels/details/1042469
+636023814,,CSPC HORIZON,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.155863,100.881875,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636023814
+567000167,,SOR PUANGPAYORM 6,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.92845,100.868073,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000167
+567002620,8535568,B.P.P.202,Tanker,Cargo / Container / Bulk Carrier,,,13.14185,100.882943,8.4,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8535568
+538006689,,NING FENG 316,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.157602,100.883235,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538006689
+567006329,,SANGPRATIP2 QQQ,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.165962,100.881188,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006329
+567002880,,PP8,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.137333,100.8805,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002880
+356667000,9883479,TROPICAL SENTOSA,Cargo,Passenger / Cruise / Ferry,,,13.13291,100.874092,,37.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9883479
+352001934,9810733,HELIOS,Cargo,Passenger / Cruise / Ferry,,,13.131737,100.873628,,338.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9810733
+567000830,9343572,NP SURATTHANI 2,Cargo,Passenger / Cruise / Ferry,,,13.136733,100.875567,9.8,204.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9343572
+413478110,,TIE JIAN JIAO 01,Other / Unknown,Other / Unknown,,,13.034648,100.876705,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413478110
+567000312,,NAMJAISEE,Other / Unknown,Other / Unknown,,,12.936093,100.868345,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000312
+567631000,1054010,KIRIN 5,Cargo,Passenger / Cruise / Ferry,,,13.065505,100.877215,4.8,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1054010
+567002370,8791497,NP CHANTHABURI,Cargo,Passenger / Cruise / Ferry,,,13.062122,100.880293,1.4,,292,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8791497
+567001473,,N.FIRST,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.145668,100.883042,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001473
+567002780,,DRAGON TEN,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.115033,100.87615,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002780
+268248300,9544384,ADAM JUNIOR,Cargo,Passenger / Cruise / Ferry,,,13.128833,100.877167,,79.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9544384
+567000466,,SRIRACHA27,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.12922,100.875643,,,247,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000466
+567002130,,M.T PATARAVARIN4,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.123555,100.882035,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002130
+538004174,,DUBAI BRILLIANCE,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.075712,100.880693,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538004174
+391003921,,RAKPASAK 6,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.929882,100.870517,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/391003921
+567444402,,TUG404,High Speed Craft,High Speed Craft,,,13.054462,100.887657,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567444402
+567001776,,TUG504,High Speed Craft,High Speed Craft,,,13.054267,100.887933,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001776
+567002160,,SMOOTH SEA 21,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.134373,100.883567,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002160
+567003440,,SRIRACHA 46,Other / Unknown,Other / Unknown,,,13.133678,100.886167,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003440
+567002414,,SRIRACHA 42,High Speed Craft,High Speed Craft,,,13.133107,100.888023,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002414
+567434555,,567434555,Fishing Vessel,Fishing Vessel,,,13.125498,100.892665,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567434555
+538090747,1153294,ZR ZHEJIANG,Cargo,Passenger / Cruise / Ferry,,,13.04857,100.892712,15.7,170.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1153294
+567002530,,NS 601,High Speed Craft,High Speed Craft,,,13.054793,100.887382,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002530
+567003170,,SRIRACHA 44,High Speed Craft,High Speed Craft,,,13.133375,100.888082,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003170
+567007784,9073505,OCEAN WISDOM 5,Tanker,Cargo / Container / Bulk Carrier,,,13.065898,100.888257,,205.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9073505
+567169444,,SUPER MAX,Other / Unknown,Other / Unknown,,,13.069903,100.895185,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567169444
+636021320,,SHIJING,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.066487,100.895617,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636021320
+477154500,9815680,JOSCO REAL,Cargo,Passenger / Cruise / Ferry,,,13.067408,100.890565,0.0,325.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9815680
+567073600,9112844,CHETTHANABODI6,Tanker,Cargo / Container / Bulk Carrier,,,13.143175,100.888195,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9112844
+314803000,,AMK NOBLE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.06361,100.883825,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/314803000
+567061562,,TUG 501,Tug,High Speed Craft,,,13.054235,100.887828,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567061562
+567005879,,SRIRACHA OFFSHORE883,Tug,High Speed Craft,,,13.128635,100.892013,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005879
+567070800,,CHETTHANABODI 2,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.140453,100.88879,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567070800
+563049100,,INTERASIA FORWARD,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.065913,100.887858,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563049100
+567511000,,PHUBAI PATTRA 4,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.14405,100.88435,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567511000
+567002960,9021306,PIMNARA,Tanker,Cargo / Container / Bulk Carrier,,,13.58013,100.58073,0.0,360.0,360,,,,"Jan 10, 05:26 UTC",,,,61,,,,,,https://www.vesselfinder.com/vessels/details/9021306
+268265401,,RISHABH,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.065178,100.886537,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/268265401
+567002180,,CHETTHANABODI 4,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.140422,100.889235,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002180
+567000007,,SAMRUAT 7,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.055667,100.887298,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000007
+567000519,,KANOK MUTHALONG,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.139048,100.888668,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000519
+567061700,,SRIRACHA 25,High Speed Craft,High Speed Craft,,,13.133205,100.887097,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567061700
+567005893,,MT.CHETTHANABODI 5,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.143287,100.887888,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005893
+567000027,,BRIGHTASPECT,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.13916,100.887108,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000027
+567031900,,KANOKMUTHALONG9,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.141772,100.886372,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567031900
+567000029,,THAPANEE 9,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.135475,100.887208,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000029
+567075800,,DRAGON TWELVE,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.051892,100.890627,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567075800
+538012043,,AZAMARA PURSUIT,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.06959,100.89454,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538012043
+567522000,,SMOOTH SEA 18,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.1825,100.899017,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567522000
+477711400,,SILVER SAFETY,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.16014,100.883388,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477711400
+567001430,,TUG401,Tug,High Speed Craft,,,13.054527,100.887768,,158.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001430
+567065300,,SMOOTH SEA 17,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.177218,100.89906,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567065300
+567002860,,NAREEPAT,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.144912,100.889102,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002860
+567999993,,O.P.K.1,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.062258,100.883725,,,67,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567999993
+567000042,,TUG402,High Speed Craft,High Speed Craft,,,13.054347,100.887523,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000042
+567000304,,TUG 304,Other / Unknown,Other / Unknown,,,13.055795,100.887025,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000304
+477272600,,SMART FUTURE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.068567,100.89245,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477272600
+567000303,,TUG 303,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.0564,100.886687,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000303
+567073900,9267833,SRI NATHAWEE,Tanker,Cargo / Container / Bulk Carrier,,,13.17431,100.894307,,352.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9267833
+232062974,,ANNE MARIE,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.818752,100.891293,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/232062974
+567002340,,DRAGON ONE,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.142927,100.885433,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002340
+567000291,,OCEAN SYNERGY,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.136617,100.888472,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000291
+567002850,8348290,AMITA,Tanker,Cargo / Container / Bulk Carrier,,,13.182535,100.895308,0.8,357.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8348290
+431260000,9689615,ONE MANHATTAN,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,13.050457,100.898925,11.5,178.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9689615
+352006545,1132329,M.MARINER,Cargo,Passenger / Cruise / Ferry,,,13.063838,100.890902,0.0,322.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1132329
+277593000,,LIMARKO NORTE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.160732,100.884095,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/277593000
+550003964,,TUG 403,High Speed Craft,High Speed Craft,,,13.054455,100.887598,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/550003964
+215558000,,APL QINGDAO,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.052145,100.890738,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/215558000
+636017685,,MSC RIFAYA,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.049298,100.895003,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636017685
+567002360,,SRIRACHA 31,High Speed Craft,High Speed Craft,,,13.133467,100.889867,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002360
+572365220,,SRIRACHA 39,High Speed Craft,High Speed Craft,,,13.133302,100.888165,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/572365220
+567002230,,M.T.PP 7,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.137945,100.884002,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002230
+567069200,,CHETTHANABODI 3,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.140398,100.889025,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567069200
+567111306,,TARUA306,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.064865,100.891193,,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111306
+567111305,,TUG305,High Speed Craft,High Speed Craft,,,13.05634,100.886543,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111305
+567000206,,TUG 206,High Speed Craft,High Speed Craft,,,13.056435,100.886913,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000206
+477909500,,MILD ORCHID,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.06467,100.892342,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477909500
+533110665,,HELLCAT,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.771143,100.890433,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533110665
+567001990,,M.T.V.L.17,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.139693,100.884588,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001990
+567002502,,S.SARITA,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.137363,100.887218,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002502
+567053700,,SRIRACHA 16,High Speed Craft,High Speed Craft,,,13.133608,100.887215,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567053700
+563308100,,HANS SCHULTE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.054517,100.898167,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563308100
+567002140,,PAKAMON,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.186335,100.893762,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002140
+567002398,,TUG504,Tug,High Speed Craft,,,13.054135,100.887662,,34.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002398
+567003038,,TSS SHEPHERD,Port Tender,Other / Unknown,,,13.051828,100.890638,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003038
+567074200,,PUNNYA NAVEE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.16925,100.897547,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567074200
+567594000,9276298,TASCO PHOENIX,"Tanker, Hazmat C",Cargo / Container / Bulk Carrier,,,13.142923,100.890765,10.8,196.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9276298
+567067800,,SRI KHIRI CHAD,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.171622,100.898453,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567067800
+567001623,,KANOK MUTHALONG 10,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.13877,100.885865,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001623
+567354000,9481386,M.T. PHUBAI PATTRA 1,"Tanker, Hazmat D",Cargo / Container / Bulk Carrier,,,13.1666,100.891783,0.0,16.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9481386
+567001750,,TUG 603,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.054893,100.887585,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001750
+533133607,,LADY SURI 1,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.82879,100.906875,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533133607
+518998928,,SEAS THE DAY,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.826807,100.90609,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/518998928
+413296260,,MINGDE 5003,High Speed Craft,High Speed Craft,,,13.038415,100.903127,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413296260
+567180269,,THAWONCHAROENCHAI8,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.615378,100.90014,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567180269
+576101170,,MY SANTA ELENA,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828972,100.908775,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/576101170
+567002980,,OXYGEN,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.827843,100.905533,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002980
+413580560,,CHENGXINJUN339,Other / Unknown,Other / Unknown,,,13.038407,100.908697,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413580560
+533131181,,COPACABANA,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828063,100.906002,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533131181
+567568000,,BEACON ALTAIR,Other / Unknown,Other / Unknown,,,12.622715,100.914465,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567568000
+567000929,,PILATUS 44,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.166987,100.904797,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000929
+235109936,,LIBERTY CALL,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.829305,100.908768,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/235109936
+567001638,,SIAMESE TWINS,Passenger,Tug / Special / Pilot / SAR,,,12.827983,100.909298,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001638
+538073022,,SMALL WORLD,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.829142,100.907628,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538073022
+567001020,,PILATUS 41,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.168035,100.907293,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001020
+413457110,,TAIYANG168,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.041593,100.905022,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413457110
+563031930,,SAINT ELENA II,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828212,100.906745,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563031930
+232049007,,KALODA,Pleasure Craft,Tanker (Oil / Chemical / LPG / LNG),,,12.829217,100.908807,,308.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/232049007
+518159194,,MOON DANCER 9,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.82685,100.906483,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/518159194
+563290800,9934371,ONE FRUITION,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,13.051585,100.90279,10.5,136.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9934371
+566344000,,ENA GRIFFIN,Other / Unknown,Other / Unknown,,,13.056073,100.904422,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/566344000
+567072500,,BETTA SIERRA,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.171992,100.903947,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567072500
+567002830,,PILATUS 56,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.16714,100.901753,,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002830
+566293000,,BOS ARES,Other / Unknown,Other / Unknown,,,13.18167,100.902728,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/566293000
+567003140,,PILATUS 59,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.17461,100.902677,,,112,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003140
+567516000,9720586,SC GANYA,Other,Other / Unknown,,,12.628252,100.914685,0.2,49.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9720586
+567001222,,MOL,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.829175,100.907733,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001222
+533133962,,EXCESS 14,Sailing,Tanker (Oil / Chemical / LPG / LNG),,,12.827268,100.908192,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533133962
+567002373,,THE TIDE,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.828105,100.907992,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002373
+567006917,,SERENITY 1,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828243,100.909167,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006917
+636022969,,HAN WU KOU,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.054075,100.905597,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636022969
+533110423,,JANTANA,Pleasure Craft,Tanker (Oil / Chemical / LPG / LNG),,,12.828822,100.908818,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533110423
+503186160,,JAMEELA,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828545,100.905787,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/503186160
+567002459,,SW47,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.827165,100.906945,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002459
+567002330,9114971,P.PATARATHIDA,Other,Other / Unknown,,,12.619792,100.913918,,94.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9114971
+567001561,,PASSION YACHT 1,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828007,100.904702,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001561
+677080400,,WANXIANG178,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.041638,100.905232,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/677080400
+567001618,,SONIC,Other / Unknown,Other / Unknown,,,12.827923,100.90936,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001618
+567002450,,PILATUS 51,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.166102,100.90798,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002450
+232052940,,MILLEFLEURS,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.827287,100.905003,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/232052940
+353949000,,AESEN MONARCH 1,Other / Unknown,Other / Unknown,,,12.628113,100.91633,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/353949000
+567005878,,SRIRACHA OFFSHORE882,High Speed Craft,High Speed Craft,,,12.628292,100.917757,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005878
+567300799,,567300799,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.513305,100.947182,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567300799
+567905305,,SH905305,Fishing Vessel,Fishing Vessel,,,12.596557,100.957538,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567905305
+567950880,,SEA BOY,Fishing Vessel,Fishing Vessel,,,12.598817,100.955075,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950880
+567111111,,PRONPEKANAT 92,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.598107,100.956603,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111111
+567982002,,567982002,Fishing Vessel,Fishing Vessel,,,12.598642,100.954897,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567982002
+567266468,,PHETDEE,Fishing Vessel,Fishing Vessel,,,12.598527,100.955613,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567266468
+567111396,,SH111396,Fishing Vessel,Fishing Vessel,,,12.598093,100.956228,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111396
+567907913,,SH907913,Fishing Vessel,Fishing Vessel,,,12.598887,100.955502,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567907913
+567907906,,NAVEE27,Fishing,Fishing Vessel,,,12.598755,100.955213,7.2,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567907906
+567126000,,UNIQUE 10,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.484728,100.98153,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567126000
+567067400,9785512,CHUTIPA5,Tanker,Cargo / Container / Bulk Carrier,,,12.601533,100.970737,0.1,241.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9785512
+567003270,9152337,PILATUS 14,Tanker,Cargo / Container / Bulk Carrier,,,12.597117,100.971533,9.7,309.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9152337
+567070500,,NAPAPA,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.594083,100.97135,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567070500
+525016762,,NMS BRAVERY,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.49381,100.974352,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/525016762
+567002810,9078660,PILATUS 40,Tanker,Cargo / Container / Bulk Carrier,,,13.496303,100.974262,0.1,304.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9078660
+525401163,,TB LL UNTUNG JUNAIDI,High Speed Craft,High Speed Craft,,,13.501985,100.979022,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/525401163
+567001650,9020455,NP BANGPAKONG,Tanker,Cargo / Container / Bulk Carrier,,,13.497102,100.97443,10.0,55.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9020455
+567402000,,SENNA 3,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.500267,100.976083,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567402000
+567001542,1036422,KTP 3,Tanker,Cargo / Container / Bulk Carrier,,,13.492033,100.99667,7.9,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1036422
+567222222,,K.VAREE8888,Fishing Vessel,Fishing Vessel,,,12.533163,101.031778,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567222222
+242424242,,SINGH DEIY 2,Fishing Vessel,Fishing Vessel,,,12.512263,101.04732,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/242424242
+567888888,,PRONPEKANAT 8,Fishing Vessel,Fishing Vessel,,,12.507812,101.036218,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567888888
+567111086,,SH111086,Fishing,Fishing Vessel,,,12.53035,101.119888,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111086
+567109167,,SH109167,Fishing Vessel,Fishing Vessel,,,12.597622,101.1227,,,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109167
+352006170,9995777,ASIAN LILY,Cargo,Passenger / Cruise / Ferry,,,12.673277,101.147625,0.0,90.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9995777
+567003370,9997804,RS HUNTER,Tug,High Speed Craft,,,12.673048,101.149825,0.0,279.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9997804
+412765760,,SAN HANG ZHUANG 5,Dredging,Other / Unknown,,,12.645523,101.143143,0.0,510.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/412765760
+567005935,,LUKNATEE 02,High Speed Craft,High Speed Craft,,,12.669015,101.137462,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005935
+567000750,,RS 15,High Speed Craft,High Speed Craft,,,12.672868,101.13918,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000750
+567000420,,KNO 101,Tug,High Speed Craft,,,12.673283,101.149015,0.4,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000420
+567074600,9997830,RS NANONT,Other,Other / Unknown,,,12.673267,101.149437,0.0,275.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9997830
+567001960,,RS 42,High Speed Craft,High Speed Craft,,,12.673162,101.149725,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001960
+375394000,1057610,RS NATA,Tug,High Speed Craft,,,12.673163,101.149475,0.0,82.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1057610
+352003212,9542154,HANYU CAMELLIA,Tanker,Cargo / Container / Bulk Carrier,,,12.66355,101.140733,0.0,137.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9542154
+567254464,,HOR TAWATCHAI 8,Fishing,Fishing Vessel,,,12.595547,101.142867,1.5,,281,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567254464
+567003520,8619209,SANG CHAROEN 12,Tug,High Speed Craft,,,12.670852,101.146663,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8619209
+538007141,9575175,MARIMAN,Cargo,Passenger / Cruise / Ferry,,,12.66531,101.138535,0.0,271.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9575175
+533133126,9422201,EAGLE KINARUT,Tanker,Cargo / Container / Bulk Carrier,,,12.653643,101.14607,0.0,135.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9422201
+563077900,9855707,EAGLE LIKA,Tanker,Cargo / Container / Bulk Carrier,,,12.656897,101.142558,0.1,7.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9855707
+567001550,,RS 40,High Speed Craft,High Speed Craft,,,12.67194,101.149198,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001550
+567072900,9989144,TANAPA,Dredging,Other / Unknown,,,12.571037,101.14163,0.1,467.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9989144
+567074500,9997828,RS WINTER,?,Reserved / Wing in Ground,,,12.672897,101.149447,0.1,84.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9997828
+352006186,1032012,NORSE FUNEN,Cargo,Passenger / Cruise / Ferry,,,12.67315,101.14452,0.0,91.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1032012
+567074400,9997816,RS SUMMER,Tug,High Speed Craft,,,12.673012,101.149433,0.1,86.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9997816
+567003360,9997799,RS SKYE,Tug,High Speed Craft,,,12.673062,101.149033,0.1,270.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9997799
+636021566,9329423,FALCON S,Cargo,Passenger / Cruise / Ferry,,,12.67151,101.139337,0.0,0.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9329423
+676502856,,SC 20,Pilot,Other / Unknown,,,12.672877,101.13898,,167.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/676502856
+567000350,,KNO 102,High Speed Craft,High Speed Craft,,,12.661757,101.145017,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000350
+567000019,,SC 19,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.664317,101.14204,,,292,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000019
+520081958,,SC18,Pilot,Other / Unknown,,,12.672937,101.13897,,298.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/520081958
+477123500,9449302,JIA YI 27,Cargo,Passenger / Cruise / Ferry,,,12.67084,101.139233,0.0,179.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9449302
+567002840,,SRI LAMPHU,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.52907,101.142105,,,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002840
+567002390,,SANGCHAROEN 91,Dredging,Other / Unknown,,,12.593648,101.13505,0.1,479.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002390
+567002761,,RS36,Tug,High Speed Craft,,,12.672983,101.150483,0.1,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002761
+567000430,,KNO 103,Tug,High Speed Craft,,,12.652985,101.151898,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000430
+567007022,,RS38,Tug,High Speed Craft,,,12.673142,101.150208,,337.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567007022
+538009241,,SASANQUA,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.657107,101.15605,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538009241
+567002949,,RS 27,Tug,High Speed Craft,,,12.665452,101.150327,2.7,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002949
+567006778,,RS18,?,Reserved / Wing in Ground,,,12.66545,101.150347,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006778
+567067200,,BIG SEA 105,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.66313,101.150767,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567067200
+567000287,8408208,RS30,Tug,High Speed Craft,,,12.672685,101.150465,6.9,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8408208
+567111061,,SH111061,Fishing Vessel,Fishing Vessel,,,12.55348,101.157015,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111061
+567212019,,MANOCH 99,Other / Unknown,Other / Unknown,,,12.64646,101.151132,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567212019
+563326800,9997672,PUTERI KEDAH,"Other, Hazmat D",Other / Unknown,,,12.652397,101.153783,14.5,353.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9997672
+567000536,,RS 32,Tug,High Speed Craft,,,12.673275,101.15026,0.0,503.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000536
+567109172,,CHOKPRASEARTSAK 55,Passenger,Tug / Special / Pilot / SAR,,,12.568088,101.164772,2.0,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109172
+567000342,,RS31,High Speed Craft,High Speed Craft,,,12.673273,101.150567,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000342
+636017742,9792010,SOUTHERN QUOKKA,Tanker,Cargo / Container / Bulk Carrier,,,12.595638,101.211277,0.0,90.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9792010
+538008718,9731169,OLYMPIC LADY,Tanker,Cargo / Container / Bulk Carrier,,,12.565248,101.213892,0.1,11.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9731169
+567599000,9446116,TMN PLENITUDE,"Tanker, Hazmat B",Cargo / Container / Bulk Carrier,,,12.615332,101.225418,0.0,5.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9446116
+563318800,1050325,EAGLE DIAMOND,Tanker,Cargo / Container / Bulk Carrier,,,12.586345,101.219745,0.0,26.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1050325
+538002845,9339985,YASA GOLDEN DARDANEL,Tanker,Cargo / Container / Bulk Carrier,,,12.512818,101.217422,12.3,160.0,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9339985
+567578000,9413030,PHUBAI NADDA 1,Tanker,Cargo / Container / Bulk Carrier,,,12.609745,101.241152,0.0,202.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9413030
+567072700,,TRANS NOPPAKAO,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.374547,99.993648,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567072700
+567111051,,SH111051,Fishing Vessel,Fishing Vessel,,,12.817625,99.99376,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111051
+567053600,,P.R.INTER 1,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.126017,100.122983,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567053600
+567002448,,SRIRACHA 41,High Speed Craft,High Speed Craft,,,13.134217,100.117895,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002448
+567069300,,TAKSAORN,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.124918,100.123348,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567069300
+574000570,,HUONG ANH 69,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.540552,100.249998,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574000570
+567000288,,NP SAMUTSONGKHRAM,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.536375,100.249287,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000288
+567001790,,THINMANEE,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.541257,100.249,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001790
+567004323,,A.P.FISHERY,Fishing Vessel,Fishing Vessel,,,13.522448,100.264493,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004323
+567000460,,PROTIER4,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.533432,100.254892,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000460
+567487000,,SEA NETWORK,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.531038,100.258207,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567487000
+567391000,,PATSORN,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.530862,100.2577,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567391000
+567003330,,MOE LINE 7,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.532537,100.263782,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003330
+567046600,,ASIAN MARINE REEFER2,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.530995,100.256807,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567046600
+567196000,,M.V.SIRICHAI REEFER,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.530825,100.256153,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567196000
+567231000,,ASIAN MARINE REEFER,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.531112,100.256885,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567231000
+567255000,,S LEELAWADEE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.530825,100.25874,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567255000
+567006487,,OC RAMAI,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.53271,100.264017,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006487
+567243470,,K.CHOKCHAI 2,Fishing Vessel,Fishing Vessel,,,13.5337,100.27236,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567243470
+350882000,,GREAT TRADER 2,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.54194,100.277053,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/350882000
+567002110,9186546,M.T.THANATTARA,Tanker,Cargo / Container / Bulk Carrier,,,13.518813,100.270168,0.0,342.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9186546
+567111095,,S.SUPPRASERD 9,Fishing Vessel,Fishing Vessel,,,12.98144,100.299952,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111095
+567002540,9047829,MT.NARATANASIN,Tanker,Cargo / Container / Bulk Carrier,,,13.431923,100.30858,11.4,226.0,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9047829
+567266508,,CHOKKRITCHAINAVEE,Fishing Vessel,Fishing Vessel,,,13.122825,100.31276,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567266508
+567243466,,LOR CHOKCHAISOMBOON,Fishing Vessel,Fishing Vessel,,,13.185898,100.311633,,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567243466
+567256309,,AKEPOPNAVEE 4,Fishing Vessel,Fishing Vessel,,,13.437913,100.30606,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567256309
+567004946,,EF21578,Fishing Vessel,Fishing Vessel,,,13.055462,100.329358,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004946
+567234152,,AAA,Fishing Vessel,Fishing Vessel,,,13.016982,100.35102,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567234152
+567111239,,111239,Fishing Vessel,Fishing Vessel,,,13.141437,100.356922,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111239
+518999160,,PRINCIPESSA,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,13.702558,100.495945,,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/518999160
+567005875,,RAKPASAK 5,Reserved / Wing in Ground,Reserved / Wing in Ground,,,13.640252,100.533427,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005875
+567258505,,WATTHANA 1,?,Reserved / Wing in Ground,,,13.62374,100.54693,0.0,81.0,81,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567258505
+567244933,,WATTHANA 3,Other / Unknown,Other / Unknown,,,13.62392,100.54412,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567244933
+567258885,,WATTHANA 7 #,Other / Unknown,Other / Unknown,,,13.73652,100.544633,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567258885
+567076700,,GRACE AND PROUD,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.672643,100.545807,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567076700
+567062100,,KTP 1,Cargo,Passenger / Cruise / Ferry,,,13.669285,100.542567,8.2,,67,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567062100
+563138900,9923657,EAGLE GARNET,Tanker,Cargo / Container / Bulk Carrier,,,13.61333,100.55577,0.0,81.0,120,,,,"Jan 09, 14:49 UTC",,,,113,,,,,,https://www.vesselfinder.com/vessels/details/9923657
+567452000,,PATCHARAWADEE15,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.396532,100.562728,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567452000
+533133374,1075129,MTT PERAWANG,Cargo,Passenger / Cruise / Ferry,,,13.61174,100.5643,8.8,282.0,280,,,,"Jan 09, 14:40 UTC",,,,110,,,,,,https://www.vesselfinder.com/vessels/details/1075129
+567002280,,RATTANATHANAKIJ 168,Cargo,Passenger / Cruise / Ferry,,,13.661125,100.574108,6.3,349.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002280
+567903569,,S PORNAREE 11,Fishing,Fishing Vessel,,,13.35603,100.578997,6.3,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567903569
+352005813,9965095,PACIFIC EAGLE,Cargo,Passenger / Cruise / Ferry,,,13.70453,100.572613,0.0,288.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9965095
+567139304,,B.P.P.4,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.6689,100.578933,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567139304
+567256303,,NUMPOL 888,Other / Unknown,Other / Unknown,,,13.681622,100.587527,,,22,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567256303
+567256301,,N.SALAKPET 6,Other / Unknown,Other / Unknown,,,13.58602,100.592893,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567256301
+567025600,9235919,JALADHARANURAKSH,SAR,Cargo (Hazard),,,13.612603,100.585173,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9235919
+567002425,,KETSARIN_14,Towing,Other / Unknown,,,13.58456,100.59057,3.8,211.0,211,,,,"Jan 01, 00:26 UTC",,,,26,,,,,,https://www.vesselfinder.com/vessels/details/567002425
+567006003,,TRAPSOPOL59,Towing,Other / Unknown,,,13.578527,100.585113,5.1,,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006003
+567110706,,N.DVNGDEE5,Fishing Vessel,Fishing Vessel,,,13.115508,100.599905,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110706
+567002760,9896945,BUATHIP,Tanker,Cargo / Container / Bulk Carrier,,,13.68366,100.59033,0.0,89.0,7,,,,"Jan 09, 13:09 UTC",,,,108,,,,,,https://www.vesselfinder.com/vessels/details/9896945
+391099999,9118719,DENSUDDHI,?,Reserved / Wing in Ground,,,13.61259,100.58498,0.0,0.0,278,,,,"Jan 06, 21:55 UTC",,,,30,,,,,,https://www.vesselfinder.com/vessels/details/9118719
+567002580,9325415,V.L.20,Tanker,Cargo / Container / Bulk Carrier,,,13.68826,100.59039,0.0,60.0,350,,,,"Jan 05, 14:12 UTC",,,,104,,,,,,https://www.vesselfinder.com/vessels/details/9325415
+567002455,9900148,T.997,?,Reserved / Wing in Ground,,,13.608917,100.591883,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9900148
+525108015,,PANGALENGAN,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.345007,100.614632,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/525108015
+636026534,9466518,SINGAPORE RIVER,Cargo,Passenger / Cruise / Ferry,,,13.037037,100.634887,6.7,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9466518
+567008299,,P SRISANGTHONG16,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.106652,100.680822,,,191,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567008299
+567903572,,SRINOPPARAT14,Fishing Vessel,Fishing Vessel,,,12.714355,100.71291,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567903572
+567001069,,LABPHOLTAWEESUP3,Fishing Vessel,Fishing Vessel,,,13.089252,100.71848,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001069
+477024800,,SITC LIANYUNGANG,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.785795,100.732795,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477024800
+567890000,,CHAOTA 802,Other / Unknown,Other / Unknown,,,12.715388,100.717745,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567890000
+490002410,,PORNPIYA 98,Tug,High Speed Craft,,,13.335067,100.731188,5.9,124.0,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/490002410
+567002570,9855305,BIG SEA 106,Tanker,Cargo / Container / Bulk Carrier,,,12.699153,100.748507,11.3,251.0,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9855305
+567001350,,NP SRIRACHA,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.934258,100.7446,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001350
+567054500,9420899,BUSAYA,Tanker,Cargo / Container / Bulk Carrier,,,13.251468,100.73788,9.2,112.0,90,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9420899
+567064900,,SCENA SULTAN,High Speed Craft,High Speed Craft,,,12.729625,100.745673,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567064900
+538007711,9790892,INGENUITY,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,12.537147,100.765513,15.5,160.0,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9790892
+567002469,,CJBBT 2,Other / Unknown,Other / Unknown,,,13.286912,100.750337,,,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002469
+567002426,,KETSARIN13,Other / Unknown,Other / Unknown,,,13.279532,100.750663,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002426
+567230768,,567230768,Fishing Vessel,Fishing Vessel,,,13.343993,100.773558,,,90,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567230768
+477444600,,SITC DALIAN,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.616808,100.766755,,,303,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/477444600
+563121900,9833383,WAN HAI 277,"Cargo, Hazmat B",Passenger / Cruise / Ferry,,,12.996422,100.773088,8.5,0.0,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9833383
+567982310,,B H,Fishing Vessel,Fishing Vessel,,,13.341577,100.773802,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567982310
+567001559,,GEDO,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.723982,100.797427,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001559
+373260000,9894648,MAERSK NARVIK,Cargo,Passenger / Cruise / Ferry,,,13.044782,100.809807,5.5,359.0,33,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9894648
+567005936,,KENG AND HENG,Towing,Other / Unknown,,,13.125063,100.803853,6.0,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005936
+567004900,,HARIN TRANSPORT 21,Fishing Vessel,Fishing Vessel,,,13.102717,100.811303,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004900
+567003130,,OC MOSGOW,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.104287,100.812568,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567003130
+652000044,,KETSARIN 18,Other / Unknown,Other / Unknown,,,13.120467,100.816193,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/652000044
+567300525,,567300525,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.4905,100.814355,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567300525
+576701310,,RUENANGFAH,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.74632,100.82074,,,67,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/576701310
+567579000,,SRI CHAIYA,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.073373,100.817168,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567579000
+567001570,9704568,NP LOVEGISTICS 1,Cargo,Passenger / Cruise / Ferry,,,13.220855,100.826953,6.1,,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9704568
+235076276,,EAGLE HATTERAS,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.138458,100.824955,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/235076276
+636022817,,SDM TAICANG,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.107825,100.829642,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636022817
+574000870,,TIEN MINH 88,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.082963,100.831475,,,22,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574000870
+567002653,,RAMTHEP 92,Other / Unknown,Other / Unknown,,,13.153102,100.820717,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002653
+567001456,,LIVIN RIGHT,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.758527,100.846228,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001456
+567139003,,CHOK KAWIN THRA,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,13.088298,100.843892,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567139003
+567000001,,OCEAN BEAR 1,Fishing Vessel,Fishing Vessel,,,12.759545,100.84757,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000001
+567222098,,NATESAMUT,Fishing Vessel,Fishing Vessel,,,13.34704,100.847347,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567222098
+567064100,9062714,SRI PHUKET,Tanker,Cargo / Container / Bulk Carrier,,,13.121268,100.878957,12.4,351.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9062714
+636100567,,PITAK SAMUT 2,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.125953,100.878625,,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636100567
+567006544,,SCUBA PRINCESS,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.93774,100.875085,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006544
+477347900,9712761,SITC KEELUNG,"Cargo, Hazmat A",Passenger / Cruise / Ferry,,,13.139095,100.876417,,28.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9712761
+503182260,,DAYS LIKE THIS,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.83761,100.875408,,,292,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/503182260
+567073500,,SM 25,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.111257,100.87226,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567073500
+567000273,,PILATUS 18,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.119467,100.874983,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000273
+636014603,,GSL AFRICA,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.136795,100.875607,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636014603
+567001572,9103647,BIG SEA 17,Tanker,Cargo / Container / Bulk Carrier,,,13.139153,100.881277,10.8,133.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9103647
+563261900,9950856,EVER WISH,"Cargo, Hazmat A",Passenger / Cruise / Ferry,,,12.515525,100.875393,12.9,345.0,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9950856
+567054100,,VL 11,High Speed Craft,High Speed Craft,,,13.134607,100.881543,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567054100
+567076500,1109188,SRI TAH THONG,Tanker,Cargo / Container / Bulk Carrier,,,13.143568,100.882098,,273.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1109188
+563237400,,EVER WEB,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.065587,100.89412,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563237400
+413169000,,XIN WU HAN,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.061198,100.886278,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413169000
+636024119,9955246,HMM RUBY,Cargo,Passenger / Cruise / Ferry,,,13.050258,100.898623,11.0,352.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9955246
+636015233,,MSC MANYA,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.04856,100.892563,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636015233
+352003721,,ZHONGCHUANCHANGQING,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,13.159053,100.883647,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352003721
+563291100,9937311,ONE ORINOCO,"Cargo, Hazmat C",Passenger / Cruise / Ferry,,,13.05368,100.895855,,56.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9937311
+533110305,,GREAT SENSATION,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828615,100.908175,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533110305
+567076800,,UNIWISE COMMANDER,Tug / Special / Pilot / SAR,Tug / Special / Pilot / SAR,,,12.620587,100.911748,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567076800
+563297300,9944792,ONE FOCUS,"Cargo, Hazmat A",Passenger / Cruise / Ferry,,,13.052463,100.900912,12.1,332.0,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9944792
+567006922,,567006922,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.828283,100.905483,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006922
+567006789,,MY PLAYMATE II,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.827088,100.907618,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567006789
+567565000,,ROYAL THAI NAVY 471,Cargo (Hazard),Cargo (Hazard),,,12.627402,100.913833,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567565000
+567002478,,GLOW 600,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.827755,100.905927,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002478
+563034530,,ZAPHIRIS,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.827312,100.907117,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/563034530
+574098000,,PHUC THUAN 39,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.628238,100.914282,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/574098000
+413524830,,ZI YOU DAO,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.82895,100.907933,,,236,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413524830
+567001739,,SEAHAWK,Other / Unknown,Other / Unknown,,,12.82432,100.910153,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001739
+416006812,,PACIFIC HORNBILL,Other / Unknown,Other / Unknown,,,12.628172,100.915698,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/416006812
+567111219,,CHOKUDOMRAT 3,Fishing Vessel,Fishing Vessel,,,12.500677,100.91941,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111219
+431700832,,JAMES.DUANGDEE 11,Fishing Vessel,Fishing Vessel,,,12.500635,100.943832,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/431700832
+567700832,,JAMES.DUANGDEE 11,Fishing Vessel,Fishing Vessel,,,12.500697,100.943798,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567700832
+567999957,,S.LOETAMUT 57,Fishing Vessel,Fishing Vessel,,,12.517112,100.942463,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567999957
+567111395,,SH111395,Fishing Vessel,Fishing Vessel,,,12.598155,100.956188,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111395
+567109394,,SH109394,Fishing Vessel,Fishing Vessel,,,12.599503,100.955143,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109394
+567255804,,TRAPMONGKOL,Other / Unknown,Other / Unknown,,,12.595972,100.981913,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567255804
+567005600,,INTERMARINE,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,13.49784,100.989398,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567005600
+567612242,,RUNGARUN INFINITY,Cargo,Passenger / Cruise / Ferry,,,12.513845,101.013825,,312.0,112,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567612242
+567908844,,SH908844,Fishing Vessel,Fishing Vessel,,,12.087967,101.060252,,,258,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908844
+567140297,,N.PHETAPIRAT,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.468065,101.082273,,,191,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567140297
+567950869,,WHITE HORSE,Fishing Vessel,Fishing Vessel,,,11.999233,101.071963,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950869
+352006007,,LADY BME,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.639175,101.130042,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352006007
+567908849,,SH908849,Fishing,Fishing Vessel,,,12.465038,101.139028,2.8,,56,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908849
+567000259,,ROONGNATEE 11,Tug,High Speed Craft,,,12.627258,101.135072,0.0,128.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000259
+567000840,,ROONGNATEE 10,Tug,High Speed Craft,,,12.627308,101.135168,,260.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000840
+373367000,9430686,GLORY BLUE,"Tanker, Hazmat B",Cargo / Container / Bulk Carrier,,,12.66725,101.147317,0.5,241.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9430686
+567000000,1234567,SRIRACHA 28,Passenger,High Speed Craft,,,12.655558,101.15862,102.3,0.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1234567
+309255000,,AL HUWAILA,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.649718,101.1555,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/309255000
+567000055,,UNITEDKING 55 F3,Military Ops,Cargo (Hazard),,,12.511913,101.161338,,,78,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567000055
+567002870,9135133,CHOTETANASIN,Tanker,Cargo / Container / Bulk Carrier,,,12.663117,101.150748,0.0,177.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9135133
+567110957,,CHOKPHATHAN,Tanker (Oil / Chemical / LPG / LNG),Tanker (Oil / Chemical / LPG / LNG),,,12.287257,101.173807,,,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110957
+567906493,,SH906493,Fishing,Fishing Vessel,,,12.491868,101.168365,2.7,,90,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567906493
+567111066,,CH.SIN.CHI..,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.047907,101.183665,,,45,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111066
+441637000,9946635,SAWASDEE ALTAIR,Cargo,Passenger / Cruise / Ferry,,,11.917788,101.186447,15.8,332.0,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9946635
+567000620,9351880,UNIWISE RAYONG,Tug,High Speed Craft,,,12.492433,101.2023,0.0,89.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9351880
+636027153,9731169,636027153,Tanker,Cargo / Container / Bulk Carrier,,,12.56402,101.21596,0.1,8.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9731169
+567110610,,SH110610,Fishing Vessel,Fishing Vessel,,,12.274873,101.210745,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110610
+414663000,,XIN BIN HONG,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,11.921522,101.231027,,,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/414663000
+567001340,9041863,THAILAEMTHONG 6,Tanker,Cargo / Container / Bulk Carrier,,,12.603258,101.244527,0.1,17.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9041863
+567100368,,SH SUWITKARPARMNG,Fishing,Fishing Vessel,,,12.475988,101.235608,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567100368
+567070300,9121338,ONE NARA,Tanker,Cargo / Container / Bulk Carrier,,,12.60546,101.24754,0.2,202.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9121338
+636026357,1076525,LEFLAIVE,Tanker,Cargo / Container / Bulk Carrier,,,12.155972,101.238945,13.7,331.0,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1076525
+567140140,,14,?,Reserved / Wing in Ground,,,12.661603,101.262153,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567140140
+567068900,9158769,S.LOTUS,Tanker,Cargo / Container / Bulk Carrier,,,12.600157,101.263632,0.1,350.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9158769
+567004342,,D STAR,"Tanker, Hazmat A",Cargo / Container / Bulk Carrier,,,12.600243,101.263563,0.1,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004342
+567001730,9067221,M/T D STAR,Tanker,Cargo / Container / Bulk Carrier,,,12.600167,101.263533,0.2,349.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9067221
+567006343,9275907,M.T.S.SEALION2,Tanker,Cargo / Container / Bulk Carrier,,,12.600203,101.263802,0.2,348.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9275907
+567111279,,KFC39,Fishing,Fishing Vessel,,,12.657847,101.27628,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111279
+586200277,,PORNMADA999,Fishing,Fishing Vessel,,,12.659708,101.26892,0.0,249.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/586200277
+586204310,,KFC,Ship according to RR Resolution No. 18,Cargo (Hazard),,,12.657225,101.276747,5.1,,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/586204310
+244563767,,DANG MINH 95 A6 A1,Fishing Vessel,Fishing Vessel,,,12.657772,101.274925,,,112,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/244563767
+567002679,,KANITTHA FISHINGTOUR,Passenger,Tug / Special / Pilot / SAR,,,12.660475,101.271285,0.0,0.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002679
+380900021,,NARINPHAT,Fishing Vessel,Fishing Vessel,,,12.649422,101.277587,,,45,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/380900021
+567110983,,SH110983,Fishing,Fishing Vessel,,,12.659665,101.26944,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110983
+567120031,,PRONSAMUT 12,Fishing,Fishing Vessel,,,12.659582,101.269753,0.0,140.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567120031
+567002137,,LUCKY 2,Passenger,Tug / Special / Pilot / SAR,,,12.655313,101.277563,6.3,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002137
+567266504,,CHOKDEE,Fishing Vessel,Fishing Vessel,,,12.360327,101.288793,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567266504
+567004328,,FOURMOST 2,Fishing Vessel,Fishing Vessel,,,12.330338,101.301935,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004328
+567003430,9426221,SRI NAKHON,Tanker,Cargo / Container / Bulk Carrier,,,12.64141,101.30548,0.0,203.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9426221
+567909154,,ANURAK AOTHAI,Anti-pollution equipment,Cargo (Hazard),,,12.647213,101.302495,0.1,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909154
+567909155,,ANURAK SINGWADLOM,Tug,High Speed Craft,,,12.634253,101.302152,6.3,479.0,247,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909155
+567909081,,RTT2,Towing,Other / Unknown,,,12.646608,101.300525,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909081
+567909083,,RTT1,Towing,Other / Unknown,,,12.646048,101.300373,0.1,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909083
+567999071,,FOURMOST 2,Tanker,Cargo / Container / Bulk Carrier,,,12.33037,101.301913,,256.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567999071
+567463000,9615999,TASCO AMARIT,Tanker,Cargo / Container / Bulk Carrier,,,12.64298,101.306112,0.0,203.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9615999
+567893333,,PRONPEKANAT 3,Fishing,Fishing Vessel,,,12.471122,101.311165,5.6,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567893333
+567001690,9063495,SUCHANYAPORN,Tanker,Cargo / Container / Bulk Carrier,,,12.637102,101.304185,0.1,0.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9063495
+567054200,9016703,BIG SEA 14,Tanker,Cargo / Container / Bulk Carrier,,,12.636272,101.30249,0.1,39.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9016703
+567069600,9728980,SRI SURAT,Tanker,Cargo / Container / Bulk Carrier,,,12.644895,101.307075,0.0,202.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9728980
+574005680,9390903,AULAC AURORA,"Tanker, Hazmat D",Cargo / Container / Bulk Carrier,,,12.63965,101.3048,0.0,198.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9390903
+567110516,,SH110516,Fishing,Fishing Vessel,,,12.182512,101.32781,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110516
+567004306,,VENUS 3,Fishing Vessel,Fishing Vessel,,,12.330125,101.333082,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004306
+322100000,,JAY RAYONG,Fishing,Fishing Vessel,,,12.107447,101.341395,,,236,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/322100000
+567700656,,FISHING BUOY 6-82%,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.103922,101.34346,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567700656
+567910594,,CHOKPORNJINDA,Fishing,Fishing Vessel,,,12.460317,101.3427,2.3,,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567910594
+567700062,,FISHING BUOY 3-49%,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.092628,101.363005,,,191,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567700062
+397440934,,JAY,Fishing,Fishing Vessel,,,12.094052,101.361297,,170.0,202,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/397440934
+567999999,,PONPICANAT 99,Fishing,Fishing Vessel,,,12.43719,101.372128,4.6,,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567999999
+567908845,,SH908845,Fishing Vessel,Fishing Vessel,,,12.219343,101.370035,,,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908845
+413031696,,413031696,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.53272,101.394505,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/413031696
+567777997,,PRONPEKANA 7,Fishing,Fishing Vessel,,,12.453753,101.415648,0.1,,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567777997
+567999887,,EXCISE(RAYONG2),Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.607367,101.423802,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567999887
+567109391,,NRONGIN,Fishing Vessel,Fishing Vessel,,,12.598698,101.44017,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109391
+636013354,,LEADER,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.269287,101.53402,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636013354
+567908842,,MAE KLONG 14,Fishing,Fishing Vessel,,,11.181143,99.558567,0.8,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908842
+567912621,,SH912621,?,Reserved / Wing in Ground,,,11.176973,99.56028,0.9,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567912621
+567004868,,EF21618,Fishing,Fishing Vessel,,,11.183562,99.55826,1.5,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004868
+567913204,,CAPTAIN,Fishing,Fishing Vessel,,,11.18523,99.556807,0.8,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567913204
+567002890,,RATTANA THANAKIJ 951,Cargo,Passenger / Cruise / Ferry,,,11.08716,99.595208,7.5,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002890
+567000734,9009994,PILATUS 42,Tanker,Cargo / Container / Bulk Carrier,,,11.147797,99.664127,4.3,,22,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9009994
+538010689,9965679,GREEN FAIRY,Cargo,Passenger / Cruise / Ferry,,,11.166127,99.668948,11.7,89.0,101,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9965679
+567000890,9343584,NP SURATTHANI 1,Cargo,Passenger / Cruise / Ferry,,,11.166393,99.711993,3.7,15.0,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9343584
+567002120,9812884,V.L.18,Tanker,Cargo / Container / Bulk Carrier,,,11.242497,99.72437,4.8,17.0,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9812884
+567004308,,VENUS 10,Fishing,Fishing Vessel,,,11.172813,99.818327,1.8,440.0,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004308
+533007200,,KEOKEO,Pleasure Craft,Tanker (Oil / Chemical / LPG / LNG),,,12.408002,99.978547,0.0,277.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533007200
+567111311,,JAMES.DUANGDEE 8,Fishing,Fishing Vessel,,,12.403978,99.98984,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111311
+567211068,,KANTAPOPNAVA...15,Cargo,Passenger / Cruise / Ferry,,,11.98682,99.98699,4.6,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567211068
+567040869,,567040869,Cargo,Passenger / Cruise / Ferry,,,12.239845,100.003475,0.4,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567040869
+567003290,1031135,GRACE NAUTILUS,Tanker,Cargo / Container / Bulk Carrier,,,12.585793,100.069553,7.7,14.0,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1031135
+567004321,,NOKNANNAM 8,Cargo,Passenger / Cruise / Ferry,,,11.826897,100.087503,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004321
+567110657,,SH110657,Fishing,Fishing Vessel,,,12.380672,100.095858,2.3,,11,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110657
+567913202,,SIWAPHORN NAVY 5,Fishing,Fishing Vessel,,,12.549997,100.12833,4.3,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567913202
+567070700,,V.L.22,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,11.44463,100.160742,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567070700
+567111107,,N.CHATSAMUT 9,Fishing,Fishing Vessel,,,12.553387,100.159852,5.6,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111107
+567109402,,N.CHATSAMUT11,Fishing,Fishing Vessel,,,12.571843,100.185223,5.8,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109402
+567111100,,N.CHATSAMUT 8,Fishing,Fishing Vessel,,,12.509748,100.189908,4.5,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111100
+567111276,,SHAGJP,Other,Reserved / Wing in Ground,,,12.652755,100.183405,7.5,,180,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111276
+567110934,,CHOKTHUMDEEDEE19,Fishing,Fishing Vessel,,,12.123773,100.19115,0.5,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110934
+317403872,,PHONGPINYO 5,Fishing,Fishing Vessel,,,12.298813,100.232513,0.3,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/317403872
+567908376,,RATANAMANEERUNG,Fishing,Fishing Vessel,,,12.246177,100.230043,0.3,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567908376
+567007204,,KARNCHANAMANEE,Tanker,Cargo / Container / Bulk Carrier,,,12.335017,100.262492,0.5,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567007204
+567110046,,SH110046,Fishing,Fishing Vessel,,,12.310238,100.25207,0.9,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110046
+567004375,,KARNJANAMANEE,Cargo,Passenger / Cruise / Ferry,,,12.33507,100.262523,0.2,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004375
+645799000,,SUKSAN SALAMANDER,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,10.502008,100.270997,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/645799000
+567528000,,SC SKY,Reserved / Wing in Ground,Reserved / Wing in Ground,,,10.49668,100.26834,,,337,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567528000
+567004344,,THONGWATTANA 2,Fishing,Fishing Vessel,,,12.33984,100.269238,0.1,416.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004344
+567111062,,CHOKETHAMDEEDEE1,Fishing Vessel,Fishing Vessel,,,12.25969,100.285605,,,146,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111062
+355558000,9510151,BLUE RIDGE HIGHWAY,Cargo,Passenger / Cruise / Ferry,,,12.576937,100.379388,0.3,5.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9510151
+567555555,,PHONGTHITSIRIPORN,Fishing Vessel,Fishing Vessel,,,12.495002,100.430403,,,303,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567555555
+567907988,,SH907988,Fishing,Fishing Vessel,,,12.780658,100.449793,2.7,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567907988
+567004334,,THONGWATTANA 5,Cargo,Passenger / Cruise / Ferry,,,12.319883,100.499082,3.4,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004334
+567002460,9070955,VENUS23,Tanker,Cargo / Container / Bulk Carrier,,,12.352778,100.497873,3.5,107.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9070955
+567004317,,VENUS 23,Tanker,Cargo / Container / Bulk Carrier,,,12.352728,100.497878,0.0,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004317
+567111214,,SHENZHEN-123456,Fishing Vessel,Fishing Vessel,,,12.451838,100.506762,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111214
+567110164,,SH110164,Fishing Vessel,Fishing Vessel,,,12.666037,100.517497,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110164
+567061900,9643843,SRI BANDON,?,Reserved / Wing in Ground,,,9.183047,99.366525,3.8,230.0,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9643843
+567585000,9858113,SRI PHUNPIN,"Tanker, Hazmat C",Cargo / Container / Bulk Carrier,,,9.19145,99.380135,5.7,235.0,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9858113
+567061200,9134957,V.L.12,?,Reserved / Wing in Ground,,,9.176855,99.377707,5.6,142.0,135,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9134957
+567059800,9066930,PCT,"Tanker, Hazmat D",Cargo / Container / Bulk Carrier,,,9.17723,99.37665,0.0,322.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9066930
+533910038,,PSF 2457,Fishing,Fishing Vessel,,,6.2993,100.003838,7.2,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533910038
+533191841,,KF 5406,Fishing Vessel,Fishing Vessel,,,6.256222,100.01616,,,45,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533191841
+533903583,,KHF2668,Fishing,Fishing Vessel,,,6.048507,100.022783,8.6,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533903583
+533110249,,MY MASTER 2,Passenger,Tug / Special / Pilot / SAR,,,6.188615,100.029702,21.5,118.0,112,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533110249
+533087400,,HSH 874-82%,?,Reserved / Wing in Ground,,,6.042677,100.104292,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533087400
+533001840,,LANGKAWI AUTO EXP. 1,Other / Unknown,Other / Unknown,,,6.398948,100.127048,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533001840
+533013980,,HSH-1398-79%,Fishing Vessel,Fishing Vessel,,,5.968925,100.136563,,,0,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/533013980
+525024297,9717319,COMMERSON DOLPHIN,TUG,Other / Unknown,,,7.067507,100.695882,0.0,510.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9717319
+567002730,,SRI TAHPHET,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,12.029628,100.556093,,,45,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567002730
+352003410,,TC NEPTUNE,High Speed Craft,High Speed Craft,,,11.735067,100.554,,,112,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/352003410
+636017939,,FSO MANORA PRINCESS,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,11.7344,100.553817,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636017939
+636018105,,MSC BEIRA IV,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.052803,100.618908,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/636018105
+567064800,,PGM_113,?,Reserved / Wing in Ground,,,12.457337,100.627278,12.0,,33,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567064800
+567001950,9119024,BIG SEA 21,?,Reserved / Wing in Ground,,,12.126792,100.627673,9.8,231.0,225,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9119024
+567110650,,SH110650,Fishing Vessel,Fishing Vessel,,,12.181798,100.647727,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110650
+567111351,,SH,Fishing,Fishing Vessel,,,12.030158,100.651127,,,168,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111351
+538008946,9825415,INFERRO,"Cargo, Hazmat D",Passenger / Cruise / Ferry,,,11.344678,100.728733,15.4,0.0,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9825415
+636015994,9325180,CSAV RIO NEVADO,Cargo,Passenger / Cruise / Ferry,,,12.334453,100.727067,13.9,327.0,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9325180
+567992901,,567992901,Fishing Vessel,Fishing Vessel,,,11.857705,100.731095,,,67,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567992901
+563281400,9767998,VUNG TAU EXPRESS,"Cargo, Hazmat A",Passenger / Cruise / Ferry,,,12.130407,100.737157,9.6,49.0,202,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9767998
+567109387,,SH109387,Fishing Vessel,Fishing Vessel,,,12.095695,100.751848,,,123,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109387
+525701730,,GSM JAYA,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,10.503833,100.78005,,,348,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/525701730
+567110880,,SH110880,Fishing Vessel,Fishing Vessel,,,12.013872,100.788667,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110880
+567111318,,SHWTJADM,Fishing Vessel,Fishing Vessel,,,11.911373,100.794953,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111318
+567004315,,VENUS 2,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.345587,100.805103,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004315
+567981511,,PORNKIDSADANUMCHOK,Fishing Vessel,Fishing Vessel,,,11.902362,100.806147,,,213,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567981511
+567111322,,PHONGSIRIPORN 777,Fishing Vessel,Fishing Vessel,,,12.44928,100.817417,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111322
+567004338,,THONGWATTANA 13,Fishing,Fishing Vessel,,,12.307123,100.827177,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567004338
+456000001,,TESUWAN 9,Reserved / Wing in Ground,Reserved / Wing in Ground,,,12.4976,100.842442,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/456000001
+567110346,,M.CHAROENNAWIN 7,Fishing Vessel,Fishing Vessel,,,11.985317,100.845093,,,157,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567110346
+567201069,,567201069,Fishing Vessel,Fishing Vessel,,,12.055097,100.850467,,,236,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567201069
+440163000,9511105,DAEHO SUNNY,Tanker,Cargo / Container / Bulk Carrier,,,12.047662,100.876213,11.9,340.0,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9511105
+440218000,,SEIN KASAMA,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,12.483292,100.924633,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/440218000
+567209901,,S.DUANGDEE.99,?,Reserved / Wing in Ground,,,12.423408,100.952487,,0.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567209901
+432734000,9426374,PLEIADES LEADER,Cargo,Passenger / Cruise / Ferry,,,11.98172,101.044233,13.8,338.0,303,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9426374
+567109170,,PORNPIKANET5,Fishing Vessel,Fishing Vessel,,,12.479148,101.044302,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567109170
+566581000,,VALLIANZ COMMANDER,Other / Unknown,Other / Unknown,,,9.45755,101.061988,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/566581000
+351873000,,VELESTO NAGA 6,Other / Unknown,Other / Unknown,,,9.458978,101.081672,,,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/351873000
+567518000,9720574,SC NATA,Other,Other / Unknown,,,11.314557,101.186033,0.4,61.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9720574
+311000221,,GARIBALDI SPIRIT,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,10.594525,101.345027,,,270,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/311000221
+567657000,1110022,TASCO PRASIT,"Tanker, Hazmat A",Cargo / Container / Bulk Carrier,,,11.064228,101.476657,1.0,98.0,,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1110022
+352003112,9989807,BRIGHT SAKURA,Cargo,Passenger / Cruise / Ferry,,,11.293542,101.641763,15.5,324.0,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9989807
+538007582,9406099,CX TARPON,Cargo,Passenger / Cruise / Ferry,,,10.853465,101.663897,11.5,286.0,281,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9406099
+440598000,,MS SHARON,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,11.288067,101.804917,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/440598000
+636020423,9889136,ATLANTIC GOLD,Tanker,Cargo / Container / Bulk Carrier,,,11.255132,101.826462,12.8,335.0,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9889136
+538008159,,MARINE HOPE,Cargo / Container / Bulk Carrier,Cargo / Container / Bulk Carrier,,,10.867782,101.893638,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/538008159
+354299000,,GREEN CELESTE,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,10.73423,101.985922,,,326,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/354299000
+567584000,,LALIT BHUM,Passenger / Cruise / Ferry,Passenger / Cruise / Ferry,,,10.513398,102.202463,,,315,,,,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567584000
+9118859,,REEYAMARINE 88,Fishing,Fishing,Thailand,th,12.88665,100.88206,,9.0,9,Undefined,"Gulf of Thailand (Lat 12.89, Lon 100.88)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9118859
+5671113,9514925,SCHELDEDIJK,Cargo,Cargo,Thailand,th,12.9943,100.05681,,,0,Undefined,"Gulf of Thailand (Lat 12.99, Lon 100.06)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9514925
+9133212,,CACHEE,Passenger,Passenger,Thailand,th,12.82816,100.90611,,81.0,81,Undefined,"Gulf of Thailand (Lat 12.83, Lon 100.91)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9133212
+9137288,,ONWA37288,Pleasure Craft,Pleasure Craft,Thailand,th,12.92968,100.77038,,104.0,104,Undefined,"Gulf of Thailand (Lat 12.93, Lon 100.77)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9137288
+9136926,,ONWA36926,Pleasure Craft,Pleasure Craft,Thailand,th,12.93015,100.87057,,64.0,64,Undefined,"Gulf of Thailand (Lat 12.93, Lon 100.87)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9136926
+9118817,,ONWA18817,Pleasure Craft,Pleasure Craft,Thailand,th,12.94331,100.87657,,25.0,25,Undefined,"Gulf of Thailand (Lat 12.94, Lon 100.88)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9118817
+9118732,,ONWA18732,Pleasure Craft,Pleasure Craft,Thailand,th,12.93755,100.8757,,282.0,282,Undefined,"Gulf of Thailand (Lat 12.94, Lon 100.88)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9118732
+9137226,,ONWA37226,Pleasure Craft,Pleasure Craft,Thailand,th,12.9322,100.87301,,326.0,326,Undefined,"Gulf of Thailand (Lat 12.93, Lon 100.87)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9137226
+567002000,8417467,SRIRACHA OFFSHORE881,Cargo,Cargo,Thailand,th,13.61273,100.58523,,154.0,154,Moored,"Gulf of Thailand (Lat 13.61, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8417467
+5671114,,CHAMAREL,Other,Other,Thailand,th,13.5959,100.6109,,,0,Undefined,"Gulf of Thailand (Lat 13.60, Lon 100.61)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/5671114
+567001859,1234567,PATTHARA SAHATHAI1,Cargo,Cargo,Thailand,th,13.67278,100.5812,0.1,,0,UnderwaySailing,"Gulf of Thailand (Lat 13.67, Lon 100.58)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1234567
+2579914,9761528,BELLA FIRST,Other,Other,NO,no,13.61279,100.58829,,,0,Undefined,"Gulf of Thailand (Lat 13.61, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9761528
+100021665,,TARUA 122,Tug,Tug,Thailand,th,13.70662,100.56621,0.0,327.0,327,Undefined,"Gulf of Thailand (Lat 13.71, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/100021665
+567006584,1234567,PATTHARA MARINE 11,Cargo,Cargo,Thailand,th,13.48654,100.64282,5.6,,0,ConstrainedByHerDraught,"Gulf of Thailand (Lat 13.49, Lon 100.64)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1234567
+111111302,,TUG302,Tug,Tug,Thailand,th,13.63007,100.53822,0.0,,0,UnderwayUsingEngine,"Gulf of Thailand (Lat 13.63, Lon 100.54)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/111111302
+567002122,1234567,PATTHARA MARINE 10,"Cargo, Hazmat C","Cargo, Hazmat C",Thailand,th,13.65841,100.54419,0.0,,0,UnderwayUsingEngine,"Gulf of Thailand (Lat 13.66, Lon 100.54)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1234567
+567007542,1234567,PATTHARA SAHATHAI 2,Cargo,Cargo,Thailand,th,13.46717,100.65231,3.7,,0,Moored,"Gulf of Thailand (Lat 13.47, Lon 100.65)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1234567
+100021674,,TARUA 121,Fishing,Fishing,Thailand,th,13.70668,100.5656,0.0,0.0,0,Undefined,"Gulf of Thailand (Lat 13.71, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/100021674
+5671062,9263928,TRANS ADRIATIC,Tanker,Tanker,Thailand,th,12.40538,99.99444,,,0,Undefined,"Gulf of Thailand (Lat 12.41, Lon 99.99)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9263928
+5671018,9328699,"Y4""20+56+EV",Tanker,Tanker,Thailand,th,12.62359,100.91481,,,0,Undefined,"Gulf of Thailand (Lat 12.62, Lon 100.91)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9328699
+5671119,,SC PUFFIN,Other,Other,Thailand,th,11.80581,99.79173,,,0,Undefined,"Gulf of Thailand (Lat 11.81, Lon 99.79)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/5671119
+9118833,,ONWA18833,Pleasure Craft,Pleasure Craft,Thailand,th,12.59875,100.95648,,69.0,69,Undefined,"Gulf of Thailand (Lat 12.60, Lon 100.96)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9118833
+9108392,,ONWA8392,Pleasure Craft,Pleasure Craft,Thailand,th,12.34125,100.25493,0.4,266.0,266,Undefined,"Gulf of Thailand (Lat 12.34, Lon 100.25)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9108392
+567062400,,RS 34,Tug,Tug,Thailand,th,12.48819,101.18962,,260.0,260,Undefined,"Gulf of Thailand (Lat 12.49, Lon 101.19)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567062400
+9125201,,ONWA25201,Pleasure Craft,Pleasure Craft,Thailand,th,12.45896,101.05423,,214.0,214,Undefined,"Gulf of Thailand (Lat 12.46, Lon 101.05)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9125201
+106000000,,NAMSAENG2,Fishing,Fishing,Thailand,th,12.51561,100.25494,5.1,,0,UnderwayUsingEngine,"Gulf of Thailand (Lat 12.52, Lon 100.25)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/106000000
+5670191,9845283,ASL EARTH,Cargo,Cargo,Thailand,th,12.63458,101.30798,,,0,Undefined,"Gulf of Thailand (Lat 12.63, Lon 101.31)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9845283
+5671116,,MONFORD,Other,Other,Thailand,th,12.69143,101.29327,,,0,Undefined,"Gulf of Thailand (Lat 12.69, Lon 101.29)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/5671116
+9135482,,ONWA35482,Pleasure Craft,Pleasure Craft,Thailand,th,12.66094,101.26963,0.0,0.0,0,Undefined,"Gulf of Thailand (Lat 12.66, Lon 101.27)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9135482
+9138402,,ONWA38402,Pleasure Craft,Pleasure Craft,Thailand,th,12.66094,101.26972,0.0,295.0,295,Undefined,"Gulf of Thailand (Lat 12.66, Lon 101.27)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9138402
+9113083,,ONWA13083,Pleasure Craft,Pleasure Craft,Thailand,th,12.66102,101.26495,3.7,281.0,281,Undefined,"Gulf of Thailand (Lat 12.66, Lon 101.26)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9113083
+9138630,,ONWA38630,Pleasure Craft,Pleasure Craft,Thailand,th,12.66192,101.26417,0.0,109.0,109,Undefined,"Gulf of Thailand (Lat 12.66, Lon 101.26)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9138630
+5671043,9504205,CORAL ESSBERGER,"Tanker, Hazmat B","Tanker, Hazmat B",Thailand,th,11.20863,99.57115,,,0,Undefined,"Gulf of Thailand (Lat 11.21, Lon 99.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9504205
+5679903,,PATOUCHAN 3,Other,Other,Thailand,th,9.18371,99.36945,,,0,Undefined,"Gulf of Thailand (Lat 9.18, Lon 99.37)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/5679903
+5671124,9865790,KONSEI MARU,Cargo,Cargo,Thailand,th,7.20057,100.58816,,,0,Undefined,"Gulf of Thailand (Lat 7.20, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9865790
+352006530,8693061,LUCKY SEA 2,Tanker,Tanker,PA,pa,7.24839,100.59871,0.4,330.0,330,NotUnderCommand,"Gulf of Thailand (Lat 7.25, Lon 100.60)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8693061
+566505000,9803326,EASTERN WB400,Other,Other,Thailand,th,7.20339,100.58635,0.0,,0,RestrictedManeuverability,"Gulf of Thailand (Lat 7.20, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9803326
+533132095,9592989,MP PREVAIL,Other,Other,MY,my,7.18976,100.58995,0.0,336.0,336,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9592989
+567605000,9951458,UNIEXPRESS 27,WIG,WIG,Thailand,th,7.1905,100.58993,0.0,161.0,161,Moored,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9951458
+529179000,9680229,ZD GEMINI,Tug,Tug,KI,ki,7.26973,100.7698,10.4,89.0,89,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.27, Lon 100.77)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9680229
+572888220,9730529,JUMBO ADVANCER,Other,Other,TV,tv,7.24021,100.60368,0.1,52.0,52,AtAnchor,"Gulf of Thailand (Lat 7.24, Lon 100.60)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9730529
+9106855,,ONWA6855,Pleasure Craft,Pleasure Craft,Thailand,th,7.18684,100.58958,0.0,0.0,0,Undefined,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9106855
+563971000,9368716,ENA LEGEND,Tug,Tug,SG,sg,7.23502,100.59041,0.9,,0,Moored,"Gulf of Thailand (Lat 7.24, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9368716
+414200993,,YUELUYU4142-993-95%,?,?,Thailand,th,7.24769,100.5571,0.0,261.0,261,Undefined,"Gulf of Thailand (Lat 7.25, Lon 100.56)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/414200993
+413231460,9869095,U! XIANG LONG,Other,Other,CN,cn,7.31152,100.74277,4.8,61.0,61,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.31, Lon 100.74)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9869095
+564457000,9264439,ENA MONARCH,Tug,Tug,SG,sg,7.22386,100.61838,0.9,65.0,65,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.22, Lon 100.62)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9264439
+636093343,9261774,CHANG AN 258,Cargo,Cargo,LR,lr,7.27483,100.62911,0.1,67.0,67,AtAnchor,"Gulf of Thailand (Lat 7.27, Lon 100.63)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9261774
+533000898,9553531,AG AZZAM,Other,Other,MY,my,7.2093,100.58356,0.0,150.0,150,Moored,"Gulf of Thailand (Lat 7.21, Lon 100.58)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9553531
+533170453,9467536,MICLYN EMPEROR,Other,Other,MY,my,7.19239,100.58908,0.0,339.0,339,Moored,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9467536
+352002852,9588598,DAXIA,Cargo,Cargo,PA,pa,7.23044,100.57337,0.0,88.0,88,Moored,"Gulf of Thailand (Lat 7.23, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9588598
+567512000,9770244,UNIEXPRESS 25,HSC,HSC,Thailand,th,7.19041,100.58989,0.0,158.0,158,Moored,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9770244
+574967000,9560273,ZD LIBRA,Other,Other,VN,vn,7.31958,100.64496,5.3,32.0,32,Moored,"Gulf of Thailand (Lat 7.32, Lon 100.64)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9560273
+352001238,9411692,TRISTEN,"Tanker, Hazmat B","Tanker, Hazmat B",PA,pa,7.27296,100.90648,11.2,99.0,99,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.27, Lon 100.91)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9411692
+567003120,9268019,BS THEPHA,Tanker,Tanker,Thailand,th,7.25023,100.60204,0.2,6.0,6,AtAnchor,"Gulf of Thailand (Lat 7.25, Lon 100.60)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9268019
+563263500,9572094,QSA 101,Towing,Towing,SG,sg,7.22851,100.628,0.0,,0,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.23, Lon 100.63)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9572094
+567111427,,SH121050,Fishing,Fishing,Thailand,th,7.26108,100.61099,7.8,,0,Undefined,"Gulf of Thailand (Lat 7.26, Lon 100.61)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567111427
+525801787,,BRIGHTON DOLPHIN,Towing,Towing,ID,id,7.06606,100.69704,0.0,,0,Undefined,"Gulf of Thailand (Lat 7.07, Lon 100.70)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/525801787
+567627000,,TMS RAMAN,Passenger,Passenger,Thailand,th,7.28141,100.62521,15.6,42.0,42,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.28, Lon 100.63)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567627000
+567001522,,KTP 2,Cargo,Cargo,Thailand,th,7.4061,100.5849,7.6,,0,UnderwaySailing,"Gulf of Thailand (Lat 7.41, Lon 100.58)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567001522
+533170448,9782481,AESEN 93,Other,Other,MY,my,7.19308,100.58907,0.0,161.0,161,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9782481
+567353000,9525065,UNIEXPRESS-12,?,?,Thailand,th,7.19313,100.58927,0.0,158.0,158,Moored,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9525065
+567913938,,SHMJGPA,Other,Other,Thailand,th,7.28645,100.71275,2.1,,0,Undefined,"Gulf of Thailand (Lat 7.29, Lon 100.71)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567913938
+567497000,9720421,UNIWISE ADVENTURE,Passenger,Passenger,Thailand,th,7.19238,100.58925,0.0,339.0,339,Moored,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9720421
+566633000,9659969,MP VALOUR,OFFSHORE SUPPLY SHIP,OFFSHORE SUPPLY SHIP,Thailand,th,7.20878,100.58389,0.0,148.0,148,Moored,"Gulf of Thailand (Lat 7.21, Lon 100.58)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9659969
+567989899,,TANAWUT9,Fishing,Fishing,Thailand,th,7.18978,100.59073,0.0,,0,Undefined,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567989899
+565350000,9725811,MP PROWESS,Tug,Tug,SG,sg,7.18985,100.59008,0.0,337.0,337,Moored,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9725811
+525109001,9786384,MT.SINAR MOROTAI,Tanker,Tanker,ID,id,7.15525,100.80324,8.7,90.0,90,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.16, Lon 100.80)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9786384
+563183400,9776016,ENA CONQUEST,Other,Other,SG,sg,7.29628,100.66251,7.6,63.0,63,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.30, Lon 100.66)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9776016
+533062600,9573543,BAHTERA LAZURIT,Other,Other,MY,my,7.20203,100.58703,0.0,161.0,161,Moored,"Gulf of Thailand (Lat 7.20, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9573543
+352003292,9376244,TC JUPITER,Other,Other,PA,pa,7.2346,100.56839,0.0,138.0,138,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.23, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9376244
+567909968,,KIATJAROEN,Fishing,Fishing,Thailand,th,7.23333,100.57183,,,0,Undefined,"Gulf of Thailand (Lat 7.23, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909968
+567073200,8360561,N.RATCHAPREUK,Tanker,Tanker,Thailand,th,7.23632,100.56673,0.0,,0,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.24, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/8360561
+563175700,9760689,MP PROSPECT,Cargo,Cargo,SG,sg,7.23446,100.56793,0.0,134.0,134,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.23, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9760689
+533065500,9579614,BAHTERA TIARA,?,?,MY,my,7.23499,100.56514,0.0,72.0,72,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.23, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9579614
+567457000,9643831,SRI TAH CHANA,Tanker,Tanker,Thailand,th,7.27892,100.6097,0.3,,0,AtAnchor,"Gulf of Thailand (Lat 7.28, Lon 100.61)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9643831
+567482000,9452309,SC PAILIN,Tug,Tug,Thailand,th,7.23624,100.56497,0.0,337.0,337,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.24, Lon 100.56)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9452309
+567555000,9721516,SC BONGKOT,Other,Other,Thailand,th,7.2353,100.56527,0.0,163.0,163,Moored,"Gulf of Thailand (Lat 7.24, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9721516
+567909962,,S.SAPTHASNAI.5,Fishing,Fishing,Thailand,th,7.21274,100.57478,0.0,,0,Undefined,"Gulf of Thailand (Lat 7.21, Lon 100.57)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567909962
+565728000,9796248,MP PROSPER,Other,Other,SG,sg,7.281,100.62449,2.6,40.0,40,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.28, Lon 100.62)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9796248
+567051400,9417854,M.V.SC GLORY 1,?,?,Thailand,th,7.28335,100.65139,10.3,57.0,57,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.28, Lon 100.65)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/9417854
+567075200,1018339,TMS TAH MUANG,Other,Other,Thailand,th,7.18902,100.59015,0.4,312.0,312,UnderwayUsingEngine,"Gulf of Thailand (Lat 7.19, Lon 100.59)",,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/1018339
+567950001,,TH-GULF-0001 (Pattani),Offshore Supply / Tanker,Tanker,Thailand,th,5.884803,102.47075,,357.0,357,,Pattani (177.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950001
+567950002,,TH-GULF-0002 (Pattani),Offshore Supply / Tanker,Tanker,Thailand,th,5.892185,102.993527,,34.0,34,,Pattani (224.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950002
+567950003,,TH-GULF-0003 (Pattani),Offshore Supply / Tanker,Tanker,Thailand,th,5.893385,102.994727,,71.0,71,,Pattani (224.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950003
+567950004,,TH-GULF-0004 (Pattani),Offshore Supply / Tanker,Tanker,Thailand,th,5.893968,102.486587,,108.0,108,,Pattani (178.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950004
+567950005,,TH-GULF-0005 (Pattani),Offshore Supply / Tanker,Tanker,Thailand,th,5.951038,102.50737,,145.0,145,,Pattani (175.9 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950005
+567950006,,TH-GULF-0006 (Khlong Yai),Offshore Supply / Tanker,Tanker,Thailand,th,10.657133,102.924983,,182.0,182,,Khlong Yai (124.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950006
+567950007,,TH-GULF-0007 (Prachuap Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,10.925317,99.654383,,219.0,219,,Prachuap Port (32.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950007
+567950008,,TH-GULF-0008 (Benchamas),Offshore Supply / Tanker,Tanker,Thailand,th,11.289175,101.211062,,256.0,256,,Benchamas (86.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950008
+567950009,,TH-GULF-0009 (Benchamas),Offshore Supply / Tanker,Tanker,Thailand,th,11.393605,101.465315,,293.0,293,,Benchamas (98.7 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950009
+567950010,,TH-GULF-0010 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,11.806802,100.473567,,330.0,330,,Sattahip Anch. (98.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950010
+567950011,,TH-GULF-0011 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,11.826732,100.81215,,7.0,7,,Mab Tapud Anch. (80.2 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950011
+567950012,,TH-GULF-0012 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,11.958188,100.7138,,44.0,44,,Sattahip Anch. (72.8 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950012
+567950013,,TH-GULF-0013 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.035297,100.73035,,81.0,81,,Sattahip Anch. (64.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950013
+567950014,,TH-GULF-0014 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.152943,101.47289,,118.0,118,,Mab Tapud Anch. (43.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950014
+567950015,,TH-GULF-0015 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.213685,100.6745,,155.0,155,,Sattahip Anch. (48.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950015
+567950016,,TH-GULF-0016 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.294737,100.84264,,192.0,192,,Sattahip Anch. (33.2 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950016
+567950017,,TH-GULF-0017 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.326548,101.203605,,229.0,229,,Mab Tapud Anch. (12.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950017
+567950018,,TH-GULF-0018 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.331023,100.9518,,266.0,266,,Sattahip Anch. (29.7 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950018
+567950019,,TH-GULF-0019 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.364952,100.182065,,303.0,303,,Toong Pronge Port (81.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950019
+567950020,,TH-GULF-0020 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.366152,100.183265,,340.0,340,,Toong Pronge Port (81.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950020
+567950021,,TH-GULF-0021 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.371378,101.065455,,17.0,17,,Mab Tapud Anch. (16.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950021
+567950022,,TH-GULF-0022 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.390523,100.9166,,54.0,54,,Sattahip Anch. (22.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950022
+567950023,,TH-GULF-0023 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.444263,101.102737,,91.0,91,,Mab Tapud Anch. (10.9 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950023
+567950024,,TH-GULF-0024 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.451417,100.2489,,128.0,128,,Toong Pronge Port (70.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950024
+567950025,,TH-GULF-0025 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.452617,100.2501,,165.0,165,,Toong Pronge Port (70.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950025
+567950026,,TH-GULF-0026 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.495748,101.005247,,202.0,202,,Sattahip Anch. (16.8 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950026
+567950027,,TH-GULF-0027 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.498948,100.774958,,239.0,239,,Sattahip Anch. (16.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950027
+567950028,,TH-GULF-0028 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.501715,101.015608,,276.0,276,,Sattahip Anch. (17.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950028
+567950029,,TH-GULF-0029 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.506352,100.64197,,313.0,313,,Sattahip Anch. (28.8 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950029
+567950030,,TH-GULF-0030 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.518673,100.812575,,350.0,350,,Sattahip Anch. (11.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950030
+567950031,,TH-GULF-0031 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.537148,101.070257,,27.0,27,,Mab Tapud Anch. (10.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950031
+567950032,,TH-GULF-0032 (Sattahip Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.539907,100.668768,,64.0,64,,Sattahip Anch. (24.9 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950032
+567950033,,TH-GULF-0033 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.54356,100.626945,,101.0,101,,Toong Pronge Port (28.8 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950033
+567950034,,TH-GULF-0034 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.548173,100.464273,,138.0,138,,Toong Pronge Port (44.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950034
+567950035,,TH-GULF-0035 (Sattahip),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.568725,100.989992,,175.0,175,,Sattahip (10.9 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950035
+567950036,,TH-GULF-0036 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.581345,101.247818,,212.0,212,,Mab Tapud Anch. (3.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950036
+567950037,,TH-GULF-0037 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.582545,101.249018,,249.0,249,,Mab Tapud Anch. (3.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950037
+567950038,,TH-GULF-0038 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.587465,101.165317,,286.0,286,,Mab Tapud Anch. (4.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950038
+567950039,,TH-GULF-0039 (Mab Tapud Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,12.588665,101.166517,,323.0,323,,Mab Tapud Anch. (4.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950039
+567950040,,TH-GULF-0040 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.589373,100.731702,,0.0,0,,Toong Pronge Port (16.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950040
+567950041,,TH-GULF-0041 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.61948,100.714427,,37.0,37,,Toong Pronge Port (16.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950041
+567950042,,TH-GULF-0042 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.623872,100.578355,,74.0,74,,Toong Pronge Port (29.7 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950042
+567950043,,TH-GULF-0043 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.624002,100.681577,,111.0,111,,Toong Pronge Port (19.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950043
+567950044,,TH-GULF-0044 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.62636,100.281193,,148.0,148,,Toong Pronge Port (62.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950044
+567950045,,TH-GULF-0045 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.635653,100.498762,,185.0,185,,Toong Pronge Port (38.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950045
+567950046,,TH-GULF-0046 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.644018,100.768208,,222.0,222,,Toong Pronge Port (9.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950046
+567950047,,TH-GULF-0047 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.647268,100.640285,,259.0,259,,Toong Pronge Port (22.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950047
+567950048,,TH-GULF-0048 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.689227,100.797035,,296.0,296,,Toong Pronge Port (4.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950048
+567950049,,TH-GULF-0049 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.702405,100.639233,,333.0,333,,Toong Pronge Port (21.9 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950049
+567950050,,TH-GULF-0050 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.742023,100.405513,,10.0,10,,Toong Pronge Port (48.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950050
+567950051,,TH-GULF-0051 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.746748,100.478338,,47.0,47,,Toong Pronge Port (40.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950051
+567950052,,TH-GULF-0052 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.752507,100.750642,,84.0,84,,Toong Pronge Port (11.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950052
+567950053,,TH-GULF-0053 (Laem Chabang Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.776418,100.482115,,121.0,121,,Laem Chabang Anch. (40.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950053
+567950054,,TH-GULF-0054 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.7921,100.703355,,158.0,158,,Toong Pronge Port (18.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950054
+567950055,,TH-GULF-0055 (Toong Pronge Port),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.800237,100.885165,,195.0,195,,Toong Pronge Port (12.7 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950055
+567950056,,TH-GULF-0056 (Laem Chabang Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.80585,100.4482,,232.0,232,,Laem Chabang Anch. (41.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950056
+567950057,,TH-GULF-0057 (Pattaya),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.836132,100.813698,,269.0,269,,Pattaya (12.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950057
+567950058,,TH-GULF-0058 (Laem Chabang Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.850287,100.579697,,306.0,306,,Laem Chabang Anch. (26.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950058
+567950059,,TH-GULF-0059 (Laem Chabang Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.899582,100.759558,,343.0,343,,Laem Chabang Anch. (10.7 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950059
+567950060,,TH-GULF-0060 (Laem Chabang Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,12.903067,100.578307,,20.0,20,,Laem Chabang Anch. (23.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950060
+567950061,,TH-GULF-0061 (Samut Sakhon Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.06384,100.315033,,57.0,57,,Samut Sakhon Anch. (38.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950061
+567950062,,TH-GULF-0062 (Si Racha Term.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.068522,100.777318,,94.0,94,,Si Racha Term. (0.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950062
+567950063,,TH-GULF-0063 (Laem Chabang),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.094437,100.869,,131.0,131,,Laem Chabang (4.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950063
+567950064,,TH-GULF-0064 (Samut Sakhon Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.108658,100.324433,,168.0,168,,Samut Sakhon Anch. (33.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950064
+567950065,,TH-GULF-0065 (Sriracha Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,13.135812,100.771402,,205.0,205,,Sriracha Anch. (5.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950065
+567950066,,TH-GULF-0066 (Meklong),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.13708,100.167973,,242.0,242,,Meklong (31.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950066
+567950067,,TH-GULF-0067 (Samut Sakhon Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.19388,100.320667,,279.0,279,,Samut Sakhon Anch. (23.7 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950067
+567950068,,TH-GULF-0068 (Meklong),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.194,100.133183,,316.0,316,,Meklong (23.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950068
+567950069,,TH-GULF-0069 (Koh Sichang),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.202865,100.7395,,353.0,353,,Koh Sichang (12.1 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950069
+567950070,,TH-GULF-0070 (Samut Sakhon Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.222103,100.293188,,30.0,30,,Samut Sakhon Anch. (20.8 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950070
+567950071,,TH-GULF-0071 (Sriracha Anch.),Commercial Cargo / Tanker,Cargo Ship,Thailand,th,13.232087,100.88834,,67.0,67,,Sriracha Anch. (6.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950071
+567950072,,TH-GULF-0072 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.243938,100.53494,,104.0,104,,Bangkok Anch. (15.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950072
+567950073,,TH-GULF-0073 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.248788,100.718895,,141.0,141,,Bangkok Anch. (15.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950073
+567950074,,TH-GULF-0074 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.266768,100.519547,,178.0,178,,Bangkok Anch. (14.9 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950074
+567950075,,TH-GULF-0075 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.271685,100.658607,,215.0,215,,Bangkok Anch. (9.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950075
+567950076,,TH-GULF-0076 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.342612,100.643585,,252.0,252,,Bangkok Anch. (2.2 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950076
+567950077,,TH-GULF-0077 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.345198,100.747702,,289.0,289,,Bangkok Anch. (13.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950077
+567950078,,TH-GULF-0078 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.366488,100.699638,,326.0,326,,Bangkok Anch. (8.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950078
+567950079,,TH-GULF-0079 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.379192,100.595985,,3.0,3,,Bangkok Anch. (4.6 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950079
+567950080,,TH-GULF-0080 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.383417,100.546792,,40.0,40,,Bangkok Anch. (9.5 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950080
+567950081,,TH-GULF-0081 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.413583,100.606645,,77.0,77,,Bangkok Anch. (7.4 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950081
+567950082,,TH-GULF-0082 (Bangpakong),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.416242,100.8876,,114.0,114,,Bangpakong (13.2 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950082
+567950083,,TH-GULF-0083 (Bangkok Anch.),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.42858,100.67263,,151.0,151,,Bangkok Anch. (10.3 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950083
+567950084,,TH-GULF-0084 (Bangkok),Coastal / Fishing Vessel,Fishing Vessel,Thailand,th,13.460472,100.604767,,188.0,188,,Bangkok (3.0 km),,,,,,,,,,,,https://www.vesselfinder.com/vessels/details/567950084

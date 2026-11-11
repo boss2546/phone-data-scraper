@@ -1,0 +1,1849 @@
+{
+  "updated_at_utc": "2026-11-11 16:49:46 UTC",
+  "total_vessels_with_photos": 80,
+  "total_photos_count": 80,
+  "total_size_mb": 4.67,
+  "multi_photo_vessels_count": 0,
+  "galleries": {
+    "352002065": {
+      "mmsi": 352002065,
+      "name": "MAERSK ACADIA",
+      "imo": 9928188,
+      "type": "Container Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/maersk_acadia_352002065_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9928188-352002065-b401fa1d818c7d37afa36e634b5d6c2a",
+          "filename": "maersk_acadia_352002065_1.jpg",
+          "local_path": "data/images/maersk_acadia_352002065_1.jpg",
+          "local_url": "/data/images/maersk_acadia_352002065_1.jpg",
+          "api_url": "/api/vessel/352002065/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9928188-352002065-b401fa1d818c7d37afa36e634b5d6c2a/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9928188-352002065-b401fa1d818c7d37afa36e634b5d6c2a/3",
+          "size_bytes": 59915,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567000874": {
+      "mmsi": 567000874,
+      "name": "OCEANSAPPHIRE",
+      "imo": 7727504,
+      "type": "Bunkering Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/oceansapphire_567000874_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "7727504-567000874-0c86a8babc6173d49d60f3613bd0713f",
+          "filename": "oceansapphire_567000874_1.jpg",
+          "local_path": "data/images/oceansapphire_567000874_1.jpg",
+          "local_url": "/data/images/oceansapphire_567000874_1.jpg",
+          "api_url": "/api/vessel/567000874/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/7727504-567000874-0c86a8babc6173d49d60f3613bd0713f/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/7727504-567000874-0c86a8babc6173d49d60f3613bd0713f/3",
+          "size_bytes": 41070,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567002940": {
+      "mmsi": 567002940,
+      "name": "THE BLUE DOLPHIN",
+      "imo": 9100437,
+      "type": "Passenger/Ro-Ro Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/the_blue_dolphin_567002940_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9100437-567002940-f70f812cd311e8090115aa53f7ec553b",
+          "filename": "the_blue_dolphin_567002940_1.jpg",
+          "local_path": "data/images/the_blue_dolphin_567002940_1.jpg",
+          "local_url": "/data/images/the_blue_dolphin_567002940_1.jpg",
+          "api_url": "/api/vessel/567002940/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9100437-567002940-f70f812cd311e8090115aa53f7ec553b/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9100437-567002940-f70f812cd311e8090115aa53f7ec553b/3",
+          "size_bytes": 91561,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "441723000": {
+      "mmsi": 441723000,
+      "name": "SEIN FRONTIER",
+      "imo": 9051789,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sein_frontier_441723000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563",
+          "filename": "sein_frontier_441723000_1.jpg",
+          "local_path": "data/images/sein_frontier_441723000_1.jpg",
+          "local_url": "/data/images/sein_frontier_441723000_1.jpg",
+          "api_url": "/api/vessel/441723000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563/3",
+          "size_bytes": 128684,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "441034000": {
+      "mmsi": 441034000,
+      "name": "SUN FLOWER 7",
+      "imo": 8513871,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sun_flower_7_441034000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8513871-441034000-9b473df1d6d4e1e40096373c83c89188",
+          "filename": "sun_flower_7_441034000_1.jpg",
+          "local_path": "data/images/sun_flower_7_441034000_1.jpg",
+          "local_url": "/data/images/sun_flower_7_441034000_1.jpg",
+          "api_url": "/api/vessel/441034000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8513871-441034000-9b473df1d6d4e1e40096373c83c89188/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8513871-441034000-9b473df1d6d4e1e40096373c83c89188/3",
+          "size_bytes": 91585,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567072800": {
+      "mmsi": 567072800,
+      "name": "HARIN NAVEE 5",
+      "imo": 8356156,
+      "type": "General Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/harin_navee_5_567072800_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8356156-567072800-f04dc5cfe22a33b570476feed18d5030",
+          "filename": "harin_navee_5_567072800_1.jpg",
+          "local_path": "data/images/harin_navee_5_567072800_1.jpg",
+          "local_url": "/data/images/harin_navee_5_567072800_1.jpg",
+          "api_url": "/api/vessel/567072800/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8356156-567072800-f04dc5cfe22a33b570476feed18d5030/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8356156-567072800-f04dc5cfe22a33b570476feed18d5030/3",
+          "size_bytes": 49649,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "372594000": {
+      "mmsi": 372594000,
+      "name": "EURO STAR",
+      "imo": 8319055,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/euro_star_372594000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8319055-372594000-883f231602aef5abff0238b11641bea6",
+          "filename": "euro_star_372594000_1.jpg",
+          "local_path": "data/images/euro_star_372594000_1.jpg",
+          "local_url": "/data/images/euro_star_372594000_1.jpg",
+          "api_url": "/api/vessel/372594000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8319055-372594000-883f231602aef5abff0238b11641bea6/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8319055-372594000-883f231602aef5abff0238b11641bea6/3",
+          "size_bytes": 57270,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567002710": {
+      "mmsi": 567002710,
+      "name": "PILATUS 54",
+      "imo": 9157583,
+      "type": "LPG Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/pilatus_54_567002710_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e",
+          "filename": "pilatus_54_567002710_1.jpg",
+          "local_path": "data/images/pilatus_54_567002710_1.jpg",
+          "local_url": "/data/images/pilatus_54_567002710_1.jpg",
+          "api_url": "/api/vessel/567002710/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e/3",
+          "size_bytes": 33808,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "374769000": {
+      "mmsi": 374769000,
+      "name": "SEA BLAZER",
+      "imo": 9057549,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sea_blazer_374769000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9057549-374769000-1e69e905b8375d310dd123c05efae3d9",
+          "filename": "sea_blazer_374769000_1.jpg",
+          "local_path": "data/images/sea_blazer_374769000_1.jpg",
+          "local_url": "/data/images/sea_blazer_374769000_1.jpg",
+          "api_url": "/api/vessel/374769000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9057549-374769000-1e69e905b8375d310dd123c05efae3d9/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9057549-374769000-1e69e905b8375d310dd123c05efae3d9/3",
+          "size_bytes": 46881,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567003180": {
+      "mmsi": 567003180,
+      "name": ".SRI AMPHAN",
+      "imo": 1068437,
+      "type": "Container Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sri_amphan_567003180_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "1068437-567003180-acbc35929e400d7c3314c9f61179be1a",
+          "filename": "sri_amphan_567003180_1.jpg",
+          "local_path": "data/images/sri_amphan_567003180_1.jpg",
+          "local_url": "/data/images/sri_amphan_567003180_1.jpg",
+          "api_url": "/api/vessel/567003180/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/1068437-567003180-acbc35929e400d7c3314c9f61179be1a/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/1068437-567003180-acbc35929e400d7c3314c9f61179be1a/3",
+          "size_bytes": 65592,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "374030000": {
+      "mmsi": 374030000,
+      "name": "SYOTA MARU",
+      "imo": 9087908,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/syota_maru_374030000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9087908-374030000-33e8551b1dd6aa4867d296749ea3622b",
+          "filename": "syota_maru_374030000_1.jpg",
+          "local_path": "data/images/syota_maru_374030000_1.jpg",
+          "local_url": "/data/images/syota_maru_374030000_1.jpg",
+          "api_url": "/api/vessel/374030000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9087908-374030000-33e8551b1dd6aa4867d296749ea3622b/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9087908-374030000-33e8551b1dd6aa4867d296749ea3622b/3",
+          "size_bytes": 48125,
+          "is_primary": true,
+          "status": "downloaded"
+        }
+      ]
+    },
+    "567656000": {
+      "mmsi": 567656000,
+      "name": "GAS COURAGE",
+      "imo": 9172131,
+      "type": "LPG Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/gas_courage_567656000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9172131-565046000-6402159b86e3796d58207b4d8d809412",
+          "filename": "gas_courage_567656000_1.jpg",
+          "local_path": "data/images/gas_courage_567656000_1.jpg",
+          "local_url": "/data/images/gas_courage_567656000_1.jpg",
+          "api_url": "/api/vessel/567656000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9172131-565046000-6402159b86e3796d58207b4d8d809412/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9172131-565046000-6402159b86e3796d58207b4d8d809412/3",
+          "size_bytes": 112057,
+          "is_primary": true,
+          "status": "downloaded"
+        }
+      ]
+    },
+    "567002380": {
+      "mmsi": 567002380,
+      "name": "NP TRAT",
+      "imo": 8791485,
+      "type": "Container Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/np_trat_567002380_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8791485-567002380-ea543cfa4edf50bc69055108eede8bcd",
+          "filename": "np_trat_567002380_1.jpg",
+          "local_path": "data/images/np_trat_567002380_1.jpg",
+          "local_url": "/data/images/np_trat_567002380_1.jpg",
+          "api_url": "/api/vessel/567002380/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8791485-567002380-ea543cfa4edf50bc69055108eede8bcd/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8791485-567002380-ea543cfa4edf50bc69055108eede8bcd/3",
+          "size_bytes": 62780,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "371156000": {
+      "mmsi": 371156000,
+      "name": "HUA FU 207",
+      "imo": 9041540,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/hua_fu_207_371156000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9041540-371156000-7047822626298b6f984daebdf5b55b19",
+          "filename": "hua_fu_207_371156000_1.jpg",
+          "local_path": "data/images/hua_fu_207_371156000_1.jpg",
+          "local_url": "/data/images/hua_fu_207_371156000_1.jpg",
+          "api_url": "/api/vessel/371156000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9041540-371156000-7047822626298b6f984daebdf5b55b19/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9041540-371156000-7047822626298b6f984daebdf5b55b19/3",
+          "size_bytes": 53369,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567006669": {
+      "mmsi": 567006669,
+      "name": "SRI SIRAPAT",
+      "imo": 1068499,
+      "type": "Container Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sri_sirapat_567006669_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "1068499-567006669-c70d9cf8179821df2b7084d42f030a30",
+          "filename": "sri_sirapat_567006669_1.jpg",
+          "local_path": "data/images/sri_sirapat_567006669_1.jpg",
+          "local_url": "/data/images/sri_sirapat_567006669_1.jpg",
+          "api_url": "/api/vessel/567006669/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/1068499-567006669-c70d9cf8179821df2b7084d42f030a30/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/1068499-567006669-c70d9cf8179821df2b7084d42f030a30/3",
+          "size_bytes": 74253,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352006047": {
+      "mmsi": 352006047,
+      "name": "LUCAS",
+      "imo": 9474591,
+      "type": "Chemical/Oil Products Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/lucas_352006047_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9474591-413375810-f3bad3083e77c565856b9b674c045901",
+          "filename": "lucas_352006047_1.jpg",
+          "local_path": "data/images/lucas_352006047_1.jpg",
+          "local_url": "/data/images/lucas_352006047_1.jpg",
+          "api_url": "/api/vessel/352006047/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9474591-413375810-f3bad3083e77c565856b9b674c045901/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9474591-413375810-f3bad3083e77c565856b9b674c045901/3",
+          "size_bytes": 44303,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "440295000": {
+      "mmsi": 440295000,
+      "name": "PRINCESS CRYSTAL",
+      "imo": 9284829,
+      "type": "Chemical/Oil Products Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/princess_crystal_440295000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9284829-440295000-de733d8caa4a04b4d2b6be96a504f4ac",
+          "filename": "princess_crystal_440295000_1.jpg",
+          "local_path": "data/images/princess_crystal_440295000_1.jpg",
+          "local_url": "/data/images/princess_crystal_440295000_1.jpg",
+          "api_url": "/api/vessel/440295000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9284829-440295000-de733d8caa4a04b4d2b6be96a504f4ac/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9284829-440295000-de733d8caa4a04b4d2b6be96a504f4ac/3",
+          "size_bytes": 52520,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567001640": {
+      "mmsi": 567001640,
+      "name": "LERTPHRAWWILAI",
+      "imo": 8663638,
+      "type": "General Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/lertphrawwilai_567001640_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8663638-567001640-99c9adf3e75bd0f61ddc80c5edcebfb3",
+          "filename": "lertphrawwilai_567001640_1.jpg",
+          "local_path": "data/images/lertphrawwilai_567001640_1.jpg",
+          "local_url": "/data/images/lertphrawwilai_567001640_1.jpg",
+          "api_url": "/api/vessel/567001640/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8663638-567001640-99c9adf3e75bd0f61ddc80c5edcebfb3/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8663638-567001640-99c9adf3e75bd0f61ddc80c5edcebfb3/3",
+          "size_bytes": 46838,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "440932000": {
+      "mmsi": 440932000,
+      "name": "SEIN TOPAZ",
+      "imo": 9047245,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sein_topaz_440932000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9047245-440932000-a23067a186d7f93b2a6697ab5ff3e180",
+          "filename": "sein_topaz_440932000_1.jpg",
+          "local_path": "data/images/sein_topaz_440932000_1.jpg",
+          "local_url": "/data/images/sein_topaz_440932000_1.jpg",
+          "api_url": "/api/vessel/440932000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9047245-440932000-a23067a186d7f93b2a6697ab5ff3e180/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9047245-440932000-a23067a186d7f93b2a6697ab5ff3e180/3",
+          "size_bytes": 53853,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567001490": {
+      "mmsi": 567001490,
+      "name": "ACS 38",
+      "imo": 8981482,
+      "type": "Oil Products Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/acs_38_567001490_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8981482-567001490-39b90e48d0725d5987ef3ab26d86f53b",
+          "filename": "acs_38_567001490_1.jpg",
+          "local_path": "data/images/acs_38_567001490_1.jpg",
+          "local_url": "/data/images/acs_38_567001490_1.jpg",
+          "api_url": "/api/vessel/567001490/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8981482-567001490-39b90e48d0725d5987ef3ab26d86f53b/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8981482-567001490-39b90e48d0725d5987ef3ab26d86f53b/3",
+          "size_bytes": 45417,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "374446000": {
+      "mmsi": 374446000,
+      "name": "HARU",
+      "imo": 9241932,
+      "type": "Refrigerated Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/haru_374446000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9241932-374446000-230a6dd75064a38f81076b1d2732ea55",
+          "filename": "haru_374446000_1.jpg",
+          "local_path": "data/images/haru_374446000_1.jpg",
+          "local_url": "/data/images/haru_374446000_1.jpg",
+          "api_url": "/api/vessel/374446000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9241932-374446000-230a6dd75064a38f81076b1d2732ea55/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9241932-374446000-230a6dd75064a38f81076b1d2732ea55/3",
+          "size_bytes": 75130,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567002640": {
+      "mmsi": 567002640,
+      "name": "DRAGON NINE",
+      "imo": 0,
+      "type": "Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/dragon_nine_567002640_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "0-567002640-770c85fddaa757eaee3019e78c8a0ac6",
+          "filename": "dragon_nine_567002640_1.jpg",
+          "local_path": "data/images/dragon_nine_567002640_1.jpg",
+          "local_url": "/data/images/dragon_nine_567002640_1.jpg",
+          "api_url": "/api/vessel/567002640/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/0-567002640-770c85fddaa757eaee3019e78c8a0ac6/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/0-567002640-770c85fddaa757eaee3019e78c8a0ac6/3",
+          "size_bytes": 77422,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "414289000": {
+      "mmsi": 414289000,
+      "name": "BEI LUN HAI SHI",
+      "imo": 9207766,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/bei_lun_hai_shi_414289000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9207766-477711200-756161895dcb6bfb3244177c9d27a019",
+          "filename": "bei_lun_hai_shi_414289000_1.jpg",
+          "local_path": "data/images/bei_lun_hai_shi_414289000_1.jpg",
+          "local_url": "/data/images/bei_lun_hai_shi_414289000_1.jpg",
+          "api_url": "/api/vessel/414289000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9207766-477711200-756161895dcb6bfb3244177c9d27a019/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9207766-477711200-756161895dcb6bfb3244177c9d27a019/3",
+          "size_bytes": 126916,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "405000090": {
+      "mmsi": 405000090,
+      "name": "AKIJ WAVE",
+      "imo": 9109366,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/akij_wave_405000090_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9109366-405000090-04664947d8f77f910474eeb055e8b16f",
+          "filename": "akij_wave_405000090_1.jpg",
+          "local_path": "data/images/akij_wave_405000090_1.jpg",
+          "local_url": "/data/images/akij_wave_405000090_1.jpg",
+          "api_url": "/api/vessel/405000090/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9109366-405000090-04664947d8f77f910474eeb055e8b16f/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9109366-405000090-04664947d8f77f910474eeb055e8b16f/3",
+          "size_bytes": 169676,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "258002000": {
+      "mmsi": 258002000,
+      "name": "BELMAR",
+      "imo": 9908475,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/belmar_258002000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9908475-258002000-513af8b2dc16ee739d1fc2d8dcccdbcc",
+          "filename": "belmar_258002000_1.jpg",
+          "local_path": "data/images/belmar_258002000_1.jpg",
+          "local_url": "/data/images/belmar_258002000_1.jpg",
+          "api_url": "/api/vessel/258002000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9908475-258002000-513af8b2dc16ee739d1fc2d8dcccdbcc/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9908475-258002000-513af8b2dc16ee739d1fc2d8dcccdbcc/3",
+          "size_bytes": 55222,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "477181800": {
+      "mmsi": 477181800,
+      "name": "MAPLE AMBITION",
+      "imo": 9760354,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/maple_ambition_477181800_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9760354-477181800-366a57d4691f474d876f31fe8429d70c",
+          "filename": "maple_ambition_477181800_1.jpg",
+          "local_path": "data/images/maple_ambition_477181800_1.jpg",
+          "local_url": "/data/images/maple_ambition_477181800_1.jpg",
+          "api_url": "/api/vessel/477181800/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9760354-477181800-366a57d4691f474d876f31fe8429d70c/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9760354-477181800-366a57d4691f474d876f31fe8429d70c/3",
+          "size_bytes": 61091,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "374171000": {
+      "mmsi": 374171000,
+      "name": "NORD MISSOURI",
+      "imo": 9725469,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/nord_missouri_374171000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9725469-374171000-21bb8693181767ae9ad27af7669699bc",
+          "filename": "nord_missouri_374171000_1.jpg",
+          "local_path": "data/images/nord_missouri_374171000_1.jpg",
+          "local_url": "/data/images/nord_missouri_374171000_1.jpg",
+          "api_url": "/api/vessel/374171000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9725469-374171000-21bb8693181767ae9ad27af7669699bc/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9725469-374171000-21bb8693181767ae9ad27af7669699bc/3",
+          "size_bytes": 48861,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567063800": {
+      "mmsi": 567063800,
+      "name": "CHALAKARN",
+      "imo": 8978394,
+      "type": "Oil Products Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/chalakarn_567063800_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8978394-567063800-d8fcbd63dc6866f97f0fd4c05d301ca1",
+          "filename": "chalakarn_567063800_1.jpg",
+          "local_path": "data/images/chalakarn_567063800_1.jpg",
+          "local_url": "/data/images/chalakarn_567063800_1.jpg",
+          "api_url": "/api/vessel/567063800/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8978394-567063800-d8fcbd63dc6866f97f0fd4c05d301ca1/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8978394-567063800-d8fcbd63dc6866f97f0fd4c05d301ca1/3",
+          "size_bytes": 69014,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352006053": {
+      "mmsi": 352006053,
+      "name": "DORIS",
+      "imo": 9509425,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/doris_352006053_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735",
+          "filename": "doris_352006053_1.jpg",
+          "local_path": "data/images/doris_352006053_1.jpg",
+          "local_url": "/data/images/doris_352006053_1.jpg",
+          "api_url": "/api/vessel/352006053/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735/3",
+          "size_bytes": 51321,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "636014798": {
+      "mmsi": 636014798,
+      "name": "ORIENT POWER",
+      "imo": 9450765,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/orient_power_636014798_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9450765-636014798-8eada862a813cf810d04777f626c33d0",
+          "filename": "orient_power_636014798_1.jpg",
+          "local_path": "data/images/orient_power_636014798_1.jpg",
+          "local_url": "/data/images/orient_power_636014798_1.jpg",
+          "api_url": "/api/vessel/636014798/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9450765-636014798-8eada862a813cf810d04777f626c33d0/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9450765-636014798-8eada862a813cf810d04777f626c33d0/3",
+          "size_bytes": 45651,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "419000160": {
+      "mmsi": 419000160,
+      "name": "MARATHA PRESTIGE",
+      "imo": 9561332,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/maratha_prestige_419000160_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9561332-419000160-7f7528f01f26b51b837f436f53dde324",
+          "filename": "maratha_prestige_419000160_1.jpg",
+          "local_path": "data/images/maratha_prestige_419000160_1.jpg",
+          "local_url": "/data/images/maratha_prestige_419000160_1.jpg",
+          "api_url": "/api/vessel/419000160/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9561332-419000160-7f7528f01f26b51b837f436f53dde324/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9561332-419000160-7f7528f01f26b51b837f436f53dde324/3",
+          "size_bytes": 150068,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "574001480": {
+      "mmsi": 574001480,
+      "name": "VINH QUANG GOLD",
+      "imo": 9561710,
+      "type": "General Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/vinh_quang_gold_574001480_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9561710-574001480-797acdf4bd712a4ba53684e1760c313b",
+          "filename": "vinh_quang_gold_574001480_1.jpg",
+          "local_path": "data/images/vinh_quang_gold_574001480_1.jpg",
+          "local_url": "/data/images/vinh_quang_gold_574001480_1.jpg",
+          "api_url": "/api/vessel/574001480/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9561710-574001480-797acdf4bd712a4ba53684e1760c313b/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9561710-574001480-797acdf4bd712a4ba53684e1760c313b/3",
+          "size_bytes": 34297,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "314001025": {
+      "mmsi": 314001025,
+      "name": "CORELIT",
+      "imo": 9573799,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/corelit_314001025_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9573799-312685000-862f38dbcc56364fd226d6c51ff31503",
+          "filename": "corelit_314001025_1.jpg",
+          "local_path": "data/images/corelit_314001025_1.jpg",
+          "local_url": "/data/images/corelit_314001025_1.jpg",
+          "api_url": "/api/vessel/314001025/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9573799-312685000-862f38dbcc56364fd226d6c51ff31503/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9573799-312685000-862f38dbcc56364fd226d6c51ff31503/3",
+          "size_bytes": 29715,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "477148300": {
+      "mmsi": 477148300,
+      "name": "MERIT TRADER",
+      "imo": 9700586,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/merit_trader_477148300_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9700586-477148300-8314b2b987827e925c775c3c93134bef",
+          "filename": "merit_trader_477148300_1.jpg",
+          "local_path": "data/images/merit_trader_477148300_1.jpg",
+          "local_url": "/data/images/merit_trader_477148300_1.jpg",
+          "api_url": "/api/vessel/477148300/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9700586-477148300-8314b2b987827e925c775c3c93134bef/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9700586-477148300-8314b2b987827e925c775c3c93134bef/3",
+          "size_bytes": 61520,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "205392000": {
+      "mmsi": 205392000,
+      "name": "GOLDEN DAISY",
+      "imo": 9590759,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/golden_daisy_205392000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1",
+          "filename": "golden_daisy_205392000_1.jpg",
+          "local_path": "data/images/golden_daisy_205392000_1.jpg",
+          "local_url": "/data/images/golden_daisy_205392000_1.jpg",
+          "api_url": "/api/vessel/205392000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1/3",
+          "size_bytes": 49623,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "351339000": {
+      "mmsi": 351339000,
+      "name": "ZHONG SHAN MEN",
+      "imo": 9743318,
+      "type": "General Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/zhong_shan_men_351339000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9743318-351339000-46313445ca53ef5a5bfec9a5d077c5e1",
+          "filename": "zhong_shan_men_351339000_1.jpg",
+          "local_path": "data/images/zhong_shan_men_351339000_1.jpg",
+          "local_url": "/data/images/zhong_shan_men_351339000_1.jpg",
+          "api_url": "/api/vessel/351339000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9743318-351339000-46313445ca53ef5a5bfec9a5d077c5e1/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9743318-351339000-46313445ca53ef5a5bfec9a5d077c5e1/3",
+          "size_bytes": 57184,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "210469000": {
+      "mmsi": 210469000,
+      "name": "LITO",
+      "imo": 9337092,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/lito_210469000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7",
+          "filename": "lito_210469000_1.jpg",
+          "local_path": "data/images/lito_210469000_1.jpg",
+          "local_url": "/data/images/lito_210469000_1.jpg",
+          "api_url": "/api/vessel/210469000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7/3",
+          "size_bytes": 44636,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "636021350": {
+      "mmsi": 636021350,
+      "name": "HELENA K",
+      "imo": 9497854,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/helena_k_636021350_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9497854-538003411-161d4fe46feaefd6281acc68b00ba093",
+          "filename": "helena_k_636021350_1.jpg",
+          "local_path": "data/images/helena_k_636021350_1.jpg",
+          "local_url": "/data/images/helena_k_636021350_1.jpg",
+          "api_url": "/api/vessel/636021350/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9497854-538003411-161d4fe46feaefd6281acc68b00ba093/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9497854-538003411-161d4fe46feaefd6281acc68b00ba093/3",
+          "size_bytes": 63568,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352004405": {
+      "mmsi": 352004405,
+      "name": "HIROMOTO",
+      "imo": 9369100,
+      "type": "General Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/hiromoto_352004405_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9369100-352004405-a748e0c6caf1c638397d776088e4e7ce",
+          "filename": "hiromoto_352004405_1.jpg",
+          "local_path": "data/images/hiromoto_352004405_1.jpg",
+          "local_url": "/data/images/hiromoto_352004405_1.jpg",
+          "api_url": "/api/vessel/352004405/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9369100-352004405-a748e0c6caf1c638397d776088e4e7ce/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9369100-352004405-a748e0c6caf1c638397d776088e4e7ce/3",
+          "size_bytes": 37572,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352002973": {
+      "mmsi": 352002973,
+      "name": "EAGLE",
+      "imo": 9449493,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/eagle_352002973_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9449493-356748000-04064df2ca5ac0d1c153bc7e95948344",
+          "filename": "eagle_352002973_1.jpg",
+          "local_path": "data/images/eagle_352002973_1.jpg",
+          "local_url": "/data/images/eagle_352002973_1.jpg",
+          "api_url": "/api/vessel/352002973/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9449493-356748000-04064df2ca5ac0d1c153bc7e95948344/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9449493-356748000-04064df2ca5ac0d1c153bc7e95948344/3",
+          "size_bytes": 53408,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352002804": {
+      "mmsi": 352002804,
+      "name": "SOUL MERCY",
+      "imo": 9379674,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/soul_mercy_352002804_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9379674-352002804-eb28230a9739b5b54c7b56a267062223",
+          "filename": "soul_mercy_352002804_1.jpg",
+          "local_path": "data/images/soul_mercy_352002804_1.jpg",
+          "local_url": "/data/images/soul_mercy_352002804_1.jpg",
+          "api_url": "/api/vessel/352002804/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9379674-352002804-eb28230a9739b5b54c7b56a267062223/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9379674-352002804-eb28230a9739b5b54c7b56a267062223/3",
+          "size_bytes": 78977,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "268260404": {
+      "mmsi": 268260404,
+      "name": "ELIF O",
+      "imo": 9288239,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/elif_o_268260404_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9288239-352328000-11523a3470d8c83f6d72889ff1ddb666",
+          "filename": "elif_o_268260404_1.jpg",
+          "local_path": "data/images/elif_o_268260404_1.jpg",
+          "local_url": "/data/images/elif_o_268260404_1.jpg",
+          "api_url": "/api/vessel/268260404/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9288239-352328000-11523a3470d8c83f6d72889ff1ddb666/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9288239-352328000-11523a3470d8c83f6d72889ff1ddb666/3",
+          "size_bytes": 58232,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "249194000": {
+      "mmsi": 249194000,
+      "name": "ALONISSOS",
+      "imo": 9566916,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/alonissos_249194000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9566916-249194000-788b713f49a097b1cf2ee061a73a956d",
+          "filename": "alonissos_249194000_1.jpg",
+          "local_path": "data/images/alonissos_249194000_1.jpg",
+          "local_url": "/data/images/alonissos_249194000_1.jpg",
+          "api_url": "/api/vessel/249194000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9566916-249194000-788b713f49a097b1cf2ee061a73a956d/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9566916-249194000-788b713f49a097b1cf2ee061a73a956d/3",
+          "size_bytes": 53055,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567531000": {
+      "mmsi": 567531000,
+      "name": "SENNA 7",
+      "imo": 9135561,
+      "type": "LPG Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/senna_7_567531000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9135561-567531000-6ab66e97045840a59d1ca455b2028927",
+          "filename": "senna_7_567531000_1.jpg",
+          "local_path": "data/images/senna_7_567531000_1.jpg",
+          "local_url": "/data/images/senna_7_567531000_1.jpg",
+          "api_url": "/api/vessel/567531000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9135561-567531000-6ab66e97045840a59d1ca455b2028927/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9135561-567531000-6ab66e97045840a59d1ca455b2028927/3",
+          "size_bytes": 36437,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567072300": {
+      "mmsi": 567072300,
+      "name": "HARI BHUM",
+      "imo": 8577279,
+      "type": "Container Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/hari_bhum_567072300_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "8577279-567072300-50ddee2ca2c693d0b74c8b4e84cd2a80",
+          "filename": "hari_bhum_567072300_1.jpg",
+          "local_path": "data/images/hari_bhum_567072300_1.jpg",
+          "local_url": "/data/images/hari_bhum_567072300_1.jpg",
+          "api_url": "/api/vessel/567072300/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/8577279-567072300-50ddee2ca2c693d0b74c8b4e84cd2a80/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/8577279-567072300-50ddee2ca2c693d0b74c8b4e84cd2a80/3",
+          "size_bytes": 55385,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567003260": {
+      "mmsi": 567003260,
+      "name": "SRI LERTWILAI",
+      "imo": 1050650,
+      "type": "Container Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/sri_lertwilai_567003260_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "1050650-567003260-35361940ab05a4b69971c173d74cae7d",
+          "filename": "sri_lertwilai_567003260_1.jpg",
+          "local_path": "data/images/sri_lertwilai_567003260_1.jpg",
+          "local_url": "/data/images/sri_lertwilai_567003260_1.jpg",
+          "api_url": "/api/vessel/567003260/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/1050650-567003260-35361940ab05a4b69971c173d74cae7d/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/1050650-567003260-35361940ab05a4b69971c173d74cae7d/3",
+          "size_bytes": 52631,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "422040200": {
+      "mmsi": 422040200,
+      "name": "PARSHAD",
+      "imo": 9387786,
+      "type": "Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/parshad_422040200_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9387786-422040200-7e0568974c9d2872ef090bee795dcbea",
+          "filename": "parshad_422040200_1.jpg",
+          "local_path": "data/images/parshad_422040200_1.jpg",
+          "local_url": "/data/images/parshad_422040200_1.jpg",
+          "api_url": "/api/vessel/422040200/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9387786-422040200-7e0568974c9d2872ef090bee795dcbea/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9387786-422040200-7e0568974c9d2872ef090bee795dcbea/3",
+          "size_bytes": 19467,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "574447000": {
+      "mmsi": 574447000,
+      "name": "PETROLIMEX 09",
+      "imo": 9359624,
+      "type": "Chemical/Oil Products Tanker",
+      "photos_count": 1,
+      "primary_photo": "data/images/petrolimex_09_574447000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9359624-574447000-48ef78b5ed28f73c6404451f3e2b1f8e",
+          "filename": "petrolimex_09_574447000_1.jpg",
+          "local_path": "data/images/petrolimex_09_574447000_1.jpg",
+          "local_url": "/data/images/petrolimex_09_574447000_1.jpg",
+          "api_url": "/api/vessel/574447000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9359624-574447000-48ef78b5ed28f73c6404451f3e2b1f8e/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9359624-574447000-48ef78b5ed28f73c6404451f3e2b1f8e/3",
+          "size_bytes": 52567,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352003271": {
+      "mmsi": 352003271,
+      "name": "BRIGHT OAK",
+      "imo": 9980667,
+      "type": "General Cargo Ship",
+      "photos_count": 1,
+      "primary_photo": "data/images/bright_oak_352003271_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9980667-352003271-8c4a9bb381180c3a90cb8adbfc06118f",
+          "filename": "bright_oak_352003271_1.jpg",
+          "local_path": "data/images/bright_oak_352003271_1.jpg",
+          "local_url": "/data/images/bright_oak_352003271_1.jpg",
+          "api_url": "/api/vessel/352003271/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9980667-352003271-8c4a9bb381180c3a90cb8adbfc06118f/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9980667-352003271-8c4a9bb381180c3a90cb8adbfc06118f/3",
+          "size_bytes": 72047,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567599000": {
+      "mmsi": 567599000,
+      "name": "TMN PLENITUDE",
+      "imo": null,
+      "type": "Cargo / Container / Bulk Carrier",
+      "photos_count": 1,
+      "primary_photo": "data/images/tmn_plenitude_567599000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9446116-567599000-961e08d7da91c4a9a3a6280fb480ff4a",
+          "filename": "tmn_plenitude_567599000_1.jpg",
+          "local_path": "data/images/tmn_plenitude_567599000_1.jpg",
+          "local_url": "/data/images/tmn_plenitude_567599000_1.jpg",
+          "api_url": "/api/vessel/567599000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9446116-567599000-961e08d7da91c4a9a3a6280fb480ff4a/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9446116-567599000-961e08d7da91c4a9a3a6280fb480ff4a/3",
+          "size_bytes": 44223,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567532000": {
+      "mmsi": 567532000,
+      "name": "Vessel 567532000",
+      "imo": 9205093,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567532000_567532000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9205093-567532000-6872eaac32ca50143e34a45b73d6dfe0",
+          "filename": "vessel_567532000_567532000_1.jpg",
+          "local_path": "data/images/vessel_567532000_567532000_1.jpg",
+          "local_url": "/data/images/vessel_567532000_567532000_1.jpg",
+          "api_url": "/api/vessel/567532000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9205093-567532000-6872eaac32ca50143e34a45b73d6dfe0/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9205093-567532000-6872eaac32ca50143e34a45b73d6dfe0/3",
+          "size_bytes": 40062,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "538003403": {
+      "mmsi": 538003403,
+      "name": "Vessel 538003403",
+      "imo": 9196618,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_538003403_538003403_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9196618-538003403-454745fa4734af2b0aa1b0e7244a070c",
+          "filename": "vessel_538003403_538003403_1.jpg",
+          "local_path": "data/images/vessel_538003403_538003403_1.jpg",
+          "local_url": "/data/images/vessel_538003403_538003403_1.jpg",
+          "api_url": "/api/vessel/538003403/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9196618-538003403-454745fa4734af2b0aa1b0e7244a070c/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9196618-538003403-454745fa4734af2b0aa1b0e7244a070c/3",
+          "size_bytes": 40223,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "477078800": {
+      "mmsi": 477078800,
+      "name": "Vessel 477078800",
+      "imo": 9180891,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_477078800_477078800_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9180891-477078800-b84cba8ce5966b772cb72c60c2fa3b50",
+          "filename": "vessel_477078800_477078800_1.jpg",
+          "local_path": "data/images/vessel_477078800_477078800_1.jpg",
+          "local_url": "/data/images/vessel_477078800_477078800_1.jpg",
+          "api_url": "/api/vessel/477078800/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9180891-477078800-b84cba8ce5966b772cb72c60c2fa3b50/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9180891-477078800-b84cba8ce5966b772cb72c60c2fa3b50/3",
+          "size_bytes": 128903,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567609000": {
+      "mmsi": 567609000,
+      "name": "Vessel 567609000",
+      "imo": 9936513,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567609000_567609000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9936513-567609000-d6fafb75dfcc6aaa9a9b3a28677d4207",
+          "filename": "vessel_567609000_567609000_1.jpg",
+          "local_path": "data/images/vessel_567609000_567609000_1.jpg",
+          "local_url": "/data/images/vessel_567609000_567609000_1.jpg",
+          "api_url": "/api/vessel/567609000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9936513-567609000-d6fafb75dfcc6aaa9a9b3a28677d4207/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9936513-567609000-d6fafb75dfcc6aaa9a9b3a28677d4207/3",
+          "size_bytes": 56455,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567614000": {
+      "mmsi": 567614000,
+      "name": "Vessel 567614000",
+      "imo": 9936525,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567614000_567614000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9936525-567614000-13433307eb204ec77ea48c404750068c",
+          "filename": "vessel_567614000_567614000_1.jpg",
+          "local_path": "data/images/vessel_567614000_567614000_1.jpg",
+          "local_url": "/data/images/vessel_567614000_567614000_1.jpg",
+          "api_url": "/api/vessel/567614000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9936525-567614000-13433307eb204ec77ea48c404750068c/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9936525-567614000-13433307eb204ec77ea48c404750068c/3",
+          "size_bytes": 37969,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567527000": {
+      "mmsi": 567527000,
+      "name": "Vessel 567527000",
+      "imo": 9343211,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567527000_567527000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9343211-567527000-818d2a199050970e8c2209d783ede81d",
+          "filename": "vessel_567527000_567527000_1.jpg",
+          "local_path": "data/images/vessel_567527000_567527000_1.jpg",
+          "local_url": "/data/images/vessel_567527000_567527000_1.jpg",
+          "api_url": "/api/vessel/567527000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9343211-567527000-818d2a199050970e8c2209d783ede81d/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9343211-567527000-818d2a199050970e8c2209d783ede81d/3",
+          "size_bytes": 48969,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567419000": {
+      "mmsi": 567419000,
+      "name": "Vessel 567419000",
+      "imo": 9006679,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567419000_567419000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9006679-567419000-017be81debe67e779e8ff3ae4c1cf774",
+          "filename": "vessel_567419000_567419000_1.jpg",
+          "local_path": "data/images/vessel_567419000_567419000_1.jpg",
+          "local_url": "/data/images/vessel_567419000_567419000_1.jpg",
+          "api_url": "/api/vessel/567419000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9006679-567419000-017be81debe67e779e8ff3ae4c1cf774/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9006679-567419000-017be81debe67e779e8ff3ae4c1cf774/3",
+          "size_bytes": 34776,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567111000": {
+      "mmsi": 567111000,
+      "name": "Vessel 567111000",
+      "imo": 9751248,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567111000_567111000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9751248-567111000-5e79bb874258b07afed21984fd0a2925",
+          "filename": "vessel_567111000_567111000_1.jpg",
+          "local_path": "data/images/vessel_567111000_567111000_1.jpg",
+          "local_url": "/data/images/vessel_567111000_567111000_1.jpg",
+          "api_url": "/api/vessel/567111000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9751248-567111000-5e79bb874258b07afed21984fd0a2925/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9751248-567111000-5e79bb874258b07afed21984fd0a2925/3",
+          "size_bytes": 47938,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567017000": {
+      "mmsi": 567017000,
+      "name": "Vessel 567017000",
+      "imo": 9726413,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567017000_567017000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9726413-567017000-716415c6f9ea3fc9199f2f0b33cfe4e3",
+          "filename": "vessel_567017000_567017000_1.jpg",
+          "local_path": "data/images/vessel_567017000_567017000_1.jpg",
+          "local_url": "/data/images/vessel_567017000_567017000_1.jpg",
+          "api_url": "/api/vessel/567017000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9726413-567017000-716415c6f9ea3fc9199f2f0b33cfe4e3/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9726413-567017000-716415c6f9ea3fc9199f2f0b33cfe4e3/3",
+          "size_bytes": 47941,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567109000": {
+      "mmsi": 567109000,
+      "name": "Vessel 567109000",
+      "imo": 9726425,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567109000_567109000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9726425-567109000-683bc2ff772535d49cc92f23a4719d81",
+          "filename": "vessel_567109000_567109000_1.jpg",
+          "local_path": "data/images/vessel_567109000_567109000_1.jpg",
+          "local_url": "/data/images/vessel_567109000_567109000_1.jpg",
+          "api_url": "/api/vessel/567109000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9726425-567109000-683bc2ff772535d49cc92f23a4719d81/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9726425-567109000-683bc2ff772535d49cc92f23a4719d81/3",
+          "size_bytes": 58553,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567019000": {
+      "mmsi": 567019000,
+      "name": "Vessel 567019000",
+      "imo": 9732199,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567019000_567019000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9732199-567019000-1de93c51078bcdc034563bbaba595434",
+          "filename": "vessel_567019000_567019000_1.jpg",
+          "local_path": "data/images/vessel_567019000_567019000_1.jpg",
+          "local_url": "/data/images/vessel_567019000_567019000_1.jpg",
+          "api_url": "/api/vessel/567019000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9732199-567019000-1de93c51078bcdc034563bbaba595434/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9732199-567019000-1de93c51078bcdc034563bbaba595434/3",
+          "size_bytes": 61944,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567278000": {
+      "mmsi": 567278000,
+      "name": "Vessel 567278000",
+      "imo": 9732187,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567278000_567278000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9732187-567278000-5f01c2187d3754427956dc6b9a60b929",
+          "filename": "vessel_567278000_567278000_1.jpg",
+          "local_path": "data/images/vessel_567278000_567278000_1.jpg",
+          "local_url": "/data/images/vessel_567278000_567278000_1.jpg",
+          "api_url": "/api/vessel/567278000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9732187-567278000-5f01c2187d3754427956dc6b9a60b929/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9732187-567278000-5f01c2187d3754427956dc6b9a60b929/3",
+          "size_bytes": 48798,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567618000": {
+      "mmsi": 567618000,
+      "name": "Vessel 567618000",
+      "imo": 9610884,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567618000_567618000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9610884-567618000-89a68d3896344014bc58f7739b65c622",
+          "filename": "vessel_567618000_567618000_1.jpg",
+          "local_path": "data/images/vessel_567618000_567618000_1.jpg",
+          "local_url": "/data/images/vessel_567618000_567618000_1.jpg",
+          "api_url": "/api/vessel/567618000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9610884-567618000-89a68d3896344014bc58f7739b65c622/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9610884-567618000-89a68d3896344014bc58f7739b65c622/3",
+          "size_bytes": 43584,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567279000": {
+      "mmsi": 567279000,
+      "name": "Vessel 567279000",
+      "imo": 9434723,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567279000_567279000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9434723-567279000-0351e1d895a9d32259c221c76b1c91e5",
+          "filename": "vessel_567279000_567279000_1.jpg",
+          "local_path": "data/images/vessel_567279000_567279000_1.jpg",
+          "local_url": "/data/images/vessel_567279000_567279000_1.jpg",
+          "api_url": "/api/vessel/567279000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9434723-567279000-0351e1d895a9d32259c221c76b1c91e5/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9434723-567279000-0351e1d895a9d32259c221c76b1c91e5/3",
+          "size_bytes": 63619,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "567556000": {
+      "mmsi": 567556000,
+      "name": "Vessel 567556000",
+      "imo": 9326146,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_567556000_567556000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9326146-567556000-2deb1371de6c30bafbd253bfcc9ace83",
+          "filename": "vessel_567556000_567556000_1.jpg",
+          "local_path": "data/images/vessel_567556000_567556000_1.jpg",
+          "local_url": "/data/images/vessel_567556000_567556000_1.jpg",
+          "api_url": "/api/vessel/567556000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9326146-567556000-2deb1371de6c30bafbd253bfcc9ace83/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9326146-567556000-2deb1371de6c30bafbd253bfcc9ace83/3",
+          "size_bytes": 62207,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "240413000": {
+      "mmsi": 240413000,
+      "name": "Vessel 240413000",
+      "imo": 9315862,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_240413000_240413000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9315862-240413000-9581c822eaefe99da50ebd1723a63d17",
+          "filename": "vessel_240413000_240413000_1.jpg",
+          "local_path": "data/images/vessel_240413000_240413000_1.jpg",
+          "local_url": "/data/images/vessel_240413000_240413000_1.jpg",
+          "api_url": "/api/vessel/240413000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9315862-240413000-9581c822eaefe99da50ebd1723a63d17/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9315862-240413000-9581c822eaefe99da50ebd1723a63d17/3",
+          "size_bytes": 27744,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "548928000": {
+      "mmsi": 548928000,
+      "name": "Vessel 548928000",
+      "imo": 9703423,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_548928000_548928000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9703423-548928000-936780c8717a03cd3605b101ef024a67",
+          "filename": "vessel_548928000_548928000_1.jpg",
+          "local_path": "data/images/vessel_548928000_548928000_1.jpg",
+          "local_url": "/data/images/vessel_548928000_548928000_1.jpg",
+          "api_url": "/api/vessel/548928000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9703423-548928000-936780c8717a03cd3605b101ef024a67/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9703423-548928000-936780c8717a03cd3605b101ef024a67/3",
+          "size_bytes": 44920,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "636011004": {
+      "mmsi": 636011004,
+      "name": "Vessel 636011004",
+      "imo": 9051789,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_636011004_636011004_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563",
+          "filename": "vessel_636011004_636011004_1.jpg",
+          "local_path": "data/images/vessel_636011004_636011004_1.jpg",
+          "local_url": "/data/images/vessel_636011004_636011004_1.jpg",
+          "api_url": "/api/vessel/636011004/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9051789-636011004-1559b6f6a6866a0f32cf6c15cb0b3563/3",
+          "size_bytes": 128684,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "431100316": {
+      "mmsi": 431100316,
+      "name": "Vessel 431100316",
+      "imo": 9157583,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_431100316_431100316_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e",
+          "filename": "vessel_431100316_431100316_1.jpg",
+          "local_path": "data/images/vessel_431100316_431100316_1.jpg",
+          "local_url": "/data/images/vessel_431100316_431100316_1.jpg",
+          "api_url": "/api/vessel/431100316/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9157583-431100316-f447fe82a9df2c9bf0ddbaa3d87b0b7e/3",
+          "size_bytes": 33808,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "565046000": {
+      "mmsi": 565046000,
+      "name": "Vessel 565046000",
+      "imo": 9172131,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_565046000_565046000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9172131-565046000-6402159b86e3796d58207b4d8d809412",
+          "filename": "vessel_565046000_565046000_1.jpg",
+          "local_path": "data/images/vessel_565046000_565046000_1.jpg",
+          "local_url": "/data/images/vessel_565046000_565046000_1.jpg",
+          "api_url": "/api/vessel/565046000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9172131-565046000-6402159b86e3796d58207b4d8d809412/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9172131-565046000-6402159b86e3796d58207b4d8d809412/3",
+          "size_bytes": 112057,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "413375810": {
+      "mmsi": 413375810,
+      "name": "Vessel 413375810",
+      "imo": 9474591,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_413375810_413375810_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9474591-413375810-f3bad3083e77c565856b9b674c045901",
+          "filename": "vessel_413375810_413375810_1.jpg",
+          "local_path": "data/images/vessel_413375810_413375810_1.jpg",
+          "local_url": "/data/images/vessel_413375810_413375810_1.jpg",
+          "api_url": "/api/vessel/413375810/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9474591-413375810-f3bad3083e77c565856b9b674c045901/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9474591-413375810-f3bad3083e77c565856b9b674c045901/3",
+          "size_bytes": 44303,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "477711200": {
+      "mmsi": 477711200,
+      "name": "Vessel 477711200",
+      "imo": 9207766,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_477711200_477711200_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9207766-477711200-756161895dcb6bfb3244177c9d27a019",
+          "filename": "vessel_477711200_477711200_1.jpg",
+          "local_path": "data/images/vessel_477711200_477711200_1.jpg",
+          "local_url": "/data/images/vessel_477711200_477711200_1.jpg",
+          "api_url": "/api/vessel/477711200/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9207766-477711200-756161895dcb6bfb3244177c9d27a019/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9207766-477711200-756161895dcb6bfb3244177c9d27a019/3",
+          "size_bytes": 126916,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "215080000": {
+      "mmsi": 215080000,
+      "name": "Vessel 215080000",
+      "imo": 9509425,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_215080000_215080000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735",
+          "filename": "vessel_215080000_215080000_1.jpg",
+          "local_path": "data/images/vessel_215080000_215080000_1.jpg",
+          "local_url": "/data/images/vessel_215080000_215080000_1.jpg",
+          "api_url": "/api/vessel/215080000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9509425-215080000-8d1b85e30597836a9e3a561ad5ba5735/3",
+          "size_bytes": 51321,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "312685000": {
+      "mmsi": 312685000,
+      "name": "Vessel 312685000",
+      "imo": 9573799,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_312685000_312685000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9573799-312685000-862f38dbcc56364fd226d6c51ff31503",
+          "filename": "vessel_312685000_312685000_1.jpg",
+          "local_path": "data/images/vessel_312685000_312685000_1.jpg",
+          "local_url": "/data/images/vessel_312685000_312685000_1.jpg",
+          "api_url": "/api/vessel/312685000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9573799-312685000-862f38dbcc56364fd226d6c51ff31503/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9573799-312685000-862f38dbcc56364fd226d6c51ff31503/3",
+          "size_bytes": 29715,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "538004669": {
+      "mmsi": 538004669,
+      "name": "Vessel 538004669",
+      "imo": 9590759,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_538004669_538004669_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1",
+          "filename": "vessel_538004669_538004669_1.jpg",
+          "local_path": "data/images/vessel_538004669_538004669_1.jpg",
+          "local_url": "/data/images/vessel_538004669_538004669_1.jpg",
+          "api_url": "/api/vessel/538004669/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9590759-538004669-5f98b9c0384492ebad4ef328c558a5d1/3",
+          "size_bytes": 49623,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "371980000": {
+      "mmsi": 371980000,
+      "name": "Vessel 371980000",
+      "imo": 9337092,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_371980000_371980000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7",
+          "filename": "vessel_371980000_371980000_1.jpg",
+          "local_path": "data/images/vessel_371980000_371980000_1.jpg",
+          "local_url": "/data/images/vessel_371980000_371980000_1.jpg",
+          "api_url": "/api/vessel/371980000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9337092-371980000-048d17f22cda463f5f8de77dd8ffa3c7/3",
+          "size_bytes": 44636,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "538003411": {
+      "mmsi": 538003411,
+      "name": "Vessel 538003411",
+      "imo": 9497854,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_538003411_538003411_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9497854-538003411-161d4fe46feaefd6281acc68b00ba093",
+          "filename": "vessel_538003411_538003411_1.jpg",
+          "local_path": "data/images/vessel_538003411_538003411_1.jpg",
+          "local_url": "/data/images/vessel_538003411_538003411_1.jpg",
+          "api_url": "/api/vessel/538003411/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9497854-538003411-161d4fe46feaefd6281acc68b00ba093/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9497854-538003411-161d4fe46feaefd6281acc68b00ba093/3",
+          "size_bytes": 63568,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "356748000": {
+      "mmsi": 356748000,
+      "name": "Vessel 356748000",
+      "imo": 9449493,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_356748000_356748000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9449493-356748000-04064df2ca5ac0d1c153bc7e95948344",
+          "filename": "vessel_356748000_356748000_1.jpg",
+          "local_path": "data/images/vessel_356748000_356748000_1.jpg",
+          "local_url": "/data/images/vessel_356748000_356748000_1.jpg",
+          "api_url": "/api/vessel/356748000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9449493-356748000-04064df2ca5ac0d1c153bc7e95948344/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9449493-356748000-04064df2ca5ac0d1c153bc7e95948344/3",
+          "size_bytes": 53408,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "352328000": {
+      "mmsi": 352328000,
+      "name": "Vessel 352328000",
+      "imo": 9288239,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_352328000_352328000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9288239-352328000-11523a3470d8c83f6d72889ff1ddb666",
+          "filename": "vessel_352328000_352328000_1.jpg",
+          "local_path": "data/images/vessel_352328000_352328000_1.jpg",
+          "local_url": "/data/images/vessel_352328000_352328000_1.jpg",
+          "api_url": "/api/vessel/352328000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9288239-352328000-11523a3470d8c83f6d72889ff1ddb666/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9288239-352328000-11523a3470d8c83f6d72889ff1ddb666/3",
+          "size_bytes": 58232,
+          "is_primary": true,
+          "status": "cached"
+        }
+      ]
+    },
+    "373910000": {
+      "mmsi": 373910000,
+      "name": "Vessel_373910000",
+      "imo": 9883663,
+      "type": "Unknown",
+      "photos_count": 1,
+      "primary_photo": "data/images/vessel_373910000_373910000_1.jpg",
+      "photos": [
+        {
+          "index": 1,
+          "token": "9883663-373910000-33d854f72be866041e6377a3a9cfdcef",
+          "filename": "vessel_373910000_373910000_1.jpg",
+          "local_path": "data/images/vessel_373910000_373910000_1.jpg",
+          "local_url": "/data/images/vessel_373910000_373910000_1.jpg",
+          "api_url": "/api/vessel/373910000/photo?index=1",
+          "url_hd": "https://static.vesselfinder.net/ship-photo/9883663-373910000-33d854f72be866041e6377a3a9cfdcef/1",
+          "url_thumb": "https://static.vesselfinder.net/ship-photo/9883663-373910000-33d854f72be866041e6377a3a9cfdcef/3",
+          "size_bytes": 66032,
+          "is_primary": true,
+          "status": "downloaded"
+        }
+      ]
+    }
+  }
+}
