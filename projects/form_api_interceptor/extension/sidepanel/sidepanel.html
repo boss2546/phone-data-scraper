@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form & API Interceptor Studio</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="studio-container">
+    <!-- Studio Header -->
+    <header class="studio-header">
+      <div class="brand">
+        <span class="brand-icon">🌱</span>
+        <div>
+          <h2>Form & API Studio</h2>
+          <p class="tagline">ระบบสกัด API & แผนที่ฟอร์มเพื่อสร้างบอทอัตโนมัติ</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-sidepanel-copy-ai" class="btn-rec-ai" title="คัดลอก Prompt พร้อม Context หน้าเว็บส่งให้ AI เขียนโค้ดทันที">
+          <span>🤖 คัดลอก Prompt สำหรับ AI</span>
+        </button>
+        <button id="record-toggle-btn" class="btn-rec">
+          <span class="rec-dot"></span>
+          <span id="rec-label">เริ่มบันทึก</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="tab-api">🌐 Network API (<span id="count-api">0</span>)</button>
+      <button class="tab-btn" data-tab="tab-form">📝 ฟอร์ม & Elements (<span id="count-form">0</span>)</button>
+      <button class="tab-btn" data-tab="tab-auth">🍪 คุกกี้ & Auth (<span id="count-auth">0</span>)</button>
+      <button class="tab-btn" data-tab="tab-codegen">🤖 เจนโค้ดบอท (Code)</button>
+      <button class="tab-btn" data-tab="tab-history">💾 ประวัติ & ตั้งค่า</button>
+    </nav>
+
+    <!-- Tab 1: Network API -->
+    <section id="tab-api" class="tab-content active">
+      <div class="content-header">
+        <span class="section-title">รายการ Network API ทั้งหมด (<span id="api-total-stat">0</span>)</span>
+        <button id="btn-clear-apis" class="btn-text">ล้างรายการ</button>
+      </div>
+
+      <!-- Filter & Search Bar -->
+      <div class="api-filter-toolbar">
+        <div class="filter-pills-row">
+          <button class="filter-pill active" data-filter="all">
+            🔘 ทั้งหมด (<span id="f-count-all">0</span>)
+          </button>
+          <button class="filter-pill" data-filter="form">
+            📝 เฉพาะฟอร์ม (<span id="f-count-form">0</span>)
+          </button>
+          <button class="filter-pill" data-filter="get">
+            📥 GET (<span id="f-count-get">0</span>)
+          </button>
+          <button class="filter-pill" data-filter="post">
+            📤 POST/PUT (<span id="f-count-post">0</span>)
+          </button>
+        </div>
+        <div class="search-row">
+          <input type="text" id="api-search-input" class="api-search-box" placeholder="🔍 ค้นหา URL, Path หรือ Method..." />
+        </div>
+      </div>
+
+      <div class="api-layout">
+        <!-- API List -->
+        <div id="api-list" class="api-list-view">
+          <div class="empty-state">
+            <span class="empty-icon">📡</span>
+            <p>ยังไม่มี API ถูกดักจับ</p>
+            <small>ระบบจะดักจับ API ทั้งหมดอัตโนมัติขณะเปิดหน้าเว็บค่ะ</small>
+          </div>
+        </div>
+
+        <!-- API Detail Inspector -->
+        <div id="api-detail" class="api-detail-view" style="display: none;">
+          <div class="detail-header">
+            <div class="method-url-row">
+              <span id="detail-method" class="badge-method">POST</span>
+              <span id="detail-category-badge" class="badge-category form">📝 FORM</span>
+              <span id="detail-url" class="detail-url-text">-</span>
+            </div>
+            <div class="detail-actions">
+              <button id="btn-replay-api" class="btn-action primary" title="ยิงซ้ำทันทีจาก Extension">🚀 ทดสอบยิง (Replay)</button>
+              <button id="btn-copy-curl" class="btn-action" title="คัดลอกคำสั่ง cURL">📋 cURL</button>
+              <button id="btn-copy-python" class="btn-action" title="คัดลอกโค้ด Python">🐍 Python</button>
+            </div>
+          </div>
+
+          <div class="detail-sections">
+            <!-- Associated Form Snapshot (If this API was triggered by a Form) -->
+            <div id="detail-associated-form-box" class="detail-box form-snapshot-box" style="display: none;">
+              <div class="box-header">
+                <span>📝 ฟอร์มที่ผูกกับ API นี้ (<span id="form-snapshot-count">0</span> ช่องกรอก)</span>
+                <span class="badge-mini-mint">LINKED FORM SNAPSHOT</span>
+              </div>
+              <div id="form-snapshot-list" class="snapshot-fields-list"></div>
+            </div>
+
+            <div class="detail-box">
+              <div class="box-header">🔑 Request Headers</div>
+              <pre id="detail-headers" class="code-block"></pre>
+            </div>
+            <div class="detail-box">
+              <div class="box-header">
+                <span>📦 Request Payload / Body</span>
+                <button id="btn-toggle-edit-payload" class="btn-text">✏️ แก้ไข Payload เพื่อลองยิง</button>
+              </div>
+              <pre id="detail-body" class="code-block"></pre>
+              <textarea id="edit-payload-textarea" class="text-input code-input" style="display: none; width: 100%; min-height: 120px; font-family: monospace; font-size: 11px; margin-top: 6px;"></textarea>
+            </div>
+            <div class="detail-box">
+              <div class="box-header">📥 Response (<span id="detail-status">-</span>)</div>
+              <pre id="detail-response" class="code-block"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Form & DOM Elements -->
+    <section id="tab-form" class="tab-content">
+      <div class="content-header">
+        <span class="section-title">โครงสร้างฟิลด์ที่กรอกบนหน้าเว็บ</span>
+        <div class="header-tools">
+          <button id="btn-refill-dom" class="btn-action primary">⚡ สั่งกรอกหน้านี้ซ้ำ</button>
+        </div>
+      </div>
+
+      <div id="form-fields-container" class="fields-list">
+        <div class="empty-state">
+          <span class="empty-icon">📝</span>
+          <p>ยังไม่พบข้อมูลฟอร์ม</p>
+          <small>ลองพิมพ์ข้อความ หรือเลือกตัวเลือกในหน้าเว็บขณะเปิดบันทึกค่ะ</small>
+        </div>
+      </div>
+
+      <!-- Detected Submit Button -->
+      <div id="submit-button-card" class="submit-card" style="display: none;">
+        <span class="submit-card-title">🔘 ปุ่ม Submit ที่ตรวจพบ:</span>
+        <div class="submit-card-body">
+          <strong id="submit-btn-text">-</strong>
+          <code id="submit-btn-selector">-</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Cookies & Auth Engine (Auto-captured Sessions) -->
+    <section id="tab-auth" class="tab-content">
+      <div class="content-header">
+        <span class="section-title">🍪 คุกกี้ & กุญแจยืนยันตัวตน (Auth & Session Engine)</span>
+        <button id="btn-sync-auth" class="btn-action primary" title="ดึงคุกกี้สดๆ จากแท็บที่เปิดอยู่ทันที">⚡ ดึงคุกกี้ & Token สดเดี๋ยวนี้</button>
+      </div>
+
+      <div class="settings-card" style="margin-bottom: 12px;">
+        <div class="auth-summary-stats">
+          <div class="stat-item">
+            <span class="stat-label">โดเมนเป้าหมาย:</span>
+            <strong id="auth-domain-text">-</strong>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">จำนวนคุกกี้ที่ดักได้:</span>
+            <strong id="auth-cookies-count" style="color: #10b981;">0 รายการ</strong>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">กุญแจ Authorization / Bearer:</span>
+            <strong id="auth-bearer-text" style="color: #6366f1;">ไม่พบ</strong>
+          </div>
+        </div>
+        <div class="auth-quick-actions" style="margin-top: 10px; display: flex; gap: 8px;">
+          <button id="btn-copy-cookie-str" class="btn-action" style="flex: 1;">📋 คัดลอก Cookie Header ทั้งหมด</button>
+          <button id="btn-copy-auth-token" class="btn-action" style="flex: 1;">🔑 คัดลอก Auth Token</button>
+        </div>
+      </div>
+
+      <div class="detail-sections">
+        <div class="detail-box">
+          <div class="box-header">🍪 Cookie Header (พร้อมใช้ใน Python requests / cURL / Postman)</div>
+          <textarea id="auth-cookie-string-display" class="code-block" readonly rows="4" style="width: 100%; font-family: monospace; font-size: 11px; resize: vertical;" placeholder="ยังไม่มีข้อมูลคุกกี้ (กดปุ่ม 'ดึงคุกกี้ & Token สดเดี๋ยวนี้' หรือเริ่มบันทึกฟอร์ม)"></textarea>
+        </div>
+
+        <div class="detail-box">
+          <div class="box-header">🔑 Auth Headers & Storage Tokens ที่ตรวจพบ</div>
+          <pre id="auth-tokens-display" class="code-block" style="max-height: 140px; overflow-y: auto;">ยังไม่พบ Token ใน LocalStorage หรือ Header</pre>
+        </div>
+
+        <div class="detail-box">
+          <div class="box-header">📋 รายการคุกกี้ทั้งหมดในโดเมน (<span id="auth-cookies-detail-count">0</span> ตัว)</div>
+          <div id="auth-cookies-table-container" style="max-height: 220px; overflow-y: auto;">
+            <table class="form-table" style="font-size: 11px;">
+              <thead>
+                <tr>
+                  <th>ชื่อคุกกี้ (Name)</th>
+                  <th>ค่า (Value)</th>
+                  <th>HttpOnly</th>
+                  <th>Secure</th>
+                </tr>
+              </thead>
+              <tbody id="auth-cookies-table-body">
+                <tr><td colspan="4" style="text-align: center; color: #888;">ไม่มีคุกกี้</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Code Generator (AI & Automation) -->
+    <section id="tab-codegen" class="tab-content">
+      <div class="codegen-toolbar">
+        <label for="codegen-target">เลือกรูปแบบสคริปต์อัตโนมัติ:</label>
+        <select id="codegen-target" class="select-input">
+          <option value="ai-prompt" selected>✨ 🤖 AI Automation Master Prompt (พร้อมบริบทให้ AI เขียนโค้ด)</option>
+          <option value="python">🐍 Python Script (Direct API requests)</option>
+          <option value="playwright">🎭 Playwright Python (Browser Automation)</option>
+          <option value="ai-agent">🤖 AI Agent / Skyvern Instruction Schema (JSON)</option>
+          <option value="curl">⚡ cURL Command</option>
+          <option value="node">🌐 Node.js (Axios / Fetch)</option>
+        </select>
+        <button id="btn-copy-code" class="btn-action primary">📋 คัดลอกโค้ด</button>
+      </div>
+
+      <div class="code-editor-wrapper">
+        <pre id="generated-code-display" class="code-editor"># เลือกรหัสและรูปแบบที่ต้องการสร้างสคริปต์อัตโนมัติ</pre>
+      </div>
+    </section>
+
+    <!-- Tab 4: History & Webhook Settings -->
+    <section id="tab-history" class="tab-content">
+      <div class="settings-card">
+        <h3>🔌 ส่งต่ออัตโนมัติเข้า Local Webhook (Python Server)</h3>
+        <p class="hint">ส่งข้อมูล JSON ที่ดักจับได้เข้าเครื่องอัตโนมัติเมื่อหยุดบันทึก</p>
+        <div class="form-row">
+          <input type="text" id="webhook-url-input" class="text-input" placeholder="http://127.0.0.1:8091/api/capture">
+          <label class="switch-label">
+            <input type="checkbox" id="auto-webhook-toggle">
+            <span>ส่งออโต้</span>
+          </label>
+        </div>
+        <button id="btn-save-settings" class="btn-action">💾 บันทึกการตั้งค่า</button>
+      </div>
+
+      <div class="history-card">
+        <div class="content-header">
+          <span class="section-title">ประวัติการบันทึก (Past Sessions)</span>
+          <button id="btn-clear-history" class="btn-text">ลบประวัติทั้งหมด</button>
+        </div>
+        <div id="history-list" class="history-items">
+          <!-- Session items inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Toast -->
+    <div id="toast-msg" class="toast">คัดลอกเรียบร้อยแล้วค่ะ ✨</div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

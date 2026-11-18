@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧪 ห้องแล็บทดสอบ Form & API Interceptor — Test Bench</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090D16;
+      --card-bg: #111827;
+      --border: #1F2937;
+      --primary: #0EA5E9;
+      --success: #10B981;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 650px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    h1 { font-size: 20px; color: #fff; margin-bottom: 6px; }
+    p.desc { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.5; }
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 13px; font-weight: 600; color: #CBD5E1; margin-bottom: 6px; }
+    input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+      width: 100%;
+      background: #0B0F19;
+      border: 1px solid #334155;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+    }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .checkbox-group { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+    .checkbox-group input { width: 18px; height: 18px; accent-color: var(--primary); }
+    .btn-submit {
+      width: 100%;
+      background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 14px;
+      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.35);
+      transition: all 0.2s;
+    }
+    .btn-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(14, 165, 233, 0.5); }
+    .response-box {
+      margin-top: 24px;
+      background: #050811;
+      border: 1px solid #1E293B;
+      border-radius: 10px;
+      padding: 16px;
+      display: none;
+    }
+    .response-title { font-size: 12px; font-weight: 700; color: var(--success); text-transform: uppercase; margin-bottom: 8px; }
+    pre { font-family: monospace; font-size: 12px; color: #38BDF8; white-space: pre-wrap; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 ฟอร์มทดสอบการดักจับ (Interactive Test Bench)</h1>
+    <p class="desc">เปิด Extension <strong>Form & API Interceptor</strong> กดปุ่ม <em>"เริ่มบันทึก"</em> แล้วทดลองพิมพ์ข้อมูลในฟอร์มด้านล่างและกดปุ่ม <em>"ยืนยันการสั่งซื้อและส่งข้อมูล"</em> ตัว Extension จะดักจับทั้งฟอร์มและคำขอ Fetch/XHR ให้ทันทีค่ะ!</p>
+
+    <form id="order-form">
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="customer_firstname">ชื่อจริง (First Name)</label>
+          <input type="text" id="customer_firstname" name="first_name" placeholder="เช่น กฤษณะ" value="กฤษณะ">
+        </div>
+        <div class="form-group">
+          <label for="customer_lastname">นามสกุล (Last Name)</label>
+          <input type="text" id="customer_lastname" name="last_name" placeholder="เช่น มงคลสุข" value="มงคลสุข">
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="customer_email">อีเมล (Email Address)</label>
+          <input type="email" id="customer_email" name="email" placeholder="boss@example.com" value="boss@meuu.club">
+        </div>
+        <div class="form-group">
+          <label for="customer_phone">เบอร์โทรศัพท์ (Phone)</label>
+          <input type="tel" id="customer_phone" name="phone_number" placeholder="0812345678" value="0891234567">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="product_package">เลือกแพ็กเกจสินค้า (Package)</label>
+        <select id="product_package" name="package_tier">
+          <option value="enterprise_ai">🏢 Enterprise AI Suite (12,000 req/week)</option>
+          <option value="pro_scraper" selected>⚡ Pro Web Scraper & Interceptor</option>
+          <option value="starter">🌱 Starter Pack</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="order_notes">หมายเหตุเพิ่มเติม (Notes)</label>
+        <textarea id="order_notes" name="special_notes" rows="3" placeholder="ระบุความต้องการเพิ่มเติม...">ต้องการส่งออกเป็น Python Script เพื่อรันบอทอัตโนมัติทุก 1 ชั่วโมง</textarea>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="agree_terms" name="accept_terms" checked>
+        <label for="agree_terms" style="margin-bottom:0; font-weight:normal;">ยินยอมให้ระบบอัตโนมัติประมวลผลข้อมูล</label>
+      </div>
+
+      <button type="submit" id="btn-submit-order" class="btn-submit">
+        🚀 ยืนยันการสั่งซื้อและส่งข้อมูล (Submit Order)
+      </button>
+    </form>
+
+    <div id="response-container" class="response-box">
+      <div class="response-title">✅ จำลองการตอบกลับจาก Backend Server:</div>
+      <pre id="response-content"></pre>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('order-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = {
+        first_name: form.first_name.value,
+        last_name: form.last_name.value,
+        email: form.email.value,
+        phone: form.phone_number.value,
+        package: form.package_tier.value,
+        notes: form.special_notes.value,
+        terms_accepted: form.accept_terms.checked,
+        submitted_at: new Date().toISOString()
+      };
+
+      const btn = document.getElementById('btn-submit-order');
+      btn.innerText = '⏳ กำลังประมวลผล...';
+
+      // 1. จำลองการยิง XHR ตรวจสอบสิทธิ์
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://httpbin.org/post');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.setRequestHeader('X-Requested-With', 'FormAPIInterceptor');
+      xhr.send(JSON.stringify({ step: 'validate_voucher', email: formData.email }));
+
+      // 2. จำลองการยิง Fetch ส่งข้อมูลหลัก
+      try {
+        const response = await fetch('https://httpbin.org/post', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer demo-token-9router-infrastructure',
+            'X-Source': 'Form-Auto-Tester'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        const resData = await response.json();
+        const resBox = document.getElementById('response-container');
+        const resContent = document.getElementById('response-content');
+
+        resBox.style.display = 'block';
+        resContent.innerText = JSON.stringify({
+          status: 'SUCCESS',
+          message: 'ข้อมูลถูกส่งผ่าน Network และเซิร์ฟเวอร์ตอบรับเรียบร้อยแล้วค่ะ!',
+          server_echo: resData.json,
+          client_ip: resData.origin,
+          received_headers: resData.headers
+        }, null, 2);
+
+        btn.innerText = '✅ ส่งข้อมูลสำเร็จเรียบร้อย!';
+        setTimeout(() => {
+          btn.innerText = '🚀 ยืนยันการสั่งซื้อและส่งข้อมูล (Submit Order)';
+        }, 3000);
+      } catch (err) {
+        alert('เกิดข้อผิดพลาดในการส่งข้อมูล: ' + err.message);
+        btn.innerText = '🚀 ยืนยันการสั่งซื้อและส่งข้อมูล (Submit Order)';
+      }
+    });
+  </script>
+</body>
+</html>

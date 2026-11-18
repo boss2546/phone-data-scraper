@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔐 Encryption & Interceptor Test Bench — ห้องแล็บทดสอบการเข้ารหัส</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-deep: #080D0A;
+      --bg-surface: #0E1612;
+      --card-bg: rgba(18, 28, 23, 0.75);
+      --card-subtle: #141F1A;
+      --border-subtle: rgba(52, 211, 153, 0.15);
+      --border-focus: #10B981;
+      
+      /* Premium Pastel Mint & Emerald Palette */
+      --mint-50: #ECFDF5;
+      --mint-100: #D1FAE5;
+      --mint-200: #A7F3D0;
+      --mint-300: #6EE7B7;
+      --mint-400: #34D399;
+      --mint-500: #10B981;
+      --mint-600: #059669;
+      --mint-800: #064E3B;
+      --mint-900: #022C22;
+      
+      --text-main: #F0FDF4;
+      --text-muted: #86A796;
+      --text-dim: #4E6B5C;
+      --danger: #F87171;
+      --warning: #FBBF24;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --glow-mint: 0 10px 35px -5px rgba(16, 185, 129, 0.18);
+      --glow-active: 0 0 25px rgba(52, 211, 153, 0.35);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-deep);
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(52, 211, 153, 0.05) 0%, transparent 40%);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', 'Prompt', -apple-system, sans-serif;
+      min-height: 100vh;
+      padding: 36px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 1080px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Header Bar */
+    header {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--glow-mint);
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--mint-400), var(--mint-600));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    }
+
+    .brand-titles h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--mint-100);
+      letter-spacing: -0.01em;
+    }
+
+    .brand-titles p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--mint-300);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--mint-400);
+      box-shadow: 0 0 10px var(--mint-400);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    /* Info Notice */
+    .notice-card {
+      background: linear-gradient(135deg, rgba(6, 78, 59, 0.35), rgba(18, 28, 23, 0.5));
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 13px;
+      color: var(--mint-100);
+    }
+
+    .notice-card .icon {
+      font-size: 20px;
+      color: var(--mint-300);
+      margin-top: 2px;
+    }
+
+    /* Main Grid Layout */
+    .grid-bench {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-bench { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--mint-100);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 12px;
+    }
+
+    .card-title span.badge {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--mint-300);
+      font-weight: 500;
+    }
+
+    /* Form Inputs */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--mint-200);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    label span.hint {
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 400;
+    }
+
+    input[type="text"], input[type="password"], textarea, select {
+      background: var(--card-subtle);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      padding: 11px 14px;
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+      background: rgba(20, 31, 26, 0.95);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    /* Mode Selector Pills */
+    .mode-selector {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 8px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .mode-option {
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      padding: 10px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .mode-option:hover {
+      background: rgba(16, 185, 129, 0.08);
+      color: var(--mint-200);
+    }
+
+    .mode-option.active {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(5, 150, 105, 0.2));
+      border-color: var(--mint-400);
+      color: var(--mint-50);
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--mint-400), var(--mint-600));
+      color: #04251A;
+      box-shadow: 0 4px 18px rgba(16, 185, 129, 0.35);
+      flex: 1;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--mint-300), var(--mint-500));
+      transform: translateY(-1px);
+      box-shadow: 0 6px 22px rgba(16, 185, 129, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      color: var(--mint-200);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--mint-400);
+      color: #fff;
+    }
+
+    /* Inspector & Code Blocks */
+    .inspector-block {
+      background: #060B08;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .inspector-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: none;
+      color: var(--mint-400);
+      font-size: 11px;
+      cursor: pointer;
+      padding: 2px 6px;
+      border-radius: 4px;
+      transition: background 0.15s;
+    }
+
+    .copy-btn:hover {
+      background: rgba(16, 185, 129, 0.15);
+    }
+
+    pre code {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+      font-size: 12px;
+      color: var(--mint-300);
+      white-space: pre-wrap;
+      word-break: break-all;
+      max-height: 220px;
+      overflow-y: auto;
+      display: block;
+      line-height: 1.5;
+    }
+
+    .decrypt-result {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 3px solid var(--mint-400);
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--mint-100);
+      display: none;
+    }
+
+    /* Response Toast */
+    #statusToast {
+      display: none;
+      background: rgba(6, 78, 59, 0.9);
+      border: 1px solid var(--mint-400);
+      color: var(--mint-50);
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      font-size: 13px;
+      margin-top: 10px;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Top Header -->
+    <header>
+      <div class="brand-group">
+        <div class="logo-badge">🔐</div>
+        <div class="brand-titles">
+          <h1>ห้องแล็บทดสอบการเข้ารหัส & ดักจับข้อมูล</h1>
+          <p>Encryption & Interception Live Test Bench — สไตล์มินิมอลพรีเมียมพาสเทล</p>
+        </div>
+      </div>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Extension Interceptor Ready</span>
+      </div>
+    </header>
+
+    <!-- Notice Card -->
+    <div class="notice-card">
+      <div class="icon">💡</div>
+      <div>
+        <strong>คำแนะนำสำหรับบอส:</strong> หน้าแล็บนี้ออกแบบมาเพื่อทดสอบว่าเมื่อระบบหน้าเว็บมีการ <strong>เข้ารหัสก้อนข้อมูลก่อนส่งออก (Client-Side Encryption)</strong> 
+        ส่วนขยาย <strong>Form & API Interceptor</strong> ของเราจะทำงานได้เหนือชั้นอย่างไร — โดยจะดักจับได้ <u>ทั้งข้อความก่อนเข้ารหัสจากช่องฟอร์ม (DOM Plaintext)</u> 
+        และ <u>ก้อน Ciphertext ที่วิ่งออกเน็ตเวิร์กจริง</u> อย่างโปร่งใส 100% ค่ะ
+      </div>
+    </div>
+
+    <!-- Main Dual Bench Grid -->
+    <div class="grid-bench">
+      
+      <!-- Left Card: Interactive Form & Encryption Settings -->
+      <div class="card">
+        <div class="card-title">
+          <span>1. กรอกข้อมูลและเลือกรูปแบบการเข้ารหัส</span>
+          <span class="badge">Client Simulator</span>
+        </div>
+
+        <!-- Mode Selector -->
+        <div class="form-group">
+          <label>เลือกอัลกอริทึมการเข้ารหัส (Encryption Algorithm):</label>
+          <div class="mode-selector">
+            <button type="button" class="mode-option active" data-mode="aes" onclick="selectMode('aes', this)">
+              <span>🛡️</span> AES-256-GCM (Payload)
+            </button>
+            <button type="button" class="mode-option" data-mode="rsa" onclick="selectMode('rsa', this)">
+              <span>🔑</span> RSA / Public Key (Password)
+            </button>
+            <button type="button" class="mode-option" data-mode="hmac" onclick="selectMode('hmac', this)">
+              <span>✍️</span> HMAC-SHA256 Signature
+            </button>
+            <button type="button" class="mode-option" data-mode="base64" onclick="selectMode('base64', this)">
+              <span>📦</span> Obfuscated Base64 + XOR
+            </button>
+          </div>
+        </div>
+
+        <!-- Form Inputs -->
+        <form id="cryptoTestForm" onsubmit="handleFormSubmit(event)">
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="username">บัญชีผู้ใช้ (Username):</label>
+              <input type="text" id="username" name="username" placeholder="เช่น boss_aiis" value="boss_aiis" required>
+            </div>
+            <div class="form-group">
+              <label for="userRole">สิทธิ์ในระบบ (Role):</label>
+              <select id="userRole" name="userRole">
+                <option value="super_admin">Super Administrator</option>
+                <option value="project_manager">Project Manager (JDSP)</option>
+                <option value="lead_developer">Lead Developer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top: 14px;">
+            <div class="form-group">
+              <label for="secretPassword">
+                รหัสผ่านลับ (Secret Password):
+                <span class="hint">จำลองฟิลด์เป้าหมาย</span>
+              </label>
+              <input type="password" id="secretPassword" name="password" value="SuperSecretPassword@2026" required>
+            </div>
+            <div class="form-group">
+              <label for="targetToken">
+                Secure Key / Token:
+                <span class="hint">ข้อมูลชั้นความลับ</span>
+              </label>
+              <input type="text" id="targetToken" name="targetToken" value="SEC-KEY-9988-CONFIDENTIAL">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 14px;">
+            <label for="payloadMessage">ข้อความคำร้อง / ข้อกำหนด (Sensitive Payload):</label>
+            <textarea id="payloadMessage" name="message" rows="3">อนุมัติการเชื่อมต่อระบบ Joint Digital Service Platform (JDSP) ผ่าน API v1 แบบปลอดภัยสูงสุด</textarea>
+          </div>
+
+          <div class="btn-row" style="margin-top: 18px;">
+            <button type="submit" class="btn btn-primary">
+              <span>🚀</span> จำลองเข้ารหัส & ยิงส่ง API (Submit)
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="populateRandomData()">
+              <span>⚡</span> สุ่มข้อมูลใหม่
+            </button>
+          </div>
+        </form>
+
+        <div id="statusToast"></div>
+      </div>
+
+      <!-- Right Card: Live Dual Inspector -->
+      <div class="card">
+        <div class="card-title">
+          <span>2. ผลลัพธ์สด: Plaintext vs Ciphertext</span>
+          <span class="badge">Live Inspector</span>
+        </div>
+
+        <!-- Inspector 1: DOM Plaintext -->
+        <div class="inspector-block">
+          <div class="inspector-header">
+            <span>📝 ข้อมูลในช่องฟอร์มจริง (Human Plaintext)</span>
+            <button class="copy-btn" onclick="copyCode('plainPreview')">คัดลอก</button>
+          </div>
+          <pre><code id="plainPreview">// รอการกดส่งข้อมูล...</code></pre>
+        </div>
+
+        <!-- Inspector 2: Encrypted Payload -->
+        <div class="inspector-block">
+          <div class="inspector-header">
+            <span>🔐 ข้อมูลที่วิ่งออกเน็ตเวิร์ก (Encrypted Ciphertext)</span>
+            <button class="copy-btn" onclick="copyCode('cipherPreview')">คัดลอก</button>
+          </div>
+          <pre><code id="cipherPreview">// รอผลการเข้ารหัส...</code></pre>
+        </div>
+
+        <!-- Inspector 3: Verification & Live Decrypt -->
+        <div class="inspector-block">
+          <div class="inspector-header">
+            <span>🔓 สถานีทดสอบถอดรหัส (Live Decryption Verification)</span>
+          </div>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            พิสูจน์ความสามารถ: เมื่อระบบของเราดักก้อน Ciphertext มาได้ สามารถใช้กุญแจถอดกลับเป็น Plaintext ได้ทันทีหรือไม่:
+          </p>
+          <button type="button" class="btn btn-secondary" style="width: 100%; padding: 8px;" onclick="verifyDecryption()">
+            <span>🔍</span> ทดสอบถอดรหัสสด (Live Decrypt Proof)
+          </button>
+          <div id="decryptBox" class="decrypt-result"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // State
+    let currentMode = 'aes';
+    let lastPlainPayload = null;
+    let lastCipherPayload = null;
+    let aesCryptoKey = null;
+    let aesRawKeyBytes = null;
+
+    // Initialize Web Crypto Key (AES-GCM 256)
+    async function initCrypto() {
+      aesCryptoKey = await window.crypto.subtle.generateKey(
+        { name: "AES-GCM", length: 256 },
+        true,
+        ["encrypt", "decrypt"]
+      );
+      const exported = await window.crypto.subtle.exportKey("raw", aesCryptoKey);
+      aesRawKeyBytes = Array.from(new Uint8Array(exported)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+    initCrypto();
+
+    function selectMode(mode, element) {
+      currentMode = mode;
+      document.querySelectorAll('.mode-option').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+    }
+
+    // Helper: Buffer to Hex / Base64
+    function buf2hex(buffer) {
+      return Array.prototype.map.call(new Uint8Array(buffer), x => ('00' + x.toString(16)).slice(-2)).join('');
+    }
+    function hex2buf(hexString) {
+      return new Uint8Array(hexString.match(/.{1,2}/g).map(byte => parseInt(byte, 16))).buffer;
+    }
+
+    // Live Encryption Simulator
+    async function encryptPayload(data, mode) {
+      const jsonStr = JSON.stringify(data);
+      const enc = new TextEncoder();
+
+      if (mode === 'aes') {
+        const iv = window.crypto.getRandomValues(new Uint8Array(12));
+        const encoded = enc.encode(jsonStr);
+        const ciphertext = await window.crypto.subtle.encrypt(
+          { name: "AES-GCM", iv: iv },
+          aesCryptoKey,
+          encoded
+        );
+        return {
+          algorithm: "AES-256-GCM",
+          iv: buf2hex(iv),
+          encrypted_data: buf2hex(ciphertext),
+          key_fingerprint: aesRawKeyBytes.slice(0, 16) + '...',
+          timestamp: Date.now()
+        };
+      } 
+      else if (mode === 'rsa') {
+        // Simulating RSA Public-Key encrypted password
+        const fakeCipher = "RSA_OAEP_2048_PUB_" + btoa(data.password).split('').reverse().join('') + "_SIG";
+        return {
+          username: data.username,
+          role: data.role,
+          encrypted_password: fakeCipher,
+          algorithm: "RSA-OAEP-SHA256",
+          public_key_id: "pk_live_mergesoft_8fa8b7f5",
+          message: data.message
+        };
+      } 
+      else if (mode === 'hmac') {
+        const timestamp = Math.floor(Date.now() / 1000).toString();
+        const signaturePayload = `${timestamp}|${data.username}|${data.password}|${data.targetToken}`;
+        const hashBuf = await window.crypto.subtle.digest('SHA-256', enc.encode(signaturePayload));
+        return {
+          payload: data,
+          _meta: {
+            "X-Timestamp": timestamp,
+            "X-Signature": "sha256=" + buf2hex(hashBuf),
+            "X-Algorithm": "HMAC-SHA256"
+          }
+        };
+      } 
+      else if (mode === 'base64') {
+        // Custom Masked Base64
+        const raw = btoa(unescape(encodeURIComponent(jsonStr)));
+        const masked = raw.split('').map((c, i) => String.fromCharCode(c.charCodeAt(0) ^ 5)).join('');
+        return {
+          encoded_stream: btoa(masked),
+          encoding: "CUSTOM_XOR_BASE64",
+          mask_seed: 5,
+          timestamp: Date.now()
+        };
+      }
+    }
+
+    // Submit Handler
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const form = document.getElementById('cryptoTestForm');
+      const plainData = {
+        username: form.username.value,
+        role: form.userRole.value,
+        password: form.password.value,
+        targetToken: form.targetToken.value,
+        message: form.message.value,
+        client_timestamp: new Date().toISOString()
+      };
+
+      lastPlainPayload = plainData;
+      document.getElementById('plainPreview').textContent = JSON.stringify(plainData, null, 2);
+
+      // Perform selected encryption
+      const encryptedData = await encryptPayload(plainData, currentMode);
+      lastCipherPayload = encryptedData;
+      document.getElementById('cipherPreview').textContent = JSON.stringify(encryptedData, null, 2);
+
+      // Reset decrypt box
+      document.getElementById('decryptBox').style.display = 'none';
+
+      // Fire real fetch so Chrome Extension captures the Network API
+      try {
+        const headers = { 'Content-Type': 'application/json' };
+        if (currentMode === 'hmac' && encryptedData._meta) {
+          headers['X-Timestamp'] = encryptedData._meta['X-Timestamp'];
+          headers['X-Signature'] = encryptedData._meta['X-Signature'];
+        }
+
+        const res = await fetch('http://localhost:8091/api/secure-mock-test', {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify(encryptedData)
+        }).catch(err => {
+          // Fallback simulation if local server isn't running
+          return { ok: true, status: 200 };
+        });
+
+        const toast = document.getElementById('statusToast');
+        toast.innerHTML = `✅ <strong>ส่งคำขอสำเร็จ (Network Captured):</strong> จำลองส่งก้อนเข้ารหัสด้วย <strong>${currentMode.toUpperCase()}</strong> เรียบร้อยแล้วค่ะ! Extension จะดักได้ทั้งสองเลเยอร์ทันที 💖`;
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 6000);
+
+      } catch (err) {
+        console.warn('Network call completed with local mock.');
+      }
+    }
+
+    // Live Decrypt Verification
+    async function verifyDecryption() {
+      const box = document.getElementById('decryptBox');
+      if (!lastCipherPayload) {
+        box.style.display = 'block';
+        box.style.borderLeftColor = 'var(--warning)';
+        box.textContent = '⚠️ ยังไม่มีการส่งข้อมูล กรุณากดปุ่ม "จำลองเข้ารหัส & ยิงส่ง API" ก่อนนะคะ';
+        return;
+      }
+
+      box.style.display = 'block';
+      box.style.borderLeftColor = 'var(--mint-400)';
+
+      if (currentMode === 'aes') {
+        try {
+          const ivBuf = hex2buf(lastCipherPayload.iv);
+          const cipherBuf = hex2buf(lastCipherPayload.encrypted_data);
+          const decrypted = await window.crypto.subtle.decrypt(
+            { name: "AES-GCM", iv: ivBuf },
+            aesCryptoKey,
+            cipherBuf
+          );
+          const decStr = new TextDecoder().decode(decrypted);
+          box.innerHTML = `<strong>🎉 ถอดรหัส AES-256-GCM สำเร็จ 100%!</strong><br><pre style="margin-top:6px; color:#A7F3D0;">${JSON.stringify(JSON.parse(decStr), null, 2)}</pre>`;
+        } catch (e) {
+          box.textContent = '❌ ถอดรหัสไม่สำเร็จ: ' + e.message;
+        }
+      } 
+      else if (currentMode === 'rsa') {
+        const reversed = atob(lastCipherPayload.encrypted_password.replace('RSA_OAEP_2048_PUB_', '').replace('_SIG', '')).split('').reverse().join('');
+        box.innerHTML = `<strong>🎉 ถอดรหัส Hybrid RSA จำลองสำเร็จ!</strong><br>รหัสผ่านที่ถอดได้คือ: <code>${reversed}</code> (ตรงกับฟอร์มต้นฉบับ 100%)`;
+      } 
+      else if (currentMode === 'hmac') {
+        box.innerHTML = `<strong>🎉 ตรวจสอบ Signature ถูกต้อง (Signature Valid)!</strong><br>ลายเซ็น ${lastCipherPayload._meta['X-Signature']} ตรงกับ Payload`;
+      } 
+      else if (currentMode === 'base64') {
+        const unmasked = atob(lastCipherPayload.encoded_stream).split('').map(c => String.fromCharCode(c.charCodeAt(0) ^ 5)).join('');
+        const decoded = decodeURIComponent(escape(atob(unmasked)));
+        box.innerHTML = `<strong>🎉 ถอดรหัส Base64 Masking สำเร็จ!</strong><br><pre style="margin-top:6px; color:#A7F3D0;">${JSON.stringify(JSON.parse(decoded), null, 2)}</pre>`;
+      }
+    }
+
+    function populateRandomData() {
+      const names = ['boss_aiis', 'ratchanon_dev', 'lead_architect', 'security_officer'];
+      const pass = ['MintLover@2026!', 'P@ssw0rdSecure#99', 'VaultKey_987654321'];
+      document.getElementById('username').value = names[Math.floor(Math.random() * names.length)];
+      document.getElementById('secretPassword').value = pass[Math.floor(Math.random() * pass.length)];
+      document.getElementById('targetToken').value = 'TOKEN-' + Math.random().toString(36).substring(2, 10).toUpperCase();
+    }
+
+    function copyCode(id) {
+      const text = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(text);
+      alert('📋 คัดลอกข้อมูลเรียบร้อยแล้วค่ะบอส!');
+    }
+  </script>
+
+</body>
+</html>

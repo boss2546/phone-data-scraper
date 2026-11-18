@@ -41,4 +41,5 @@ projects/app_store_scraper/data/app_screenshots/*/screenshot_*.png
 # Legacy Archives & Temp Folders
 _archive_legacy/
 _to_delete/
+accs.txt
 

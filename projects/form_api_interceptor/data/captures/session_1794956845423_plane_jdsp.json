@@ -1,0 +1,452 @@
+{
+  "apiCalls": [
+    {
+      "associatedFormSnapshot": [],
+      "associatedSubmitButton": null,
+      "durationMs": 12,
+      "method": "POST",
+      "requestBody": {
+        "bi": {
+          "be": "Blink",
+          "bev": "157",
+          "bv": "157",
+          "ov": "26.5"
+        },
+        "dt": "cache",
+        "eventType": 1,
+        "firstContentfulPaint": 0,
+        "firstPaint": 0,
+        "location": "https://devspace.mergesoft.cloud/aiis/projects/8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe/issues/",
+        "memory": {
+          "jsHeapSizeLimit": 4395630592,
+          "totalJSHeapSize": 215069457,
+          "usedJSHeapSize": 169706365
+        },
+        "nt": "reload",
+        "pageloadId": "315e7b47-4b72-40fa-8551-4a24ed52e552",
+        "referrer": "https://devspace.mergesoft.cloud/",
+        "siteToken": "8dd9774610b445c8a8731197cb7f2307",
+        "st": 2,
+        "startTime": 1794956847185,
+        "timingsV2": {
+          "connectEnd": 2,
+          "connectStart": 2,
+          "decodedBodySize": 6875,
+          "domComplete": 156,
+          "domInteractive": 133,
+          "domainLookupEnd": 2,
+          "domainLookupStart": 2,
+          "finalResponseHeadersStart": 108,
+          "firstInterimResponseStart": 0,
+          "loadEventEnd": 156,
+          "loadEventStart": 156,
+          "nextHopProtocol": "h3",
+          "requestStart": 5,
+          "responseEnd": 110,
+          "responseStart": 108,
+          "secureConnectionStart": 2,
+          "transferSize": 300
+        },
+        "versions": {
+          "fl": "2024.11.0",
+          "js": "2026.10.1",
+          "timings": 2
+        }
+      },
+      "requestHeaders": {
+        "content-type": "application/json"
+      },
+      "responseBody": "",
+      "status": 204,
+      "statusText": "",
+      "timestamp": 1794956847353,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/cdn-cgi/rum?"
+    },
+    {
+      "associatedFormSnapshot": [],
+      "associatedSubmitButton": null,
+      "durationMs": 25,
+      "method": "GET",
+      "requestBody": null,
+      "requestHeaders": {
+        "Accept": "application/json, text/plain, */*"
+      },
+      "responseBody": {
+        "config": {
+          "admin_base_url": null,
+          "app_base_url": null,
+          "enable_signup": true,
+          "file_size_limit": 5242880,
+          "github_app_name": "",
+          "has_llm_configured": false,
+          "has_unsplash_configured": false,
+          "instance_changelog_url": "https://sites.plane.so/pages/691ef037bcfe416a902e48cb55f59891/",
+          "is_email_password_enabled": true,
+          "is_gitea_enabled": false,
+          "is_github_enabled": false,
+          "is_gitlab_enabled": false,
+          "is_google_enabled": false,
+          "is_magic_login_enabled": false,
+          "is_self_managed": true,
+          "is_smtp_configured": false,
+          "is_workspace_creation_disabled": false,
+          "posthog_api_key": null,
+          "posthog_host": null,
+          "slack_client_id": null,
+          "space_base_url": null
+        },
+        "instance": {
+          "created_at": "2026-11-02T03:26:45.946614Z",
+          "created_by": null,
+          "current_version": "1.4.3",
+          "deleted_at": null,
+          "domain": "",
+          "edition": "PLANE_COMMUNITY",
+          "id": "8dc127bc-c1ad-4658-a2fa-b50a6157a393",
+          "instance_id": "7a8ee3ed6f4dd855507dc970",
+          "instance_name": "Mergesoft",
+          "is_current_version_deprecated": false,
+          "is_setup_done": true,
+          "is_signup_screen_visited": false,
+          "is_support_required": true,
+          "is_telemetry_enabled": true,
+          "is_test": false,
+          "is_verified": false,
+          "last_checked_at": "2026-11-04T03:52:30.858798Z",
+          "latest_version": "v1.4.3",
+          "namespace": null,
+          "updated_at": "2026-11-04T03:52:30.862450Z",
+          "updated_by": null,
+          "whitelist_emails": null,
+          "workspaces_exist": true
+        }
+      },
+      "status": 200,
+      "statusText": "",
+      "timestamp": 1794956847403,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/api/instances/"
+    },
+    {
+      "associatedFormSnapshot": [],
+      "associatedSubmitButton": null,
+      "durationMs": 1,
+      "method": "GET",
+      "requestBody": null,
+      "requestHeaders": {
+        "Accept": "application/json, text/plain, */*"
+      },
+      "responseBody": {
+        "avatar": "",
+        "avatar_url": null,
+        "cover_image": null,
+        "cover_image_url": null,
+        "date_joined": "2026-11-04T05:39:41.547463Z",
+        "display_name": "ratchanon.r",
+        "email": "ratchanon.r@aiis-asia.com",
+        "first_name": "Boss",
+        "id": "c22765bc-6002-4ec1-9f89-3411779df217",
+        "is_active": true,
+        "is_bot": false,
+        "is_email_verified": false,
+        "is_password_autoset": false,
+        "last_login_medium": "email",
+        "last_login_time": "2026-11-17T12:07:01.376682Z",
+        "last_name": "",
+        "user_timezone": "UTC",
+        "username": "547597900d0f4eb0b7d6d584e1c78b0c"
+      },
+      "status": 200,
+      "statusText": "",
+      "timestamp": 1794956847405,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/api/users/me/"
+    },
+    {
+      "associatedFormSnapshot": [],
+      "associatedSubmitButton": null,
+      "durationMs": 1,
+      "method": "GET",
+      "requestBody": null,
+      "requestHeaders": {
+        "Accept": "application/json, text/plain, */*"
+      },
+      "responseBody": {
+        "email": "ratchanon.r@aiis-asia.com",
+        "id": "c22765bc-6002-4ec1-9f89-3411779df217",
+        "workspace": {
+          "fallback_workspace_id": "0ebe33a1-6741-4788-b899-ced8a06a764c",
+          "fallback_workspace_slug": "aiis",
+          "invites": 0,
+          "last_workspace_id": "0ebe33a1-6741-4788-b899-ced8a06a764c",
+          "last_workspace_logo": "",
+          "last_workspace_name": "AIIS",
+          "last_workspace_slug": "aiis"
+        }
+      },
+      "status": 200,
+      "statusText": "",
+      "timestamp": 1794956847406,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/api/users/me/settings/"
+    },
+    {
+      "associatedFormSnapshot": [],
+      "associatedSubmitButton": null,
+      "durationMs": 398,
+      "method": "GET",
+      "requestBody": null,
+      "requestHeaders": {
+        "Accept": "application/json, text/plain, */*"
+      },
+      "responseBody": [
+        {
+          "background_color": "#c7F8CF",
+          "created_at": "2026-11-02T03:32:47.470635Z",
+          "created_by": "e998c7f8-75a1-4a69-88b8-b679967678c8",
+          "deleted_at": null,
+          "id": "0ebe33a1-6741-4788-b899-ced8a06a764c",
+          "logo": null,
+          "logo_asset": null,
+          "logo_url": null,
+          "name": "AIIS",
+          "organization_size": "11-50",
+          "owner": "e998c7f8-75a1-4a69-88b8-b679967678c8",
+          "role": 15,
+          "slug": "aiis",
+          "timezone": "Asia/Bangkok",
+          "total_members": 8,
+          "updated_at": "2026-11-02T04:18:31.854764Z",
+          "updated_by": "e998c7f8-75a1-4a69-88b8-b679967678c8"
+        }
+      ],
+      "status": 200,
+      "statusText": "",
+      "timestamp": 1794956847803,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/api/users/me/workspaces/"
+    },
+    {
+      "associatedFormSnapshot": [],
+      "associatedSubmitButton": null,
+      "durationMs": 112,
+      "method": "GET",
+      "requestBody": null,
+      "requestHeaders": {
+        "Accept": "application/json, text/plain, */*"
+      },
+      "responseBody": {
+        "company_role": null,
+        "created_at": "2026-11-04T05:40:45.964669Z",
+        "created_by": "c22765bc-6002-4ec1-9f89-3411779df217",
+        "default_props": {
+          "display_filters": {
+            "calendar_date_range": "",
+            "group_by": null,
+            "layout": "list",
+            "order_by": "-created_at",
+            "show_empty_groups": true,
+            "sub_issue": true,
+            "type": null
+          },
+          "display_properties": {
+            "assignee": true,
+            "attachment_count": true,
+            "created_on": true,
+            "due_date": true,
+            "estimate": true,
+            "key": true,
+            "labels": true,
+            "link": true,
+            "priority": true,
+            "start_date": true,
+            "state": true,
+            "sub_issue_count": true,
+            "updated_on": true
+          },
+          "filters": {
+            "assignees": null,
+            "created_by": null,
+            "labels": null,
+            "priority": null,
+            "start_date": null,
+            "state": null,
+            "state_group": null,
+            "subscriber": null,
+            "target_date": null
+          }
+        },
+        "deleted_at": null,
+        "draft_issue_count": 0,
+        "explored_features": {},
+        "getting_started_checklist": {},
+        "id": "574f59ae-7d70-41b1-b757-4521e10f7cf6",
+        "is_active": true,
+        "issue_props": {
+          "all_issues": true,
+          "assigned": true,
+          "created": true,
+          "subscribed": true
+        },
+        "member": "c22765bc-6002-4ec1-9f89-3411779df217",
+        "role": 15,
+        "tips": {},
+        "updated_at": "2026-11-04T05:40:45.964682Z",
+        "updated_by": null,
+        "view_props": {
+          "display_filters": {
+            "calendar_date_range": "",
+            "group_by": null,
+            "layout": "list",
+            "order_by": "-created_at",
+            "show_empty_groups": true,
+            "sub_issue": true,
+            "type": null
+          },
+          "display_properties": {
+            "assignee": true,
+            "attachment_count": true,
+            "created_on": true,
+            "due_date": true,
+            "estimate": true,
+            "key": true,
+            "labels": true,
+            "link": true,
+            "priority": true,
+            "start_date": true,
+            "state": true,
+            "sub_issue_count": true,
+            "updated_on": true
+          },
+          "filters": {
+            "assignees": null,
+            "created_by": null,
+            "labels": null,
+            "priority": null,
+            "start_date": null,
+            "state": null,
+            "state_group": null,
+            "subscriber": null,
+            "target_date": null
+          }
+        },
+        "workspace": "0ebe33a1-6741-4788-b899-ced8a06a764c"
+      },
+      "status": 200,
+      "statusText": "",
+      "timestamp": 1794956847917,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/api/workspaces/aiis/workspace-members/me/"
+    },
+    {
+      "associatedFormSnapshot": [
+        {
+          "formId": {},
+          "id": "name",
+          "label": "Title",
+          "name": "name",
+          "pageUrl": "https://devspace.mergesoft.cloud/aiis/projects/8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe/issues/",
+          "placeholder": "Title",
+          "selector": "#name",
+          "tag": "input",
+          "type": "text",
+          "updatedAt": 1794956856774,
+          "value": "ทดสอบ",
+          "xpath": "//*[@id=\"name\"]"
+        }
+      ],
+      "associatedSubmitButton": {
+        "selector": "form > div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > button",
+        "text": "Save",
+        "timestamp": 1794956923665,
+        "type": "submit",
+        "xpath": "/div[1]/form[1]/div[3]/div[2]/div[2]/div[2]/button[1]"
+      },
+      "durationMs": 143,
+      "method": "POST",
+      "requestBody": {
+        "assignee_ids": [],
+        "cycle_id": null,
+        "description_html": "<h1 class=\"editor-heading-block\" data-id=\"7339adc7-c2e8-4cb7-b55f-918da4d383d2\">12323423 </h1><p class=\"editor-paragraph-block\" data-id=\"efbdfc67-b859-4abc-89e3-345484061534\">/</p>",
+        "estimate_point": null,
+        "label_ids": [],
+        "module_ids": null,
+        "name": "ทดสอบ",
+        "parent_id": null,
+        "priority": "medium",
+        "project_id": "8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe",
+        "start_date": "2026-11-18",
+        "state_id": "18c704ce-24eb-4030-b528-3193ecbd3e46",
+        "target_date": null,
+        "type_id": null
+      },
+      "requestHeaders": {
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json"
+      },
+      "responseBody": {
+        "archived_at": null,
+        "assignee_ids": [],
+        "attachment_count": null,
+        "completed_at": null,
+        "created_at": "2026-11-17T23:08:43.755394Z",
+        "created_by": "c22765bc-6002-4ec1-9f89-3411779df217",
+        "cycle_id": null,
+        "deleted_at": null,
+        "estimate_point": null,
+        "id": "23222c36-786b-4cb7-afe1-97647ee0d0d2",
+        "is_draft": false,
+        "label_ids": [],
+        "link_count": null,
+        "module_ids": [],
+        "name": "ทดสอบ",
+        "parent_id": null,
+        "priority": "medium",
+        "project_id": "8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe",
+        "sequence_id": 61,
+        "sort_order": 65535,
+        "start_date": "2026-11-18",
+        "state_id": "18c704ce-24eb-4030-b528-3193ecbd3e46",
+        "sub_issues_count": null,
+        "target_date": null,
+        "updated_at": "2026-11-17T23:08:43.755410Z",
+        "updated_by": null
+      },
+      "status": 201,
+      "statusText": "",
+      "timestamp": 1794956923820,
+      "type": "XHR",
+      "url": "https://devspace.mergesoft.cloud/api/workspaces/aiis/projects/8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe/issues/"
+    }
+  ],
+  "endTime": 1794956928728,
+  "formFields": [
+    {
+      "formId": {},
+      "id": "name",
+      "label": "Title",
+      "name": "name",
+      "pageUrl": "https://devspace.mergesoft.cloud/aiis/projects/8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe/issues/",
+      "placeholder": "Title",
+      "selector": "#name",
+      "tag": "input",
+      "type": "text",
+      "updatedAt": 1794956856774,
+      "value": "ทดสอบ",
+      "xpath": "//*[@id=\"name\"]"
+    }
+  ],
+  "id": "session_1794956845423",
+  "startTime": 1794956845423,
+  "status": "COMPLETED",
+  "submitButton": {
+    "selector": "form > div:nth-of-type(3) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > button",
+    "text": "Save",
+    "timestamp": 1794956923665,
+    "type": "submit",
+    "xpath": "/div[1]/form[1]/div[3]/div[2]/div[2]/div[2]/button[1]"
+  },
+  "title": "Joint Digital Service Platform - Work items - DevSpace",
+  "url": "https://devspace.mergesoft.cloud/aiis/projects/8fa8b7f5-902b-4ea4-ba03-a6858a9b15fe/issues/"
+}

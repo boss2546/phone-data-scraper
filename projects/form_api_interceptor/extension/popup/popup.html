@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form & API Interceptor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <span class="brand-icon">🌱</span>
+        <div class="brand-info">
+          <h1>Form & API Interceptor</h1>
+          <p class="subtitle">ระบบดัก API & บันทึกฟอร์มอัจฉริยะ</p>
+        </div>
+      </div>
+      <div id="status-pill" class="status-pill idle">IDLE</div>
+    </header>
+
+    <!-- Main Controller Card -->
+    <section class="card control-card">
+      <button id="toggle-record-btn" class="btn btn-record">
+        <span class="btn-icon">🔴</span>
+        <span id="btn-text">เริ่มบันทึก (Start Recording)</span>
+      </button>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-label">📝 ฟอร์มที่กรอก</span>
+          <span id="stat-fields-count" class="stat-value">0</span>
+          <span class="stat-unit">Elements</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">🌐 Network API</span>
+          <span id="stat-api-count" class="stat-value">0</span>
+          <span class="stat-unit">Requests</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">🍪 Cookies & Auth</span>
+          <span id="stat-auth-count" class="stat-value">0</span>
+          <span class="stat-unit">Keys</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Active Details Summary -->
+    <section class="card preview-card">
+      <div class="card-title">
+        <span>🔍 ข้อมูลที่ดักได้ล่าสุด</span>
+        <span id="page-tag" class="badge-mini">-</span>
+      </div>
+      <div id="latest-preview" class="preview-content">
+        <p class="empty-hint">ยังไม่มีการบันทึก กดปุ่ม "เริ่มบันทึก" แล้วกรอกฟอร์มจริงบนหน้าเว็บได้เลยค่ะ</p>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="actions-group">
+      <!-- HERO BUTTON FOR VIBE CODING -->
+      <button id="copy-ai-prompt-btn" class="btn btn-ai-prompt" title="คัดลอกข้อมูลและบริบททั้งหมดเป็น Prompt ให้ AI เขียนโค้ดทันที">
+        <span class="btn-icon">🤖</span>
+        <span id="copy-ai-text">คัดลอก Prompt สำหรับ AI (1 คลิก)</span>
+      </button>
+
+      <button id="open-sidepanel-btn" class="btn btn-secondary">
+        <span>📖 เปิดสตูดิโอเต็มจอ (Side Panel)</span>
+      </button>
+      <div class="button-row">
+        <button id="quick-refill-btn" class="btn btn-outline" title="กรอกข้อมูลที่เคยบันทึกกลับลงหน้าเว็บ">
+          <span>⚡ กรอกซ้ำ (Re-Fill)</span>
+        </button>
+        <button id="export-json-btn" class="btn btn-outline" title="ดาวน์โหลด JSON Schema">
+          <span>💾 โหลด JSON</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>AI Automation & Interceptor Suite • v1.2.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -21,6 +21,7 @@ PROJECTS = {
     "11": ("pydronewire", "🛸 pyDroneWire Controller (ควบคุมโดรน FLOW-UFO ผ่าน UDP/RTSP & HUD)", "projects/pydronewire/run.py"),
     "12": ("media_downloader_extension", "🎬 Universal Media Grabber Extension (ดึงภาพ/วิดีโอเป็น .PNG/.JPG/.MP4)", "projects/media_downloader_extension/run.py"),
     "13": ("vesselfinder_scraper", "🚢 VesselFinder Scraper (เรดาร์เรือเดินสมุทร AIS สด, เส้นทางเดินเรือ & ท่าเรือทั่วโลก)", "projects/vesselfinder_scraper/run.py"),
+    "14": ("form_api_interceptor", "🎯 Form & API Interceptor (ดัก API & แผนที่ฟอร์มเพื่อสร้างบอทอัตโนมัติ)", "projects/form_api_interceptor/run.py"),
 }
 
 ALIASES = {
@@ -37,6 +38,7 @@ ALIASES = {
     "drone": "11", "pydronewire": "11",
     "media": "12", "ext": "12", "extension": "12",
     "vessel": "13", "vesselfinder": "13", "ship": "13", "ais": "13",
+    "form": "14", "interceptor": "14", "form-api": "14", "bot": "14",
 }
 
 def print_banner():

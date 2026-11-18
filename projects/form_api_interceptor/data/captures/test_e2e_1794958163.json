@@ -1,0 +1,38 @@
+{
+  "id": "test_e2e_1794958163",
+  "url": "https://httpbin.org/post",
+  "title": "ห้องแล็บทดสอบสด",
+  "formFields": [
+    {
+      "label": "ชื่อ",
+      "name": "first_name",
+      "selector": "#fn",
+      "value": "กฤษณะ",
+      "type": "text"
+    },
+    {
+      "label": "อีเมล",
+      "name": "email",
+      "selector": "#em",
+      "value": "boss@meuu.club",
+      "type": "email"
+    }
+  ],
+  "submitButton": {
+    "text": "ส่งข้อมูล",
+    "selector": "#btn-submit"
+  },
+  "apiCalls": [
+    {
+      "url": "https://httpbin.org/post",
+      "method": "POST",
+      "requestHeaders": {
+        "Content-Type": "application/json"
+      },
+      "requestBody": {
+        "first_name": "กฤษณะ",
+        "email": "boss@meuu.club"
+      }
+    }
+  ]
+}
