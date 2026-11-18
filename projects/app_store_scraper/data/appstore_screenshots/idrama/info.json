@@ -1,0 +1,70 @@
+{
+  "id": "idrama",
+  "name": "iDrama",
+  "track_name": "iDrama – Short Dramas & Reels",
+  "artist_name": "HK Good Drama Technology Limited",
+  "track_id": 6741501595,
+  "bundle_id": "com.gooddrama.idrama",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "1.37.1",
+  "price": "Free",
+  "rating": 4.37852,
+  "rating_count": 4211,
+  "file_size_mb": 218.6,
+  "appstore_url": "https://apps.apple.com/th/app/idrama-short-dramas-reels/id6741501595?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/idrama/logo.png",
+  "description": "Turn every break into a cliffhanger. Stream original short dramas filled with romance, revenge, forbidden love, hidden identities, and shocking twists. Every episode pulls you into the story in minutes.\n\nExplore a growing collection of must-watch stories, from sweet romance and second-chance love to dramatic comebacks, CEO stories, palace intrigue, suspense, fantasy, and comedy. With fast-moving plots, easy-to-follow subtitles, and cliffhangers that keep you watching, there is always another story waiting on iDrama.\n\nWHY YOU'LL LOVE IDRAMA\n\n- Original Short Dramas: Story-first series made for quick, satisfying viewing.\n- Popular Genres: Romance, revenge, suspense, fantasy, comedy, and more.\n- Quick Episodes: Enjoy a complete story moment whenever you have a few minutes.\n- Personalized Picks: Discover dramas based on what you enjoy watching.\n- Regular Updates: Find new stories and episodes added to the collection.\n\nLife may be routine, but your stories don't have to be. Find your next m...",
+  "release_notes": "Fixed known bugs.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 0,
+  "total_screenshots": 6,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/idrama/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/af/8f/28af8fda-bc27-22a1-fb65-f9a08fb51443/ios6.9_1_Uff081320x2868_Uff09_U22641M_U82f1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/idrama/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/34/a4/1634a40c-d31c-4e1d-dab1-3a9f49bad9d3/ios6.9_2_Uff081320x2868_Uff09_U22641M_U82f1_.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/idrama/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/c4/ee/b2c4ee59-5ea4-9c30-4701-7dc505b0de02/ios6.9_3_Uff081320x2868_Uff09_U22641M_U82f1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/idrama/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/58/7a/f5587a27-cf4b-b1b9-f63e-249e18e1f05f/ios6.9_4_Uff081320x2868_Uff09_U22641M_U82f1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/idrama/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/17/e8/ed/17e8ed33-b873-00b0-c25a-1b8268fbd738/ios6.9_5_Uff081320x2868_Uff09_U22641M_U82f1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/idrama/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/38/52/4f3852d4-40f0-1bda-0a3a-d6e4b2a4883b/ios6.9_6_Uff081320x2868_Uff09_U22641M_U82f1.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": []
+}

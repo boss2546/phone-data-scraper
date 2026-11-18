@@ -1,0 +1,106 @@
+{
+  "id": "disney_plus",
+  "name": "Disney+ Hotstar",
+  "track_name": "Disney+",
+  "artist_name": "Disney",
+  "track_id": 1446075923,
+  "bundle_id": "com.disney.disneyplus",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "5.21.0",
+  "price": "Free",
+  "rating": 1.69589,
+  "rating_count": 1095,
+  "file_size_mb": 310.4,
+  "appstore_url": "https://apps.apple.com/th/app/disney/id1446075923?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/disney_plus/logo.png",
+  "description": "**NEW APP**\nWith the world’s greatest stories from Disney, Pixar, Marvel, Star Wars and National Geographic, plus general entertainment with Hulu, discover everything you imagined, plus more, with Disney+. Watch the latest blockbuster movies, award-winning original series, documentaries, classics, exclusive specials, all in one place.\n\nStream and download original series like Only Murders in the Building, Andor, and Daredevil: Born Again plus fan favourites including The Simpsons, Grey's Anatomy and Mufasa: The Lion King. With fresh stories added regularly, there's also something new to explore.\n\nWith Disney+, you get:\n\n• Exclusive originals from the creators of Disney, Pixar, Marvel, Star Wars, National Geographic and Hulu\n• ESPN Africa’s two linear channels\n• Access to hit TV series, movies, throwbacks, and timeless classics\n• Easy-to-use parental controls for family-friendly viewing\n• An ever-growing selection of titles in 4K (compatible equipment required)\n• The capacity to watch o...",
+  "release_notes": "Keep your Disney+ app updated to make sure you don’t miss out on the best possible streaming experience.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 11,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/7a/52/c07a5236-65e3-9714-0111-2fe96be48537/01.EN-GB_Mobile_-_iOS_-_5.5_-_Home_-_1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/68/fd/d868fda5-eb23-0470-3d15-d3d230047bf5/02.EN-GB_Mobile_-_iOS_-_5.5_-_Home_-_2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/8b/90/1b8b908a-3fc0-0e58-1333-d57de9e6eaee/03.EN-GB_Mobile_-_iOS_-_5.5_-_Originals.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/73/c0/6a/73c06a79-f7b6-88f9-85f4-849d15489c19/04EN-GB_Mobile_-_iOS_-_5.5_-_Movies.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e9/98/0d/e9980d37-b64d-f514-5cdb-94e029a054b9/05.EN-GB_Mobile_-_iOS_-_5.5_-_PCON.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/c1/74/77c174a2-38b0-668b-e348-16dd90489171/06.EN-GB_Mobile_-_iOS_-_5.5_-_MultiTitles.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ee/73/88/ee7388bc-73a5-91ae-e5c2-57a3749c119d/01.EN-GB_Tablet_-_iOS_-_Home.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/7a/4d/3c7a4d18-21ad-9bc9-2cfd-4371a08da899/02.EN-GB_Tablet_-_iOS_-_Originals.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/24/c6/b024c6c6-1bbe-c623-5711-c4f62276caca/03.EN-GB_Tablet_-_iOS_-_Movies.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a4/94/41/a49441ab-c11d-3775-ba3a-db6aacb14bc4/04.EN-GB_Tablet_-_iOS_-_PCON.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/disney_plus/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/81/d2/ec/81d2ecdb-c2ed-0acc-8bfa-65ac9821afea/05.EN-GB_Tablet_-_iOS_-_MultiTitles.jpg/2048x2732bb.png"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "ch3_plus",
+  "name": "CH3 Plus",
+  "track_name": "CH3 Plus",
+  "artist_name": "บริษัท บีซีไอ คอร์ปอเรชั่น จํากัด",
+  "track_id": 475642354,
+  "bundle_id": "com.BECi.ThaiTV3",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "4.112.0",
+  "price": "Free",
+  "rating": 2.25107,
+  "rating_count": 6783,
+  "file_size_mb": 172.4,
+  "appstore_url": "https://apps.apple.com/th/app/ch3-plus/id475642354?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/ch3_plus/logo.png",
+  "description": "3Plus ดูสดและย้อนหลัง ครบทุกความบันเทิงในที่เดียว\n\n- อัปเดตความบันเทิงใหม่ทุกวัน ดูได้ทั้งสดและย้อนหลัง ไม่มีพลาดทุกช่วงเวลา\n- ฟินต่อเนื่องกับคลังคอนเทนต์ช่อง 3 รวมละครยอดนิยมกว่า 500 เรื่อง ให้คุณรับชมได้อย่างจุใจ\n- ย้อนวันวานกับซีรีส์พากย์ไทยระดับตำนานโดยทีมพากย์ช่อง 3\n- สนุกได้ทุกที่ ทุกเวลา รองรับทุกอุปกรณ์ เชื่อมต่อสะดวก ใช้งานง่าย รับชมได้ทุกหน้าจอที่คุณต้องการ\n- อินทุกโมเมนต์ กับไลฟ์สตรีมมิ่งสุดเอ็กซ์คลูซีฟของเหล่าดาราซุปตาร์ช่อง3\n- ครบทุกความบันเทิง ดูได้ทั้งครอบครัว รวมละคร ภาพยนตร์ ซีรีส์นานาชาติ การ์ตูน และเพลง ตอบโจทย์ทุกวัย\n\nพิเศษสำหรับสมาชิก 3Plus Premium\n\n- เข้าถึงคอนเทนต์เอ็กซ์คลูซีฟ และเบื้องหลังที่หาชมที่ไหนไม่ได้\n- สิทธิพิเศษต่างๆ อาทิ ส่วนลดบัตร Live Streaming การร่วมกิจกรรมออนไลน์ และกิจกรรมหน้างาน (on-ground) เป็นต้น\n- รับชมได้ต่อเนื่องแบบไม่มีโฆษณาคั่น ให้ทุกช่วงเวลาความบันเทิงไม่มีสะดุด\n- รับชมไปทำงานไปได้พร้อมกัน ด้วยฟีเจอร์ Picture-in-Picture\n- รับชมบนจอใหญ่ ด้วยการแคสต์จากมือถือขึ้นทีวี\n- ไม่พลาดทุกตอน ด้วยฟีเจอร์ Continue Watching หยุดตรงไหน ดูต่อได้ทันที\n\nO...",
+  "release_notes": "• ปรับปรุงประสิทธิภาพการใช้งานเพื่อประสบการณ์ที่ดียิ่งขึ้น",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 12,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/6a/0b/116a0b9d-4897-a42f-ea4e-47f332b4ec7c/4a70bb01-71a1-44a4-87c4-1fc755caaaa0_Tutorial01-Size5.5.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e8/53/10/e8531055-02ff-a132-8c22-11715cc5de87/60aafd24-1e6e-4ec6-a0c8-5d42bc5ed237_Tutorial02-Size5.5.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/6e/e8/436ee870-852f-b457-7140-4c80c3a72f76/e596f130-6250-45bd-8de9-ab98a5de61b6_Tutorial03-Size5.5.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8c/0c/7c/8c0c7c4e-a893-eac5-060d-2cf95a186784/ddb5dbb8-6605-443d-9896-dc2399843f51_Tutorial04-Size5.5.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/90/fd/b0/90fdb0a0-4625-b810-e7b8-3c32f9b0ac76/d16b583d-a1bc-4923-a22f-892f3785c847_Tutorial05-Size5.5.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/af/33/d4/af33d461-6ac7-73ff-475e-96a64c7a1c36/b082a6d7-da40-4812-9e0c-99bb204b9864_Tutorial06-Size5.5.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/7d/5b/0a7d5b7d-4d50-209c-445b-50e6619e9550/259685aa-d370-4ad0-bc10-703f30e99322_Tutorial01-Size12.9.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bf/a7/2e/bfa72e7a-ca71-56a7-dda5-ccbc9542c33a/947dad1f-15a8-42fd-a1a6-4b7b2dfe9e23_Tutorial02-Size12.9.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a3/44/41/a3444194-8589-7b88-e402-7354caf18585/244f0b61-4ba7-47bf-b2ee-07188cb0ab9e_Tutorial03-Size12.9.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/55/32/07/553207e3-e687-d6db-ab90-242743780ccf/92443c41-fbcb-42a1-9eba-d20a911d6db5_Tutorial04-Size12.9.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/3c/ab/353cab49-a2a4-0489-83f5-243f6cdb38aa/59a5aa43-3db0-44ac-b6cf-66a4bdc16037_Tutorial05-Size12.9.png/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/ch3_plus/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1a/ba/24/1aba241e-864d-1f2a-6d41-ba28a6f76cc0/6bd384a6-eeb0-4307-9cb9-1a75b04c37c1_Tutorial06-Size12.9.png/2048x2732bb.png"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "gemini",
+  "name": "Google",
+  "track_name": "Google - More ways to search",
+  "artist_name": "Google",
+  "track_id": 284815942,
+  "bundle_id": "com.google.GoogleMobile",
+  "category": "ปัญญาประดิษฐ์ (AI Tools)",
+  "primary_genre": "Utilities",
+  "genres": [
+    "Utilities",
+    "Reference"
+  ],
+  "version": "447.9",
+  "price": "Free",
+  "rating": 4.71454,
+  "rating_count": 492858,
+  "file_size_mb": 496.9,
+  "appstore_url": "https://apps.apple.com/th/app/google-more-ways-to-search/id284815942?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/gemini/logo.png",
+  "description": "Download the Google app to find quick answers, explore your interests, and ask anything on your mind in any way. Try AI in Google Search with AI Mode, Lens, Search Live, and more.\n\nFeature highlights*:\n\n• AI Mode: Get AI-powered responses to your toughest questions with AI Mode–talk, type, or snap a photo to get started, and ask follow-up questions to dig deeper. You’ll continue to see a range of helpful links so you can keep exploring across the web.\n• Google Lens: See something you like? Snap a photo and discover where to shop for it, find related images, and more. Refine your camera searches by adding words – whether you want those shoes but in ‘blue’, or want to learn how to ‘repair’ that broken bit on your bicycle.\n• Search Live: Have a live, real-time conversation in Search by using your voice and camera to easily get answers and on-screen links to the web when you need them.\n• AI Overviews: Get a snapshot of key information about a topic or question, like ’how to fix a broken zi...",
+  "release_notes": "• Bug fixes and performance improvements.\n\nWe are always working to make the app faster and more stable. If you are enjoying the app, please consider leaving a review or rating!",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 4,
+  "total_screenshots": 11,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/75/e0/4475e0f5-ccde-7e0a-f761-f168ca1164eb/APP_IPHONE_55-0.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/85/46/11/8546112e-4122-f745-ec6f-c8875cba7aa5/APP_IPHONE_55-1.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/12/41/f4124135-b142-d0a1-5719-105266b08604/APP_IPHONE_55-2.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/a4/88/68a488f1-0450-802d-4abb-5af9a61f2800/APP_IPHONE_55-3.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/ae/c2/d8aec237-38c5-ea89-566f-26d2b37bd37a/APP_IPHONE_55-4.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/25/05/2b/25052bf1-1def-fab4-18fb-307ee5f46521/APP_IPHONE_55-5.png/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/gemini/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/e9/bf/53e9bf22-4422-a53d-e71c-9ed4193d1b89/APP_IPHONE_55-6.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/gemini/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/e7/7b/82e77b43-2872-428a-fcd4-5ea927e20867/APP_IPAD_PRO_129-0.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/gemini/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/51/d7/d3/51d7d3ad-bfef-3584-a700-6d2fa8499a9f/APP_IPAD_PRO_129-1.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/gemini/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ce/ee/2c/ceee2c6e-04dd-1ee3-5d47-879d942cd483/APP_IPAD_PRO_129-2.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/gemini/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/13/99/9e139968-fca8-09bd-2204-ab5b9d25ec3d/APP_IPAD_PRO_129-3.png/2048x2732bb.png"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "dramabox",
+  "name": "DramaBox",
+  "track_name": "DramaBox - Stream Drama Shorts",
+  "artist_name": "STORYMATRIX PTE. LTD.",
+  "track_id": 6445905219,
+  "bundle_id": "com.storymatrix.drama",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "7.1.1",
+  "price": "Free",
+  "rating": 4.78006,
+  "rating_count": 186910,
+  "file_size_mb": 195.8,
+  "appstore_url": "https://apps.apple.com/th/app/dramabox-stream-drama-shorts/id6445905219?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/dramabox/logo.png",
+  "description": "Looking for something to watch during your daily commute, lunch break, or just to unwind after a long day? Look no further than our Dramabox!\nWith our app, you can access a huge selection of high-quality content from some of the best creators out there. From indie films to award-winning TV series, we've got something for everyone. And with new content added regularly, you'll always have something fresh to watch.\n\nHere are just a few of the features you'll love about our app:\n\n- Stream your favorite shows and movies in HD quality, no matter where you are.\n- Discover new content based on your viewing preferences and what's trending in the app.\n- Get personalized recommendations based on your viewing history and ratings.\n- Enjoy ad-free streaming and uninterrupted viewing.\n- Create playlists and save your favorite titles for later.\n\nSo what are you waiting for? Download our app now and start watching the best short movies, TV series, and drama today!\n\nNote: If you subscribe through Apple,...",
+  "release_notes": "1. Added many popular dramas.\n2. Optimize the appearance of some pages.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 0,
+  "total_screenshots": 6,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/dramabox/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/bf/ed/26bfed55-ce3f-9042-5413-f0a923ae8045/AS_U65b0_U7248_U82f1_U8bed-1242-2688-1.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/dramabox/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5d/47/20/5d47204f-886a-e1fa-8cb5-d5fce3fd24e1/AS_U65b0_U7248_U82f1_U8bed-1242-2688-2.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/dramabox/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2d/c9/84/2dc9845c-5598-1ecc-e0bd-6e4592513c09/AS_U65b0_U7248_U82f1_U8bed-1242-2688-3.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/dramabox/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/c9/90/dbc990cf-56ed-16a3-ad98-4a046348cc75/AS_U65b0_U7248_U82f1_U8bed-1242-2688-6.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/dramabox/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/2a/b8/df2ab8a7-1fed-a41b-b9e7-6ee2fe0b77a6/AS_U65b0_U7248_U82f1_U8bed-1242-2688-5.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/dramabox/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/ef/1f/ddef1ff4-4dd9-3157-cdbd-45320a29f66d/AS_U65b0_U7248_U82f1_U8bed-1242-2688-4.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": []
+}

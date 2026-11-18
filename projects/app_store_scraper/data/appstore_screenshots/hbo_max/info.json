@@ -1,0 +1,100 @@
+{
+  "id": "hbo_max",
+  "name": "HBO Max",
+  "track_name": "HBO Max: Watch Movies & TV",
+  "artist_name": "WarnerMedia Global Digital Services, LLC",
+  "track_id": 1666653815,
+  "bundle_id": "com.wbd.stream",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "22.1.0",
+  "price": "Free",
+  "rating": 4.89717,
+  "rating_count": 126029,
+  "file_size_mb": 245.1,
+  "appstore_url": "https://apps.apple.com/th/app/hbo-max-watch-movies-tv/id1666653815?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/hbo_max/logo.png",
+  "description": "The most talked about shows and movies featuring the worlds of HBO, the DC Universe, Discovery, and beyond.  \n\nWith HBO Max you'll get:  \n• Access to thousands of TV shows and movies.  \n• Award-winning series that everyone's talking about — like the HBO Originals The Last of Us, Succession, The White Lotus, and House of the Dragon.  \n• Stream select live sports from some of your favorite events, leagues and teams. Availability varies by country or region, plan, and by subscription provider.  \n• Get access to TNT Sports with a TNT Sports plan. Enjoy live coverage of this season’s UEFA Champions League and Europa League matches, plus Premier League games. TNT Sports is only available in the UK.\n• The latest hits from HBO, Max Originals, Discovery, Cartoon Network, ID, DC, Adult Swim, and more. \n• Iconic favorite TV shows like Friends, Rick and Morty, 90 Day Fiancé, Looney Tunes, and more. \n• Family-friendly entertainment for the whole household. \n• Fascinating documentaries and unscripte...",
+  "release_notes": "This release brings bug fixes and performance improvements, plus in-app updates to make the experience even better:\n- Liquid Glass\n- iPhone Duo compatibility\nKeep your app updated to enjoy the best streaming experience.",
+  "total_iphone_screenshots": 5,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 10,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/67/41/ae/6741ae4b-f888-5ee3-cfe5-5197de04582c/0_APP_IPHONE_67_0.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/13/a7/5513a7a7-4c88-4da0-f12c-bb0824676fe8/1_APP_IPHONE_67_1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/e9/7d/9fe97d34-3e9d-660e-559e-e3c04b1beebd/2_APP_IPHONE_67_2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/5a/32/2b5a3269-0811-1147-8536-c4134bfbc8b9/3_APP_IPHONE_67_3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a4/80/f8/a480f88e-9a3a-805f-77fa-e5ee87431d3f/4_APP_IPHONE_67_4.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/aa/6f/47aa6f76-0861-687d-0380-c8b3aa1d9aeb/0_APP_IPAD_PRO_3GEN_129_0.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/61/60/2a616078-4895-ce19-da3e-a0e47f50fcaa/1_APP_IPAD_PRO_3GEN_129_1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/70/50/a57050f5-47fc-98ca-6ed2-a11c3feeb4ac/2_APP_IPAD_PRO_3GEN_129_2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/d5/50/37d5503a-df82-5167-e7cf-f2b5c0ac213f/3_APP_IPAD_PRO_3GEN_129_3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/hbo_max/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/c1/eb/8dc1eb8d-3771-3aea-3ffb-ecb79cfaef46/4_APP_IPAD_PRO_3GEN_129_4.jpg/2048x2732bb.png"
+    }
+  ]
+}

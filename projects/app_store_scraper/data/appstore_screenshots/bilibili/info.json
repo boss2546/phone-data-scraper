@@ -1,0 +1,156 @@
+{
+  "id": "bilibili",
+  "name": "Bilibili",
+  "track_name": "BiliBili -HD Anime, Videos",
+  "artist_name": "BALABOOM PTE LTD",
+  "track_id": 1548857482,
+  "bundle_id": "com.bstar.intl",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Photo & Video"
+  ],
+  "version": "3.83.2",
+  "price": "Free",
+  "rating": 4.8041,
+  "rating_count": 120953,
+  "file_size_mb": 237.0,
+  "appstore_url": "https://apps.apple.com/th/app/bilibili-hd-anime-videos/id1548857482?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/bilibili/logo.png",
+  "description": "About This App\n\nThe TOP 1 Anime Platform in Southeast Asia, with the 2000+ licensed anime titles, offers you the ultimate anime viewing experience with multilingual support. \n\nBiliBili is not just about anime—it's your gateway to a thriving community filled with diverse, high-quality UGC. Dive into a world where creativity and connection come alive!\n\nExplore a New World of Short Dramas\n\nBiliBili now brings you hundreds of high-quality short dramas—concise, emotional, and endlessly binge-worthy. Dive into new life stories in just minutes. Alongside our vast anime library, the community is buzzing with even more to watch, share, and love.\n\nCatch April 2026 releases, now streaming!\n\nOne Piece Elbaph Arc officially begins: Step into the “Land of Giants” and uncover the secrets of the world’s strongest nation. \nFarming Life in Another World Season 2: A must-watch healing series, enjoy a slow-paced, cozy farming life in Isekai.\nThat Time I Got Reincarnated as a Slime Season 4: The vision of ...",
+  "release_notes": "Fixed bugs and improved performance.",
+  "total_iphone_screenshots": 9,
+  "total_ipad_screenshots": 9,
+  "total_screenshots": 18,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1f/7e/39/1f7e399e-9478-eb16-6026-7d7215badc37/1.IP_U5408_U96c6-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/30/69/fb3069bb-57a9-99e1-3f77-7f05511afdcb/1.IP_U5408_U96c6-2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/fc/52/0dfc52bd-00f2-d8f7-fead-5d25fb549e34/2._U6d77_U8d3c_U738b-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/9a/71/b99a7128-7426-3957-da07-c1126c64a57f/3._U5f02_U4e16_U754c-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/0c/34/0b0c3429-78e0-bf2a-64f6-7f9580167f2b/4._U53f2_U83b1_U59c6-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4c/66/a3/4c66a371-5f95-b720-e365-7ea72bd06137/0x0ss_en_iphone.png/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/4b/df/564bdf6d-d108-4ad6-142c-526982ceb057/6.UGC_U5185_U5bb9.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/be/72/13be7265-1120-6147-a69d-6667a22877fb/7._U56fe_U6587_U529f_U80fd.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/appstore_screenshots/bilibili/iphone/screenshot_09.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/7d/d8/657dd815-2662-5c6b-9cd4-cc6ec39d4878/8._U4e0b_U8f7d.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/46/5b/bc465bac-cf0d-8f06-a7f8-272219d5e346/1.IP_U5408_U96c6-1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/f6/98/a8f6982c-957f-4d6d-d37a-091d760f9ad5/1.IP_U5408_U96c6-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ff/96/e8/ff96e867-3dc1-3c96-fb95-a266110531b7/2._U6d77_U8d3c_U738b-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/76/74/7676742e-2417-fe11-eb84-a92a2cb57a7c/3._U5f02_U4e16_U754c-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/63/44/a6/6344a6fe-9c69-c52c-7ea7-77865b9fe52b/4._U53f2_U83b1_U59c6-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/e8/e5/15e8e5e4-ea56-2299-353e-ca8570d7d222/0x0ss.png/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/97/d5/b997d51a-064b-4e54-e92d-5576fb3d1330/7._U56fe_U6587_U529f_U80fd.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b8/e6/e1/b8e6e13a-4c2e-18fd-5f95-a43693bb1d1a/6.UGC_U5185_U5bb9.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/appstore_screenshots/bilibili/ipad/screenshot_09.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/ca/90/2cca90ab-e719-2846-6375-0274729752b7/8._U4e0b_U8f7d.jpg/2048x2732bb.png"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "truevisions_now",
+  "name": "TrueVisions NOW",
+  "track_name": "TrueVisions NOW",
+  "artist_name": "TRUE VISIONS GROUP COMPANY LIMITED",
+  "track_id": 6479410006,
+  "bundle_id": "com.tvs.truevisionsnow",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "4.0.36",
+  "price": "Free",
+  "rating": 4.44679,
+  "rating_count": 5846,
+  "file_size_mb": 192.5,
+  "appstore_url": "https://apps.apple.com/th/app/truevisions-now/id6479410006?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/truevisions_now/logo.png",
+  "description": "TrueVisions NOW – Live Sports & Premium Entertainment All in One App\n\nNever miss a match or your favorite show with the TrueVisions NOW app. Enjoy world-class live sports, replays, and premium entertainment anytime, anywhere.\n\nLive sports from around the world\n*Top global sports including UEFA Champions League, LaLiga, and other leading European football leagues.\n*Formula 1, MotoGP, Tennis Grand Slams, Badminton, Golf, Snooker, UFC, ASEAN Hyundai Cup, and more.\n*Professional live broadcasts with expert Thai commentators from TrueVisions.\n*Full coverage with pre-match, post-match, highlights, and replays.\n\nPremium entertainment\n*Popular series from Thailand, China, Korea, and Japan.\n*Blockbuster movies from Hollywood and Asia.\n*K-Pop, variety shows, anime, world-class documentaries, and leading news channels.\n\nPowerful features for flexible viewing\n*Watch live and replay programs up to 7 days with Catch Up.\n*Timeshift lets you instantly rewind live TV, even after a program has started.\n...",
+  "release_notes": "Bug fixes and player performance improvements.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 12,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/42/55/5f425598-85dd-a8be-d78e-3bbdcd078cc6/Iphone_5.5-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/cb/1b/9acb1ba2-4123-275c-72a0-fd025bb472e7/Iphone_5.5-2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d6/41/d8/d641d8ba-dbe7-3b8a-2a29-eacb5fead4ee/Iphone_5.5-3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3f/12/0e/3f120e3c-366e-f330-6539-adeb550a2317/Iphone_5.5-3__U00281_U0029.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/83/ae/6b83aebf-96a7-c3e5-cd1a-4cfe81152db8/Iphone_5.5-4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/c4/40/f4c4405d-9f19-86e0-c667-156de94a5ec1/Iphone_5.5-5.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/a8/a4/6ea8a4ad-631e-65ff-48fd-3e6d99d6f628/ipad-1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/99/54/dc/9954dc7f-a785-b721-a738-e6d3f5ced93c/ipad-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/9e/12/559e1202-7623-e5f5-d847-750a2bfaef7e/ipad-3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/22/98/b02298f4-46f1-95f7-2b72-94d7fea52484/ipad-4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1a/d1/59/1ad159b4-08fc-c37d-2fc4-c9f3fad5ce9f/ipad-5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/truevisions_now/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/90/6b/31906b2d-3024-f9e7-234f-f08860b2e625/ipad-6.jpg/2048x2732bb.png"
+    }
+  ]
+}

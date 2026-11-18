@@ -1,0 +1,127 @@
+{
+  "id": "iqiyi",
+  "name": "iQIYI",
+  "track_name": "iQIYI - Dramas, Anime, Shows",
+  "artist_name": "IQIYI INTERNATIONAL SINGAPORE PTE. LTD.",
+  "track_id": 1461999674,
+  "bundle_id": "com.iqiyi.i18n",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "8.11.0",
+  "price": "Free",
+  "rating": 4.87277,
+  "rating_count": 407942,
+  "file_size_mb": 215.5,
+  "appstore_url": "https://apps.apple.com/th/app/iqiyi-dramas-anime-shows/id1461999674?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/iqiyi/logo.png",
+  "description": "iQIYI brings you a premium library of Chinese dramas, Korean dramas, Thai dramas, anime, variety shows and movies that goes beyond the basics. Download iQIYI now and immerse yourself in a world of endless entertainment, including our exclusive iQIYI Originals you won't find anywhere else.\n\n[Features Built for You]\n- Watch for Free: Access a massive selection of high-quality shows at no cost.\n- Multi-Language Experience: Don’t let a language barrier stop you. We provide professional subtitles and a fully localized UI in English, Spanish, Thai, Malay, and more.\n- Cinematic Experience: Immerse yourself in 4K Ultra HD and Dolby Audio for a true theater-like experience right on your phone or tablet.\n- VIP Perks: Skip the ads, unlock \"Early Access\" to new episodes, and enjoy exclusive member-only content.\n- Multi-Device Sync: Start watching on your phone, tablet, or TV, and pick up exactly where you left off, anytime, anywhere.\n- Seamless User Experience: Navigate effortlessly with our clean...",
+  "release_notes": "This release is full of bug fixes, performance updates, and improved stability to provide you a better iQIYI experience. Keep it updated so you've always got the latest and greatest.",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 7,
+  "total_screenshots": 14,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/82/09/eb/8209ebf1-379a-aaa4-d5d7-cb54f966c727/0x0ss.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/f9/fc/f6f9fcc7-88d3-f167-a111-d851744e0adc/iPhone_-_26881242_U77ed_U5267.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9d/6c/cc/9d6cccab-49e6-0d3e-ce37-9978eef51a3b/iPhone_-_26881242_U6e05_U6670_U5ea6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/50/46/b6/5046b6c8-7b82-3e5b-aec3-7dcfb4b9d268/iPhone_-_26881242_U591a_U8bed_U8a00.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/06/dc/0c/06dc0c5c-debb-2a4e-8136-54dbbd5572a1/iPhone_-_26881242_U4f1a_U5458.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/c3/bc/ebc3bc80-4152-ceba-f18e-316bdaeae649/20260408-161037.jpeg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/0e/9b/b70e9b6c-1791-ceb5-bebb-82a319745df8/iPhone_-_26881242_U7ec4_U5408_U7247_U5355.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/e2/b9/c7e2b989-51cf-e87c-af3b-6627b0058d5e/ipad_U9996_U9875.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ff/85/7e/ff857ed8-15f4-eb05-7a4e-6b43eb0b1409/ipad_U5fae_U5267.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/ce/58/c0ce58db-0ddf-4f32-ac80-42b482cf0559/pad_U6e05_U6670_U5ea6.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/22/1e/c3221e25-7601-4c63-4662-5851288207af/pad_U591a_U8bed_U8a00.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/17/56/09175642-f492-5b58-884d-72a5d7dc1a05/pad_U4f1a_U5458.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/d6/cd/b7d6cd79-4b98-035b-8f3d-5c5b428856bd/pad_U591a_U7aef.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/iqiyi/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a4/dd/3f/a4dd3fb2-2cd9-c9b6-18a1-174a3b9a15ce/pad_U7ec4_U5408_U7247_U5355.jpg/2048x2732bb.png"
+    }
+  ]
+}

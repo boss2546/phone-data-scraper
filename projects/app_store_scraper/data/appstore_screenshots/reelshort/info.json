@@ -1,0 +1,113 @@
+{
+  "id": "reelshort",
+  "name": "ReelShort",
+  "track_name": "ReelShort - Stream Drama & TV",
+  "artist_name": "NewLeaf Publishing",
+  "track_id": 1636235979,
+  "bundle_id": "com.newleaf.app.ios.vic",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "4.2.00",
+  "price": "Free",
+  "rating": 4.85892,
+  "rating_count": 40368,
+  "file_size_mb": 158.7,
+  "appstore_url": "https://apps.apple.com/th/app/reelshort-stream-drama-tv/id1636235979?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/reelshort/logo.png",
+  "description": "Tired of never finishing a movie or paying for unused subscriptions? \n\nWatch ReelShort — Every Second is Drama\n\nSay hello to ReelShort, a next-gen HD streaming short movie platform offering exclusive vertical TV mini series. Recognized by Times100 for our movie reels innovation in the entertainment industry, we're changing the way you watch movies with our one-minute short movie episodes that you can enjoy anytime, anywhere, all from the convenience of your phone with the ReelShort App.\n\nChoose from our TV mini series library packed with endless addictive movie shorts added daily, from romantic encounters with billionaires and heart-wrenching tragedies to epic comeback stories and more—you won't ever be short on short movie entertainment!\n\nFeatured Shows:\n[Don't Miss Me When I'm Gone] After losing my parents, I move in with my godmother, Aunt Sandra. I live under her roof with her two sons-the Miller brothers-surrounded by love and care. I think I’ll end up with one of them. But everyt...",
+  "release_notes": "Enhance Your Experience!\n\n- Earn More Coins: More rewards are waiting for you!\n\n- Bug Fixes: Bugs are fixed for a smoother experience.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 12,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/reelshort/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a0/cc/a7/a0cca72f-3394-6bc2-a1a5-7ac3903d3a1b/en01.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/reelshort/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/60/91/276091e9-fcce-3dcc-0982-7542a4b68820/en02.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/reelshort/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f0/eb/99/f0eb990f-c8df-edce-7f35-7e48fb054164/en03.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/reelshort/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/0d/f0/660df046-5f77-d6fd-4d0b-53f7147dda08/en04.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/reelshort/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bf/73/42/bf73426a-0221-8ce3-0847-48cf873e20ca/en05.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/reelshort/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6a/91/ad/6a91ad31-e648-cea0-99c5-03c055e32217/en06.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/reelshort/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/64/88/b064882f-b068-c0f3-d88e-e7bbcc27929e/en01.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/reelshort/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/9e/c9/cb9ec90e-a87f-9125-0f23-f4e873e8b48d/en02.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/reelshort/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/5b/31/e25b318a-09af-57db-f340-97a1290820ea/en03.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/reelshort/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/3f/b6/a03fb6bf-a19b-5756-d262-203de817992a/en04.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/reelshort/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/b7/72/9cb7724a-8a8c-cef6-6f06-e941348acbb4/en05.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/reelshort/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/d0/b4/76d0b435-ecd8-db4f-f325-d1d771fdc93e/en06.jpg/2048x2732bb.png"
+    }
+  ]
+}

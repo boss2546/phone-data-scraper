@@ -1,0 +1,120 @@
+{
+  "id": "dramawave",
+  "name": "DramaWave",
+  "track_name": "DramaWave - Dramas & Reels",
+  "artist_name": "SKYWORK AI PTE LTD",
+  "track_id": 6670430706,
+  "bundle_id": "com.dramabuzz.app",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "2.0.90",
+  "price": "Free",
+  "rating": 4.87912,
+  "rating_count": 62907,
+  "file_size_mb": 181.1,
+  "appstore_url": "https://apps.apple.com/th/app/dramawave-dramas-reels/id6670430706?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/dramawave/logo.png",
+  "description": "Welcome to DramaWave, a next-gen HD streaming platform offering exclusive vertical TV videos, series, and movies. Dive into 30,000+ Dramas Across 18 Languages — With Exclusive Hits You Can't Find Anywhere Else!\n \nWhy Choose DramaWave?\n1. On-Screen Comments\nSupports real-time on-screen comments during playback, allowing you to share reactions and engage with others while watching. \n2. Offline Viewing\nYou can download episodes and watch them offline anytime and anywhere — even without an internet connection.\n3. Vertical Full-Screen Feed\nDeliver immersive entertainment experiences. Personalized drama content via precise algorithms helps you quickly spot your favorite drama videos.\n4. Quick and Gripping Dramas\nDive into drama-packed stories that deliver emotions and thrills in minutes — perfect for quick escapes or binge-worthy sessions.\n5. Crystal-Clear Streaming\nImmerse yourself in stunning 1080P resolution, ensuring every scene is vibrant and lifelike.\n6. Fresh Originals, Weekly Updates...",
+  "release_notes": "1. Added an exciting new collection of short dramas\n2. Squashed pesky bugs to enhance performance",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 13,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/db/92/80/db928090-7ff2-d931-64ad-8656095c8760/_U82f1_U8bed-07.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/49/12/c9/4912c9b1-22ec-08d5-5cb0-2ba15b582f25/_U82f1_U8bed-2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/d0/a0/3cd0a0f3-ee35-12b3-ba89-c28937a01e54/DramaWave_AppStore06_US_EN.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/b0/1f/edb01f47-26ea-4c86-7fa8-4859114ea845/_U82f1_U8bed_01.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a4/bf/92/a4bf9268-0d4c-cfe1-2175-258ffb009b40/_U82f1_U8bed-4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/b5/5b/90b55b6b-dea9-ad17-a0d3-df3a80873b56/_U82f1_U8bed-05.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/dramawave/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/68/e6/85/68e68533-9e56-65e7-e6c5-3482d3950c24/_U82f1_U8bed-3.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/dramawave/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/b7/b4/5db7b4af-1525-0505-f48e-9ec5ca28d1a6/_U82f1_U8bed_07.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/dramawave/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/37/05/e8/3705e8ba-3da6-a3bc-4da1-78141ec7be48/DramaWave_AppStore06_US_EN.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/dramawave/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6c/72/85/6c7285fc-9043-755f-1b1f-cba8d208edf5/_U82f1_U8bed_01.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/dramawave/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0d/16/e0/0d16e0db-cd95-8373-1081-79367a969052/iPad__U82f1_U8bed_3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/dramawave/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/b1/f0/fbb1f06b-500c-1a9c-ac93-bb1fc3214862/_U82f1_U8bed-05.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/dramawave/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/81/75/cd/8175cdfc-9e9f-bfdc-0548-ae9668e91519/_U82f1_U8bed-04.jpg/2048x2732bb.png"
+    }
+  ]
+}

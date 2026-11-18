@@ -37,6 +37,7 @@ projects/*/data/videos/
 projects/apple_scraper/data/raw_html/
 projects/apple_scraper/data/videos/
 projects/app_store_scraper/data/app_screenshots/*/screenshot_*.png
+projects/app_store_scraper/data/appstore_screenshots/**/screenshot_*.png
 
 # Legacy Archives & Temp Folders
 _archive_legacy/

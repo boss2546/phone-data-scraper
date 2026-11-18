@@ -1,0 +1,128 @@
+{
+  "id": "youku",
+  "name": "Youku",
+  "track_name": "YOUKU-Drama,Shorts,Show,Anime",
+  "artist_name": "Jet Brilliant Inc.",
+  "track_id": 1619761040,
+  "bundle_id": "com.youku.international.iphone",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Utilities"
+  ],
+  "version": "11.1.55",
+  "price": "Free",
+  "rating": 2.72955,
+  "rating_count": 1516,
+  "file_size_mb": 314.3,
+  "appstore_url": "https://apps.apple.com/th/app/youku-drama-shorts-show-anime/id1619761040?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/youku/logo.png",
+  "description": "YOUKU is a streaming entertainment video app designed for viewers who enjoy chinese drama and asian entertainment. It offers a large selection of exclusive asian drama, with professionally translated english subtitles, other multilingual subtitles, and dubbed content.\n\nWhat makes YOUKU different:\n• Exclusive premieres, updated alongside China: As one of China's leading long-form video platforms, YOUKU exclusively releases many popular chinese drama titles, variety shows, and donghua.\n• Officially licensed and complete content: All content is officially licensed and available in clear video quality for worry-free viewing.\n• Asian entertainment in one app: Explore chinese drama, kdrama, Japanese series, chinese movies, anime, variety shows, and vertical micro drama, covering romance, costume drama, wuxia drama, mystery, school stories, and more.\n\nPopular Picks:\n• Trending Chinese Dramas: Where the Mask Ends and The Early Spring are making waves worldwide and topping drama charts! Jing's ...",
+  "release_notes": "What's New:\n1. Membership in Your Language: The membership purchase page now supports nine languages: English, Thai, Vietnamese, Indonesian, Malay, Korean, Portuguese, Spanish, and Chinese, making it easier to understand your membership options.\n2. Better Audio Quality: We've improved audio playback for clearer, smoother sound while you watch.\n\nTrending Shows:\n1. The Silent Storm: Jing's latest crime thriller is now airing with new episodes! A corporate professional becomes a frontline investiga",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 7,
+  "total_screenshots": 14,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/be/78/17/be7817b6-c57f-c885-2ffe-19f001c65ed8/en_US_1@2x.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a7/7d/23/a77d2327-9ff1-d054-7106-1a10d3f4273b/en_US_2@2x.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/d7/68/42d76832-ef48-a167-51e9-8164c9b6c9ec/en_US_6@2x.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/03/0f/42030f67-8380-017a-e6c0-2b73f9964d46/en_US_6@2x.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d1/44/47/d14447c0-5ce9-c4f4-58af-73882b021c1f/en_US_4@2x.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/b0/dc/c5b0dc3c-ce9d-b150-ea6d-7abbcea638b7/en_US_7@2x.png/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/youku/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bd/dd/e8/bddde82a-25e4-8a4f-c448-1d258e34de27/en_US_3@2x.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1e/de/36/1ede36da-4e34-420a-fc55-f7529910df0a/en_US_1@2x.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/24/69/08246932-0222-8e80-ecdf-fd3ad123979a/en_US_2@2x.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a5/49/5e/a5495e4d-44f0-b7af-531a-1e64efeceb7f/en_US_3@2x.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/21/57/cc/2157cc09-4999-f096-c0cb-555b220a78f9/en_US_4@2x.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e5/82/13/e58213a6-8c94-f24e-3446-e67a1b72c262/en_US_5@2x.png/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c2/47/8b/c2478b1c-9836-e150-1555-8fd62aeccc20/en_US_6@2x.png/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/youku/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/ac/92/83ac9227-f9cb-8217-8e66-70e5d5258f4b/en_US_7@2x.png/2048x2732bb.png"
+    }
+  ]
+}

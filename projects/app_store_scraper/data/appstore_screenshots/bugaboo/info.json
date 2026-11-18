@@ -1,0 +1,141 @@
+{
+  "id": "bugaboo",
+  "name": "Bugaboo.TV",
+  "track_name": "CH7ON",
+  "artist_name": "Bangkok Broadcasting & TV Co., Ltd.",
+  "track_id": 1319756939,
+  "bundle_id": "com.bbtv.bugabootvinter",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "4.0.15",
+  "price": "Free",
+  "rating": 3.76488,
+  "rating_count": 4317,
+  "file_size_mb": 516.6,
+  "appstore_url": "https://apps.apple.com/th/app/ch7on/id1319756939?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/bugaboo/logo.png",
+  "description": "CH7ON, an entertainment platform that collects live and past programs from Channel 7HD and many more exclusive content\n\nReady for you to watch quality programs and dramas from Channel 7HD in full! Over 20,000 hours, packed with exclusive past dramas, the fastest updates! Don't miss any news stories, follow your favorite stars, no matter where or when, you can watch from all over the world\n\nSpecial features of CH7ON Premium\n\nMore than 800 famous dramas from Channel 7HD, fully immersed in more than 20,000 hours! Both famous past stories that everyone loves and new dramas that are currently airing\n- Complete entertainment content! Including dramas, movies, sports and exclusive content\n- Watch live 24 hours or watch past episodes before anyone else, every episode, every season\n- Choose to watch for free! Or upgrade to premium to watch without ads!\n- Watch continuously, no interruptions! With the Continue Watching & Auto Next Episode feature\n- Full HD 1080p sharp images without interruption...",
+  "release_notes": "- fix perfomance",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 8,
+  "total_screenshots": 16,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/39/c1/b739c1ac-8717-826a-a22b-8a41f16ca6e3/ios_01.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d9/e1/25/d9e125e5-d887-bd1d-3bd0-2d09f4380c81/ios_02.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/c3/4d/46c34dfc-6e47-10a5-8ae0-a18b5ec80c2b/ios_03.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/86/61/1386610e-cd41-d06e-9570-4d881c5b2421/ios_04.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/62/3a/d2623a03-b783-0c0b-5beb-d18c8f8146c2/ios_05.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/b0/68/f5b06893-153c-ef9a-d19c-d0a24dce53d7/ios_06.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/c6/96/6ec69605-bafa-004a-9ebd-82731ba4b1e3/ios_07.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/7e/88/8b7e880d-6649-96b2-6d92-3fbe418d9f7c/ios_08.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/b5/7e/f4b57e8c-7e04-637c-654c-9dd9a2f015ac/ios_ipad01.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a1/be/b2/a1beb2a0-2457-944b-a640-faced684432a/ios_ipad02.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/76/ad/fa76adeb-ed9c-ded3-95f0-8b9647f66223/ios_ipad03.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/1d/d9/841dd995-18c6-fcb0-0579-01c65e5c9c88/ios_ipad04.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f9/b6/d9/f9b6d92c-1efc-4992-aadc-0b37e044c048/ios_ipad05.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/7d/13/e57d1382-205e-a7b6-8407-a57a12bfdb88/ios_ipad06.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/02/d6/8202d62c-53c4-cbd8-6e3f-591e1ae28e82/ios_ipad08.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/bugaboo/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d1/10/20/d110201f-9e8f-be91-958d-a7cb3f706d84/ios_ipad07.jpg/2048x2732bb.png"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "shortwave",
+  "name": "ShortsWave",
+  "track_name": "ShortsWave: Watch Drama Series",
+  "artist_name": "HALOFUN PTE. LTD.",
+  "track_id": 6478104173,
+  "bundle_id": "com.company.shortsdrama.wave",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "2.65.0",
+  "price": "Free",
+  "rating": 4.67845,
+  "rating_count": 4811,
+  "file_size_mb": 169.1,
+  "appstore_url": "https://apps.apple.com/th/app/shortswave-watch-drama-series/id6478104173?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/shortwave/logo.png",
+  "description": "Welcome to ShortsWave!\n\nIndulge in an enchanting realm of short-form drama meticulously crafted to elevate your entertainment experience. Immerse yourself in a vast collection of compelling narratives, thoughtfully curated for maximum impact. ShortsWave is your ultimate destination for concise and captivating storytelling, delivering a seamless and top-notch viewing adventure.\n\nKey Features:\n\n[Massive Library]\nDelve into a diverse array of short dramas encompassing various genres and tastes. From heartwarming romance to gripping mysteries, ShortsWave offers something to captivate every viewer.\n\n[Compelling Storylines]\nOur unwavering commitment to quality ensures that each short drama packs a powerful punch. Engage with meticulously crafted plots that leave a lasting impression, making every minute spent on ShortsWave truly worthwhile.\n\n[Smooth Streaming Experience]\nEnjoy uninterrupted streaming with our cutting-edge platform. ShortsWave is optimized for a seamless viewing experience, a...",
+  "release_notes": "Fixed known issues and optimized performance.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 0,
+  "total_screenshots": 6,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/shortwave/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3f/3b/3d/3f3b3df0-7e48-3d95-6f7c-65c60be71d02/20260428-105844.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/shortwave/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/3b/ad/7b3bad43-90f0-1b3c-d9c6-8a80686b5bfb/20260428-105856.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/shortwave/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/cc/46/10cc46c0-0839-6355-e35c-70b4af12b067/20260428-105850.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/shortwave/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1c/d6/cd/1cd6cd1d-1803-c4d4-8ae1-7c59e3b709bd/20260428-105902.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/shortwave/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/17/be/e3/17bee31c-25c1-f456-9696-43af2950a037/20260428-105909.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/shortwave/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/ba/e4/e2bae4b5-a1d4-b854-dc9c-33765e2d2231/20260428-105916.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": []
+}

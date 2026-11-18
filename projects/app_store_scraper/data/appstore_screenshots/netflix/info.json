@@ -1,0 +1,107 @@
+{
+  "id": "netflix",
+  "name": "Netflix",
+  "track_name": "Netflix",
+  "artist_name": "Netflix, Inc.",
+  "track_id": 363590051,
+  "bundle_id": "com.netflix.Netflix",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "26.6.0",
+  "price": "Free",
+  "rating": 4.84905,
+  "rating_count": 739325,
+  "file_size_mb": 202.2,
+  "appstore_url": "https://apps.apple.com/th/app/netflix/id363590051?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/netflix/logo.png",
+  "description": "Looking for the most talked about TV shows and movies from around the world? They're all on Netflix.\n\nDiscover award-winning series, movies, live events, podcasts, and games on the go - all in the mobile app. Now, you'll never miss a moment from the world of Netflix while you travel, commute, or just take a break.\n\nWhat you'll love about Netflix:\n\n- Smooth navigation with bottom shortcuts to quickly browse or jump back into your favorites.\n\n- A new way to discover what's next, including an upcoming clips feed.\n\n- A full world of entertainment in one place - series, movies, live events, games, and podcasts.\n\n- Keep track of everything you love, from your favorite moments to 'My List', in the 'My Netflix' tab.\n\n- Personalized recommendations based on your ratings. Instant notifications for new releases, episodes, and live events.\n\nNetflix membership is a month-to-month subscription that begins at sign-up. You can easily cancel anytime, online, 24 hours a day. There are no long-term contr...",
+  "release_notes": "Keep your app updated to get the latest Netflix experience on your iPhone and iPad.\n\nNo matter what your mood is, we’ve got options. In this version we've made some player improvements to make watching them even better.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 11,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/netflix/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6c/f8/dd/6cf8dd3b-f64e-b36a-8c78-bc11f171ab21/freeform_U0023game-screenshot-ios-mobile-vertical-5-5-inch_na_01_en-GB.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/netflix/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e6/b5/a6/e6b5a68c-947a-5d8a-8054-6ee0a9c453e5/freeform_U0023game-screenshot-ios-mobile-vertical-5-5-inch_na_02_en-gb.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/netflix/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/7c/90/db7c908e-505f-c2f8-4437-0fee7a93ce46/freeform_U0023game-screenshot-ios-mobile-vertical-5-5-inch_na_03_en_-_GB.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/netflix/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/a8/1b/f5a81b54-c68c-0f49-f8b8-e7c9afdf63fd/freeform_U0023game-screenshot-ios-mobile-vertical-5-5-inch_na_03_en-GB.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/netflix/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fe/e6/28/fee628cf-c5a9-492e-c3bd-90c0f84f0041/freeform_U0023game-screenshot-ios-mobile-vertical-5-5-inch_na_04_en-GB.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/netflix/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/be/6f/a2be6fd0-385f-ecee-2937-e9cf40a16f8e/freeform_U0023game-screenshot-ios-mobile-vertical-5-5-inch_na_05_en-GB.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/netflix/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/3b/db/133bdb70-4999-5c19-6914-d405de442598/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_01_en-GB.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/netflix/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fa/f7/af/faf7afe2-68e5-eae4-b7d3-8b44792f90d5/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_02_en-GB.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/netflix/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/13/b2/6e13b264-253c-0437-b0c8-2b67bf5df11c/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_03_en-GB.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/netflix/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7e/dd/e2/7edde291-44e8-7825-de7a-cb3d88281692/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_04_en-GB.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/netflix/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/b2/5f/ccb25fde-45c8-a230-6ead-4f1be41fb910/freeform_U0023game-screenshot-ios-tablet-horizontal-12-9-inch_na_05_en-GB.jpg/2048x2732bb.png"
+    }
+  ]
+}

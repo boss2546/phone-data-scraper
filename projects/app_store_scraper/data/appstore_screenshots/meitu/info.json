@@ -1,0 +1,121 @@
+{
+  "id": "meitu",
+  "name": "Meitu",
+  "track_name": "Meitu: AI Photo & Video Editor",
+  "artist_name": "Meitu Technology Co., Ltd.",
+  "track_id": 416048305,
+  "bundle_id": "com.meitu.mtxx",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "primary_genre": "Photo & Video",
+  "genres": [
+    "Photo & Video",
+    "Social Networking"
+  ],
+  "version": "12.23.5",
+  "price": "Free",
+  "rating": 4.77403,
+  "rating_count": 152023,
+  "file_size_mb": 876.0,
+  "appstore_url": "https://apps.apple.com/th/app/meitu-ai-photo-video-editor/id416048305?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/meitu/logo.png",
+  "description": "Meitu, the all-in-one AI photo editor and video editing app!\n5 must-try edit features:\n-AI Flash Effect: Viral vintage camera and retro filters\n-Object Remover: Erase photobombers and blur background in 1 tap\n-Photo Enhancer: Fix blur and restore HD clarity instantly\n-Beauty Retouch & Face Edit: Smooth skin, reshape body & glow naturally\n-AI Art: Create trending avatars, collages & stickers\n\nTerms & Privacy: https://pro.meitu.com/xiuxiu/agreements/gdpr.html?lang=en#en-policy\nContact: global.support@meitu.com",
+  "release_notes": "What's new:\n— Eraser for One-Tap Beauty: erase just the spots that look off, plus an upgraded Body effect\n— Adjustable Plump & Lift: turn them on for photos, videos, or Live Photos, then set the strength with a slider\n— Smarter AI Assistant: circle the area you want changed and ask, or erase parts you don't want\n— Video: new Low-Light Fix, Color Boost, and Noise Reduction, plus Slim Forearms in Body Shape\nUpdate to the latest version to try it out!",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 13,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ea/5e/2b/ea5e2bbb-7a5a-09aa-b32c-75d9c9419992/_U00281_U0029_U5782_U7c7b_AI_U5149_U5f71_U7cfb_U5217.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c8/f9/99/c8f9996b-d942-b7ee-0de1-fb865054d6b7/_U00282_U0029_U5782_U7c7b_AI_U7f8e_U53d1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/97/63/6497638d-9ee9-2920-1ee3-9fc101f83552/_U00283_U0029_U5782_U7c7b_AI_U6d88_U9664.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/9b/4b/539b4b16-9316-93a9-d08e-1def50a087cb/_U00284_U0029_U89c6_U9891_U7f8e_U5316_Collage_Uff08_Uff0b_U6ffe_U93e1_Uff09.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/02/d9/3302d9b6-7519-857e-5f7c-5045d2925c6d/_U00285_U0029_U7f8e_U5316__U756b_U8cea_U4fee_U5fa9.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bd/64/3e/bd643ee7-30de-3197-be57-e26babd7b223/_U00286_U0029_U7f8e_U5316_AI_U73a9_U6cd5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/31/89/f6/3189f6be-7e25-8a2d-f346-fd42330c554f/_U00287_U0029_U7626_U8eab_U80cc_U666f_U9501_U5b9a.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/meitu/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/7e/32/f57e3229-c8e7-638c-3bc0-b463353fff40/iOs-1290_2796.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/meitu/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ba/cc/b4/baccb480-e940-517d-5359-4e609fcc443a/Frame_1.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/meitu/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/fa/fe/48fafed3-a4cb-0e5f-6a8b-4ebd2bd32685/Frame_2.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/meitu/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/99/26/f6992639-0904-325c-0217-549f468e53a7/Frame_3.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/meitu/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/23/84/c0238458-744a-7336-9ea2-8849e85367fc/Frame_6.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/meitu/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/71/31/49/71314943-1308-6864-7ef8-2f4174e92519/Frame_5.png/2048x2732bb.png"
+    }
+  ]
+}

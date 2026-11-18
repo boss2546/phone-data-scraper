@@ -1,0 +1,128 @@
+{
+  "id": "spotify",
+  "name": "Spotify",
+  "track_name": "Spotify: Music and Podcasts",
+  "artist_name": "Spotify",
+  "track_id": 324684580,
+  "bundle_id": "com.spotify.client",
+  "category": "สตรีมมิ่งเพลงและวิดีโอ",
+  "primary_genre": "Music",
+  "genres": [
+    "Music",
+    "Entertainment"
+  ],
+  "version": "9.2.0",
+  "price": "Free",
+  "rating": 4.80165,
+  "rating_count": 1932442,
+  "file_size_mb": 316.7,
+  "appstore_url": "https://apps.apple.com/th/app/spotify-music-and-podcasts/id324684580?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/spotify/logo.png",
+  "description": "With the Spotify app, you can explore an extensive library of music and podcasts for free. Curate the best playlists and stream millions of free songs, albums and original podcasts on your mobile or tablet. Subscribe to Spotify Premium to download and listen offline wherever you are, and unlock our catalogue of audiobooks.\n\nWhy choose Spotify as your go-to music and podcast app? Here, you can:\n• Listen to over 100 million songs and 6 million podcast titles\n• Explore our selection of specially-crafted artist playlists\n• Easily search for your favourite songs, albums, artists and podcasts\n• Discover personalised music recommendations tailored to your unique taste\n• Subscribe to your favourite free podcasts so you never miss an episode and even curate your own podcast library\n\nSpotify Free is more than a music player – find the sounds that you love and stream music and podcasts online for free. Enjoy personalised playlists or curate and share your own, discover the hottest new releases, e...",
+  "release_notes": "We’re always making changes and improvements to Spotify. To make sure you don’t miss a thing, just keep your Updates turned on.",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 14,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b8/f5/52/b8f552b9-ad4e-39df-b2ee-42c6a4d774fd/IOS_-_5.5_-_S01_-_EN_-_GB.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/60/e3/a5/60e3a536-b86c-ea31-6c92-a939fbca00a3/IOS_-_5.5_-_S02_-_EN_-_GB.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f2/9b/32/f29b3231-6f3a-6354-2993-4d68460ba84f/IOS_-_5.5_-_S03_-__U005bEnglish__U0028GB_U0029_U005d.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f0/59/9f/f0599ff8-5d43-e0e7-0fa4-df98f52136dd/IOS_-_5.5_-_S04_-__U005bEnglish__U0028GB_U0029_U005d.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/81/16/1c/81161c34-c9ab-c019-cc1f-36a46d48e951/IOS_-_5.5_-_S05_-_EN_-_GB.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/04/eb/3b04eb10-020c-d9ed-ef86-5e7f5adb34f6/IOS_-_5.5_-_S06_-__U005bEnglish__U0028GB_U0029_U005d.png/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/13/7c/f1/137cf14a-b541-99b2-ca1d-1b205c725b24/IOS_-_5.5_-_S07_-__U005bEnglish__U0028GB_U0029_U005d.png/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/spotify/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/41/cc/80/41cc809e-9d51-3626-212c-f7e3bef85760/IOS_-_5.5_-_S08_-__U005bEnglish__U0028GB_U0029_U005d.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/spotify/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/8f/9b/268f9b17-cbc1-17d5-d3c5-07740ad4b2ad/IOS_-_Ipad_12.9__-_S01_-_EN_-_GB.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/spotify/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/39/fd/0b39fd64-64c9-e9ae-bceb-af9d856672b9/IOS_-_Ipad_12.9__-_S02_-_EN_-_GB.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/spotify/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2c/95/b0/2c95b05a-535d-515d-0143-fe40e05c1cce/IOS_-_Ipad_12.9__-_S03_-__U005bEnglish__U0028GB_U0029_U005d.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/spotify/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1d/a7/c0/1da7c0d7-e28a-4a26-cc45-72ff2a7e3f11/IOS_-_Ipad_12.9__-_S04_-__U005bEnglish__U0028GB_U0029_U005d.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/spotify/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/02/79/17/0279178c-2938-0e21-727a-098d94e1a2cf/IOS_-_Ipad_12.9__-_S05_-__U005bEnglish__U0028GB_U0029_U005d.png/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/spotify/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/40/22/7540229f-3ce0-88df-6695-e03741a9bf63/IOS_-_Ipad_12.9__-_S06_-__U005bEnglish__U0028GB_U0029_U005d.png/2048x2732bb.png"
+    }
+  ]
+}

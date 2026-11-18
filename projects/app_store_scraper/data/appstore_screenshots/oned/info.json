@@ -1,0 +1,149 @@
+{
+  "id": "oned",
+  "name": "oneD",
+  "track_name": "oneD",
+  "artist_name": "ONE 31 COMPANY LIMITED",
+  "track_id": 922370524,
+  "bundle_id": "com.gmm.one",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "7.0.25",
+  "price": "Free",
+  "rating": 4.09321,
+  "rating_count": 3519,
+  "file_size_mb": 135.7,
+  "appstore_url": "https://apps.apple.com/th/app/oned/id922370524?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/oned/logo.png",
+  "description": "oneD the best application to watch Thai Contents. We bring you the best Thai drama, series, sitcom, variety show and concert from The One Enterprise and other top producers and studios. \n\nWe bring you the best contents from one31, GMM25, GMMTV,  Change2561, GDH, Nadao Bangkok, Exact, Scenario, Atime Media and GMM Show\n\nUpdate fresh new contents everyday.\n\nNew Feature update, oneD SHORTS that serve Thai and Chinese vertical dramas\n\nSpecial with many exclusive contents only available at oneD\n\nOthers, all time hits contents for you to enjoy unlimited on demand\n\nFeature\n - Watch on all devices including Mobile, Tablet, Computer and Smart TV \n - Continue watching anytime anywhere \n - Content recommendation\n - Watch LiveTV one31 and GMM25\n\n\n\nTerms and Conditions:  https://assets.oned.net/doc/term-condition-en.html\nPrivacy Policy: https://assets.oned.net/doc/privacy-policy-en.html",
+  "release_notes": "Improve app performance and bugs fixed",
+  "total_iphone_screenshots": 9,
+  "total_ipad_screenshots": 8,
+  "total_screenshots": 17,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/81/bb/0f/81bb0fa0-8298-3714-76dc-01cebdf1b323/21_Oct_1290x2796_P1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/97/e0/20/97e020e4-222b-a7ad-ae43-e43c7e420b98/21_Oct_1290x2796_P2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/4e/dc/fc4edcfb-fc87-44cc-f2c4-52676fdcefee/21_Oct_1290x2796_P3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/af/e2/9eafe29c-5326-85bc-1289-0a6c5a2aa01b/21_Oct_1290x2796_P4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cc/ae/a4/ccaea4c9-f031-cc6c-06e6-5aeb09009fb6/21_Oct_1290x2796_P5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1d/00/89/1d00890a-3ca4-0804-e9e5-6c9448bf43cd/21_Oct_1290x2796_P6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/f2/1b/65f21b97-6e85-7408-bc24-83a531925af2/21_Oct_1290x2796_P7.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/79/a0/ec/79a0ece6-8026-209a-4213-c00086371c32/21_Oct_1290x2796_P8.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/appstore_screenshots/oned/iphone/screenshot_09.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a6/13/78/a61378a7-8f6f-25a4-11d3-0c3ac547aed1/21_Oct_1290x2796_P9.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/29/f5/bb29f54e-5a62-338d-eaf0-751ace5fa01c/21-Oct_Tablet_2048x2732_P1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/bb/91/5cbb9165-bb4e-90d4-a454-84da27316d20/21-Oct_Tablet_2048x2732_P2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/25/84/4a25849f-ce06-79b8-e7ae-06fbac6472ac/21-Oct_Tablet_2048x2732_P3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/ce/0c/27ce0cac-2f9c-cf2a-2e41-01b6ad757aba/21-Oct_Tablet_2048x2732_P4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/84/f6/e184f650-b20c-3a2d-615e-2f5b9d2c2d2f/21-Oct_Tablet_2048x2732_P5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/03/05/7a/03057a20-5b90-f819-aab1-34dc58ba659b/21-Oct_Tablet_2048x2732_P6.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/94/a3/8094a3ba-7ac5-8292-753d-9361e189ed1a/21-Oct_Tablet_2048x2732_P7.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/oned/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/52/c1/01/52c101ea-8b93-d115-c83e-abf3d252b5c1/21-Oct_Tablet_2048x2732_P8.jpg/2048x2732bb.png"
+    }
+  ]
+}

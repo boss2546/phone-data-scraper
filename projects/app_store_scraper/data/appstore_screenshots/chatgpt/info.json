@@ -1,0 +1,142 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "track_name": "ChatGPT",
+  "artist_name": "OpenAI OpCo, LLC",
+  "track_id": 6448311069,
+  "bundle_id": "com.openai.chat",
+  "category": "ปัญญาประดิษฐ์ (AI Tools)",
+  "primary_genre": "Productivity",
+  "genres": [
+    "Productivity",
+    "Utilities"
+  ],
+  "version": "1.2026.307",
+  "price": "Free",
+  "rating": 4.84375,
+  "rating_count": 1099879,
+  "file_size_mb": 298.0,
+  "appstore_url": "https://apps.apple.com/th/app/chatgpt/id6448311069?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/chatgpt/logo.png",
+  "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.\n\nThis official app is free, syncs your history across devices, and brings you the latest from OpenAI, including the new image generator.\n\nWith ChatGPT in your pocket, you’ll find:\n\n· Image generation–Generate original images from a description, or transform existing ones with a few simple words. \n· Advanced Voice Mode–Tap the soundwave icon to have a real-time convo on the go. Settle a dinner table debate, or practice a new language. \n· Photo upload—Snap or upload a picture to transcribe a handwritten recipe or get info about a landmark. \n· Creative inspiration—Find custom birthday gift ideas or create a personalized greeting card.\n· Tailored advice—Talk through a tough situation, ask for a detailed travel itinerary, or get help crafting the perfect response. \n· Personalized learning—Explain electricity to a dinosaur-loving kid or easily brush up yourself on a historic event.\n· Professional input—Brainstorm m...",
+  "release_notes": "Bug fixes and small improvements.",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 8,
+  "total_screenshots": 16,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/40/3c/7f403cce-a82a-262a-a220-c24bee1d5705/1_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/9c/55/979c558c-ab98-8516-8c9d-97788e4e3463/2_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/a6/36/c6a63685-1a28-11cf-45c0-bf315ca15af9/3_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b8/78/ae/b878ae2b-1e73-f1ca-6af6-fa06e33f2906/4_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/5d/70/fb5d7036-7258-de32-2d6b-b39c89cdacb3/5_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/32/5d/ca/325dca62-db61-80f3-42ec-b1dca78e0d6c/6_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/19/c1/e9/19c1e9f7-fafc-ac68-2d55-2e9cbc2dae21/7_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e2/03/36/e203366c-da1f-71a0-470c-669e74e55d9c/8_iPhone.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/43/c8/dd43c882-9d5d-3094-0689-d022dc9254fe/1_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/7b/78/f67b78b7-762c-ac96-79ed-d00b8dd0b627/2_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/49/a9/97/49a9973f-fc14-51c6-8bb5-7f1f8004217e/3_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ca/06/0d/ca060d7c-037f-cd30-2bf7-c21b69f96a7b/4_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/35/0d/94/350d9428-a5f0-2068-f4b2-57806db491c2/5_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4f/1e/33/4f1e33a6-bf68-78a0-4437-e43f2b865c48/6_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/10/f0/2310f0f3-2b2e-e802-a803-43788a7960f0/7_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/chatgpt/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2f/90/de/2f90de49-e638-2af7-0f11-d7681d19ece0/8_iPad.jpg/2048x2732bb.png"
+    }
+  ]
+}

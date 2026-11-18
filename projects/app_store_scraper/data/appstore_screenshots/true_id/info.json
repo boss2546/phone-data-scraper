@@ -1,0 +1,114 @@
+{
+  "id": "true_id",
+  "name": "TrueID",
+  "track_name": "TrueID: #1 Smart Entertainment",
+  "artist_name": "True Digital Group Co., Ltd.",
+  "track_id": 1013814221,
+  "bundle_id": "com.tdcm.trueidapp",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "3.65.1",
+  "price": "Free",
+  "rating": 4.83625,
+  "rating_count": 808927,
+  "file_size_mb": 642.4,
+  "appstore_url": "https://apps.apple.com/th/app/trueid-1-smart-entertainment/id1013814221?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/true_id/logo.png",
+  "description": "TrueID : The Next World-Class Smart Entertainment\n\nHomepage\n • Express your personality through stories, trending topics, and content updates tailored to your interests.\nWatch\n • Don’t miss a new kind of entertainment with TrueID Short Drama — trending vertical stories you’ll love.\n • Enjoy hit series, popular movies, top-rated dramas, and fan-favorite animations from across Asia, with Thai subtitles or dubbing.\n • Discover TrueID Original content, available exclusively on TrueID.\n • Stream live TV online anytime, anywhere \n\nToday\n • Stay updated with daily trends, recommended content, and exclusive privileges.\n\nShopping\n • Shopping in one click — everything to match your lifestyle, plus exclusive deals and hot promotions from leading partners.\n\nPrivilege\n • Exclusive offers for TrueYou customers: Redeem your favorite rewards using just 1 TruePoint.\n • Join fun activities and win free rewards every day.\n\nNeed help?\n If you encounter any issues while using the app, please call 1242.\n\n\"T...",
+  "release_notes": "To make sure TrueID app is fully functioning for you, we fixed a few minor bugs and improve the app's performance.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 12,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/true_id/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/08/88/430888e1-2fc8-40eb-0046-f65735cc254c/appscreenshot_5.5__Display_1242_x_2208_EN_update_JUL26-01.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/true_id/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/47/63/59476371-ba0e-304b-dd0f-8162abf6b38c/appscreenshot_5.5__Display_1242_x_2208_EN_update_JUL26-02.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/true_id/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/80/3d/16803dfa-95d0-474b-0f31-12e7388ffaf4/appscreenshot_5.5__Display_1242_x_2208_EN_update_JUL26-03.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/true_id/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/13/ba/f6/13baf64d-6e65-6b27-1867-6d1cb99b8792/appscreenshot_5.5__Display_1242_x_2208_EN_update_JUL26-04.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/true_id/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c5/3d/b7/c53db777-dead-a59f-0976-6afc9a0b76dc/appscreenshot_5.5__Display_1242_x_2208_EN_update_JUL26-05.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/true_id/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ca/68/c1/ca68c193-e13b-83c1-cead-9abb1393b160/appscreenshot_5.5__Display_1242_x_2208_EN_update_JUL26-06.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/true_id/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b0/38/87/b0388710-48dc-dc69-747f-2491da81d8f9/appscreenshot_12.9__Display_2048_x_2732_EN_MAR26-01.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/true_id/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/e6/58/1ce65811-18c5-3a32-24fb-9bcc5355576f/appscreenshot_12.9__Display_2048_x_2732_EN_MAR26-02.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/true_id/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/98/d8/2e/98d82ed6-208d-fd71-8f6d-6438b5afb1c6/appscreenshot_12.9__Display_2048_x_2732_EN_MAR26-03.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/true_id/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a6/ef/28/a6ef282a-1a63-a6c4-8982-7228923111eb/appscreenshot_12.9__Display_2048_x_2732_EN_MAR26-04.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/true_id/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/34/2a/e3/342ae390-28f4-e39d-d72f-a1aacb848332/appscreenshot_12.9__Display_2048_x_2732_EN_MAR26-05.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/true_id/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/50/4b/e6/504be6c7-bac0-323f-b01d-9b26cf7a74ea/appscreenshot_12.9__Display_2048_x_2732_EN_MAR26-06.jpg/2048x2732bb.png"
+    }
+  ]
+}

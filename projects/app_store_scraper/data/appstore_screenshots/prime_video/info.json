@@ -1,0 +1,100 @@
+{
+  "id": "prime_video",
+  "name": "Prime Video",
+  "track_name": "Amazon Prime Video",
+  "artist_name": "AMZN Mobile LLC",
+  "track_id": 545519333,
+  "bundle_id": "com.amazon.aiv.AIVApp",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "10.157.1",
+  "price": "Free",
+  "rating": 4.45859,
+  "rating_count": 6751,
+  "file_size_mb": 360.0,
+  "appstore_url": "https://apps.apple.com/th/app/amazon-prime-video/id545519333?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/prime_video/logo.png",
+  "description": "Prime Video is your all-in-one destination for hit movies, series and TV, live sports, and more. Stream new originals like Off Campus, Every Year After and the noir thriller Spider-Noir, and follow British favourite Clarkson's Farm. From global hits such as Fallout, The Boys and The Lord of the Rings: The Rings of Power to blockbuster films and live entertainment, there is always something worth watching. Personalised recommendations help you find your next favourite show or movie without the endless scroll.\n\nPrime Video brings the best of TV and film together with live sports. Your Prime membership includes select UEFA Champions League matches and live select NBA games. Watch even more of the movies, TV, and live sports you love when you choose from 100+ subscriptions like Hayu and Paramount+ —all in one app. \n\nDownload videos for offline viewing, cast to your TV, and create profiles so everyone in the house gets a personalised entertainment experience.\n\nOne app. Endless entertainment...",
+  "release_notes": "Bug fixes and performance improvements",
+  "total_iphone_screenshots": 5,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 10,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/prime_video/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/4a/e6/284ae679-d825-bd61-3d9d-8a8a1cd51992/Prime-Video_iPhone-6.9_The-Grand-Tour_en-UK_1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/prime_video/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ea/8b/a6/ea8ba692-b221-4b2c-9009-b899f4fb5dfb/4-iPhone_6.9_1260_x_2736May2026.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/prime_video/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/eb/c7/7d/ebc77d3b-2615-7ccb-b8bf-b8f6d85d2c02/5-iPhone_6.9_1260_x_2736May2026.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/prime_video/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/21/91/532191e8-6c26-6859-ef00-5d2ab8e0bc4e/2-iPhone_6.9_1260_x_2736May2026.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/prime_video/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/90/3c/58903c7a-5361-a87a-692b-dfe67e25af81/3-iPhone_6.9_1260_x_2736May2026.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/prime_video/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5d/7e/6a/5d7e6a28-c8a1-45be-33e6-8515937c3782/Prime-Video_iPad-12.9_The-Grand-Tour_en-UK_1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/prime_video/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/3f/cb/3c3fcb22-b701-51f2-4307-e69e41ffcea5/4-iPad_12.9_2048_x_2732_May_2026.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/prime_video/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/df/0c/64/df0c6481-b0e8-368f-debf-1287900220b6/5-iPad_12.9_2048_x_2732_May_2026.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/prime_video/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/bf/55/3ebf5509-427e-d7a2-02ce-020cd0aff9fc/2-iPad_12.9_2048_x_2732_May_2026.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/prime_video/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/23/66/15/2366153c-1abf-e836-45bb-00af7917b530/3-iPad_12.9_2048_x_2732_May_2026.jpg/2048x2732bb.png"
+    }
+  ]
+}

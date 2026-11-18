@@ -1,0 +1,127 @@
+{
+  "id": "flickreels",
+  "name": "FlickReels",
+  "track_name": "FlickReels - AI Story & Drama",
+  "artist_name": "FARSUN PTE. LTD.",
+  "track_id": 6514312894,
+  "bundle_id": "com.farsun.shortplay",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "2.4.2.0",
+  "price": "Free",
+  "rating": 4.80385,
+  "rating_count": 26720,
+  "file_size_mb": 208.7,
+  "appstore_url": "https://apps.apple.com/th/app/flickreels-ai-story-drama/id6514312894?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/flickreels/logo.png",
+  "description": "Explore endless amazing short dramas and dive into an immersive viewing experience anytime, anywhere. FlickReels brings together popular vertical short dramas, original stories, and AI-powered innovative content to deliver a cinematic storyline experience.\n\nVisual Revolution – A Brand-New Short Drama Experience\nAI technology creates a unique visual style, making every story more vivid. From romantic love to fantasy adventures, from emotional entanglements to heart-stopping plot twists, every episode delivers an immersive experience.\n\nAI Co-Creation – Craft Your Own Exclusive Story\nUnleash your imagination and embark on a new creative experience. With AI technology, you can explore different styles of storytelling, breathe fresh charm into classic scenes, and build a unique story world of your own. Every spark of inspiration could become the next brilliant storyline.\n\nA Vast Library – There's Always One That Captures Your Heart\nExplore a wide range of genres: CEO romance, werewolf legen...",
+  "release_notes": "Fixed known issues and improved app stability.",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 7,
+  "total_screenshots": 14,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/45/60/09/45600914-39c9-c6e0-b8a9-3f185d9d92f0/2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/de/97/8dde9710-7793-2623-3ea2-47659d8fdf04/3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/d4/2f/ded42f73-791a-f221-b2f2-512ed56b6cf3/4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ae/56/d4/ae56d4f2-5a06-c95e-8156-a4c4830e0bd9/5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0e/9e/d4/0e9ed423-e24b-584a-49bc-965c11fceeb5/6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/69/a5/fc/69a5fcec-79db-f99b-883a-c9bb8635a6ec/7.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/flickreels/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/42/e1/4342e1d8-263f-2e28-da65-eff79757f53a/1.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/16/ff/d4/16ffd44a-eff9-594b-b7f4-ed2d6d2d55e4/1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2a/25/f0/2a25f0ff-eb4e-b278-cf97-e82b02f461d4/2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/dc/bd/f1dcbd0f-b476-accd-f572-46644525c46d/3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ed/2a/5d/ed2a5d08-31bc-3701-541f-96e4f2927689/4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/47/fe/6147fee3-7d4f-abe5-7cda-5065645002ae/5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/9f/dc/439fdc1a-4f8f-a4bd-c2d8-36bfcfde64b0/6.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/flickreels/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/45/61/fb/4561fb7f-0159-9b79-94dc-75cc2207d21d/7.jpg/2048x2732bb.png"
+    }
+  ]
+}

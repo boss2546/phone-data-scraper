@@ -1,0 +1,77 @@
+{
+  "id": "shortmax",
+  "name": "ShortMax",
+  "track_name": "ShortMax - Short Dramas & TV",
+  "artist_name": "SHORTTV LIMITED",
+  "track_id": 6464002625,
+  "bundle_id": "live.shorttv.ios",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "2.28.2",
+  "price": "Free",
+  "rating": 4.68341,
+  "rating_count": 31088,
+  "file_size_mb": 103.5,
+  "appstore_url": "https://apps.apple.com/th/app/shortmax-short-dramas-tv/id6464002625?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/shortmax/logo.png",
+  "description": "Welcome to ShortMax — a premium streaming platform for your favoriate short dramas, reels and TV videos!\n\nAs a leading global platform for bite-sized entertainment, ShortMax is redefining the way you stream. Discover fast-paced, emotionally gripping stories designed to fit perfectly into your everyday life — cinematic drama, powerful storytelling, and unforgettable plot twists, all in short, easy-to-watch episodes.\n\nEnjoy access to 50,000+ trending short dramas and movies in 19 languages, anytime and anywhere. Whether you love sweet Contemporary Romance, CEO secrets, Fated Werewolf Romance, payback stories, or dramatic Rise and Revenge arcs, every episode delivers a shocking twist in just about one minute.\n\n● Why millions choose ShortMax\n\n[Your Short Drama Universe]\n\n- Dive into a massive library of exclusive original short dramas, mini movies, TV series, and trending videos.\n- New premium episodes are added every day, so your next obsession is always waiting.\n\n[Global Hits & Multiling...",
+  "release_notes": "What's New in This Version:\n\n• Added an exciting collection of brand-new short dramas.\n• General Bug Fixes: Resolved known minor issues and enhanced overall app stability.\n\nEnjoy your drama time on ShortMax!\nFor any questions or support, please reach out to us at shorttv.service@shorttv.live.",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 0,
+  "total_screenshots": 7,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d9/1a/9e/d91a9eaa-fe3c-b954-673d-7db36bdbd7e0/1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/a0/09/bda009a0-20a5-df57-731a-31bda7f12f8b/2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f6/0a/87/f60a8765-2714-e7b1-2f4c-464b0b823616/3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/48/9c/bc489c83-17e8-ac24-3a08-5c80a6de11bd/4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/55/dd/d455dd37-c750-9d89-c882-1efd3f619fb6/5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/90/de/a8/90dea883-a13a-4eab-5230-079e2832cd95/6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/shortmax/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/48/85/a84885b4-8a70-912e-3632-ab21e120403e/7.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": []
+}

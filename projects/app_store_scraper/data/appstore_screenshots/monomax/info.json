@@ -1,0 +1,100 @@
+{
+  "id": "monomax",
+  "name": "Monomax",
+  "track_name": "Monomax",
+  "artist_name": "Mono Streaming Company Limited",
+  "track_id": 869291017,
+  "bundle_id": "com.monofilm.doonung",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "7.10.1",
+  "price": "Free",
+  "rating": 4.61976,
+  "rating_count": 25021,
+  "file_size_mb": 146.4,
+  "appstore_url": "https://apps.apple.com/th/app/monomax/id869291017?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/monomax/logo.png",
+  "description": "Monomax The only application that provides all entertainment for families with premium series, movies, and sports from all over the world for more than 20,000 hours.\n\n•\tEnjoy worldwide series: Chinese series, Korean series, Western series, Indian series and Thai series\n•\tEnjoy blockbuster and unique movies: Chinese movies, Hollywood movies, Korean movies, Thai movies, and Indian movies in action-adventure, Sci-fi-Fantasy, horror and comedy\n•\tOffer cartoons and animation for children\n•\tWatch sports content as if you were in the games\n•\tOne account could be used simultaneously up to 3 devices\n•\tAds-free experiences\n•\tHigh resolution: Full HD\n•\tProvide both Thai dubbing and soundtrack\n\nDevices\n•\tSmartphone & Tablet\n•\tPC / Laptop\n•\tSmart TV\n•\tOthers\n\n•\tOur contents and services are available only in Thailand, Laos and Cambodia.\n•\tYour payment will be processed through your iTunes account when you purchase the package.\n•\tIf you do not wish to continue the automatic renewal, you could cancel...",
+  "release_notes": "- Improved app performance",
+  "total_iphone_screenshots": 5,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 10,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/monomax/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/65/e2/f4/65e2f454-e380-3798-0f5b-dfc7fdb3e208/01_IPHONE_1320x2868.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/monomax/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/29/19/bd/2919bd83-433a-166e-c66a-6378ae90f914/02_IPHONE_1320x2868.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/monomax/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2c/10/80/2c1080ba-b2fa-bb60-9871-6979c22f0667/03_IPHONE_1320x2868.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/monomax/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/28/f2/a828f2f4-5bb0-4514-5ad3-8283b73b07c4/04_IPHONE_1320x2868.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/monomax/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/c9/e5/66c9e5d4-3909-850f-2d45-da7e7b7d6813/05_IPHONE_1320x2868.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/monomax/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/8d/51/668d5156-c4ef-f404-126a-ddbe0632ef6d/01_IPAD_2064x2752.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/monomax/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/5c/56/ef5c5629-4282-f197-cc60-cdabcccb2d98/02_IPAD_2064x2752.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/monomax/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/28/07/fa280792-b0fc-b8fe-6f04-d22d21a6de9e/03_IPAD_2064x2752.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/monomax/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d6/76/61/d67661a7-98d4-de7f-1e4c-eb242c1ca6e5/04_IPAD_2064x2752.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/monomax/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/4b/d5/344bd5af-7190-36ca-e796-066cca0aac60/05_IPAD_2064x2752.jpg/2048x2732bb.png"
+    }
+  ]
+}

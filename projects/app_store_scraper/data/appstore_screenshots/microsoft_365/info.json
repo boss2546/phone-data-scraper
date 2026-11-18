@@ -1,0 +1,142 @@
+{
+  "id": "microsoft_365",
+  "name": "Microsoft Copilot",
+  "track_name": "Microsoft Copilot",
+  "artist_name": "Microsoft Corporation",
+  "track_id": 541164041,
+  "bundle_id": "com.microsoft.officemobile",
+  "category": "ซอฟต์แวร์ทำงาน (Office)",
+  "primary_genre": "Productivity",
+  "genres": [
+    "Productivity",
+    "Business"
+  ],
+  "version": "2.116.1",
+  "price": "Free",
+  "rating": 4.8375,
+  "rating_count": 115258,
+  "file_size_mb": 546.6,
+  "appstore_url": "https://apps.apple.com/th/app/microsoft-copilot/id541164041?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/microsoft_365/logo.png",
+  "description": "The Microsoft Copilot app is the AI built for work. Copilot helps you keep your work moving forward, from early ideas to finished documents, presentations and more. Whether you're creating content, managing projects, organising your day or finding information, Copilot helps you get more done from one place.\n\nCopilot connects to Word, Excel, PowerPoint, Outlook, Teams and more, bringing the files and information you use into one place. Create polished documents, presentations and spreadsheets, summarise articles and files, draft emails, brainstorm ideas, analyse information, and get insights based on the work you're doing.\n\nNeed help tackling a bigger task? With Cowork, Copilot can take on multi-step work and help deliver finished files and completed to-dos, so you spend less time piecing work together and more time making progress.\n\nChoose between leading AI models, and select the one that's best suited to the task at hand. Whether you're writing, researching, planning or analysing, Co...",
+  "release_notes": "• General quality and performance enhancements.",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 8,
+  "total_screenshots": 16,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/33/01/13/3301130b-6385-c27a-b0eb-c1b6729e119b/iphone_1_1320x2868.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3c/5d/d9/3c5dd96b-042f-5818-eee8-6364eb268336/Screen_02_1320x2868.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/66/79/7a667968-a8b1-1bfc-1350-e7401f9a83cc/Screen_03_1320x2868.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ab/34/f1/ab34f188-e41f-1340-bf99-73880c94bf1c/iphone_4_1320x2868.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b2/8b/cf/b28bcfe0-3f51-ab4e-0cb2-ef97b52895f8/sceenshot_05.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dd/be/c6/ddbec64c-bdcc-19ee-277f-5da243591bf7/screenshot_06.png/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/3b/e1/513be139-9a1b-4b18-257c-ea446cf28e0f/Screen_07_1320x2868.png/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f8/92/69/f8926956-f449-12f4-ee43-4138402daedf/screenshot_08.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/31/5b/43315b5d-9662-b4fd-ece5-7ea7e49f366e/Scr_1_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/43/02/77430207-5dde-0301-9631-9138d466a064/Scr_2_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e8/5b/7e/e85b7e1d-4a82-db63-f437-9373a501120b/iPAD_Screen_03_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ed/6c/85/ed6c85f2-561f-1e2a-d794-c0bb467ed785/Scr_4_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e5/0a/b6/e50ab647-eb7c-cb31-5e6e-0b71ca98ca6c/iPAD_Screen_05_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/67/a2/a067a20e-6f7c-6f4b-e4ef-93b0918d7d10/iPAD_Screen_06_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/85/6b/df/856bdf98-f9cb-c550-8abc-1575d2fbf0f2/iPAD_Screen_07_2752x2064.png/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/microsoft_365/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/eb/49/09eb4991-edd8-3fcc-1f66-09a7b68b29ae/Scr_10_2752x2064.png/2048x2732bb.png"
+    }
+  ]
+}

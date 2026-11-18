@@ -1,0 +1,79 @@
+{
+  "id": "wetv",
+  "name": "WeTV",
+  "track_name": "WeTV Asian & Local Dramas",
+  "artist_name": "Image Future Investment (HK) Limited",
+  "track_id": 1441531611,
+  "bundle_id": "com.tencent.qqlivei18n",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Lifestyle"
+  ],
+  "version": "5.41.6",
+  "price": "Free",
+  "rating": 3.40483,
+  "rating_count": 15236,
+  "file_size_mb": 235.4,
+  "appstore_url": "https://apps.apple.com/th/app/wetv-asian-local-dramas/id1441531611?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/wetv/logo.png",
+  "description": "WeTV: Your Top Choice for Video Streaming Platform\n\nThe premier streaming platform that millions of users worldwide choose! WeTV brings you the latest and hottest Chinese dramas and variety shows in stunning high-definition. Download now for a seamless viewing experience—Enjoy the best dramas and visual effect at home.\n\nFeatures Built for You:\n1.Picture Quality up to 4K: Enjoy high-quality visuals anytime, anywhere with flexible quality settings.\n2.Offline Downloads: No Wi-Fi? No problem. Watch your favorites on the go.\n3.Multi-language Subtitles: Share the joy with friends from all over the world.\n\nThe ultimate destination for original hits, trending dramas, and top-tier variety shows! WeTV delivers a curated selection of premium content to give you the best viewing experience possible.\n\nFeatures You’ll Love:\n1.Smart Categorization: Movies, dramas, and variety shows are organized into different pages, making it easier than ever to explore what you love.\n2.Continue Watching: Never lose...",
+  "release_notes": "1.\"The Road to Splendor\" Ding Yuxi and Deng Enxi in a Romance Destined by Fate\n2.\"Blossoms of Power\" Meng Ziyi & He Yu in Like an Old Friend Returned.\n3.\"Be My Player Two\" Rivals to lovers, chasing dreams.\n4. WeTV Original Hit Dramas: \"NOUR\",\"Khom Khlang\",\"Fairway of Love\"\"Be My Player Two\",\"Love of Silom\",\"Frozen Valentine\",\"Fourever You Part 2\",\"Never Forget Your Enemy\", \"Yesterday\", \"Love Design\",\"Queendom\", \"Denied Love\", and \"Top Form\" are hot streaming!\n5. Recent Trending Shows: \"Overdo\", ",
+  "total_iphone_screenshots": 4,
+  "total_ipad_screenshots": 3,
+  "total_screenshots": 7,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/wetv/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/18/73/0c/18730cbd-f1cc-2a7d-e2db-59c3d3c3963f/b2a44e0a-29f1-4895-849a-2eef1b2e1c9a_4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/wetv/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d3/c8/6d/d3c86dc1-f9ee-5a51-95f9-a12d535d8aa6/9b55b6b7-34b1-4edf-a6fb-4ae586d1b767_5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/wetv/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2f/44/2e/2f442e66-161c-7404-1413-27d530904a30/4a7ecf9a-7433-4275-91f2-7be52f7c14d9_6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/wetv/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/f8/90/75f890f8-b739-4612-0d17-bf52fa74044a/385153ec-b2e7-4ff0-be99-53f021148a27_7.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/wetv/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/a9/ae/65a9ae8a-d567-edd2-bde4-d6f7897bb13e/7cd1ff77-e4fc-4048-ac17-7a22a74027c2_4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/wetv/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/47/27/94/47279450-8d8e-9256-1a73-e183be584d30/10b9522c-be90-4a9b-b235-ad3011d7f6ec_5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/wetv/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9c/ba/dc/9cbadc55-38e0-16da-2598-bbad5bd5937d/62478928-56b3-4f4e-bc6a-ce2d39eca6fd_6.jpg/2048x2732bb.png"
+    }
+  ]
+}

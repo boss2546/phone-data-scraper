@@ -1,0 +1,127 @@
+{
+  "id": "netshort",
+  "name": "NetShort",
+  "track_name": "NetShort - Popular Dramas & TV",
+  "artist_name": "NETSTORY PTE. LTD.",
+  "track_id": 6504849169,
+  "bundle_id": "com.netshort.abroad",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment"
+  ],
+  "version": "2.3.9",
+  "price": "Free",
+  "rating": 4.81673,
+  "rating_count": 53877,
+  "file_size_mb": 175.7,
+  "appstore_url": "https://apps.apple.com/th/app/netshort-popular-dramas-tv/id6504849169?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/netshort/logo.png",
+  "description": "NetShort – Watch Short Dramas in Minutes\n\nLooking for a quick story that is easy to start? NetShort brings vertical short dramas to your phone, with romance, secrets, emotional twists, fantasy plots, revenge stories, and suspenseful moments made for mobile viewing.\n\nEach episode is short, fast-paced, and simple to enjoy during a break, commute, trip, or relaxing evening. Watch one episode when you have a few minutes, or continue a series when you want a longer drama session.\n\n■ Stories That Start Quickly\nNetShort is designed for viewers who enjoy short-form drama without a long setup. Episodes focus on key story moments such as confessions, reunions, hidden identities, family secrets, second chances, and unexpected turns.\n\n■ Explore popular short drama themes, including:\n- Billionaire romance and CEO love stories\n- Werewolf bonds and supernatural romance\n- Revenge, comeback, and family secret stories\n- Fantasy, time travel, rebirth, and second chances\n- Mystery, crime, suspense, and hi...",
+  "release_notes": "- Added popular new short dramas, with exciting stories updated continuously.\n- Optimized/Optimised the Gold Coin feature for easier unlocking of exciting content.\n- Improved app performance for a smoother viewing experience.",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 7,
+  "total_screenshots": 14,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/70/bc/89/70bc895d-cb21-a870-a701-21993c737c14/iPhone-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bd/09/2d/bd092d6c-2940-35c3-f4b6-7af52b96e2bc/iPhone-2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c7/cc/a9/c7cca996-ebaf-5d22-0ac0-b359391ce0fb/iPhone-3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8f/35/03/8f350328-8e5b-ac8f-a402-5f424127829c/iPhone-4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/58/bb/ab/58bbab2b-e3d8-256e-07bf-bcc58151fec5/iPhone-5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e9/3b/ca/e93bcad5-75f3-2d8a-4d0b-224e6670e488/iPhone-6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/netshort/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/b8/bf/6bb8bfc8-952f-85a5-a438-0f830792237c/iPhone-7.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/26/3f/da263f42-7cf2-8be6-9389-938d90867625/iPad-1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/d6/e1/1cd6e1c2-c9ac-545a-2ce4-aca0f42260ee/iPad-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ba/7e/94/ba7e9444-7e46-ff80-2042-634a70157177/iPad-3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/04/b3/ba/04b3ba6e-ece9-c8d5-7486-0402e936bc2d/iPad-4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5d/dd/88/5ddd88fe-8aaf-342c-c580-f8d56658e3eb/iPad-5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/91/64/d3916471-cde0-9a5c-709f-e56a2d8ca5f4/iPad-6.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/netshort/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/51/39/66/5139664b-5cdd-8200-0027-b95c97e69dd2/Pad-7.jpg/2048x2732bb.png"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "wink",
+  "name": "Wink",
+  "track_name": "Wink: Video Enhancer & Editor",
+  "artist_name": "Meitu Technology Co., Ltd.",
+  "track_id": 1594288016,
+  "bundle_id": "com.meitu.wink",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "primary_genre": "Photo & Video",
+  "genres": [
+    "Photo & Video"
+  ],
+  "version": "3.21.1",
+  "price": "Free",
+  "rating": 4.82538,
+  "rating_count": 170518,
+  "file_size_mb": 370.6,
+  "appstore_url": "https://apps.apple.com/th/app/wink-video-enhancer-editor/id1594288016?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/wink/logo.png",
+  "description": "Wink is the AI video and photo enhancer that fixes any clip in one tap. Upscale to 4K HD, restore old videos, unblur photos — old home videos, phone footage, whatever you've got.\n\n[ PERFECT FOR ]\n\n• Restoring old family videos, VHS tapes, and home movies\n• Fixing blurry, shaky, or low-quality phone footage\n• Upscaling videos for trending short-form video platforms\n• Reviving faded photos and damaged memories\n• Polishing night-out clips, travel vlogs, and gaming highlights\n• Anyone who wants pro-quality video without the editing skills\n\n[ VIDEO & PHOTO ENHANCER ]\n\n• HD Quality Enhancer: Fix blurry, low-quality videos and photos — no editing skills needed\n• 4K Super Resolution: Upscale 480p and 720p videos into crisp 4K Ultra HD\n• Adjustable Enhancement: Fine-tune the fix strength to keep results natural — no over-processed AI look\n• 7 Scene-Specific Models: Dedicated fixes for gaming clips, night-out footage, old photo restoration, and more\n• AI Repair Pro: Auto mode detects quality iss...",
+  "release_notes": "・Face Retouch: New “De-puff” — reduce facial puffiness in one tap\n・Hair Part Filler: New \"Max\" intensity just dropped — fuller coverage for thinning parts\n・Body Retouch: New “Slim Arms” — easily refine your arm contours\n・AI Removal: Now removes clutter, vehicles, mirror smudges, glass reflections, and tattoos from photos\n・Siri support: open features instantly with just your voice",
+  "total_iphone_screenshots": 7,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 12,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/04/73/6f/04736f1c-39c2-abb8-3997-5f545cd1df86/iOS_1242x2208__U82f1-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/15/6f/d4156fea-84c3-0975-2eca-35d3821be2bd/iOS_1242x2208__U82f1_U6587-4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/1e/e1/fa1ee1d2-d106-3556-d30d-d1a9a15bfb9e/english_1242x2208.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b0/59/7f/b0597fe3-aa39-b969-1f2f-22cc8b2a65d4/iOS_1242x2208__U82f1_U6587-4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/15/44/32/15443257-e3c5-94f1-bf2d-d3ee7d3f2359/iOS_1242x2208__U82f1-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a2/7e/a3/a27ea31d-97b7-3964-513d-c39450bdcc9f/iOS_1242x2208__U82f1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/wink/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/1c/8c/4f1c8c2d-b174-34d7-a7e0-9591d17c5503/iOS_1242x2208__U82f1.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/wink/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/13/53/4a135322-0ae0-fee6-42c8-51b6bac28679/03.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/wink/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/4c/1a/cb4c1afe-2e42-3526-1076-f55123662720/05.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/wink/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/e0/c6/b5e0c603-baa8-a953-5b9f-f8452b8cef31/04.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/wink/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ca/77/e9/ca77e9d8-416a-0623-acb5-6bcbb0bc1e9a/01.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/wink/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c3/bd/fa/c3bdfa8e-092f-ab94-08f1-0d71b662bd66/02.png/2048x2732bb.png"
+    }
+  ]
+}

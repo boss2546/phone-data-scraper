@@ -1,0 +1,170 @@
+{
+  "id": "canva",
+  "name": "Canva",
+  "track_name": "Canva: AI Video & Photo Editor",
+  "artist_name": "Canva",
+  "track_id": 897446215,
+  "bundle_id": "com.canva.canvaeditor",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "primary_genre": "Photo & Video",
+  "genres": [
+    "Photo & Video",
+    "Productivity"
+  ],
+  "version": "4.235.0",
+  "price": "Free",
+  "rating": 4.86698,
+  "rating_count": 1052946,
+  "file_size_mb": 192.3,
+  "appstore_url": "https://apps.apple.com/th/app/canva-ai-video-photo-editor/id897446215?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/canva/logo.png",
+  "description": "CREATE ANYTHING WITH CANVA\nCanva is your all-in-one creative platform for stunning graphic design, photo editing, and video creation. From crafting presentations and building visual spreadsheets to designing resumes and creating social media content, Canva empowers everyone to design like a professional.\n\nADVANCED PHOTO EDITOR & COLLAGE MAKER\nTransform your photos with our powerful editing suite. Remove backgrounds effortlessly with our background eraser, apply stunning filters, adjust lighting and contrast, and create eye-catching photo collages. Perfect for social media, marketing, or personal projects.\n\nPROFESSIONAL VIDEO EDITOR & MOBILE OPTIMISATION\nCraft engaging videos with our intuitive video editor. Add captions, apply cinematic effects like slow motion, sync your edits to music with Beat Sync, and optimise content for mobile viewing. Ideal for social media reels, business presentations, or creative storytelling. Save your best work with 5GB for everyone.\n\nDYNAMIC PRESENTATIONS...",
+  "release_notes": "iPhone Duo is now supported. Key benefits\n- Design for the screen your audience sees. Create a Story or Reel unfolded, then fold to preview it at true phone size.\n- Unfold to design. The 7.6\" inner screen gives Canva a full canvas for layouts, brand work and multi-page designs, with the room of a small tablet in your pocket.\n- Snap, then design. Shoot with the 48MP cameras and drop photos straight into Canva. Remove backgrounds and polish them on the big screen.\n- Cut video on a bigger timeline.",
+  "total_iphone_screenshots": 10,
+  "total_ipad_screenshots": 10,
+  "total_screenshots": 20,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/96/d8/f4/96d8f496-aa30-36f4-cafd-3ac9f59f6961/0.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/9c/a4/569ca422-8abf-1718-aefd-38dff09711fa/1.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/90/d5/8d90d545-d945-69a2-5944-19ce1008cb3b/2.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/0a/fc/480afc12-cded-ccca-2783-67ceda4f5ee7/3.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/26/f5/8826f5c6-1399-41ff-214a-3b5e9d32d6a2/4.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fe/ea/01/feea0186-6b14-4869-b52f-8312d6488128/5.png/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/75/af/76/75af76b5-8146-625e-cf50-f236dc583683/6.png/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/a5/51/4fa5513a-af3c-e2f1-3085-1c7765c1eb44/7.png/1290x2796bb.png"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_09.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/3b/92/843b9262-ea3a-af4b-2283-2235d3f19206/8.png/1290x2796bb.png"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/appstore_screenshots/canva/iphone/screenshot_10.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5a/37/bb/5a37bb6e-8f82-f486-f0c4-040f72e7bb6f/9.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/f4/c9/57f4c9cd-4972-ae48-b362-8428fb5a34fe/0.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/11/de/72/11de72fa-0b5d-5e4b-660d-e1314d15091f/1.png/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d7/18/e0/d718e0ac-0244-813e-a473-539f869f0d2e/2.png/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0e/1c/b6/0e1cb684-8389-d355-898a-1a2607638d2b/3.png/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/73/54/8d/73548d5f-ef81-b86b-a58d-aa8f50411683/4.png/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/c5/54/fac55437-84be-d4e4-80c4-0c32f4328f0a/5.png/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9e/72/34/9e7234b1-ddd2-9c64-27c1-88e2ecf0db9a/6.png/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/73/55/e27355d8-5fb2-5193-a2d6-884ad777167a/7.png/2048x2732bb.png"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_09.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/9f/83/539f835a-d92c-241f-8bfc-6b2598727cda/8.png/2048x2732bb.png"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/appstore_screenshots/canva/ipad/screenshot_10.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/c9/d7/95c9d7d5-b0eb-c078-1fe9-48b52bb7395d/9.png/2048x2732bb.png"
+    }
+  ]
+}

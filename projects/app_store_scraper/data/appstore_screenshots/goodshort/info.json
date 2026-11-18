@@ -1,0 +1,114 @@
+{
+  "id": "goodshort",
+  "name": "GoodShort",
+  "track_name": "GoodShort - Short Dramas Hub",
+  "artist_name": "SINGAPORE NEW READING TECHNOLOGY PTE. LTD.",
+  "track_id": 6448176203,
+  "bundle_id": "com.newreading.goodreels",
+  "category": "แอปซีรีส์สั้น (Short Drama)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Photo & Video"
+  ],
+  "version": "2.8.4",
+  "price": "Free",
+  "rating": 4.91674,
+  "rating_count": 106662,
+  "file_size_mb": 175.8,
+  "appstore_url": "https://apps.apple.com/th/app/goodshort-short-dramas-hub/id6448176203?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/goodshort/logo.png",
+  "description": "GoodShort: a must-have app for original dramas and movies\n\nTo enjoy original short dramas and movies of a minute or so, anytime, anywhere, whether in travel, at home, or at a restaurant\n\nWe have a myriad of short dramas and movies adapted from novels with high quality, high definition, and high update frequency, guaranteeing a different screen experience for you.\n\n[Diverse, all-inclusive content]\nThere are a lot of short dramas and reels adapted from novels, definitely something fascinating to you. From modern romance, urban romance, and youth romance to live-in sons-in-law, magic doctors, CEOs, billionaires, queens, and gods of war, all your favorite genres and themes can be found here!\n\n[A personalized list of works you may like]\nThe excellent recommendation system will help you find the best originals, short dramas, and short movies adapted from the hottest novels, meeting the preferences of all kinds of drama and movie lovers!\n\n[A user-friendly, elegant interface]\nThe simple, clear...",
+  "release_notes": "Optimize performance and improve user experience.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 6,
+  "total_screenshots": 12,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/goodshort/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/63/44/8c/63448c6b-4a32-9e23-7234-3ff69da4b3f4/06-When-Life-Takes-a-Turn.png/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/goodshort/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b8/6f/d4/b86fd47f-6da5-4e3c-0d2d-04abca0b4d61/02-A-Marriage.png/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/goodshort/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/45/4f/3c/454f3c0d-925a-07f8-6e68-de3cde865bdc/03-A-Journey.png/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/goodshort/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/82/0e/cd/820ecdab-f992-3df7-e56d-027458ce19e2/04-A-New-Beginning.png/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/goodshort/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/29/f9/b529f9ac-ec60-778f-aafc-fd83082bb450/01-Short-Dramas.png/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/goodshort/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f2/53/7b/f2537bef-dd45-ea1b-731b-d55b01a845a5/05-Family-Friendship-Ambition.png/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/goodshort/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/a1/f1/37a1f128-49ec-8cb5-4682-5361d6c90c77/GoodShort_iPad_06.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/goodshort/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b1/1c/76/b11c761d-3ba7-c451-0198-5732e80c5c05/GoodShort_iPad_02.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/goodshort/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/74/bb/13/74bb13fd-418b-d241-c072-778e7bb66063/GoodShort_iPad_03.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/goodshort/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3b/b8/da/3bb8daf7-814b-8665-a3d5-85ad577dda60/GoodShort_iPad_04.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/goodshort/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2c/a6/29/2ca629a0-4de8-7a71-d16a-ef8198f0a431/GoodShort_iPad_01.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/goodshort/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3b/4b/60/3b4b603b-f9a3-0644-13a3-9658f3f959ca/GoodShort_iPad_05.jpg/2048x2732bb.png"
+    }
+  ]
+}

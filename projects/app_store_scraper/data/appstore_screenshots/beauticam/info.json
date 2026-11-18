@@ -1,0 +1,142 @@
+{
+  "id": "beauticam",
+  "name": "BeautyCam",
+  "track_name": "BeautyCam-Digicam&Photo Editor",
+  "artist_name": "Meitu Technology Co., Ltd.",
+  "track_id": 592331499,
+  "bundle_id": "com.meitu.myxj",
+  "category": "ตัดต่อ & แต่งภาพ & ดีไซน์",
+  "primary_genre": "Photo & Video",
+  "genres": [
+    "Photo & Video",
+    "Social Networking"
+  ],
+  "version": "13.4.70",
+  "price": "Free",
+  "rating": 4.80358,
+  "rating_count": 37135,
+  "file_size_mb": 619.9,
+  "appstore_url": "https://apps.apple.com/th/app/beautycam-digicam-photo-editor/id592331499?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/beauticam/logo.png",
+  "description": "BeautyCam: Transform Your Photos, Highlight Your Natural Beauty\n\nDiscover the power of advanced technology to effortlessly create stunning visuals\nBeautyCam puts professional-level tools at your fingertips:\nMultiple camera modes recreate the look and feel of DSLR, Digicam, iPhone Cam, and Film Camera styles.\nEnhance your natural features for a polished, yet authentic look\nVarious portrait styles allow you to achieve professional studio results with ease\n\n=== Save Money on Buying Cameras ===\n· Digicam: Embrace the nostalgia of digital cameras with classic, vintage-inspired filters\n· DSLR Camera: Access professional-grade options like zoom, depth of field, and white balance\n· Photo Booth: Add stylish frames and playful effects to your photos for unforgettable moments\n· IPhone Cam: Achieve bright, transparent skin with a natural, healthy glow\n\n=== Pro Tools: Personalized Beauty at Its Best ===\n· Nail Art: Switch up your nails with styles ranging from classy to sparkling\n· Pro Effects: Exp...",
+  "release_notes": "- Optimized product experience for smoother use and more effects!\n- Fixed known issues and improved performance, making operations smoother and details more convenient!\nTry the brand-new version of BeautyCam!\nCustomer service email: support@meitu.com",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 8,
+  "total_screenshots": 16,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/85/09/078509b6-b6b1-e0c9-0805-9df52a575923/EN-1_U8865_U5149_U706f_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e0/c6/25/e0c62598-3190-3629-cae2-68b468142819/EN-2CCD_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/40/cb/7c/40cb7c03-9c31-f0b9-2d89-229c1058d34c/EN-3iPhone_U6a21_U5f0f_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/77/c9/3777c9bf-bb51-755c-6cca-27236ce9652c/EN-4_U7cbe_U4fee_U53bb_U76b1_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/36/59/4d/36594d5a-41ad-5d58-63a2-904a950f79d8/EN-5_U80f6_U7247_U76f8_U673a_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7a/02/75/7a0275ee-a6c7-875f-2001-f29f9b112850/EN-6_U6362_U88c5_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/24/47/8b2447c3-4630-6b04-2be5-4082ac534378/EN-7_U753b_U8d28_U4fee_U590d_iPhone.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/beauticam/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/40/92/f440921a-d091-279f-1d7b-16d01f3d47fc/EN-8_U89c6_U9891_U7f8e_U5bb9_iPhone.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/63/da/d6/63dad627-dd1c-2940-4741-0c9b795aacc2/EN-1_U8865_U5149_U706f_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a6/08/7c/a6087cc1-f0ca-ec14-610d-62a9f810f31e/EN-2CCD_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/f8/51/2bf85139-2f30-2fd3-757b-f3713936f309/EN-3iPhone_U6a21_U5f0f_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/20/ba/bd/20babd67-1d44-7c66-8975-1eeee9fc1ea8/EN-4_U7cbe_U4fee_U53bb_U76b1_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/ef/e9/25efe966-4188-65e7-ddc4-7e4d58818b13/EN-5_U80f6_U7247_U76f8_U673a_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/27/90/5c2790f9-bece-ac45-bbf5-ab0fd4bf2ad6/EN-6_U6362_U88c5_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/48/e3/5a/48e35a2d-3597-819c-8742-e46ff9e99c11/EN-7_U753b_U8d28_U4fee_U590d_iPad.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/beauticam/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1a/3f/47/1a3f47f6-efc4-e8a9-b9ee-8d4314a2444c/EN-8_U89c6_U9891_U7f8e_U5bb9_iPad.jpg/2048x2732bb.png"
+    }
+  ]
+}

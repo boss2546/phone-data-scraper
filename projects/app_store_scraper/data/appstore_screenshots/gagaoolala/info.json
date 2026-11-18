@@ -1,0 +1,142 @@
+{
+  "id": "gagaoolala",
+  "name": "GagaOOLala",
+  "track_name": "GagaOOLala: Gay, Les, BL Shows",
+  "artist_name": "Portico Media Co., Ltd",
+  "track_id": 1196141528,
+  "bundle_id": "com.gagaoolala.app",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Photo & Video"
+  ],
+  "version": "4.7.0",
+  "price": "Free",
+  "rating": 4.28242,
+  "rating_count": 1473,
+  "file_size_mb": 52.9,
+  "appstore_url": "https://apps.apple.com/th/app/gagaoolala-gay-les-bl-shows/id1196141528?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/gagaoolala/logo.png",
+  "description": "Gay, Lesbian, Queer, BL and GL, welcome to GagaOOLala, the global leading LGBTQ+, BL and GL streaming platform from Asia with over 6 million members across 248 territories.\n\nRegister and gain access to the widest selection of gay, lesbian, queer, BL and GL content from around the world. \n\nFEATURES\n\n• Explore a rapidly expanding LGBTQ+, BL and GL library of over 1600 titles featuring legally licensed, premium feature films, series, shorts, micro dramas, documentaries, animation, variety shows and exclusive GagaOOLala Originals. Fresh, new content is added to the platform every week. \n• Drama, Romance, Comedy, Fantasy, Mystery, Thriller. Slice-of-Life, Coming of Age, Coming Out, Family, Adventure, Passion.  Browse easily with specific categories, tags and playlists to find stories of interest to you.\n• Available across smartphones, tablets, laptops/PCs and smart TVs. Stream anywhere and anytime you want. \n• Sitewide English, Traditional and Simplified Chinese, Thai and Spanish user inter...",
+  "release_notes": "• GagaOOLala Verticals Feature: Enjoy a brand new world of Gay, Lesbian and BL microdramas\n• GagaOOLala Discover Feature: Find what to watch in a fun, easy way with our scrollable section showcasing short trending clips and key highlights of the content available on the platform.\n•  UI/UX Upgrades and Optimization\n•  Bug Fixes\n\nFacing Issues?\nGagaOOLala cares about your user experience. Please try the following steps:\n\n1) Check our FAQ page for a solution: \nhttps://www.gagaoolala.com/en/faq \n\n2)",
+  "total_iphone_screenshots": 8,
+  "total_ipad_screenshots": 8,
+  "total_screenshots": 16,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e2/f5/55/e2f55590-bec4-974e-b6fe-951f7e317318/6.5_U540b-iphone_1284x2778px-1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/95/84/18/95841888-7501-454e-63be-a2b60f7d4a93/6.5_U540b-iphone_1284x2778px-2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/84/ce/b184ce83-6183-8044-457d-8c855044a058/6.5_U540b-iphone_1284x2778px-3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/62/c2/65/62c26529-a09d-6a14-1586-4f329004933a/6.5_U540b-iphone_1284x2778px-4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/b8/3c/d4b83c96-6a66-72e0-8717-c9d93111326b/6.5_U540b-iphone_1284x2778px-5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/54/3a/0d543a44-6b1a-9a36-e4ec-a1e33bcf8481/6.5_U540b-iphone_1284x2778px-6.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_07.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/1d/6d/301d6d41-dbb3-d828-bf71-21824a150ba2/6.5_U540b-iphone_1284x2778px-7.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/iphone/screenshot_08.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b6/34/ff/b634fff3-7755-f815-0852-a53e80ff55f3/6.5_U540b-iphone_1284x2778px-8.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a2/28/e4/a228e479-763d-0204-d647-9f716bf39549/12.9_U540b-ipad_2048x2732px-1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7a/4e/cf/7a4ecf21-c103-41fc-59df-03303009f41f/12.9_U540b-ipad_2048x2732px-2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/92/ce/3b/92ce3b1f-e15b-d6e0-173c-4810abdb0432/12.9_U540b-ipad_2048x2732px-3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/dc/99/89/dc998945-1eba-063c-8a64-e528b0392da1/12.9_U540b-ipad_2048x2732px-4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3e/12/d0/3e12d08d-634d-1f0e-4988-5089735bcd80/12.9_U540b-ipad_2048x2732px-5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/57/79/fe/5779fe8b-64ce-1bd5-591b-706c06f6f416/12.9_U540b-ipad_2048x2732px-6.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/19/10/b71910d5-f5ce-07a8-3c28-89ee56cba815/12.9_U540b-ipad_2048x2732px-7.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/gagaoolala/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/da/01/c2/da01c230-cffa-0912-1ef3-ba030fbbc123/12.9_U540b-ipad_2048x2732px-8.jpg/2048x2732bb.png"
+    }
+  ]
+}

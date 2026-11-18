@@ -1,0 +1,107 @@
+{
+  "id": "viu",
+  "name": "Viu",
+  "track_name": "Viu",
+  "artist_name": "PCCW OTT (Hong Kong) Limited",
+  "track_id": 1036095179,
+  "bundle_id": "com.viu.iphone",
+  "category": "สตรีมมิ่งดูหนัง/ซีรีส์ (OTT)",
+  "primary_genre": "Entertainment",
+  "genres": [
+    "Entertainment",
+    "Photo & Video"
+  ],
+  "version": "2.31.0",
+  "price": "Free",
+  "rating": 4.63659,
+  "rating_count": 117331,
+  "file_size_mb": 114.7,
+  "appstore_url": "https://apps.apple.com/th/app/viu/id1036095179?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/viu/logo.png",
+  "description": "Viu brings you the best of Asian Entertainment anytime anywhere for FREE! Enjoy as free users or upgrade to Viu Premium* for more enhanced features.\n\nFeatures of Viu \n◎ Watch the most up-to-date programmes from Asia, as fast as 4 hours* with subtitles. Content availability will vary from region to region due to content licensing rights.\n◎ Viu Premium users have access to Unlimited Downloads for offline viewing!\n◎ Unlimited Video Streaming\n◎ Local language interface\n\n-------------------------------------------------\nFor feedback and enquiries, please send email to (Hong Kong)enquiry.hk@viu.com; or (Singapore)enquiry.sg@viu.com;  (The Philippines) enquiry.ph@viu.com or (Thailand) enquiry.th@viu.com\n\nViu T&C (Hong Kong)\nhttps://www.viu.com/ott/hk/zh-hk/copyright-statement/terms-and-conditions\n\nViu T&C (Singapore English)\nhttp://www.viu.com/ott/sg/en-us/copyright-statement/terms-and-conditions\n\nViu T&C (Singapore Chinese)\nhttp://www.viu.com/ott/sg/zh-cn/copyright-statement/terms-and-condit...",
+  "release_notes": "Performance improvement.",
+  "total_iphone_screenshots": 6,
+  "total_ipad_screenshots": 5,
+  "total_screenshots": 11,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/viu/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/9b/c2/a09bc239-4fb3-6758-8224-92c9012ffb6a/f6b9a811-6221-43d9-acff-1f359b21af9b_55Inch_1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/viu/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bb/41/6f/bb416f51-2da8-226d-603f-82c310b43903/96228d3a-dd9d-4b78-8aff-d7c72a9a3454_55Inch_2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/viu/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d4/32/95/d4329557-8c41-4522-dc77-4e66eb45ae4d/f0ce7a38-d662-497e-af9a-05a9f8cc7948_55Inch_3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/viu/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b6/e2/33/b6e23352-eeb3-8c42-f638-2866d2f7ed93/417b1169-2657-4c59-8a0b-167efb50f7e3_55Inch_4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/viu/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/c6/4d/dac64d65-4ab2-12a5-c0e6-84d671e37253/a472e8d5-a7d2-4cbe-9e28-c4d423a4ae47_55Inch_5.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/viu/iphone/screenshot_06.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/60/66/b6606637-4676-4cd2-b14f-10a974d3d94e/8b23914a-43ab-4bc9-ad02-0c75512afeea_55Inch_6.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/viu/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/44/81/ef4481cc-e299-b3e4-83ac-8c138c6790ad/db7b9142-5cc8-419e-a51a-b7e99289bbd6_iPad_1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/viu/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/de/f0/2edef095-c78d-ef5e-77af-7129124dbfd4/0168ac0d-1efe-42bb-a58f-8e8c0f42fa4e_iPad_2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/viu/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/34/9f/9f349f3a-1a3e-a29d-fe06-f0a46df725ae/8732885f-449f-4a66-aba9-f1d7142aadb9_iPad_3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/viu/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/c5/17/43c51733-ccec-d95f-5355-b04b1ab6acf7/39517203-12e8-4e63-8452-e589964034c8_iPad_4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/viu/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/83/c5/a3/83c5a314-2802-3ef2-5c8a-bc43d7181b34/e2f5bb45-b902-41a9-a3b2-ccd7049f0f46_iPad_5.jpg/2048x2732bb.png"
+    }
+  ]
+}

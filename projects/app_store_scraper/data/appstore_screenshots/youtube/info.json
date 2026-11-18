@@ -1,0 +1,135 @@
+{
+  "id": "youtube",
+  "name": "YouTube",
+  "track_name": "YouTube",
+  "artist_name": "Google",
+  "track_id": 544007664,
+  "bundle_id": "com.google.ios.youtube",
+  "category": "สตรีมมิ่งเพลงและวิดีโอ",
+  "primary_genre": "Photo & Video",
+  "genres": [
+    "Photo & Video",
+    "Entertainment"
+  ],
+  "version": "21.46.3",
+  "price": "Free",
+  "rating": 4.7074,
+  "rating_count": 4869595,
+  "file_size_mb": 383.7,
+  "appstore_url": "https://apps.apple.com/th/app/youtube/id544007664?uo=4",
+  "logo_rel_path": "data/appstore_screenshots/youtube/logo.png",
+  "description": "Get the official YouTube app on iPhones and iPads. See what the world is watching -- from the hottest music videos to what’s popular in gaming, fashion, beauty, news, learning and more. Subscribe to channels you love, create content of your own, share with friends, and watch on any device.\n\nWatch and subscribe\n● Browse personal recommendations on Home\n● See the latest from your favorite channels in Subscriptions\n● Look up videos you’ve watched, liked, and saved for later in Library\n\nExplore different topics, what’s popular, and on the rise (available in select countries)\n● Stay up to date on what’s popular in music, gaming, beauty, news, learning and more\n● See what’s trending on YouTube and around the world on Explore\n● Learn about the coolest Creators, Gamers, and Artists on the Rise (available in select countries)\n\nConnect with the YouTube community\n● Keep up with your favorites creators with Posts, Stories, Premieres, and Live streams\n● Join the conversation with comments and inter...",
+  "release_notes": "Bug fixes, performance improvements and more cat videos.",
+  "total_iphone_screenshots": 5,
+  "total_ipad_screenshots": 10,
+  "total_screenshots": 15,
+  "iphone_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/youtube/iphone/screenshot_01.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/f9/7c/74f97c4c-a362-89d8-914d-d9bcf0eacc54/cdfcf0fc-0f88-4237-9e9d-a1afb08724e3_iOS-5.5-in_1.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/youtube/iphone/screenshot_02.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6c/63/9a/6c639ae5-917f-4b8f-7f8d-6790c4ca4f1a/209c47e2-15a0-44a2-a1b7-ab82b74bd2d8_iOS-5.5-in_2.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/youtube/iphone/screenshot_03.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/32/ed/4332edbd-9ea1-8511-7542-f3e43fe92f3e/f3b103d9-206a-43be-8cf5-c9e907471b04_iOS-5.5-in_3.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/youtube/iphone/screenshot_04.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ed/33/09/ed33099c-b231-d116-5645-9d28c850613d/b5a5d11f-5974-4ebd-89a5-f3107a309616_iOS-5.5-in_4.jpg/1290x2796bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/youtube/iphone/screenshot_05.png",
+      "device": "iPhone",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/fd/1d/dcfd1d54-bdf6-5b5c-56c7-4e9cf8735563/3e7991f1-3174-48fe-bdd6-463f5113d1a1_iOS-5.5-in_5.jpg/1290x2796bb.png"
+    }
+  ],
+  "ipad_screenshots": [
+    {
+      "index": 1,
+      "filename": "screenshot_01.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_01.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/33/5e/8f/335e8fb8-c08c-b714-0bf6-466919aed1e1/836dadfa-6bb1-4342-a93a-bdd7158a6dec_2048x2732bb__U00282_U0029.png/2048x2732bb.png"
+    },
+    {
+      "index": 2,
+      "filename": "screenshot_02.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_02.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9f/56/1a/9f561ac7-acdb-89e4-326d-b1acd2ffe3b4/iOS-iPad-Pro_2ndgen_1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 3,
+      "filename": "screenshot_03.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_03.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/97/e1/30/97e130b7-f36b-ed67-423e-f30a017cd02b/iOS-iPad-Pro_2ndgen_2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 4,
+      "filename": "screenshot_04.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_04.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/25/90/49/25904990-e8bf-fff6-f53d-a15a2b30f906/iOS-iPad-Pro_2ndgen_3.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 5,
+      "filename": "screenshot_05.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_05.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/6e/cb/50/6ecb50c8-aba9-3c47-fa5b-758937c3bafe/iOS-iPad-Pro_2ndgen_4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 6,
+      "filename": "screenshot_06.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_06.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b6/7e/36/b67e360e-8a7e-8750-f275-368e316af3d1/iOS-iPad-Pro_2ndgen_5.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 7,
+      "filename": "screenshot_07.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_07.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/64/f2/c7/64f2c7ab-f4b9-f928-761a-fe98785f054d/306d132f-4632-467b-a4e1-adb4dace0181_iOS-iPad-Pro_3rdgen_1.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 8,
+      "filename": "screenshot_08.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_08.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8f/25/31/8f253157-30e2-6003-d7aa-b99b4eb5995f/1d7c6ca0-2040-4ab0-8a9e-14b3fcae1097_iOS-iPad-Pro_3rdgen_2.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 9,
+      "filename": "screenshot_09.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_09.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/64/27/6f/64276fbc-461b-54ef-7798-0cee3a85d568/ac48729b-c5c9-41d7-b111-c6ac88807e98_iOS-iPad-Pro_3rdgen_4.jpg/2048x2732bb.png"
+    },
+    {
+      "index": 10,
+      "filename": "screenshot_10.png",
+      "rel_path": "data/appstore_screenshots/youtube/ipad/screenshot_10.png",
+      "device": "iPad",
+      "source_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/b4/48/2eb44820-f8c5-863e-a6ab-952014fe26f5/62f6bc6f-10bd-4c40-a97d-5669ae723ce2_iOS-iPad-Pro_3rdgen_5.jpg/2048x2732bb.png"
+    }
+  ]
+}
